@@ -7,6 +7,9 @@ on:
       # 确保这是你正在使用的分支名称
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
