@@ -7,14 +7,14 @@ export default hopeTheme({
 
     author: {
         name: "Zotero Chinese",
-        url: "https://mrhope.site",
+        url: "https://zotero-cn.github.io",
     },
 
     iconAssets: "iconfont",
 
     logo: "/logo.png",
 
-    repo: "zotero-cn/zotero-guide-zh",
+    repo: "northword/zotero-guide-zh",
 
     docsDir: "src",
 
