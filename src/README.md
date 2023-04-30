@@ -11,38 +11,38 @@ actions:
     type: primary
 
   - text: 插件商店
-    link: /plugins/
+    link: https://zotero-chinese.gitee.io/zotero-plugins/
 
 features:
-  - title: 用户手册
-    icon: markdown
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: https://theme-hope.vuejs.press/zh/guide/markdown/
+  - title: Zotero 百科全书
+    icon: article
+    details: Zotero 中文教程一站式解决。
+    link: /user-guide/
 
   - title: 插件商店
     icon: config
-    details: 添加幻灯片页面以显示你喜欢的内容
-    link: https://theme-hope.vuejs.press/zh/guide/layout/slides.html
+    details: 好用的 Zotero 插件收录，提供国内镜像下载地址。
+    link: https://zotero-chinese.gitee.io/zotero-plugins/
 
   - title: 中文 CSL 样式
-    icon: layout
-    details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
-    link: https://theme-hope.vuejs.press/zh/guide/layout/
+    icon: format
+    details: 支持双语排版的 CSL 样式。
+    link: https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/
 
   - title: 插件开发手册
-    icon: comment
-    details: 配合 Waline 来开启阅读量统计与评论支持
-    link: https://theme-hope.vuejs.press/zh/guide/feature/comment.html
+    icon: code
+    details: 其实 Zotero 插件开发入门很容易！
+    link: /plugin-dev-guide/
 
   - title: CSL 开发手册
-    icon: info
-    details: 为你的文章添加作者、写作日期、预计阅读时间、字数统计等信息
-    link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
+    icon: code
+    details: 来看如何自定义一个自己需要的参考文献格式。
+    link: /csl-dev-guide/
 
-  - title: 更多新特性
-    icon: more
-    details: 包括图标支持、全屏按钮、返回顶部按钮等
-    link: https://theme-hope.vuejs.press/zh/guide/feature/
+  - title: 更多
+    icon: advance
+    details: 贡献指南、关于页面等。
+    link: /about/
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2022-Present Zotero Chinese
 ---

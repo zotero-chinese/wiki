@@ -2,29 +2,29 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/",
-  { text: "Zotero 百科全书", icon: "discover", link: "/user-guide/" },
+  { text: "Zotero 百科全书", icon: "article", link: "/user-guide/" },
   {
     text: "中文插件商店",
-    icon: "note",
+    icon: "config",
     link: "https://zotero-chinese.gitee.io/zotero-plugins/",
   },
   {
     text: "中文 CSL 样式",
-    icon: "note",
+    icon: "format",
     link: "https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/",
   },
   {
     text: "开发手册",
-    icon: "creative",
+    icon: "code",
     children: [
       {
         text: "插件开发手册",
-        icon: "creative",
+        icon: "code",
         link: "/plugin-dev-guide/"
       },
       {
         text: "CSL 中文文档",
-        icon: "config",
+        icon: "code",
         link: "/csl-dev-guide/"
       },
     ],

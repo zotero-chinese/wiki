@@ -18,19 +18,25 @@ export default hopeTheme({
 
     docsDir: "src",
 
-    // navbar
-    navbar: zhNavbar,
+    hotReload: true,
 
-    // sidebar
-    sidebar: zhSidebar,
+    locales: {
+        "/": {
+            // navbar
+            navbar: zhNavbar,
 
-    footer: "Zotero 中文小组 | 查看贡献指南",
+            // sidebar
+            sidebar: zhSidebar,
 
-    displayFooter: true,
+            footer: "Zotero 中文小组 | 查看贡献指南",
 
-    // page meta
-    metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+            displayFooter: true,
+
+            // page meta
+            metaLocales: {
+                editLink: "在 GitHub 上编辑此页",
+            },
+        },
     },
 
     // encrypt: {
@@ -66,9 +72,9 @@ export default hopeTheme({
             // playground: {
             //   presets: ["ts", "vue"],
             // },
-            presentation: {
-                plugins: ["highlight", "math", "search", "notes", "zoom"],
-            },
+            // presentation: {
+            //     plugins: ["highlight", "math", "search", "notes", "zoom"],
+            // },
             stylize: [
                 {
                     matcher: "Recommended",
@@ -85,7 +91,7 @@ export default hopeTheme({
             sub: true,
             sup: true,
             tabs: true,
-            vPre: true,
+            // vPre: true,
             // vuePlayground: true,
         },
 
