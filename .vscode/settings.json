@@ -1,0 +1,15 @@
+{
+  "[markdown]": {
+    "editor.fontFamily": "Sarasa Mono SC, Noto Sans Mono CJK SC, monospace",
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "markdown.validate.enabled": true,
+  "markdown.validate.fileLinks.enabled": "error",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  },
+  "explorer.sortOrder": "mixed",
+  "explorer.excludeGitIgnore": false
+}
