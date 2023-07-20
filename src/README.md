@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: README
+title: 首页
 heroImage: /logo.png
 heroText: Zotero 中文小组
 tagline: Zotero 非官方中文小组，维护中文文档、CSL 样式等。
@@ -37,7 +37,7 @@ features:
     details: 贡献指南、关于页面等。
     link: /about/
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2022-Present Zotero Chinese
+footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a></br> 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议，版权所有 © 2022-Present Zotero Chinese
 date: 2023-04-19 21:14:04
 updated: 2023-07-20 16:51:54
 ---
