@@ -11,5 +11,21 @@
     "source.fixAll.markdownlint": true
   },
   "explorer.sortOrder": "mixed",
-  "explorer.excludeGitIgnore": false
+  "explorer.excludeGitIgnore": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    // custom begin
+    "node_modules": true,
+    // "**/.*": true,
+    ".github": true,
+    "**/.vuepress": true,
+    ".vscode": true,
+    ".markdownlint.json": true,
+    "package-lock.json": true
+  }
 }
