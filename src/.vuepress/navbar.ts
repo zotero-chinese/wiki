@@ -36,7 +36,7 @@ export const zhNavbar = navbar([
       {
         text: "贡献指南",
         icon: "creative",
-        link: "/about/contributing.md",
+        link: "/about/contributing/CONTRIBUTING.md",
       },
       {
         text: "关于",
