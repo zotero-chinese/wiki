@@ -4,6 +4,6 @@ export const zhSidebar = sidebar({
   "/user-guide/": "structure",
   "/plugin-dev-guide/": "structure",
   "/csl-dev-guide/": "structure",
-  "/contribution-guide/": "structure",
-  "/": "heading",
+  "/about/": "structure",
+  "/": "structure",
 });
