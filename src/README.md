@@ -71,17 +71,17 @@ highlights:
 
       - title: Zotero 官方文档（英文）
         icon: article
-        details: 自动为你的网站生成 Sitemap
+        details: Zotero 官方提供的使用手册，最为准确，但仅维护英文。
         link: https://www.zotero.org/support/
 
       - title: Zotero 官方论坛（英文）
         icon: community
-        details: 生成你的 Feed，并通知你的用户订阅它
+        details: Zotero 官方运营的论坛，你可以在这里发布求助、反馈问题等。
         link: https://forums.zotero.org/discussions
 
       - title: CSL 官方样式
         icon: decorate
-        details: 让你的网站更像一个 APP
+        details: 在这里可以预览并下载 Citation Language Style 组织下的样式。
         link: https://www.zotero.org/styles
 
   - header: 参与社区建设
