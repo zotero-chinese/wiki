@@ -29,7 +29,8 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "Zotero 中文小组 | 查看贡献指南",
+      footer:
+        "Zotero 中文小组 | <a href='/about/contributing/CONTRIBUTING.html'>贡献指南</a> | <a href='/'>参与讨论</a> | <a href='/'>加入 QQ 群组</a>",
 
       displayFooter: true,
 
@@ -40,18 +41,11 @@ export default hopeTheme({
     },
   },
 
-  // encrypt: {
-  //   config: {
-  //     "/demo/encrypt.html": ["1234"],
-  //     "/zh/demo/encrypt.html": ["1234"],
-  //   },
-  // },
-
   plugins: {
-    comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Waline",
-    },
+    // comment: {
+    //   // @ts-expect-error: You should generate and use your own comment service
+    //   provider: "Waline",
+    // },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
