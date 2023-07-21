@@ -12,7 +12,7 @@
 
 ## 贡献指南
 
-见
+见 <https://zotero-zh.netlify.app/about/contributing/CONTRIBUTING.html>
 
 ## 致谢
 

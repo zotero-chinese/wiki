@@ -20,12 +20,12 @@ export const zhNavbar = navbar([
       {
         text: "插件开发手册",
         icon: "code",
-        link: "/plugin-dev-guide/"
+        link: "/plugin-dev-guide/",
       },
       {
         text: "CSL 中文文档",
         icon: "code",
-        link: "/csl-dev-guide/"
+        link: "/csl-dev-guide/",
       },
     ],
   },
@@ -36,13 +36,13 @@ export const zhNavbar = navbar([
       {
         text: "贡献指南",
         icon: "creative",
-        link: "/contribution-guide/"
+        link: "/about/contributing.md",
       },
       {
         text: "关于",
         icon: "about",
-        link: "/about/"
-      }
-    ]
+        link: "/about/",
+      },
+    ],
   },
 ]);
