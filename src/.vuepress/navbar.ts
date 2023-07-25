@@ -6,7 +6,7 @@ export const zhNavbar = navbar([
   {
     text: "中文插件商店",
     icon: "config",
-    link: "https://zotero-chinese.gitee.io/zotero-plugins/",
+    link: "https://zoteroplugins.netlify.app/",
   },
   {
     text: "中文 CSL 样式",
