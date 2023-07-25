@@ -1,10 +1,10 @@
 ---
-title: 首页
+title: CSL 中文文档
 date: 2022-08-01 16:23:04
 updated: 2023-07-22 20:39:20
 ---
 
-# 首页
+# CSL 中文文档
 
 > [!warning] WORK IN PROGRESS
 > 此页面正在施工中。
