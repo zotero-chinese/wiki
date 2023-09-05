@@ -10,7 +10,8 @@
     "docs:dev": "vuepress dev src",
     "docs:dev-debug": "vuepress dev src --debug",
     "docs:update-package": "npx vp-update",
-    "lint:md": "markdownlint-cli2-fix src/**/*.md"
+    "lint:md": "markdownlint-cli2-fix src/**/*.md",
+    "lint-md": "lint-md src/**/*.md"
   },
   "devDependencies": {
     "@lint-md/cli": "^2.0.0",
