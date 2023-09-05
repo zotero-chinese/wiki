@@ -6,12 +6,12 @@ export const zhNavbar = navbar([
   {
     text: "中文插件商店",
     icon: "config",
-    link: "https://zoteroplugins.netlify.app/",
+    link: "https://plugins.zotero.northword.dev/",
   },
   {
     text: "中文 CSL 样式",
     icon: "format",
-    link: "https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/",
+    link: "https://kgithub.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/",
   },
   {
     text: "开发手册",
