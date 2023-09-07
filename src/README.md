@@ -16,7 +16,7 @@ actions:
     type: primary
     
   - text: 插件商店
-    link: https://zoteroplugins.netlify.app/
+    link: https://plugins.zotero-chinese.com/
     
 highlights:
   - header: Zotero 中文资源
@@ -36,7 +36,7 @@ highlights:
       - title: 插件商店
         icon: config
         details: 好用的 Zotero 插件收录，提供国内镜像下载地址。
-        link: https://zoteroplugins.netlify.app/
+        link: https://plugins.zotero-chinese.com/
 
       - title: 中文 CSL 样式
         icon: format
