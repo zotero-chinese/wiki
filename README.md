@@ -8,11 +8,11 @@
 
 ## 访问
 
-<https://zotero-zh.netlify.app>
+<https://zotero-chinese.com>
 
 ## 贡献指南
 
-见 <https://zotero-zh.netlify.app/about/contributing/CONTRIBUTING.html>
+见 <https://zotero-chinese.com/about/contributing/CONTRIBUTING.html>
 
 ## 致谢
 

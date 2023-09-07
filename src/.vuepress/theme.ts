@@ -3,11 +3,11 @@ import { zhNavbar } from "./navbar";
 import { zhSidebar } from "./sidebar";
 
 export default hopeTheme({
-  // hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://zotero-chinese.com",
 
   author: {
     name: "Zotero Chinese",
-    url: "https://zotero-chinese.github.io",
+    url: "https://github.com/zotero-chinese",
   },
 
   iconAssets: "iconfont",
