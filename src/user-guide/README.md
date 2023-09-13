@@ -10,9 +10,9 @@ updated: 2023-07-20 16:51:54
 
 在 Zotero 使用过程中遇到问题，先上 Zotero 百科全书搜索一下！
 
-本文档由 [Zotero CN](https://github.com/zotero-cn) 团队维护。有任何问题，欢迎在文档下方留言！
+本文档由 [Zotero Chinese](https://github.com/zotero-chinese) 团队维护。有任何问题，欢迎在文档下方留言！
 
-本文档中转地址：[https://zotero-cn.github.io/zotero/](https://zotero-cn.github.io/zotero/)
+本文档地址：[https://zotero-chinese.com/](https://zotero-chinese.com/)
 
 :::
 
@@ -29,15 +29,15 @@ updated: 2023-07-20 16:51:54
 ## ⭐️ 常用文档和链接
 
 - Zotero 官方
-  - Zotero 官网：[Zotero官网](https://www.zotero.org/)
-  - Zotero 官方手册：[Zotero官方手册](https://www.zotero.org/support/)
-  - Zotero 论坛：[Zotero论坛](https://forums.zotero.org/discussions)
+  - [Zotero 官网](https://www.zotero.org/)
+  - [Zotero 官方手册](https://www.zotero.org/support/)
+  - [Zotero 论坛](https://forums.zotero.org/discussions)
 - Zotero 资源
-  - Zotero 常用插件下载国内镜像：[中文插件商店](https://plugins.zotero-chinese.com/#/)
-  - CSL 中文样式文件：[中文CSL样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
+  - [Zotero 常用插件下载国内镜像](https://plugins.zotero-chinese.com/#/)
+  - [中文 CSL 样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
 - Zotero 开发者
-  - Zotero 插件开发者中文文档：[Zotero 插件开发中文文档](https://zotero.yuque.com/books/share/8d230829-6004-4934-b4c6-685a7001bfa0?view=doc_embed)
-  - CSL 中文文档：，[https://zotero.yuque.com/books/share/78e75bbf-3ea4-421a-a258-880dab008abf?#](https://zotero.yuque.com/books/share/78e75bbf-3ea4-421a-a258-880dab008abf?#) 《CSL 中文文档》
+  - [Zotero 插件开发中文文档](https://zotero.yuque.com/books/share/8d230829-6004-4934-b4c6-685a7001bfa0?view=doc_embed)
+  - [CSL 中文文档](../csl-dev-guide/README.md)
 - 更多 Zotero 相关文档
   - Zotero Better Notes 笔记插件中文文档：[Zotero Better Notes：基于知识的笔记插件](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60?view=doc_embed)
 
