@@ -29,12 +29,12 @@ updated: 2023-07-20 16:51:54
 ## ⭐️ 常用文档和链接
 
 - Zotero 官方
-  - Zotero 官网：
-  - Zotero 官方手册：
-  - Zotero 论坛：
+  - Zotero 官网：[Zotero官网](https://www.zotero.org/)
+  - Zotero 官方手册：[Zotero官方手册](https://www.zotero.org/support/)
+  - Zotero 论坛：[Zotero论坛](https://forums.zotero.org/discussions)
 - Zotero 资源
-  - Zotero 常用插件下载国内镜像：
-  - CSL 中文样式文件：
+  - Zotero 常用插件下载国内镜像：[中文插件商店](https://plugins.zotero-chinese.com/#/)
+  - CSL 中文样式文件：[中文CSL样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
 - Zotero 开发者
   - Zotero 插件开发者中文文档：[Zotero 插件开发中文文档](https://zotero.yuque.com/books/share/8d230829-6004-4934-b4c6-685a7001bfa0?view=doc_embed)
   - CSL 中文文档：，[https://zotero.yuque.com/books/share/78e75bbf-3ea4-421a-a258-880dab008abf?#](https://zotero.yuque.com/books/share/78e75bbf-3ea4-421a-a258-880dab008abf?#) 《CSL 中文文档》
