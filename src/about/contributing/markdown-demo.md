@@ -233,7 +233,7 @@ updated: 2023-07-21 18:15:30
 
 缩进代码:
 
-```
+```plain
 // Some comments
 line 1 of code
 line 2 of code
