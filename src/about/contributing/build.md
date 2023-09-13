@@ -32,19 +32,19 @@ updated: 2023-07-21 17:20:22
 
 @tab Fedora
 
-```
+```bash
 sudo dnf install git
 ```
 
 @tab Ubuntu/Debian
 
-```
+```bash
 sudo apt install git
 ```
 
 @tab macOS
 
-```
+```bash
 brew install git
 ```
 
@@ -58,7 +58,7 @@ brew install git
 
 （将 "zotero-user" 和 "<zotero-user@gmail. com>" 替换成个人对应的信息）:
 
-```
+```bash
 # 设置用户姓名和邮箱
 $ git config --global user.name "zotero-user"
 $ git config --global user.email "zotero-user@gmail.com"
@@ -204,7 +204,7 @@ npm install
 
 1. 推送 pr-workflow 分支至个人 GitHub 帐号下的复制仓库:
 
-   ```
+   ```bash
    git push origin pr-workflow
    ```
 
@@ -230,7 +230,7 @@ npm install
 
    更新本地和个人 GitHub 中的 main 分支:
 
-   ```
+   ```bash
    # 切换回本地 main 分支
    $ git checkout main
 
@@ -243,7 +243,7 @@ npm install
 
    删除本地和个人 GitHub 中的 pr-workflow 分支:
 
-   ```
+   ```bash
    # 删除本地 pr-workflow 分支
    $ git branch -D pr-workflow
 
