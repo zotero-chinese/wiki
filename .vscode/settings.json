@@ -25,10 +25,14 @@
     // custom begin
     "node_modules": true,
     // "**/.*": true,
-    // ".github": true,
+    ".github": true,
+    ".gitignore": true,
     // "**/.vuepress": true,
     // ".vscode": true,
-    // ".markdownlint.json": true,
-    "package-lock.json": true
+    ".markdownlint.json": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "CODE_OF_CONDUCT.md": true,
+    "LICENSE": true
   }
 }
