@@ -31,7 +31,7 @@
     // "**/.vuepress": true,
     // ".vscode": true,
     ".markdownlint.json": true,
-    "package.json": true,
+    // "package.json": true,
     "package-lock.json": true,
     "CODE_OF_CONDUCT.md": true,
     "LICENSE": true
@@ -44,5 +44,6 @@
     "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.tabSize": 2
-  }
+  },
+  "prettier.configPath": "package.json",
 }
