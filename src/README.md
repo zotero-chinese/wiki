@@ -108,7 +108,7 @@ highlights:
       - title: QQ 群
         icon: group
         details: 加入群聊，独学而无友，则孤陋而寡闻。
-        link: #
+        link: /
 
       # - title: 更多
       #   icon: more

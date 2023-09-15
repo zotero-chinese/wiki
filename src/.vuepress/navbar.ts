@@ -1,6 +1,20 @@
+/*
+ * @Descripttion: your project
+ * @version: 1.0
+ * @Author: ShareStuff
+ * @Date: 2023-09-15 11:09:45
+ * @LastEditors: isharestuff
+ * @LastEditTime: 2023-09-15 11:12:29
+ */
 import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
+  "/",
+  {
+    text: "最新公告",
+    icon: "article",
+    link: "/public/readme.md",
+  },
   { text: "首页", icon: "home", link: "/" },
   { text: "Zotero 百科全书", icon: "article", link: "/user-guide/" },
   {
