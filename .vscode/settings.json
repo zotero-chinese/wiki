@@ -13,6 +13,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
+  "editor.tabSize": 2,
   "explorer.sortOrder": "mixed",
   "explorer.excludeGitIgnore": false,
   "files.exclude": {
@@ -35,5 +36,13 @@
     "CODE_OF_CONDUCT.md": true,
     "LICENSE": true
   },
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  }
 }
