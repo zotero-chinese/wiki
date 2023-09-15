@@ -15,7 +15,7 @@ updated: 2023-07-28 10:38:12
 - GitHub Release：[https://github.com/windingwind/zotero-better-notes/releases](https://github.com/windingwind/zotero-better-notes)
 - 国内镜像：<https://zotero-chinese.gitee.io/zotero-plugins/>
 
-![5d8e6c1e044db2d270d895c386b20fea.png](../../../_resources/6633a5f8c3b54ca386551486e98caed7.png)
+![5d8e6c1e044db2d270d895c386b20fea.png](../../../src/assets/index-bnnote.png)
 
 Zotero Better Notes是由@windingwind 开发的，用于文献管理软件Zotero的笔记插件。它完全开源、免费，支持双链笔记，支持markdown与标记语言，深度集成了文献管理与阅读功能。
 

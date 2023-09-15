@@ -34,5 +34,6 @@
     "package-lock.json": true,
     "CODE_OF_CONDUCT.md": true,
     "LICENSE": true
-  }
+  },
+  "editor.detectIndentation": false
 }
