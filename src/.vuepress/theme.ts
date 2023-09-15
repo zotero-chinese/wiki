@@ -1,7 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { zhNavbar } from "./navbar";
 import { zhSidebar } from "./sidebar";
-import { bulletin } from "./bulletin";
 
 export default hopeTheme({
   hostname: "https://zotero-chinese.com",
