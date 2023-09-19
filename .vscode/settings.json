@@ -13,7 +13,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
-  "explorer.sortOrder": "mixed",
+  // "explorer.sortOrder": "mixed",
   "explorer.excludeGitIgnore": false,
   "files.exclude": {
     "**/.git": true,
