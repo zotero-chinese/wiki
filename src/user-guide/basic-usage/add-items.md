@@ -1,5 +1,6 @@
 ---
 title: 添加条目
+icon: add
 date: 2023-06-28 21:14:03
 updated: 2023-07-28 10:38:12
 ---
@@ -40,7 +41,7 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 
 ::: tip
 
-使用这种方法需要确保以安装浏览器插件 Zotero Connector。如未安装，请参考：[Zotero 下载与安装](./01-安装.md) 。
+使用这种方法需要确保以安装浏览器插件 Zotero Connector。如未安装，请参考：[Zotero 下载与安装](install.md) 。
 
 :::
 
@@ -63,7 +64,7 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 Connector 抓取中文文献能力依靠中文 Translator 支持，更新中文 Translator 请参考：
 
 - [中文文献增强：茉莉花插件](https://zotero.yuque.com/staff-gkhviy/zotero/jasminum?view=doc_embed&inner=BlFh2)
-- 如果茉莉花插件更新 translator 失败，可以尝试[手动更新 translator](../06-常见问题/如何手动更新translator.md).
+- 如果茉莉花插件更新 translator 失败，可以尝试[手动更新 translator](../faqs/如何手动更新translator.md).
 
 Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 抓取时不能自动下载 PDF / 无法自动给添加的 PDF 附件创建条目](https://zotero.yuque.com/staff-gkhviy/zotero/mribmi?view=doc_embed)
 
