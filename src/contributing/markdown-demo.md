@@ -164,23 +164,23 @@ updated: 2023-07-21 18:15:30
 
 ## 链接
 
-[相对路径访问主页](../../README.md)
+[相对路径访问主页](../README.md)
 
-[相对路径访问贡献指南](README.md)
+[相对路径访问贡献指南](./contributing.md)
 
 ```md
-[相对路径访问主页](../../README.md)
+[相对路径访问主页](../README.md)
 
-[相对路径访问贡献指南](./CONTRIBUTING.md)
+[相对路径访问贡献指南](./contributing.md)
 
 ```
 
 ## 图片
 
-![Logo](../../.vuepress/public/assets/icon/chrome-192.png)
+![Logo](../.vuepress/public/assets/icon/chrome-192.png)
 
 ```md
-![Logo](../../.vuepress/public/assets/icon/chrome-192.png)
+![Logo](../.vuepress/public/assets/icon/chrome-192.png)
 ```
 
 ## Emoji
