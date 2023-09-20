@@ -18,7 +18,7 @@ updated: 2023-09-19 23:23:59
 
 ### 如何安装 Zotero?
 
-阅读 [安装 Zotero](./basic-usage/install.md)
+阅读 [安装 Zotero](install.md)
 
 ### 如何打开 Zotero?
 

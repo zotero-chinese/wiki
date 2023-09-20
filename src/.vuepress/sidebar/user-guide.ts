@@ -7,14 +7,14 @@ export const userGuide = arraySidebar([
   {
     text: "基础使用",
     icon: "module",
-    prefix: "basic-usage",
+    // prefix: "basic-usage",
     collapsible: true,
     children: ["install", "add-items", "organize-library", "take-notes"],
   },
   {
     text: "创建参考文献",
     icon: "code",
-    prefix: "generate-bibliography",
+    // prefix: "generate-bibliography",
     collapsible: true,
     children: [
       "create-bibliographies-within-zotero",
@@ -25,9 +25,9 @@ export const userGuide = arraySidebar([
   {
     text: "同步、协作与备份",
     icon: "language",
-    prefix: "sync-collaboration-backup",
+    // prefix: "sync-collaboration-backup",
     collapsible: true,
-    children: ["data-file-sync", "group", "backup"],
+    children: ["sync", "group", "backup"],
   },
   {
     text: "插件",
