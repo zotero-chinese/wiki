@@ -18,20 +18,20 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 |                        图标                         |   类型   |
 | :-------------------------------------------------: | :------: |
 |                                                     |   默认   |
-| ![webpage](../../assets/icon-connector-webpage.png) | 普通网页 |
-| ![journal](../../assets/icon-connector-journal.png) | 期刊文章 |
-|     ![会议论文](../../assets/icon-会议论文.png)     | 会议论文 |
-|  ![thesis](../../assets/icon-connector-thesis.png)  | 学位论文 |
-|         ![书籍](../../assets/icon-书籍.png)         |   图书   |
-|  ![folder](../../assets/icon-connector-folder.png)  | 多个项目 |
+| ![webpage](../assets/icon-connector-webpage.png) | 普通网页 |
+| ![journal](../assets/icon-connector-journal.png) | 期刊文章 |
+|     ![会议论文](../assets/icon-会议论文.png)     | 会议论文 |
+|  ![thesis](../assets/icon-connector-thesis.png)  | 学位论文 |
+|         ![书籍](../assets/icon-书籍.png)         |   图书   |
+|  ![folder](../assets/icon-connector-folder.png)  | 多个项目 |
 
 ### 附件 Attachments
 
 附件，通常是文件，例如论文的全文 PDF、支持材料等。常见的附件包括：
 
-- PDF 附件 ![icon-pdf.png](../../assets/icon-pdf.png)
-- 笔记附件 ![icon-笔记附件.png](../../assets/icon-笔记附件.png)
-- 网页快照 ![icon-网页快照.png](../../assets/icon-网页快照.png)
+- PDF 附件 ![icon-pdf.png](../assets/icon-pdf.png)
+- 笔记附件 ![icon-笔记附件.png](../assets/icon-笔记附件.png)
+- 网页快照 ![icon-网页快照.png](../assets/icon-网页快照.png)
 
 附件既可以作为独立项添加，也可以作为常规 Zotero 条目的子项添加。一般来说，文件当做条目的子项添加。当一篇文献只有附件而没有条目的时候是不能被成功引用的，而一篇文献有条目信息而没有附件时，并不影响正常的引用。
 
@@ -49,22 +49,22 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 
 当所在的网页呈现出不同的内容类型时，Zotero Connector 会显示不同的图标（各种类别的图标见 [#条目-item](#条目-item)）。例如，如果打开的是一篇期刊文章，那么图标就会变成下图（红框圈出）。
 
-![从浏览器导入条目](../../assets/image-从浏览器导入条目.png)
+![从浏览器导入条目](../assets/image-从浏览器导入条目.png)
 
 点击该图标，将在网页右上角显示如下的对话框，选择保存的合集位置，添加标签，即可将网页对应的文献的元数据录入 Zotero ：
 
-![从浏览器添加条目-对话框](../../assets/image-从浏览器添加条目-对话框.png)
+![从浏览器添加条目-对话框](../assets/image-从浏览器添加条目-对话框.png)
 
 此时打开 Zotero，将会自动定位到保存时选择的合集：
 
-![添加条目后信息窗格](../../assets/image-添加条目后信息窗格.png)
+![添加条目后信息窗格](../assets/image-添加条目后信息窗格.png)
 
 ::: tip
 
 Connector 抓取中文文献能力依靠中文 Translator 支持，更新中文 Translator 请参考：
 
 - [中文文献增强：茉莉花插件](https://zotero.yuque.com/staff-gkhviy/zotero/jasminum?view=doc_embed&inner=BlFh2)
-- 如果茉莉花插件更新 translator 失败，可以尝试[手动更新 translator](../faqs/如何手动更新translator.md).
+- 如果茉莉花插件更新 translator 失败，可以尝试[手动更新 translator](./faqs/如何手动更新translator.md).
 
 Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 抓取时不能自动下载 PDF / 无法自动给添加的 PDF 附件创建条目](https://zotero.yuque.com/staff-gkhviy/zotero/mribmi?view=doc_embed)
 
@@ -76,11 +76,11 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 如果已知文献的 ISBN、DOI、PMID 或 arXiv ID 等标识符， 则可以通过这些标识符将文献导入到 Zotero 中。
 
-在 Zotero 中，点击![通过标识符添加条目图标](../../assets/icon-通过标识符添加条目.png)， 输入标识符，如 DOI: 10.1016/j.cej.2020.125798，然后回车，则对应的文献就会被导入到库中。
+在 Zotero 中，点击![通过标识符添加条目图标](../assets/icon-通过标识符添加条目.png)， 输入标识符，如 DOI: 10.1016/j.cej.2020.125798，然后回车，则对应的文献就会被导入到库中。
 
 如果要一次输入多个标识符，在输入第一个标识符后按 Shift + Enter 会进入多行模式，随后输入其余标识符（每行一个），并通过 Enter 换行。输入完成后，再按 Shift + Enter 即可一次导入所有项目。
 
-![使用标识符导入条目](../../assets/image-使用标识符导入条目.png)
+![使用标识符导入条目](../assets/image-使用标识符导入条目.png)
 
 ### 通过附件添加条目（推荐）
 
@@ -92,7 +92,7 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 当以上方法无效或想要创建一个自定义元数据的条目（例如，在线上无法找到的源）时，点击下图红框图标，即可手动录入一个条目。
 
-![新建条目](../../assets/image-新建条目.png)
+![新建条目](../assets/image-新建条目.png)
 
 ### 从其他工具导入
 
@@ -116,7 +116,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 如下图所示，在中心窗格中选择一个条目后，右侧（标准视图）或下侧（堆栈视图）会显示该条目的书目信息。多数条目都可以直接单击进行编辑，更改自动保存。
 
-![添加条目后信息窗格](../../assets/image-添加条目后信息窗格.png)
+![添加条目后信息窗格](../assets/image-添加条目后信息窗格.png)
 
 以下是一些比较特殊的字段，拿出来单独介绍：
 
@@ -177,7 +177,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 ## 添加附件
 
-- 存储的附件![icon-pdf.png](../../assets/icon-pdf.png)：默认情况下，存储文件存储在 Zotero 数据目录中，Zotero 会自动管理它们，包括在 Zotero 中删除附件项时删除它们。如果使用文件同步功能，Zotero 会自动在设备之间同步存储的附件，并将它们储存在官方网盘（或 WebDAV 网盘）中。
-- 链接的附件![icon-链接的附件.png](../../assets/icon-链接的附件.png)：对于链接文件，Zotero 只存储指向计算机上原始文件位置的链接。链接文件不会同步，如果附件项在 Zotero 中被删除，链接文件也不会被删除，zotero 程序也不支持链接文件的同步。（可以简单理解为链接的文件在 zotero 中作用类似于 Windows 的快捷方式）
+- 存储的附件![icon-pdf.png](../assets/icon-pdf.png)：默认情况下，存储文件存储在 Zotero 数据目录中，Zotero 会自动管理它们，包括在 Zotero 中删除附件项时删除它们。如果使用文件同步功能，Zotero 会自动在设备之间同步存储的附件，并将它们储存在官方网盘（或 WebDAV 网盘）中。
+- 链接的附件![icon-链接的附件.png](../assets/icon-链接的附件.png)：对于链接文件，Zotero 只存储指向计算机上原始文件位置的链接。链接文件不会同步，如果附件项在 Zotero 中被删除，链接文件也不会被删除，zotero 程序也不支持链接文件的同步。（可以简单理解为链接的文件在 zotero 中作用类似于 Windows 的快捷方式）
 
-![添加附件](../../assets/image-添加附件.png)
+![添加附件](../assets/image-添加附件.png)
