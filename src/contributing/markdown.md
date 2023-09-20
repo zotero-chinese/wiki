@@ -50,4 +50,4 @@ title: 页面的标题
 
 ## Markdown 内容语法
 
-查看 [Markdown 语法预览](./markdown-demo.md)
+查看 [Markdown 语法预览](markdown-demo.md)

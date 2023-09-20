@@ -168,7 +168,7 @@ npm install
 
 3. 在新建分支中对文档做修改，修改过程中，可以随时在浏览器中检查修改效果
 
-   使用 Markdown 语法编写文档，如果你不清楚本文档所用的 Markdown 语法，请参阅 [Markdown 语法](./markdown.md)。
+   使用 Markdown 语法编写文档，如果你不清楚本文档所用的 Markdown 语法，请参阅 [Markdown 语法](markdown.md)。
 
 4. 提交 commit
 

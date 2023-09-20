@@ -40,7 +40,7 @@ export const zhNavbar = navbar([
           {
             text: "贡献指南",
             icon: "creative",
-            link: "/about/contributing/CONTRIBUTING.md",
+            link: "/contributing/",
           },
           {
             text: "关于 Zotero 中文小组",
