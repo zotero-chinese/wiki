@@ -12,7 +12,7 @@ updated: 2023-07-20 16:51:54
 
 请在 [Zotero 官网 (https://zotero.org)](https://zotero.org) 下载对应自己操作系统的安装包。
 
-![image.png](../../assets/image-下载Zotero.png)
+![image.png](../assets/image-下载Zotero.png)
 
 ## 浏览器插件 Zotero Connector
 
@@ -34,9 +34,9 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 :::
 
-下载安装完毕后，在浏览器右上角可看到插件图标（![icon-connector-document.png](../../assets/icon-connector-document.png)或![image.png](../../assets/icon-connertor-zotero.png)）。此时，浏览器插件已经安装成功了。
+下载安装完毕后，在浏览器右上角可看到插件图标（![icon-connector-document.png](../assets/icon-connector-document.png)或![image.png](../assets/icon-connertor-zotero.png)）。此时，浏览器插件已经安装成功了。
 
-当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document.png](../../assets/icon-connector-document.png)，![image.png](../../assets/icon-connertor-zotero.png)或![image.png](../../assets/icon-connertor-zotero.png)等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](https://zotero.yuque.com/staff-gkhviy/zotero/lx3yts?view=doc_embed) 小节中展开。
+当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document.png](../assets/icon-connector-document.png)，![image.png](../assets/icon-connertor-zotero.png)或![image.png](../assets/icon-connertor-zotero.png)等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](https://zotero.yuque.com/staff-gkhviy/zotero/lx3yts?view=doc_embed) 小节中展开。
 
 ## 其他平台客户端
 
