@@ -39,11 +39,11 @@ Zotero 中文文档接受多种形式的贡献，请阅读这一份指南，以�
 
 若只是对文档做简单的微调，比如修改简单的别字、语句不通或不清晰的描述等，可以直接通过 GitHub 在线修改并提交，参阅后文 [简单修改](#简单修改)。
 
-若需要对文档做大量修改，可在经过讨论后，选择 [线下修改](./build.md)。
+若需要对文档做大量修改，可在经过讨论后，选择 [线下修改](build.md)。
 
 :::note
 
-若不熟悉 Markdown 标记语言，可以参考 [Markdown 语法指南](./markdown.md)。
+若不熟悉 Markdown 标记语言，可以参考 [Markdown 语法指南](markdown.md)。
 
 :::
 
@@ -61,7 +61,7 @@ Zotero 中文文档接受多种形式的贡献，请阅读这一份指南，以�
 
    如果提示需要 fork 才能继续则点击即可。
 
-   编辑需要修改的地方，Markdown 语法请参阅 [Markdown 语法](./markdown-demo.md)。
+   编辑需要修改的地方，Markdown 语法请参阅 [Markdown 语法](markdown-demo.md)。
 
 2. 提交修改
 
@@ -79,7 +79,7 @@ Zotero 中文文档接受多种形式的贡献，请阅读这一份指南，以�
 
 ### 稍微大量修改
 
-请参考 [使用 vscode.dev 指南](./vscode-dev.md)
+请参考 [使用 vscode.dev 指南](vscode-dev.md)
 
 ### 大量修改
 

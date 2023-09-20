@@ -30,7 +30,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       footer:
-        "Zotero 中文小组 | <a href='/about/contributing/CONTRIBUTING.html'>贡献指南</a> | <a href='/'>参与讨论</a> | <a href='/'>加入 QQ 群组</a>",
+        "Zotero 中文小组 | <a href='/contributing/'>贡献指南</a> | <a href='/'>参与讨论</a> | <a href='/'>加入 QQ 群组</a>",
 
       displayFooter: true,
 
@@ -89,6 +89,10 @@ export default hopeTheme({
       // vPre: true,
       // vuePlayground: true,
     },
+
+    // autoCatalog: {
+    //   orderGetter: (page) => {return page.routeMeta}
+    // },
 
     // uncomment these if you want a pwa
     // pwa: {

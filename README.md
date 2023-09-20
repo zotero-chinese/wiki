@@ -12,7 +12,7 @@
 
 ## 贡献指南
 
-见 <https://zotero-chinese.com/about/contributing/CONTRIBUTING.html>
+见 <https://zotero-chinese.com/contributing/>
 
 ## 致谢
 
