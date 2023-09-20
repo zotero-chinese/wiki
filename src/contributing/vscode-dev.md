@@ -1,3 +1,7 @@
+---
+icon: build
+---
+
 # 通过 VSCode.dev 网站在线更改本文档
 
 1. 打开 <https://vscode.dev/github/zotero-chinese/wiki>
