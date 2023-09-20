@@ -106,9 +106,9 @@ GitHub 相关资料：
 
    点击项目主页 < <https://github.com/zotero-chinese/wiki/> 右上角的 Fork 按钮，将该项目复刻到个人 GitHub 账户下。
 
-   ![复刻仓库](../../assets/image-fork-repo-1.png)
+   ![复刻仓库](../assets/image-fork-repo-1.png)
 
-   ![复刻仓库2](../../assets/image-fork-repo-2-1.png)
+   ![复刻仓库2](../assets/image-fork-repo-2-1.png)
 
    复制完成后，个人 GitHub 帐号下便有了 <https://github.com/zotero-user/wiki/> 仓库。
 
@@ -164,7 +164,7 @@ npm install
 
    开发服务器会监听所有 `.md` 文件的修改，当有文件发生保存是，服务器会自动更新预览并刷新网页。
 
-   ![开发服务器](../../assets/image-build-dev-server-1.png)
+   ![开发服务器](../assets/image-build-dev-server-1.png)
 
 3. 在新建分支中对文档做修改，修改过程中，可以随时在浏览器中检查修改效果
 
