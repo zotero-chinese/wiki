@@ -1,7 +1,6 @@
 ---
 title: 贡献指南
 icon: build
-order: 1
 date: 2023-07-20 23:05:53
 updated: 2023-07-21 11:56:02
 ---
