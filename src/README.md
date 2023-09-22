@@ -103,7 +103,7 @@ highlights:
       - title: 贡献者指南
         icon: like
         details: 查看如何为项目做出贡献。
-        link: /about/contributing/CONTRIBUTING.html
+        link: /contributing/
 
       - title: QQ 群
         icon: group
