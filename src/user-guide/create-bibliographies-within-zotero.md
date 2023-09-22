@@ -13,7 +13,7 @@ Zotero 提供了直接导出参考文献表的方法：
 
 ## 拖拽直接生成引注或参考文献表
 
-<img src="https://cdn.nlark.com/yuque/0/2022/gif/2804696/1667113643722-a24af191-d004-4013-bd75-8cf016ddf31f.gif" width="2880" id="u616f41ee" class="ne-image">
+![拖拽生成引注](https://cdn.nlark.com/yuque/0/2022/gif/2804696/1667113643722-a24af191-d004-4013-bd75-8cf016ddf31f.gif)
 
 如果只是想用文章快速生成参考文献，不想使用 Word 插件，可以使用直接生成参考文献表功能。
 
