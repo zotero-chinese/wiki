@@ -17,9 +17,10 @@ export const userGuide = arraySidebar([
     // prefix: "generate-bibliography",
     collapsible: true,
     children: [
+      "citation-styles",
       "create-bibliographies-within-zotero",
       "ms-word-plugin",
-      "citation-styles",
+      "wps-plugin",
     ],
   },
   {
