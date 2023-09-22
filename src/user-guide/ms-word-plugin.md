@@ -7,7 +7,7 @@ updated: 2023-07-21 19:01:31
 
 这些是使用 Zotero for MS Office Word 插件的说明。
 
-要在 WPS 中使用插件，请参见 [【引文|插件】在 WPS 中使用 Zotero Word 插件](https://zotero.yuque.com/staff-gkhviy/zotero/dh3ahi?view=doc_embed)
+要在 WPS 中使用插件，请参见 [在 WPS 中使用 Zotero Word 插件](./wps-plugin.md)。
 
 ## Zotero Word 插件选项卡
 
