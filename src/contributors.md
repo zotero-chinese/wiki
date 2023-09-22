@@ -11,3 +11,5 @@ icon: group
 需要将原语雀贡献者同步过来。
 
 :::
+
+[![contributors](https://contrib.rocks/image?repo=zotero-chinese/wiki)](https://github.com/zotero-chinese/wiki/graphs/contributors)
