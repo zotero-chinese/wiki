@@ -33,4 +33,4 @@ updated: 2023-09-14 16:51:54
 
     ![update translators](../../assets/image-connector-update-translators.png)
 
-此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤1-4正确的前提下，可重复几次步骤 5。
+此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-4 正确的前提下，可重复几次步骤 5。

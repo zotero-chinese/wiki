@@ -178,7 +178,7 @@ Zotero 还可以将 [引文和参考书目](https://www.zotero.org/support/creat
 
 同步到 Zotero 服务器的条目可以通过您的 [zotero.org](https://www.zotero.org/) 帐户在线访问。与他人共享您的图书馆或从选定的条目创建自定义简历。
 
-[使用My Publications](https://www.zotero.org/support/my_publications) 为读者、公众和其他研究人员在 [zotero.org](https://www.zotero.org/) 上随时提供您的研究副本。
+[使用 My Publications](https://www.zotero.org/support/my_publications) 为读者、公众和其他研究人员在 [zotero.org](https://www.zotero.org/) 上随时提供您的研究副本。
 
 ### 团队
 
