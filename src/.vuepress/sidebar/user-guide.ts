@@ -21,6 +21,7 @@ export const userGuide = arraySidebar([
       "create-bibliographies-within-zotero",
       "ms-word-plugin",
       "wps-plugin",
+      "creat-bibliographies-via-zotero-bib",
     ],
   },
   {
@@ -28,7 +29,7 @@ export const userGuide = arraySidebar([
     icon: "language",
     // prefix: "sync-collaboration-backup",
     collapsible: true,
-    children: ["sync", "group", "backup"],
+    children: ["sync", "sync-via-webdav", "group", "backup"],
   },
   {
     text: "插件",
