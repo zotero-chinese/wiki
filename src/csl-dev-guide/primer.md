@@ -7,23 +7,17 @@ updated: 2023-07-22 20:42:39
 
 # CSL 介绍
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
-
-### 前言
+## 前言
 
 `CSL` 是一种基于 `XML` 的开放 (开源) 语言，用来描述引用和参考文献的格式。对 `CSL` 更加技术和详细的描述见 [CSL 规范](specification.md)。
 
-### CSL 是什么
+## CSL 是什么
 
 如果你写过论文的话，你可能在其中引用了别人的论文。参考文献在学术交流中很重要，因为它可以提供引用的来源，并且可以把已经发表的研究联系到一起。但是，手动设置引用格式和参考文献目录非常耗时，而且不同的期刊有自己的引用格式。
 
 参考文献管理软件可以解决上面的问题。像 Zotero、Mendeley、Papers 等软件不仅能帮助你管理参考文献，而且可以自动地生成引用的参考文献目录。为了设置特定的引用格式，这些软件需要能识别的对引用格式的描述，这种描述就是 Citation Style Language（CSL）。
 
 ## 引文格式
-
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
 
 引文格式有很多很多种，我们最常用的就是国标（信息与文献 参考文献著录规则），最新的国标代号是 `(GB/T 7714-2015)`。大多数的引用格式都属于几个基本类别，如下：
 
@@ -33,72 +27,79 @@ updated: 2023-07-22 20:42:39
 
 在 `CSL` 中，每个单独的 `pointer` 称为一个引用。例如，引文 `“(Doe et al. 2002, Smith 1997)”` 包含两个引用：一个是 `Doe et al.` 在 2002 年发表的文献，另外一个是 `Smith`1997 年发表的文献。
 
-#### “author-date” 和 “author” 格式
+#### `author-date` 和 `author` 格式
 
 `author-date` 引用格式会显示作者的名字和发表的日期，比如：`(Van der Klei et al. 1991; Zwart et al. 1983)`。`author` 只显示作者名字，例如：`(Gidijala et al.)`。参考文献条目一般使用字母表顺序对作者进行排序。
 
 应该注意的是，许多引用格式使用了令人疑惑的 `Harvard` 术语来指代 `author-date` 格式，但是大多数这些格式与哈佛大学并没有关系。而且也并不存在一个官方的 `Harvard` 格式。
 
-**参考文献条目实例**
+::: note 参考文献条目实例
 
-> Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
->
-> van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
->
-> Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
+Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
 
-#### “numeric”格式
+van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+
+Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
+
+:::
+
+#### `numeric` 格式
 
 `numeric` 格式由数字组成，比如 `[1,2]` 和 `[3]`。参考文献条目一般使用作者首字母排序或者使用第一次在正文中的引用顺序排序。国标就是一种典型的 `numeric` 格式。
 
-**参考文献条目实例**
+::: note 参考文献条目实例
 
->1. Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
+1. Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
 
->2. Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
+2. Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
 
->3. van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+3. van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
 
-#### "numeric" 复合格式
+:::
+
+#### `numeric` 复合格式
 
 复合格式是 `numeric` 格式的变体。这种风格在化学领域很流行。`CSL` 中暂时不支持这种格式，这里也不多作介绍。
 
-**参考文献条目实例**
+::: note 参考文献条目实例
 
->1. Gidijala L, et al. (2008) BMC Biotechnol 8: 29.
+1. Gidijala L, et al. (2008) BMC Biotechnol 8: 29.
 
->2. a) Zwart KB, et al. (1983) Antonie van Leeuwenhoek 49: 369-385, b) van der Klei IJ, et al. (1991) Arch Microbiol 156: 15-23.
+2. a) Zwart KB, et al. (1983) Antonie van Leeuwenhoek 49: 369-385, b) van der Klei IJ, et al. (1991) Arch Microbiol 156: 15-23.
+
+:::
 
 #### 标签格式
 
-这种引用格式由 `keys` 构成，例 `GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。`CSL` 对这种格式支持有限，这里也不多作介绍。
+这种引用格式由 `keys` 构成，例 `[GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。`CSL` 对这种格式支持有限，这里也不多作介绍。
 
-**参考文献条目实例**
+::: note 参考文献条目实例
 
-> [GBKv2008] Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
->
-> [vaHV1991] van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
->
-> [ZwVH1983] Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
+\[GBKv2008] Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
+
+\[vaHV1991] van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+
+\[ZwVH1983] Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
+
+:::
 
 ### Note Styles
 
 引用格式的第二类为 `Note` 格式。引用中的 `marker` 可以是数字或者符号，例如 `[*]` 或者 `[†]`。每个 `marker` 指向脚注或者尾注。`CSL` 不能设置使用哪些数字或者符号用于 `marker`，这些应该用字处理软件 (比如 `word`) 设置。与上面的 `in-text` 格式不同，尾注或者脚注通常显示的信息更多。
 
-**参考文献条目实例**
+::: note 参考文献条目实例
 
-> [*]  Voyage to St. Kilda’ (3rd edit. 1753), p. 37.
->
-> [†]  Sir J. E. Tennent, ‘Ceylon,’ vol. ii. 1859, p. 107.
+\[*]  Voyage to St. Kilda’ (3rd edit. 1753), p. 37.
+
+\[†]  Sir J. E. Tennent, ‘Ceylon,’ vol. ii. 1859, p. 107.
+
+:::
 
 ## CSL 生态
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
-
 要明白 `CSL` 是怎么运作的，首先要了解 `CSL` 的生态。`Style` 指的是 CSL 样式，`Item Metadata` 指的是每篇参考文献的作者，题目等信息，`Locale Files` 是为实现与语言无关（指英语，汉语等）的格式的本地化文件，`Citation Details` 指的是影响引文信息或参考文献列表表现的细节，比如顺序，位置等。
 
-![](https://docs.citationstyles.org/en/stable/_images/csl-infrastructure.png)
+![csl-infrastructure](https://docs.citationstyles.org/en/stable/_images/csl-infrastructure.png)
 
 ### 独立格式和从属格式
 
@@ -151,9 +152,6 @@ updated: 2023-07-22 20:42:39
 大多数的参考文献管理软件使用的是免费开源的 `CSL` 处理器，比如：`citeproc-js`。
 
 ## 理解 CSL 格式
-
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
 
 到现在为止，我们已经知道什么是 `CSL`、怎么使用它、以及它怎么运作的。接下来我们将深入到 `CSL` 文件内部，分析它的 `XML` 代码。`XML基础.md` 文件中简单介绍了 `XML`，看完后可以读懂并编辑简单的 `XML` 文件。如果想更多的了解 `XML`，可以在网上查找 `XML` 教程。
 
@@ -444,7 +442,7 @@ updated: 2023-07-22 20:42:39
 
 **注：**以下为了方便描述，将对应的 `macro` 元素直接以 `name` 指代，例：`name` 为 `author` 的 `macro` 元素直接称为 `author` 元素。
 
-``author` 元素的 `name`的属性指定了名称，`variable`属性保存了具体的作者值，`initialize-with` 表明作者值为首字母缩写，每个首字母后面为 `.`。
+`author` 元素的 `name`的属性指定了名称，`variable`属性保存了具体的作者值，`initialize-with` 表明作者值为首字母缩写，每个首字母后面为 `.`。
 
 `issued-year` 元素以分支语句开始，分支语句以 `choose` 元素定义，其中包含 `if` 和 `else` 元素。如果参考文献有日期，则保存在 `issued` 变量中，如果 `issued-year` 元素被引用，日期的年份将被印出，否则就印出 `no date`。
 
