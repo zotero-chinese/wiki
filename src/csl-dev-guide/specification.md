@@ -7,9 +7,6 @@ updated: 2023-07-22 20:49:04
 
 # CSL 1.0.2 规范
 
-> [!DONE]
-> 此页面于 2022-8-2 已校对完成。
-
 主要作者：[Rintze M. Zelle， PhD](https://twitter.com/rintzezelle)、 [Brenton M. Wiernik](https://twitter.com/bmwiernik)、Frank G. Bennett， Jr.、 Bruce D’Arcus、Denis Maier
 
 其他贡献者：Julien Gonzalez、Sebastian Karcher、Sylvester Keil、Cormac Relf、Lars Willighagen  and other CSL contributors.
@@ -18,7 +15,7 @@ updated: 2023-07-22 20:49:04
 
 此工作以 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) 授权。
 
-### 介绍
+## 介绍
 
 CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格式，用来描述引文、注释和参考文献的格式，他提供了：
 
@@ -31,7 +28,7 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 有关的其他文档，CSL 议程，样式和本地化文件详见 [CSL 项目主页](https://citationstyles.org/)。
 
-### 翻译习惯
+## 翻译习惯
 
 这里将列出一些常用的术语的译文，并不能保证翻译的准确性。为保持准确性，后文的描述中可能会在译文旁标注原文。
 
@@ -43,29 +40,31 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 | macro               | 宏         |          |
 |                     |            |          |
 
-### 术语
+## 术语
 
 关键字 MUST，MUST NOT，REQUIRED，SHALL，SHALL NOT，SHOULD，SHOULD NOT，RECOMMENDED，MAY 和 OPTIONAL 按 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述解释。
 
-> [!NOTE] 译者注：关于 IETF RFC 2119 协议
->
-> RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
->
-> RFC 2119 协议全文：<https://www.ietf.org/rfc/rfc2119.txt>
->
-> **MUST**：必须的。通过它描述的对象，是强制要求的。它与 REQUIRED 和 SHALL 含义相同。
->  
-> **MUST NOT**：不允许的。通过它描述的对象也是强制的。与 SHALL NOT 同义。
->
-> **SHOULD**：在通常情况下，应当这样。但是，特殊情况下除外。与 RECOMMENDED 同义。
->
-> **SHOULD NOT**：在通常情况下，不是这样。但是，特殊情况下除外。与 NOT RECOMMENDED 同义。
->
-> **MAY**：可选的描述对象。与 OPTIONAL 同义。
+::: note 译者注：关于 IETF RFC 2119 协议
+
+RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
+
+RFC 2119 协议全文：<<https://www.ietf.org/rfc/rfc2119.txt>
+
+**MUST**：必须的。通过它描述的对象，是强制要求的。它与 REQUIRED 和 SHALL 含义相同。
+
+**MUST NOT**：不允许的。通过它描述的对象也是强制的。与 SHALL NOT 同义。
+
+**SHOULD**：在通常情况下，应当这样。但是，特殊情况下除外。与 RECOMMENDED 同义。
+
+**SHOULD NOT**：在通常情况下，不是这样。但是，特殊情况下除外。与 NOT RECOMMENDED 同义。
+
+**MAY**：可选的描述对象。与 OPTIONAL 同义。
+
+:::
 
 ## 命名空间
 
-> [!Done] Namespacing
+> Namespacing
 
 CSL XML 命名空间 URI 是 <http://purl.org/net/xbiblio/csl>。
 
@@ -73,8 +72,12 @@ CSL XML 命名空间 URI 是 <http://purl.org/net/xbiblio/csl>。
 
 ## 空格处理
 
-> [!question] Whitespace Handling
-> 翻译有一些疑惑，请参阅原文，欢迎提出改善意见。
+::: warning
+
+Whitespace Handling
+翻译有一些疑惑，请参阅原文，欢迎提出改善意见。
+
+:::
 
 CSL styles are valid XML, but CSL processors MUST NOT normalize attribute values by trimming leading or trailing whitespace from attributes which define text that is intended for output:
 
@@ -95,8 +98,6 @@ CSL 样式是有效的 XML，但是 CSL 处理器不会（MUST NOT）通过修�
 
 ## 文件类型
 
-> [!DONE] File Types
-
 CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作为扩展名），以及 本地化文件（名字为 `locales-xx-XX.xml`，其中 `xx-XX` 表示语言以及其方言，例如 `en-US` 表示美式英语）。
 
 ### 独立样式
@@ -109,20 +110,25 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 通过将具有相同引用风格的期刊（例如 "Nature Biotechnology"，"Nature Nanotechnology"）的从属样式链接到一个单独的独立样式（例如 "Nature Journals"），从属样式就不再需要再重复一遍格式说明。
 
-> [!NOTE] 译者注
->
-> 也就是说从属样式是依赖其他样式的，被依赖的样式成为称为**父样式**。
+::: note 译者注
+
+也就是说从属样式是依赖其他样式的，被依赖的样式成为称为**父样式**。
+
+:::
 
 ### 本地化文件
 
 每个本地化文件包含一系列对某种特定的语言 / 方言的本地化数据（术语翻译，本地化日期格式以及语法选项）。
 
-> [!NOTE] 译者注
-> 本地化文件主要用于在不同的语言环境中使用样式，比如在中文环境中使用，中文对应的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
+::: note 译者注
+
+本地化文件主要用于在不同的语言环境中使用样式，比如在中文环境中使用，中文对应的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
+
+:::
 
 ## XML 声明
 
-> [!Done] XML Declaration
+> XML Declaration
 
 每个样式或者本地化文件应该以 XML 声明开头，指定具体的 XML 版本以及字符编码。多数情况下，XML 声明可以是：
 
@@ -132,40 +138,43 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ## 样式的结构
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning
+
+此节尚未校对完成
+
+:::
 
 ### 根元素 `cs:style`
 
 样式的根元素是 `cs:style`。在 [独立样式](#独立样式) 中，根元素有以下几种属性：
 
-`class`
+#### `class`
 
-:    🏳️ Default: _none_  —  决定样式的 [引文格式](#引文格式) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
+🏳️ Default: _none_  —  决定样式的 [引文格式](./primer.md#引文格式) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
 
- !!! NOTE " 译者注 "
+::: note 译者注
 
-  in-text 表示引文在文字中，note 表示引文不在文字中，可能是脚注等。
+in-text 表示引文在文字中，note 表示引文不在文字中，可能是脚注等。
 
-`default-locale`
+:::
 
-:    🏳️ Default: _none_  · Optional —  为本地化设值默认的 locale。值必须是 [locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html)。
+#### `default-locale`
 
- !!! TIP " 译者注：常用 local_code"
+🏳️ Default: _none_  · Optional —  为本地化设值默认的 locale。值必须是 [locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html)。
 
-  zh-CN：中文（中国）
+::: tip 译者注：常用 local_code
 
-  zh-hk：中文（台湾）
+zh-CN：中文（中国）
+zh-hk：中文（台湾）
+zh：中文
+en-US：
+可以参阅 [Language Strings | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/wmformat/language-strings)
 
-  zh：中文
+:::
 
-  en-US：
+#### `version`
 
-  可以参阅 [Language Strings | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/wmformat/language-strings)
-
-`version`
-
-:    🏳️ Default: _none_ ·  ⚠ Required —  样式的 CSL 版本。对于 CSL 1.0 兼容样式，必须是 `1.0`。
+🏳️ Default: _none_ ·  ⚠ Required —  样式的 CSL 版本。对于 CSL 1.0 兼容样式，必须是 `1.0`。
 
 此外，`cs:style` 可能携带任意的 [全局选项](specification.md#全局选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 。
 
@@ -184,23 +193,23 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 `cs:info`
 
-:    🏳️ Default: _none_  ·  ⚠ Required ·  ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
+🏳️ Default: _none_  ·  ⚠ Required ·  ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
 
 `cs:citation`
 
-:    🏳️ Default: _none_ ·  ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
+🏳️ Default: _none_ ·  ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
 
 `cs:bibliography`
 
-:    🏳️ Default: _none_ ·   Optional — 可能会出现一次。描述参考文献列表的格式。
+🏳️ Default: _none_ ·   Optional — 可能会出现一次。描述参考文献列表的格式。
 
 `cs:macro`
 
-:    🏳️ Default: _none_ ·   Optional — 可能出现多次。宏可以将格式指示重复使用，使样式更加的紧凑和易维护。
+🏳️ Default: _none_ ·   Optional — 可能出现多次。宏可以将格式指示重复使用，使样式更加的紧凑和易维护。
 
 `cs:locale`
 
-:    🏳️ Default: _none_ ·   Optional — 可能出现多次。用于指定或者覆盖当前的本地化数据。
+🏳️ Default: _none_ ·   Optional — 可能出现多次。用于指定或者覆盖当前的本地化数据。
 
 在 [从属样式](#从属样式) 中，`cs:style` 只有 `cs:info` 一个子元素。
 
@@ -210,45 +219,45 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ##### `cs:author` 和 `cs:contributor`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:author` 和 `cs:contributor` 分别用来致谢样式的作者和贡献者，可能被使用多次。
+🏳️ Default: _none_ ·   Optional — `cs:author` 和 `cs:contributor` 分别用来致谢样式的作者和贡献者，可能被使用多次。
 
      `cs:name`
     
-     :    🏳️ Default: _none_ ·  ⚠ Required — 作者或贡献者的姓名。
+     🏳️ Default: _none_ ·  ⚠ Required — 作者或贡献者的姓名。
     
      `cs:email` 和 `cs:uri` 
     
-     :    🏳️ Default: _none_ ·  Optional — 作者或者贡献者邮箱和 URI。
+     🏳️ Default: _none_ ·  Optional — 作者或者贡献者邮箱和 URI。
 
 ##### `cs:category`
 
-:    🏳️ Default: _none_ ·   Optional — 样式可能被分类到一个或者多个类别，`cs:category` 可能被使用一次，用来描述 in-text 引文怎么渲染。使用 `citation-format` 属性设置其为以下几种情形：
+🏳️ Default: _none_ ·   Optional — 样式可能被分类到一个或者多个类别，`cs:category` 可能被使用一次，用来描述 in-text 引文怎么渲染。使用 `citation-format` 属性设置其为以下几种情形：
 
-- "author-date" - 例如 "… (Doe, 1999)"
-- "author" - 例如 "… (Doe)"
-- "numeric" - 例如 "… [1]"
-- "label" - 例如 "… [doe99]"
-- "note" - 因为在边注或者脚注出现。
+- `author-date` - 例如 `… (Doe, 1999)`
+- `author` - 例如 `… (Doe)`
+- `numeric` - 例如 `… [1]`
+- `label` - 例如 `… [doe99]`
+- `note` - 因为在边注或者脚注出现。
 
   `cs:categroy` 也可能在携带 `field` 属性时多次使用，用来对学科进行分类（见 [附录I 学科分类](附录I 学科分类)）。
 
 ##### `cs:id`
 
-:    🏳️ Default: _none_ · ⚠ Required — 必须出现一次。该元素应该包含一个 URI 以建立样式的 `ID`，对于公开可用的样式，需要一个稳定、唯一的并可以引用的 URI。
+🏳️ Default: _none_ · ⚠ Required — 必须出现一次。该元素应该包含一个 URI 以建立样式的 `ID`，对于公开可用的样式，需要一个稳定、唯一的并可以引用的 URI。
 
 ##### `cs:issn/cs:essn/cs:issnl`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN 。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
+🏳️ Default: _none_ ·   Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN 。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
 
 ##### `cs:link`
 
-:    🏳️ Default: _none_ ·   Optional — 可以使用多次。`cs:link` 必须携带两个属性 `href` 和 `rel`。
+🏳️ Default: _none_ ·   Optional — 可以使用多次。`cs:link` 必须携带两个属性 `href` 和 `rel`。
 
     `href`
-    :    ⚠ Required — 用来设置 URI （通常情况下为 URL）
+    ⚠ Required — 用来设置 URI （通常情况下为 URL）
     
     `rel`
-    :    ⚠ Required — 表明 URI 与当前样式的关系，它的值有：
+    ⚠ Required — 表明 URI 与当前样式的关系，它的值有：
 
         - `self` - 该 URI 值为样式本身的 URI
         - `template` - 该 URI 是用来编写该样式的模板的 URI
@@ -256,27 +265,27 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ##### `cs:published`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:published` 必须是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表明样式创建的时间或者可获得的时间。
+🏳️ Default: _none_ ·   Optional — `cs:published` 必须是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表明样式创建的时间或者可获得的时间。
 
 ##### `cs:rights`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:rights` 表明了该 CSL 的 license，可能会携带 `license` 属性。
+🏳️ Default: _none_ ·   Optional — `cs:rights` 表明了该 CSL 的 license，可能会携带 `license` 属性。
 
 ##### `cs:summary`
 
-:    🏳️ Default: _none_ ·   Optional — 给出该 CSL 的简单描述。
+🏳️ Default: _none_ ·   Optional — 给出该 CSL 的简单描述。
 
 ##### `cs:title`
 
-:    🏳️ Default: _none_ · ⚠ Required — 其内容应该是该 CSL 展示给使用者的名字。
+🏳️ Default: _none_ · ⚠ Required — 其内容应该是该 CSL 展示给使用者的名字。
 
 ##### `cs:title-short`
 
-:    🏳️ Default: _none_ ·   Optional — 是上述名字的缩写，比如 `APA`
+🏳️ Default: _none_ ·   Optional — 是上述名字的缩写，比如 `APA`
 
 ##### `cs:updated`
 
-:    🏳️ Default: _none_ ·    — 内容是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表示该 CSL 的最后更新时间。
+🏳️ Default: _none_ ·    — 内容是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表示该 CSL 的最后更新时间。
 
 `cs:link`，`cs:rights`，`cs:summary`， `cs:title` 和 `cs:title-short` 元素可以携带 `xml:lang` 属性用来表示元素内容的语言（值必须是 [xsd:language locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html) 中的一个）。对于 `cs:link`，该属性可以用来表示链接目标的语言。
 
@@ -305,7 +314,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 #### Citation
 
-`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`"author"，例: [Doe]`，`"author-date"，例: [Doe 1999]`，`"label"，例: [doe99]`，`"author"，例: [Doe]` 或者 `"number"，例:[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
+`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
 
 ```xml
 <citation>
@@ -376,7 +385,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 `cs:locale` 元素的 `xml:lang` 属性是可选的，必须设置为 [xsd:language locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html) 中的一种，用来确定使用的语言环境（或方言，见 [locale fallback](locale fallback)）。
 
-对于 `cs:locale` 元素的详细使用，另见 [术语](Terms(术语))、[本地化日期格式](本地化日期格式) 和 [本地化选项](b本地化选项)。
+对于 `cs:locale` 元素的详细使用，另见 [术语](#术语)、[本地化日期格式](#本地化日期格式) 和 [本地化选项](#本地化选项)。
 
 下面是一个 `cs:locale` 元素的例子：
 
@@ -424,8 +433,11 @@ B. Locale files/本地化文件
 
 ## 本地化文件的结构
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 尽管本地化数据可以包括在 csl 文件中 (见 [Locale](#locale))，但是本地化文件可以方便的提供本地化数据的设置，包括术语，日期格式以及语法选项。
 
@@ -474,7 +486,7 @@ B. Locale files/本地化文件
 
 `cs:updates`(可选)
 
-​ `cs:updated` 元素的内容必须是一个 [时间戳](#时间戳) 来指定本地化文件最后一次更新的时间。
+​ `cs:updated` 元素的内容必须是一个 `[时间戳]` 来指定本地化文件最后一次更新的时间。
 
 ### Terms(术语)
 
@@ -554,8 +566,11 @@ B. Locale files/本地化文件
 
 ## 渲染元素
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 渲染元素指定了在引文或参考文献条目中需要包含哪些条目元数据，以及以何种方式排序，并对其格式进行控制。
 
@@ -1083,8 +1098,11 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 ## 样式的行为
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 ### 选项
 
@@ -1183,7 +1201,7 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 
 激活引用分组和折叠。允许的值为：
 
-- "citation-number" - 当使用数字样式的时候，折叠引用数字的范围（通过 `"citation-number"` 变量来渲染） ，例如："[1, 2, 3, 5]" 变为 "[1–3, 5]"。只有升序的引用才可以折叠，比如：  "[3, 2, 1]" 将不会折叠。
+- "citation-number" - 当使用数字样式的时候，折叠引用数字的范围（通过 `"citation-number"` 变量来渲染） ，例如：`[1, 2, 3, 5]` 变为 `[1–3, 5]`。只有升序的引用才可以折叠，比如：  `[3, 2, 1]` 将不会折叠。
 - "year" - 通过压缩相同的名字来折叠引用分组，例如： "(Doe 2000, Doe 2001)" 变为 "(Doe 2000, 2001)"。
 - "year-suffix" - 对名字相同的折叠项，折叠相同的年份，例如：  "(Doe 2000a, 2000b)" 变为 "(Doe 2000a, b)"。
 - "year-suffix-ranged" - 对名字相同的折叠项，折叠年份范围，例如： "(Doe 2000a, b, c, e)" 变为 "(Doe 2000a–c,e)"。
