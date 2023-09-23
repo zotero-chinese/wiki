@@ -24,7 +24,7 @@ export default defineUserConfig({
 
     /** @see https://www.npmjs.com/package/@vuepress-plume/vuepress-plugin-baidu-tongji */
     baiduTongjiPlugin({
-      key: "", // 百度统计使用的 key
+      key: "fc5b45ae006a231c1d5cff4610df7267", // 百度统计使用的 key
     }),
   ],
 
