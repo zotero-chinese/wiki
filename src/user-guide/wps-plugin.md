@@ -74,7 +74,24 @@ Windows 系统直接双击`windows安装与卸载.bat`安装文件，你可能�
 
 直接打开 terminal，输入`python3 install.py` 进行安装
 
-## 2. 如何卸载WPS安装的旧版Zotero扩展
+## 2. 插件使用
+
+WPS 插件的按钮与 Word 插件类似
+
++ Add/Edit Citation，添加引用文献
++ Add/Edit Refs，添加参考文献列表
++ Refresh，刷新文档引用文献信息
++ Preferences，打开 Zotero 引用设置窗口
++ Add Note，添加 Zotero 笔记
++ Unlink，取消链接引注，通过删除域代码来取消文档中 Zotero 引文的链接。这可以防止引文和书目的任何进一步自动更新。请注意，**删除域代码是不可逆的**，通常只能在文档的最终副本中完成
++ Export，导出其他文本编辑器兼容的文本格式
++ About，插件相关信息
+
+![](../assets/wps_plugin_ui_buttons.png)
+
+具体的操作过程，请参考[在 Word 中插入参考文献](./ms-word-plugin.md)
+
+## 3. 如何卸载WPS安装的旧版Zotero扩展
 
 如果你之前安装把 Word 里的 Zotero 插件强行安装到 WPS，那样出现多个的 Zotero 选项
 
@@ -84,6 +101,6 @@ Windows 系统直接双击`windows安装与卸载.bat`安装文件，你可能�
 
 ![](../assets/wps_vba_plugin_install_path.png)
 
-## 3. 可能遇到的问题
+## 4. 可能遇到的问题
 
 使用中可能点击按钮后，Zotero 的窗口不会自动出现，可以手动点击一下任务栏中的 Zotero 图标，让 Zotero 的窗口跳到最前。
