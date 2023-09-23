@@ -7,18 +7,15 @@ updated: 2023-07-22 20:49:04
 
 # CSL 1.0.2 规范
 
-> [!DONE]
-> 此页面于 2022-8-2 已校对完成。
-
 主要作者：[Rintze M. Zelle， PhD](https://twitter.com/rintzezelle)、 [Brenton M. Wiernik](https://twitter.com/bmwiernik)、Frank G. Bennett， Jr.、 Bruce D’Arcus、Denis Maier
 
-其他贡献者：Julien Gonzalez、Sebastian Karcher、Sylvester Keil、Cormac Relf、Lars Willighagen  and other CSL contributors.
+其他贡献者：Julien Gonzalez、Sebastian Karcher、Sylvester Keil、Cormac Relf、Lars Willighagen and other CSL contributors.
 
 译者：[Mao Zhou](https://github.com/ZMAlt)、 [Northword](https://github.com/northword)。
 
-此工作以 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) 授权。
+此工作以  [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) 授权。
 
-### 介绍
+## 介绍
 
 CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格式，用来描述引文、注释和参考文献的格式，他提供了：
 
@@ -31,7 +28,7 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 有关的其他文档，CSL 议程，样式和本地化文件详见 [CSL 项目主页](https://citationstyles.org/)。
 
-### 翻译习惯
+## 翻译习惯
 
 这里将列出一些常用的术语的译文，并不能保证翻译的准确性。为保持准确性，后文的描述中可能会在译文旁标注原文。
 
@@ -43,29 +40,31 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 | macro               | 宏         |          |
 |                     |            |          |
 
-### 术语
+## 术语
 
 关键字 MUST，MUST NOT，REQUIRED，SHALL，SHALL NOT，SHOULD，SHOULD NOT，RECOMMENDED，MAY 和 OPTIONAL 按 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述解释。
 
-> [!NOTE] 译者注：关于 IETF RFC 2119 协议
->
-> RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
->
-> RFC 2119 协议全文：<https://www.ietf.org/rfc/rfc2119.txt>
->
-> **MUST**：必须的。通过它描述的对象，是强制要求的。它与 REQUIRED 和 SHALL 含义相同。
->  
-> **MUST NOT**：不允许的。通过它描述的对象也是强制的。与 SHALL NOT 同义。
->
-> **SHOULD**：在通常情况下，应当这样。但是，特殊情况下除外。与 RECOMMENDED 同义。
->
-> **SHOULD NOT**：在通常情况下，不是这样。但是，特殊情况下除外。与 NOT RECOMMENDED 同义。
->
-> **MAY**：可选的描述对象。与 OPTIONAL 同义。
+::: note 译者注：关于 IETF RFC 2119 协议
+
+RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
+
+RFC 2119 协议全文：<<https://www.ietf.org/rfc/rfc2119.txt>
+
+**MUST**：必须的。通过它描述的对象，是强制要求的。它与 REQUIRED 和 SHALL 含义相同。
+
+**MUST NOT**：不允许的。通过它描述的对象也是强制的。与 SHALL NOT 同义。
+
+**SHOULD**：在通常情况下，应当这样。但是，特殊情况下除外。与 RECOMMENDED 同义。
+
+**SHOULD NOT**：在通常情况下，不是这样。但是，特殊情况下除外。与 NOT RECOMMENDED 同义。
+
+**MAY**：可选的描述对象。与 OPTIONAL 同义。
+
+:::
 
 ## 命名空间
 
-> [!Done] Namespacing
+> Namespacing
 
 CSL XML 命名空间 URI 是 <http://purl.org/net/xbiblio/csl>。
 
@@ -73,8 +72,12 @@ CSL XML 命名空间 URI 是 <http://purl.org/net/xbiblio/csl>。
 
 ## 空格处理
 
-> [!question] Whitespace Handling
-> 翻译有一些疑惑，请参阅原文，欢迎提出改善意见。
+::: warning
+
+Whitespace Handling
+翻译有一些疑惑，请参阅原文，欢迎提出改善意见。
+
+:::
 
 CSL styles are valid XML, but CSL processors MUST NOT normalize attribute values by trimming leading or trailing whitespace from attributes which define text that is intended for output:
 
@@ -95,8 +98,6 @@ CSL 样式是有效的 XML，但是 CSL 处理器不会（MUST NOT）通过修�
 
 ## 文件类型
 
-> [!DONE] File Types
-
 CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作为扩展名），以及 本地化文件（名字为 `locales-xx-XX.xml`，其中 `xx-XX` 表示语言以及其方言，例如 `en-US` 表示美式英语）。
 
 ### 独立样式
@@ -109,20 +110,25 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 通过将具有相同引用风格的期刊（例如 "Nature Biotechnology"，"Nature Nanotechnology"）的从属样式链接到一个单独的独立样式（例如 "Nature Journals"），从属样式就不再需要再重复一遍格式说明。
 
-> [!NOTE] 译者注
->
-> 也就是说从属样式是依赖其他样式的，被依赖的样式成为称为**父样式**。
+::: note 译者注
+
+也就是说从属样式是依赖其他样式的，被依赖的样式成为称为**父样式**。
+
+:::
 
 ### 本地化文件
 
 每个本地化文件包含一系列对某种特定的语言 / 方言的本地化数据（术语翻译，本地化日期格式以及语法选项）。
 
-> [!NOTE] 译者注
-> 本地化文件主要用于在不同的语言环境中使用样式，比如在中文环境中使用，中文对应的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
+::: note 译者注
+
+本地化文件主要用于在不同的语言环境中使用样式，比如在中文环境中使用，中文对应的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
+
+:::
 
 ## XML 声明
 
-> [!Done] XML Declaration
+> XML Declaration
 
 每个样式或者本地化文件应该以 XML 声明开头，指定具体的 XML 版本以及字符编码。多数情况下，XML 声明可以是：
 
@@ -132,40 +138,43 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ## 样式的结构
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning
+
+此节尚未校对完成
+
+:::
 
 ### 根元素 `cs:style`
 
 样式的根元素是 `cs:style`。在 [独立样式](#独立样式) 中，根元素有以下几种属性：
 
-`class`
+#### `class`
 
-:    🏳️ Default: _none_  —  决定样式的 [引文格式](#引文格式) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
+🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#引文格式) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
 
- !!! NOTE " 译者注 "
+::: note 译者注
 
-  in-text 表示引文在文字中，note 表示引文不在文字中，可能是脚注等。
+in-text 表示引文在文字中，note 表示引文不在文字中，可能是脚注等。
 
-`default-locale`
+:::
 
-:    🏳️ Default: _none_  · Optional —  为本地化设值默认的 locale。值必须是 [locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html)。
+#### `default-locale`
 
- !!! TIP " 译者注：常用 local_code"
+🏳️ Default: *none* · Optional — 为本地化设值默认的 locale。值必须是 [locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html)。
 
-  zh-CN：中文（中国）
+::: tip 译者注：常用 local_code
 
-  zh-hk：中文（台湾）
+zh-CN：中文（中国）
+zh-hk：中文（台湾）
+zh：中文
+en-US：
+可以参阅 [Language Strings | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/wmformat/language-strings)
 
-  zh：中文
+:::
 
-  en-US：
+#### `version`
 
-  可以参阅 [Language Strings | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/wmformat/language-strings)
-
-`version`
-
-:    🏳️ Default: _none_ ·  ⚠ Required —  样式的 CSL 版本。对于 CSL 1.0 兼容样式，必须是 `1.0`。
+🏳️ Default: *none* · ⚠ Required — 样式的 CSL 版本。对于 CSL 1.0 兼容样式，必须是 `1.0`。
 
 此外，`cs:style` 可能携带任意的 [全局选项](specification.md#全局选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 。
 
@@ -184,23 +193,23 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 `cs:info`
 
-:    🏳️ Default: _none_  ·  ⚠ Required ·  ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
+🏳️ Default: *none* · ⚠ Required · ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
 
 `cs:citation`
 
-:    🏳️ Default: _none_ ·  ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
+🏳️ Default: *none* · ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
 
 `cs:bibliography`
 
-:    🏳️ Default: _none_ ·   Optional — 可能会出现一次。描述参考文献列表的格式。
+🏳️ Default: *none* · Optional — 可能会出现一次。描述参考文献列表的格式。
 
 `cs:macro`
 
-:    🏳️ Default: _none_ ·   Optional — 可能出现多次。宏可以将格式指示重复使用，使样式更加的紧凑和易维护。
+🏳️ Default: *none* · Optional — 可能出现多次。宏可以将格式指示重复使用，使样式更加的紧凑和易维护。
 
 `cs:locale`
 
-:    🏳️ Default: _none_ ·   Optional — 可能出现多次。用于指定或者覆盖当前的本地化数据。
+🏳️ Default: *none* · Optional — 可能出现多次。用于指定或者覆盖当前的本地化数据。
 
 在 [从属样式](#从属样式) 中，`cs:style` 只有 `cs:info` 一个子元素。
 
@@ -210,45 +219,45 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ##### `cs:author` 和 `cs:contributor`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:author` 和 `cs:contributor` 分别用来致谢样式的作者和贡献者，可能被使用多次。
+🏳️ Default: *none* · Optional — `cs:author` 和 `cs:contributor` 分别用来致谢样式的作者和贡献者，可能被使用多次。
 
      `cs:name`
-    
-     :    🏳️ Default: _none_ ·  ⚠ Required — 作者或贡献者的姓名。
-    
-     `cs:email` 和 `cs:uri` 
-    
-     :    🏳️ Default: _none_ ·  Optional — 作者或者贡献者邮箱和 URI。
+
+     🏳️ Default: _none_ ·  ⚠ Required — 作者或贡献者的姓名。
+
+     `cs:email` 和 `cs:uri`
+
+     🏳️ Default: _none_ ·  Optional — 作者或者贡献者邮箱和 URI。
 
 ##### `cs:category`
 
-:    🏳️ Default: _none_ ·   Optional — 样式可能被分类到一个或者多个类别，`cs:category` 可能被使用一次，用来描述 in-text 引文怎么渲染。使用 `citation-format` 属性设置其为以下几种情形：
+🏳️ Default: *none* · Optional — 样式可能被分类到一个或者多个类别，`cs:category` 可能被使用一次，用来描述 in-text 引文怎么渲染。使用 `citation-format` 属性设置其为以下几种情形：
 
-- "author-date" - 例如 "… (Doe, 1999)"
-- "author" - 例如 "… (Doe)"
-- "numeric" - 例如 "… [1]"
-- "label" - 例如 "… [doe99]"
-- "note" - 因为在边注或者脚注出现。
+- `author-date` - 例如 `… (Doe, 1999)`
+- `author` - 例如 `… (Doe)`
+- `numeric` - 例如 `… [1]`
+- `label` - 例如 `… [doe99]`
+- `note` - 因为在边注或者脚注出现。
 
-  `cs:categroy` 也可能在携带 `field` 属性时多次使用，用来对学科进行分类（见 [附录I 学科分类](附录I 学科分类)）。
+  `cs:categroy` 也可能在携带 `field` 属性时多次使用，用来对学科进行分类（见 [附录 I 学科分类](附录 I 学科分类)）。
 
 ##### `cs:id`
 
-:    🏳️ Default: _none_ · ⚠ Required — 必须出现一次。该元素应该包含一个 URI 以建立样式的 `ID`，对于公开可用的样式，需要一个稳定、唯一的并可以引用的 URI。
+🏳️ Default: *none* · ⚠ Required — 必须出现一次。该元素应该包含一个 URI 以建立样式的 `ID`，对于公开可用的样式，需要一个稳定、唯一的并可以引用的 URI。
 
 ##### `cs:issn/cs:essn/cs:issnl`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN 。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
+🏳️ Default: *none* · Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN 。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
 
 ##### `cs:link`
 
-:    🏳️ Default: _none_ ·   Optional — 可以使用多次。`cs:link` 必须携带两个属性 `href` 和 `rel`。
+🏳️ Default: *none* · Optional — 可以使用多次。`cs:link` 必须携带两个属性 `href` 和 `rel`。
 
     `href`
-    :    ⚠ Required — 用来设置 URI （通常情况下为 URL）
-    
+    ⚠ Required — 用来设置 URI （通常情况下为 URL）
+
     `rel`
-    :    ⚠ Required — 表明 URI 与当前样式的关系，它的值有：
+    ⚠ Required — 表明 URI 与当前样式的关系，它的值有：
 
         - `self` - 该 URI 值为样式本身的 URI
         - `template` - 该 URI 是用来编写该样式的模板的 URI
@@ -256,27 +265,27 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 ##### `cs:published`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:published` 必须是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表明样式创建的时间或者可获得的时间。
+🏳️ Default: *none* · Optional — `cs:published` 必须是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表明样式创建的时间或者可获得的时间。
 
 ##### `cs:rights`
 
-:    🏳️ Default: _none_ ·   Optional — `cs:rights` 表明了该 CSL 的 license，可能会携带 `license` 属性。
+🏳️ Default: *none* · Optional — `cs:rights` 表明了该 CSL 的 license，可能会携带 `license` 属性。
 
 ##### `cs:summary`
 
-:    🏳️ Default: _none_ ·   Optional — 给出该 CSL 的简单描述。
+🏳️ Default: *none* · Optional — 给出该 CSL 的简单描述。
 
 ##### `cs:title`
 
-:    🏳️ Default: _none_ · ⚠ Required — 其内容应该是该 CSL 展示给使用者的名字。
+🏳️ Default: *none* · ⚠ Required — 其内容应该是该 CSL 展示给使用者的名字。
 
 ##### `cs:title-short`
 
-:    🏳️ Default: _none_ ·   Optional — 是上述名字的缩写，比如 `APA`
+🏳️ Default: *none* · Optional — 是上述名字的缩写，比如 `APA`
 
 ##### `cs:updated`
 
-:    🏳️ Default: _none_ ·    — 内容是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表示该 CSL 的最后更新时间。
+🏳️ Default: *none* · — 内容是一个 [时间戳](http://books.xmlschemata.org/relaxng/ch19-77049.html)，用来表示该 CSL 的最后更新时间。
 
 `cs:link`，`cs:rights`，`cs:summary`， `cs:title` 和 `cs:title-short` 元素可以携带 `xml:lang` 属性用来表示元素内容的语言（值必须是 [xsd:language locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html) 中的一个）。对于 `cs:link`，该属性可以用来表示链接目标的语言。
 
@@ -305,7 +314,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 #### Citation
 
-`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`"author"，例: [Doe]`，`"author-date"，例: [Doe 1999]`，`"label"，例: [doe99]`，`"author"，例: [Doe]` 或者 `"number"，例:[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
+`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
 
 ```xml
 <citation>
@@ -376,7 +385,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 `cs:locale` 元素的 `xml:lang` 属性是可选的，必须设置为 [xsd:language locale code](http://books.xmlschemata.org/relaxng/ch19-77191.html) 中的一种，用来确定使用的语言环境（或方言，见 [locale fallback](locale fallback)）。
 
-对于 `cs:locale` 元素的详细使用，另见 [术语](Terms(术语))、[本地化日期格式](本地化日期格式) 和 [本地化选项](b本地化选项)。
+对于 `cs:locale` 元素的详细使用，另见 [术语](#术语)、[本地化日期格式](#本地化日期格式) 和 [本地化选项](#本地化选项)。
 
 下面是一个 `cs:locale` 元素的例子：
 
@@ -424,8 +433,11 @@ B. Locale files/本地化文件
 
 ## 本地化文件的结构
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 尽管本地化数据可以包括在 csl 文件中 (见 [Locale](#locale))，但是本地化文件可以方便的提供本地化数据的设置，包括术语，日期格式以及语法选项。
 
@@ -474,11 +486,11 @@ B. Locale files/本地化文件
 
 `cs:updates`(可选)
 
-​ `cs:updated` 元素的内容必须是一个 [时间戳](#时间戳) 来指定本地化文件最后一次更新的时间。
+​ `cs:updated` 元素的内容必须是一个 `[时间戳]` 来指定本地化文件最后一次更新的时间。
 
 ### Terms(术语)
 
-术语是本地化的字符串，比如通过使用 `"and"` 术语，`"Doe and Smith"` 在语言环境从英语到德语的转换中会自动变为 `"Doe und Smith"`。术语用 `cs:term` 元素定义，是 `cs:terms` 元素的子元素。每个 `cs:term` 元素必须携带一个 `name` 属性，其属性值可以设置为 [附录II 术语](#附录II 术语) 列表中的值。
+术语是本地化的字符串，比如通过使用 `"and"` 术语，`"Doe and Smith"` 在语言环境从英语到德语的转换中会自动变为 `"Doe und Smith"`。术语用 `cs:term` 元素定义，是 `cs:terms` 元素的子元素。每个 `cs:term` 元素必须携带一个 `name` 属性，其属性值可以设置为 [附录 II 术语](#附录 II 术语) 列表中的值。
 
 术语可以直接在 `cs:term` 的内容中定义，或者，在某些情况下，比如在需要单数和复数的情况下可以分别在子元素 `cs:single` 和 `cs:multiple` 中定义， (例如:`"page"` 和 `"pages"`)。
 
@@ -492,7 +504,7 @@ B. Locale files/本地化文件
 
 如果一个样式使用了一个没有定义的格式，则会会退到其他形式，比如 `"werb-short"` 会回退到 `"verb"`，`"symbol"` 会回退到 `"short"`，`"verb"` 和 `"short"` 都会回退到 `"long"`。如果没有可以用的语言环境或者 form 格式，改术语的渲染结果就会显示为空字符串。
 
-`cs:term` 元素可以使用 `match`，`gender` 和 `gender-form` 属性来设置数字变量渲染为序数（比如，`first`，`2nd`）。具体见下面的 [序数后缀](#序数后缀) 和 [特定序数](#特定序数)。
+`cs:term` 元素可以使用 `match`，`gender` 和 `gender-form` 属性来设置数字变量渲染为序数（比如，`first`，`2nd`）。具体见下面的 [序数后缀](#序数后缀) 和 [特定序数](#性别特定序数)。
 
 术语内容不应该包括 Latex 以及 HTML 等标记。上标可以使用 Unicode 上标字符。
 
@@ -513,7 +525,13 @@ B. Locale files/本地化文件
 
 一些语言使用特定的有别于性别的序数。例如，如果目标名词是男性，英语中的 "1st" 和 "first" 在法语中就翻译为 "1er" 和 "premier"，如果目标名词是女性，就翻译为 "1re" 和 "première"。
 
-女性和男性在术语使用上的不同可以使用性别格式 `gender-form` 的属性来设置（分别设置为 `feminine` 和 `masculine`），详情见 [Ordinals序数](#Ordinals/序数)（没有性别的术语表示中性）。这里涉及到两类目标名词：a) [数字变量](#数字变量) 附带的术语，b) 月份术语（见 [Months/月](#Months/月)）。在术语设置为 `"long"`（默认），并且在 `gender` 属性被设置时（设置为 `"feminine"` 和 `"masculine"`），这些名词即使用相应的性别变体。当数字变量以序数 `"ordinal"` 或者 `long-ordinal` 形式时，将使用相同性别的序数词，如果没定义女性或男性变体，则使用中性变体。当 `"day"` 日期部分以序数 `"ordinal"` 形式呈现时，序数性别和月的术语匹配。
+女性和男性在术语使用上的不同可以使用性别格式 `gender-form` 的属性来设置（分别设置为 `feminine` 和 `masculine`），详情见 [Ordinals 序数](#ordinals-序数)（没有性别的术语表示中性）。这里涉及到两类目标名词：
+
+1. [数字变量](#数字变量) 附带的术语
+
+2. 月份术语（见 [Months 月](#months-月)）。
+
+在术语设置为 `"long"`（默认），并且在 `gender` 属性被设置时（设置为 `"feminine"` 和 `"masculine"`），这些名词即使用相应的性别变体。当数字变量以序数 `"ordinal"` 或者 `long-ordinal` 形式时，将使用相同性别的序数词，如果没定义女性或男性变体，则使用中性变体。当 `"day"` 日期部分以序数 `"ordinal"` 形式呈现时，序数性别和月的术语匹配。
 
 下面给出 `1re éd.`（`"1st ed."`）、`"1er janvier"`（`"January 1st"`）和 `"3e édition"`（`"3rd edition"`）的示例：
 
@@ -554,14 +572,17 @@ B. Locale files/本地化文件
 
 ## 渲染元素
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 渲染元素指定了在引文或参考文献条目中需要包含哪些条目元数据，以及以何种方式排序，并对其格式进行控制。
 
 ### Layout
 
-`cs:layout` 渲染元素是 `cs:citation` 元素和 `cs:bibliography` 元素的的必要子元素。`cs:layout` 必须包含一个或者多个渲染元素，并且可能携带 [`affixes`](#词缀) 和 [`formattig`](#格式化) 属性。在 `cs:citation` 元素中，[`delimiter`](#分隔符\delimiter) 属性用来指定一个引文中的不同引用的间隔符。例如：一个 `"(1,2)"` 类型的引文可以使用下面的代码实现：
+`cs:layout` 渲染元素是 `cs:citation` 元素和 `cs:bibliography` 元素的的必要子元素。`cs:layout` 必须包含一个或者多个渲染元素，并且可能携带 [`affixes`](#词缀) 和 [`formattig`](#格式化) 属性。在 `cs:citation` 元素中，[`delimiter`](#分隔符-delimiter) 属性用来指定一个引文中的不同引用的间隔符。例如：一个 `"(1,2)"` 类型的引文可以使用下面的代码实现：
 
 ```xml
 <citation>
@@ -577,7 +598,7 @@ B. Locale files/本地化文件
 
 - `variable`- 渲染一个变量的文本内容。属性值必须是 [标准变量](#标准变量)。可以与 `form` 属性一起选择变量的 `"long"`（默认）或 `"short"` 形式（例如：设置题目，完整题目或者简写）。如果选择了 `"short"` 形式，但是却没法获得，就使用 `"long"` 形式来渲染。
 - `macro` - 渲染宏的文字输出。属性值必须和 `cs:macro` 元素的 `name` 属性的值相匹配。
-- `term` - 渲染术语。属性必须是 [附录II 术语](#附录II 术语) 中的术语列表中的一个。通过设置复数属性 `plura l` 来这只其使用单数还是复数形式，其中 `"true"` 为默认，表示使用复数形式，设置为 `"false"` 表示使用单数形式。 使用 `form` 属性可以设置术语的形式，其值可以为 `"long"` （默认）、`"short"`、`"verb"`、`"verb-short"` 或者 `"symbol"` （见 [术语](#术语)）.
+- `term` - 渲染术语。属性必须是 [附录 II 术语](#附录 II 术语) 中的术语列表中的一个。通过设置复数属性 `plura l` 来这只其使用单数还是复数形式，其中 `"true"` 为默认，表示使用复数形式，设置为 `"false"` 表示使用单数形式。 使用 `form` 属性可以设置术语的形式，其值可以为 `"long"` （默认）、`"short"`、`"verb"`、`"verb-short"` 或者 `"symbol"` （见 [术语](#术语)）.
 - `value` - 渲染属性值自己。
 
 一个 `cs:text` 的渲染 `title` 变量的例子：
@@ -717,7 +738,7 @@ B. Locale files/本地化文件
 
 ### Names
 
-`cs:names` 元素用来输出一个或多个 [名字变量](#名称变量)（或名称变量）的内容（通过必选属性 `variable` 来选择），每个 `names` 元素可以包含一个或者多个名称变量（例如：`"author"` 名称变量会携带引用项中所有的作者名称）。如果选择了多个变量，每个变量将会按顺序单独渲染，但当选择中包括编辑和翻译（`"editor"` 和 `"translator"`）不适用。当包含的内容中有两个名字变量相同时，则只渲染一个。另外，如果 `cs:names` 元素中包含 `cs:label` 元素，`"editortranslator"` 将用来代替 `"editor"` 和 `"translator"`（例如：Doe(editor & tranlator)）。`cs:names` 元素中的 [`delimiter`](#分隔符) 属性可以用来分割不同的名字变量（例如：`Doe, Smith (editors); Johnson (translator)` 中间使用了分号隔开）。
+`cs:names` 元素用来输出一个或多个 [名字变量](#名字变量)的内容（通过必选属性 `variable` 来选择），每个 `names` 元素可以包含一个或者多个名称变量（例如：`"author"` 名称变量会携带引用项中所有的作者名称）。如果选择了多个变量，每个变量将会按顺序单独渲染，但当选择中包括编辑和翻译（`"editor"` 和 `"translator"`）不适用。当包含的内容中有两个名字变量相同时，则只渲染一个。另外，如果 `cs:names` 元素中包含 `cs:label` 元素，`"editortranslator"` 将用来代替 `"editor"` 和 `"translator"`（例如：Doe(editor & tranlator)）。`cs:names` 元素中的 [`delimiter`](#分隔符-delimiter) 属性可以用来分割不同的名字变量（例如：`Doe, Smith (editors); Johnson (translator)` 中间使用了分号隔开）。
 
 ```xml
 <names variable="editor translator" delimiter="; ">
@@ -758,7 +779,7 @@ B. Locale files/本地化文件
 
 `delimiter-precedes-last`
 
- 在名字列表中确定何时使用分隔符来分割最后一个作者和倒数第二个作者。如果 `and` 没有被设置，则不论 `delimiter-precedes-last` 属性的值，名字分隔符总是使用。
+在名字列表中确定何时使用分隔符来分割最后一个作者和倒数第二个作者。如果 `and` 没有被设置，则不论 `delimiter-precedes-last` 属性的值，名字分隔符总是使用。
 
 - "contextual" - 默认，当名字列表中的名字有 3 个或以上时使用。下面在使用 3 个名字时，在 `and` 前使用了分隔符 `,`
   - 2 个名字: "J. Doe and T. Williams"
@@ -790,7 +811,7 @@ A. Goffeau, B. G. Barrell, H. Bussey, R. W. Davis, B. Dujon, H.
 Feldmann, … S. G. Oliver
 ```
 
-***
+---
 
 下面讨论的属性将只会影响单个人的名字，这里先给出名字的组成部分。单个人的名字必须含有 "family" 部分，还可以含有 "given"，"suffix"，"non-dropping-particle"，和 "dropping particle" 等部分。下面对这些部分分别进行解释：
 
@@ -827,7 +848,7 @@ Feldmann, … S. G. Oliver
 
 设置名字的不同部分由于 `name-as-sort-order` 属性导致的内部位置变换后的分隔符。默认值为 `","`（Doe, John）。和 `name-as-sort-order` 属性相同，该属性只适用于拉丁字母和西里尔字母的名字。
 
-`cs:name` 元素也可以携带 [词缀](#词缀) 和 [格式化](#格式化属性)。
+`cs:name` 元素也可以携带 [词缀](#词缀) 和 [格式化](#格式化)。
 
 #### 名字内部顺序
 
@@ -863,7 +884,7 @@ Feldmann, … S. G. Oliver
 
 条件：`form` 属性设置为 `"short"`
 
-顺序：1. 不可省略粒子 2. 姓  
+顺序：1. 不可省略粒子 2. 姓
 
 示例：La Fontaine
 
@@ -897,15 +918,15 @@ Feldmann, … S. G. Oliver
 
 顺序：1. 姓 2. 名
 
-示例：张三   或者 Zhang San
+示例：张三 或者 Zhang San
 
 ---
 
 条件：`form` 属性设置为 `"short"`
 
-顺序：1. 姓  
+顺序：1. 姓
 
-示例：张   或者 Zhang
+示例：张 或者 Zhang
 
 ---
 
@@ -939,7 +960,7 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#name)），同时�
 
 #### Substitute
 
-可选的 `cs:substitute` 元素，是 `cs:names` 的子元素，且必须是最后一个子元素，在父元素 `cs:names` 中指定的 [名称变量](#名称变量) 为空时添加替换。替换必须放在 `cs:substitute` 元素中，并且必须包含一个或者多个渲染元素（除 `cs:layout`）。`cs:names` 的简洁版本没有子元素，继承了 `cs:names` 元素中在 `cs:name` 和 `cs:et-al` 子元素的属性值。如果 `cs:substitute` 元素包含了多个子元素，第一个非空的元素用于替换。替换变量在输出的其余部分被抑制，以防止重复。下面的例子中：`"author"` 名称变量为空时，就被 `"editor"` 名称变量替换，在没有 editor 时，则使用 `"title"` 宏替换。
+可选的 `cs:substitute` 元素，是 `cs:names` 的子元素，且必须是最后一个子元素，在父元素 `cs:names` 中指定的 [名字变量](#名字变量) 为空时添加替换。替换必须放在 `cs:substitute` 元素中，并且必须包含一个或者多个渲染元素（除 `cs:layout`）。`cs:names` 的简洁版本没有子元素，继承了 `cs:names` 元素中在 `cs:name` 和 `cs:et-al` 子元素的属性值。如果 `cs:substitute` 元素包含了多个子元素，第一个非空的元素用于替换。替换变量在输出的其余部分被抑制，以防止重复。下面的例子中：`"author"` 名称变量为空时，就被 `"editor"` 名称变量替换，在没有 editor 时，则使用 `"title"` 宏替换。
 
 ```xml
 <macro name="author">
@@ -979,9 +1000,9 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#name)），同时�
 
 ​ 选择术语的形式，可以设置为下面的值：
 
-- "long" - （默认）， 例如：  "page" 术语渲染为 "page"/"pages"
-- "short" - 例如：  "page" 术语渲染为 "p."/"pp."
-- "symbol" - 例如：  "section" 术语渲染为 "§"/"§§"
+- "long" - （默认）， 例如： "page" 术语渲染为 "page"/"pages"
+- "short" - 例如： "page" 术语渲染为 "p."/"pp."
+- "symbol" - 例如： "section" 术语渲染为 "§"/"§§"
 
 `plural`
 
@@ -1059,6 +1080,7 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#name)），同时�
 
   - **Preceding cite does not have a locator**: if the current cite has a locator, the position of the current cite is "ibid-with-locator". Otherwise the position is "ibid".
   - **Preceding cite does have a locator**: if the current cite has the same locator, the position of the current cite is "ibid". If the locator differs the position is "ibid-with-locator". If the current cite lacks a locator its only position is "subsequent".
+
 - "near-note": position of a cite following another cite referencing the same item. Both cites have to be located in foot or endnotes, and the distance between both cites may not exceed the maximum distance (measured in number of foot or endnotes) set with the `near-note-distance` option (see [Note Distance](https://docs.citationstyles.org/en/stable/specification.html#note-distance)).
 
 Whenever position="ibid-with-locator" tests true, position="ibid" also tests true. And whenever position="ibid" or position="near-note" test true, position="subsequent" also tests true.
@@ -1083,8 +1105,11 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 ## 样式的行为
 
-> [!warning] WORK IN PROGRESS
-> 此页面正在施工中。
+::: warning WORK IN PROGRESS
+
+此页面正在施工中。
+
+:::
 
 ### 选项
 
@@ -1122,7 +1147,7 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 `givenname-disambiguation-rule`
 
-用来指定 a) 名字扩展的目的是不是仅限于消除歧义，还是对消除歧义的名字有其他的目的 (只有在后面的情况中，有歧义的名字才会在明确的引用中扩展，例如：从 (Doe 1950; Doe 2000) 扩展到 (Jane Doe 1950; John Doe 2000))   b) 名称扩展是针对全部还是针对每个引用的名字 c) 扩展名字的方法。
+用来指定 a) 名字扩展的目的是不是仅限于消除歧义，还是对消除歧义的名字有其他的目的 (只有在后面的情况中，有歧义的名字才会在明确的引用中扩展，例如：从 (Doe 1950; Doe 2000) 扩展到 (Jane Doe 1950; John Doe 2000)) b) 名称扩展是针对全部还是针对每个引用的名字 c) 扩展名字的方法。
 
 **扩展单个名字**
 
@@ -1139,23 +1164,23 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 ​ "all-name"
 
-​  名字扩展具有消除名字歧义和消除引用歧义的双重目的。在渲染的有歧义的名称中，所有的有歧义的或者没有歧义的名字都将被消除歧义。
+​ 名字扩展具有消除名字歧义和消除引用歧义的双重目的。在渲染的有歧义的名称中，所有的有歧义的或者没有歧义的名字都将被消除歧义。
 
 ​ "all-names-with-initials"
 
-​  和 "all-name" 一样，但是名称的扩展仅限于缩写。当 `initialize-with` 没被设置或者 `initialize` 被设置为 `"false"` 时，不会进行消除歧义的尝试。
+​ 和 "all-name" 一样，但是名称的扩展仅限于缩写。当 `initialize-with` 没被设置或者 `initialize` 被设置为 `"false"` 时，不会进行消除歧义的尝试。
 
 ​ "primary-name"
 
-​  和 "all-name" 一样，但是消除歧义仅限于每个引用的第一个名字。
+​ 和 "all-name" 一样，但是消除歧义仅限于每个引用的第一个名字。
 
 ​ "primary-name-with-initials"
 
-​  和 "all-names-with-initials" 一样，但是消除歧义仅限于每个引用的第一个名字。
+​ 和 "all-names-with-initials" 一样，但是消除歧义仅限于每个引用的第一个名字。
 
 ​ "by-cite"
 
-​  默认，和 "all-name" 一样，但是名称扩展的目的仅限于消除引用的歧义，只有有歧义的名字在有歧义的引用中才会被影响，并且在引用的第一个名字消除歧义后就停止消除歧义。
+​ 默认，和 "all-name" 一样，但是名称扩展的目的仅限于消除引用的歧义，只有有歧义的名字在有歧义的引用中才会被影响，并且在引用的第一个名字消除歧义后就停止消除歧义。
 
 `disambiguate-add-year-suffix` 步骤 3
 
@@ -1183,9 +1208,9 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 
 激活引用分组和折叠。允许的值为：
 
-- "citation-number" - 当使用数字样式的时候，折叠引用数字的范围（通过 `"citation-number"` 变量来渲染） ，例如："[1, 2, 3, 5]" 变为 "[1–3, 5]"。只有升序的引用才可以折叠，比如：  "[3, 2, 1]" 将不会折叠。
+- "citation-number" - 当使用数字样式的时候，折叠引用数字的范围（通过 `"citation-number"` 变量来渲染） ，例如：`[1, 2, 3, 5]` 变为 `[1–3, 5]`。只有升序的引用才可以折叠，比如： `[3, 2, 1]` 将不会折叠。
 - "year" - 通过压缩相同的名字来折叠引用分组，例如： "(Doe 2000, Doe 2001)" 变为 "(Doe 2000, 2001)"。
-- "year-suffix" - 对名字相同的折叠项，折叠相同的年份，例如：  "(Doe 2000a, 2000b)" 变为 "(Doe 2000a, b)"。
+- "year-suffix" - 对名字相同的折叠项，折叠相同的年份，例如： "(Doe 2000a, 2000b)" 变为 "(Doe 2000a, b)"。
 - "year-suffix-ranged" - 对名字相同的折叠项，折叠年份范围，例如： "(Doe 2000a, b, c, e)" 变为 "(Doe 2000a–c,e)"。
 
 当 `disambiguate-add-year-suffix` 设置为 `"false"` 时，或者引用中包含位置（例如：“(Doe 2000a-c, 2000d, p. 5, 2000e,f)”，"Doe 2000d" 有一个页码位置），"year-suffix" 和 "year-suffix-ranged" 回退到 "year"。
@@ -1312,37 +1337,37 @@ Doe, Williams et al. 2005.
 
 #### 全局选项
 
-**人名中的连字符**
+##### 人名中的连字符
 
 `initialize-with-hyphen`
 
 ​ 该属性用来制定合成名字中间是不是使用连字符。例如，`"Jean-Luc"` 是一个合成名字，如果该属性设置为 `"true"`（默认），渲染结果为 `"J.-L."`，如果设置为 `"false"`，渲染结果为 `"J.L."`。
 
-**页码范围**
+##### 页码范围
 
 `page-range-format`
 
-​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`"chicago"` ("321–28")， `"expanded"` ( "321–328")， `"minimal"` ("321–8")， 或者 `" minimal-two"` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录V 页码范围格式](#附录V 页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
+​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`"chicago"` ("321–28")， `"expanded"` ( "321–328")， `"minimal"` ("321–8")， 或者 `" minimal-two"` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录 V 页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
 
-**Name Particles**
+##### Name Particles
 
 ​ 西方人的名字中经常包括一个或者多个小部分，例如,`"de"` 在荷兰人的名字中 `"W. de Koning"`。在仅显示姓氏时，这些小部分可以分为必须保留和可删除（或译为不可省略和可省略）两种类型：这两种类型分别称为 `non-dropping` 部分和 `dropping` 部分。一个单个的名字可以同时包括这两种类型（不能删除的类型始终位于可删除类型的后面）。例如，`"W. de Koning"` 和法国名字 `"Jean de la Fontaine"` 可以被解构为：
 
 ```json
 {
-    "author": [
-        {
-            "given": "W.",
-            "non-dropping-particle": "de",
-            "family": "Koning"
-        },
-        {
-            "given": "Jean",
-            "dropping-particle": "de",
-            "non-dropping-particle": "La",
-            "family": "Fontaine"
-        }
-    ]
+  "author": [
+    {
+      "given": "W.",
+      "non-dropping-particle": "de",
+      "family": "Koning"
+    },
+    {
+      "given": "Jean",
+      "dropping-particle": "de",
+      "non-dropping-particle": "La",
+      "family": "Fontaine"
+    }
+  ]
 }
 ```
 
@@ -1368,7 +1393,7 @@ Doe, Williams et al. 2005.
 
 ​ 用来设置在倒写的名字中不可省略粒子的显示和排序方式（例如 Koning W. de）。可设置的值为：
 
-- "never": 不可省略粒子被作为姓中的一部分对待，并附加可省略粒子（"de Koning, W."  "La Fontaine, Jean de"）。不可省略粒子作为主排序键值的一部分 (排序 A，例如. "de Koning, W." 将出现在首字母 "D" 的区域).
+- "never": 不可省略粒子被作为姓中的一部分对待，并附加可省略粒子（"de Koning, W." "La Fontaine, Jean de"）。不可省略粒子作为主排序键值的一部分 (排序 A，例如. "de Koning, W." 将出现在首字母 "D" 的区域).
 - "sort-only": 显示的方式和 "never" 相同，但是不可省略粒子降级作为二级排序键值。（排序 B, "de Koning, W." 出现在首字母 "K" 的区域).
 - "display-and-sort" （默认），可省略粒子和不可省略粒子在最后（ "Koning, W. de" 和 "Fontaine, Jean de La"）。对名字排序，所有的粒子都是二级排序键值的一部分。（排序 B，"Koning, W. de" 出现在首字母 "K" 的区域).
 
@@ -1376,12 +1401,12 @@ Doe, Williams et al. 2005.
 
 ```json
 {
-    "author": [
-        {
-            "family": "de Gaulle",
-            "given": "Charles"
-        }
-    ]
+  "author": [
+    {
+      "family": "de Gaulle",
+      "given": "Charles"
+    }
+  ]
 }
 ```
 
@@ -1403,7 +1428,7 @@ Doe, Williams et al. 2005.
 
 ​ 当 `cs:text` 元素渲染时，如果 `quotes` 属性设置为 `"true"`（见 [格式化](#格式化)），并且在输出后有逗号或者句号，`punctuation-in-quote` 属性可以控制标点放在括号的内还是外，`"false"` 为外（默认），`"true"` 为内。
 
-### 排序 ***
+### 排序
 
 ​ `cs:citation` 和 `cs:bibliography` 元素可以在 `cs:layout` 元素之前携带一个 `cs:sort` 子元素，来实现对引文或者参考文献条目的排序。在缺失 `cs:sort` 元素时，引文和文献条目将会使用他们在文章中出现的顺序来排序。
 
@@ -1449,7 +1474,7 @@ Doe, Williams et al. 2005.
 
 ​ "citation-number" 和 "year-suffix" 变量的折叠范围以短划线分隔，例如 "（1-3，5）" 和 "（Doe 2000a-c，e）"。
 
-​ "locator" 变量总是使用一个短划线代替任意的连字符。 对 "page" 变量来说，只有 `cs:style` 中的 `page-ran ge-format` 属性被设置时，替换才会执行（见 [页码范围](#页码范围)）。
+​ "locator" 变量总是使用一个短划线代替任意的连字符。 对 "page" 变量来说，只有 `cs:style` 中的 `page-ran ge-format` 属性被设置时，替换才会执行（见 [页码范围](#范围分隔符)）。
 
 ### 格式化
 
@@ -1495,13 +1520,13 @@ Allows for the use of small capitals, 值可以设置为:
 
 ### 词缀
 
-​ 前缀属性 `prefix` 和后缀属性 `suffix` 可以在 `cs:date`（使用 `cs:date` 定义本地化格式除外），`cs:date-part`（`cs:date` 调用本地化格式除外）、`cs:group`、`cs:label`、`cs:layout`、`cs:name`、`cs:names`、`cs:number` 以及 `cs:text` 中设置。属性值用来在输出的前面或者后面添加东西，但是只有输出的时候才会渲染。除在 `cs:layout` 中设置外，词缀将出现在同一个元素的 [格式化](#格式化)、[引用](#引用)、[strip-periods](#strip-periods) 和 [text-case](#text-case) 的影响范围的外面，也就是这些属性的设置对前缀和后缀没有影响。作为一种解决方法，在父元素 `cs:group` 中设置上述属性，会产生影响。
+​ 前缀属性 `prefix` 和后缀属性 `suffix` 可以在 `cs:date`（使用 `cs:date` 定义本地化格式除外），`cs:date-part`（`cs:date` 调用本地化格式除外）、`cs:group`、`cs:label`、`cs:layout`、`cs:name`、`cs:names`、`cs:number` 以及 `cs:text` 中设置。属性值用来在输出的前面或者后面添加东西，但是只有输出的时候才会渲染。除在 `cs:layout` 中设置外，词缀将出现在同一个元素的 [格式化](#格式化)、[引用](#引用-quotes)、[strip-periods](#strip-periods) 和 [text-case](#文字大小写) 的影响范围的外面，也就是这些属性的设置对前缀和后缀没有影响。作为一种解决方法，在父元素 `cs:group` 中设置上述属性，会产生影响。
 
-### 分隔符\delimiter
+### 分隔符 delimiter
 
 ​ `delimiter` 属性可以在 `cs:date`（用来分隔日期的各部分，如年和月；在 `cs:date` 调用本地化格日期格式时，分隔符将被禁用）、`cs:name`（分隔名字变量中不同的名字列表）、`cs:name`（分隔名字列表中的名字）、`cs:group` 以及 `cs;layout`（分隔子元素的输出）中设置分隔符。
 
-### 显示\display
+### 显示 display
 
 `display` 属性可用于将各个参考文献条目构成一个或者多个文本块。如果使用该属性，所有的渲染元素都在该属性的控制下。（译注：是用来设置对齐效果的）属性可能的值为：
 
@@ -1573,7 +1598,7 @@ C. 带有注释的条目，注释显示在参下方的缩进块中。
 </bibliography>
 ```
 
-### 引用\quotes
+### 引用 quotes
 
 ​ `quotes` 属性可以在 `cs:text` 中设置。当设置为 `"true"` 时（默认为 `"false"`），渲染文本将会被包含在引用中。本地化的 `punctuation-in-quote` 选项控制用来连接的逗号或者句号是出现在引号的内部还是外部（默认外部），见 [Locale options](#Locale options)。
 
@@ -1617,3 +1642,514 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 ​ 如果 `cs:style` 中的 `default-locale` 属性没有设置，或者设置为 `en` 开头的单词，则假定为英语环境。如果某项的元数据包含一个语言字段，而且该字段不是以 `"en"` 开头的，才被视为是非英语环境。
 
 ​ 同样的，`default-locale` 被这是为除 `en` 开头的字段，就假定为非英语。如果项目是以 `en` 开头的字段，就被视为是英语。
+
+## 附录 I 学科分类
+
+::: note WIP
+此小节正在施工中
+:::
+
+- anthropology 人类学
+- astronomy 天文学
+- biology 生物学
+- botany 植物学
+- chemistry 化学
+- communications 通讯
+- engineering 工程学
+- generic-base - used for generic styles like Harvard and APA 通用基础 - 用于通用样式，像哈弗和 `APA`
+- geography 地理学
+- geology 地质学
+- history 历史
+- humanities 人文学科
+- law 法学
+- linguistics 语言学
+- literature 文学
+- math 数学
+- medicine 药物学
+- philosophy 哲学
+- physics 物理学
+- political_science 政治科学
+- psychology 心理学
+- science 科学
+- social_science 社会科学
+- sociology 社会学
+- theology 神学
+- zoology 动物学
+
+## 附录 II 术语
+
+::: note WIP
+此小节正在施工中
+:::
+
+术语在本地化文件中使用
+
+### Locators 用来定位的术语
+
+- book 书
+- chapter 章
+- column
+- figure 图
+- folio 作品集
+- issue 议题/问题
+- line 行
+- note 笔记/注记
+- opus 作品（音乐作品）
+- page 页
+- paragraph 段
+- part 部分
+- section 节
+- sub verbo 词条
+- verse 诗
+- volume 卷
+
+### Months 月
+
+- month-01
+- month-02
+- month-03
+- month-04
+- month-05
+- month-06
+- month-07
+- month-08
+- month-09
+- month-10
+- month-11
+- month-12
+
+### Ordinals 序数
+
+- ordinal
+- ordinal-00 through ordinal-99
+- long-ordinal-01
+- long-ordinal-02
+- long-ordinal-03
+- long-ordinal-04
+- long-ordinal-05
+- long-ordinal-06
+- long-ordinal-07
+- long-ordinal-08
+- long-ordinal-09
+- long-ordinal-10
+
+### Quotation marks 引号
+
+- open-quote
+- close-quote
+- open-inner-quote
+- close-inner-quote
+
+### Roles 角色
+
+- author 作者
+- collection-editor 文集编辑
+- composer 作曲者
+- container-author 文章作者
+- director 主任/导演
+- editor 编辑
+- editorial-director 编辑部主任
+- editortranslator
+- illustrator 插画者
+- interviewer 采访者
+- original-author 原作者
+- recipient 收件人
+- reviewed-author 复查作者
+- translator 译者
+
+### Seasons 季节
+
+- season-01
+- season-02
+- season-03
+- season-04
+
+### Miscellaneous 其他
+
+- accessed
+- ad
+- and
+- and others
+- anonymous
+- at
+- available at
+- bc
+- by
+- circa
+- cited
+- edition
+- et-al
+- forthcoming
+- from
+- ibid
+- in
+- in press
+- internet
+- interview
+- letter
+- no date
+- online
+- presented at
+- reference
+- retrieved
+- scale
+- version
+
+## 附录 III 文献类型
+
+::: note WIP
+此小节正在施工中
+:::
+
+- article 文章
+- article-magazine 杂志文章
+- article-newspaper 新闻文章
+- article-journal 期刊文章
+- bill
+- book 书
+- broadcast
+- chapter 章节
+- dataset 数据集
+- entry
+- entry-dictionary
+- entry-encyclopedia
+- figure 图
+- graphic
+- interview 采访
+- legislation
+- legal_case
+- manuscript
+- map 地图
+- motion_picture
+- musical_score
+- pamphlet
+- paper-conference
+- patent
+- post 海报
+- post-weblog
+- personal_communication 私人交流
+- report 报告
+- review
+- review-book
+- song 歌曲
+- speech 演讲
+- thesis 学位论文
+- treaty
+- webpage 网页
+
+## 附录 IV 变量
+
+::: note WIP
+此小节正在施工中
+:::
+
+### 标准变量
+
+- abstract 项目的摘要（例：期刊文章的摘要）
+
+- annote 读者关于项目内容的笔记
+
+- archive 保存项目的存档
+
+- archive_location 存档的位置
+
+- archive-place 存档的地理位置
+
+- authority
+
+- call-number
+
+  call number (to locate the item in a library)
+
+- citation-label
+
+  label identifying the item in in-text citations of label styles (e.g. "Ferr78"). May be assigned by the CSL processor based on item metadata.
+
+- citation-number
+
+  index (starting at 1) of the cited reference in the bibliography (generated by the CSL processor)
+
+- collection-title
+
+  title of the collection holding the item (e.g. the series title for a book)
+
+- container-title
+
+  title of the container holding the item (e.g. the book title for a book chapter, the journal title for a journal article)
+
+- container-title-short
+
+  short/abbreviated form of "container-title" (also accessible through the "short" form of the "container-title" variable)
+
+- dimensions
+
+  physical (e.g. size) or temporal (e.g. running time) dimensions of the item
+
+- DOI
+
+  Digital Object Identifier (e.g. "10.1128/AEM.02591-07")
+
+- event
+
+  name of the related event (e.g. the conference name when citing a conference paper)
+
+- event-place
+
+  geographic location of the related event (e.g. "Amsterdam, the Netherlands")
+
+- first-reference-note-number
+
+  number of a preceding note containing the first reference to the item. Assigned by the CSL processor. The variable holds no value for non-note-based styles, or when the item hasn’t been cited in any preceding notes.
+
+- genre
+
+  class, type or genre of the item (e.g. "adventure" for an adventure movie, "PhD dissertation" for a PhD thesis)
+
+- ISBN
+
+  International Standard Book Number
+
+- ISSN
+
+  International Standard Serial Number
+
+- jurisdiction
+
+  geographic scope of relevance (e.g. "US" for a US patent)
+
+- keyword 关键字
+
+- locator
+
+  a cite-specific pinpointer within the item (e.g. a page number within a book, or a volume in a multi-volume work). Must be accompanied in the input data by a label indicating the locator type (see the [Locators](https://docs.citationstyles.org/en/stable/specification.html#locators) term list), which determines which term is rendered by `cs:label` when the "locator" variable is selected.
+
+- medium
+
+  medium description (e.g. "CD", "DVD", etc.)
+
+- note
+
+  (short) inline note giving additional item details (e.g. a concise summary or commentary)
+
+- original-publisher
+
+  original publisher, for items that have been republished by a different publisher
+
+- original-publisher-place
+
+  geographic location of the original publisher (e.g. "London, UK")
+
+- original-title 最初版本的题目
+
+- page 项目的页码范围
+
+- page-first 页码范围的第一个页码
+
+- PMCID
+
+  PubMed Central reference number
+
+- PMID
+
+  PubMed reference number
+
+- publisher 出版商/出版社
+
+- publisher-place 出版社的地理位置
+
+- references
+
+  resources related to the procedural history of a legal case
+
+- reviewed-title
+
+  title of the item reviewed by the current item
+
+- scale
+
+  scale of e.g. a map
+
+- section
+
+  container section holding the item (e.g. "politics" for a newspaper article)
+
+- source
+
+  from whence the item originates (e.g. a library catalog or database)
+
+- status
+
+  (publication) status of the item (e.g. "forthcoming")
+
+- title
+
+  primary title of the item
+
+- title-short
+
+  short/abbreviated form of "title" (also accessible through the "short" form of the "title" variable)
+
+- URL 链接
+
+- version 版本
+
+- year-suffix
+
+  disambiguating year suffix in author-date styles (e.g. "a" in "Doe, 1999a")
+
+### 数字变量
+
+Number variables are a subset of the [Standard Variables](https://docs.citationstyles.org/en/stable/specification.html#standard-variables).
+
+- chapter-number
+
+  章序号
+
+- collection-number
+
+  number identifying the collection holding the item (e.g. the series number for a book)
+
+- edition
+
+  版本序号（注意和 version 的区别）
+
+- issue
+
+  (container) issue holding the item (e.g. "5" when citing a journal article from journal volume 2, issue 5)
+
+- number
+
+  number identifying the item (e.g. a report number)
+
+- number-of-pages
+
+  引用项目的总的页数
+
+- number-of-volumes
+
+  total number of volumes, usable for citing multi-volume books and such
+
+- volume
+
+  (container) volume holding the item (e.g. "2" when citing a chapter from book volume 2)
+
+### 日期变量
+
+- accessed
+
+  date the item has been accessed
+
+- container
+
+  ?
+
+- event-date
+
+  date the related event took place
+
+- issued
+
+  date the item was issued/published
+
+- original-date
+
+  (issue) date of the original version
+
+- submitted
+
+  date the item (e.g. a manuscript) has been submitted for publication
+
+### 名字变量
+
+- author
+
+- collection-editor
+
+  editor of the collection holding the item (e.g. the series editor for a book)
+
+- composer
+
+  composer (e.g. of a musical score)
+
+- container-author
+
+  author of the container holding the item (e.g. the book author for a book chapter)
+
+- director
+
+  director (e.g. of a film)
+
+- editor
+
+- editorial-director
+
+  managing editor ("Directeur de la Publication" in French)
+
+- illustrator
+
+  illustrator (e.g. of a children’s book)
+
+- interviewer
+
+  interviewer (e.g. of an interview)
+
+- original-author
+
+- recipient
+
+  recipient (e.g. of a letter)
+
+- reviewed-author
+
+  author of the item reviewed by the current item
+
+- translator
+
+## 附录 V 页码范围格式
+
+::: note WIP
+此小节正在施工中
+:::
+
+`cs:style` 元素中的 `page-range-format` 表示了页码的缩写规则，其取值可能是：
+
+`"chicago"`
+
+| 第一个数字                               | 第二个数字                                         | 例                                   |
+| ---------------------------------------- | -------------------------------------------------- | ------------------------------------ |
+| 小于 100                                 | 使用所有的位数                                     | 3–10; 71–72                          |
+| 100 或者 100 的整数                      | 使用所有的位数                                     | 100–104; 600–613; 1100–1123          |
+| 100 到 109 （包括对应 100 的倍数的范围） | 仅使用有变化的部分，忽略不需要的 0                 | 107–8; 505–17; 1002–6                |
+| 110 到 199 （包括对应 100 的倍数的范围） | 根据需要使用两位数或者更多                         | 321–25; 415–532; 11564–68; 13792–803 |
+| 4 位数                                   | 如果数字是 4 位并且其中有 3 位不同，使用所有的位数 | 1496–1504; 2787–2816                 |
+
+`"expanded"`
+
+​ 扩展模式，不适用缩写。eg. 42–45、321–328、2787–2816
+
+`"minimal"`
+
+​ 第二个数字中重复的所有数字都被省略：42–5，321–8，2787–816
+
+`"minimal-two"`
+
+​ 和 `"minimal"` 类似，但当第二个数字有两个或者两个以上的数字时，第二个数字至少保留两位。
+
+## 附录 VI 链接
+
+::: note WIP
+此小节正在施工中
+:::
+
+The CSL syntax does not have support for configuration of links. However, processors should include links on bibliographic references, using the following rules:
+
+If the bibliography entry for an item renders any of the following identifiers, the identifier should be anchored as a link, with the target of the link as follows:
+
+1. `url`: output as is
+2. `doi`: prepend with “[https://doi.org/](https://doi.org/)”
+3. `pmid`: prepend with “[https://www.ncbi.nlm.nih.gov/pubmed/](https://www.ncbi.nlm.nih.gov/pubmed/)”
+4. `pmcid`: prepend with “[https://www.ncbi.nlm.nih.gov/pmc/articles/](https://www.ncbi.nlm.nih.gov/pmc/articles/)”
+
+If the identifier is rendered as a URI, include rendered URI components (e.g. “[https://doi.org/](https://doi.org/)”) in the link anchor. Do not include any other affix text in the link anchor (e.g. “Available from: “, “doi: “, “PMID: “).
+
+Citation processors should include an option flag for calling applications to disable bibliography linking behavior.
