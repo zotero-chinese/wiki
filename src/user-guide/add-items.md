@@ -64,7 +64,7 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 Connector 抓取中文文献能力依靠中文 Translator 支持，更新中文 Translator 请参考：
 
 - [中文文献增强：茉莉花插件](https://zotero.yuque.com/staff-gkhviy/zotero/jasminum?view=doc_embed&inner=BlFh2)
-- 如果茉莉花插件更新 translator 失败，可以尝试[手动更新 translator](./faqs/Manually updating Translator files.md).
+- 如果茉莉花插件更新 translator 失败，可以尝试 [手动更新 translators](./faqs/手动更新translators.md)。
 
 Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 抓取时不能自动下载 PDF / 无法自动给添加的 PDF 附件创建条目](https://zotero.yuque.com/staff-gkhviy/zotero/mribmi?view=doc_embed)
 
