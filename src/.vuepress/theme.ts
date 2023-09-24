@@ -52,6 +52,16 @@ export default hopeTheme({
       align: true,
       attrs: true,
       chart: true,
+      checkLinks: {
+        // 仅在开发模式下检查链接
+        status: "always",
+        ignore: [
+          // 忽略以 `/api/` 开头的链接
+          /^\/api\//,
+          // 忽略 `/playground.html`
+          "/playground.html",
+        ],
+      },
       codetabs: true,
       // demo: true,
       // echarts: true,

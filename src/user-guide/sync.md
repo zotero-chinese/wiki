@@ -1,73 +1,141 @@
 ---
 title: 数据与文件的同步
 icon: async
-date: 2023-06-28 21:19:08
-updated: 2023-07-20 16:51:54
+date: 2022-09-14 20:52:08
+updated: 2023-09-23 20:52:08
 ---
 
 # 数据与文件的同步
 
-## 同步方案简介
+我们在这里把同步分为“数据的同步”和“文件的同步”。
 
-目前比较主流的同步方案有两个。第一种是【 官方/WebDAV 】同步方案（官方支持），第二种是【 Zotfile + 任意同步盘 】的方案（不推荐），主要优缺点对比如下：
+数据的同步指 `条目字段信息`、`批注`、`笔记` 的同步，这些数据仅能通过 Zotero 官方提供的服务同步。
 
-|                                           | **官方/WebDAV 同步（推荐）** | **Zotfile + 同步盘（不推荐）** |
-| ----------------------------------------- | ---------------------------- | ------------------------------ |
-| **配置难度**                              | **简单**                     | 复杂                           |
-| 内置阅读器批注工具支持                    | **是**                       | 否                             |
-| **不容易出问题**                          | **是**                       | 否                             |
-| 多台电脑上同步附件                        | 是                           | 是                             |
-| 更改附件存储位置/自定义存放附件的文件夹名 | 否                           | **是**                         |
-| **支持 Zotero 移动端**                    | **是**                       | 否                             |
-| 支持第三方 PDF 阅读器                     | 否                           | **是**                         |
+文件的同步指 `PDF 附件`、`网页附件`、`Word 文档`、`EPub 文件` 等所有附件的同步。这些文件既可以通过 Zotero 官方服务同步，也可以通过 WebDAV 网盘来同步。
 
-在设置正确的前提下，两者个方案都可以实现同步，但在文件的管理方式上存在区别。
+::: danger
 
-如果你希望 **进一步了解这两种同步方案的优缺点** ，或者希望 **真正完全了解这两种同步方案** ，可以进一步阅读这两篇文章：
-[-> [微信推文] ZotFile + 同步盘，实现 Zotero 文献跨平台同步！](https://gitee.com/link?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F0heWcOlwgrF6GHmPTc-poA)
-[-> [知乎专栏] Zotero 文件同步](https://gitee.com/link?target=https%3A%2F%2Fzhuanlan.zhihu.com%2Fp%2F361587962)
+无论你选择何种同步方案， 切勿将 Zotero 的 `数据存储位置/Data Directory Location` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录 ！（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
 
-- 注 1：本文中提到 **WebDAV** 方案和 **Zotfile + 同步盘** 方案分别对应专栏文章中的第二部分和第三部分。
-- 注 2：这两篇文章中关于 **\[数据源目录\]** 的解释存在一些问题，详情请见本文后续部分对 Zotfile + 同步盘 方案的详细解释。
+这样做在某些情况下可能会导致你的 Zotero 数据库损坏，带来严重的问题！官方对于这一问题的说明见这两篇文章：
 
-⚠️ 无论你选择何种同步方案， **切勿将 Zotero 的 \[数据存储位置/Data Directory Location\] 自定义为任何网盘的同步文件夹中** （包括 iCloud），也 **切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录** ！（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
+- [How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
+- [Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
 
-⚠️ 这样做在某些情况下可能会导致你的 Zotero 数据库损坏，带来严重的问题！官方对于这一问题的说明见这两篇文章：
-[-\> \[Zotero 官网\] How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
+:::
 
-[-\> \[Zotero 官网\] Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
+## 数据的同步
 
-⚠️ 请勿混用不同的同步方案。
+::: tip
 
-## 同步方案的选取建议
+无论如何，您都需要注册一个 Zotero 的官方账户，用于同步条目信息、批注以及笔记。如果您没有注册，可 [快速创建一个 Zotero 账户](https://www.zotero.org/user/register)。
 
-### 官方/WebDAV 方案：大多数人的首选
+:::
 
-👍 鉴于 Zotero6 以来新增的内置阅读器、批注、笔记、IOS 客户端等功能对 WebDAV 同步方式较友好，推荐大多数用户使用 WebDAV 同步方式。
+之后您可以在 `Zotero`-`编辑`-`首选项`-`同步`-`设置`中 输入您的帐号密码，进行登陆。
 
-对于大多数用户，**强烈建议使用 WebDAV 的同步方案** ：
+![账号登录](../assets/image-zotero-帐号登陆.png)
 
-- 设置简单、不易出错；
-- 大多数用户无需费用支出（免费额度较多）；
-- 支持 Zotero 移动端 APP
+每个 Zotero 用户都可以获得 300 MB 的免费 Zotero 存储空间，用于存储附加文件，并可 [购买更大的存储空间](https://www.zotero.org/settings/storage?ref=sib)。如果您拥有钞能力，这是最简单的备份方法，在登陆您的 zotero 账户并完成购买后无需其他任何设置。
 
-### ZotFile + 同步盘方案
+|    存储空间    |             费用 (USD)              |
+| :------------: | :---------------------------------: |
+|     300 MB     |                Free                 |
+|      2 GB      | $20/year (equal to $1.67 per month) |
+|      6 GB      |  $60/year (equal to $5 per month)   |
+| Unlimited 无限 | $120/year (equal to $10 per month)  |
 
-ZotFile + 同步盘的主要作用是可自己决定目录的整理方式。仅在此情况下建议使用 zotfile 同步方式：经常需要在没有 Zotero 客户端的情况下访问文献附件，例如经常使用没有安装 Zotero 的公用电脑或者无法安装 Zotero 的设备，此时可根据文件夹名来查找文件。
+如果您想免费进行进行文件的同步，那么您具有两种网盘同步方式：**支持 WebDAV 的网盘（推荐）**和**第三方同步盘**。对于新手，建议从 WebDAV 网盘同步入手，在熟悉各种问题的解决方法和同步原理后，可尝试第三方网盘的同步方式。
 
-这一方法 **对于大多数人来说都是非常非常折腾的，而且玩不好可能把自己绕进去** 。如果你确定要选择这一方案， **请务必完整阅读本文的全部内容，以及后面推荐的两篇 Zotfile + 同步盘 方案的介绍文档，认真了解这一方案的原理和特点** ，然后再操作。否则，你很可能在未来 **因操作不当导致附件无法打开** 。有太多案例了。
+::: tip
 
-### 犹豫了？
+无论附件采用何种方式同步，条目信息、批注、笔记始终是通过 Zotero 官方的服务同步的。
 
-**只要你还在犹豫，请你直接选择前者：WebDAV 方案** 。Zotfile 方案玩不好可能会带来很多麻烦事，而且前面提到的删除附件的问题也绝对算不上优雅。
+不要担心，这部分占用的体积很小，只要不同步附件，官方的空间是足够的。
 
-- 如果你选择了 Zotfile 方案，然而在使用中设置或操作不当，可能会遇到以下多种报错：
-  <img src="assets/20230922T210510/20230922T210510_70335.png" width="279" id="u5ffaf12d" class="ne-image" style="color: #40485b; font-size: 16px;">
-  <img src="assets/20230922T210510/20230922T210510_72614.png" width="164" id="ud848413a" class="ne-image" style="color: #40485b; font-size: 16px;">
-  <img src="assets/20230922T210510/20230922T210510_99941.png" width="566" id="uf343afe6" class="ne-image" style="color: #40485b; font-size: 16px;">
-  <img src="assets/20230922T210510/20230922T210510_21243.png" width="944" id="u3cb0b70e" class="ne-image" style="color: #40485b; font-size: 16px;">
-  <img src="assets/20230922T210510/20230922T210510_49888.png" width="827" id="ub1385110" class="ne-image" style="color: #40485b; font-size: 16px;">
+:::
 
-以上仅仅是较为常见的报错节选，还可能遇到其他种种问题。正因如此， **新上手的朋友请尽量不要选择这一同步方案** 。
+::: warning
 
-此外， **使用 Zotfile + 同步盘 方案会导致 iPhone/iPad 上的 Zotero 客户端里无法打开 PDF 附件这件事是板上钉钉的！**
+我们始终建议通过官方服务或 WebDAV 网盘进行附件同步。网上流传较广的 ZotFile 方案已经过时，不再被官方所推荐，且不支持移动端同步。
+
+:::
+
+## 通过 WebDAV 同步附件
+
+::: tip 什么是 WebDAV
+
+WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间协同编辑和管理存储在万维网服务器文档。
+通俗一点儿来说，WebDAV 就是一种互联网方法，应用此方法可以在服务器上划出一块存储空间，可以使用用户名和密码来控制访问，让用户可以直接存储、下载、编辑文件。
+
+:::
+
+目前国内支持 WebDAV 同步的只有坚果云网盘，常见的如百度网盘、阿里云盘、OneDrive 等均不支持 WebDAV 同步。后续教程将以坚果云网盘为例。
+
+如果您没有坚果云网盘的账户，请先 [注册坚果云](https://www.jianguoyun.com/d/signup)。
+
+坚果云免费用户具有以下限制：
+
+- 流量与空间限制：每月上传流量 1G/月、下载流量 3G/月、空间受限于上传流量，
+
+- 文件上传大小限制：当前 WebDAV 客户端和网页端上传大小的限制是一致的，默认为 500M（私有云可以通过相关设置调整）。
+
+- 访问频率限制：由于 WebDAV 协议比较占用系统资源，免费版用户限制访问频率为每 30 分钟不超过 600 次请求。付费用户限制访问频率为每 30 分钟不超过 1500 次请求。
+
+当然对于大部分用户免费账户是完全够用的（虽然每个月只有 1g 上传流量，但是好处是每个月都可以有 1g，一年最多可以拥有 12g）。对于小部分用户，可通过付费[购买专业版](https://www.jianguoyun.com/s/pricing)或者使用其他支持 WebDAV 同步的网盘。
+
+### PC 端
+
+1. [登陆](https://www.jianguoyun.com/d/login)您的坚果云账户。
+
+2. 登录后点击 右侧用户名=>账户信息
+
+   ![账户信息](../assets/image-坚果云-账户信息.png)
+
+3. 选择安全选项，下滑到底，点击添加应用。
+
+   ![添加应用](../assets/image-坚果云-添加应用.png)
+
+4. 完成后，记录下生成的密码。
+
+   ![生成应用密码](../assets/image-坚果云-生成密码.png)
+   ![复制应用密码](../assets/image-坚果云-密码.png)
+
+5. 打开 `Zotero`，`编辑`——`首选项`——`同步`——文`件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
+   用户名是坚果云账号，密码是上一步中的应用密码（非坚果云账号登录密码），设置好后点击 `Verify Server` 即可。
+
+   ![登陆WebDAV账户](../assets/image-zotero-登陆webdav账户.png)
+
+6. 到此处，电脑上关于坚果云的同步设置就完成了。
+
+7. 回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫 `zotero` 的文件夹，用于存放同步更新的文件。
+   ![同步图标](../assets/image-zotero-同步图标.png)
+
+::: details 自定义存放路径
+
+如果在坚果云里新建了一个文件夹，想将文件放在那个文件夹里的话，那么在填写服务器地址时，需要添加对应的文件夹名字（建议文件夹用英文或数字命名），例如 work，那么服务器地址填写如下:
+![WebDAV网址设置](../assets/image-zotero-webdav网址设置.png)
+此时，你的 Zotero 的同步文件将会放在 `根目录/work/zotero` 中
+
+:::
+
+### IOS
+
+::: tip 施工中
+:::
+
+### Android
+
+::: tip 施工中
+:::
+
+## 通过第三方网盘同步附件
+
+::: danger
+
+==我们不建议使用第三方网盘结合 ZotFile 的方式进行同步==。这会导致很多问题。除非你具备较强的问题排查能力，且对 ZotFile 所提供的功能有刚性需求，否则==请不要使用这种方法==！
+
+:::
+
+::: tip 施工中
+:::

@@ -21,28 +21,18 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
+    "**/Thumbs.db": true
     // custom begin
-    "node_modules": true,
+    // "node_modules": true,
     // "**/.*": true,
-    ".github": true,
-    ".gitignore": true,
+    // ".github": true,
+    // ".gitignore": true,
     // "**/.vuepress": true,
     // ".vscode": true,
-    ".markdownlint.json": true,
+    // ".markdownlint.json": true,
     // "package.json": true,
-    "package-lock.json": true,
-    "CODE_OF_CONDUCT.md": true,
-    "LICENSE": true
-  },
-  "editor.detectIndentation": false,
-  "[jsonc]": {
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.tabSize": 2
-  },
-  "prettier.configPath": "package.json",
+    // "package-lock.json": true,
+    // "CODE_OF_CONDUCT.md": true,
+    // "LICENSE": true
+  }
 }
