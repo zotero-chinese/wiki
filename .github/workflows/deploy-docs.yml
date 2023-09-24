@@ -24,10 +24,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          # cache: npm
 
       - name: 安装依赖
-        run: npm ci
+        run: npm install
 
       - name: 构建文档
         env:
