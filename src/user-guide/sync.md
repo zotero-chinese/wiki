@@ -104,7 +104,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 5. 打开 `Zotero`，`编辑`——`首选项`——`同步`——文`件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
    用户名是坚果云账号，密码是上一步中的应用密码（非坚果云账号登录密码），设置好后点击 `Verify Server` 即可。
 
-   ![登陆WebDAV账户](../assets/image-zotero-登陆WebDAV账户.png)
+   ![登陆WebDAV账户](../assets/image-zotero-登陆webdav账户.png)
 
 6. 到此处，电脑上关于坚果云的同步设置就完成了。
 
