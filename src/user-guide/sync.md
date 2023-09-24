@@ -114,7 +114,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 ::: details 自定义存放路径
 
 如果在坚果云里新建了一个文件夹，想将文件放在那个文件夹里的话，那么在填写服务器地址时，需要添加对应的文件夹名字（建议文件夹用英文或数字命名），例如 work，那么服务器地址填写如下:
-![WebDAV网址设置](../assets/image-zotero-WebDAV网址设置.png)
+![WebDAV网址设置](../assets/image-zotero-webdav网址设置.png)
 此时，你的 Zotero 的同步文件将会放在 `根目录/work/zotero` 中
 
 :::
