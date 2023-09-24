@@ -7,21 +7,24 @@ icon: article
 
 在 WPS 中使用插件参考文献，目前有两种方法
 
-+ 使用 VBA，借用 Word 的插件
-+ 使用 WPS JavaScript API 制作的插件
+- 使用 VBA，借用 Word 的插件
+- 使用 WPS JavaScript API 制作的插件
 
 使用 WPS 的 VBA 插件插入参考这篇：[完美在 wps 中使用 zotero 的方法](https://zhuanlan.zhihu.com/p/579975093)，该方法这个方法需要依赖 WPS 的 VBA 环境，需要升级到某些付费版本才行（当然也有破解版）。
 
 下面是使用 WPS 原生 JavaScript API 插件的教程。
 
+::: tip MacOS 系统上的 WPS 用户暂时无法使用
 
 插件是利用 WPS 提供的 JavaScript API 从 Zotero 获取引文信息，并写入到 WPS 文档中。目前插件可以在**Windows 和 Linux 系统**下使用，因 WPS 的接口暂时不支持 macOS 系统，所以**使用苹果电脑的同学暂时用不上这个插件**。
 
 插件地址为[https://github.com/tankwyn/WPS-Zotero](https://github.com/tankwyn/WPS-Zotero)
 
+:::
+
 ## 1. 安装插件
 
-因为 WPS 接口的一些限制，本插件的使用还需要使用到**Python3**，Linux 系统内一般默认安装了 Python3， 使用 Windows 的同学，需要提前安装好 Python3。使用 Windows 的同学从下面的 `1.1 Windows 下 Python3 环境的安装`部分开始，使用 Linux 的同学可直接跳过这部分，看后面的安装部分就行。 
+因为 WPS 接口的一些限制，本插件的使用还需要使用到**Python3**，Linux 系统内一般默认安装了 Python3， 使用 Windows 的同学，需要提前安装好 Python3。使用 Windows 的同学从下面的 `1.1 Windows 下 Python3 环境的安装`部分开始，使用 Linux 的同学可直接跳过这部分，看后面的安装部分就行。
 
 ### 1.1 Windows 下 Python3 环境的安装
 
@@ -29,7 +32,7 @@ icon: article
 
 ![运行CMD](../assets/run_cmd.png)
 
-点击确认后，再出现的小黑屏上输入`python --version` 
+点击确认后，再出现的小黑屏上输入`python --version`
 
 ![查看Python版本](../assets/run_python_version.png)
 
@@ -49,28 +52,28 @@ icon: article
 
 ### 1.2 安装 WPS 插件
 
-安装过程非常简单，作者已经帮我们处理好了，只需要一个脚本即可。如果你可流畅访问 GitHub，可直接到 https://github.com/tankwyn/WPS-Zotero 下载，如果访问困难，可到这个[镜像源](https://ftp.linxingzhong.top/WPS-Zotero.tar.gz)下载
+安装过程非常简单，作者已经帮我们处理好了，只需要一个脚本即可。如果你可流畅访问 GitHub，可直接到 <https://github.com/tankwyn/WPS-Zotero> 下载，如果访问困难，可到这个[镜像源](https://ftp.linxingzhong.top/WPS-Zotero.tar.gz)下载
 
 将下载后的压缩包解压后，看到的文件如下
 
 ![解压后的文件列表](../assets/file_list.png)
 
-**Windows 系统**
+#### Windows 系统
 
 Windows 系统直接双击`windows安装与卸载.bat`安装文件，你可能会遇到下面的警告提示
 
-![](../assets/warn1.png)  
-![](../assets/warn2.png)
+![点击更多信息](../assets/warn1.png)  
+![点击仍要运行](../assets/warn2.png)
 
 运行后出现的提示窗口，输入`1`，并按确认，进行安装  
 
-![](../assets/install.png)
+![选择1](../assets/install.png)
 
 安装成功的提示
 
 ![安装成功](../assets/success.png)
 
-**Linux 系统**
+#### Linux 系统
 
 直接打开 terminal，输入`python3 install.py` 进行安装
 
@@ -78,16 +81,16 @@ Windows 系统直接双击`windows安装与卸载.bat`安装文件，你可能�
 
 WPS 插件的按钮与 Word 插件类似
 
-+ Add/Edit Citation，添加引用文献
-+ Add/Edit Refs，添加参考文献列表
-+ Refresh，刷新文档引用文献信息
-+ Preferences，打开 Zotero 引用设置窗口
-+ Add Note，添加 Zotero 笔记
-+ Unlink，取消链接引注，通过删除域代码来取消文档中 Zotero 引文的链接。这可以防止引文和书目的任何进一步自动更新。请注意，**删除域代码是不可逆的**，通常只能在文档的最终副本中完成
-+ Export，导出其他文本编辑器兼容的文本格式
-+ About，插件相关信息
+- Add/Edit Citation，添加引用文献
+- Add/Edit Refs，添加参考文献列表
+- Refresh，刷新文档引用文献信息
+- Preferences，打开 Zotero 引用设置窗口
+- Add Note，添加 Zotero 笔记
+- Unlink，取消链接引注，通过删除域代码来取消文档中 Zotero 引文的链接。这可以防止引文和书目的任何进一步自动更新。请注意，**删除域代码是不可逆的**，通常只能在文档的最终副本中完成
+- Export，导出其他文本编辑器兼容的文本格式
+- About，插件相关信息
 
-![](../assets/wps_plugin_ui_buttons.png)
+![WPS插件UI按钮](../assets/wps_plugin_ui_buttons.png)
 
 具体的操作过程，请参考[在 Word 中插入参考文献](./ms-word-plugin.md)
 
@@ -99,7 +102,7 @@ WPS 插件的按钮与 Word 插件类似
 
 先打开`C:\Users\你的用户名\AppData\Roaming\kingsoft\wps` 目录(注意用户名换成你自己的)，找到`startup`目录，删掉里面的`zotero.dotm`文件，这个文件是直接从Zotero 的 Word 插件里复制到 WPS 里，需要WPS有 VBA 环境，现在已经不需要了，可以删掉。
 
-![](../assets/wps_vba_plugin_install_path.png)
+![WPS插件安装路径](../assets/wps_vba_plugin_install_path.png)
 
 ## 4. 可能遇到的问题
 
