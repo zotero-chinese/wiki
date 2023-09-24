@@ -9,7 +9,7 @@ bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Zotero 中文小组
-tagline: Zotero 非官方中文小组，维护中文文档等。
+tagline: Zotero 非官方中文小组，维护中文文档等
 actions:
   - text: Zotero 用户手册 💡
     link: /user-guide/
@@ -30,17 +30,17 @@ highlights:
     features:
       - title: Zotero 百科全书
         icon: article
-        details: Zotero 中文教程一站式解决。
+        details: Zotero 中文教程一站式解决
         link: /user-guide/
         
       - title: 插件商店
         icon: config
-        details: 好用的 Zotero 插件收录，提供国内镜像下载地址。
+        details: 好用的 Zotero 插件收录，提供国内镜像下载地址
         link: https://plugins.zotero-chinese.com/
 
       - title: 中文 CSL 样式
         icon: format
-        details: 支持双语排版的 CSL 样式。
+        details: 支持双语排版的 CSL 样式
         link: https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/
 
       - title: 插件开发手册
@@ -50,12 +50,12 @@ highlights:
 
       - title: CSL 开发手册
         icon: code
-        details: 来看如何自定义一个自己需要的参考文献格式。
+        details: 来看如何自定义一个自己需要的参考文献格式
         link: /csl-dev-guide/
 
       - title: 更多
         icon: advance
-        details: 贡献指南、关于页面等。
+        details: 贡献指南、关于页面等
         link: /about/
 
   - header: Zotero 官方
@@ -71,17 +71,17 @@ highlights:
 
       - title: Zotero 官方文档（英文）
         icon: article
-        details: Zotero 官方提供的使用手册，最为准确，但仅维护英文。
+        details: Zotero 官方提供的使用手册，最为准确，但仅维护英文
         link: https://www.zotero.org/support/
 
       - title: Zotero 官方论坛（英文）
         icon: community
-        details: Zotero 官方运营的论坛，你可以在这里发布求助、反馈问题等。
+        details: Zotero 官方运营的论坛，你可以在这里发布求助、反馈问题等
         link: https://forums.zotero.org/discussions
 
       - title: CSL 官方样式
         icon: decorate
-        details: 在这里可以预览并下载 Citation Language Style 组织下的样式。
+        details: 在这里可以预览并下载 Citation Language Style 组织下的样式
         link: https://www.zotero.org/styles
 
   - header: 参与社区建设
@@ -92,22 +92,22 @@ highlights:
     highlights:
       - title: GitHub ISSUE
         icon: github
-        details: 你可以在 ISSUE 里提出文档等的不足、改进建议。
+        details: 你可以在 ISSUE 里提出文档等的不足、改进建议
         link: https://github.com/zotero-chinese/wiki/issues
 
       - title: Gitee 讨论
         icon: gitee
-        details: 你可以在 Gitee 里提出关于 Zotero 使用的问题。
+        details: 你可以在 Gitee 里提出关于 Zotero 使用的问题
         link: https://gitee.com/zotero-chinese/zotero-chinese/issues
 
       - title: 贡献者指南
         icon: like
-        details: 查看如何为项目做出贡献。
+        details: 查看如何为项目做出贡献
         link: /contributing/
 
       - title: QQ 群
         icon: group
-        details: 加入群聊，独学而无友，则孤陋而寡闻。
+        details: 加入群聊，独学而无友，则孤陋而寡闻
         link: #
 
       # - title: 更多
