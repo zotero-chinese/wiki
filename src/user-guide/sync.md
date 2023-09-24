@@ -121,6 +121,59 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 ### IOS
 
+::: tip
+
+在进行该部分操作时，请确保您拥有`zotero账户`、`具有WebDAV同步功能的网盘`、`完成PC端相关设置`。
+
+:::
+
+官方已经发布了Zotero for ios，并且支持支持Webdav同步，iOS端的设置相对比较简单，只需要登陆zotero账户和完成WebDAV网盘设置即可。
+
+1.首先您需要在App Store[下载Zotero](https://apps.apple.com/cn/app/zotero/id1513554812)
+
+2.在第一次打开zotero时，会提醒登陆，选择Sign In（此时需要登陆你的zotero账户）
+
+![登陆zotero账户](../assets/image-iOS登陆.jpg)
+
+2.登陆完成后，返回app主页，点击右上角的齿轮图标
+
+![app首页](../assets/image-iOS首页.png)
+
+3.点击 `account` 进入同步设置
+
+4.从上到下依次为：
+
+`WebDAV`
+
+`dav.jianguoyun.com/dav`
+
+`坚果云账户（邮箱）`
+
+`*******（此处的密码是在坚果云中创建的应用密码，不是坚果云网盘的登陆密码）`
+
+验证服务器后显示`Verified` 表示设置成功。
+
+![iamge-iOS同步登陆](../assets/image-iOS同步登陆.png)
+
+5.等待片刻文献即可同步成功。可以点击文献直接阅读，也点击文献右侧的`i`标志查看文献信息
+![文献同步成功](../assets/image-iOS文献同步成功.png)
+
+6.在文献阅读时，可以进行高亮内容，任意划线等操作。完成阅读是直接返回，你的阅读记录会后台自动同步到其他客户端。
+![文献阅读](../assets/image-iOS文献阅读.png)
+
+### Android
+
+::: tip 施工中
+:::
+
+## 通过第三方网盘同步附件
+
+::: danger
+
+==我们不建议使用第三方网盘结合 ZotFile 的方式进行同步==。这会导致很多问题。除非你具备较强的问题排查能力，且对 ZotFile 所提供的功能有刚性需求，否则==请不要使用这种方法==！
+
+:::
+
 ::: tip 施工中
 :::
 
