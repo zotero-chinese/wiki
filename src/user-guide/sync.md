@@ -101,7 +101,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
    ![生成应用密码](../assets/image-坚果云-生成密码.png)
    ![复制应用密码](../assets/image-坚果云-密码.png)
 
-5. 打开 `Zotero`，`编辑`——`首选项`——`同步`——文`件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
+5. 打开 `Zotero`，`编辑`——`首选项`——`同步`——`文件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
    用户名是坚果云账号，密码是上一步中的应用密码（非坚果云账号登录密码），设置好后点击 `Verify Server` 即可。
 
    ![登陆WebDAV账户](../assets/image-zotero-登陆webdav账户.png)
@@ -123,59 +123,40 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 ::: tip
 
-在进行该部分操作时，请确保您拥有`zotero账户`、`具有WebDAV同步功能的网盘`、`完成PC端相关设置`。
+在进行该部分操作时，请确保您拥有 `Zotero账户`、`具有WebDAV同步功能的网盘`、`完成PC端相关设置`。
 
 :::
 
-官方已经发布了Zotero for ios，并且支持支持Webdav同步，iOS端的设置相对比较简单，只需要登陆zotero账户和完成WebDAV网盘设置即可。
+官方已经发布了 Zotero for iOS，并且支持支持 Webdav 同步，iOS 端的设置相对比较简单，只需要登陆 Zotero 账户和完成 WebDAV 网盘设置即可。
 
-1.首先您需要在App Store[下载Zotero](https://apps.apple.com/cn/app/zotero/id1513554812)
+1. 首先您需要在 App Store [下载 Zotero](https://apps.apple.com/cn/app/zotero/id1513554812)
 
-2.在第一次打开zotero时，会提醒登陆，选择Sign In（此时需要登陆你的zotero账户）
+2. 在第一次打开 Zotero 时，会提醒登陆，选择 Sign In（此时需要登陆你的 Zotero 账户）
 
-![登陆zotero账户](../assets/image-iOS登陆.jpg)
+   ![登陆Zotero账户](../assets/image-iOS登陆.jpg)
 
-2.登陆完成后，返回app主页，点击右上角的齿轮图标
+3. 登陆完成后，返回 app 主页，点击右上角的齿轮图标
 
-![app首页](../assets/image-iOS首页.png)
+   ![app首页](../assets/image-iOS首页.png)
 
-3.点击 `account` 进入同步设置
+4. 点击 `account` 进入同步设置
 
-4.从上到下依次为：
+5. 从上到下依次为：
 
-`WebDAV`
+   - 附件同步方式：`WebDAV`
+   - WebDAV 地址：`dav.jianguoyun.com/dav`
+   - 坚果云账户：邮箱
+   - 密码：此处的密码是在坚果云中创建的应用密码，不是坚果云网盘的登陆密码）
 
-`dav.jianguoyun.com/dav`
+   验证服务器后显示`Verified` 表示设置成功。
 
-`坚果云账户（邮箱）`
+   ![iOS同步登陆](../assets/image-iOS同步登陆.png)
 
-`*******（此处的密码是在坚果云中创建的应用密码，不是坚果云网盘的登陆密码）`
+6. 等待片刻文献即可同步成功。可以点击文献直接阅读，也点击文献右侧的 `i` 标志查看文献信息
+   ![文献同步成功](../assets/image-iOS文献同步成功.png)
 
-验证服务器后显示`Verified` 表示设置成功。
-
-![iamge-iOS同步登陆](../assets/image-iOS同步登陆.png)
-
-5.等待片刻文献即可同步成功。可以点击文献直接阅读，也点击文献右侧的`i`标志查看文献信息
-![文献同步成功](../assets/image-iOS文献同步成功.png)
-
-6.在文献阅读时，可以进行高亮内容，任意划线等操作。完成阅读是直接返回，你的阅读记录会后台自动同步到其他客户端。
-![文献阅读](../assets/image-iOS文献阅读.png)
-
-### Android
-
-::: tip 施工中
-:::
-
-## 通过第三方网盘同步附件
-
-::: danger
-
-==我们不建议使用第三方网盘结合 ZotFile 的方式进行同步==。这会导致很多问题。除非你具备较强的问题排查能力，且对 ZotFile 所提供的功能有刚性需求，否则==请不要使用这种方法==！
-
-:::
-
-::: tip 施工中
-:::
+7. 在文献阅读时，可以进行高亮内容，任意划线等操作。完成阅读是直接返回，你的阅读记录会后台自动同步到其他客户端。
+   ![文献阅读](../assets/image-iOS文献阅读.png)
 
 ### Android
 
