@@ -169,11 +169,11 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2023 年底左右�
 
 目前使用较多的 Android 客户端是 Zoo，开源免费，主要功能有：
 
-    + 查看不同文件目录分类，包括子文件目录。不能编辑
-    + 支持群组条目查看，不能编辑  
-    + 支持创建，编辑和删除笔记。这里是笔记，不是PDF里的注释笔记
-    + 支持搜索功能，包括条目和笔记
-    + 支持 WebDav 附件下载与上传
+- 查看不同文件目录分类，包括子文件目录。不能编辑
+- 支持群组条目查看，不能编辑
+- 支持创建，编辑和删除笔记。这里是笔记，不是PDF里的注释笔记
+- 支持搜索功能，包括条目和笔记
+- 支持 WebDav 附件下载与上传
 
 1. Zoo for Zotero APP 在 Google Play 搜索 Zoo for Zotero 下载，也可以从 Zotero 中文小组提供的镜像 [点击下载 Zoo](https://ftp.linxingzhong.top/zooforzotero_43_apps.evozi.com.apk) 地址下载
 
