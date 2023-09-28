@@ -64,7 +64,8 @@ updated: 2023-09-24 14:49:15
 
 Windows 系统直接双击 `windows安装与卸载.bat` 安装文件，你可能会遇到下面的警告提示
 
-![点击更多信息](../assets/image-wps-warn1.png)  
+![点击更多信息](../assets/image-wps-warn1.png)
+
 ![点击仍要运行](../assets/image-wps-warn2.png)
 
 运行后出现的提示窗口，输入 `1`，并按确认，进行安装  
