@@ -185,7 +185,6 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2023 年底左右�
 
     ![Zoo 加载数据界面](../assets/image-zoo加载数据.png){width=50%}
 
-
 4. 一般常用的附件同步方式是使用**Webdav**，如果你使用 Zotero 的 300M 空间，可不必进行这一步设置。先打开右上角工作间 `Setting`，勾选下方的`Use webdav to access attachments`，再点击`Config Webdav`跳转到配置页面，填写好相应的网址，用户名和密码，请一定要注意核对网址，用户名和密码的空格，特殊符号等。这里里的网址后面会自动帮你加上 `zotero`，填写时要注意
 
     ![Zoo 中配置 Webdav](../assets/image-zoo-webdav设置.png){width=50%}
