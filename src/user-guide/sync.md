@@ -99,6 +99,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 4. 完成后，记录下生成的密码。
 
    ![生成应用密码](../assets/image-坚果云-生成密码.png)
+
    ![复制应用密码](../assets/image-坚果云-密码.png)
 
 5. 打开 `Zotero`，`编辑`——`首选项`——`同步`——`文件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
@@ -160,8 +161,36 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 ### Android
 
-::: tip 施工中
+::: tip
+Zotero 官方已经在测试 Android 版本客户端，预计 2023 年底左右会发布
 :::
+
+目前使用较多的 Android 客户端是 Zoo，开源免费，主要功能有：
+
+    + 查看不同文件目录分类，包括子文件目录。不能编辑
+    + 支持群组条目查看，不能编辑  
+    + 支持创建，编辑和删除笔记。这里是笔记，不是PDF里的注释笔记
+    + 支持搜索功能，包括条目和笔记
+    + 支持 WebDav 附件下载与上传
+
+1. Zoo APP 在 Google Play 搜索 zoo for zotero 下载，也可以从 Zotero 中文小组提供的镜像[点击下载 zoo](https://ftp.linxingzhong.top/zooforzotero_43_apps.evozi.com.apk)地址下载
+
+2. 为了安全，一般国产手机或平板使用的操作系统，在安装第三方 apk 时会有各种限制，可以自行在搜索引擎上搜索如**小米手机如何安装第三方app**，**华为平板要怎么安装第三方app**
+
+3. zoo 安装成功后，需要使用 Zotero 授权的API key才能访问 Zotero 数据库。如果你已有一个 API key，可直接在下图中直接填入。一般刚使用 zoo 的同学，都需要重新申请一下，输入Zotero 账号和密码，点击 Got it，在授权页面注意需要选择 7 Save Key。如果不成功，可以多试几次。授权成功后，应用会开始下载文献库信息，文献越多，下载时间越长。如果等了10-20分钟还在Loading，建议重启APP试试。详细说明参考下图
+
+    ![为 zoo 设置 Zotero API key](../assets/image-zoo添加zotero密钥.png){width=50%}
+
+    ![zoo 加载数据界面](../assets/image-zoo加载数据.png){width=50%}
+
+
+4. 一般常用的附件同步方式是使用**Webdav**，如果你使用 Zotero 的 300M 空间，可不必进行这一步设置。先打开右上角工作间 `Setting`，勾选下方的`Use webdav to access attachments`，再点击`Config Webdav`跳转到配置页面，填写好相应的网址，用户名和密码，请一定要注意核对网址，用户名和密码的空格，特殊符号等。这里里的网址后面会自动帮你加上zotero，填写时要注意
+
+    ![zoo 中配置 Webdav](../assets/image-zoo-webdav设置.png){width=50%}
+
+5. 配置完毕，点开某个条目，点击PDF图标，会自动下载PDF。有可能下载失败，重试即可
+
+    ![zoo 中下载 PDF](../assets/image-zoo-download-pdf.png){width=50%}
 
 ## 通过第三方网盘同步附件
 
