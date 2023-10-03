@@ -42,10 +42,13 @@ export default hopeTheme({
   },
 
   plugins: {
-    // comment: {
-    //   // @ts-expect-error: You should generate and use your own comment service
-    //   provider: "Waline",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "zotero-chinese/.github",
+      repoId: "R_kgDOHv4ukA",
+      category: "文档评论区",
+      categoryId: "DIC_kwDOHv4ukM4CZz7S",
+    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
