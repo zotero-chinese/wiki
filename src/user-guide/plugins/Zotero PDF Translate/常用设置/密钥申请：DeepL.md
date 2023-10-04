@@ -8,7 +8,7 @@ updated: 2023-07-28 10:38:12
 
 # 申请方法
 
-申请：https://www.deepl.com/zh/pro-api?cta=header-pro-api/
+申请：<https://www.deepl.com/zh/pro-api?cta=header-pro-api/>
 
 请注意，DeepL需要特定地区银行卡才可以注册。
 

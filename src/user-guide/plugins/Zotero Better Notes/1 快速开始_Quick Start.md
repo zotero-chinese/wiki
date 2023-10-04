@@ -7,13 +7,13 @@ updated: 2023-07-28 10:38:12
 
 # 下载并安装插件
 
-1.  在[此处](https://github.com/windingwind/zotero-better-notes/releases/latest)下载最新版安装包（.xpi）文件。如果使用火狐浏览器，请右键单击xpi文件链接并选择"另存为"；
+1. 在[此处](https://github.com/windingwind/zotero-better-notes/releases/latest)下载最新版安装包（.xpi）文件。如果使用火狐浏览器，请右键单击xpi文件链接并选择"另存为"；
 
-💡如果无法打开GitHub，可在此处下载：https://zotero-chinese.gitee.io/zotero-plugins/#/
+💡如果无法打开GitHub，可在此处下载：<https://zotero-chinese.gitee.io/zotero-plugins/#/>
 
-2.  打开Zotero，点击顶部菜单栏=>工具=>扩展程序；
-3.  将下载的xpi文件拖进打开的插件窗口；
-4.  点击Restart now来重启Zotero以使用插件。
+2. 打开Zotero，点击顶部菜单栏=>工具=>扩展程序；
+3. 将下载的xpi文件拖进打开的插件窗口；
+4. 点击Restart now来重启Zotero以使用插件。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107170581-d6e512f6-dd28-44e5-ac8d-dfb4b8a75123.png" width="1389" id="ue05673ea" class="ne-image">
 
@@ -53,11 +53,11 @@ Better Notes引入主笔记的概念。由于文献阅读往往围绕某个主�
 
 两种方法新建主笔记：
 
-1.  在Zotero主界面，中央上方工具栏选择新建笔记=>新建主笔记
+1. 在Zotero主界面，中央上方工具栏选择新建笔记=>新建主笔记
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107170658-cc6aac23-b080-4b43-946e-9a3ca1c00a74.png" width="2560" id="uaf9c9ae0" class="ne-image">
 
-1.  在工作区窗口，顶部菜单栏=>文件=>创建新主笔记。快捷键为Ctrl/⌘+N
+1. 在工作区窗口，顶部菜单栏=>文件=>创建新主笔记。快捷键为Ctrl/⌘+N
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107172071-50f638f7-5478-4220-a515-377dd216bf8c.png" width="2560" id="ude38f6a9" class="ne-image">
 
@@ -67,11 +67,11 @@ Better Notes引入主笔记的概念。由于文献阅读往往围绕某个主�
 
 两种方法切换主笔记：
 
-1.  在Zotero主界面，选中一个笔记条目，右键点击，在弹出菜单中选择设为主笔记。
+1. 在Zotero主界面，选中一个笔记条目，右键点击，在弹出菜单中选择设为主笔记。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107172454-69026f1c-eff4-45fc-994b-010ac49faca9.png" width="532" id="u00f2e28c" class="ne-image">
 
-1.  在工作区窗口，顶部菜单栏=>文件=>打开主笔记，然后在选择界面中选择一个笔记条目。快捷键为Ctrl/⌘+O
+1. 在工作区窗口，顶部菜单栏=>文件=>打开主笔记，然后在选择界面中选择一个笔记条目。快捷键为Ctrl/⌘+O
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107174607-76e27d11-6c6f-4079-ac76-2545075c0815.png" width="2560" id="ua10c3176" class="ne-image">
 

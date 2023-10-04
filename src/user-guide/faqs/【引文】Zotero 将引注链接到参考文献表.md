@@ -245,6 +245,6 @@ Public Sub ZoteroLinkCitation()
 
 * * *
 
-1.  来源添加 [↩︎](https://zotero.yuque.com/staff-gkhviy/zotero/ftmtx2#fnref1)
+1. 来源添加 [↩︎](https://zotero.yuque.com/staff-gkhviy/zotero/ftmtx2#fnref1)
 
-2.  [Word: Possibility to link references and bibliography in a document? -  Zotero Forums](https://forums.zotero.org/discussion/comment/324312/#Comment_324312)  [↩︎](https://zotero.yuque.com/staff-gkhviy/zotero/ftmtx2#fnref2)
+2. [Word: Possibility to link references and bibliography in a document? -  Zotero Forums](https://forums.zotero.org/discussion/comment/324312/#Comment_324312)  [↩︎](https://zotero.yuque.com/staff-gkhviy/zotero/ftmtx2#fnref2)

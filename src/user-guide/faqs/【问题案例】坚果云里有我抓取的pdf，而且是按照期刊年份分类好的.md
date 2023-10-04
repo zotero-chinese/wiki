@@ -65,15 +65,15 @@ updated: 2023-07-28 10:38:12
 
 #### 2\. 步骤二：如何确定目前采用的是哪种同步方案
 
-此处为语雀内容卡片，点击链接查看：https://zotero.yuque.com/staff-gkhviy/zotero/agofi0
+此处为语雀内容卡片，点击链接查看：<https://zotero.yuque.com/staff-gkhviy/zotero/agofi0>
 
 #### 3\. 步骤三：windows 切换同步方案
 
-此处为语雀内容卡片，点击链接查看：https://zotero.yuque.com/staff-gkhviy/zotero/tmlhgh
+此处为语雀内容卡片，点击链接查看：<https://zotero.yuque.com/staff-gkhviy/zotero/tmlhgh>
 
 #### 4. 步骤四：windows 通过 WebDAV 同步（这里以坚果云举例子）
 
-此处为语雀内容卡片，点击链接查看：https://zotero.yuque.com/staff-gkhviy/zotero/lub19i
+此处为语雀内容卡片，点击链接查看：<https://zotero.yuque.com/staff-gkhviy/zotero/lub19i>
 
 #### 5. 步骤五：widows 关闭同步，备份一遍数据。用 zotflie 管理的方式对于 pdf 重新管理，copy 一份重新管理的到其他位置，再切换同步方案回 zoteor 管理格式
 
@@ -85,6 +85,6 @@ updated: 2023-07-28 10:38:12
 
 #### but,我咋觉得，这个问题的终极目的是采用，zotfile 管理格式，win mac 都用这一管理格式，实现文献管理查看。我没有 mac 电脑，我虚拟机里面的 mac 密码给忘了，没有进行实验，这个得问一下[@winding](https://zotero.yuque.com/yuqueyonghuzbufdu)
 
-#### 不知道是不是下面这个，可以实现这个效果不，不过按照这个方法以后，ipad 和以后出得安卓就不能正常同步了。要进行取舍，至于发现更好得方法，以后再更新@！
+#### 不知道是不是下面这个，可以实现这个效果不，不过按照这个方法以后，ipad 和以后出得安卓就不能正常同步了。要进行取舍，至于发现更好得方法，以后再更新@
 
-此处为语雀内容卡片，点击链接查看：https://zotero.yuque.com/staff-gkhviy/zotero/ahcgci
+此处为语雀内容卡片，点击链接查看：<https://zotero.yuque.com/staff-gkhviy/zotero/ahcgci>

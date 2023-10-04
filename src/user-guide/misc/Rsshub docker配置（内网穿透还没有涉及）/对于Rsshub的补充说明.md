@@ -5,9 +5,9 @@ updated: 2023-07-28 10:38:12
 ---
 对于Rsshub的补充说明
 
-https://docs.rsshub.app/
+<https://docs.rsshub.app/>
 
-https://docs.rsshub.app/install/
+<https://docs.rsshub.app/install/>
 
 这个好像有一键部署，不过最近Heroku收费了，enm，还需要研究研究一下Docker 镜像
 

@@ -16,23 +16,23 @@ updated: 2023-07-28 10:38:12
 
 创建笔记有多种方式：
 
-1.  在Zotero主界面，中央上方工具栏选择新建笔记=>新建独立笔记/添加子笔记；仅在选中条目时可以创建子笔记。
+1. 在Zotero主界面，中央上方工具栏选择新建笔记=>新建独立笔记/添加子笔记；仅在选中条目时可以创建子笔记。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107282932-29e0d5f6-8a4f-4d36-abf0-c12b78456383.png" width="507" id="u09f415a7" class="ne-image">
 
-2.  在主界面，选中条目，从右键菜单创建条目子笔记；
+2. 在主界面，选中条目，从右键菜单创建条目子笔记；
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107282722-45ce9889-81e8-4517-968c-e4d535482f89.png" width="421" id="u805f5232" class="ne-image">
 
-3.  在PDF阅读器中，右侧笔记栏右上角的'+'按钮可创建条目子笔记；
+3. 在PDF阅读器中，右侧笔记栏右上角的'+'按钮可创建条目子笔记；
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107282664-979230bd-9a7c-431a-9b0a-368cd58b8d14.png" width="2560" id="u120a74a0" class="ne-image">
 
-4.  在PDF阅读器中，左侧注释栏的每一个注释右上角的黄色花形按钮，参见[4.3 从注释创建快速笔记/Quick Note from Annotation](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/pavzsz)
+4. 在PDF阅读器中，左侧注释栏的每一个注释右上角的黄色花形按钮，参见[4.3 从注释创建快速笔记/Quick Note from Annotation](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/pavzsz)
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107282661-de60feaa-eaad-4781-85cd-4a15538daeeb.png" width="2560" id="u33f48459" class="ne-image">
 
-5.  部分Better Notes笔记模板可能会创建笔记。
+5. 部分Better Notes笔记模板可能会创建笔记。
 
 ## 导出笔记
 
@@ -44,15 +44,15 @@ Zotero提供了一项笔记导出为markdown的功能，但图片及许多格式
 
 可通过以下三种方式导出笔记：
 
-1.  在主界面，选中一个或多个笔记条目，在右键菜单中通过"导出笔记及条目子笔记"或"导出多个笔记"；
+1. 在主界面，选中一个或多个笔记条目，在右键菜单中通过"导出笔记及条目子笔记"或"导出多个笔记"；
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107283502-9da68282-4a8e-42f1-b39b-bdbfd950ff42.png" width="358" id="u7f17ae0d" class="ne-image">
 
-2.  在笔记编辑器中，右上角工具栏导出按钮；
+2. 在笔记编辑器中，右上角工具栏导出按钮；
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662107284338-80ba60e0-ae55-4d06-9d48-ff847ed693f6.png" width="892" id="u1bde1ecf" class="ne-image">
 
-3.  （不推荐）在主界面中，通过右键菜单使用Zotero自带的笔记导出功能。
+3. （不推荐）在主界面中，通过右键菜单使用Zotero自带的笔记导出功能。
 
 # 关于Zotero笔记编辑器
 
@@ -78,10 +78,10 @@ Better Notes为笔记编辑器增加了许多其他功能及语法上的支持�
 
 Zotero中，可以在四处使用笔记编辑器：
 
-1.  在主界面中，选中某条笔记，右侧会打开一个笔记编辑器；
-2.  在内置PDF阅读器中，右侧笔记栏可打开笔记；
-3.  在Better Notes的工作区，有主笔记与预览笔记两栏；
-4.  在主界面双击笔记条目，或在任意笔记编辑器右上角'...'按钮，可在单独窗口打开笔记。
+1. 在主界面中，选中某条笔记，右侧会打开一个笔记编辑器；
+2. 在内置PDF阅读器中，右侧笔记栏可打开笔记；
+3. 在Better Notes的工作区，有主笔记与预览笔记两栏；
+4. 在主界面双击笔记条目，或在任意笔记编辑器右上角'...'按钮，可在单独窗口打开笔记。
 
 ## 笔记功能
 

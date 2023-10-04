@@ -7,7 +7,7 @@ updated: 2023-07-28 10:38:12
 
 # 申请步骤
 
-申请：https://my.openl.club/login?next=/
+申请：<https://my.openl.club/login?next=/>
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1664880800951-2e53cbd2-e2d2-416a-b770-bd935d035f5d.png" width="1280" id="u089ea327" class="ne-image">
 

@@ -8,9 +8,9 @@ updated: 2023-07-28 10:38:12
 
 一些朋友在 Word 中的 Zotero 选项卡突然消失了，或者使用的时候报错要求重装/升级该加载项。  **这一加载项需要在 \[Zotero 首选项\] 中安装**  。具体步骤如下：
 
-1.  保存好正在编辑的 Word 文档，并**彻底退出 Word**。
-2.  打开 \[Zotero 首选项\]。
-3.  在 \[引用/Cite\] -> \[文字处理软件/Word Processors\] 中点击 \[重新安装 Microsoft Word 加载项/Reinstall Microsoft Word Add-in\] 即可完成安装/更新/重装。
+1. 保存好正在编辑的 Word 文档，并**彻底退出 Word**。
+2. 打开 \[Zotero 首选项\]。
+3. 在 \[引用/Cite\] -> \[文字处理软件/Word Processors\] 中点击 \[重新安装 Microsoft Word 加载项/Reinstall Microsoft Word Add-in\] 即可完成安装/更新/重装。
     <img src="https://cdn.nlark.com/yuque/0/2022/png/32594373/1662210351200-0fd54abb-b5b7-4bde-a2ce-ba28c13da269.png" width="736" id="ud5419fd3" class="ne-image" style="font-size: 16px;">
 
 如果退出 Word 后重新安装这一加载项仍然报错，建议重启电脑后再尝试。
@@ -39,7 +39,7 @@ updated: 2023-07-28 10:38:12
 
 ## 使 Zotero 恢复对引文的更新
 
-首先分析一下 Word 加载项 在 word 留下的域代码结构，以 https://doi.org/10.1021/acscatal.0c05697 为例，其正常插入 Word 后产生的域代码为：
+首先分析一下 Word 加载项 在 word 留下的域代码结构，以 <https://doi.org/10.1021/acscatal.0c05697> 为例，其正常插入 Word 后产生的域代码为：
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/2804696/1662212462480-09fa98cd-aa56-4027-a256-52f56c9a3422.png" width="574.5" id="vIvqw" class="ne-image">
 
