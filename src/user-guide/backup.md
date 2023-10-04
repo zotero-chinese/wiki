@@ -7,7 +7,7 @@ author:
   - name: Northword
     url: https://northword.dev
 date: 2023-06-28 21:19:25
-updated: 2023-10-02 22:51:54
+updated: 2023-10-04 18:38:54
 ---
 
 # 备份
@@ -20,9 +20,9 @@ updated: 2023-10-02 22:51:54
 
 我们将构成 Zotero 正常运行的文件分为三部分：
 
-- Zotero 程序文件
-- Zotero 数据文件
-- Zotero 用户配置文件
+- Zotero 程序文件 (Program Files)
+- Zotero 数据文件 (Zotero Data Folder)
+- Zotero 用户配置文件 (Zotero Profile Directory)
 
 ### 程序文件
 
@@ -88,12 +88,24 @@ $ tree -L 1
 
 #### 用户配置文件位置
 
-| 系统类型                     | 默认位置                                                                         |
-| ---------------------------- | -------------------------------------------------------------------------------- |
-| macOS                        | `?`                                                                              |
-| Windows 7 and higher Windows | `C:\Users\<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\<8位随机字符>.default` |
-| Windows XP/2000              | `?`                                                                              |
-| Linux                        | `?`                                                                              |
+| 系统类型                     | 默认位置                                                                                      |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
+| macOS                        | `/Users/<username>/Library/Application Support/Zotero/Profiles/<randomstring>`                |
+| Windows 7 and higher Windows | `C:\Users\<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\<8位随机字符>.default`              |
+| Windows XP/2000              | `C:\Documents and Settings\<username>\Application Data\Zotero\Zotero\Profiles\<randomstring>` |
+| Linux                        | `~/.zotero/zotero/<randomstring>`                                                             |
+
+::: tip macOS
+
+默认情况下，`/Users/<用户名>/Library` 文件夹是隐藏的。要访问它，请单击桌面，按住 `Option` 键，单击 Finder 的 `转到` 菜单，然后从菜单中选择 `资源库`。
+
+:::
+
+::: tip Windows
+
+默认情况下， `AppData` 是隐藏的，可以在资源管理器搜索栏键入 `%appdata%`，然后按回车，即可进入 `AppData\Roaming` 目录。
+
+:::
 
 #### 用户配置文件内容
 
@@ -131,7 +143,7 @@ $ tree -L 1
 | 旧电脑                                                                     | 新电脑                                                                 |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中文件 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中 |
-| Zotero-`首选项`-`高级`-`文件和文件夹`-`数据储存位置`中的文件                       | 同一路径                                                               |
+| Zotero-`首选项`-`高级`-`文件和文件夹`-`数据储存位置`中的文件               | 同一路径                                                               |
 
 例如：电脑的用户名为`zotero-chinese`，旧电脑将 Zotero 安装在 `D:\Program Files\Zotero` 目录下，数据储存位置设置为 `C:\Users\zotero-chinese\Zotero`。
 
