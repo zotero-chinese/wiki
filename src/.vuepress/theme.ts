@@ -34,6 +34,9 @@ export default hopeTheme({
 
       displayFooter: true,
 
+      copyright:
+        "<p xmlns:cc='http://creativecommons.org/ns#' >本工作以 <a href='https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans' target='_blank' rel='license noopener noreferrer' style='display:inline-block;'>CC BY-SA 4.0<img style='height:22px!important;margin-left:3px;vertical-align:text-bottom;' src='https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1'><img style='height:22px!important;margin-left:3px;vertical-align:text-bottom;' src='https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1'><img style='height:22px!important;margin-left:3px;vertical-align:text-bottom;' src='https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1'></a> 协议授权</p> ",
+
       // page meta
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
