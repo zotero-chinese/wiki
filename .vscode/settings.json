@@ -10,6 +10,7 @@
   "markdown.copyFiles.destination": {
     "**/*": "${documentWorkspaceFolder}/src/assets/"
   },
+  "markdown.updateLinksOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
@@ -34,5 +35,7 @@
     // "package-lock.json": true,
     // "CODE_OF_CONDUCT.md": true,
     // "LICENSE": true
-  }
+
+  },
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart"
 }
