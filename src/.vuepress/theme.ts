@@ -30,7 +30,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       footer:
-        "Zotero 中文小组 | <a href='/contributing/'>贡献指南</a> | <a href='/'>参与讨论</a> | <a href='/'>加入 QQ 群组</a>",
+        "Zotero 中文小组 | <a href='/contributing/'>贡献指南</a> | <a href='https://github.com/orgs/zotero-chinese/discussions'>参与讨论</a> | <a href='/'>加入 QQ 群组</a>",
 
       displayFooter: true,
 
@@ -42,10 +42,13 @@ export default hopeTheme({
   },
 
   plugins: {
-    // comment: {
-    //   // @ts-expect-error: You should generate and use your own comment service
-    //   provider: "Waline",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "zotero-chinese/.github",
+      repoId: "R_kgDOHv4ukA",
+      category: "文档评论区",
+      categoryId: "DIC_kwDOHv4ukM4CZz7S",
+    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
