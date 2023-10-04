@@ -1,3 +1,6 @@
 {
-    "recommendations": ["davidanson.vscode-markdownlint"]
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one"
+  ]
 }
