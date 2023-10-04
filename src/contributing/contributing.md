@@ -22,8 +22,8 @@ Zotero 中文文档接受多种形式的贡献，请阅读这一份指南，以�
 参与文档的维护的主要方式：
 
 1. 在 GitHub 上的文档源码仓库下 [提交 ISSUE](https://github.com/zotero-chinese/wiki/issues)
-2. 在 GitHub 上的文档源码仓库下的 Discussions 上留言（也可以直接点击文档网页底部的“参与讨论”）
-3. ~~在网页底部评论区留言~~ (暂未上线)
+2. 在 GitHub Zotero Chinese 组织的 [Discussions 上讨论](https://github.com/orgs/zotero-chinese/discussions)（也可以直接点击文档网页底部的“参与讨论”）
+3. 在网页底部评论区留言
 4. 修改文档源码并提交 Pull Request （不熟悉 Pull Request 的读者可以参考 Pull Request 流程）
 
 ## 提交 / 参与议题 / 讨论
