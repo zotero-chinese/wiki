@@ -9,6 +9,7 @@ export const zhSidebar = sidebar({
   "/csl-dev-guide/": cslDevGuide,
   "/": [
     "about",
+    "CODE_OF_CONDUCT",
     "contributors",
     {
       text: "贡献者指南",
