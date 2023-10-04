@@ -36,5 +36,6 @@
     // "CODE_OF_CONDUCT.md": true,
     // "LICENSE": true
   },
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart"
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+  "markdown.validate.referenceLinks.enabled": "ignore"
 }
