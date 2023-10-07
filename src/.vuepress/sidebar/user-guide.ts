@@ -18,9 +18,10 @@ export const userGuide = arraySidebar([
     collapsible: true,
     children: [
       "citation-styles",
-      "create-bibliographies-within-zotero",
       "ms-word-plugin",
       "wps-plugin",
+      "create-bibliographies-within-zotero",
+      "create-bibliographies-via-zbib",
     ],
   },
   {
