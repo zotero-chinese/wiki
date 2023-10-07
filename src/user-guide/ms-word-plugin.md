@@ -13,7 +13,7 @@ updated: 2023-07-21 19:01:31
 
 ![Zotero Word 插件选项卡](../assets/image-word-zotero窗格.png)
 
-一般情况下，Zotero 安装时会安装 Zotero Word 插件，其会在 Microsoft Word 里添加一个 Zotero 选项卡。如果你的 Word 里没有 Zotero 选项卡，请参与 [故障排除 | 安装 Zotero 的 word 插件](https://zotero.yuque.com/books/share/93bfca90-00d8-4228-8d3a-305863c70f50/bqx0x4#x1CYu) 。
+一般情况下，Zotero 安装时会安装 Zotero Word 插件，其会在 Microsoft Word 里添加一个 Zotero 选项卡。如果你的 Word 里没有 Zotero 选项卡，请参见 [故障排除 | 安装 Zotero 的 word 插件](./faqs/word-addon.md#word-中没有-zotero-选项卡) 。
 
 Zotero 选项卡包含以下图标：
 
@@ -190,4 +190,4 @@ Keep Source Order
 
 :::
 
-另有一些 Word 加载项的问题解决可见 常见问题 Word 加载项相关问题 [https://zotero.yuque.com/staff-gkhviy/zotero/bqx0x4](https://zotero.yuque.com/staff-gkhviy/zotero/bqx0x4) 。
+另有一些 Word 加载项的问题解决可见 [常见问题 Word 加载项相关问题](./faqs/word-addon.md) 。
