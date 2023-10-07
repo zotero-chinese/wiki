@@ -21,6 +21,7 @@ export const userGuide = arraySidebar([
       "create-bibliographies-within-zotero",
       "ms-word-plugin",
       "wps-plugin",
+      "create-bibliographies-via-zbib",
     ],
   },
   {
