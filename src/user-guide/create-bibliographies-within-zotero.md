@@ -38,3 +38,10 @@ title: 直接生成参考文献表
     :::
 
     ![粘贴参考文献表](../assets/image-粘贴参考文献表.png)
+
+::: tip 插件推荐
+
+[Zutilo](https://github.com/wshanks/Zutilo) 插件（仅适配 Zotero 6，2023.10.7）提供了生成参考文献表的快捷键。
+[Zotero Actions & Tags](https://github.com/windingwind/zotero-actions-tags/discussions) 插件（仅适配 Zotero 7，2023.10.7）配合自定义脚本也可以添加生成参考文献表的快捷键。
+
+:::
