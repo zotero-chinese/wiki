@@ -1,14 +1,14 @@
-name: Build on Pull Request
+name: Build
 
 on:
-  pull_request:
+  workflow_call:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
@@ -28,3 +28,11 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           npm run docs:build
+          > src/.vuepress/dist/.nojekyll
+
+      - name: Upload build result
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-result
+          path: |
+            src/.vuepress/dist

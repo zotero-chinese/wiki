@@ -1,6 +1,7 @@
-name: Lint 文档
+name: Lint Markdown
 
-on: [push, pull_request]
+on:
+  workflow_call:
 
 jobs:
   lint:
