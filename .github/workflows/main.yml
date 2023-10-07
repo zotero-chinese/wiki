@@ -24,3 +24,10 @@ jobs:
       - lint
       - build
     uses: ./.github/workflows/deploy-gh-pages.yml
+
+  comment:
+    if: github.event_name == 'pull_request'
+    needs:
+      - lint
+      - build
+    uses: ./.github/workflows/comment-pr.yml
