@@ -144,7 +144,7 @@ updated: 2023-10-04 12:06:21
 
 其被修改后，域代码则会变为：
 
-```json
+```json {6}
 {
     "citationID": "gr3uElq7",
     "properties": {
