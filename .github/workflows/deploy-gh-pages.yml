@@ -10,6 +10,8 @@ jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Restore Build Result
         uses: actions/download-artifact@v3
         with:
@@ -17,7 +19,7 @@ jobs:
           path: ./src/.vuepress/dist
 
       - name: Display structure of downloaded files
-        run: ls -R
+        run: ls -R -a
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
