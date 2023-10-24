@@ -66,7 +66,7 @@ highlights:
     highlights:
       - title: Zotero 下载
         icon: sitemap
-        details: Zotero 安装包和 Connoter 下载
+        details: Zotero 安装包和 Connector 下载
         link: https://www.zotero.org/
 
       - title: Zotero 官方文档（英文）
