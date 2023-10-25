@@ -134,7 +134,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 2. 在第一次打开 Zotero 时，会提醒登陆，选择 Sign In（此时需要登陆你的 Zotero 账户）
 
-   ![登陆Zotero账户](../assets/image-iOS登陆.jpg)
+   ![登陆Zotero账户](../assets/image-iOS登陆.jpg =450)
 
 3. 登陆完成后，返回 app 主页，点击右上角的齿轮图标
 
