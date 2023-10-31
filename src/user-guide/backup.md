@@ -166,7 +166,7 @@ $ tree -L 1
 ✅备份已安装插件
 ✅备份 CSL 文件
 ✅备份转换器 (translators)
-❌备份 Locate 文件夹
+✅备份 Locate 文件夹
 ✅备份 Zotero 配置及插件配置
 
 下载地址：[GitHub](https://github.com/l0o0/tara) 或 [中文社区插件合集页](https://plugins.zotero-chinese.com)
@@ -229,8 +229,8 @@ $ tree -L 1
 
 当你在 B 电脑的 Zotero 上点击恢复，选择 A 电脑上刚创建的备份。这样两台电脑上的 Zotero 配置和插件信息就一起同步了。
 
-::: tip
+::: tip 注意修改 Tara 的 “备份 Locate” 设置
 
-由于不同电脑一些特殊的目录或配置，因不同电脑上会有区别，在备份时默认过滤掉 Locate 文件夹，可以通过点击 `Tara 图标-设置` 进行修改
+由于不同系统平台或主机上的文件路径可能不一致，tara 在备份时默认过滤掉了 `locate` 文件夹，可以通过点击 `Tara 图标-设置` 进行修改。
 
 :::
