@@ -9,7 +9,13 @@ export const userGuide = arraySidebar([
     icon: "module",
     // prefix: "basic-usage",
     collapsible: true,
-    children: ["install", "add-items", "organize-library", "take-notes"],
+    children: [
+      "install",
+      "add-items",
+      "organize-library",
+      "take-notes",
+      "feed",
+    ],
   },
   {
     text: "创建参考文献",
