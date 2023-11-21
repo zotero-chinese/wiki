@@ -96,7 +96,7 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 ### 从其他工具导入
 
-请参阅 [从其他工具导入条目到 Zotero](./import-from-other-software.md)。
+Zotero 可以将条目从 EndNote、Mendeley、Word 引用 等地方迁移到库中，详情请参阅 [从其他工具导入条目到 Zotero](./import-from-other-software.md)。
 
 ## 编辑条目
 
