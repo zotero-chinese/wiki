@@ -24,7 +24,7 @@ export default defineUserConfig({
 
     baiduTongjiPlugin({
       keys:
-        process.env.CONTEXT !== "production"
+        process.env.CONTEXT === "production"
           ? [
               "fc5b45ae006a231c1d5cff4610df7267", // lin
               "fc904ee59939c7c2284063619b0ef533", // northword
