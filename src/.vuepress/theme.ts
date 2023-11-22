@@ -47,10 +47,10 @@ export default hopeTheme({
   plugins: {
     comment: {
       provider: "Giscus",
-      repo: "zotero-chinese/.github",
-      repoId: "R_kgDOHv4ukA",
+      repo: "zotero-chinese/wiki",
+      repoId: "R_kgDOJZD4iQ",
       category: "文档评论区",
-      categoryId: "DIC_kwDOHv4ukM4CZz7S",
+      categoryId: "DIC_kwDOJZD4ic4CbJJB",
     },
 
     // all features are enabled for demo, only preserve features you need here
