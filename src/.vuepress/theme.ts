@@ -19,7 +19,9 @@ export default hopeTheme({
   docsDir: "src",
 
   hotReload: true,
+
   sidebarSorter: ["readme", "order", "filename", "title"],
+  headerDepth: 4,
 
   locales: {
     "/": {
@@ -57,7 +59,7 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+      // chart: true,
       checkLinks: {
         // 仅在开发模式下检查链接
         status: "always",
@@ -68,14 +70,14 @@ export default hopeTheme({
           "/playground.html",
         ],
       },
-      codetabs: true,
+      // codetabs: true,
       // demo: true,
       // echarts: true,
       figure: true,
-      flowchart: true,
-      gfm: true,
+      // flowchart: true,
+      // gfm: true,
       imgLazyload: true,
-      imgSize: true,
+      // imgSize: true,
       include: true,
       katex: true,
       mark: true,
