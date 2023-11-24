@@ -23,6 +23,62 @@ updated: 2023-10-04 12:06:21
 
 参考书目格式由您在 Zotero 文档首选项中选择的引文样式控制，并且应符合所使用样式的要求。可以通过编辑“Bibliography”（Word）或“Bibliography 1”（LibreOffice）文字处理程序样式来修改参考书目的格式。
 
+## 参考文献中论文题目实现斜体及上标、下标效果
+
+一些论文的题目需要在参考文献中表现为上标、下标或者斜体：如 CO~2~，H^+^、_Nature_，这该如何实现呢？
+
+方式一：~~插入参考文献后在 Word 中手动修改，但是这种方法每次刷新后需要重新设置非常麻烦。~~（这是不正确的方式，不推荐）
+
+方式二：在 Zotero 中修改该文献的条目信息，通过在题目中添加以下代码来实现上标、下标、斜体、加粗的效果，添加完后返回 Word 刷新引文：
+
+```html
+<sup>上标</sup>
+<sub>下标</sub>
+<i>斜体</i>
+<b>加粗</b>
+```
+
+:::: details 示例
+
+::: note 标题
+
+`Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR`
+
+`Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR`
+
+:::
+
+::: note 参考文献表
+
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO~2~ resistance of birnessite for low-temperature NH~3~-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+
+:::
+
+如上示例在 Zotero 条目信息中对需要为下标的单词两侧分别加上 `<sub>`和`</sub>`，回到在 Word 中点击 `Refresh` 刷新条目信息即可看到下标效果已经成功实现。
+
+![点击`Refresh`刷新条目信息](../../assets/image-Refresh.png)
+
+::::
+
+::: tip 使用 Linter 插件快捷插入
+
+插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+
+:::
+
+::: tip 使用 Quicker 快捷插入
+
+使用 quicker 动作可以也可以方便的实现同样的效果：
+
+- [添加斜体标识](https://getquicker.net/Sharedaction?code=98c3d460-22b5-49ab-99c2-08d9c6b06ad1)
+- [添加加粗标识](https://getquicker.net/Sharedaction?code=dc815b9a-f463-4233-99c5-08d9c6b06ad1)
+- [添加上标标识](https://getquicker.net/Sharedaction?code=dee60abc-d1f5-40ad-99c3-08d9c6b06ad1)
+- [添加下标标识](https://getquicker.net/Sharedaction?code=b44c0592-89fa-41c2-99c4-08d9c6b06ad1)
+
+:::
+
 ## Word 中没有 Zotero 选项卡
 
 一些朋友在 Word 中的 Zotero 选项卡突然消失了，或者使用的时候报错要求重装/升级该加载项。 **这一加载项需要在 Zotero 首选项 中安装** 。具体步骤如下：
