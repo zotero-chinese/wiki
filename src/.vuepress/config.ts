@@ -4,7 +4,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { baiduTongjiPlugin } from "./plugins/baiduTongji.js";
 
 export default defineUserConfig({
-  base: process.env.NETLIFY ? "/" : "/wiki/",
+  base: "/",
 
   locales: {
     "/": {

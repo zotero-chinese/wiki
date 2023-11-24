@@ -2,6 +2,9 @@ name: Deploy GitHub Pages
 
 on:
   workflow_call:
+    secrets:
+      ACCESS_TOKEN:
+        required: true
 
 permissions:
   contents: write
@@ -10,20 +13,26 @@ jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: 签出仓库
+        uses: actions/checkout@v4
 
-      - name: Restore Build Result
+      - name: 下载构建内容
         uses: actions/download-artifact@v3
         with:
           name: build-result
-          path: ./src/.vuepress/dist
+          # path: dist.tar
 
-      - name: Display structure of downloaded files
+      - name: 解压构建文件
+        run: tar -xvf dist.tar src/.vuepress/dist
+
+      - name: 列出构建内容目录结构
         run: ls -R -a
 
-      - name: Deploy
+      - name: 部署到 GitHub
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 这是文档部署到的分支名称
+          repository-name: zotero-chinese/zotero-chinese.github.io
           branch: gh-pages
           folder: src/.vuepress/dist
+          single-commit: true
+          token: ${{ secrets.ACCESS_TOKEN }}
