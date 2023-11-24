@@ -6,27 +6,33 @@
 
 ## 访问
 
-<https://zotero-chinese.com>
+请访问在线网站：[Zotero 中文社区（https://zotero-chinese.com）](https://zotero-chinese.com)。
+
+备用地址：<https://zotero-chinese.github.io>。
 
 ## 协议
 
-<!-- markdownlint-disable -->
-所有文档采用均采用 [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-hans) (<a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>) 协议共享。
+所有文档采用均采用 [知识共享 署名-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-hans) 协议共享，代码采用 MIT 协议共享。
 
-代码采用 MIT 协议共享。
+<!-- markdownlint-disable -->
+
+<a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
+
 <!-- markdownlint-restore -->
 
 ## 行为准则
 
-见 <https://zotero-chinese.com/CODE_OF_CONDUCT.html>
+见 [贡献者公约](https://zotero-chinese.com/code_of_conduct.html)。
 
 ## 贡献指南
 
-见 <https://zotero-chinese.com/contributing/>
+本项目接收多种方式的贡献，详情请参阅 [贡献指南](https://zotero-chinese.com/contributing/contributing.html)。
 
 ## 贡献者
 
-见 <https://zotero-chinese.com/contributors.html>
+感谢所有贡献者！
+
+[![contributors](https://contrib.rocks/image?repo=zotero-chinese/wiki)](https://github.com/zotero-chinese/wiki/graphs/contributors)
 
 ## 致谢
 
