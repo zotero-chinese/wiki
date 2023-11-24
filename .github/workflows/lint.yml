@@ -7,8 +7,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v13
+      - name: 签出仓库
+        uses: actions/checkout@v4
+      - name: 运行 MarkdownLint
+        uses: DavidAnson/markdownlint-cli2-action@v13
         with:
           globs: |
             **/*.md
