@@ -28,4 +28,4 @@ jobs:
           repository-name: zotero-chinese/zotero-chinese.github.io
           branch: gh-pages
           folder: src/.vuepress/dist
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
