@@ -2,6 +2,9 @@ name: Deploy GitHub Pages
 
 on:
   workflow_call:
+    secrets:
+      ACCESS_TOKEN:
+        required: true
 
 permissions:
   contents: write

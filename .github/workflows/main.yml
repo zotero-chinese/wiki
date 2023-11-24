@@ -24,3 +24,5 @@ jobs:
       - lint
       - build
     uses: ./.github/workflows/deploy-gh-pages.yml
+    secrets:
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
