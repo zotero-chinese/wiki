@@ -20,7 +20,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-result
-          path: dist.tar
+          # path: dist.tar
 
       - name: 解压构建文件
         run: tar -xvf dist.tar src/.vuepress/dist
