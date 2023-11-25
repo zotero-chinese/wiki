@@ -244,6 +244,8 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 <b>粗体</b>
 ```
 
+详细请参阅：[在 Word 参考文献表中实现斜体及上下标效果](./faqs/word-addon.md#参考文献中论文题目实现斜体及上标下标效果)。
+
 ::: tip 插件推荐
 
 插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
