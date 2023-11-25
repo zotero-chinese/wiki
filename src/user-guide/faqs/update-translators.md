@@ -50,7 +50,7 @@ updated: 2023-11-23 16:51:00
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-   ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
+      ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
