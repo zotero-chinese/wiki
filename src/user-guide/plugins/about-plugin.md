@@ -1,7 +1,7 @@
 ---
 title: 关于 Zotero 插件
 date: 2023-11-10 11:48:00
-updated: 2023-11-10 11:48:00
+updated: 2023-11-23 22:06:00
 ---
 
 # 关于 Zotero 插件
@@ -18,6 +18,14 @@ updated: 2023-11-10 11:48:00
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
 - 国内镜像：<https://plugins.zotero-chinese.com/#/>
+
+::: tip
+
+Zotero 6（正式版）和 Zotero 7（测试版）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://plugins.zotero-chinese.com/)中有注明兼容的目标 Zotero 版本，下载时请务必注意。
+
+Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相关的解决方案也仍不够完善。对于绝大多数一般用户，建议继续使用 Zotero 6 正式版，并跟随正式版的更新节奏升级。
+
+:::
 
 ## 安装插件
 
