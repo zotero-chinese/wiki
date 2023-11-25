@@ -1,6 +1,7 @@
 ---
 author:
   - name: 阿狸
+icon: copy
 ---
 
 # 从其他软件导入条目

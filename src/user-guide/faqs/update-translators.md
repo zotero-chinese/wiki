@@ -30,7 +30,8 @@ updated: 2023-11-23 16:51:00
     :::
 
 2. 在 Zotero 首选项中，进入 高级 设置，点击下方“自动检查转换器和样式的更新”后面的 立即更新 按钮。
-![数据储存位置](../../assets/image-update-official-translators.jpg)
+
+    ![更新官方 translator](../../assets/image-update-official-translators.jpg){width=60%}
 
     ::: tip
 
@@ -39,7 +40,8 @@ updated: 2023-11-23 16:51:00
     :::
 
 3. 进入 茉莉花 插件的设置，转到 非官方维护中文翻译器 部分，然后点击 更新全部 按钮。
-![更新非官网维护中文翻译器](../../assets/image-update-unofficial-translators.jpg)
+
+    ![更新非官网维护中文翻译器](../../assets/image-update-unofficial-translators.jpg){width=60%}
 
 4. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 

@@ -58,6 +58,7 @@ export const userGuide = arraySidebar([
     collapsible: true,
     children: [
       "add-items-adv",
+      "import-from-other-software.html",
     ],
   },
   {

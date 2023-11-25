@@ -1,8 +1,8 @@
 ---
-title: 添加条目（进阶）
+title: 手动导入或创建条目
 icon: add
 author:
-  - name: WakeWon
+  - name: 可口可乐
     url: https://github.com/wakewon
 date: 2023-11-25 12:13:00
 updated: 2023-11-25 12:13:00
@@ -53,9 +53,9 @@ updated: 2023-11-25 12:13:00
 
     ![从文件导入](../assets/image-importing_standardized_formats_3.webp){width=60%}
 
-    ![设定从文件导入的选项](../assets/image-importing_standardized_formats_4.webp){width=60%}
+    ![选择导入的文件](../assets/image-importing_standardized_formats_4.webp){width=60%}
 
-    ![选择导入的文件](../assets/image-importing_standardized_formats_5.webp){width=60%}
+    ![设定从文件导入的选项](../assets/image-importing_standardized_formats_5.webp){width=60%}
 
 6. 导入完成后，该条目会混入文库中。你可以在左边栏分类列表最下面的 `未分类条目/Unfiled Item` 中按照年份排序来方便地找到刚刚导入的条目，将其拖入你需要的分类中：
 
