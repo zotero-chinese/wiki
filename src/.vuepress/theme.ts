@@ -77,7 +77,7 @@ export default hopeTheme({
       // flowchart: true,
       // gfm: true,
       imgLazyload: true,
-      // imgSize: true,
+      imgSize: true,
       include: true,
       katex: true,
       mark: true,
