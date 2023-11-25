@@ -3,6 +3,7 @@
 [![Static Badge](https://img.shields.io/badge/Author-Zotero%20Chinese-blue)](#贡献者)
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/zotero-chinese/wiki)](#贡献者)
 [![GitHub License](https://img.shields.io/github/license/zotero-chinese/wiki)](#协议)
+[![GitHub repo size](https://img.shields.io/github/repo-size/zotero-chinese/wiki)](#zotero-中文文档仓库)
 
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/zotero-chinese/wiki/main)](#zotero-中文文档仓库)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aaa3fdac-5809-409e-b99d-012a232fed18/deploy-status)](https://app.netlify.com/sites/zotero-zh/deploys)
