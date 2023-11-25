@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 签出仓库
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -30,9 +30,12 @@ jobs:
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: Upload build result
+      - name: 压缩构建文件
+        run: tar -cvf dist.tar src/.vuepress/dist
+
+      - name: 上传构建结果
         uses: actions/upload-artifact@v3
         with:
           name: build-result
           path: |
-            src/.vuepress/dist
+            dist.tar
