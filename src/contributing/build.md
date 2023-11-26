@@ -146,7 +146,8 @@ GitHub 相关资料：
 通过下面的命令安装依赖项。
 
 ```bash
-npm install
+npm install -g pnpm
+pnpm install
 ```
 
 ![安装依赖](../assets/image-build-安装依赖-1.png)
@@ -167,7 +168,7 @@ npm install
    使用以下命令启动开发服务器，如下图，开发服务器启动后，会给出几个本地链接，访问任一链接（通常为 Local）即可得到预览。
 
    ```bash
-   npm run docs:dev
+   pnpm run docs:dev
    ```
 
    ![启动开服务器](../assets/image-build-启动开发服务器-1.png)
@@ -230,7 +231,7 @@ npm install
 
 ## 其他的脚本
 
-### npm run docs:build
+### pnpm run docs:build
 
 构建脚本，用于将 markdown 构建为网页。
 
@@ -238,6 +239,6 @@ npm install
 
 一般情况下，图片路径错误、链接错误会导致报错。
 
-### npm run lint
+### pnpm run lint:md
 
 运行 Markdown Lint。
