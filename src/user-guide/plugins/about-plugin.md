@@ -57,7 +57,7 @@ updated: 2023-11-10 11:48:00
 
 在[国内镜像](https://plugins.zotero-chinese.com/#/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
 
-![目标 Zotero 版本](../../assets/image-%E7%9B%AE%E6%A0%87zotero%E7%89%88%E6%9C%AC.png)
+![目标 Zotero 版本](../../assets/image-目标zotero版本.png)
 
 :::
 
