@@ -1,4 +1,5 @@
 {
+  // 定义文档中涉及的专有名词
   "MD044": {
     "code_blocks": false,
     "html_elements": false,
@@ -17,6 +18,8 @@
     ]
   },
 
+  // 兼容 Prettier
+  // @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
   "blanks-around-fences": false,
   "blanks-around-headings": false,
   "blanks-around-lists": false,
@@ -40,6 +43,8 @@
   "strong-style": false,
   "ul-indent": false,
 
+  // 其他规则配置
+  // @see https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/.markdownlint.json
   "default": true,
   "MD003": {
     "style": "atx"
@@ -90,7 +95,10 @@
       "ToggleRTLButton"
     ]
   },
-
+  // 兼容 Prettier 禁用
+  // "MD035": {
+  //   "style": "---"
+  // },
   "MD036": false,
   "MD040": false,
   "MD046": false,
