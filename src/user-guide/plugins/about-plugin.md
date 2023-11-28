@@ -19,15 +19,15 @@ updated: 2023-11-23 22:06:00
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
 - 国内镜像：<https://plugins.zotero-chinese.com/#/>
 
-::: tip
+::: tip 火狐浏览器用户请选择另存为
 
-插件的后缀名为 `.xpi` ， 如果下载到后缀为`****.xpi`的文件，请不要解压，解压后会导致插件无法安装。
+插件的后缀名为 `.xpi` ， 如果下载到后缀为 `.xpi` 的文件，不要解压，解压后会导致插件无法安装。
 
-部分浏览器（例如火狐）无法直接通过点击链接进行下载，需要右键点击链接进行另存为，才可将插件保存至本地。
+`.xpi` 也是火狐浏览器的插件后缀，因此火狐浏览器无法直接通过点击链接进行下载，需要右击链接，选择另存为，才可将插件保存至本地。
 
 :::
 
-::: tip
+::: tip Zotero 6 与 Zotero 7 的插件互不兼容
 
 Zotero 6（正式版）和 Zotero 7（测试版）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://plugins.zotero-chinese.com/)中有注明兼容的目标 Zotero 版本，下载时请务必注意。
 
@@ -69,7 +69,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ![升级插件](../../assets/image-zotero-plugin-update.png)
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）` => `右上角的齿轮` => `Check for Updates` 后Zoteor会对插件的版本进行检查，并自动对插件进行更新。
+依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 
 ::: tip
 
