@@ -15,7 +15,7 @@ icon: copy
 
 ![Endnote菜单](../assets/endnote-menu.png)
 
-如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击【Save】
+如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 Zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击【Save】
 
 ![Endnote输出目录](../assets/endnote-save.png)
 
@@ -112,7 +112,7 @@ Word 2016/2019/Office 365 for Windows:
 
 打开 Zotero，在“我的文库”中选择（或新建后选中）一个文件夹，用于存放要导入的文献条目，在左上角工具栏点击【文件】=>【从剪切板导入】
 
-![导入zotero菜单](../assets/word-zotero-import.png)
+![导入Zotero菜单](../assets/word-zotero-import.png)
 
 即可如下图所示，成功导入 Word 文档中引用的文献。
 

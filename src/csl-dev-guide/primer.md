@@ -35,9 +35,9 @@ updated: 2023-07-22 20:42:39
 
 ::: note 参考文献条目实例
 
-Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
+Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
-van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of _Hansenula polymorpha_: a physiological study. Arch Microbiol 156: 15-23.
 
 Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
 
@@ -49,11 +49,11 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 ::: note 参考文献条目实例
 
-1. Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
+1. Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
 2. Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
 
-3. van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+3. van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of _Hansenula polymorpha_: a physiological study. Arch Microbiol 156: 15-23.
 
 :::
 
@@ -75,9 +75,9 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 ::: note 参考文献条目实例
 
-\[GBKv2008] Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active *Penicillium chrysogenum* isopenicillin N synthase in the yeast *Hansenula polymorpha*. BMC Biotechnol 8: 29.
+\[GBKv2008] Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
-\[vaHV1991] van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of *Hansenula polymorpha*: a physiological study. Arch Microbiol 156: 15-23.
+\[vaHV1991] van der Klei IJ, Harder W, Veenhuis M (1991) Methanol metabolism in a peroxisome-deficient mutant of _Hansenula polymorpha_: a physiological study. Arch Microbiol 156: 15-23.
 
 \[ZwVH1983] Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the metabolism of choline and ethanolamine. Antonie van Leeuwenhoek 49: 369-385.
 
@@ -89,9 +89,9 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 ::: note 参考文献条目实例
 
-\[*]  Voyage to St. Kilda’ (3rd edit. 1753), p. 37.
+\[\*] Voyage to St. Kilda’ (3rd edit. 1753), p. 37.
 
-\[†]  Sir J. E. Tennent, ‘Ceylon,’ vol. ii. 1859, p. 107.
+\[†] Sir J. E. Tennent, ‘Ceylon,’ vol. ii. 1859, p. 107.
 
 :::
 
@@ -123,7 +123,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 幸运的是，独立格式可以依据 `CSL locale files`(以下也翻译为 本地化文件 ) 来实现通用项的翻译，日期格式和语法的转换。例如：我们可以重写 `CSL` 格式使用 `"retrieved"` 和 `"from"` 项，并使用本地化的日期格式。如果我们将 `CSL` 样式 (同格式) 的使用环境设置为美式英语，该样式将从 `US English locale file` 检索和翻译对应的项，并生成上述引用。如果将英语换为德语，就会使用德语对应的 `locale file`，生成的引用如下：
 
->Hartman, P., Bezos, J. P., Kaphan, S., & Spiegel, J. (28. September 1999). Method and system for placing a purchase order via a communications network. Abgerufen von <https://www.google.com/patents/US5960411>
+> Hartman, P., Bezos, J. P., Kaphan, S., & Spiegel, J. (28. September 1999). Method and system for placing a purchase order via a communications network. Abgerufen von <https://www.google.com/patents/US5960411>
 
 因此，使用 `CSL locale files` ，可以编写与语言无关的 `CSL` 样式。如上面展示的，这样的格式可以轻易的在不同的语言中转换。但是语言是很复杂的，`CSL automatic localization` 并不能支持所有的语言特色。但是，语言无关的样式仍然是有意义的，如果你要自己修改 `CSL` 样式来适应自己选择的语言环境，参考这些语言无关的样式将更容易实现。
 
@@ -135,7 +135,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 例如：一篇期刊文章可能需要作者的名字，发表的年份，文章题目，期刊名称，卷和期，出现的页码范围以及 `DOI`（数字文献唯一标识），所有这些信息都有助于读者识别和查找这篇文章。
 
-参考文献管理软件可以轻松的创建文献的这些细节信息。但是，很多参考文献管理软件都有自己的格式来存储这些元素据，大多数都支持通用的 `bibliographic exchange formats`，比如 `BixTex` 和 `RIS`。` citeproc-js `CSL 处理器引入了一种基于 `JSON` 的格式，用于以 `citeproc-js` 可以理解的方式来存储元数据。其他的一些 `CSL` 处理器后来采用了这种 `“CSL JSON”` 格式（也称为 `“citeproc JSON”`）。
+参考文献管理软件可以轻松的创建文献的这些细节信息。但是，很多参考文献管理软件都有自己的格式来存储这些元素据，大多数都支持通用的 `bibliographic exchange formats`，比如 `BixTex` 和 `RIS`。`citeproc-js`CSL 处理器引入了一种基于 `JSON` 的格式，用于以 `citeproc-js` 可以理解的方式来存储元数据。其他的一些 `CSL` 处理器后来采用了这种 `“CSL JSON”` 格式（也称为 `“citeproc JSON”`）。
 
 译者注：这里讲的似乎有些繁琐。总的来说，是我们需要每篇文章的作者，题目，发表期刊等信息来生成对应的条目。文献管理软件可以很方便的提供这些信息。至于其内部存储的方式，使用的时候并不需要关心，类似 `Zotero` 的文献管理软件会自动使用这些信息和 `CSL` 生成引用信息。
 
@@ -162,12 +162,12 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
-  <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
+  <!-- Generated with https://GitHub.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
   <info>
     <title>Applied and Environmental Microbiology</title>
-    <id>http://www.zotero.org/styles/applied-and-environmental-microbiology</id>
-    <link href="http://www.zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
-    <link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
+    <id>http://www.Zotero.org/styles/applied-and-environmental-microbiology</id>
+    <link href="http://www.Zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
+    <link href="http://www.Zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
     <link href="http://aem.asm.org/" rel="documentation"/>
     <category citation-format="numeric"/>
     <category field="biology"/>
@@ -184,7 +184,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 大多数从属格式都是电子表格自动生成的，下面的注释也给出了指向电子表格的联接。
 
 ```xml
- <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
+ <!-- Generated with https://GitHub.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
 ```
 
 元素 `info` 里包含了大多数 `style` 的元数据，比如：
@@ -204,13 +204,13 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 `style` 自己的链接。该链接指向了网上的副本。
 
 ```xml
-<link href="http://www.zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
+<link href="http://www.Zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
 ```
 
 从属格式需要指定它的父格式，父格式为独立格式。这里的父格式为 `American Society for Microbiology`
 
 ```xml
-<link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
+<link href="http://www.Zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
 ```
 
 为了更好的维护格式，因此需要指定格式的文档链接。这里文档的链接转到了期刊的主页。
@@ -254,9 +254,9 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
   <info>
     <title>Example Style</title>
-    <id>http://www.zotero.org/styles/example</id>
-    <link href="http://www.zotero.org/styles/example" rel="self"/>
-    <link href="http://www.zotero.org/styles/apa" rel="template"/>
+    <id>http://www.Zotero.org/styles/example</id>
+    <link href="http://www.Zotero.org/styles/example" rel="self"/>
+    <link href="http://www.Zotero.org/styles/apa" rel="template"/>
     <link href="http://www.example.com/style-guide/" rel="documentation"/>
     <author>
       <name>John Doe</name>
@@ -376,8 +376,8 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 <info>
   <title>Example Style</title>
   <id>http://www.zotero.org/styles/example</id>
-  <link href="http://www.zotero.org/styles/example" rel="self"/>
-  <link href="http://www.zotero.org/styles/apa" rel="template"/>
+  <link href="http://www.Zotero.org/styles/example" rel="self"/>
+  <link href="http://www.Zotero.org/styles/apa" rel="template"/>
   <link href="http://www.example.com/style-guide/" rel="documentation"/>
   <author>
     <name>John Doe</name>

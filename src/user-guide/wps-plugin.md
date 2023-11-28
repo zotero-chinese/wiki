@@ -12,11 +12,11 @@ updated: 2023-09-24 14:49:15
 - 使用 VBA，借用 Word 的插件
 - 使用 WPS JavaScript API 制作的插件
 
-使用 WPS 的 VBA 插件插入参考这篇：[完美在 wps 中使用 zotero 的方法](https://zhuanlan.zhihu.com/p/579975093)，该方法这个方法需要依赖 WPS 的 VBA 环境，需要升级到某些付费版本才行（当然也有破解版）。
+使用 WPS 的 VBA 插件插入参考这篇：[完美在 WPS 中使用 Zotero 的方法](https://zhuanlan.zhihu.com/p/579975093)，该方法这个方法需要依赖 WPS 的 VBA 环境，需要升级到某些付费版本才行（当然也有破解版）。
 
 下面是使用 WPS 原生 JavaScript API 插件的教程。
 
-::: tip MacOS 系统上的 WPS 用户暂时无法使用
+::: tip macOS 系统上的 WPS 用户暂时无法使用
 
 插件是利用 WPS 提供的 JavaScript API 从 Zotero 获取引文信息，并写入到 WPS 文档中。目前插件可以在**Windows 和 Linux 系统**下使用，因 WPS 的接口暂时不支持 macOS 系统，所以**使用苹果电脑的同学暂时用不上这个插件**。
 
@@ -40,7 +40,7 @@ updated: 2023-09-24 14:49:15
 
 注意看，只要出现 `Python 3.xx.xx`，就说明 Python3 已经正确安装，直接进入下一步。如果出现其他的，说明 Python3 未正确安装，请按下面的步骤进行安装。
 
-下载 Python3 安装包，[64位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)，[32位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5.exe)，不知道自己电脑是几位的，就选 64 位。如果上面两个链接下载太慢 (不开代理 ，官网下载速度慢已经 10 多年了)，可试试安装 [miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py39_23.5.2-0-Windows-x86_64.exe)。
+下载 Python3 安装包，[64 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)，[32 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5.exe)，不知道自己电脑是几位的，就选 64 位。如果上面两个链接下载太慢 (不开代理 ，官网下载速度慢已经 10 多年了)，可试试安装 [miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py39_23.5.2-0-Windows-x86_64.exe)。
 
 这里以 miniconda 示例，安装时默认设置，除了下面截图的设置，要记得打勾，把 Python 添加到环境变量里
 
@@ -68,7 +68,7 @@ Windows 系统直接双击 `windows安装与卸载.bat` 安装文件，你可能
 
 ![点击仍要运行](../assets/image-wps-warn2.png)
 
-运行后出现的提示窗口，输入 `1`，并按确认，进行安装  
+运行后出现的提示窗口，输入 `1`，并按确认，进行安装
 
 ![选择1](../assets/image-wps-install.png)
 

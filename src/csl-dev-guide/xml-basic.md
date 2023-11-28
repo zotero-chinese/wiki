@@ -52,7 +52,7 @@ updated: 2022-08-03 10:17:53
 
 3. 带有内容的元素
 <Price>21000</Price>
-    
+
 4. 带有内容和属性的元素
 <Price MoneyKind="RMB">21000</Price>  # MoneyKind 为属性  21000为元素值
 或者是

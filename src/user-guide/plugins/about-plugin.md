@@ -31,7 +31,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ![Install Plugin](../../assets/image-zotero-plugin-install.png)
 
-打开 Zotero 菜单栏 => 工具（Tools）=> 插件（Add-on），然后将下载的 xpi 文件拖入插件窗口，即可完成安装。(对于部分老版本的插件，可能需要手动点击 Restart now 或者重启 zotero)。
+打开 Zotero 菜单栏 => 工具（Tools）=> 插件（Add-on），然后将下载的 xpi 文件拖入插件窗口，即可完成安装。(对于部分老版本的插件，可能需要手动点击 Restart now 或者重启 Zotero)。
 
 ## 更新插件
 

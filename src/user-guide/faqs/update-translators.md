@@ -96,7 +96,7 @@ updated: 2023-11-23 16:51:00
 
 3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的 translators
 
-   ![手动在github上下载translators](../../assets/image-手动在github下载translators.png)
+   ![手动在GitHub上下载translators](../../assets/image-手动在github下载translators.png)
 
 4. 将下载的 zip 文件解压后选择其中所有的 translators 文件（.js 文件），并复制
 
@@ -108,36 +108,36 @@ updated: 2023-11-23 16:51:00
 
 6. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
-    ::: details Google Chrome 和 Microsoft Edge
+   ::: details Google Chrome 和 Microsoft Edge
 
-    1. 右键点击 Zotero Connector 按钮，然后点击 选项
+   1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-        ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
+      ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
 
-    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-        ![Chrome更新translator2](../../assets/image-update-translator-chrome-2.jpg)
+      ![Chrome更新translator2](../../assets/image-update-translator-chrome-2.jpg)
 
-    :::
+   :::
 
-    ::: details Apple Safari
+   ::: details Apple Safari
 
-    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
+   1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-        ![Safari更新translator1](../../assets/image-update-translator-safari-1.jpg)
+      ![Safari更新translator1](../../assets/image-update-translator-safari-1.jpg)
 
-    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-        ![Chrome更新translator2](../../assets/image-update-translator-safari-2.jpg)
+      ![Chrome更新translator2](../../assets/image-update-translator-safari-2.jpg)
 
-    :::
+   :::
 
-    ::: warning
+   ::: warning
 
-    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
+   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
 
-    点击 Update Translators 按钮时，请不要吝惜你的鼠标，经验上 **连续多点几（十）次** 通常更有效。
+   点击 Update Translators 按钮时，请不要吝惜你的鼠标，经验上 **连续多点几（十）次** 通常更有效。
 
-    :::
+   :::
 
 此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。

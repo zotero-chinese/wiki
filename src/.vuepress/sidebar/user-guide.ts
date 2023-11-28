@@ -56,10 +56,7 @@ export const userGuide = arraySidebar([
     icon: "creative",
     // prefix: "advanced",
     collapsible: true,
-    children: [
-      "add-items-adv",
-      "import-from-other-software.html",
-    ],
+    children: ["add-items-adv", "import-from-other-software.html"],
   },
   {
     text: "杂项",

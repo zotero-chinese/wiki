@@ -1,8 +1,8 @@
 ---
 title: 通过 VBA 在 WPS 中使用 Word 插件
-author: 
-    - name: winding
-    - name: 不秃燃的小老弟
+author:
+  - name: winding
+  - name: 不秃燃的小老弟
 date: 2022-11-08 11:38:09
 updated: 2023-10-04 12:06:44
 ---
@@ -13,15 +13,15 @@ updated: 2023-10-04 12:06:44
 
 :::info
 
-**Zotero Word 插件在 WPS 的使用操作与 Office Word 类似，因此不再展开说明，点击下方蓝字可查看 📝**[**在Word中插入引文**](../ms-word-plugin.md)
+**Zotero Word 插件在 WPS 的使用操作与 Office Word 类似，因此不再展开说明，点击下方蓝字可查看 📝**[**在 Word 中插入引文**](../ms-word-plugin.md)
 
 :::
 
-> **🔊🔊🔊必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！（无法正常使用请见本文档 **四、Refresh/Unlink Citations 莫名失效**）
+> **🔊🔊🔊 必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！（无法正常使用请见本文档 **四、Refresh/Unlink Citations 莫名失效**）
 
 :::warning
 
-**以下是 WPS 的 Zotero Word 加载项的常见问题及解决方法，均以 Window 系统为例演示📝：**
+**以下是 WPS 的 Zotero Word 加载项的常见问题及解决方法，均以 Window 系统为例演示 📝：**
 
 :::
 
@@ -43,7 +43,7 @@ updated: 2023-10-04 12:06:44
 
 ### 2、WPS.VBA 插件的安装
 
-若 WPS 为**个人版**，需额外安装 [**VBA插件**](https://pan.baidu.com/s/1y-cjisA6Lxbnw3r3g_jmKA?pwd=moyu)（点击左侧蓝字获取插件）
+若 WPS 为**个人版**，需额外安装 [**VBA 插件**](https://pan.baidu.com/s/1y-cjisA6Lxbnw3r3g_jmKA?pwd=moyu)（点击左侧蓝字获取插件）
 
 :::warning
 
@@ -55,7 +55,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ![image.png](../../assets/fb54e92ec7ed8c0a631028f76695a78a_MD5.png)
 
-2）**双击**打开 WPS. VBA 安装程序，依次单击【**Next**】，最后单击【**Finish**】。用 WPS 打开任意一个 word 文档，检查是否正常显示 Zotero 加载项。
+2）**双击**打开 WPS. VBA 安装程序，依次单击【**Next**】，最后单击【**Finish**】。用 WPS 打开任意一个 Word 文档，检查是否正常显示 Zotero 加载项。
 
 ![image.png](../../assets/f30e9f8627698b66e84c9bdc9a595663_MD5.png)
 
@@ -71,7 +71,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ![image.png](../../assets/e2f9f84e616a8113ce86de71f95e6764_MD5.png)
 
- 2）依次双击打开【**extensions**】-【**<zoteroWinWordIntegration@zotero.org>】-【install**】文件夹，复制 **Zotero.dotm** 文件。
+2）依次双击打开【**extensions**】-【**<zoteroWinWordIntegration@zotero.org>】-【install**】文件夹，复制 **Zotero.dotm** 文件。
 
 ![image.png](../../assets/8addbd81b3d85f5501f1a58020ab3191_MD5.png)
 
@@ -201,7 +201,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ### 1、直接安装美化后的图标文件
 
-1）我已创建 5 种 [Refresh和Unlink Citations图标](https://pan.baidu.com/s/1BXjo-ZOT971qlsY-zboIdA?pwd=moyu)（任选其一），可直接安装使用。点击上方蓝字即可获取，首先将其**下载并保存**到电脑（如下图所示）。
+1）我已创建 5 种 [Refresh 和 Unlink Citations 图标](https://pan.baidu.com/s/1BXjo-ZOT971qlsY-zboIdA?pwd=moyu)（任选其一），可直接安装使用。点击上方蓝字即可获取，首先将其**下载并保存**到电脑（如下图所示）。
 
 ![image.png](../../assets/a01d83b2dbe0f1d2c356c891336416ec_MD5.png)
 
@@ -253,12 +253,12 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 2）重启 WPS，或新建一个 Word 文档，再用 WPS 打开。或必要时重启电脑即可正常使用。
 
-> **🔊🔊🔊必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！
+> **🔊🔊🔊 必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！
 
 ## 致谢
 
 :::info
 
-👍到这里，在 WPS 中使用 Zotero Word 加载项的使用已接近尾声。在此由衷地感谢来自 b 站、知乎、CSDN 等网站的大神们分享的有关 WPS 的 Zotero Word 加载项使用的宝贵经验！！！
+👍 到这里，在 WPS 中使用 Zotero Word 加载项的使用已接近尾声。在此由衷地感谢来自 b 站、知乎、CSDN 等网站的大神们分享的有关 WPS 的 Zotero Word 加载项使用的宝贵经验！！！
 
 :::

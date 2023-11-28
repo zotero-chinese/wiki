@@ -2,7 +2,19 @@
   "MD044": {
     "code_blocks": false,
     "html_elements": false,
-    "names": ["Zotero", "JavaScript", "GitHub"]
+    "names": [
+      "Zotero",
+      "JavaScript",
+      "GitHub",
+      "WebDAV",
+      "Android",
+      "iOS",
+      "macOS",
+      "WPS",
+      "Word",
+      "ZotFile",
+      "Zotero Chinese"
+    ]
   },
 
   "blanks-around-fences": false,

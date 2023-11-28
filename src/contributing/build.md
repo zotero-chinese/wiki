@@ -63,7 +63,7 @@ brew install git
 
 安装完成后，还需设置个人信息。打开终端，运行以下命令
 
-（将 "zotero-user" 和 "<zotero-user@gmail. com>" 替换成个人对应的信息）:
+（将 `zotero-user` 和 `<zotero-user@gmail.com>` 替换成个人对应的信息）:
 
 ```bash
 # 设置用户姓名和邮箱
@@ -91,6 +91,7 @@ GitHub 相关资料：
 
 - [GitHub 中文文档](https://docs.github.com/cn/github)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+
 :::
 
 ::::
@@ -137,7 +138,7 @@ GitHub 相关资料：
 
    ::: tip
 
-   如果你对 Git 或命令行不了解，可以考虑使用 [Github 客户端](https://desktop.github.com/) 或 VS Code 提供的图形化版本控制管理器作为命令行的替代。
+   如果你对 Git 或命令行不了解，可以考虑使用 [GitHub 客户端](https://desktop.github.com/) 或 VS Code 提供的图形化版本控制管理器作为命令行的替代。
 
    :::
 
