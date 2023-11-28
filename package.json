@@ -28,9 +28,6 @@
     "vuepress-theme-hope": "2.0.0-rc.0"
   },
   "lint-staged": {
-    "*md": [
-      "prettier --write",
-      "markdownlint-cli2-fix"
-    ]
+    "*.md": "prettier --write"
   }
 }
