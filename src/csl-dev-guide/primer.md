@@ -162,12 +162,12 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
-  <!-- Generated with https://GitHub.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
+  <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
   <info>
     <title>Applied and Environmental Microbiology</title>
-    <id>http://www.Zotero.org/styles/applied-and-environmental-microbiology</id>
-    <link href="http://www.Zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
-    <link href="http://www.Zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
+    <id>http://www.zotero.org/styles/applied-and-environmental-microbiology</id>
+    <link href="http://www.zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
+    <link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
     <link href="http://aem.asm.org/" rel="documentation"/>
     <category citation-format="numeric"/>
     <category field="biology"/>
@@ -184,7 +184,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 大多数从属格式都是电子表格自动生成的，下面的注释也给出了指向电子表格的联接。
 
 ```xml
- <!-- Generated with https://GitHub.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
+ <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
 ```
 
 元素 `info` 里包含了大多数 `style` 的元数据，比如：
@@ -204,13 +204,13 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 `style` 自己的链接。该链接指向了网上的副本。
 
 ```xml
-<link href="http://www.Zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
+<link href="http://www.zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
 ```
 
 从属格式需要指定它的父格式，父格式为独立格式。这里的父格式为 `American Society for Microbiology`
 
 ```xml
-<link href="http://www.Zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
+<link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
 ```
 
 为了更好的维护格式，因此需要指定格式的文档链接。这里文档的链接转到了期刊的主页。
@@ -254,9 +254,9 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
   <info>
     <title>Example Style</title>
-    <id>http://www.Zotero.org/styles/example</id>
-    <link href="http://www.Zotero.org/styles/example" rel="self"/>
-    <link href="http://www.Zotero.org/styles/apa" rel="template"/>
+    <id>http://www.zotero.org/styles/example</id>
+    <link href="http://www.zotero.org/styles/example" rel="self"/>
+    <link href="http://www.zotero.org/styles/apa" rel="template"/>
     <link href="http://www.example.com/style-guide/" rel="documentation"/>
     <author>
       <name>John Doe</name>
@@ -376,8 +376,8 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 <info>
   <title>Example Style</title>
   <id>http://www.zotero.org/styles/example</id>
-  <link href="http://www.Zotero.org/styles/example" rel="self"/>
-  <link href="http://www.Zotero.org/styles/apa" rel="template"/>
+  <link href="http://www.zotero.org/styles/example" rel="self"/>
+  <link href="http://www.zotero.org/styles/apa" rel="template"/>
   <link href="http://www.example.com/style-guide/" rel="documentation"/>
   <author>
     <name>John Doe</name>

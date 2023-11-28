@@ -297,7 +297,7 @@ en-US：
 <info>
   <title>Style Title</title>
   <id>http://www.zotero.org/styles/style-title</id>
-  <link href="http://www.Zotero.org/styles/style-title" rel="self"/>
+  <link href="http://www.zotero.org/styles/style-title" rel="self"/>
   <author>
     <name>Author Name</name>
     <email>name@domain.com</email>
