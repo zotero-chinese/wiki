@@ -163,11 +163,11 @@ $ tree -L 1
 
 [Tara](https://github.com/l0o0/tara/blob/master/README_zh-CN.md) 是一个用于备份和恢复 Zotero 配置的插件，支持备份：
 
-✅备份已安装插件
-✅备份 CSL 文件
-✅备份转换器 (translators)
-✅备份 Locate 文件夹
-✅备份 Zotero 配置及插件配置
+✅ 备份已安装插件
+✅ 备份 CSL 文件
+✅ 备份转换器 (translators)
+✅ 备份 Locate 文件夹
+✅ 备份 Zotero 配置及插件配置
 
 下载地址：[GitHub](https://github.com/l0o0/tara) 或 [中文社区插件合集页](https://plugins.zotero-chinese.com)
 
@@ -179,7 +179,7 @@ $ tree -L 1
 
 ![开始备份](../assets/image-Tara-创建备份.png)
 
-创建成功后，会在Zotero中生成一个 `Tara_backup` 的条目并自动生成一个 ZIP 格式的附件，这个就是备份文件。
+创建成功后，会在 Zotero 中生成一个 `Tara_backup` 的条目并自动生成一个 ZIP 格式的附件，这个就是备份文件。
 
 如果你再点一次创建，会再生成个附件，你可以选择不同时间段的备份文件进行恢复。
 
@@ -215,11 +215,11 @@ $ tree -L 1
 
 ### 在新电脑上进行数据恢复
 
-在新电脑上安装了 Zotero，此时 Zotero 上没有任何插件，配置都是默认的。这时，你可以把第三步导出的2个文件复制到新电脑上。
+在新电脑上安装了 Zotero，此时 Zotero 上没有任何插件，配置都是默认的。这时，你可以把第三步导出的 2 个文件复制到新电脑上。
 
 在新电脑 Zotero 上，先安装 `Tara.xpi` 插件。
 
-插件安装成功，点击恢复，会出现一个文件选择的窗中，选择第三部中所生成的备份文件，之后Zotero会恢复对应的插件及相关配置。
+插件安装成功，点击恢复，会出现一个文件选择的窗中，选择第三部中所生成的备份文件，之后 Zotero 会恢复对应的插件及相关配置。
 
 ### 在不同电脑上同步备份
 

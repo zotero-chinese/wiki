@@ -41,31 +41,32 @@ updated: 2023-11-25 12:13:00
 
 2. 选择一个 Zotero 支持的通用格式；
 
-    ![从网站导出通用格式的文献数据](../assets/image-importing_standardized_formats_1.webp)
+   ![从网站导出通用格式的文献数据](../assets/image-importing_standardized_formats_1.webp)
 
 3. 下载包含引用信息的文件/复制包含引用信息的文本（具体操作因网站不同而略有区别）；
 
 4. 在 Zotero 文献列表页面点击 `文件/File` -> `导入/Import` 或 `从剪贴板导入/Import from Clipboard` （根据你的实际情况选择使用哪个功能）；
 
-    ![点击导入](../assets/image-importing_standardized_formats_2.webp)
+   ![点击导入](../assets/image-importing_standardized_formats_2.webp)
 
 5. 根据界面提示完成导入（这里以通过文件导入为例演示）；
 
-    ![从文件导入](../assets/image-importing_standardized_formats_3.webp){width=60%}
+   ![从文件导入](../assets/image-importing_standardized_formats_3.webp){width=60%}
 
-    ![选择导入的文件](../assets/image-importing_standardized_formats_4.webp){width=60%}
+   ![选择导入的文件](../assets/image-importing_standardized_formats_4.webp){width=60%}
 
-    ![设定从文件导入的选项](../assets/image-importing_standardized_formats_5.webp){width=60%}
+   ![设定从文件导入的选项](../assets/image-importing_standardized_formats_5.webp){width=60%}
 
 6. 导入完成后，该条目会混入文库中。你可以在左边栏分类列表最下面的 `未分类条目/Unfiled Item` 中按照年份排序来方便地找到刚刚导入的条目，将其拖入你需要的分类中：
 
-    ![找到导入的文献](../assets/image-importing_standardized_formats_6.webp)
+   ![找到导入的文献](../assets/image-importing_standardized_formats_6.webp)
 
 ::: tip
 
 1. 这样导入基本意味着无法自动抓取附件（毕竟，对于好抓取附件的网站，也不会这么难导入）。你需要手动下载附件，然后将附件添加到这一条目上。详见[添加附件教程](./add-items.md#添加附件)；
 
 2. 不同导出格式里的信息可能略有差异，而且可能都不完整甚至有错，你可以后续自己手动编辑右边栏中的 `信息/Info` 进行调整；
+
    > 以万方为例， **RefWorks** 格式导入的结果中 `分类/Type` 信息是分类号（TP311.52），而不是学位类型（硕士/博士）； **EndNote** 格式的结果中将导师姓名也写入了作者列表，而且将两个导师的姓名直接写成了第二作者的姓和名； **Bibtex** 格式的结果中没有摘要，而且分类写为了硕士论文。
 
 3. 你也可以去百度学术这一类的受支持的通用检索网站抓取/导出引用信息。
@@ -82,25 +83,25 @@ updated: 2023-11-25 12:13:00
 
 - 如果你目前还没有这篇文献的文件，可以直接点击菜单栏里的 `文件` -> `新建条目` ，然后选择你所需的文献类型（此处以最常见的 `期刊文章` 为例）：
 
-    ![创建期刊文章条目](../assets/image-manual-add-item-1.png){width=60%}
+  ![创建期刊文章条目](../assets/image-manual-add-item-1.png){width=60%}
 
 - 如果你已经在 Zotero 文库中添加了文献的文件，可以右键点击这个文件，然后点击 `创建父条目...` ，并在弹出的窗口中点击 `手动录入` ：
 
-    ![为已有的附件创建父条目](../assets/image-manual-add-item-2.png){width=60%}
+  ![为已有的附件创建父条目](../assets/image-manual-add-item-2.png){width=60%}
 
-    ![点击手动录入按钮](../assets/image-manual-add-item-3.png){width=60%}
+  ![点击手动录入按钮](../assets/image-manual-add-item-3.png){width=60%}
 
 1. 在右边栏里完善文献信息。
 
-    创建了条目后，Zotero 会自动选中这一新建的条目，此时你可以在右边栏里修改这个条目的类型，也可以完善这个条目的详细信息（也就是这篇文献的元数据）。为了正确地引用这个条目，不漏掉信息，请尽可能全面地填写右边的信息（当然，如果这是你自己的一篇文档，或者是个 PPT，未来也不会用于再文献里引用，那就无所谓了）。
+   创建了条目后，Zotero 会自动选中这一新建的条目，此时你可以在右边栏里修改这个条目的类型，也可以完善这个条目的详细信息（也就是这篇文献的元数据）。为了正确地引用这个条目，不漏掉信息，请尽可能全面地填写右边的信息（当然，如果这是你自己的一篇文档，或者是个 PPT，未来也不会用于再文献里引用，那就无所谓了）。
 
 - 先将条目修改为正确的文献类型（这里以书籍为例）：
 
-    ![选择正确的文献类型](../assets/image-manual-add-item-4.png)
+  ![选择正确的文献类型](../assets/image-manual-add-item-4.png)
 
 - 然后手动填写文献的相关信息（如标题、作者、发布日期……）
 
-    ![手动填写必要的文献信息](../assets/image-manual-add-item-5.png){width=60%}
+  ![手动填写必要的文献信息](../assets/image-manual-add-item-5.png){width=60%}
 
 ## 从其他工具导入
 

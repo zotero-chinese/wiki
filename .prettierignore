@@ -1,0 +1,21 @@
+# Vuepress Cache
+**/.vuepress/.cache/**
+# Vuepress Temp
+**/.vuepress/.temp/**
+# Vuepress Output
+**/.vuepress/dist/**
+# Lib files
+**/.vuepress/public/assets/
+
+# Node modules
+node_modules/
+
+# Obsidian files
+**/.obsidian/**
+
+# NPM lock file
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+.husky/

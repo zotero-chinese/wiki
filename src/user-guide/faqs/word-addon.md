@@ -182,7 +182,7 @@ updated: 2023-10-04 12:06:21
 
 ### 使 Zotero 恢复对引文的更新
 
-首先分析一下 Word 加载项 在 word 留下的域代码结构，以 [https://doi.org/10.1021/acscatal.0c05697](https://doi.org/10.1021/acscatal.0c05697) 为例，其正常插入 Word 后产生的域代码为：
+首先分析一下 Word 加载项 在 Word 留下的域代码结构，以 [https://doi.org/10.1021/acscatal.0c05697](https://doi.org/10.1021/acscatal.0c05697) 为例，其正常插入 Word 后产生的域代码为：
 
 ::: details Zotero 引文在 Word 中产生的域代码截图
 
