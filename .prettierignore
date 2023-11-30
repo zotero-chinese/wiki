@@ -13,7 +13,9 @@ node_modules/
 # Obsidian files
 **/.obsidian/**
 
-# npm lock file
+# NPM lock file
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+.husky/
