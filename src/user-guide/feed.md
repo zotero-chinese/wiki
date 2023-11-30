@@ -93,7 +93,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 ![知网创建rss](../assets/image-feed-13.png)
 
-复制浏览器地址栏中的网址，进入 Zotero，按照"一、zotero 订阅设置"步骤填入并设置即可。
+复制浏览器地址栏中的网址，进入 Zotero，按照"一、Zotero 订阅设置"步骤填入并设置即可。
 
 ![知网复制地址](../assets/image-feed-14.png)
 
@@ -111,7 +111,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 ![万方](../assets/image-feed-17.png)
 
-跳转如下页面后，浏览器地址栏的网址即 RSS 订阅链接，复制浏览器地址栏中的网址，进入 Zotero，按照"一、zotero 订阅设置"步骤填入并设置即可。
+跳转如下页面后，浏览器地址栏的网址即 RSS 订阅链接，复制浏览器地址栏中的网址，进入 Zotero，按照"一、Zotero 订阅设置"步骤填入并设置即可。
 
 ![万方](../assets/image-feed-18.png)
 
@@ -124,7 +124,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 ![Annual Review of Psychology](../assets/image-feed-20.png)
 
-打开之后如下图示，复制浏览器地址栏的网址，即 RSS 地址，进入 Zotero，按照"一、zotero 订阅设置"步骤填入并设置即可。
+打开之后如下图示，复制浏览器地址栏的网址，即 RSS 地址，进入 Zotero，按照"一、Zotero 订阅设置"步骤填入并设置即可。
 
 ![复制链接](../assets/image-feed-21.png)
 
@@ -157,7 +157,7 @@ RSSHub 地址，支持包括**Zotero**、 [Tiny Tiny RSS](https://www.appinn.com
 
 RSS、Miniflux、FreshRSS、Feedly、Inoreader、Feedbin、The Old Reader、Feeds.Pub、本地阅读器一旦检测出 RSS 地址，RSSHub Radar 就会在角标上显示出数量。
 
-RSSHub Radar 浏览器插件下载与安装（含教程）：Github 主页、Gitee 镜像主页、RSSHub Radar 与 Zotero 联动。
+RSSHub Radar 浏览器插件下载与安装（含教程）：GitHub 主页、Gitee 镜像主页、RSSHub Radar 与 Zotero 联动。
 
 ![bili为例](../assets/image-feed-25.png)
 

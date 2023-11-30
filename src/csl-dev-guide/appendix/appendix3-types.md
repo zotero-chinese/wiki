@@ -34,7 +34,7 @@ updated: 2022-08-03 10:28:14
 - paper-conference
 - patent
 - post 海报
-- post-weblog  
+- post-weblog
 - personal_communication 私人交流
 - report 报告
 - review
