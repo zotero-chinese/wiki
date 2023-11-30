@@ -14,10 +14,10 @@ actions:
   - text: Zotero 用户手册 💡
     link: /user-guide/
     type: primary
-    
+
   - text: 插件商店
     link: https://plugins.zotero-chinese.com/
-    
+
 highlights:
   - header: Zotero 中文资源
     description: 一些关于 Zotero 的中文资源
@@ -32,7 +32,7 @@ highlights:
         icon: article
         details: Zotero 中文教程一站式解决
         link: /user-guide/
-        
+
       - title: 插件商店
         icon: config
         details: 好用的 Zotero 插件收录，提供国内镜像下载地址
@@ -134,15 +134,13 @@ highlights:
       #   icon: lock
       #   details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
       #   # link: ./guide/feature/encrypt.html
-
       - title: 组织链接
         icon: repo
         details: GitHub 组织链接
         # link: ./guide/feature/search.html
-        
+
 copyright: false
 footer: <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a></br> 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议，版权所有 © 2022-Present Zotero Chinese
 date: 2023-04-19 21:14:04
 updated: 2023-07-20 16:51:54
 ---
-

@@ -63,7 +63,7 @@ brew install git
 
 安装完成后，还需设置个人信息。打开终端，运行以下命令
 
-（将 "zotero-user" 和 "<zotero-user@gmail. com>" 替换成个人对应的信息）:
+（将 `zotero-user` 和 `<zotero-user@gmail.com>` 替换成个人对应的信息）:
 
 ```bash
 # 设置用户姓名和邮箱
@@ -91,6 +91,7 @@ GitHub 相关资料：
 
 - [GitHub 中文文档](https://docs.github.com/cn/github)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+
 :::
 
 ::::
@@ -137,7 +138,7 @@ GitHub 相关资料：
 
    ::: tip
 
-   如果你对 Git 或命令行不了解，可以考虑使用 [Github 客户端](https://desktop.github.com/) 或 VS Code 提供的图形化版本控制管理器作为命令行的替代。
+   如果你对 Git 或命令行不了解，可以考虑使用 [GitHub 客户端](https://desktop.github.com/) 或 VS Code 提供的图形化版本控制管理器作为命令行的替代。
 
    :::
 
@@ -146,7 +147,8 @@ GitHub 相关资料：
 通过下面的命令安装依赖项。
 
 ```bash
-npm install
+npm install -g pnpm
+pnpm install
 ```
 
 ![安装依赖](../assets/image-build-安装依赖-1.png)
@@ -167,7 +169,7 @@ npm install
    使用以下命令启动开发服务器，如下图，开发服务器启动后，会给出几个本地链接，访问任一链接（通常为 Local）即可得到预览。
 
    ```bash
-   npm run docs:dev
+   pnpm run docs:dev
    ```
 
    ![启动开服务器](../assets/image-build-启动开发服务器-1.png)
@@ -230,7 +232,7 @@ npm install
 
 ## 其他的脚本
 
-### npm run docs:build
+### pnpm run docs:build
 
 构建脚本，用于将 markdown 构建为网页。
 
@@ -238,6 +240,6 @@ npm install
 
 一般情况下，图片路径错误、链接错误会导致报错。
 
-### npm run lint
+### pnpm run lint:md
 
 运行 Markdown Lint。

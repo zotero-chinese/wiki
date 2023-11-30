@@ -19,7 +19,9 @@ export default hopeTheme({
   docsDir: "src",
 
   hotReload: true,
+
   sidebarSorter: ["readme", "order", "filename", "title"],
+  headerDepth: 4,
 
   locales: {
     "/": {
@@ -47,17 +49,17 @@ export default hopeTheme({
   plugins: {
     comment: {
       provider: "Giscus",
-      repo: "zotero-chinese/.github",
-      repoId: "R_kgDOHv4ukA",
+      repo: "zotero-chinese/wiki",
+      repoId: "R_kgDOJZD4iQ",
       category: "文档评论区",
-      categoryId: "DIC_kwDOHv4ukM4CZz7S",
+      categoryId: "DIC_kwDOJZD4ic4CbJJB",
     },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+      // chart: true,
       checkLinks: {
         // 仅在开发模式下检查链接
         status: "always",
@@ -68,16 +70,16 @@ export default hopeTheme({
           "/playground.html",
         ],
       },
-      codetabs: true,
+      // codetabs: true,
       // demo: true,
       // echarts: true,
       figure: true,
-      flowchart: true,
+      // flowchart: true,
       gfm: true,
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
+      // katex: true,
       mark: true,
       mermaid: true,
       // playground: {

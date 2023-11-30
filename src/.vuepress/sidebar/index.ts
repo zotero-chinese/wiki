@@ -9,20 +9,14 @@ export const zhSidebar = sidebar({
   "/csl-dev-guide/": cslDevGuide,
   "/": [
     "about",
-    "CODE_OF_CONDUCT",
+    "code_of_conduct",
     "contributors",
     {
       text: "贡献者指南",
       icon: "build",
       prefix: "contributing",
       collapsible: true,
-      children: [
-        "contributing",
-        "markdown",
-        "markdown-demo",
-        "vscode-dev",
-        "build",
-      ],
+      children: ["contributing", "markdown", "vscode-dev", "build"],
     },
   ],
 });

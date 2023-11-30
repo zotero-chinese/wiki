@@ -15,7 +15,7 @@ updated: 2022-08-03 10:28:07
 
 - book 书
 - chapter 章
-- column  
+- column
 - figure 图
 - folio 作品集
 - issue 议题/问题

@@ -13,13 +13,13 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 1. 打开 Zotero 软件，选择“编辑—首选项/设置”，在弹出窗口中选择“引用”
 
-    ![引文格式管理](../assets/image-zotero-引文格式管理.png)
+   ![引文格式管理](../assets/image-zotero-引文格式管理.png)
 
 2. 若样式管理器中无符合的样式，可以通过“获取更多样式”，搜索期刊名，即可导入期刊要求的样式
 
-    ![获取更多引文格式](../assets/image-zotero-获取更多引文格式.png)
+   ![获取更多引文格式](../assets/image-zotero-获取更多引文格式.png)
 
-    ![官方引文格式下载](../assets/image-zotero-官方引文格式.png)
+   ![官方引文格式下载](../assets/image-zotero-官方引文格式.png)
 
 ## 第三方引文格式
 
@@ -27,22 +27,22 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 1. 首先你需要在 [中文 CSL 样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl#readme) 页面上找到合适的 CSL 样式，并记住其名称，然后将引文格式下载下来：
 
-    ![下载引文](../assets/image-github下载引文格式.png)
+   ![下载引文](../assets/image-github下载引文格式.png)
 
-    ::: warning
+   ::: warning
 
-    注意需要在 Zotero 处于启动状态时点击，可以直接安装。若 Zotero 没有弹出窗口，则右击 - 另存为，将其保存为 `.csl` 文件，然后双击打开 CSL 文件。
+   注意需要在 Zotero 处于启动状态时点击，可以直接安装。若 Zotero 没有弹出窗口，则右击 - 另存为，将其保存为 `.csl` 文件，然后双击打开 CSL 文件。
 
-    :::
+   :::
 
-    ::: tip
+   ::: tip
 
-    如果上面的网站无法打开，可以访问镜像站：<https://kgithub.com/redleafnew/Chinese-STD-GB-T-7714-related-csl#readme>
+   如果上面的网站无法打开，可以访问镜像站：<https://kgithub.com/redleafnew/Chinese-STD-GB-T-7714-related-csl#readme>
 
-    :::
+   :::
 
 2. 在弹出的窗口中点击“确定”后即可将想要的引文格式添加到 Zotero，供后续引用使用。
 
-    ![确认安装引文格式](../assets/image-确认安装引文格式.png)
+   ![确认安装引文格式](../assets/image-确认安装引文格式.png)
 
-    ![安装引文格式](../assets/image-安装引文格式.png)
+   ![安装引文格式](../assets/image-安装引文格式.png)

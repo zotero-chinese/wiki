@@ -1,11 +1,11 @@
 ---
-title: 文档写作规范
+title: 文档风格指南
 icon: markdown
 date: 2023-07-20 23:46:54
-updated: 2023-07-21 18:39:41
+updated: 2023-11-23 22:39:41
 ---
 
-# 文档写作规范
+# 文档风格指南
 
 ## 文件命名
 
@@ -29,11 +29,11 @@ Frontmatter 必须在 Markdown 文件的顶部，并且被包裹在一对三短�
 title: 页面的标题
 icon: markdown
 author:
-    - name: 作者1
-      url: https://github.com/windingwind
-    - name: 作者2
-      url: https://northword.cn
-    - name: 作者3
+  - name: 作者1
+    url: https://github.com/windingwind
+  - name: 作者2
+    url: https://northword.cn
+  - name: 作者3
 date: 2023-07-20 23:46:54
 updated: 2023-07-21 18:39:41
 ---
@@ -52,29 +52,36 @@ updated: 2023-07-21 18:39:41
 | icon       | string | 否   | 无             | 当前页面的图标                                                                                                   |
 | author     | -      | 否   | -              | 见下述                                                                                                           |
 | data       | string | 否   | 文件的创建日期 | 文档的创建日期                                                                                                   |
-| update     | string | 否   | 文件的更新日期 | 该值其实无用，页面显示的最后更新时间是 Git 提交时间                                                                                                                 |
+| update     | string | 否   | 文件的更新日期 | 该值其实无用，页面显示的最后更新时间是 Git 提交时间                                                              |
 
-### author
+::: note `author` 详解
 
 `author` 由一组 `author.name` 和 `author.url` / `author.email` 组成，其中 `url` 和 `email` 都是可选的。
 
 尤其需要注意的是缩进，name 前空二格，加一个短横线 `-`，空一格。`url` 或 `email` 与 `name` 保持对齐，不需要加 `-`。
 
-更多的 Frontmatter 可以参考：
+:::
+
+::: details 更多的 Frontmatter 可以参考框架的文档
 
 - [信息 Frontmatter 配置 | vuepress-theme-hope (vuejs.press)](https://theme-hope.vuejs.press/zh/config/frontmatter/info.html)
 - [布局 Frontmatter 配置 | vuepress-theme-hope (vuejs.press)](https://theme-hope.vuejs.press/zh/config/frontmatter/layout.html#dir)
 
+:::
+
 ## 文档语法风格
 
-所有教程均采用 Markdown  语言编写，下面列出了一些本文档中可能用到的语法和注意事项。
+所有教程均采用 Markdown 语言编写，下面列出了一些本文档中可能用到的语法和注意事项。
 
 ### 标题
 
 ```md
 # 一级标题
+
 ## 二级标题
+
 ### 三级标题
+
 #### 四级标题
 ```
 
@@ -100,23 +107,33 @@ updated: 2023-07-21 18:39:41
 ::: tip
 
 - 中文字符与英文字符和数字之间应加上空格，如 `中文 ABC 中文` 而非 `中文ABC中文`
-   `中文 123 中文` 而非 `中文123中文`
+  `中文 123 中文` 而非 `中文123中文`
 - 标点符号采用全角，如 `，`、`。`、`：`、`、`、`？` 等
-   标点符号与中文字符、英文字符以及数字之间不需加空格
+  标点符号与中文字符、英文字符以及数字之间不需加空格
 - 大小写应正确，如：`Zotero` 不是 `zotero`，`GitHub` 不是 `github`
-- 正文中部分专有词和特殊符号，可以放入 `行内代码` 来表示，美观且不容易发生错误，例如：
-   操作步骤：`编辑` - `首选项` - `引用` 。
+- 正文中部分专有词和特殊符号，可以放入 [`行内代码`](#代码) 来表示，美观且不容易发生错误，例如：
+  操作步骤：`编辑` - `首选项` - `引用` 。
 
 :::
 
 ### 文字样式
 
 ```md
-这是一段文本，**用两对星号包裹的内容会被加粗**，而*只用一对星号包裹的内容会显示为斜体*，用~~两对波浪线包裹的内容会显示为删除~~。
+这是一段文本，
+**用两对星号包裹的内容会被加粗**，
+而*只用一对星号包裹的内容会显示为斜体*，
+用~~两对波浪线包裹的内容会显示为删除~~，
+上下标：19^th^ H~2~O，
+你可以标记 ==重要的内容== 。
 ```
 
 预览：
-这是一段文本，**用两对星号包裹的内容会被加粗**，而*只用一对星号包裹的内容会显示为斜体*，用~~两对波浪线包裹的内容会显示为删除~~。
+这是一段文本，
+**用两对星号包裹的内容会被加粗**，
+而*只用一对星号包裹的内容会显示为斜体*，
+用~~两对波浪线包裹的内容会显示为删除~~，
+上下标：19^th^ H~2~O，
+你可以标记 ==重要的内容== 。
 
 ### 无序列表和有序列表
 
@@ -148,12 +165,18 @@ updated: 2023-07-21 18:39:41
 ### 图片
 
 ```md
-![Logo](../.vuepress/public/assets/icon/chrome-192.png)
+![图片描述](../.vuepress/public/assets/icon/chrome-192.png)
 ```
 
 ::: tip
 
 所有的图片资源都应放入 `src/assets` 内，尽量以通俗的方式描述图片内容。
+
+:::
+
+::: warning
+
+我们不使用 HTML 语法 `<img>` 标签来引入图片，请使用标准的 Markdown 语法。
 
 :::
 
@@ -293,6 +316,64 @@ console.log(foo(5));
 
 :::
 
+#### 详情
+
+```md
+::: details
+
+这是一个折叠可见内容
+
+:::
+```
+
+::: details
+
+这是一个折叠可见内容
+
+:::
+
+#### 自定义标题
+
+:::: tip 自定义标题
+
+通过在 `tip`、`warning`、`danger`、`details` 后添加文字，可以自定义块标题，例如：
+
+```md
+::: tip 自定义标题
+
+通过在 `tip`、`warning`、`danger`、`details` 后添加文字
+
+:::
+```
+
+::::
+
+#### 嵌套显示
+
+支持两级嵌套，第一级的标志使用四个冒号`::::`，例如：
+
+```md
+:::: details 嵌套显示
+
+::: tip
+
+这是第二级提示。
+
+:::
+
+::::
+```
+
+:::: details 嵌套显示
+
+::: tip
+
+这是第二级提示。
+
+:::
+
+::::
+
 ### 脚注
 
 ```md
@@ -311,7 +392,6 @@ console.log(foo(5));
 > 这是一段引用文本
 
 这是另一段正文文本
-
 ```
 
 ::: tip

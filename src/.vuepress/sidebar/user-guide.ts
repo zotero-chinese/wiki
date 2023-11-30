@@ -9,7 +9,13 @@ export const userGuide = arraySidebar([
     icon: "module",
     // prefix: "basic-usage",
     collapsible: true,
-    children: ["install", "add-items", "organize-library", "take-notes"],
+    children: [
+      "install",
+      "add-items",
+      "organize-library",
+      "take-notes",
+      "feed",
+    ],
   },
   {
     text: "创建参考文献",
@@ -44,6 +50,13 @@ export const userGuide = arraySidebar([
     prefix: "faqs",
     collapsible: true,
     children: "structure",
+  },
+  {
+    text: "进阶教程",
+    icon: "creative",
+    // prefix: "advanced",
+    collapsible: true,
+    children: ["add-items-adv", "import-from-other-software.html"],
   },
   {
     text: "杂项",

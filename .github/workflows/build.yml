@@ -7,32 +7,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 签出仓库
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
 
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v2
+
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-        #   cache: npm
+          cache: pnpm
 
       - name: 安装依赖
-        run: npm install
+        run: pnpm install
 
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          npm run docs:build
+          pnpm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: Upload build result
+      - name: 压缩构建文件
+        run: tar -cvf dist.tar src/.vuepress/dist
+
+      - name: 上传构建结果
         uses: actions/upload-artifact@v3
         with:
           name: build-result
           path: |
-            src/.vuepress/dist
+            dist.tar

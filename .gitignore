@@ -1,7 +1,9 @@
-
+.DS_Store
 node_modules/
 package-lock.json
-src/.vuepress/.cache/
-src/.vuepress/.temp/
-src/.vuepress/dist/
+# pnpm-lock.yaml
+
+**/.vuepress/.cache/
+**/.vuepress/.temp/
+**/.vuepress/dist/
 **/.obsidian
