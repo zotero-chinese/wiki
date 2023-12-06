@@ -6,7 +6,7 @@ updated: 2022-08-03 10:28:14
 
 # 附录 III 文献类型
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 - article 文章
