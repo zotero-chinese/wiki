@@ -8,7 +8,7 @@ updated: 2023-07-28 10:38:12
 
 ### （一）GitHub 地址
 
-#### [ethanwillis/zotero-scihub: A plugin that will automatically download PDFs of zotero items from sci-hub (github.com)](https://github.com/ethanwillis/zotero-scihub)
+#### [ethanwillis/Zotero-scihub: A plugin that will automatically download PDFs of Zotero items from sci-hub (GitHub.com)](https://github.com/ethanwillis/zotero-scihub)
 
 ### （二）下载地址
 
@@ -36,7 +36,7 @@ updated: 2023-07-28 10:38:12
 
 #### 2.出现的原因
 
-##### 出自于 ethanwillis/zotero-scihub/-/blob/master/content/scihub.ts 中写到，当 scihub 网站要求验证码时候，会中断程序弹出 error
+##### 出自于 ethanwillis/Zotero-scihub/-/blob/master/content/scihub.ts 中写到，当 scihub 网站要求验证码时候，会中断程序弹出 error
 
 <img src="assets/20230922T210554/20230922T210554_97959.png" width="885" id="ue2c8b123" class="ne-image">
 
@@ -60,7 +60,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="assets/20230922T210554/20230922T210554_41121.png" width="928" id="ub11d1553" class="ne-image">
 
-#### 4.搜索 extensions.zotero.findPDFs.resolvers
+#### 4.搜索 extensions.Zotero.findPDFs.resolvers
 
 <img src="assets/20230922T210554/20230922T210554_04617.png" width="1255" id="u7bede0b7" class="ne-image">
 

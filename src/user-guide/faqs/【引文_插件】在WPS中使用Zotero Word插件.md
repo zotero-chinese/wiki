@@ -3,13 +3,14 @@ title: 【引文|插件】在WPS中使用Zotero Word插件
 date: 2023-06-28 21:14:03
 updated: 2023-07-28 10:38:12
 ---
+
 # 前言（很重要哦！）
 
 **Zotero Word 插件在 WPS 的使用操作与 Office Word 类似，因此不再展开说明，点击下方蓝字可查看 📝**[**在 Word 中插入引文**](https://zotero.yuque.com/staff-gkhviy/zotero/ms-office#%20%E3%80%8A%E5%9C%A8%20Word%20%E4%B8%AD%E6%8F%92%E5%85%A5%E5%BC%95%E6%96%87%E3%80%8B)
 
-**🔊🔊🔊****必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！（无法正常使用请见本文档**四、Refresh/Unlink Citations 莫名失效**）
+**🔊🔊🔊\*\***必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！（无法正常使用请见本文档**四、Refresh/Unlink Citations 莫名失效\*\*）
 
-**以下是 WPS 的 Zotero Word 加载项的常见问题及解决方法，均以 Window 系统为例演示📝：**
+**以下是 WPS 的 Zotero Word 加载项的常见问题及解决方法，均以 Window 系统为例演示 📝：**
 
 # 一、没有显示 Zotero 加载项
 
@@ -37,17 +38,17 @@ updated: 2023-07-28 10:38:12
 
 若 WPS 为**个人版**，需额外安装 [**VBA 插件**](https://pan.baidu.com/s/1y-cjisA6Lxbnw3r3g_jmKA?pwd=moyu)（点击左侧蓝字获取插件）
 
-**🏷️注**： WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使用问题，也可选择安装 VBA 插件。
+**🏷️ 注**： WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使用问题，也可选择安装 VBA 插件。
 
 1）将 WPS.VBA 安装程序**下载并保存**到电脑，确保 WPS 程序是 **未运行** 状态。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667749231967-94d82e15-95de-486a-9295-87a7257de424.png" width="576.6666666666666" id="uf9781559" class="ne-image">
 
-2）**双击**打开 WPS.VBA 安装程序，依次单击【**Next**】，最后单击【**Finish**】。用 WPS 打开任意一个 word 文档，检查是否正常显示 Zotero 加载项。
+2）**双击**打开 WPS.VBA 安装程序，依次单击【**Next**】，最后单击【**Finish**】。用 WPS 打开任意一个 Word 文档，检查是否正常显示 Zotero 加载项。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667749313952-db0fddc9-ecdd-4e10-bd32-ec2658f5a0d1.png" width="576.6666666666666" id="u4961383c" class="ne-image">
 
-**🏷️注：** 若 WPS.VBA 安装后，仍未显示 Zotero 加载项，或需将【**宏安全性**】设成低（但不建议）。除此外可见下方**3、补充 Zotero.dotm 文件**
+**🏷️ 注：** 若 WPS.VBA 安装后，仍未显示 Zotero 加载项，或需将【**宏安全性**】设成低（但不建议）。除此外可见下方**3、补充 Zotero.dotm 文件**
 
 ## 3、补充 Zotero.dotm 文件
 
@@ -61,13 +62,13 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667749477243-592dc703-8dd3-4ad0-ac68-567d06a5d1c2.png" width="576.6666666666666" id="u005b92e3" class="ne-image">
 
-**🏷️注**：如果上图文件夹位置没有 Zotero.dotm，可点击右侧蓝字获取 [**Zotero.dotm**](https://pan.baidu.com/s/1EMfR5KRi8Mxxn9Wa7UR7Ag?pwd=moyu)
+**🏷️ 注**：如果上图文件夹位置没有 Zotero.dotm，可点击右侧蓝字获取 [**Zotero.dotm**](https://pan.baidu.com/s/1EMfR5KRi8Mxxn9Wa7UR7Ag?pwd=moyu)
 
 3）在 WPS 图标处**右键单击**，单击【**打开文件所在的位置**】打开 WPS 安装路径。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667749545121-16745091-63ad-4985-86ec-16b69b4663b6.png" width="576.6666666666666" id="u16b1a76a" class="ne-image">
 
-**🏷️注**：以上前提是确保 WPS 已关闭，不在运行中！！！
+**🏷️ 注**：以上前提是确保 WPS 已关闭，不在运行中！！！
 
 4）找到并打开**版本最新**的文件夹（即**数字最大**），再依次打开【**office6**】-【**startup**】
 
@@ -91,7 +92,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667750593374-121ea026-7596-48d1-852b-b0ca94d19dc9.png" width="576.6666666666666" id="u15c88aea" class="ne-image">
 
-**🏷️注**：设置较简单，仅适用于**同时安装 Office 和 WPS**。以后再使用时，可能还会报错。
+**🏷️ 注**：设置较简单，仅适用于**同时安装 Office 和 WPS**。以后再使用时，可能还会报错。
 
 如仍报错：可能是将光标置于插入引文 Citaion 和参考文献 References 位置的**前后或内部**
 
@@ -103,9 +104,9 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667750696602-8e894932-8fbc-43e1-ae0e-d6dda80f10d9.png" width="576.6666666666666" id="u5727d65a" class="ne-image">
 
-**🏷️注**：设置较复杂，适用于 **同时装有 Office 和 WPS** 或 **只装有 WPS**
+**🏷️ 注**：设置较复杂，适用于 **同时装有 Office 和 WPS** 或 **只装有 WPS**
 
-**🏷️注**：若【**开发工具**】选项卡的内容为灰色，即无法点击操作。
+**🏷️ 注**：若【**开发工具**】选项卡的内容为灰色，即无法点击操作。
 
 **解决方法**：安装 WPS.VBA 插件（详见本文档 **WPS.VBA 插件的安装**）
 
@@ -129,7 +130,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667751190158-0adef5ab-fb89-42a8-80b4-e70675d5d345.png" width="576.6666666666666" id="uddc954c4" class="ne-image">
 
-6）在 **Normal.dotm** 属性对话框，切换到【**自定义**】窗口，【**名称**】和【**取值**】分别输入 **ZOTERO\_PREF\_1** 和 **1** ，点击【**添加**】。同理，再添加上 **ZOTERO\_PREF\_2** 和 **1** ，最后点击【**确定**】。
+6）在 **Normal.dotm** 属性对话框，切换到【**自定义**】窗口，【**名称**】和【**取值**】分别输入 **ZOTERO_PREF_1** 和 **1** ，点击【**添加**】。同理，再添加上 **ZOTERO_PREF_2** 和 **1** ，最后点击【**确定**】。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667751268548-464f6c40-b91c-4a62-87ca-ec093271fd49.png" width="576.6666666666666" id="u8d563158" class="ne-image">
 
@@ -141,7 +142,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667751333802-365e6d97-e3e3-4a8e-a0b8-b3103250058f.png" width="576.6666666666666" id="ubeb6086e" class="ne-image">
 
-**🏷️注**：如仍报错：可能是将光标置于插入引文 Citaion 和参考文献 References 位置的**前后或内部**
+**🏷️ 注**：如仍报错：可能是将光标置于插入引文 Citaion 和参考文献 References 位置的**前后或内部**
 
 解决方法：将光标定位在远离上述位置如正文文字处
 
@@ -157,7 +158,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667751634321-b759d33d-45cf-42aa-9919-57056da26e9a.png" width="576.6666666666666" id="u71a15b1a" class="ne-image">
 
-**🏷️注**：只需选择使用一个自己喜爱的图标文件或可自己编辑设计图标。
+**🏷️ 注**：只需选择使用一个自己喜爱的图标文件或可自己编辑设计图标。
 
 下方是 5 个已编辑好的 **Refresh** 和 **Unlink Citations** 图标的图片展示。
 
@@ -169,7 +170,7 @@ updated: 2023-07-28 10:38:12
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/33851096/1667751818672-2896ac2f-cba1-4ea3-beb9-e6e18edb1076.png" width="576.6666666666666" id="u29200c8d" class="ne-image">
 
-**🏷️注**：因为没更换 Zotero 安装路径的 Zotero.dotm，且 Office Word 的启动项文件夹未放置 Zotero.dotm。
+**🏷️ 注**：因为没更换 Zotero 安装路径的 Zotero.dotm，且 Office Word 的启动项文件夹未放置 Zotero.dotm。
 
 这样做的考虑是：保持 Office Word 的 Refresh 和 Unlink Citations 图标不变动，同时保留原有的 Zotero.dotm，以备不时之需。当然也可自己按喜好设置更换。
 
@@ -193,8 +194,8 @@ updated: 2023-07-28 10:38:12
 
 2）重启 WPS，或新建一个 Word 文档，再用 WPS 打开。或必要时重启电脑即可正常使用。
 
-**🔊🔊🔊必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！
+**🔊🔊🔊 必看！！！**：当新建一个空白的 Word 文档用 WPS 打开撰写论文等情况时：一定要先用 WPS 里的 Zotero Word 加载项插入几个文献，再点击**Add/Edit Citation 等这 6 个按钮**，尤其是一定要多次点击**Refresh**和**Unlink Citations**按钮，检查是否正常使用！！！
 
 # 致谢
 
-👍到这里，在 WPS 中使用 Zotero Word 加载项的使用已接近尾声。在此由衷地感谢来自 b 站、知乎、CSDN 等网站的大神们分享的有关 WPS 的 Zotero Word 加载项使用的宝贵经验！！！
+👍 到这里，在 WPS 中使用 Zotero Word 加载项的使用已接近尾声。在此由衷地感谢来自 b 站、知乎、CSDN 等网站的大神们分享的有关 WPS 的 Zotero Word 加载项使用的宝贵经验！！！

@@ -3,6 +3,7 @@ title: 密钥申请：OpenL
 date: 2023-06-28 21:14:03
 updated: 2023-07-28 10:38:12
 ---
+
 密钥申请：OpenL
 
 # 申请步骤
@@ -13,8 +14,8 @@ updated: 2023-07-28 10:38:12
 
 # 密钥格式
 
-service1,service2,...#API密钥(service codes用','分隔).
+service1,service2,...#API 密钥(service codes 用','分隔).
 
-支持的service codes: deepl,youdao,tencent,aliyun,baidu,caiyun,wechat,sogou,azure,ibm,aws,google, 见[Service Code](https://docs.openl.club/#/API/format?id=%e7%bf%bb%e8%af%91%e6%9c%8d%e5%8a%a1%e4%bb%a3%e7%a0%81%e5%90%8d)
+支持的 service codes: deepl,youdao,tencent,aliyun,baidu,caiyun,wechat,sogou,azure,ibm,aws,google, 见[Service Code](https://docs.openl.club/#/API/format?id=%e7%bf%bb%e8%af%91%e6%9c%8d%e5%8a%a1%e4%bb%a3%e7%a0%81%e5%90%8d)
 
-例如，你需要使用deepl和youdao，你的API密钥（上图粉红色一长串）是112233，则填写`deepl,youdao#112233`。其他更多或更少服务同理。
+例如，你需要使用 deepl 和 youdao，你的 API 密钥（上图粉红色一长串）是 112233，则填写`deepl,youdao#112233`。其他更多或更少服务同理。
