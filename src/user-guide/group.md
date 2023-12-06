@@ -5,7 +5,7 @@ author:
   - name: Ali
   - name: Northword
 date: 2023-06-28 21:19:17
-updated: 2023-07-20 16:51:54
+updated: 2023-12-06 18:51:54
 ---
 
 # 群组
@@ -74,13 +74,55 @@ updated: 2023-07-20 16:51:54
 
 ## 加入群组
 
-### 加入公开群组
+### 1、官网群组搜索 🔍
 
-<https://www.zotero.org/search/type/group>
+适用于 Public Closed、Public Open 两种类型的群组，所有人均可操作。
 
-### 加入私有或邀请制群组
+在 [Zotero 官网群组搜索页面](https://www.zotero.org/search/type/group)，可以通过群组的名称，搜索到目标群组。
+
+![搜索群组](../assets/image-group-10.png)
+
+在接下来的搜索结果页面中点击目标群组名称，进入该群组的主页
+
+![点击群组名称](../assets/image-group-11.png)
+
+在主页点击右侧的 Join，即可申请加入该群组。
+
+![群组详情页面](../assets/image-group-12.png)
+
+- Public Open 的群组点击 `Join` 之后即可加入
+- Public Closed 需要等管理员或者群主通过申请才可以加入
+
+Zotero 客户端重启之后即可在右侧"群组文库"看到所加入的群组。
+
+### 2、群组链接 🔗
+
+适用于 Public Closed、Public Open 两种类型的群组，所有人均可操作。
+
+群组成员（群主、管理员、成员）进入 [Zotero 群组页面](https://www.zotero.org/groups/)，点击群组名称，进入群组页面，浏览器地址栏的网址即为群组链接，可以分享给他人，他人打开即可申请加入（同上图）。
+
+![群组页面链接](../assets/image-group-13.png)
+
+### 3、管理员邀请 ✉️
+
+适用于所有群组，包括 Private、Public Closed、Public Open 三种类型，仅群主和管理员可以操作。
+
+群组成员（群主、管理员、成员）进入 [Zotero 群组页面](https://www.zotero.org/groups/)，点击群组名称下方的 `Members Settings`
+
+![members settings](../assets/image-group-14.png)
+
+跳转后点击页面左下角 `Send More Invitations`
+
+![发送邀请链接](../assets/image-group-15.png)
+
+在邀请成员界面的方框内，输入被邀请人的 Zotero 用户名或者注册 Zotero 时所用的电子邮箱。可以同时邀请多人（用英文逗号分隔即可），输入完成之后点击下方的 `Invite Members`，即可完成邀请。被邀请人注册 Zotero 时所用的邮箱将会受到邀请邮件，进入接受邀请即可。
+
+![输入被邀请者用户名](../assets/image-group-16.png)
 
 ## 群组管理
 
-::: tip todo
-:::
+群组成员（群主、管理员）进入[Zotero 群组页面](https://www.zotero.org/groups/)，点击群组名称下方的 `Manage Profile`，可以设置头像、名称、群组所属类别等信息，也可在此页面解散群组。
+
+点击 `Manage Members` 可以管理成员，例如审批加群申请、新增成员、移除成员、改变成员权限等。
+
+点击群组名进入群组详情页，右侧红色按钮 `leave` 可以退出群组。
