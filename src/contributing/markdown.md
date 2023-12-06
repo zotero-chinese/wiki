@@ -303,14 +303,14 @@ console.log(foo(5));
 #### 警告
 
 ```md
-::: danger
+::: caution
 
 这是一个警告
 
 :::
 ```
 
-::: danger
+::: caution
 
 这是一个警告
 
@@ -336,12 +336,12 @@ console.log(foo(5));
 
 :::: tip 自定义标题
 
-通过在 `tip`、`warning`、`danger`、`details` 后添加文字，可以自定义块标题，例如：
+通过在 `tip`、`warning`、`caution`、`details` 后添加文字，可以自定义块标题，例如：
 
 ```md
 ::: tip 自定义标题
 
-通过在 `tip`、`warning`、`danger`、`details` 后添加文字
+通过在 `tip`、`warning`、`caution`、`details` 后添加文字
 
 :::
 ```
