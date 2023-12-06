@@ -6,7 +6,7 @@ updated: 2022-08-03 10:17:53
 
 # XML 基础
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 `CSL` 基于 `XML(eXtensible Markup Language)`。`XML` 是一种标记语言，这里只介绍基本的术语，以理解 `CSL` 文件格式。

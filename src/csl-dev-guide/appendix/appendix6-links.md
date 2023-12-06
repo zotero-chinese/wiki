@@ -6,7 +6,7 @@ updated: 2022-08-03 10:28:33
 
 # 附录 VI 链接
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 The CSL syntax does not have support for configuration of links. However, processors should include links on bibliographic references, using the following rules:

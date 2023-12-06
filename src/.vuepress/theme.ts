@@ -57,7 +57,7 @@ export default hopeTheme({
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
-      align: true,
+      // align: true,
       attrs: true,
       // chart: true,
       checkLinks: {
@@ -106,6 +106,10 @@ export default hopeTheme({
       tabs: true,
       // vPre: true,
       // vuePlayground: true,
+    },
+
+    feed: {
+      rss: true,
     },
 
     // autoCatalog: {
