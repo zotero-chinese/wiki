@@ -1,0 +1,28 @@
+name: Main Action
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+
+  build:
+    uses: ./.github/workflows/build.yml
+
+  deploy-gh-pages:
+    if: github.ref_name == 'main' && github.event_name == 'push' && github.repository == 'zotero-chinese/wiki'
+    needs:
+      - lint
+      - build
+    uses: ./.github/workflows/deploy-gh-pages.yml
+    secrets:
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

@@ -20,7 +20,7 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 请在主程序安装完成后，打开常用的浏览器，点击上图右侧的 Install Connector 按钮下载。
 
-支持常用浏览器：Chrome（谷歌浏览器），Firefox（火狐浏览器），Edge（微软自带浏览器），Safari（MacOS 自带浏览器）。
+支持常用浏览器：Chrome（谷歌浏览器），Firefox（火狐浏览器），Edge（微软自带浏览器），Safari（macOS 自带浏览器）。
 
 ::: tip
 
@@ -40,13 +40,13 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 ## 其他平台客户端
 
-### IOS
+### iOS
 
-Zotero 官方目前已开发有 IOS 客户端，在 App store 搜索下载 Zotero 即可。
+Zotero 官方目前已开发有 iOS 客户端，在 App store 搜索下载 Zotero 即可。
 
 ::: warning
 
-⚠️要使用 IOS 客户端，需要使用官方同步或 webdav 同步二者之一，才能顺利同步附件。其他使用 zotfile 等链接文件的同步方式不支持，未来也不会支持。
+⚠️ 要使用 iOS 客户端，需要使用官方同步或 WebDAV 同步二者之一，才能顺利同步附件。其他使用 ZotFile 等链接文件的同步方式不支持，未来也不会支持。
 
 :::
 

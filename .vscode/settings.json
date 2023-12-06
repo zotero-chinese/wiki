@@ -1,19 +1,28 @@
 {
+  /** 编辑器相关 **/
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "always",
+    "source.fixAll": "always"
+  },
   "[markdown]": {
     "editor.fontFamily": "Sarasa Mono SC, Noto Sans Mono CJK SC, monospace",
-    "editor.formatOnType": false,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  /** Markdown 相关 **/
   "markdown.validate.enabled": true,
   "markdown.validate.fileLinks.enabled": "error",
+  "markdown.validate.referenceLinks.enabled": "ignore",
   "markdown.copyFiles.destination": {
     "**/*": "${documentWorkspaceFolder}/src/assets/"
   },
   "markdown.updateLinksOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
-  },
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+
+  /** 文件管理器相关  **/
   // "explorer.sortOrder": "mixed",
   "explorer.excludeGitIgnore": false,
   "files.exclude": {
@@ -23,19 +32,18 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
-    // custom begin
+
+    /** custom begin **/
     // "node_modules": true,
+    // "package.json": true,
+    // "package-lock.json": true,
+    // "pnpm-lock.yaml": true
     // "**/.*": true,
     // ".github": true,
     // ".gitignore": true,
-    // "**/.vuepress": true,
     // ".vscode": true,
     // ".markdownlint.json": true,
-    // "package.json": true,
-    // "package-lock.json": true,
-    // "CODE_OF_CONDUCT.md": true,
+    // "**/.vuepress": true,
     // "LICENSE": true
-
-  },
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart"
+  }
 }

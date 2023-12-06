@@ -7,7 +7,7 @@ author:
   - name: Northword
     url: https://northword.dev
 date: 2023-06-28 21:19:25
-updated: 2023-10-02 22:51:54
+updated: 2023-10-04 18:38:54
 ---
 
 # 备份
@@ -20,9 +20,9 @@ updated: 2023-10-02 22:51:54
 
 我们将构成 Zotero 正常运行的文件分为三部分：
 
-- Zotero 程序文件
-- Zotero 数据文件
-- Zotero 用户配置文件
+- Zotero 程序文件 (Program Files)
+- Zotero 数据文件 (Zotero Data Folder)
+- Zotero 用户配置文件 (Zotero Profile Directory)
 
 ### 程序文件
 
@@ -88,12 +88,24 @@ $ tree -L 1
 
 #### 用户配置文件位置
 
-| 系统类型                     | 默认位置                                                                         |
-| ---------------------------- | -------------------------------------------------------------------------------- |
-| macOS                        | `?`                                                                              |
-| Windows 7 and higher Windows | `C:\Users\<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\<8位随机字符>.default` |
-| Windows XP/2000              | `?`                                                                              |
-| Linux                        | `?`                                                                              |
+| 系统类型                     | 默认位置                                                                                      |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
+| macOS                        | `/Users/<username>/Library/Application Support/Zotero/Profiles/<randomstring>`                |
+| Windows 7 and higher Windows | `C:\Users\<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\<8位随机字符>.default`              |
+| Windows XP/2000              | `C:\Documents and Settings\<username>\Application Data\Zotero\Zotero\Profiles\<randomstring>` |
+| Linux                        | `~/.zotero/zotero/<randomstring>`                                                             |
+
+::: tip macOS
+
+默认情况下，`/Users/<用户名>/Library` 文件夹是隐藏的。要访问它，请单击桌面，按住 `Option` 键，单击 Finder 的 `转到` 菜单，然后从菜单中选择 `资源库`。
+
+:::
+
+::: tip Windows
+
+默认情况下， `AppData` 是隐藏的，可以在资源管理器搜索栏键入 `%appdata%`，然后按回车，即可进入 `AppData\Roaming` 目录。
+
+:::
 
 #### 用户配置文件内容
 
@@ -131,7 +143,7 @@ $ tree -L 1
 | 旧电脑                                                                     | 新电脑                                                                 |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中文件 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中 |
-| Zotero-`首选项`-`高级`-`文件和文件夹`-`数据储存位置`中的文件                       | 同一路径                                                               |
+| Zotero-`首选项`-`高级`-`文件和文件夹`-`数据储存位置`中的文件               | 同一路径                                                               |
 
 例如：电脑的用户名为`zotero-chinese`，旧电脑将 Zotero 安装在 `D:\Program Files\Zotero` 目录下，数据储存位置设置为 `C:\Users\zotero-chinese\Zotero`。
 
@@ -145,7 +157,80 @@ $ tree -L 1
 
 4. 打开 Zotero，即可。
 
-## 插件备份
+## 使用插件蒲公英 `Tara` 进行数据的备份和恢复
 
-::: tip 施工中
+::: tip Tara
+
+[Tara](https://github.com/l0o0/tara/blob/master/README_zh-CN.md) 是一个用于备份和恢复 Zotero 配置的插件，支持备份：
+
+✅ 备份已安装插件
+✅ 备份 CSL 文件
+✅ 备份转换器 (translators)
+✅ 备份 Locate 文件夹
+✅ 备份 Zotero 配置及插件配置
+
+下载地址：[GitHub](https://github.com/l0o0/tara) 或 [中文社区插件合集页](https://plugins.zotero-chinese.com)
+
+:::
+
+### 创建备份
+
+下载安装 Tara 插件后，通过点击 `Tara` 图标来创建一个备份
+
+![开始备份](../assets/image-Tara-创建备份.png)
+
+创建成功后，会在 Zotero 中生成一个 `Tara_backup` 的条目并自动生成一个 ZIP 格式的附件，这个就是备份文件。
+
+如果你再点一次创建，会再生成个附件，你可以选择不同时间段的备份文件进行恢复。
+
+![备份文件](../assets/image-Tara-备份文件.png)
+
+### 恢复备份
+
+点击`恢复`
+
+![恢复备份](../assets/image-Tara-恢复备份.png)
+
+可以根据时间来选择要恢复的备份
+
+![选择要恢复备份](../assets/image-Tara-选择要恢复的备份.png)
+
+等待备份恢复完成，再重启 Zotero
+
+![备份恢复完成](../assets/image-Tara-备份恢复完成.png)
+
+### 导出备份文件
+
+点击`导出`
+
+![导出备份](../assets/image-Tara-导出备份.png)
+
+等待完成后，去备份目录查看文件是否生成
+
+![导出备份成功](../assets/image-Tara-导出备份成功.png)
+
+导出时，会将当成的配置信息和插件导出到一个单独 ZIP 文件中，导出的备份会默认储存在 `数据储存文件夹\backup` 下。
+
+![导出的备份文件](../assets/image-Tara-导出的备份.png)
+
+### 在新电脑上进行数据恢复
+
+在新电脑上安装了 Zotero，此时 Zotero 上没有任何插件，配置都是默认的。这时，你可以把第三步导出的 2 个文件复制到新电脑上。
+
+在新电脑 Zotero 上，先安装 `Tara.xpi` 插件。
+
+插件安装成功，点击恢复，会出现一个文件选择的窗中，选择第三部中所生成的备份文件，之后 Zotero 会恢复对应的插件及相关配置。
+
+### 在不同电脑上同步备份
+
+当你在多个电脑上同时使用 Zotero 时，可以通过 Zotero 的 `同步功能` 来实现数据的快速备份和恢复。
+
+首先在不同电脑上分别配置同步，然后可以在 A 电脑上创建一个备份，备份文件是随条目一起同步的。那 B 电脑 Zotero 应该会自动同步了创建的备份条目 `Tara_backup` 及对应的附件。
+
+当你在 B 电脑的 Zotero 上点击恢复，选择 A 电脑上刚创建的备份。这样两台电脑上的 Zotero 配置和插件信息就一起同步了。
+
+::: tip 注意修改 Tara 的 “备份 Locate” 设置
+
+由于不同系统平台或主机上的文件路径可能不一致，tara 在备份时默认过滤掉了 `locate` 文件夹，可以通过点击 `Tara 图标-设置` 进行修改。
+
 :::
