@@ -6,7 +6,7 @@ updated: 2022-08-03 10:28:07
 
 # 附录 II 术语
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 术语在本地化文件中使用
@@ -15,7 +15,7 @@ updated: 2022-08-03 10:28:07
 
 - book 书
 - chapter 章
-- column  
+- column
 - figure 图
 - folio 作品集
 - issue 议题/问题

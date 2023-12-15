@@ -1537,7 +1537,7 @@ Allows for the use of small capitals, 值可以设置为:
 
 **例**
 
-A. 除使用 `second-field-align` 外，使用 `"left-margin"` 和 `"roght-inline"` 可以实现相同的渲染效果。这种操作方式潜在的好处是，可以在最终的输出中进一步控制块的格式，例如，在 HTML 的 CSS 或者 word 的样式中。
+A. 除使用 `second-field-align` 外，使用 `"left-margin"` 和 `"roght-inline"` 可以实现相同的渲染效果。这种操作方式潜在的好处是，可以在最终的输出中进一步控制块的格式，例如，在 HTML 的 CSS 或者 Word 的样式中。
 
 ```xml
 <bibliography>

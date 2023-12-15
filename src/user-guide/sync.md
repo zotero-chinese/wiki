@@ -13,7 +13,7 @@ updated: 2023-09-23 20:52:08
 
 文件的同步指 `PDF 附件`、`网页附件`、`Word 文档`、`EPub 文件` 等所有附件的同步。这些文件既可以通过 Zotero 官方服务同步，也可以通过 WebDAV 网盘来同步。
 
-::: danger
+::: caution
 
 无论你选择何种同步方案， 切勿将 Zotero 的 `数据存储位置/Data Directory Location` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录 ！（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
 
@@ -36,7 +36,7 @@ updated: 2023-09-23 20:52:08
 
 ![账号登录](../assets/image-zotero-帐号登陆.png)
 
-每个 Zotero 用户都可以获得 300 MB 的免费 Zotero 存储空间，用于存储附加文件，并可 [购买更大的存储空间](https://www.zotero.org/settings/storage?ref=sib)。如果您拥有钞能力，这是最简单的备份方法，在登陆您的 zotero 账户并完成购买后无需其他任何设置。
+每个 Zotero 用户都可以获得 300 MB 的免费 Zotero 存储空间，用于存储附加文件，并可 [购买更大的存储空间](https://www.zotero.org/settings/storage?ref=sib)。如果您拥有钞能力，这是最简单的备份方法，在登陆您的 Zotero 账户并完成购买后无需其他任何设置。
 
 |    存储空间    |             费用 (USD)              |
 | :------------: | :---------------------------------: |
@@ -109,7 +109,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 6. 到此处，电脑上关于坚果云的同步设置就完成了。
 
-7. 回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫 `zotero` 的文件夹，用于存放同步更新的文件。
+7. 回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫 `Zotero` 的文件夹，用于存放同步更新的文件。
 
    ![同步图标](../assets/image-zotero-同步图标.png)
 
@@ -119,11 +119,11 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 ![WebDAV网址设置](../assets/image-zotero-webdav网址设置.png)
 
-此时，你的 Zotero 的同步文件将会放在 `根目录/work/zotero` 中。
+此时，你的 Zotero 的同步文件将会放在 `根目录/work/Zotero` 中。
 
 :::
 
-### IOS
+### iOS
 
 ::: tip
 
@@ -131,7 +131,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 :::
 
-官方已经发布了 Zotero for iOS，并且支持支持 Webdav 同步，iOS 端的设置相对比较简单，只需要登陆 Zotero 账户和完成 WebDAV 网盘设置即可。
+官方已经发布了 Zotero for iOS，并且支持支持 WebDAV 同步，iOS 端的设置相对比较简单，只需要登陆 Zotero 账户和完成 WebDAV 网盘设置即可。
 
 1. 首先您需要在 App Store [下载 Zotero](https://apps.apple.com/cn/app/zotero/id1513554812)
 
@@ -174,31 +174,31 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2023 年底左右�
 
 - 查看不同文件目录分类，包括子文件目录。不能编辑
 - 支持群组条目查看，不能编辑
-- 支持创建，编辑和删除笔记。这里是笔记，不是PDF里的注释笔记
+- 支持创建，编辑和删除笔记。这里是笔记，不是 PDF 里的注释笔记
 - 支持搜索功能，包括条目和笔记
-- 支持 WebDav 附件下载与上传
+- 支持 WebDAV 附件下载与上传
 
 1. Zoo for Zotero APP 在 Google Play 搜索 Zoo for Zotero 下载，也可以从 Zotero 中文小组提供的镜像 [点击下载 Zoo](https://ftp.linxingzhong.top/zooforzotero_43_apps.evozi.com.apk) 地址下载
 
-2. 为了安全，一般国产手机或平板使用的操作系统，在安装第三方 apk 时会有各种限制，可以自行在搜索引擎上搜索如**小米手机如何安装第三方app**，**华为平板要怎么安装第三方app**
+2. 为了安全，一般国产手机或平板使用的操作系统，在安装第三方 apk 时会有各种限制，可以自行在搜索引擎上搜索如**小米手机如何安装第三方 app**，**华为平板要怎么安装第三方 app**
 
-3. Zoo 安装成功后，需要使用 Zotero 授权的API key才能访问 Zotero 数据库。如果你已有一个 API key，可直接在下图中直接填入。一般刚使用 Zoo 的同学，都需要重新申请一下，输入Zotero 账号和密码，点击 Got it，在授权页面注意需要选择 7 Save Key。如果不成功，可以多试几次。授权成功后，应用会开始下载文献库信息，文献越多，下载时间越长。如果等了 10-20 分钟还在 Loading，建议重启 APP 试试。详细说明参考下图
+3. Zoo 安装成功后，需要使用 Zotero 授权的 API key 才能访问 Zotero 数据库。如果你已有一个 API key，可直接在下图中直接填入。一般刚使用 Zoo 的同学，都需要重新申请一下，输入 Zotero 账号和密码，点击 Got it，在授权页面注意需要选择 7 Save Key。如果不成功，可以多试几次。授权成功后，应用会开始下载文献库信息，文献越多，下载时间越长。如果等了 10-20 分钟还在 Loading，建议重启 APP 试试。详细说明参考下图
 
-    ![为 Zoo 设置 Zotero API key](../assets/image-zoo添加zotero密钥.png){width=50%}
+   ![为 Zoo 设置 Zotero API key](../assets/image-zoo添加zotero密钥.png){width=50%}
 
-    ![Zoo 加载数据界面](../assets/image-zoo加载数据.png){width=50%}
+   ![Zoo 加载数据界面](../assets/image-zoo加载数据.png){width=50%}
 
-4. 一般常用的附件同步方式是使用**Webdav**，如果你使用 Zotero 的 300M 空间，可不必进行这一步设置。先打开右上角工作间 `Setting`，勾选下方的`Use webdav to access attachments`，再点击`Config Webdav`跳转到配置页面，填写好相应的网址，用户名和密码，请一定要注意核对网址，用户名和密码的空格，特殊符号等。这里里的网址后面会自动帮你加上 `zotero`，填写时要注意
+4. 一般常用的附件同步方式是使用**WebDAV**，如果你使用 Zotero 的 300M 空间，可不必进行这一步设置。先打开右上角工作间 `Setting`，勾选下方的`Use webdav to access attachments`，再点击`Config Webdav`跳转到配置页面，填写好相应的网址，用户名和密码，请一定要注意核对网址，用户名和密码的空格，特殊符号等。这里里的网址后面会自动帮你加上 `Zotero`，填写时要注意
 
-    ![Zoo 中配置 Webdav](../assets/image-zoo-webdav设置.png){width=50%}
+   ![Zoo 中配置 WebDAV](../assets/image-zoo-webdav设置.png){width=50%}
 
-5. 配置完毕，点开某个条目，点击PDF图标，会自动下载PDF。有可能下载失败，重试即可
+5. 配置完毕，点开某个条目，点击 PDF 图标，会自动下载 PDF。有可能下载失败，重试即可
 
-    ![Zoo 中下载 PDF](../assets/image-zoo-download-pdf.png){width=50%}
+   ![Zoo 中下载 PDF](../assets/image-zoo-download-pdf.png){width=50%}
 
 ## 通过第三方网盘同步附件
 
-::: danger
+::: caution
 
 ==我们不建议使用第三方网盘结合 ZotFile 的方式进行同步==。这会导致很多问题。除非你具备较强的问题排查能力，且对 ZotFile 所提供的功能有刚性需求，否则==请不要使用这种方法==！
 

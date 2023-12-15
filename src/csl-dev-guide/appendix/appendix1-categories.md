@@ -6,7 +6,7 @@ updated: 2022-08-03 10:27:14
 
 # 附录 I 学科分类
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 - anthropology 人类学

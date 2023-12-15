@@ -6,7 +6,7 @@ updated: 2022-08-03 10:28:18
 
 # 附录 IV 变量
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 ## 标准变量

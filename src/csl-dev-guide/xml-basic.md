@@ -6,7 +6,7 @@ updated: 2022-08-03 10:17:53
 
 # XML 基础
 
-> [!warning] WORK IN PROGRESS
+> [!warning]
 > 此页面正在施工中。
 
 `CSL` 基于 `XML(eXtensible Markup Language)`。`XML` 是一种标记语言，这里只介绍基本的术语，以理解 `CSL` 文件格式。
@@ -52,7 +52,7 @@ updated: 2022-08-03 10:17:53
 
 3. 带有内容的元素
 <Price>21000</Price>
-    
+
 4. 带有内容和属性的元素
 <Price MoneyKind="RMB">21000</Price>  # MoneyKind 为属性  21000为元素值
 或者是
