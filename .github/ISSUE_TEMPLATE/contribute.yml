@@ -1,0 +1,27 @@
+name: 投稿
+description: 提交稿件！
+title: "[投稿] "
+labels:
+  - 投稿
+  - 用户手册
+body:
+  - type: input
+    attributes:
+      label: 标题
+      description: 文章标题
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 文章内容
+      description: 文章的主体，标题请从二级标题开始，文档风格指南请参考《贡献者指南》
+      # placeholder: A clear and concise description of what the feature is, and what it will enhance or solve. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 其他信息
+      description: 如果你有其他信息需要说明，可以写在这里
