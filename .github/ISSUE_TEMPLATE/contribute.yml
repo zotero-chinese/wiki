@@ -1,5 +1,5 @@
-name: 投稿
-description: 提交稿件！
+name: 投递稿件
+description: 提交稿件！如果你不熟悉 Git，可以直接将稿件复制到这里，仓库维护者将尽快将内容合并到仓库。
 title: "[投稿] "
 labels:
   - 投稿
