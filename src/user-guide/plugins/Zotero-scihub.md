@@ -71,7 +71,7 @@
 
    ![同意承担风险](../../assets/image-zotero-findPDFs_resolvers.png)
 
-4. 将下列代码粘贴进去
+4. 将下列代码粘贴进去直接替换原有内容
    ```json
    [{
      "name": "Sci-Hub",
