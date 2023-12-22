@@ -45,7 +45,7 @@
 
 ::: tip
 
-这种方法在修改 Scihub 地址时较为繁琐，但优点是不会遇到 Scihub 验证码弹窗。
+[这种方法](https://www.zotero.org/support/kb/custom_pdf_resolvers)在修改 Scihub 地址时较为繁琐，但优点是不会遇到 Scihub 验证码弹窗。
 
 当被 Scihub 拒绝时，两种方法都无法抓取文献。
 
@@ -71,12 +71,9 @@
 
    ![同意承担风险](../../assets/image-zotero-findPDFs_resolvers.png)
 
-4. 将下列代码粘贴进去，然后重新启动 Zotero。
-
-   注意：如果原有值是 `[]`，则应该插入到两个中括号之间，而不是直接替换。
-
+4. 将下列代码粘贴进去
    ```json
-   {
+   [{
      "name": "Sci-Hub",
      "method": "GET",
      "url": "https://sci-hub.se/{doi}",
@@ -84,7 +81,30 @@
      "selector": "#pdf",
      "attribute": "src",
      "automatic": true
-   }
+   }]
    ```
 
-   其中`"url":"https://sci-hub.se/{doi}"`, 可以替换为其他的 Scihub 镜像地址。
+   其中`"url":"https://sci-hub.se/{doi}"`, 可以替换为其他的 Sci-Hub 镜像地址。  
+   如果想要从多个 Sci-Hub 地址抓取，按照如下格式添加
+   ```json
+   [{
+     "name": "Sci-Hub",
+     "method": "GET",
+     "url": "https://sci-hub.se/{doi}",
+     "mode": "html",
+     "selector": "#pdf",
+     "attribute": "src",
+     "automatic": true
+    },{
+     "name": "Sci-Hub",
+     "method": "GET",
+     "url": "https://sci-hub.ru/{doi}",
+     "mode": "html",
+     "selector": "#pdf",
+     "attribute": "src",
+     "automatic": true
+   }]
+   ```
+5. 添加上述配置后
+   - 对于新增的项目，Zotero 会自动增加 Sci-Hub 的源抓取 PDF。
+   - 对于已存在的但缺失 PDF 的项目，可以右键点击`查找可用PDF`选项尝试重新抓取。
