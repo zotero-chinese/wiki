@@ -50,11 +50,11 @@ updated: 2023-11-23 16:51:00
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-      ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![Chrome更新translator2](../../assets/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-chrome-2.jpg)
 
    :::
 
@@ -62,11 +62,11 @@ updated: 2023-11-23 16:51:00
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![Safari更新translator1](../../assets/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![Chrome更新translator2](../../assets/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-safari-2.jpg)
 
    :::
 
@@ -112,11 +112,11 @@ updated: 2023-11-23 16:51:00
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-      ![Chrome更新translator1](../../assets/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![Chrome更新translator2](../../assets/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-chrome-2.jpg)
 
    :::
 
@@ -124,11 +124,11 @@ updated: 2023-11-23 16:51:00
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![Safari更新translator1](../../assets/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![Chrome更新translator2](../../assets/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-safari-2.jpg)
 
    :::
 
