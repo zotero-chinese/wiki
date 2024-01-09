@@ -72,39 +72,47 @@
    ![同意承担风险](../../assets/image-zotero-findPDFs_resolvers.png)
 
 4. 将下列代码粘贴进去直接替换原有内容
+
    ```json
-   [{
-     "name": "Sci-Hub",
-     "method": "GET",
-     "url": "https://sci-hub.se/{doi}",
-     "mode": "html",
-     "selector": "#pdf",
-     "attribute": "src",
-     "automatic": true
-   }]
+   [
+     {
+       "name": "Sci-Hub",
+       "method": "GET",
+       "url": "https://sci-hub.se/{doi}",
+       "mode": "html",
+       "selector": "#pdf",
+       "attribute": "src",
+       "automatic": true
+     }
+   ]
    ```
 
    其中`"url":"https://sci-hub.se/{doi}"`, 可以替换为其他的 Sci-Hub 镜像地址。  
    如果想要从多个 Sci-Hub 地址抓取，按照如下格式添加
+
    ```json
-   [{
-     "name": "Sci-Hub",
-     "method": "GET",
-     "url": "https://sci-hub.se/{doi}",
-     "mode": "html",
-     "selector": "#pdf",
-     "attribute": "src",
-     "automatic": true
-    },{
-     "name": "Sci-Hub",
-     "method": "GET",
-     "url": "https://sci-hub.ru/{doi}",
-     "mode": "html",
-     "selector": "#pdf",
-     "attribute": "src",
-     "automatic": true
-   }]
+   [
+     {
+       "name": "Sci-Hub",
+       "method": "GET",
+       "url": "https://sci-hub.se/{doi}",
+       "mode": "html",
+       "selector": "#pdf",
+       "attribute": "src",
+       "automatic": true
+     },
+     {
+       "name": "Sci-Hub",
+       "method": "GET",
+       "url": "https://sci-hub.ru/{doi}",
+       "mode": "html",
+       "selector": "#pdf",
+       "attribute": "src",
+       "automatic": true
+     }
+   ]
    ```
+
 5. 添加上述配置后
    - 对于新增的项目，Zotero 会自动增加 Sci-Hub 的源抓取 PDF。
    - 对于已存在的但缺失 PDF 的项目，可以右键点击`查找可用PDF`选项尝试重新抓取。
