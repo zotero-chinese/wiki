@@ -5,7 +5,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
   "/user-guide/": userGuide,
-  "/plugin-dev-guide/": "structure",
+  "/plugin-dev-guide/": pluginDevGuide,
   "/csl-dev-guide/": cslDevGuide,
   "/": [
     "about",
