@@ -77,7 +77,7 @@ Zotero.PreferencePanes.register({
 
 ### 绑定首选项
 
-通过标签的属性来指定需要绑定的首选项的键，例如：
+通过将标签的 `preference` 属性设置为首选项的键，即可绑定首选项，例如：
 
 ```xml
 <html:input type="text" preference="extensions.zotero.makeItRed.color"/>
