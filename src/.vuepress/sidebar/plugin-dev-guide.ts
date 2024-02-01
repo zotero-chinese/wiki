@@ -3,7 +3,7 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const pluginDevGuide = arraySidebar([
   "",
   {
-    text: "从 Mark-It-Red 开始",
+    text: "从 Make It Red 开始",
     collapsible: true,
     children: ["quick-start/"],
   },
