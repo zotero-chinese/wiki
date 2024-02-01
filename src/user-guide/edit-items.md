@@ -94,6 +94,6 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 - 句子大小写：Mechanism of Ce-Modified Birnessite-MnO<sub>2</sub> in promoting SO<sub>2</sub> poisoning resistance for low-temperature NH<sub>3</sub>-SCR
 ```
 
-### 额外
+### 其他 extra
 
-所有其他自定义字段均应保存在“额外”字段，保存在该字段的数据应为若干个键值对，每行一个。CSL 引用时可以通过键来调用值。
+所有其他自定义字段均应保存在“其他（extra）”字段，保存在该字段的数据应为若干个键值对，每行一个。CSL 引用时可以通过键来调用值。
