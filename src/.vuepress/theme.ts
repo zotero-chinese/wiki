@@ -100,6 +100,50 @@ export default hopeTheme({
               };
           },
         },
+        {
+          matcher: "推荐",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "推荐",
+              };
+          },
+        },
+        {
+          matcher: "初级",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "初级",
+              };
+          },
+        },
+        {
+          matcher: "中级",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "中级",
+              };
+          },
+        },
+        {
+          matcher: "高级",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "高级",
+              };
+          },
+        },
       ],
       sub: true,
       sup: true,
