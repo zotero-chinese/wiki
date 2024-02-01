@@ -1,3 +1,9 @@
+---
+author:
+  - name: northword
+    url: https://github.com/northword/
+---
+
 # 插件清单
 
 `manifest.json` 是插件的清单文件，它是一个允许使用 `//` 撰写单行注释的、特殊的 JSON 文件。此文件必须存在，否则插件无效。
@@ -118,3 +124,8 @@
 参考：<https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Internationalization#%E5%9B%BD%E9%99%85%E5%8C%96_manifest.json>
 
 :::
+
+## 参考资料
+
+- [Web Extension 的 manifest.json](https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
+- [Zotero 7 for developers](https://www.zotero.org/support/dev/zotero_7_for_developers)
