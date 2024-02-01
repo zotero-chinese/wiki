@@ -45,16 +45,12 @@
 
 这些隐藏设置允许您控制某些特定条目格式的导入/导出转换器的行为。 所有翻译器隐藏首选项都以“extensions.Zotero.translators”开头。
 
-| 设置名称                             | 默认值 | 描述                                                                                                              | 应用于                |
-| ------------------------------------ | ------ | ----------------------------------------------------------------------------------------------------------------- | --------------------- |
-| RIS.import.ignoreUnknown             | true   | 不要在注释中存储无法映射到 Zotero 字段的值。                                                                      | RIS import translator |
-| RIS.import.keepID                    | false  | 不要从“ID -”标签中删除值。 可用于在 EndNote 中查找项目。                                                          | RIS import translator |
-| BibTeX.export.dontProtectInitialCase | false  | 如果只有第一个字母大写，则不要用大括号将单词括起来。 如果您在 Zotero 中以标题大小写输入标题，则很有用（不推荐）。 |
-
-false: {Tame {The} {BeaST}}
-true: {Tame The {BeaST}}
-请注意，如果第一个单词不包含内部大写字母，则永远不会被{}包围 | BibTeX export translator |
-| BibTeX.export.simpleCitekey | null | 默认情况下，仅对新添加的条目使用 citekey 的新简单格式（不允许除破折号和下划线之外的任何特殊字符）。 将此隐藏键设置为 true，将始终使用这种简单的 citekeys。 | BibTeX export translator |
+| 设置名称                             | 默认值 | 描述                                                                                                                                                                                                                                     | 应用于                   |
+| ------------------------------------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| RIS.import.ignoreUnknown             | true   | 不要在注释中存储无法映射到 Zotero 字段的值。                                                                                                                                                                                             | RIS import translator    |
+| RIS.import.keepID                    | false  | 不要从“ID -”标签中删除值。 可用于在 EndNote 中查找项目。                                                                                                                                                                                 | RIS import translator    |
+| BibTeX.export.dontProtectInitialCase | false  | 如果只有第一个字母大写，则不要用大括号将单词括起来。 如果您在 Zotero 中以标题大小写输入标题，则很有用（不推荐）。 `false: {Tame {The} {BeaST}}`, `true: {Tame The {BeaST}}` 请注意，如果第一个单词不包含内部大写字母，则永远不会被{}包围 | BibTeX export translator |
+| BibTeX.export.simpleCitekey          | null   | 默认情况下，仅对新添加的条目使用 citekey 的新简单格式（不允许除破折号和下划线之外的任何特殊字符）。 将此隐藏键设置为 true，将始终使用这种简单的 citekeys。                                                                               | BibTeX export translator |
 
 ### 全文索引
 
