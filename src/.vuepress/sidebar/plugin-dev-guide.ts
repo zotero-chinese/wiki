@@ -10,7 +10,7 @@ export const pluginDevGuide = arraySidebar([
   {
     text: "使用社区框架",
     collapsible: true,
-    children: [],
+    children: ["use-template"],
   },
   {
     text: "参考",
