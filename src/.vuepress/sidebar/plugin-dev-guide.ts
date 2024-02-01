@@ -13,12 +13,17 @@ export const pluginDevGuide = arraySidebar([
     children: ["use-template"],
   },
   {
+    text: "调试代码",
+    collapsible: true,
+    children: ["development/debug", "development/sideloading"],
+  },
+  {
     text: "参考",
     collapsible: true,
     children: [
       "reference/manifest",
       "reference/bootstrap",
-      "reference/locale",
+      "reference/localization",
       "reference/update",
       "reference/zotero",
       "reference/preference",

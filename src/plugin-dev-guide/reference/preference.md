@@ -7,7 +7,7 @@ author:
     url: https://github.com/northword/
 ---
 
-# 首选项
+# Zotero 首选项
 
 Preference 是 Zotero 插件的一种持久化设置能力。与其他代码运行环境相同，变量在 Zotero 重启后会被重置，因此对于用户的设置等需要持久存储的变量，通过 Preference 来存取。
 
@@ -67,7 +67,7 @@ Zotero.PreferencePanes.register({
 </linkset>
 ```
 
-首选项窗格文本的本地化详情请参考：[本地化](./locale.md)。
+首选项窗格文本的本地化详情请参考：[本地化](./localization.md)。
 
 ::: warning 设置命名空间以避免冲突
 
