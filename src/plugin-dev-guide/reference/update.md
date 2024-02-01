@@ -1,6 +1,12 @@
 # 更新清单
 
-`update.json`
+`update.json` 列出了插件各版本插件兼容的 Zotero 版本及插件的更新地址。
+
+::: note Todo
+
+待完善，请参考：[Updating your extension - Extension Workshop](https://extensionworkshop.com/documentation/manage/updating-your-extension/)
+
+:::
 
 ```json
 {
