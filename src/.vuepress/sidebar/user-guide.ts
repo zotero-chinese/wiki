@@ -3,6 +3,7 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const userGuide = arraySidebar([
   //   "",
   "why-use-zotero",
+  "install",
   "quick-start",
   {
     text: "基础使用",
@@ -10,11 +11,13 @@ export const userGuide = arraySidebar([
     // prefix: "basic-usage",
     collapsible: true,
     children: [
-      "install",
       "add-items",
+      "edit-items",
+      "add-attachments",
       "organize-library",
       "take-notes",
       "feed",
+      "import-from-other-software",
     ],
   },
   {
@@ -51,13 +54,13 @@ export const userGuide = arraySidebar([
     collapsible: true,
     children: "structure",
   },
-  {
-    text: "进阶教程",
-    icon: "creative",
-    // prefix: "advanced",
-    collapsible: true,
-    children: ["add-items-adv", "import-from-other-software.html"],
-  },
+  // {
+  //   text: "进阶教程",
+  //   icon: "creative",
+  //   // prefix: "advanced",
+  //   collapsible: true,
+  //   children: ["add-items-adv", "import-from-other-software.html"],
+  // },
   {
     text: "杂项",
     icon: "advance",
