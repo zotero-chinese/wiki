@@ -40,7 +40,7 @@
 
 感谢所有贡献者！
 
-[![contributors](https://contrib.rocks/image?repo=zotero-chinese/wiki)](https://github.com/zotero-chinese/wiki/graphs/contributors)
+[![contributors](https://cdn.jsdelivr.net/gh/zotero-chinese/.github@main/.github-contributors/zotero-chinese_wiki.svg)](https://github.com/zotero-chinese/wiki/graphs/contributors)
 
 ## 致谢
 
