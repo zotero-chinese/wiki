@@ -37,7 +37,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
    ::: tip
 
-   如果上面的网站无法打开，可以访问镜像站：<https://kgithub.com/redleafnew/Chinese-STD-GB-T-7714-related-csl#readme>
+   如果上面的网站无法打开，可以访问镜像站：<https://gitee.com/redleafnew00/Chinese-STD-GB-T-7714-related-csl>
 
    :::
 
