@@ -55,6 +55,12 @@ export default hopeTheme({
       categoryId: "DIC_kwDOJZD4ic4CbJJB",
     },
 
+    searchPro: {
+      // 索引全部内容
+      indexContent: true,
+      // 为分类和标签添加索引
+    },
+
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       // align: true,

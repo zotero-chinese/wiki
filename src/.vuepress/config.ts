@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite";
 import theme from "./theme.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { baiduTongjiPlugin } from "./plugins/baiduTongji.js";
 
 export default defineUserConfig({
@@ -13,7 +13,7 @@ export default defineUserConfig({
       description: "Zotero 非官方中文维护小组",
     },
   },
-
+  bundler: viteBundler(),
   theme,
 
   markdown: {
@@ -23,12 +23,6 @@ export default defineUserConfig({
   },
 
   plugins: [
-    searchProPlugin({
-      // 索引全部内容
-      indexContent: true,
-      // 为分类和标签添加索引
-    }),
-
     baiduTongjiPlugin({
       keys:
         process.env.CONTEXT === "production"
