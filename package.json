@@ -25,6 +25,7 @@
     "prettier": "2.8.8",
     "vue": "^3.4.16",
     "vuepress": "2.0.0-rc.7",
+    "vuepress-plugin-search-pro": "2.0.0-rc.23",
     "vuepress-theme-hope": "2.0.0-rc.23"
   },
   "lint-staged": {

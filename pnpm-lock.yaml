@@ -32,9 +32,12 @@ devDependencies:
   vuepress:
     specifier: 2.0.0-rc.7
     version: 2.0.0-rc.7(@vuepress/bundler-vite@2.0.0-rc.7)(vue@3.4.16)
+  vuepress-plugin-search-pro:
+    specifier: 2.0.0-rc.23
+    version: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
   vuepress-theme-hope:
     specifier: 2.0.0-rc.23
-    version: 2.0.0-rc.23(@vuepress/plugin-feed@2.0.0-rc.12)(markdown-it@14.0.0)(mermaid@10.8.0)(vuepress@2.0.0-rc.7)
+    version: 2.0.0-rc.23(@vuepress/plugin-feed@2.0.0-rc.12)(markdown-it@14.0.0)(mermaid@10.8.0)(vuepress-plugin-search-pro@2.0.0-rc.23)(vuepress@2.0.0-rc.7)
 
 packages:
 
@@ -3205,6 +3208,11 @@ packages:
       is-fullwidth-code-point: 5.0.0
     dev: true
 
+  /slimsearch@2.0.0:
+    resolution: {integrity: sha512-+G9FHWeVkwOTbEyhFIWvCz1T2fQusbn9756KhttfLygAcdjDOy1hpcPtWjnH4V9lp4qRElbvRqefOnlf/R0OAg==}
+    engines: {node: '>=18'}
+    dev: true
+
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -3613,6 +3621,30 @@ packages:
       - typescript
     dev: true
 
+  /vuepress-plugin-search-pro@2.0.0-rc.23(vuepress@2.0.0-rc.7):
+    resolution: {integrity: sha512-pWihTdqKusQAOue88DUtW67RJpNDNdwHAcM3kJTEzLfTIaJdsji/gjt3Sm8eX44qhYs+vWa9ZX/MkjbCPg9cdw==}
+    engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
+    peerDependencies:
+      sass-loader: ^14.0.0
+      vuepress: 2.0.0-rc.7
+    peerDependenciesMeta:
+      sass-loader:
+        optional: true
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.12(vuepress@2.0.0-rc.7)
+      '@vueuse/core': 10.7.2(vue@3.4.16)
+      cheerio: 1.0.0-rc.12
+      chokidar: 3.6.0
+      slimsearch: 2.0.0
+      vue: 3.4.16
+      vuepress: 2.0.0-rc.7(@vuepress/bundler-vite@2.0.0-rc.7)(vue@3.4.16)
+      vuepress-plugin-sass-palette: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
+      vuepress-shared: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+    dev: true
+
   /vuepress-shared@2.0.0-rc.23(vuepress@2.0.0-rc.7):
     resolution: {integrity: sha512-1es+bJ13E4UNkIr5kuPMX8h77aGZEuHLknH4u8B0qh+kP/CuuRXhUVQ6AHCuyDArL9mUc7CFwo+ro7zqDpsA1Q==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
@@ -3635,7 +3667,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-rc.23(@vuepress/plugin-feed@2.0.0-rc.12)(markdown-it@14.0.0)(mermaid@10.8.0)(vuepress@2.0.0-rc.7):
+  /vuepress-theme-hope@2.0.0-rc.23(@vuepress/plugin-feed@2.0.0-rc.12)(markdown-it@14.0.0)(mermaid@10.8.0)(vuepress-plugin-search-pro@2.0.0-rc.23)(vuepress@2.0.0-rc.7):
     resolution: {integrity: sha512-4ONVCNpQ0IiJsFwoGIQO7kV2OWJNr+LuDv7TsM+fa/b1b+bu/oeOGObnBMXc91YofB8Pqno0W+wYHEhLwheY0A==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -3697,6 +3729,7 @@ packages:
       vuepress-plugin-components: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
       vuepress-plugin-md-enhance: 2.0.0-rc.23(markdown-it@14.0.0)(mermaid@10.8.0)(vuepress@2.0.0-rc.7)
       vuepress-plugin-sass-palette: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
+      vuepress-plugin-search-pro: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
       vuepress-shared: 2.0.0-rc.23(vuepress@2.0.0-rc.7)
     transitivePeerDependencies:
       - '@types/reveal.js'
