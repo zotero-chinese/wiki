@@ -1,12 +1,14 @@
 import { userGuide } from "./user-guide";
 import { cslDevGuide } from "./csl-dev-guide";
 import { pluginDevGuide } from "./plugin-dev-guide";
+import { translatorDevGuide } from "./translator-dev-guide";
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
   "/user-guide/": userGuide,
   "/plugin-dev-guide/": pluginDevGuide,
   "/csl-dev-guide/": cslDevGuide,
+  "/translator-dev-guide/": translatorDevGuide,
   "/": [
     "about",
     "code_of_conduct",

@@ -27,6 +27,11 @@ export const zhNavbar = navbar([
             link: "/plugin-dev-guide/",
           },
           {
+            text: "转换器开发手册",
+            icon: "code",
+            link: "/translator-dev-guide/",
+          },
+          {
             text: "CSL 中文文档",
             icon: "code",
             link: "/csl-dev-guide/",
