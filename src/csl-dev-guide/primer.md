@@ -57,7 +57,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### `numeric` 风格
+#### numeric 风格
 
 `numeric` 风格的引用由数字组成，比如 `[1,2]` 和 `[3]`。参考文献条目一般按照作者首字母或者首次引用的次序来进行排序。
 
@@ -77,7 +77,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### `numeric` 复合风格
+#### numeric 复合风格
 
 复合风格是 `numeric` 风格的变体。这种风格在化学领域很流行，参考文献条目可能会包含多个参考文献。一旦某个引文定义了一个这样的参考文献条目（如 `[2]`），就可以单独引用条目中的项目（如 `[2b]`）。
 
@@ -95,9 +95,15 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### `Label` 风格
+#### Label 风格
 
-`Label` 风格的引文由简短的键构成，例如 `[GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。这些键也出现在参考文献条目中。因为目前不支持（特定风格的）自定义键格式，`CSL` 对这种格式支持有限。
+`Label` 风格的引文由简短的**键**构成，例如 `[GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。这些键也出现在参考文献条目中。因为目前不支持（特定风格的）自定义键格式，`CSL` 对这种格式支持有限。
+
+::: tip 键（key）
+
+“键”在计算机领域具有丰富的含义，在这里，它是指一串代表被引文献的字符。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -149,7 +155,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 当多个 `CSL` 样式共享相同的引用格式时，从属格式非常有用。以一个出版社旗下的不同期刊为例，如果限制只能使用独立样式，则虽然他们的引用格式都是相同的，但每个期刊的 `CSL` 样式都要包含对引用格式的完整定义。这会产生大量难以维护的 `CSL` 样式。如果出版社对它的引用格式作了一点小改动，我们将不得不更新每一个独立样式。
 
-从属样式正是用来解决这些问题的。例如，《Nature》、《Nature Biotechnology》和 《Nature Chemistry》期刊都使用同样的引用格式。那么，只需为《Nature Biotechnology》和《Nature Chemistry》都创建指向《Nature》的从属样式即可。这样一来，如果 Nature 出版集团想修改《Nature》及其关联期刊的引用格式，只更改《Nature》 `CSL` 样式中的引用格式，而无需触及其从属样式。
+从属样式正是用来解决这些问题的。例如，《Nature》、《Nature Biotechnology》和 《Nature Chemistry》期刊都使用同样的引用格式。那么，只需为《Nature Biotechnology》和《Nature Chemistry》都创建指向《Nature》的从属样式即可。这样一来，如果 Nature 出版集团想修改《Nature》及其关联期刊的引用格式，只需更改《Nature》 `CSL` 样式中的引用格式，而无需触及其从属样式。
 
 ### Locale 文件
 
@@ -534,7 +540,13 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 还没完，再看 `cs:citation` 元素，它含有两个属性，即 `et-al-min` 和 `et-al-use-first`。这两个属性共同决定了当条目的`author` 名字大于等于 `3` 个的时候，只有第一个名字会被输出，并尾随 `et al` 术语。
 
-最后，`cs:citation` 元素中还包含了 `cs:sort` 元素，`cs:sort` 又包含了两个 `cs:key` 元素。这一部分用来决定一个带有引文的引用如何排序。第一个用来排序的键由 `author` 宏的输出组成（`CSL` 足够智能，可以先根据姓、再根据名进行排序）第一个键具有相同输出的引用将继续根据第二个键进行排序，即 `issued-year` 宏的输出。
+最后，`cs:citation` 元素中还包含了 `cs:sort` 元素，`cs:sort` 又包含了两个 `cs:key` 元素。这一部分用来决定一个带有引文的引用如何排序。第一个用来排序的**键**由 `author` 宏的输出组成（`CSL` 足够智能，可以先根据姓、再根据名进行排序）第一个键具有相同输出的引用将继续根据第二个键进行排序，即 `issued-year` 宏的输出。
+
+::: tip 键（key）
+
+到了这里，“键”是指被引文献中那些用于排序的信息。
+
+:::
 
 #### cs:bibliography 元素
 
