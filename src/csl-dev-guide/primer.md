@@ -21,7 +21,7 @@ updated: 2023-07-22 20:42:39
 
 世界上有成百上千种不同的引用格式。
 
-::: tip (GB/T 7714-2015
+::: tip (GB/T 7714-2015)
 
 在中国，最常见的引用格式是国家标准《[信息与文献　参考文献著录规则](https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D8055ED3A7E05397BE0A0AB82A)》，最新的标准号是 `(GB/T 7714-2015)`。
 
@@ -79,7 +79,13 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 #### `numeric` 复合风格
 
-复合风格是 `numeric` 风格的变体。这种风格在化学领域很流行，参考文献条目可能会包含多个参考文献。一旦某个引文定义了一个这样的参考文献条目（如 `[2]`），就可以单独引用条目中的项目（如 `[2b]`）。`CSL` 尚未支持这种格式。
+复合风格是 `numeric` 风格的变体。这种风格在化学领域很流行，参考文献条目可能会包含多个参考文献。一旦某个引文定义了一个这样的参考文献条目（如 `[2]`），就可以单独引用条目中的项目（如 `[2b]`）。
+
+::: warning
+
+`CSL` 尚未支持这种格式。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -143,7 +149,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 当多个 `CSL` 样式共享相同的引用格式时，从属格式非常有用。以一个出版社旗下的不同期刊为例，如果限制只能使用独立样式，则虽然他们的引用格式都是相同的，但每个期刊的 `CSL` 样式都要包含对引用格式的完整定义。这会产生大量难以维护的 `CSL` 样式。如果出版社对它的引用格式作了一点小改动，我们将不得不更新每一个独立样式。
 
-从属样式正是用来解决这些问题的。例如，《Nature》、《Nature Biotechnology》和 《Nature Chemistry》期刊都使用同样的引用格式。那么，只需为《Nature Biotechnology》和《Nature Chemistry》都创建指向《Nature》的从属样式即可。这样一来，如果 Nature 出版集团想《Nature》及其关联期刊的引用格式，只更改《Nature》 `CSL` 样式中的引用格式，而无需触及其从属样式。
+从属样式正是用来解决这些问题的。例如，《Nature》、《Nature Biotechnology》和 《Nature Chemistry》期刊都使用同样的引用格式。那么，只需为《Nature Biotechnology》和《Nature Chemistry》都创建指向《Nature》的从属样式即可。这样一来，如果 Nature 出版集团想修改《Nature》及其关联期刊的引用格式，只更改《Nature》 `CSL` 样式中的引用格式，而无需触及其从属样式。
 
 ### Locale 文件
 
