@@ -20,6 +20,7 @@
     "@vuepress/plugin-feed": "2.0.0-rc.12",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
+    "markdown-it-deflist": "^3.0.0",
     "markdownlint-cli2": "^0.10.0",
     "mermaid": "^10.8.0",
     "prettier": "2.8.8",

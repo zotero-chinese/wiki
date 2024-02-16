@@ -17,6 +17,9 @@ devDependencies:
   lint-staged:
     specifier: ^15.2.2
     version: 15.2.2
+  markdown-it-deflist:
+    specifier: ^3.0.0
+    version: 3.0.0
   markdownlint-cli2:
     specifier: ^0.10.0
     version: 0.10.0
@@ -2493,6 +2496,10 @@ packages:
     dependencies:
       '@types/markdown-it': 13.0.7
       markdown-it: 14.0.0
+    dev: true
+
+  /markdown-it-deflist@3.0.0:
+    resolution: {integrity: sha512-OxPmQ/keJZwbubjiQWOvKLHwpV2wZ5I3Smc81OjhwbfJsjdRrvD5aLTQxmZzzePeO0kbGzAo3Krk4QLgA8PWLg==}
     dev: true
 
   /markdown-it-emoji@3.0.0:

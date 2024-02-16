@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import theme from "./theme.js";
 import { baiduTongjiPlugin } from "./plugins/baiduTongji.js";
+import markdownItDeflist from "markdown-it-deflist";
 
 export default defineUserConfig({
   base: "/",
@@ -20,6 +21,9 @@ export default defineUserConfig({
     headers: {
       level: [2, 3, 4, 5],
     },
+  },
+  extendsMarkdown: (md) => {
+    md.use(markdownItDeflist);
   },
 
   plugins: [

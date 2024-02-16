@@ -193,11 +193,11 @@ en-US：
 
 `cs:info`
 
-🏳️ Default: *none* · ⚠ Required · ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
+: 🏳️ Default: *none* · ⚠ Required · ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
 
 `cs:citation`
 
-🏳️ Default: *none* · ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
+: 🏳️ Default: *none* · ⚠ Required — 用来描述 in-text 引文或者 notes 引文的具体格式。
 
 `cs:bibliography`
 
