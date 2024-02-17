@@ -28,18 +28,6 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 有关的其他文档，CSL 议程，样式和本地化文件详见 [CSL 项目主页](https://citationstyles.org/)。
 
-## 翻译习惯
-
-这里将列出一些常用的术语的译文，并不能保证翻译的准确性。为保持准确性，后文的描述中可能会在译文旁标注原文。
-
-| 原文                | 译文       | 备注     |
-| ------------------- | ---------- | -------- |
-| locale files/locale | 本地化文件 | 区域文件 |
-| styles              | 样式       |          |
-| citation            | 引文       |          |
-| macro               | 宏         |          |
-|                     |            |          |
-
 ## 术语
 
 关键字 MUST，MUST NOT，REQUIRED，SHALL，SHALL NOT，SHOULD，SHOULD NOT，RECOMMENDED，MAY 和 OPTIONAL 按 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述解释。
@@ -314,7 +302,7 @@ en-US：
 
 #### Citation
 
-`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
+`cs:citation` 元素描述了引注的格式，其中引注可以是一条或者多条。引注的格式可能是 in-text citations（即文字中的引注）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
 
 ```xml
 <citation>
