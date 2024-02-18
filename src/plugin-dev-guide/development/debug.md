@@ -39,12 +39,6 @@ author:
 2. 使用 `--debugger` 参数启动 Zotero。
    也可以将启动参数写入快捷方式。
 
-   ::: tip 模板用户无需手动配置以上两步
-
-   模板的启动脚本中已经进行了相关配置，因此你无需再手动执行以上步骤，直接打开 FireFox 远程调试即可。
-
-   :::
-
 3. 在 FireFox 102 ESR 中，找到`设置` -> `更多工具` -> `远程调试`（或者浏览器中输入：`about:debugging#/setup`），找到网络位置，输入 `localhost:6000`，点击确定添加即可。
 
    ::: tip
@@ -58,5 +52,11 @@ author:
 ::: tip Zotero 正在包含此功能
 
 Zotero 团队正在将开发者工具嵌入 Zotero，见 [PR #3387](https://github.com/zotero/zotero/pull/3387)，此 PR 合并后即可直接从菜单呼出开发者工具，而无需安装 FireFox。
+
+:::
+
+::: tip 模板用户无需手动配置
+
+模板的启动脚本中已经进行了相关配置，部分实现了上述 PR 的功能，因此你无需再手动执行以上步骤，也不需要安装 Firefox，`npm start` 后即可打开开发者工具。
 
 :::
