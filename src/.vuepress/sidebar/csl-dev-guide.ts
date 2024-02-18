@@ -6,11 +6,5 @@ export const cslDevGuide = arraySidebar([
   "glossary",
   "xml-basic",
   "specification",
-  {
-    text: "附录",
-    prefix: "appendix/",
-    collapsible: true,
-    children: "structure",
-  },
   "translating-locale-files",
 ]);
