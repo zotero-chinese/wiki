@@ -43,7 +43,7 @@ author:
 
    ::: tip
 
-   端口与第一步打开的高级编辑器中 `devtools.debugger.remotr-port` 一致。
+   端口与第一步打开的高级编辑器中 `devtools.debugger.remote-port` 一致。
 
    :::
 
