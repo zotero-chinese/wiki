@@ -36,7 +36,7 @@ updated: 2023-10-04 18:38:54
 
 #### 数据文件位置
 
-除非您在 Zotero 首选项的高级窗格中选择了自定义数据目录，否则您的 Zotero 数据将存储在以下与操作系统相关的目录中：
+除非您在 Zotero 设置的高级窗格中选择了自定义数据目录，否则您的 Zotero 数据将存储在以下与操作系统相关的目录中：
 
 | 系统类型                     | 默认位置                                      |
 | ---------------------------- | --------------------------------------------- |
@@ -47,9 +47,9 @@ updated: 2023-10-04 18:38:54
 
 ::: tip
 
-查找 Zotero 数据的最简单、最可靠的方法是单击 `Zotero 首选项` 的 `高级` 选项卡中的 `显示数据目录` 按钮。这将始终显示当前正在使用的数据目录，并且是查找数据目录的推荐方法。
+查找 Zotero 数据的最简单、最可靠的方法是单击 `Zotero 设置` 的 `高级` 选项卡中的 `显示数据目录` 按钮。这将始终显示当前正在使用的数据目录，并且是查找数据目录的推荐方法。
 
-如果您无法访问 Zotero 首选项，搜索文件名`zotero.sqlite`也可以帮助您找到 Zotero 数据目录。
+如果您无法访问 Zotero 设置，搜索文件名`zotero.sqlite`也可以帮助您找到 Zotero 数据目录。
 
 :::
 
@@ -109,7 +109,7 @@ $ tree -L 1
 
 #### 用户配置文件内容
 
-这个目录包含 Zotero 的首选项配置，插件信息及其插件配置等。下面列出了部分目录文件：
+这个目录包含 Zotero 的配置、插件信息及插件配置等。下面列出了部分目录文件：
 
 ```bash
 northword@Yoga-Northword MINGW64 ~/AppData/Roaming/Zotero/Zotero/Profiles/1y2hj8ud.default
@@ -126,7 +126,7 @@ $ tree -L 1
 `-- xulstore.json
 ```
 
-其中 `prefs.js` 包含 Zotero 的所有首选项，`extensions/` 目录 和 `extensions.json` 包含 Zotero 插件的安装包和安装、启用等信息。
+其中 `prefs.js` 包含 Zotero 的所有设置，`extensions/` 目录 和 `extensions.json` 包含 Zotero 插件的安装包和安装、启用等信息。
 
 ::: warning
 
@@ -143,7 +143,7 @@ $ tree -L 1
 | 旧电脑                                                                     | 新电脑                                                                 |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中文件 | `C:\Users<用户名>\AppData\Roaming\Zotero\Zotero\Profiles\*.default` 中 |
-| Zotero-`首选项`-`高级`-`文件和文件夹`-`数据储存位置`中的文件               | 同一路径                                                               |
+| Zotero-`设置`-`高级`-`文件和文件夹`-`数据储存位置`中的文件                 | 同一路径                                                               |
 
 例如：电脑的用户名为`zotero-chinese`，旧电脑将 Zotero 安装在 `D:\Program Files\Zotero` 目录下，数据储存位置设置为 `C:\Users\zotero-chinese\Zotero`。
 

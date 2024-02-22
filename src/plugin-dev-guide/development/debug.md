@@ -34,7 +34,7 @@ author:
 
 截止至最后编辑日期，Zotero 底层基于 Firefox 102 ESR。
 
-1. 打开 Zotero Beta，打开 `菜单栏` -> `编辑` -> `首选项` -> `高级` -> `设置编辑器`，搜索 `debug` 并将 `devtools.debugger.remote-enable` 和 `devtools.debugger.remote-websocket` 设置为 `true`。
+1. 打开 Zotero Beta，打开 `菜单栏` -> `编辑` -> `设置` -> `高级` -> `设置编辑器`，搜索 `debug` 并将 `devtools.debugger.remote-enable` 和 `devtools.debugger.remote-websocket` 设置为 `true`。
 
 2. 使用 `--debugger` 参数启动 Zotero。
    也可以将启动参数写入快捷方式。
