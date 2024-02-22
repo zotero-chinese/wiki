@@ -109,7 +109,7 @@ $ tree -L 1
 
 #### 用户配置文件内容
 
-这个目录包含 Zotero 的设置配置，插件信息及其插件配置等。下面列出了部分目录文件：
+这个目录包含 Zotero 的配置、插件信息及插件配置等。下面列出了部分目录文件：
 
 ```bash
 northword@Yoga-Northword MINGW64 ~/AppData/Roaming/Zotero/Zotero/Profiles/1y2hj8ud.default
