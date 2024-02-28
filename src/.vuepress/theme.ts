@@ -61,21 +61,16 @@ export default hopeTheme({
       // 为分类和标签添加索引
     },
 
+    linksCheck: {
+      dev: true,
+      build: true,
+    },
+
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       // align: true,
       attrs: true,
       // chart: true,
-      checkLinks: {
-        // 仅在开发模式下检查链接
-        status: "always",
-        ignore: [
-          // 忽略以 `/api/` 开头的链接
-          /^\/api\//,
-          // 忽略 `/playground.html`
-          "/playground.html",
-        ],
-      },
       // codetabs: true,
       // demo: true,
       // echarts: true,
