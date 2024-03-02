@@ -71,7 +71,7 @@ function shutdown() {
 
 ::: tip
 
-通常地，在 `startup` 中初始化插件地本地化系统、首选项、兼容性等，在 `onMainWindowLoad` 中初始化与 Zotero UI 有关的组件，如菜单、侧边栏、自定义列等。
+通常地，在 `startup` 中初始化插件地本地化系统、设置、兼容性等，在 `onMainWindowLoad` 中初始化与 Zotero UI 有关的组件，如菜单、侧边栏、自定义列等。
 
 :::
 

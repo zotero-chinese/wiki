@@ -11,7 +11,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 ## 官方引文格式下载
 
-1. 打开 Zotero 软件，选择“编辑—首选项/设置”，在弹出窗口中选择“引用”
+1. 打开 Zotero 软件，选择“编辑—设置”，在弹出窗口中选择“引用”
 
    ![引文格式管理](../assets/image-zotero-引文格式管理.png)
 
