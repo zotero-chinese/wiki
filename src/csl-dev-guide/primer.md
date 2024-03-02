@@ -9,29 +9,43 @@ updated: 2023-07-22 20:42:39
 
 ## 前言
 
-`CSL` 是一种基于 `XML` 的开放 (开源) 语言，用来描述引用和参考文献的格式。对 `CSL` 更加技术和详细的描述见 [CSL 规范](specification.md)。
+本节是对 [Citation Style Language](http://citationstyles.org/)（CSL）的简单介绍，CSL 是一种基于 XML 的开放 (开源) 语言，用于描述引注和参考文献表的格式。对 CSL 更技术性、更深入的说明见 [CSL 规范](specification.md)。
 
-## CSL 是什么
+## 什么是 CSL
 
-如果你写过论文的话，你可能在其中引用了别人的论文。参考文献在学术交流中很重要，因为它可以提供引用的来源，并且可以把已经发表的研究联系到一起。但是，手动设置引用格式和参考文献目录非常耗时，而且不同的期刊有自己的引用格式。
+如果你写过论文的话，你很可能在其中引用了别人的工作。参考文献在学术交流中至关重要，它可以交代缘由，并且把已发表的研究联系到一起。但是，手动设置引注格式和参考文献表非常耗时，尤其是当你面对的期刊都有他们自己的引用格式的时候。
 
-参考文献管理软件可以解决上面的问题。像 Zotero、Mendeley、Papers 等软件不仅能帮助你管理参考文献，而且可以自动地生成引用的参考文献目录。为了设置特定的引用格式，这些软件需要能识别的对引用格式的描述，这种描述就是 Citation Style Language（CSL）。
+好在参考文献管理软件可以解决这样的问题。像 Zotero、Mendeley、Papers 等软件不仅能帮助你管理研究资料，而且可以自动生成引注和参考文献表。但要想设置特定的引用格式，这些程序需要使用一种可被计算机理解的语言来描述各种引用格式，也许你已经猜到，这种语言就是 Citation Style Language（CSL）。
 
-## 引文格式
+## 引用格式
 
-引文格式有很多很多种，我们最常用的就是国标（信息与文献 参考文献著录规则），最新的国标代号是 `(GB/T 7714-2015)`。大多数的引用格式都属于几个基本类别，如下：
+世界上有成百上千种不同的引用格式。
 
-### In-text Styles
+::: tip (GB/T 7714-2015)
 
-引用格式可以分为两个主要的类型。第一种就是 `in-text styles`，正文中的引用直接指向参考文献目录中的一个或者多个条目。`in-text styles` 还可以细分为 `author-date,author,numeric` 和 `label` 格式。
+在中国，最常见的引用格式是国家标准《[信息与文献　参考文献著录规则](https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D8055ED3A7E05397BE0A0AB82A)》，最新的标准号是 `(GB/T 7714-2015)`。
 
-在 `CSL` 中，每个单独的 `pointer` 称为一个引用。例如，引文 `“(Doe et al. 2002, Smith 1997)”` 包含两个引用：一个是 `Doe et al.` 在 2002 年发表的文献，另外一个是 `Smith`1997 年发表的文献。
+:::
 
-#### `author-date` 和 `author` 格式
+可幸的是，绝大多数引用格式都属于几个基本类别，CSL 将引用格式分为以下类型：
 
-`author-date` 引用格式会显示作者的名字和发表的日期，比如：`(Van der Klei et al. 1991; Zwart et al. 1983)`。`author` 只显示作者名字，例如：`(Gidijala et al.)`。参考文献条目一般使用字母表顺序对作者进行排序。
+### In-text 风格
 
-应该注意的是，许多引用格式使用了令人疑惑的 `Harvard` 术语来指代 `author-date` 格式，但是大多数这些格式与哈佛大学并没有关系。而且也并不存在一个官方的 `Harvard` 格式。
+引用格式可以分为两个主要的类型。第一种类型就是 `in-text` 风格，在这种风格中，一个引注直接指向参考文献表中的一个或者多个条目。CSL 继续将这种风格细分为 `author-date`、`author`、`numeric` 和 `label` 风格。
+
+每个引注都指向一个或者多个参考文献条目。在 CSL 中，每个独立的指向关系称为一个引用。例如，引注 `(Doe et al. 2002, Smith 1997)` 包含两个引用：一个是 `Doe et al.` 在 2002 年发表的文献，另一个是 Smith 于 1997 年发表的文献。在 CSL 的语境中，参考文献表中的条目有时也称为参考文献。
+
+#### author-date 和 author 风格
+
+`author-date` 风格的引用会显示作者名字和发表的日期，例如：`(Van der Klei et al. 1991; Zwart et al. 1983)`。而 `author` 风格的引用只显示作者名字，例如：`(Gidijala et al.)`。参考文献条目一般使用字母表顺序对作者进行排序。
+
+::: tip 著者-出版年制
+
+国标中的“著者-出版年制”就属于 `author-date` 风格。
+
+:::
+
+应该注意的是，即使这些风格中的大多数与哈佛大学并没有联系，许多风格指南仍使用了令人疑惑的术语“Harvard”来指代”`author-date` 格式。而且，并不存在一个所谓的官方 Harvard 格式。
 
 ::: note 参考文献条目实例
 
@@ -43,9 +57,15 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### `numeric` 格式
+#### numeric 风格
 
-`numeric` 格式由数字组成，比如 `[1,2]` 和 `[3]`。参考文献条目一般使用作者首字母排序或者使用第一次在正文中的引用顺序排序。国标就是一种典型的 `numeric` 格式。
+`numeric` 风格的引用由数字组成，比如 `[1,2]` 和 `[3]`。参考文献条目一般按照作者首字母或者首次引用的次序来进行排序。
+
+::: tip 顺序编码制
+
+国标中的“顺序编码制”就属于 `numeric` 风格。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -57,9 +77,15 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### `numeric` 复合格式
+#### numeric 复合风格
 
-复合格式是 `numeric` 格式的变体。这种风格在化学领域很流行。`CSL` 中暂时不支持这种格式，这里也不多作介绍。
+复合风格是 `numeric` 风格的变体。这种风格在化学领域很流行，参考文献条目可能会包含多个参考文献。一旦某个引注定义了一个这样的参考文献条目（如 `[2]`），就可以单独引用条目中的项目（如 `[2b]`）。
+
+::: warning
+
+CSL 尚未支持这种格式。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -69,9 +95,15 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-#### 标签格式
+#### Label 风格
 
-这种引用格式由 `keys` 构成，例 `[GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。`CSL` 对这种格式支持有限，这里也不多作介绍。
+`Label` 风格的引注由简短的**键**构成，例如 `[GBKv2008]` 和 `[ZwVH1983; vaHV1991]`。这些键也出现在参考文献条目中。因为目前不支持（特定风格的）自定义键格式，CSL 对这种格式支持有限。
+
+::: tip 键（key）
+
+“键”在计算机领域具有丰富的含义，在这里，它是指一串代表被引文献的字符。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -83,9 +115,15 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-### Note Styles
+### Note 风格
 
-引用格式的第二类为 `Note` 格式。引用中的 `marker` 可以是数字或者符号，例如 `[*]` 或者 `[†]`。每个 `marker` 指向脚注或者尾注。`CSL` 不能设置使用哪些数字或者符号用于 `marker`，这些应该用字处理软件 (比如 `word`) 设置。与上面的 `in-text` 格式不同，尾注或者脚注通常显示的信息更多。
+引用格式的第二类为 `note` 风格。这种风格中，引用文献时会在句子中插入一个标记，这个标记可以是数字或者符号，例如 `[*]` 和 `[†]`。每个标记都指向脚注或者尾注。CSL 不限制采用哪些数字格式或者符号作为标记，这些应该留交文字处理软件来完成。与前面的 `in-text` 风格的引注不同，尾注或脚注通常包含辨识引用文献所需的所有信息。有些 `note` 风格还包含一个参考文献表以显示所有被引文献的概貌，并对文献作更详细的描述。
+
+:::tip 字处理软件
+
+字处理软件，即用于将文字格式化和排版的办公软件，如 Microsoft Word，国内常见的 WPS 就是“文字处理软件（Word Process Software）”的英文缩写。
+
+:::
 
 ::: note 参考文献条目实例
 
@@ -97,67 +135,75 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 ## CSL 生态
 
-要明白 `CSL` 是怎么运作的，首先要了解 `CSL` 的生态。`Style` 指的是 CSL 样式，`Item Metadata` 指的是每篇参考文献的作者，题目等信息，`Locale Files` 是为实现与语言无关（指英语，汉语等）的格式的本地化文件，`Citation Details` 指的是影响引文信息或参考文献列表表现的细节，比如顺序，位置等。
+要明白 CSL 是怎么运作的，首先来看看 CSL 生态系统的各个部分。
 
 ![csl-infrastructure](https://docs.citationstyles.org/en/stable/_images/csl-infrastructure.png)
 
-### 独立格式和从属格式
+:::tip 图注
 
-`CSL` 的一切都是围绕 `style` 的，但是并不是所有的 `style` 都是相似的。主要包括两种格式：独立格式 `(independent styles)` 和从属格式 `(dependent styles)`。
+“Style”指的是 CSL 样式，“Item Metadata”指的是每篇参考文献的作者，题目等信息，“Locale Files”是为实现与语言无关（指英语、汉语等）的格式的本地化文件，“Citation Details”指的是影响引注信息或参考文献表表现的细节，比如顺序、位置等。
 
-独立格式有 2 种功能，首先，需要先定义一种引用格式。具体格式是什么样的，是 `author-date` 格式还是 `note` 格式？ 引用的顺序是按字母排序还是按日期排序？参考文献条目中是不是包含 `DOI`？使用什么标点符号以及使用大写还是小写？文献发表年限在文献题目前还是后？等等，这些都是引用格式定义的。第二个功能是：`CSL` 必须是能自我解释的，可以称之为格式的**元数据**。元数据中可以包括该 `CSL` 对应的期刊标题，以及该期刊的联接，该 `CSL` 的创建者等。
+:::
 
-从属格式则仅包括格式的元数据，没有对引用格式的定义。从属格式必须指定它的参考格式 (父格式)，从属格式的引用将使用它的父格式的引用格式。
+### 独立样式和从属样式
 
-当多个格式使用相同的引用格式时，从属格式非常有用。以一个出版社旗下的不同期刊为例，如果每个期刊都使用独立格式，则每个 `CSL` 都要完整的对引用格式的描述，即使他们的引用格式都是相同的。这样就导致 `CSL` 太庞大，冗余太多。这种情况下，从属格式就比较适合。例如，`"Nature"`，`"Nature Biotechnology"` 和 `"Nature Chemistry"` 都使用同样的引用格式。因此，只需要创建一个 `"Nature"` 的独立格式，将 `"Nature Biotechnology"` 和 `"Nature Chemistry"` 格式都定义为 `"Nature"` 格式的从属格式。这样，如果 `"Nature"` 的出版社想改变引用格式，只需要改变 `"Nature"` 期刊格式的 `CSL` 就可以，不需要改变它的从属格式对应的 `CSL`。
+CSL 世界中的一切都是围绕样式展开的，但是并不是所有的样式都是相似的。主要包括两种样式：独立样式（independent styles）和从属样（dependent styles）。
 
-### Locale 文件
+独立样式有 2 个职责，首先，需要先定义一种引用格式。具体格式是什么样的，是 `author-date` 风格还是 `note` 风格？ 引用是按字母排序还是按日期排序？参考文献条目中是不是包含 DOI？使用什么标点符号以及大小写？文献发表年限在文献标题之前还是之后？等等。其次，CSL 样式必须描述它本身，我们称这个自我描述的信息为**样式元数据**。元数据中可以包括该 CSL 样式对应的期刊标题，以及该期刊的网站，该 CSL 样式的创建者等。
+
+从属样式则仅包括样式元数据。从属样式仅需引用一个独立样式 (其“父样式”)，且应用父样式的引用格式，而无需提供对引用格式的定义。
+
+当多个 CSL 样式共享相同的引用格式时，从属格式非常有用。以一个出版社旗下的不同期刊为例，如果限制只能使用独立样式，则虽然他们的引用格式都是相同的，但每个期刊的 CSL 样式都要包含对引用格式的完整定义。这会产生大量难以维护的 CSL 样式。如果出版社对它的引用格式作了一点小改动，我们将不得不更新每一个独立样式。
+
+从属样式正是用来解决这些问题的。例如，《Nature》、《Nature Biotechnology》和 《Nature Chemistry》期刊都使用同样的引用格式。那么，只需为《Nature Biotechnology》和《Nature Chemistry》都创建指向《Nature》的从属样式即可。这样一来，如果 Nature 出版集团想修改《Nature》及其关联期刊的引用格式，只需更改《Nature》 CSL 样式中的引用格式，而无需触及其从属样式。
+
+### 本地化文件
 
 事实上，大多数独立格式并不是完全独立的。
 
-以下面的条目为例：
+以下面的参考文献为例：
 
 > Hartman, P., Bezos, J. P., Kaphan, S., & Spiegel, J. (1999, September 28). Method and system for placing a purchase order via a communications network. Retrieved from <https://www.google.com/patents/US5960411>
 
-你可以使用一种独立的 `CSL` 格式来描述这个条目，在格式种编码就可以实现。例如，在最后的链接前加上 `"Retrieved from"`，或者使用 `"YYYY, Month DD"` 作为日期的格式。但是这样的一种 `CSL`，只能在美式英语中使用，如果使用德语写作，就必须修改样式中对应的翻译和日期格式。
+你可以在独立样式中将各种特定语言的信息强行编码到样式中来描述这个引用格式。例如，在最后的链接前加上 `Retrieved from` 这段文本，或者采用 `YYYY, Month DD` 作为日期的格式。但是这样的样式只能在美式英语中使用，如果使你想要这个引用格式的德语版，就必须修改样式中所有对应的翻译和日期格式。
 
-幸运的是，独立格式可以依据 `CSL locale files`(以下也翻译为 本地化文件 ) 来实现通用项的翻译，日期格式和语法的转换。例如：我们可以重写 `CSL` 格式使用 `"retrieved"` 和 `"from"` 项，并使用本地化的日期格式。如果我们将 `CSL` 样式 (同格式) 的使用环境设置为美式英语，该样式将从 `US English locale file` 检索和翻译对应的项，并生成上述引用。如果将英语换为德语，就会使用德语对应的 `locale file`，生成的引用如下：
+幸运的是，独立样式可以依据 CSL locale file（以下也翻译为“本地化文件”）来实现通用术语的翻译以及日期格式和语法的转换。例如：我们可以重写 CSL 样式以便使用 `retrieved` 和 `from` 的 CSL 术语，并使用本地化的日期格式。如果我们将 CSL 样式的区域设置为美式英语，该样式将从美式英语的本地化文件检索术语的译文和本地化的日期格式，并生成上述引用。但如果将样式区域从英语切换至德语，就会使用德语对应的本地化文件，生成的引用如下：
 
 > Hartman, P., Bezos, J. P., Kaphan, S., & Spiegel, J. (28. September 1999). Method and system for placing a purchase order via a communications network. Abgerufen von <https://www.google.com/patents/US5960411>
 
-因此，使用 `CSL locale files` ，可以编写与语言无关的 `CSL` 样式。如上面展示的，这样的格式可以轻易的在不同的语言中转换。但是语言是很复杂的，`CSL automatic localization` 并不能支持所有的语言特色。但是，语言无关的样式仍然是有意义的，如果你要自己修改 `CSL` 样式来适应自己选择的语言环境，参考这些语言无关的样式将更容易实现。
+因此，通过本地化文件，可以编写与语言无关的 CSL 样式。正如上面所展示的那样，这样的样式可以在不同的语言中轻松切换。但是语言是很复杂的，对于那些已经有本地化文件的语言，CSL 的自动本地化并不能支持所有语言的特性。不过，如果你要自己修改一个 CSL 样式使其满足你所选的语言，语言无关的样式仍然是有意义的。
 
-`Locale file` 还有一个好处，那就是，我们只需要为每种语言定义一次通用的翻译，日期格式和语法。这样可以保证样式紧凑，并使 `locale file` 更容易维护。由于给定语言的引用格式并不是一直和 `locale file` 中定义的转换格式一致，因此，我们也可以自己选择性的重写任何在 `locale file` 中定义的项目。下面独立格式解析中的 `locale` 元素就是为实现这一功能设置的。
+本地化文件还带来一个好处，我们只需要为每种语言定义一次通用的翻译、日期格式和语法。这样可以保证样式紧凑，并使本地化文件更易于维护。由于给定语言的引用格式并不总是采用某种翻译和日期格式，CSL 样式也可以选择性的重写任何在本地化文件中定义过的数据。
 
-### Item Metadata
+### 条目元数据
 
-接下来就是引用中需要的参考文献条目的细节：条目元数据。
+接下来就是你所要引用的条目在参考文献表中的具体内容：条目元数据。
 
-例如：一篇期刊文章可能需要作者的名字，发表的年份，文章题目，期刊名称，卷和期，出现的页码范围以及 `DOI`（数字文献唯一标识），所有这些信息都有助于读者识别和查找这篇文章。
+例如，一篇期刊文章的参考文献条目可能会显示作者的名字、发表的年份、文章标题、期刊名称、卷和期、出现的页码范围以及 DOI，所有这些信息都有助于读者识别和查找这篇文章。
 
-参考文献管理软件可以轻松的创建文献的这些细节信息。但是，很多参考文献管理软件都有自己的格式来存储这些元素据，大多数都支持通用的 `bibliographic exchange formats`，比如 `BixTex` 和 `RIS`。`citeproc-js`CSL 处理器引入了一种基于 `JSON` 的格式，用于以 `citeproc-js` 可以理解的方式来存储元数据。其他的一些 `CSL` 处理器后来采用了这种 `“CSL JSON”` 格式（也称为 `“citeproc JSON”`）。
-
-译者注：这里讲的似乎有些繁琐。总的来说，是我们需要每篇文章的作者，题目，发表期刊等信息来生成对应的条目。文献管理软件可以很方便的提供这些信息。至于其内部存储的方式，使用的时候并不需要关心，类似 `Zotero` 的文献管理软件会自动使用这些信息和 `CSL` 生成引用信息。
+参考文献管理软件使创建条目的文库变得简单。虽然许多参考文献管理软件都有它们自己存储条目元数据的方式，但大多数都支持例如 BixTex 和 RIS 这样通用的参考文献数据交换格式。citeproc-js CSL 处理器引入了一种基于 JSON 的格式，这种格式以 citeproc-js 可以理解的方式来存储元数据。一些其他的 CSL 处理器也已经开始采用这种 CSL JSON 格式（又名 citeproc JSON）。
 
 ### 引用细节
 
-对于给定的引用格式，引文和条目的展示不仅取决于被引用项的元数据，还取决于这些项被引用的上下文。我们将这类特定于上下文的信息称为引用细节。
+对于一种给定的引用格式，引注和参考文献表的展现方式不仅取决于被引用条目的元数据，还取决于这些条目被引用处的上下文。我们将这类特定于上下文的信息称为**引用细节**。
 
-例如：引用时对条目的排序会影响他们在参考文献中的位置（在下面独立格式的 `citation` 和 `bibliography` 章节中提到）。
+例如，条目的引用顺序会影响他们在参考文献表中的位置。在 `Note` 风格中，之前已被引用的条目在被继续引用时会写为更紧凑的形式。另一个例子是定位词，其引导读者到被引工作的特定位置，比方说章节中某个参数被提出的页码，例如 `(Doe 2000, pp.43-44)`。
 
 ### CSL 处理器
 
-有了 CSL 样式，`locale file`，元数据和引用细节，我们现在需要一个软件来解析这些信息，并以正确的格式生成引用和参考文献条目。用来完成这些功能的软件就是 `CSL` 处理器。
+有了 CSL 样式、locale file、元数据和引用细节，我们现在需要一个软件来解析这些信息，并以正确的格式生成引注和参考文献表条目，那就是 CSL 处理器。
 
-大多数的参考文献管理软件使用的是免费开源的 `CSL` 处理器，比如：`citeproc-js`。
+大多数的参考文献管理软件使用的是像 `citeproc-js` 这样免费开源的 CSL 处理器。
 
-## 理解 CSL 格式
+## 理解 CSL 样式
 
-到现在为止，我们已经知道什么是 `CSL`、怎么使用它、以及它怎么运作的。接下来我们将深入到 `CSL` 文件内部，分析它的 `XML` 代码。`XML基础.md` 文件中简单介绍了 `XML`，看完后可以读懂并编辑简单的 `XML` 文件。如果想更多的了解 `XML`，可以在网上查找 `XML` 教程。
+到现在为止，我们已经了解了什么是 CSL、怎么使用它、以及它是如何运作的。接下来我们将深入到 CSL 样式文件内部，分析它的 XML 代码。
 
-### 从属格式解析
+《XML 基础》一章中简单介绍了 XML，看完后可以读懂并编辑简单的 XML 文件。如果想深入了解 XML，可以在网上查找 XML 教程。
 
-下面是一个 `CSL` 从属格式文件：
+### 从属样式解析
+
+正如前文所述，从属样式比相对的独立样式更紧凑，因为它们并未真正地定义一个引用格式。此外，从属样式还非常常见，并且它们的样式元数据和独立样式中的相似，因此对学习 CSL 而言是一个好的出发点。我们将进一步逐行观察下面这个 CSL 从属样式文件：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -179,75 +225,101 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </style>
 ```
 
-如 `XML基础.md` 文件中的描述：一行给出了 `xml` 的声明。根元素为 `style`，其中包含了一个子元素 `info`。`info` 元素中又包含了很多元素，其中很多元素都有内容和属性。`xmlns、version` 和 `defaults-locale` 都是元素 `style` 的属性，分别指定了??、版本和使用的语言，这里为美国英语。
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+```
 
-大多数从属格式都是电子表格自动生成的，下面的注释也给出了指向电子表格的联接。
+XML 格式声明。
+
+```xml
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
+    ...
+</style>
+```
+
+`cs:style` 根元素的起始标签和结束标签。`xmlns` 属性指定 `style` 中的所有元素都是 CSL 的一部分，而 `version` 则表明了 CSL 版本的兼容性。`defaults-locale` 告诉样式才有特定的语言来生成引注和参考文献表（美式英语）。
+
+:::tip
+
+`xmlns` 是 XML name space 的缩写，“name space”一般译为**命名空间**，即一些名称的集合。XML 标记语言允许创建者自定义各种标签和属性的名称，同一个名称在不同场合可能有不同的含义，因此有必要向读者交代这些名称的定义。虽然可以通过在 XML 中书写注释来阐述这些名称，但为了方便起见，一般在一个网页给出这一系列名称的定义和说明，并通过 `xmlns` 属性链接到 XML 文件中，基于 XML 的 `CSL Style` 也不例外。
+
+本文用 `cs:style` 特指 CSL 命名空间中的 `style` 元素（因为我们可能会引入其他命名空间），实际书写代码时并不需要写成 `<cs:style>...</cs:style>`。
+
+:::
 
 ```xml
  <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/asm -->
 ```
 
-元素 `info` 里包含了大多数 `style` 的元数据，比如：
+大多数从属格式都是电子表格自动生成的。这个 XML 注释明确地指出这个样式已经被生成，并包含了一个指向电子表格的链接。
 
-`style` 的题目（也是期刊的题目）：
+```xml
+<info>
+  ...
+</info>
+```
+
+`cs:info` 小节用于存储样式的大部分元数据。
 
 ```xml
 <title>Applied and Environmental Microbiology</title>
 ```
 
-样式的 ID，是文献管理软件用来区分不同 `style` 的标志：
+样式的标题（通常也是该样式所适用的期刊的名称）。
 
 ```xml
 <id>http://www.zotero.org/styles/applied-and-environmental-microbiology</id>
 ```
 
-`style` 自己的链接。该链接指向了网上的副本。
+样式的 ID，是文献管理软件用来区分不同样式的标志。
 
 ```xml
 <link href="http://www.zotero.org/styles/applied-and-environmental-microbiology" rel="self"/>
 ```
 
-从属格式需要指定它的父格式，父格式为独立格式。这里的父格式为 `American Society for Microbiology`
+样式自身的链接。该链接指向了网上的副本。简便起见，对于我们代码仓库中的样式，我们采用相同的 URL 作为样式 ID 和自身链接。
 
 ```xml
 <link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="independent-parent"/>
 ```
 
-为了更好的维护格式，因此需要指定格式的文档链接。这里文档的链接转到了期刊的主页。
+从属样式需要链接到一个独立的父样式，父样式为的引用格式将会应用到这个从属样式中。此处，我们使用 American Society for Microbiology 的样式作为父样式。
 
 ```xml
 <link href="http://aem.asm.org/" rel="documentation"/>
 ```
 
-为了便于分类，还可以在 `category` 元素中设置它的属性。这里分别设置了引用格式为 `numeric`，领域为 `biology`。
+如果每一个样式的意图都是清晰的，那维护起一大堆 CSL 样式将更方便。因此我们要求我们的代码仓库中的样式都必须至少包含一个“说明文档”的链接。在本例中，该链接指向期刊主页。
 
 ```xml
 <category citation-format="numeric"/>
 <category field="biology"/>
 ```
 
-当期刊创建格式的时候，可以在 `issn` 元素和 `eissn` 元素中保存其打印标准国际连续出版物号 `(ISSN)` 和其电子版本 `(ESSIN)`。
+为了便于对我们的样式进行分类，我们用 `cs:category` 元素的 `citation-format` 属性中指定引用格式。出于同样的目的，我们使用 `field` 属性为每个样式文件分配一个或多个研究领域。
 
 ```xml
 <issn>0099-2240</issn>
 <eissn>1098-5336</eissn>
 ```
 
-`updated` 元素保存了最后一次更新的时间戳：
+当为某个期刊创建样式时，可以在 `cs:issn` 元素和 `cs:eissn` 元素中保存其印刷品的 `ISSN`（国际标准连续出版物号）和电子版的 `ESSIN`（电子国际标准连续出版物号）。
 
 ```xml
 <updated>2014-04-30T03:45:36+00:00</updated>
 ```
 
-`rights` 元素中保存了该 CSL 格式的证书：
+`updated` 的内容是一个时间戳，指明样式最后一次更新的时间。
 
 ```xml
 <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
 ```
 
-### 独立格式解析
+本文最后一个介绍，但不一定是样式的 `cs:info` 中的最后一个元素，表示这个样式在哪一个版权协议下发布。
 
-下面是一个独立格式的实例，实例中定义了引用格式，所以要比从属格式要大一些。这里的示例只是一个简化的例子，实际的格式比这个还要大很多。但这个简化的例子仍然是完整有效的。
+### 独立样式解析
+
+最后是一个真正的独立样式，它确切地定义了引用格式（虽然并不是一个实用的样式）。我们代码仓库中的大多数独立样式都比下面这个简化过的例子还要大很多。但我们下面这个 `author-date` 样式仍然是一个有效的样式，并且具有与其他独立样式相同的整体结构。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -330,9 +402,9 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </style>
 ```
 
-#### 结构
+#### 样式结构
 
-首先看一下根元素 `style` 的子元素。
+要理解上面的样式，首先看一下根元素 `cs:style` 的子元素。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -346,19 +418,25 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </style>
 ```
 
-相比于从属格式只有 `info` 一个子元素，独立格式的根元素有除了 `info·` 以外，还有 `locale 、 macro 、citation、bibliography` 四个子元素。
+相比于只有 `cs:info` 一个子元素的从属样式，可以看到这里还有其他几个元素。除了 `cs:info` 以外，还有 `cs:locale`、`cs:macro`、`cs:citation` 和 `cs:bibliography`。
 
-这些子元素的作用分别是：
+这些元素的作用是什么呢？
 
-- `info` 该元素在独立格式中的作用和从属格式中相同，都是用来保存基本的格式元数据。
-- `locale` 该元素可以用来从 `locale file` 中重写 `locale data`
-- `macro` 用来存储 CSL 代码，这些代码可能应用在 `citation 、bibliography` 或者其他的 `macro` 元素中。
-- `citation` 定义文中引用的格式。
-- `bibliography` 定义参考文献目录的格式。
+- 必需的 `cs:info` 元素在在独立样式中的作用和其在从属格式中的相同，都是用来保存样式元数据。
+- 可选的 `cs:locale` 元素可以用来**重写**本地化文件中定义过的数据。
+- 可选的 `cs:macro` 用来存储 CSL 代码，这些代码可能应用在 `cs:citation`、`cs:bibliography` 或者其他 `cs:macro` 元素中。
+- 必需的 `cs:citation` 元素定义引注的格式。
+- 可选的 `cs:bibliography` 元素定义参考文献表的格式。
 
-以下从 `style` 根元素开始分析。
+::: tip 重写
 
-#### 根元素/style 元素
+"重写"（override）原本是 OOP（一种编程思想）中的概念，指的是重新定义一个已有的方法（即函数）。本文原文写为“overwrite”，即重新定义本地化文件中已有的任何翻译、日期格式，严格来说与译为“重写”的 override 并不是同一个意思。
+
+:::
+
+有了以上简单的认识，下面从 `cs:style` 根元素开始分析。
+
+#### cs:style 根元素
 
 ```xml
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
@@ -366,11 +444,11 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </style>
 ```
 
-在从属格式中我们已经了解了 `xmlns` 和 `version` 属性，`class` 是新的属性，用来告诉 `CSL processor`(CSL 处理器) 使用的引用格式是什么。
+我们已经在从属样式的 `cs:style` 元素中见到过 `xmlns` 和 `version` 属性，这个 `class` 是新出现的属性。CSL 处理器通过 `class` 属性区分本样式是 `in-text` 风格还是 `note` 风格。
 
 #### info 元素
 
-独立格式的元数据通常比从属格式的元数据更加全面：
+独立样式的元数据通常比从属样式的元数据更加全面：
 
 ```xml
 <info>
@@ -396,13 +474,13 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </info>
 ```
 
-`title、style ID、"self" link、categories、time stamp、license` 和从属格式作用都是相同的，但有些许差别。首先，独立格式不依赖父格式，通常是提供一个 `template(模板)` 链接，表明当前的独立格式是以模板格式链接创建的（这样写的原因是，通常情况下，凭空写一个 `CSL` 比较困难，但是借助一个模板改写则容易的多）。这里的模板是 `APA style`。此外，`info` 还倾向于给定一个或者多个 `document` 链接，用来指向引文格式的在线描述。
+`title`、样式 `ID`、`self` 链接、`category`、时间戳和 `license`，其作用与先前介绍的一致，但还是有些许差别。首先，独立样式不依赖父样式。相反，我们通常是提供一个 `template` （模板）链接，以表明当前的独立样式是基于哪一个样式来创建的（CSL 样式很少从头写起，因为改写已有的样式往往比较快速）。本例中，所链接的模板是 APA 样式。此外，我们还倾向于放一个或多个 `documentation` 链接，其指向有关引用格式的在线描述。
 
-为了致谢 `CSL` 格式的创建者，他们的名字和联系方式也可以添加到格式文件中。在当前的例子中，有一个作者和两个贡献者。作者通常完成了创建格式的大部分工作，贡献者一般只提供了一些小的改进。
+为向 CSL 格式的创建者致以谢意，也可以把他们的名字和联系方式添加到样式文件中。在当前的例子中，有一个作者和两个贡献者。通常来说，作者完成了创建样式的大部分工作，而贡献者只对此作了一些小的改进。
 
-#### citation 元素和 macro 元素
+#### cs:citation 元素和 cs:macro 元素
 
-接下来分析 `macros` 和 `citation` 元素。`citation` 元素用来描述引用的格式。
+接下来分析 `cs:macros` 和 `cs:citation` 元素。`cs:citation` 元素旨在描述引注的格式（对于 `note` 风格而言，就是脚注或者尾注的格式）。
 
 ```xml
 <macro name="author">
@@ -436,27 +514,43 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </citation>
 ```
 
-上面的代码可以生成类似 `“(A.C. Smith et al., 2002; W. Wallace, J. Snow, 1999)”` 这样的格式。为了理解这种引用格式在 CSL 中式如何编码的，要先分析 `citation` 元素中的 `layout` 元素。`layout` 元素中的 `prefix`、`suffix` 和 `delimiter` 属性分别定义了前缀（这里为 `(`），后缀（这里为 `)`）以及条目分隔符（这里为 `;`）。也就是说整个条目要放在圆括号中，条目之间以 `;` 分隔。每个条目的格式在 `layout` 元素的内容中定义。其内容中的 `group` 元素包括了 `author` 和 `issue-year` macros，并且以 `,` 分隔。
+上面的代码生成类似 `(A.C. Smith et al., 2002; W. Wallace, J. Snow, 1999)` 这样的引注。要理解这种引注格式在 CSL 中是如何编码的，我们首先着眼于 `cs:citation` 元素中的 `cs:layout` 元素。`cs:layout` 元素中的 `prefix` 和 `suffix` 属性定义了引注周围的圆括号，而 `delimiter` 属性的值（`;`）将相邻的引用分开。每个单独的引用都是由 `cs:layout` 的内容来决定的，引用由 `author` 和 `issue-year` 宏的输出组成，并以`cs:group` 元素上的 `delimiter` 属性（`,`）分隔。
 
-`macro` 元素是一种辅助元素，在其他元素或者其他 `macro` 元素中使用。通过其名字也可以看出，其与其他语言中的 **宏** 类似，这里暂不翻译。每个 `macro` 都含有 `name` 属性。
+::: tip 宏（macro）
 
-**注：**以下为了方便描述，将对应的 `macro` 元素直接以 `name` 指代，例：`name` 为 `author` 的 `macro` 元素直接称为 `author` 元素。
+在英语中，macro 一词的本义是“巨大的、大量的”，与之对应的是 micro “微小的”。在计算机领域，macro 来源于 macro-instruction（宏命令），与之对应的是 micro-instruction（微命令）。micro-instruction 可以理解为基本的、小段的、零碎的代码，而 macro-instruction 就是**一系列需要反复使用的小段代码**的总称——一大段代码。对于支持 macro 的编程语言，当某段代码需要反复使用时，只需将这段代码定义为 macro，随后的代码中就可以用这个 macro 的名称来代表这一大段代码。之后，这些 macro 会被计算机替换为它所代表的小段代码，这一过程称为**宏展开**。
 
-`author` 元素的 `name`的属性指定了名称，`variable`属性保存了具体的作者值，`initialize-with` 表明作者值为首字母缩写，每个首字母后面为 `.`。
+在 CSL 中，我们使用 `cs:macro` 元素来定义 macro，`name` 属性的值就是这个 macro 的名字，这个名字一般由短横杠连接的小写单词（因为空格用于分隔属性或属性值）组成，`cs:macro` 的子元素就是它所代表的代码。在这里，我们把 `cs:macro` 元素显示的结果称为它的**输出**。
 
-`issued-year` 元素以分支语句开始，分支语句以 `choose` 元素定义，其中包含 `if` 和 `else` 元素。如果参考文献有日期，则保存在 `issued` 变量中，如果 `issued-year` 元素被引用，日期的年份将被印出，否则就印出 `no date`。
+:::
+
+`author` 宏输出那些存储于所引条目的名称变量 `author` 的名字。`cs:name` 的 `initialize-with` 属性指定**名**应当以缩写显示，并且每个缩写后面附带属性值（`.`）。
+
+::: tip 名称变量（name variable）
+
+名称变量是 CSL 众多变量类型中的一种，即那些代表了某个事物的名称的变量。有关 CSL 的变量类型，详见附录 Ⅳ。
+
+:::
+
+`issued-year` 元素以一个`cs:choose` 元素定义的分支语句开始。如果被引条目具有保存在日期变量 `issued` 的日期，则输出这个日期的年份，否则输出 `no date` 术语的值。
 
 `layout` 元素中的 `group` 元素的 `author` 用来印出在 `author` 元素中存储的值，`issued-year` 则用来印出 `issued-year` 元素储存的值。
 
-为什么不直接把 `macro` 中的内容放在 `citation` 元素中呢？使用 `macro` 有什么好处呢？在上面的例子中，`macro` 的使用简化了 `citation` 元素的结构。此外，上述的两个 `macro` 总共被调用了 4 次（两次在 `citation` 元素中，两次在 `bibliography` 元素中），如果不使用 `macro`，必须多次重复这些代码。因此 `macro` 的使用提供了更紧凑的样式。
+你可能会感到奇怪，为什么不直接把上面两个宏中的 CSL 代码放在 `cs:citation` 元素中呢？使用宏有什么好处呢？在上面的例子中，宏的使用简化了 `cs:citation` 元素的结构，使其更易于拓展。此外，上述的两个宏总共被调用了 4 次（两次在 `cs:citation` 元素中，两次在 `cs:bibliography` 元素中），如果不使用宏，必须多次重复这些 CSL 代码。因此宏的使用带来了更紧凑的样式。
 
-再看 `citation` 元素，其中含有两个属性 `et-al-min` 和 `et-al-use-first`。这里的值分别为 `3、1`，表示作者大于等于 `3` 个的时候，使用印出第一个作者，后面跟 `et al` 术语。
+还没完，再看 `cs:citation` 元素，它含有两个属性，即 `et-al-min` 和 `et-al-use-first`。这两个属性共同决定了当条目的`author` 名字大于等于 `3` 个的时候，只有第一个名字会被输出，并尾随 `et al` 术语。
 
-`citation` 元素中还包括了 `sort` 元素，其中包括了两个 `key` 元素，用来表明引用的排列顺序。第一个 `key` 元素中引用了 `author` 宏，第二个宏引用了 `issued-year` 宏，表明，先按作者作者字母排序，然后按文献发表年份排序。
+最后，`cs:citation` 元素中还包含了 `cs:sort` 元素，`cs:sort` 又包含了两个 `cs:key` 元素。这一部分用来决定一个带有引注的引用如何排序。第一个用来排序的**键**由 `author` 宏的输出组成（CSL 足够智能，可以先根据姓、再根据名进行排序）第一个键具有相同输出的引用将继续根据第二个键进行排序，即 `issued-year` 宏的输出。
 
-#### bibliography 元素
+::: tip 键（key）
 
-`citation` 元素定义了引用的格式，`bibliography` 定义了参考文献条目的格式。
+到了这里，“键”是指被引注献中那些用于排序的信息。
+
+:::
+
+#### cs:bibliography 元素
+
+`cs:citation` 负责输出引注和协调引用，`cs:bibliography` 则用于定义参考文献条目的格式。
 
 ```xml
 <macro name="author">
@@ -499,17 +593,17 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </bibliography>
 ```
 
-上述的例子中的 `bibliography` 实际上只适用于一种类型：期刊文章。它生成的条目的格式是：
+上述的例子中的 `cs:bibliography` 小节实际上只适用于一种类型：期刊文章。它生成的参考文献条目格式为：
 
 > A.C. Smith, D. Williams, T. Johnson. 2002. Story of my life. Journal of Biographies, 12(2), 24—27. W. Wallace, J. Snow. 1999. Winter is coming. Journal of Climate Dynamics, 6(9), 97—102.
 
-我们怎么定义这种格式呢？首先，`bibliography` 元素的结构和 `citation` 元素很相似，不同的是，这里的 `layout` 元素用来定义参考文献条目的格式。除了给出 `author` 和 `issued-year`，参考文献条目还需要给出每个条目的 `title`、`container-title`(对期刊文章来说，就是期刊的名称)、`volume`、`issue` 和 `page`。这里 `layout` 元素使用属性 `suffix` 和 `delimiter` 分别指定了 `group` 的后缀为 `.`，以及 `group` 之间的分隔符为 `,`。
+我们是如何定义这种格式的呢？首先，`cs:bibliography` 元素和 `cs:citation` 元素的结构很相似，但这里的 `cs:layout` 元素用来定义每一个独立的参考文献条目的格式。除了 `author` 宏和 `issued-year` 宏，参考文献条目还显示每个条目的 `title` 和 `container-title`（对期刊文章来说，就是期刊的名称），以及这篇文章见刊的 `volume`、`issue`，还有文章所在的页码（`page`）。样式使用 `prefix` 和 `suffix` 属性来将期刊期号括到圆括号里，并依据 `cs:layout` 和 `cs:group` 元素的 `suffix`和 `delimiter` 属性放置了其它的标点。
 
-和 `citation` 元素相同，`bibliography` 也包括了一个 `sort` 元素，用来对参考文献条目进行排序。这里的三个 `key` 分别为 `author`、`issued-year` 和 `title`。
+`cs:bibliography` 也含有一个 `cs:sort` 元素，它有三个键：`author` 和 `issued-year` 宏，以及第三个键——条目的 `title`。
 
-#### locale 元素
+#### cs:locale 元素
 
-最后介绍的是 `loacle` 元素。正如上面写道的，`CSL locale file` 允许 `CSL` 样式快速转换为不同的语言。但是，有时需要覆盖默认翻译。
+我们这个样式的最后一节是 `cs:loacle`。正如我们前面提到的那样，CSL 的本地化文件可以将 CSL 样式快速转换为不同的语言。但是，有时需要重写默认的翻译。
 
 ```xml
 <locale xml:lang="en">
@@ -519,10 +613,10 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 </locale>
 ```
 
-对 US English 来说，`"no date"` 项的内容就是 `"no date"`。但是在我们的例子中，我们想使用 `"without date"` 去替换它。为了重写默认的翻译，我们可以使用类似上面的 `locale` 元素。对一个没有日期的条目来说，这种重写会导致引用变为像 `(D. Williams, without date)` 这样的格式。
+不出所料，在美式英语的本地化文件中，对 `no date` 术语的输出就是 `no date`。但是在我们的示例样式中，我们想使用 `without date` 来代替它。为了重写默认的翻译，我们可以使用上面所示的 `cs:locale` 元素。对一个没有发行日期的条目，这种重写会导致引注变成这样： `(D. Williams, without date)` 。
 
-`locale` 的 `xml:lang` 属性被设置为 `en`，这告诉 CSL 样式当样式被用于英语写作的时候，重写 `"no date"`。如果我们在德语写作的时候使用该 `CSL`，该样式将会依据 `German locale file` 印出德语的翻译 (`ohne Datum`)
+`cs:locale` 的 `xml:lang` 属性被设置为 `en`，当样式被用于英语写作的时候，这个属性使 CSL 样式重写 `no date`。如果我们在德语环境中使用这个样式，它将会依据德语的本地化文件输出翻译(`ohne Datum`)。
 
 ## 更进一步
 
-这里只给出了一个基本的介绍。有关 `CSL` 更详细的介绍可以查看 `CSL` 标准文档或者其他参考文档。
+这里只对 CSL 进行了简单的介绍，有关 CSL 的更多知识可以查看 CSL 标准文档或者其他参考文档。

@@ -50,12 +50,12 @@ export const zhNavbar = navbar([
           {
             text: "贡献者名单",
             icon: "creative",
-            link: "/contributors/",
+            link: "/contributors",
           },
           {
             text: "关于 Zotero 中文小组",
             icon: "creative",
-            link: "/about/",
+            link: "/about",
           },
         ],
       },

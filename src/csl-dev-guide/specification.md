@@ -28,18 +28,6 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 有关的其他文档，CSL 议程，样式和本地化文件详见 [CSL 项目主页](https://citationstyles.org/)。
 
-## 翻译习惯
-
-这里将列出一些常用的术语的译文，并不能保证翻译的准确性。为保持准确性，后文的描述中可能会在译文旁标注原文。
-
-| 原文                | 译文       | 备注     |
-| ------------------- | ---------- | -------- |
-| locale files/locale | 本地化文件 | 区域文件 |
-| styles              | 样式       |          |
-| citation            | 引文       |          |
-| macro               | 宏         |          |
-|                     |            |          |
-
 ## 术语
 
 关键字 MUST，MUST NOT，REQUIRED，SHALL，SHALL NOT，SHOULD，SHOULD NOT，RECOMMENDED，MAY 和 OPTIONAL 按 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述解释。
@@ -150,7 +138,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 #### `class`
 
-🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#引文格式) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
+🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#csstyle-根元素) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
 
 ::: note 译者注
 
@@ -314,7 +302,7 @@ en-US：
 
 #### Citation
 
-`cs:citation` 元素描述了引文的格式，其中引文可以是一条或者多条。引文的格式可能是 in-text citations（即文字中的引文）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
+`cs:citation` 元素描述了引注的格式，其中引注可以是一条或者多条。引注的格式可能是 in-text citations（即文字中的引注）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
 
 ```xml
 <citation>
@@ -621,7 +609,7 @@ B. Locale files/本地化文件
 
 第二种，`cs:date` 可以含有一个或者多个 `cs:date-part` 子元素（见 [Date-part](#date-part)）。在这些子元素中可以设置属性来覆盖之前的本地化设置（例如：要获得所有语言环境的缩写月份，可以将月份的 `cs:date-part` 元素的 `form` 属性设置为 `"short"`）。这些 `cs:date-part` 子元素不影响各个日期部分渲染的顺序和以及其是否渲染。`cs:date-part` 元素中不能使用词缀 [Affixes](#词缀).
 
-没有属性 `form` 的情况下，`cs:date` 则描述了一个自带的非本地化的日期格式。其日期格式使用 `cs:date-part` 子元素来构建。在使用 `name` 属性并设置为 `day`，`month` 或 `year` 时，这些元素的顺序反应了其显示顺序。日期可以在 `cs:date-part` 元素中使用 [`formatting`](格式化) 属性以及多个 `cs:date-part` 的属性来格式化（见 [Date-part](#date-part)）。`cs:date` 中的 `delimiter` 属性可以用来设置 `cs:date-part` 元素不同日期部分的分隔符，此外，[词缀](#词缀) 可以用在 `cs:date-part` elements。
+没有属性 `form` 的情况下，`cs:date` 则描述了一个自带的非本地化的日期格式。其日期格式使用 `cs:date-part` 子元素来构建。在使用 `name` 属性并设置为 `day`，`month` 或 `year` 时，这些元素的顺序反应了其显示顺序。日期可以在 `cs:date-part` 元素中使用 [`formatting`](#格式化) 属性以及多个 `cs:date-part` 的属性来格式化（见 [Date-part](#date-part)）。`cs:date` 中的 `delimiter` 属性可以用来设置 `cs:date-part` 元素不同日期部分的分隔符，此外，[词缀](#词缀) 可以用在 `cs:date-part` elements。
 
 本地化的日期或者是非本地化的日期，, `cs:date` 都可能携带 [affixes](https://docs.citationstyles.org/en/stable/specification.html#affixes)，[display](https://docs.citationstyles.org/en/stable/specification.html#display)，[formatting](https://docs.citationstyles.org/en/stable/specification.html#formatting) 和 [text-case](https://docs.citationstyles.org/en/stable/specification.html#text-case) 属性。
 
