@@ -17,16 +17,16 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-feed": "2.0.0-rc.17",
+    "@vuepress/plugin-feed": "2.0.0-rc.18",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.10.0",
     "mermaid": "^10.8.0",
     "prettier": "2.8.8",
-    "vue": "^3.4.20",
+    "vue": "^3.4.21",
     "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-search-pro": "2.0.0-rc.26",
-    "vuepress-theme-hope": "2.0.0-rc.26"
+    "vuepress-plugin-search-pro": "2.0.0-rc.27",
+    "vuepress-theme-hope": "2.0.0-rc.27"
   },
   "lint-staged": {
     "*.md": "prettier --write"
