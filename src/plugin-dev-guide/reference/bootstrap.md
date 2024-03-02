@@ -32,11 +32,11 @@ function uninstall(data, reason) {}
 
 插件生命周期挂钩传递两个参数：
 
-- 具有以下属性的对象：
+- `data`: 具有以下属性的对象：
   - `id` ，插件 ID
   - `version` ，插件版本
   - `rootURI` ，指向插件文件的字符串 URL。对于 XPI，这将是 `jar:file:///` URL。该值始终以斜杠结尾，因此您可以附加相对路径来获取与插件捆绑的文件的 URL（例如 `rootURI + 'style.css'` ）。
-- 表示事件原因的数字，可以根据以下常量进行检查： `APP_STARTUP` 、 `APP_SHUTDOWN` 、 `ADDON_ENABLE` 、 `ADDON_DISABLE` 、 `ADDON_INSTALL` 、 `ADDON_UNINSTALL` 、 `ADDON_UPGRADE` 、 `ADDON_DOWNGRADE`
+- `reason`: 表示事件原因的数字，可以根据以下常量进行检查： `APP_STARTUP` 、 `APP_SHUTDOWN` 、 `ADDON_ENABLE` 、 `ADDON_DISABLE` 、 `ADDON_INSTALL` 、 `ADDON_UNINSTALL` 、 `ADDON_UPGRADE` 、 `ADDON_DOWNGRADE`
 
 任何与特定窗口无关的初始化都应由 `startup` 触发，删除应由 `shutdown` 触发。
 
