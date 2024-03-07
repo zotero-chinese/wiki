@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.18",
     "@vuepress/plugin-feed": "2.0.0-rc.18",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
