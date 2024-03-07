@@ -8,6 +8,9 @@ devDependencies:
   '@vuepress/bundler-vite':
     specifier: 2.0.0-rc.8
     version: 2.0.0-rc.8
+  '@vuepress/plugin-baidu-analytics':
+    specifier: 2.0.0-rc.18
+    version: 2.0.0-rc.18(vuepress@2.0.0-rc.8)
   '@vuepress/plugin-feed':
     specifier: 2.0.0-rc.18
     version: 2.0.0-rc.18(vuepress@2.0.0-rc.8)
@@ -1091,6 +1094,18 @@ packages:
       vuepress: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.21)
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - typescript
+    dev: true
+
+  /@vuepress/plugin-baidu-analytics@2.0.0-rc.18(vuepress@2.0.0-rc.8):
+    resolution: {integrity: sha512-s/Zmlr5atZH234RJnY+U0BPs6OK/Z3D7ETmnQRa4PI7ob1eTIeERIqbZWEm9+iCmUt9W6tb9oRBTwQHuxhGnsA==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.8
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.18(vuepress@2.0.0-rc.8)
+      vue: 3.4.21
+      vuepress: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.21)
+    transitivePeerDependencies:
       - typescript
     dev: true
 
