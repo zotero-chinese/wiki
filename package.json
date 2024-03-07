@@ -22,12 +22,12 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.10.0",
-    "mermaid": "^10.8.0",
+    "mermaid": "^10.9.0",
     "prettier": "2.8.8",
     "vue": "^3.4.21",
     "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-search-pro": "2.0.0-rc.27",
-    "vuepress-theme-hope": "2.0.0-rc.27"
+    "vuepress-plugin-search-pro": "2.0.0-rc.29",
+    "vuepress-theme-hope": "2.0.0-rc.29"
   },
   "lint-staged": {
     "*.md": "prettier --write"
