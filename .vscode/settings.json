@@ -45,8 +45,5 @@
     // ".markdownlint.json": true,
     // "**/.vuepress": true,
     // "LICENSE": true
-  },
-  "markdown.validate.ignoredLinks": [
-    "E:\\wiki\\src\\assets\\image-zoterostyle-右键菜单.png"
-  ]
+  }
 }
