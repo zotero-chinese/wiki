@@ -1,7 +1,7 @@
 ---
-date: 2022-07-29 20:23:17
+date: 2024-03-13 21:39:17
 author: Chikit
-updated: 2023-10-04 11:59:36
+updated: 2024-03-13 21:39:17
 title: Zotero Style
 ---
 
