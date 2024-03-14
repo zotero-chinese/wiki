@@ -203,7 +203,7 @@ order: 2
 
 ::: tip 使用 Linter 插件快捷插入
 
-插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+插件 [Linter for Zotero](../plugins/linter.md) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
 
 :::
 
@@ -270,7 +270,7 @@ csl 格式的样式文件的下载和安装方法可以查看这一教程：
 
    如果你的文献语言设定不规范，可以通过标题或作者字段对所有文献进行排序，然后分别选中英文文献，将其 [语言] 字段的信息统一为 `en`；取消选中后再选中中文文献，将其 `语言` 字段的信息统一为`zh`或者样式文件要求的样子。
 
-   插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+   插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
 
    ![Linter 自动识别条目语言](../../assets/image-auto-edit-language.jpg){width=60%}
 
