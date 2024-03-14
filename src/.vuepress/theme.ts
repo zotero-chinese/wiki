@@ -145,6 +145,28 @@ export default hopeTheme({
               };
           },
         },
+        {
+          matcher: "Z6",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "仅支持 Zotero 6",
+              };
+          },
+        },
+        {
+          matcher: "Z7",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "仅支持 Zotero 7",
+              };
+          },
+        },
       ],
       sub: true,
       sup: true,
