@@ -7,5 +7,6 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone"
   ],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "ignoreDeps": ["prettier"]
 }
