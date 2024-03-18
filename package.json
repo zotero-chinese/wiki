@@ -14,7 +14,7 @@
     "lint:md": "markdownlint-cli2-fix src/**/*.md",
     "git:sync-force": "bash scripts/sync-force.sh",
     "docs:update-package": "npx vp-update",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.8",
