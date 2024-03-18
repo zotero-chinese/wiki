@@ -37,7 +37,7 @@ jobs:
         run: tar -cvf dist.tar src/.vuepress/dist
 
       - name: 上传构建结果
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-result
           path: |
