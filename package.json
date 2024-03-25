@@ -17,18 +17,18 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.19",
-    "@vuepress/plugin-feed": "2.0.0-rc.19",
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.21",
+    "@vuepress/plugin-feed": "2.0.0-rc.21",
     "husky": "^9.0.0",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.0",
     "mermaid": "^10.9.0",
     "prettier": "2.8.8",
     "vue": "^3.4.21",
-    "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-search-pro": "2.0.0-rc.31",
-    "vuepress-theme-hope": "2.0.0-rc.31"
+    "vuepress": "2.0.0-rc.9",
+    "vuepress-plugin-search-pro": "2.0.0-rc.32",
+    "vuepress-theme-hope": "2.0.0-rc.32"
   },
   "lint-staged": {
     "*.md": "prettier --write"
