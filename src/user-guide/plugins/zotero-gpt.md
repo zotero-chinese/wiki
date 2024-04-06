@@ -3,12 +3,15 @@ author: Chikit
 date: 2024-04-15 20:31:17
 ---
 
-# Zotero-gpt
+# Awesome GPT for Zotero
 
-Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template 创建的公开 Zotero 插件。这个插件使得用户能够通过命令标签使用 Meet API，进一步增强 Zotero 与 GPT 模型（包括 gpt-3.5-turbo 和 gpt-4）的集成。
-项目主页：<https://github.com/MuiseDestiny/zotero-gpt>
-下载地址：[插件商店 - Zotero 中文社区](https://plugins.zotero-chinese.com) 搜索 `gpt`。
-视频教程：[Zotero GPT - 使用教程，配置免费密钥！！！](https://www.bilibili.com/video/BV17N4y1o7vx/?spm_id_from=..search-card.all.click&vd_source=8174071ca305f71da4fa36c00b02973d)
+Awesome GPT for Zotero 是一个由 MuiseDestiny 创建的开源 Zotero 插件。这个插件使得用户能够通过命令标签使用 Meet API，进一步增强 Zotero 与 GPT 模型（包括 gpt-3.5-turbo 和 gpt-4）的集成。
+
+- 项目主页：<https://github.com/MuiseDestiny/zotero-gpt>
+- 下载地址：[插件商店 - Zotero 中文社区](https://plugins.zotero-chinese.com) 搜索 `gpt`。
+- 视频教程：[Zotero GPT - 使用教程，配置免费密钥！！！](https://www.bilibili.com/video/BV17N4y1o7vx/)
+
+<!-- <BiliBili bvid="BV17N4y1o7vx" /> -->
 
 主要特点包括：
 
@@ -24,7 +27,7 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 用户界面功能
 
-- [x] 🎨 **实时标记回复文本**：支持 Latex 和 mathjax。
+- [x] 🎨 **实时标记回复文本**：支持 LaTeX 和 MathJax。
 - [x] 🔍 **放大或缩小**回复文本或插件窗口的大小。
 - [x] 🖱️ **将插件窗口移动到屏幕上的任意位置**。
 - [x] 将回复文本**复制到剪贴板**。
@@ -40,7 +43,7 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 | 打开               | `ctrl` + `/`                                                                                                                                      |
 | 退出               | `ESC`                                                                                                                                             |
 | 多行编辑           | `Shift` + `Enter`                                                                                                                                 |
-| 放大/缩小/调整字号 | ![alt text](../../assets/image-zoterogpt-放大做小.png)在 回复区 按下`ctrl+滚轮`调整可以调整字体大小<br />在 指令区 按下 `ctrl+滚轮`调整命令框大小 |
+| 放大/缩小/调整字号 | ![放大缩小](../../assets/image-zoterogpt-放大做小.png)在 回复区 按下`ctrl+滚轮`调整可以调整字体大小<br />在 指令区 按下 `ctrl+滚轮`调整命令框大小 |
 
 除了使用快捷键`ctrl` + `/`使用`Zotero GPT`，你也可以通过工具栏的图标来实现快速访问
 
@@ -53,7 +56,7 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 ![设置SecretKey](../../assets/image-zoterogpt-设置密钥.png)
 
-如果你是用的是第三方所提供的 SecretKey，那么还需要输入`/api xxxxxxxxxxxxxxx`（具体的 api 通过查看第三方的网站获取。如果你是用的是 openai 官方提供的密钥，那此时可以直接跳过设置。）
+如果你是用的是第三方所提供的 SecretKey，那么还需要输入`/api xxxxxxxxxxxxxxx`（具体的 api 通过查看第三方的网站获取。如果你是用的是 OpenAi 官方提供的密钥，那此时可以直接跳过设置。）
 
 默认的模型使用的是`gpt-3.5-turbo`，如果你想使用 GPT4，那么你需要输入`/model gpt4`（前提是你已经购买 GPT4）
 
@@ -117,14 +120,14 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 例如
 
-```
+```json
 {
- "error": {
- "message": "The model: `gpt-4` does not exist",
- "type": "invalid_request_error",
- "param": null,
- "code": null
- }
+  "error": {
+    "message": "The model: `gpt-4` does not exist",
+    "type": "invalid_request_error",
+    "param": null,
+    "code": null
+  }
 }
 ```
 
@@ -137,14 +140,14 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 例如
 
-```
+```json
 {
- "error": {
- "message": "You exceeded your current quota, please check your plan and billing details.",
- "type": "insufficient_quota",
- "param": null,
- "code": null
- }
+  "error": {
+    "message": "You exceeded your current quota, please check your plan and billing details.",
+    "type": "insufficient_quota",
+    "param": null,
+    "code": null
+  }
 }
 ```
 
@@ -159,14 +162,14 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 例如
 
-```
+```json
 {
- "error": {
- "message": "Invalid URL (POST /chat/completions)",
- "type": "invalid_request_error",
- "param": null,
- "code": null
- }
+  "error": {
+    "message": "Invalid URL (POST /chat/completions)",
+    "type": "invalid_request_error",
+    "param": null,
+    "code": null
+  }
 }
 ```
 
