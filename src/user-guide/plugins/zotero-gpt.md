@@ -198,17 +198,17 @@ Zotero-gpt 是一个由 MuiseDestiny 基于 MuiseDestiny/Zotero-addon-template �
 
 > 👻 按照下面的步骤操作，你将对命令标记有一个全新的认识。
 
-| Step | 描述                                                 | Supplementary Information                        |
-| ---- | ---------------------------------------------------- | ------------------------------------------------ |
-| 1    | 打开 Zotero GPT                                      | 参考基本操作                                     |
-| 2    | 请键入 `#Tag Name` 并按 `Enter`                      | ![](../../assets/image-zoterogpt-tagname.png)    |
-| 3    | 输入你的提示或代码                                   | ![](../../assets/image-zoterogpt-提示或代码.png) |
-| 4    | 运行标签                                             | 按 `Ctrl + R`                                    |
-| 5    | 保存标签                                             | 按 `Ctrl + S`                                    |
-| 6    | 长按命令标签以访问编辑界面                           | ![](../../assets/image-zoterogpt-命令标签.png)   |
-| 7    | 修改标签的颜色、位置或触发器；记得用 `Ctrl + S` 保存 | ![](../../assets/image-zoterogpt-标签的属性.png) |
-| 8    | 按 `ESC` 退出编辑界面                                | 退出前记得用 `Ctrl + S` 保存更改                 |
-| 9    | 长按鼠标右键删除标签                                 | 注意：内置标签不支持删除                         |
+| Step | 描述                                                 | Supplementary Information                                  |
+| ---- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| 1    | 打开 Zotero GPT                                      | 参考基本操作                                               |
+| 2    | 请键入 `#Tag Name` 并按 `Enter`                      | ![tagName](../../assets/image-zoterogpt-tagname.png)       |
+| 3    | 输入你的提示或代码                                   | ![提示或代码](../../assets/image-zoterogpt-提示或代码.png) |
+| 4    | 运行标签                                             | 按 `Ctrl + R`                                              |
+| 5    | 保存标签                                             | 按 `Ctrl + S`                                              |
+| 6    | 长按命令标签以访问编辑界面                           | ![命令标签](../../assets/image-zoterogpt-命令标签.png)     |
+| 7    | 修改标签的颜色、位置或触发器；记得用 `Ctrl + S` 保存 | ![标签的属性](../../assets/image-zoterogpt-标签的属性.png) |
+| 8    | 按 `ESC` 退出编辑界面                                | 退出前记得用 `Ctrl + S` 保存更改                           |
+| 9    | 长按鼠标右键删除标签                                 | 注意：内置标签不支持删除                                   |
 
 ## 如何编写代码块
 
