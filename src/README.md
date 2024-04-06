@@ -29,17 +29,17 @@ highlights:
       background-size: initial
     features:
       - title: Zotero 百科全书
-        icon: article
+        icon: book
         details: Zotero 中文教程一站式解决
         link: /user-guide/
 
       - title: 插件商店
-        icon: config
+        icon: store
         details: 好用的 Zotero 插件收录，提供国内镜像下载地址
         link: https://plugins.zotero-chinese.com/
 
       - title: 中文 CSL 样式
-        icon: format
+        icon: wand-magic-sparkles
         details: 支持双语排版的 CSL 样式
         link: https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/
 
@@ -54,7 +54,7 @@ highlights:
         link: /csl-dev-guide/
 
       - title: 更多
-        icon: advance
+        icon: star
         details: 贡献指南、关于页面等
         link: /about/
 
@@ -70,17 +70,17 @@ highlights:
         link: https://www.zotero.org/
 
       - title: Zotero 官方文档（英文）
-        icon: article
+        icon: book
         details: Zotero 官方提供的使用手册，最为准确，但仅维护英文
         link: https://www.zotero.org/support/
 
       - title: Zotero 官方论坛（英文）
-        icon: community
+        icon: comments
         details: Zotero 官方运营的论坛，你可以在这里发布求助、反馈问题等
         link: https://forums.zotero.org/discussions
 
       - title: CSL 官方样式
-        icon: decorate
+        icon: wand-magic-sparkles
         details: 在这里可以预览并下载 Citation Language Style 组织下的样式
         link: https://www.zotero.org/styles
 
@@ -91,7 +91,7 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
     highlights:
       - title: GitHub ISSUE
-        icon: github
+        icon: fab fa-github
         details: 你可以在 ISSUE 里提出文档等的不足、改进建议
         link: https://github.com/zotero-chinese/wiki/issues
 
@@ -101,12 +101,12 @@ highlights:
         link: https://gitee.com/zotero-chinese/zotero-chinese/issues
 
       - title: 贡献者指南
-        icon: like
+        icon: star
         details: 查看如何为项目做出贡献
         link: /contributing/
 
       - title: QQ 群
-        icon: group
+        icon: comments
         details: 加入群聊，独学而无友，则孤陋而寡闻
         link: #
 
@@ -121,12 +121,12 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/1-dark.svg
     features:
       - title: 主要维护者
-        icon: people
+        icon: user-group
         details: 长期维护者
         # link: ./guide/feature/comment.html
 
       - title: 全部贡献者
-        icon: people
+        icon: people-group
         details: 查看全部贡献者
         # link: ./guide/feature/page-info.html
 
@@ -135,7 +135,7 @@ highlights:
       #   details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
       #   # link: ./guide/feature/encrypt.html
       - title: 组织链接
-        icon: repo
+        icon: info
         details: GitHub 组织链接
         # link: ./guide/feature/search.html
 

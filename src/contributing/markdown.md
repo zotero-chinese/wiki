@@ -1,6 +1,6 @@
 ---
 title: 文档风格指南
-icon: markdown
+icon: fab fa-markdown
 date: 2023-07-20 23:46:54
 updated: 2023-11-23 22:39:41
 ---

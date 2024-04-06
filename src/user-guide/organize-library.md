@@ -1,6 +1,6 @@
 ---
 title: 组织、管理你的文献库
-icon: class
+icon: sitemap
 date: 2023-06-28 21:14:16
 updated: 2023-07-20 16:51:54
 ---

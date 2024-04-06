@@ -1,6 +1,6 @@
 ---
 title: 在 WPS 中插入参考文献
-icon: article
+icon: file-word
 date: 2023-09-22 20:36:31
 updated: 2023-09-24 14:49:15
 ---

@@ -7,7 +7,7 @@ export const userGuide = arraySidebar([
   "quick-start",
   {
     text: "基础使用",
-    icon: "module",
+    icon: "leaf",
     // prefix: "basic-usage",
     collapsible: true,
     children: [
@@ -22,7 +22,7 @@ export const userGuide = arraySidebar([
   },
   {
     text: "创建参考文献",
-    icon: "code",
+    icon: "quote-left",
     // prefix: "generate-bibliography",
     collapsible: true,
     children: [
@@ -35,21 +35,21 @@ export const userGuide = arraySidebar([
   },
   {
     text: "同步、协作与备份",
-    icon: "language",
+    icon: "layer-group",
     // prefix: "sync-collaboration-backup",
     collapsible: true,
     children: ["sync", "group", "backup"],
   },
   {
     text: "插件",
-    icon: "plugin",
+    icon: "puzzle-piece",
     prefix: "plugins",
     collapsible: true,
     children: "structure",
   },
   {
     text: "常见问题",
-    icon: "question",
+    icon: "circle-question",
     prefix: "faqs",
     collapsible: true,
     children: "structure",
@@ -63,7 +63,7 @@ export const userGuide = arraySidebar([
   // },
   {
     text: "杂项",
-    icon: "advance",
+    icon: "gem",
     prefix: "misc",
     collapsible: true,
     children: "structure",
