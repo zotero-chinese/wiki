@@ -46,7 +46,7 @@ date: 2024-03-13 21:39:17
 
 ::: note
 
-如果你的 Emoji 变成黑白了，可以通过这个教程来解决问题 👉[Emoji 变成黑白该如何解决](../faqs/Emoji变成了黑白该如何解决.md)
+如果你的 Emoji 变成黑白了，可以通过这个教程来解决问题 👉[Emoji 变成黑白该如何解决](../faqs/monochrome-emoji.md)
 
 :::
 

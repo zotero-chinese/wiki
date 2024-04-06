@@ -1,3 +1,7 @@
+---
+redirectFrom: /user-guide/plugins/Zotero-scihub.html
+---
+
 # Zotero SciHub
 
 ## 插件介绍

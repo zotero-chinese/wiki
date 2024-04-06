@@ -2,6 +2,7 @@
 title: Emoji 变成黑白该如何解决
 date: 2023-10-24 11:07:47
 updated: 2023-10-24 11:07:54
+redirectFrom: /user-guide/faqs/Emoji%E5%8F%98%E6%88%90%E4%BA%86%E9%BB%91%E7%99%BD%E8%AF%A5%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3.html
 ---
 
 # Emoji 变成黑白该怎么办

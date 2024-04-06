@@ -20,6 +20,7 @@
     "@vuepress/bundler-vite": "2.0.0-rc.9",
     "@vuepress/plugin-baidu-analytics": "2.0.0-rc.24",
     "@vuepress/plugin-feed": "2.0.0-rc.24",
+    "@vuepress/plugin-redirect": "2.0.0-rc.24",
     "husky": "^9.0.0",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.13.0",
