@@ -1,7 +1,7 @@
 ---
 title: 快速开始
 # order: 2
-icon: selection
+icon: signs-post
 date: 2023-06-28 20:27:28
 updated: 2023-09-19 23:23:59
 ---

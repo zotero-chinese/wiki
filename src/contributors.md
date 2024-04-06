@@ -1,5 +1,5 @@
 ---
-icon: group
+icon: heart
 ---
 
 # 贡献者名单

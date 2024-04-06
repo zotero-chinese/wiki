@@ -1,6 +1,6 @@
 ---
 title: 在 Word 中插入参考文献
-icon: article
+icon: file-word
 date: 2023-06-28 21:17:07
 updated: 2023-07-21 19:01:31
 ---

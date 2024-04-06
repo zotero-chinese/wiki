@@ -13,7 +13,7 @@ export const zhSidebar = sidebar({
     "contributors",
     {
       text: "贡献者指南",
-      icon: "build",
+      icon: "flag",
       prefix: "contributing",
       collapsible: true,
       children: ["contributing", "markdown", "vscode-dev", "build"],

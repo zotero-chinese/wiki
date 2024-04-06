@@ -1,6 +1,6 @@
 ---
 title: 构建指南
-icon: build
+icon: fab fa-dev
 date: 2023-07-21 11:08:04
 updated: 2023-09-22 15:23:36
 ---

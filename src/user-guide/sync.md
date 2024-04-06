@@ -1,6 +1,6 @@
 ---
 title: 数据与文件的同步
-icon: async
+icon: arrows-rotate
 date: 2022-09-14 20:52:08
 updated: 2023-09-23 20:52:08
 ---

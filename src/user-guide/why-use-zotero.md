@@ -1,7 +1,7 @@
 ---
 title: 为什么使用 Zotero
 # order: 1
-icon: like
+icon: heart
 author:
   - name: winding
     url: https://github.com/windingwind

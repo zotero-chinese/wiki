@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://github.com/zotero-chinese",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.png",
 

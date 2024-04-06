@@ -1,6 +1,6 @@
 ---
 title: 阅读文献、添加笔记
-icon: note
+icon: book-open-reader
 date: 2023-06-28 21:16:16
 updated: 2023-07-21 19:17:58
 ---

@@ -1,6 +1,6 @@
 ---
 title: 通过 VSCode.dev 网站在线更改本文档
-icon: build
+icon: flag
 ---
 
 # 通过 VSCode.dev 网站在线更改本文档
