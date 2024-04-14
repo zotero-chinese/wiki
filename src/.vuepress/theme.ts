@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://github.com/zotero-chinese",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.png",
 
@@ -142,6 +142,28 @@ export default hopeTheme({
                 tag: "Badge",
                 attrs: { type: "tip" },
                 content: "高级",
+              };
+          },
+        },
+        {
+          matcher: "Z6",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "仅支持 Zotero 6",
+              };
+          },
+        },
+        {
+          matcher: "Z7",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "仅支持 Zotero 7",
               };
           },
         },

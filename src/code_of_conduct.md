@@ -1,5 +1,5 @@
 ---
-icon: group
+icon: circle-info
 ---
 
 # 贡献者公约

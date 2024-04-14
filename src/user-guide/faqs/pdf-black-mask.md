@@ -2,6 +2,8 @@
 title: 如何解决 Zotero 中 pdf 文件图片上有黑色遮挡的问题
 date: 2023-09-14 21:17:47
 updated: 2023-09-14 16:51:54
+# redirectFrom: /user-guide/faqs/解决pdf图片上的黑色遮挡.html
+redirectFrom: /user-guide/faqs/%E8%A7%A3%E5%86%B3pdf%E5%9B%BE%E7%89%87%E4%B8%8A%E7%9A%84%E9%BB%91%E8%89%B2%E9%81%AE%E6%8C%A1.html
 ---
 
 # 如何解决 Zotero 中 pdf 文件图片上有黑色遮挡的问题

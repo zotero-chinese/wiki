@@ -1,6 +1,6 @@
 ---
 title: 群组
-icon: group
+icon: user-group
 author:
   - name: Ali
   - name: Northword

@@ -2,20 +2,20 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   { text: "首页", icon: "home", link: "/" },
-  { text: "Zotero 百科全书", icon: "article", link: "/user-guide/" },
+  { text: "Zotero 百科全书", icon: "book", link: "/user-guide/" },
   {
     text: "中文插件商店",
-    icon: "config",
+    icon: "store",
     link: "https://plugins.zotero-chinese.com/",
   },
   {
     text: "中文 CSL 样式",
-    icon: "format",
+    icon: "wand-magic-sparkles",
     link: "https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/",
   },
   {
     text: "更多",
-    icon: "more",
+    icon: "star",
     children: [
       {
         text: "开发手册",
@@ -39,17 +39,17 @@ export const zhNavbar = navbar([
         children: [
           {
             text: "贡献指南",
-            icon: "creative",
+            icon: "star",
             link: "/contributing/",
           },
           {
             text: "贡献者名单",
-            icon: "creative",
+            icon: "heart",
             link: "/contributors",
           },
           {
             text: "关于 Zotero 中文小组",
-            icon: "creative",
+            icon: "lightbulb",
             link: "/about",
           },
         ],

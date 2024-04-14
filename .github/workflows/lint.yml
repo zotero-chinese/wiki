@@ -10,7 +10,7 @@ jobs:
       - name: 签出仓库
         uses: actions/checkout@v4
       - name: 运行 MarkdownLint
-        uses: DavidAnson/markdownlint-cli2-action@v13
+        uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: |
             **/*.md

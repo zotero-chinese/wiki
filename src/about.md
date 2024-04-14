@@ -1,6 +1,6 @@
 ---
 title: 关于 Zotero 中文小组
-icon: like
+icon: star
 ---
 
 # 关于 Zotero 中文小组

@@ -2,6 +2,9 @@ import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import theme from "./theme.js";
 import { baiduTongjiPlugin } from "./plugins/baiduTongji.js";
+import { baiduAnalyticsPlugin } from "@vuepress/plugin-baidu-analytics";
+import { redirectPlugin } from "@vuepress/plugin-redirect";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
   base: "/",
@@ -23,15 +26,21 @@ export default defineUserConfig({
   },
 
   plugins: [
+    baiduAnalyticsPlugin({
+      id: "fc904ee59939c7c2284063619b0ef533", // northword
+    }),
     baiduTongjiPlugin({
       keys:
         process.env.CONTEXT === "production"
           ? [
               "fc5b45ae006a231c1d5cff4610df7267", // lin
-              "fc904ee59939c7c2284063619b0ef533", // northword
             ]
           : [],
     }),
+    googleAnalyticsPlugin({
+      id: "G-YHYFX0LRZK",
+    }),
+    redirectPlugin(),
   ],
 
   // Enable it with pwa

@@ -1,3 +1,7 @@
+---
+redirectFrom: /user-guide/plugins/Zotero-scihub.html
+---
+
 # Zotero SciHub
 
 ## 插件介绍
@@ -12,7 +16,13 @@
   - 适配 Zotero 6：<https://github.com/ethanwillis/zotero-scihub>
   - 适配 Zotero 7：<https://github.com/syt2/zotero-scipdf>
 - 插件下载：[Zotero 插件中文镜像](https://plugins.zotero-chinese.com/#/)
-- Scihub 镜像地址：`https://sci-hub.se/`、`https://sci-hub.st/`、`https://sci-hub.ru/`、`https://www.sci-hub.ren/`
+- Scihub 镜像地址：`https://www.sci-hub.wf/`、`https://www.sci-hub.ee/`、`https://www.sci-hub.ren/`、`https://www.sci-hub.yt/`、`https://www.sci-hub.ru/`、`https://www.sci-hub.st/`
+
+::: warning Sci-Hub 的文献访问限制
+
+自 2021 年以来，Sci-Hub 遇到了一些法律问题，导致它停止了对部分年份文献的支持，尤其是**2021 年及以后文献**的文献，这意味着无法通过 Sci-Hub 下载 2021 年及以后的出版的文献。
+
+:::
 
 ## 插件使用方法
 

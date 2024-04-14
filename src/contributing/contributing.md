@@ -1,6 +1,6 @@
 ---
 title: 贡献指南
-icon: build
+icon: flag
 date: 2023-07-20 23:05:53
 updated: 2023-11-23 22:56:02
 ---

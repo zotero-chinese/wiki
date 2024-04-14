@@ -18,9 +18,9 @@ jobs:
         uses: pnpm/action-setup@v2
 
       - name: 设置 Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
 
       - name: 安装依赖
@@ -37,7 +37,7 @@ jobs:
         run: tar -cvf dist.tar src/.vuepress/dist
 
       - name: 上传构建结果
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-result
           path: |

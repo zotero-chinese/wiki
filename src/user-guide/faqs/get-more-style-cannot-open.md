@@ -2,6 +2,7 @@
 title: “获取更多样式”打不开怎么办
 date: 2023-10-26 20:37:47
 updated: 2023-10-26 20:37:47
+redirectFrom: /user-guide/faqs/%E2%80%9C%E8%8E%B7%E5%8F%96%E6%9B%B4%E5%A4%9A%E6%A0%B7%E5%BC%8F%E2%80%9D%E6%89%93%E4%B8%8D%E5%BC%80%E6%80%8E%E4%B9%88%E5%8A%9E.html
 ---
 
 # “获取更多样式”打不开怎么办

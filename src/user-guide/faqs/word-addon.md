@@ -38,7 +38,7 @@ order: 2
 3. 如何在 Word 中插入参考文献。
 4. 如何在 Word 中设置引用样式。
 
-::::: tip 提醒
+::::: note 提醒
 
 请注意， **Zotero 在更新至 6.0.23 或更高版本后，Word 选项卡里的按钮顺序有调整。** 新版本交换了第二个和第三个按钮的位置， **在阅读教程的时候请注意点击的按钮具体是哪一个，不要只去数是第几个按钮。**
 
@@ -203,7 +203,7 @@ order: 2
 
 ::: tip 使用 Linter 插件快捷插入
 
-插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+插件 [Linter for Zotero](../plugins/linter.md) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
 
 :::
 
@@ -218,51 +218,28 @@ order: 2
 
 :::
 
-### 中英文混排以及其他特殊要求样式的问题
+### 中英文混排
 
-Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `等` 和 `et al.` 的处理上。幸运地是，有很多热心的大佬在这方面进行了许多探索。
+Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `等` 和 `et al.` 的处理上。幸运地是，有很多热心的大佬在这方面进行了许多探索，社区维护了一份支持中英文混排的 CSL 样式文件。
 
-csl 格式的样式文件的下载和安装方法可以查看这一教程：
+你需要：
 
-[利用合适的 CSL，结合设置条目语言解决 et al 和等混排问题](https://gitee.com/zotero-chinese/zotero-chinese/issues/I4YKIN)
+1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方引文格式)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
+2. 需要在 Word 中指定当前文档使用的样式
 
-:::: tip
+   ![文档设置](../../assets/image-word-document-preferences2.png){width=60%}
 
-对于一般的需求，可以在这个项目中寻找最适合你的样式，然后直接拿来用：
+   ::: warning
 
-[GB/T 7714 相关的 csl 以及 Zotero 使用技巧及教程](https://github.com/redleafnew/Chinese-std-GB-T-7714-related-csl)
+   请务必注意， **样式的选择是在 Word 里进行的** ，不是在 Zotero 设置里！Zotero 设置里的列表仅用来安装新样式，不能用作选择默认样式！
 
-[GB/T 7714 相关的 csl 以及 Zotero 使用技巧及教程](https://gitee.com/redleafnew00/Chinese-STD-GB-T-7714-related-csl)
+   :::
 
-这里有非常多的常见样式，足以满足几乎所有人的需求。上面的页面里也都附上了相应的使用效果方便挑选。
-
-::::
-
-安装 csl 样式文件中，会有两个弹窗。第一个弹窗请点击 `安装/Install`，第二个弹窗请点击 `确认/OK`：
-
-![安装样式](../../assets/image-install-style.png){width=60%}
-
-（上图是第二个弹窗，这个报错不用担心，直接点 `OK` 即可）
-
-安装完 csl 样式文件后，你还 **需要在 Word 中指定当前文档使用的样式** ：
-
-![文档设置](../../assets/image-word-document-preferences2.png){width=60%}
-
-::: warning
-
-请务必注意， **样式的选择是在 Word 里进行的** ，不是在 Zotero 设置里！Zotero 设置里的列表仅用来安装新样式，不能用作选择默认样式！
-
-:::
-
-### 如果上面现成的样式不能满足你的需求……
-
-你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：
-
-[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
+3. 在 Zotero 中为每一个条目添加语言，中文条目填写 `zh` 或 `zh-CN`，英文条目填写 `en` 或 `en-US`。
 
 ### 注意事项及与样式相关的常见问题
 
-1. 中英文混排的各个样式文件通常是依靠 Zotero 文献条目信息中的 `语言/Language`，你需要在插入参考文献之前 **预先将英文和中文文献的语言设定为相应要求的内容** 。一般来说，常见的中英混排 csl 样式文件通常要求将英文文献 `Info` 中 `语言/language` 字段修改为`en`，而中文文献设置成`zh`、`zh_CN`或其他内容基本都可以。
+1. 中英文混排的各个样式文件通常是依靠 Zotero 文献条目信息中的 `语言/Language`，你需要在插入参考文献之前 **预先将英文和中文文献的语言设定为相应要求的内容** 。一般来说，常见的中英混排 csl 样式文件通常要求将英文文献 `信息/Info` 中 `语言/language` 字段修改为`en`，而中文文献设置成`zh` 或 `zh-CN`。
 
    ::: warning
 
@@ -270,7 +247,7 @@ csl 格式的样式文件的下载和安装方法可以查看这一教程：
 
    如果你的文献语言设定不规范，可以通过标题或作者字段对所有文献进行排序，然后分别选中英文文献，将其 [语言] 字段的信息统一为 `en`；取消选中后再选中中文文献，将其 `语言` 字段的信息统一为`zh`或者样式文件要求的样子。
 
-   插件 [Linter for Zotero](https://github.com/northword/zotero-format-metadata) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+   插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
 
    ![Linter 自动识别条目语言](../../assets/image-auto-edit-language.jpg){width=60%}
 
