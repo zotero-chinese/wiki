@@ -2,7 +2,7 @@
 
 此节以官方插件示例 [Make It Red](https://github.com/zotero/make-it-red/tree/main/src-2.0) 为例，说明 Zotero 插件的工作过程。
 
-::: note Todo
+::: info Todo
 
 待完善，请参阅插件仓库：[Make It Red](https://github.com/zotero/make-it-red/tree/main/src-2.0)
 
@@ -36,7 +36,7 @@ $ tree
 
 `style.css` 是插件的样式文件。
 
-对于每种文件详细的说明可以在 [参考](../reference/) 中了解。在本节，我们仅关注 `manifest.json`, `bootstrap.js` 和 `make-it-red.js` 三个文件。
+对于每种文件详细的说明可以在 [参考](../reference/index) 中了解。在本节，我们仅关注 `manifest.json`, `bootstrap.js` 和 `make-it-red.js` 三个文件。
 
 ## 基本逻辑解析
 

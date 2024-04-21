@@ -5,7 +5,7 @@ date: 2024-03-13 21:39:17
 
 # Ethereal Style for Zotero
 
-::: note 关于插件
+::: info 关于插件
 
 这是一个多彩的插件，用于增强 Zotero 的界面功能，让您享受阅读文献的乐趣！
 
@@ -44,7 +44,7 @@ date: 2024-03-13 21:39:17
 
 <!-- ![点击可查看详细信息](../../assets/image-zoterostyle-shiftp菜单1.png) -->
 
-::: note
+::: info
 
 如果你的 Emoji 变成黑白了，可以通过这个教程来解决问题 👉[Emoji 变成黑白该如何解决](../faqs/monochrome-emoji.md)
 
@@ -174,7 +174,7 @@ date: 2024-03-13 21:39:17
 
 ![期刊标签](../../assets/image-zoterostyle-期刊标签.png)
 
-::: note 该功能的数据来源于 easyScholar，因此需要配置 easyScholar 密钥。
+::: info 该功能的数据来源于 easyScholar，因此需要配置 easyScholar 密钥。
 :::
 
 ::: details 点击此处了解 期刊标签 的详细设置

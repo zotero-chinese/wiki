@@ -47,7 +47,7 @@ updated: 2023-07-22 20:42:39
 
 应该注意的是，即使这些风格中的大多数与哈佛大学并没有联系，许多风格指南仍使用了令人疑惑的术语“Harvard”来指代”`author-date` 格式。而且，并不存在一个所谓的官方 Harvard 格式。
 
-::: note 参考文献条目实例
+::: info 参考文献条目实例
 
 Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
@@ -67,7 +67,7 @@ Zwart KB, Veenhuis M, Harder W (1983) Significance of yeast peroxisomes in the m
 
 :::
 
-::: note 参考文献条目实例
+::: info 参考文献条目实例
 
 1. Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
@@ -87,7 +87,7 @@ CSL 尚未支持这种格式。
 
 :::
 
-::: note 参考文献条目实例
+::: info 参考文献条目实例
 
 1. Gidijala L, et al. (2008) BMC Biotechnol 8: 29.
 
@@ -105,7 +105,7 @@ CSL 尚未支持这种格式。
 
 :::
 
-::: note 参考文献条目实例
+::: info 参考文献条目实例
 
 \[GBKv2008] Gidijala L, Bovenberg RA, Klaassen P, van der Klei IJ, Veenhuis M, et al. (2008) Production of functionally active _Penicillium chrysogenum_ isopenicillin N synthase in the yeast _Hansenula polymorpha_. BMC Biotechnol 8: 29.
 
@@ -125,7 +125,7 @@ CSL 尚未支持这种格式。
 
 :::
 
-::: note 参考文献条目实例
+::: info 参考文献条目实例
 
 \[\*] Voyage to St. Kilda’ (3rd edit. 1753), p. 37.
 

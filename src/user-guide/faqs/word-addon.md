@@ -38,7 +38,7 @@ order: 2
 3. 如何在 Word 中插入参考文献。
 4. 如何在 Word 中设置引用样式。
 
-::::: note 提醒
+::::: info 提醒
 
 请注意， **Zotero 在更新至 6.0.23 或更高版本后，Word 选项卡里的按钮顺序有调整。** 新版本交换了第二个和第三个按钮的位置， **在阅读教程的时候请注意点击的按钮具体是哪一个，不要只去数是第几个按钮。**
 
@@ -62,7 +62,7 @@ order: 2
 
 在光标当前位置插入或编辑已存在的参考文献表。
 
-::: note
+::: info
 
 一般情况下，在文末写一个 `参考文献` 标题，然后按回车另起一行，再点击这个按钮插入参考文献表。
 
@@ -132,7 +132,7 @@ order: 2
 
 **在使用经典选择窗时** ，点击左下角的 `多重来源/Multiple Sources` 来实现同时插入多个文献。具体操作请参见[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)
 
-::: note
+::: info
 
 注：这个窗口内可以多选，可以在左边窗口一次性选择多个条目，然后统一点向右的箭头加到右边。待全部文献添加完成后，再点击确认完成插入。
 
@@ -179,7 +179,7 @@ order: 2
 
 :::: details 示例
 
-::: note 标题
+::: info 标题
 
 `Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR`
 
@@ -187,7 +187,7 @@ order: 2
 
 :::
 
-::: note 参考文献表
+::: info 参考文献表
 
 [1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 
@@ -346,7 +346,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 如果用户需要保留自己的修改，则点击“是 yes”，如果用户需要抛弃自己的修改，使用 Zotero 生成的内容，则需要选择“否 No”。
 
-:::caution
+::: danger
 
 注意：请谨慎选择“是 Yes”，该操作会让 Zotero 不再更新此处！
 

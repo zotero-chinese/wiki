@@ -32,7 +32,7 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 关键字 MUST，MUST NOT，REQUIRED，SHALL，SHALL NOT，SHOULD，SHOULD NOT，RECOMMENDED，MAY 和 OPTIONAL 按 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述解释。
 
-::: note 译者注：关于 IETF RFC 2119 协议
+::: info 译者注：关于 IETF RFC 2119 协议
 
 RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
 
@@ -98,7 +98,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 通过将具有相同引用风格的期刊（例如 "Nature Biotechnology"，"Nature Nanotechnology"）的从属样式链接到一个单独的独立样式（例如 "Nature Journals"），从属样式就不再需要再重复一遍格式说明。
 
-::: note 译者注
+::: info 译者注
 
 也就是说从属样式是依赖其他样式的，被依赖的样式成为称为**父样式**。
 
@@ -108,7 +108,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 每个本地化文件包含一系列对某种特定的语言 / 方言的本地化数据（术语翻译，本地化日期格式以及语法选项）。
 
-::: note 译者注
+::: info 译者注
 
 本地化文件主要用于在不同的语言环境中使用样式，比如在中文环境中使用，中文对应的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
 
@@ -140,7 +140,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#csstyle-根元素) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
 
-::: note 译者注
+::: info 译者注
 
 in-text 表示引文在文字中，note 表示引文不在文字中，可能是脚注等。
 
@@ -1633,7 +1633,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 I 学科分类
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1666,7 +1666,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 II 术语
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1785,7 +1785,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 III 文献类型
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1827,7 +1827,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 IV 变量
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -2095,7 +2095,7 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 ## 附录 V 页码范围格式
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -2125,7 +2125,7 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 ## 附录 VI 链接
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 

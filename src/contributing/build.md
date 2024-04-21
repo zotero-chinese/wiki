@@ -9,7 +9,7 @@ updated: 2023-09-22 15:23:36
 
 ## 项目概览
 
-本文档使用 Markdown 语法编写，产生的 Markdown 文件托管在 GitHub 上。使用 VuePress 作为静态页面生成器将 Markdown 文件构建为 HTML，使用 VuePress-theme-hope 作为 VuePress 的主题拓展其语法和布局。使用 Netlify 作为持续集成供应商。
+本文档使用 Markdown 语法编写，产生的 Markdown 文件托管在 GitHub 上，使用 VitePress 作为静态页面生成器将 Markdown 文件构建为 HTML，使用 Netlify 作为持续集成供应商。
 
 目前仓库地址为 <https://github.com/zotero-chinese/wiki/> ，
 

@@ -137,7 +137,7 @@ Zotero.Prefs.get("pdfpreview.enable"); // false
 
 ### Zotero.Prefs.clear
 
-::: note Todo
+::: info Todo
 :::
 
 ### 辅助函数

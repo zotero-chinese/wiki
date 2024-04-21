@@ -2,7 +2,7 @@
 
 `locales/`
 
-::: note Todo
+::: info Todo
 
 Zotero 7 已全面使用 Fluent 作为本地化系统，请参考以下几个文档：
 

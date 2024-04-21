@@ -18,7 +18,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 ## 重复条目 <Badge text="中级" />
 
-::: note Todo：待完善
+::: info Todo：待完善
 
 参考：<https://www.zotero.org/support/duplicate_detection>
 

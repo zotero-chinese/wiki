@@ -14,7 +14,6 @@ export const sidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "基础使用",
-      // prefix: "basic-usage",
       collapsed: true,
       items: [
         { text: "添加条目", link: "/user-guide/add-items" },
@@ -31,7 +30,6 @@ export const sidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "创建参考文献",
-      // prefix: "generate-bibliography",
       collapsed: true,
       items: [
         { text: "引文风格", link: "/user-guide/citation-styles" },
@@ -49,7 +47,6 @@ export const sidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "同步、协作与备份",
-      // prefix: "sync-collaboration-backup",
       collapsed: true,
       items: [
         { text: "同步", link: "/user-guide/sync" },
@@ -60,28 +57,39 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: "插件",
       collapsed: true,
-      items: "structure",
+      items: [
+        { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
+        { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
+        { text: "Easier Citation", link: "/user-guide/plugins/easier-citation" },
+        { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
+        { text: "Linter", link: "/user-guide/plugins/linter" },
+        { text: "Magic", link: "/user-guide/plugins/magic" },
+        { text: "Style", link: "/user-guide/plugins/style" },
+        { text: "翻译", link: "/user-guide/plugins/translate" },
+        { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
+        { text: "SCI Hub", link: "/user-guide/plugins/zotero-scihub" },
+      ],
     },
     {
       text: "常见问题",
-      icon: "question",
-      prefix: "faqs",
       collapsed: true,
-      items: "structure",
+      items: [
+        { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
+        { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
+        { text: "无法打开“获取更多样式”", link: "/user-guide/faqs/get-more-style-cannot-open" },
+        { text: "Emoji 变成了黑白的", link: "/user-guide/faqs/monochrome-emoji" },
+        { text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" },
+        { text: "更新转换器", link: "/user-guide/faqs/update-translators" },
+      ],
     },
-    // {
-    //   text: "进阶教程",
-    //   icon: "creative",
-    //   // prefix: "advanced",
-    //   collapsed: true,
-    //   items: ["add-items-adv", "import-from-other-software.html"],
-    // },
     {
       text: "杂项",
-      icon: "advance",
-      prefix: "misc",
       collapsed: true,
-      items: "structure",
+      items: [
+        { text: "高级选项", link: "/user-guide/misc/preference" },
+        { text: "通过 VBA 在 WPS 中插入引文", link: "/user-guide/misc/wps-plugin-vba" },
+        { text: "将引注链接到参考文献表", link: "/user-guide/misc/link-citation-to-bibliography" },
+      ],
     },
   ],
   "/plugin-dev-guide/": [

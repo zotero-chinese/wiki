@@ -1,6 +1,6 @@
 # Magic for Zotero
 
-::: note Todo
+::: info Todo
 
 见：<https://wiki.magiczotero.top/>
 

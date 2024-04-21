@@ -1,6 +1,6 @@
 # 使用社区模板
 
-::: note Todo
+::: info Todo
 
 社区模板地址：<https://github.com/windingwind/zotero-plugin-template>
 

@@ -164,7 +164,7 @@ Zotero_Tabs.select("zotero-pane");
 
 ## 文件操作
 
-::: note Todo
+::: info Todo
 
 文件读写已迁移至 [IOUtils](https://firefox-source-docs.mozilla.org/dom/ioutils_migration.html) 和 [PathUtils](https://searchfox.org/mozilla-esr102/source/dom/chrome-webidl/PathUtils.webidl) 。
 

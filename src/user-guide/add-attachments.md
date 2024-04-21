@@ -8,7 +8,7 @@ icon: add
 
 ## 子附件和独立附件
 
-::: note Todo
+::: info Todo
 
 参考：<https://www.zotero.org/support/attaching_files>
 
@@ -23,7 +23,7 @@ icon: add
 
 ### 通过拖放
 
-::: note Todo
+::: info Todo
 
 :::
 
@@ -33,7 +33,7 @@ icon: add
 
 ## 附件重命名
 
-::: note Todo
+::: info Todo
 
 参考：<https://www.zotero.org/support/file_renaming>
 
