@@ -6,7 +6,7 @@ titleTemplate: Zotero 中文社区
 hero:
   name: Zotero
   text: 非官方中文社区
-  tagline: Zotero 非官方中文小组，维护中文文档等
+  tagline: 这里是由志愿者组成的 Zotero 中文小组，我们主要维护 Zotero 中文文档、中文社区生态等。
   image:
     src: /logo.png
     alt: Vite
@@ -16,47 +16,30 @@ hero:
       link: /user-guide/
     - theme: alt
       text: 插件商店
-      link: /guide/why
+      link: /plugins/
     - theme: alt
       text: 样式文件
-      link: https://github.com/vitejs/vite
+      link: /styles/
 
 features:
   - icon: 💡
-    title: Instant Server Start
-    details: On demand file serving over native ESM, no bundling required!
+    title: 百科全书
+    details: Zotero 中文教程一站式解决！
   - icon: ⚡️
-    title: Lightning Fast HMR
-    details: Hot Module Replacement (HMR) that stays fast regardless of app size.
+    title: 插件商店
+    details: 好用的 Zotero 插件收录，提供国内镜像下载地址.
   - icon: 🛠️
-    title: Rich Features
-    details: Out-of-the-box support for TypeScript, JSX, CSS and more.
+    title: 中文 CSL 样式
+    details: 支持双语排版的 CSL 样式.
   - icon: 📦
-    title: Optimized Build
-    details: Pre-configured Rollup build with multi-page and library mode support.
+    title: 中文网站转换器
+    details: 为中文网络维护的 Zotero 转换器.
   - icon: 🔩
-    title: Universal Plugins
-    details: Rollup-superset plugin interface shared between dev and build.
+    title: 插件开发手册
+    details: 其实 Zotero 插件开发入门很容易！
   - icon: 🔑
-    title: Fully Typed APIs
-    details: Flexible programmatic APIs with full TypeScript typing.
-
-home: true
-icon: home
-heroImage: /logo.png
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
-bgImageStyle:
-  background-attachment: fixed
-heroText: Zotero 中文小组
-tagline: Zotero 非官方中文小组，维护中文文档等
-actions:
-  - text: Zotero 用户手册 💡
-    link: /user-guide/
-    type: primary
-
-  - text: 插件商店
-    link: https://plugins.zotero-chinese.com/
+    title: 中文 CSL 规范
+    details: 来看如何自定义一个自己需要的参考文献格式.
 
 highlights:
   - header: Zotero 中文资源
