@@ -4,7 +4,7 @@
   "description": "Zotero 中文手册",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
     "docs:dev": "vuepress dev src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
