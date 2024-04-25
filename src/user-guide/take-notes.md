@@ -35,7 +35,15 @@ Zotero 会自动记忆打开的文献与当前阅读位置。在下一次打开 
 - 上方横条是工具栏，可在此缩放、移动页面，或使用高亮注释（alt+1）![image.png](../assets/icon-reader-高亮注释.png)，文字注释（alt+2）![image.png](../assets/icon-reader-文字注释.png)，框选注释（alt+3）![image.png](../assets/icon-reader-选框注释.png)，设置注释颜色（alt+4 切换）![image.png](../assets/image-reader-设置注释颜色.png)；
 - 中央是阅读区域。
 
+
 ![image.png](../assets/image-reader-注释.png)
+
+快捷键整理（针对Zotero7进行测试）：
+
+|快捷键|功能|
+|-|-|
+|Alt+[数字N]|打开/关闭第N个标注工具|
+|[数字N]|切换当前标注工具的颜色为第N个颜色|
 
 ### 选中弹窗
 
