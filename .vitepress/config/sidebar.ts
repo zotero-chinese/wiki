@@ -60,7 +60,10 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
-        { text: "Easier Citation", link: "/user-guide/plugins/easier-citation" },
+        {
+          text: "Easier Citation",
+          link: "/user-guide/plugins/easier-citation",
+        },
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "Linter", link: "/user-guide/plugins/linter" },
         { text: "Magic", link: "/user-guide/plugins/magic" },
@@ -76,8 +79,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
-        { text: "无法打开“获取更多样式”", link: "/user-guide/faqs/get-more-style-cannot-open" },
-        { text: "Emoji 变成了黑白的", link: "/user-guide/faqs/monochrome-emoji" },
+        {
+          text: "无法打开“获取更多样式”",
+          link: "/user-guide/faqs/get-more-style-cannot-open",
+        },
+        {
+          text: "Emoji 变成了黑白的",
+          link: "/user-guide/faqs/monochrome-emoji",
+        },
         { text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" },
         { text: "更新转换器", link: "/user-guide/faqs/update-translators" },
       ],
@@ -87,8 +96,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: true,
       items: [
         { text: "高级选项", link: "/user-guide/misc/preference" },
-        { text: "通过 VBA 在 WPS 中插入引文", link: "/user-guide/misc/wps-plugin-vba" },
-        { text: "将引注链接到参考文献表", link: "/user-guide/misc/link-citation-to-bibliography" },
+        {
+          text: "通过 VBA 在 WPS 中插入引文",
+          link: "/user-guide/misc/wps-plugin-vba",
+        },
+        {
+          text: "将引注链接到参考文献表",
+          link: "/user-guide/misc/link-citation-to-bibliography",
+        },
       ],
     },
   ],
@@ -132,9 +147,5 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: "XML 基础", link: "csl-dev-guide/xml-basic" },
     { text: "CSL 规范", link: "csl-dev-guide/specification" },
     { text: "本地化", link: "csl-dev-guide/translating-locale-files" },
-  ],
-  "/": [
-    { text: "关于", link: "/about" },
-    { text: "贡献者名单", link: "/contributors" },
   ],
 };

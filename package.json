@@ -5,11 +5,11 @@
   "type": "module",
   "packageManager": "pnpm@9.0.4",
   "scripts": {
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
-    "docs:preview": "vitepress build src",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress build",
     "lint:prettier": "prettier --write .",
-    "lint:md": "markdownlint-cli2-fix src/**/*.md",
+    "lint:md": "markdownlint-cli2-fix **/*.md",
     "git:sync-force": "bash scripts/sync-force.sh",
     "prepare": "husky"
   },
