@@ -31,10 +31,10 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          > src/.vuepress/dist/.nojekyll
+          > .vitepress/dist/.nojekyll
 
       - name: 压缩构建文件
-        run: tar -cvf dist.tar src/.vuepress/dist
+        run: tar -cvf dist.tar .vitepress/dist
 
       - name: 上传构建结果
         uses: actions/upload-artifact@v4
