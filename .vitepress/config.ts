@@ -19,11 +19,6 @@ export default defineConfig({
       copyright: "版权所有 © 2019-至今 Zotero 中文社区及其贡献者",
     },
 
-    docFooter: {
-      prev: "上一页",
-      next: "下一页",
-    },
-
     outline: {
       label: "页面导航",
       level: [2, 3],

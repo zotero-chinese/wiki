@@ -9,19 +9,4 @@ export const nav: DefaultTheme.NavItem[] = [
     link: "/translator-dev-guide/",
   },
   { text: "贡献指南", link: "/contributing/" },
-  {
-    text: "更多资源",
-    items: [
-      {
-        text: "最好的中文社区",
-        items: [
-          { text: "团队", link: "/about/team" },
-          {
-            text: "Awesome Zotero",
-            link: "https://github.com/vitejs/awesome-vite",
-          },
-        ],
-      },
-    ],
-  },
 ];

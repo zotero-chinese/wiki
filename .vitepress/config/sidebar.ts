@@ -148,4 +148,10 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: "CSL 规范", link: "csl-dev-guide/specification" },
     { text: "本地化", link: "csl-dev-guide/translating-locale-files" },
   ],
+  "/contributing/": [
+    { text: "贡献指南", link: "/contributing/" },
+    { text: "语法风格", link: "/contributing/markdown" },
+    { text: "在线修改", link: "/contributing/vscode-dev" },
+    { text: "构建指南", link: "/contributing/build" },
+  ],
 };

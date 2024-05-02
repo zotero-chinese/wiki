@@ -34,7 +34,7 @@
 
 ## 贡献指南
 
-本项目接收多种方式的贡献，详情请参阅 [贡献指南](https://zotero-chinese.com/contributing/contributing.html)。
+本项目接收多种方式的贡献，详情请参阅 [贡献指南](https://zotero-chinese.com/contributing/)。
 
 ## 贡献者
 

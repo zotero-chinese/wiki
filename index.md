@@ -9,7 +9,7 @@ hero:
   tagline: 这里是由志愿者组成的 Zotero 中文小组，我们主要维护 Zotero 中文文档、中文社区生态等。
   image:
     src: /logo.png
-    alt: Vite
+    alt: Zotero 中文社区 LOGO
   actions:
     - theme: brand
       text: 百科全书

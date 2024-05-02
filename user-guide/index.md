@@ -70,6 +70,6 @@ updated: 2023-07-20 16:51:54
 
 ::: tip 我如何参与到文档维护中？
 
-请参阅：[贡献指南](../contributing/contributing.md)。
+请参阅：[贡献指南](../contributing/index.md)。
 
 :::
