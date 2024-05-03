@@ -1,6 +1,6 @@
 import { DefaultTheme } from "vitepress";
 
-export const sidebar: DefaultTheme.Sidebar = {
+export const sidebar = {
   "/user-guide/": [
     {
       text: "简介",
@@ -154,4 +154,4 @@ export const sidebar: DefaultTheme.Sidebar = {
     { text: "在线修改", link: "/contributing/vscode-dev" },
     { text: "构建指南", link: "/contributing/build" },
   ],
-};
+} satisfies DefaultTheme.Sidebar;
