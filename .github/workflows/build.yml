@@ -1,4 +1,4 @@
-name: Build
+name: 构建预览版本
 
 on:
   workflow_call:

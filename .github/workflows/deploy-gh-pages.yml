@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: 部署预览版本
 
 on:
   workflow_call:
