@@ -13,14 +13,17 @@ permissions:
 
 jobs:
   lint:
+    name: 检查文档格式
     uses: ./.github/workflows/lint.yml
     with:
       fix: ${{ contains(github.event_name, 'pull_request') }}
 
   build:
+    name: 构建文档
     uses: ./.github/workflows/build.yml
 
   deploy-gh-pages:
+    name: 部署预览版本
     if: github.ref_name == 'main' && github.event_name == 'push' && github.repository == 'zotero-chinese/wiki'
     needs:
       - lint
