@@ -14,6 +14,8 @@ permissions:
 jobs:
   lint:
     uses: ./.github/workflows/lint.yml
+    with:
+      fix: ${{ contains(github.event_name, 'pull_request') }}
 
   build:
     uses: ./.github/workflows/build.yml

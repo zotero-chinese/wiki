@@ -8,8 +8,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress build",
-    "lint:prettier": "prettier --write .",
-    "lint:md": "markdownlint-cli2-fix **/*.md",
+    "lint:fix": "markdownlint-cli2 --fix **/*.md & prettier --write .",
+    "lint:check": "markdownlint-cli2 **/*.md & prettier --check .",
     "git:sync-force": "bash scripts/sync-force.sh",
     "prepare": "husky"
   },
@@ -20,7 +20,6 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.13.0",
-    "mermaid": "^10.9.0",
     "prettier": "2.8.8",
     "vitepress": "^1.1.0",
     "vue": "^3.4.21"
