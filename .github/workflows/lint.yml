@@ -31,7 +31,7 @@ jobs:
         run: pnpm install
 
       - name: 运行 Lint 检查
-        if: !inputs.fix
+        if: inputs.fix == false
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
