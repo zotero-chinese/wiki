@@ -1,4 +1,4 @@
-import { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from "vitepress";
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: "百科全书", link: "/user-guide/", activeMatch: "/user-guide/" },
