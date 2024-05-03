@@ -23,7 +23,7 @@ Zotero 官方不提供该功能，这是因为 Zotero 使用的 CSL 处理器将
 
 在 Word 里新建一个宏，添加宏代码如下：
 
-```vbnet
+```vb
 Public Sub ZoteroLinkCitation()
 
 ' get selected area (if applicable)
