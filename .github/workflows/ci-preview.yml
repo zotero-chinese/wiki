@@ -62,17 +62,17 @@ jobs:
       - name: 安装 Netlify CLI
         run: pnpm install -g netlify-cli
 
-      - name: Push to Netlify
+      - name: 推送到 Netlify
         id: netlify-ubuntu-latest
         timeout-minutes: 10
         run: |
-          NETLIFY_JSON_OUTPUT=$(netlify deploy --dir=dist --alias=wiki-preview-${{ github.event.number }} --json)
+          NETLIFY_JSON_OUTPUT=$(netlify deploy --dir=.vitepress/dist --alias=wiki-preview-${{ github.event.number }} --json)
           echo $NETLIFY_JSON_OUTPUT
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
-      - name: Find Comment
+      - name: 查找评论 ID
         uses: peter-evans/find-comment@v2
         id: fc
         with:
@@ -80,7 +80,7 @@ jobs:
           comment-author: "github-actions[bot]"
           body-includes: <!-- auto message -->
 
-      - name: Create or update comment
+      - name: 创建或更新评论
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
@@ -96,7 +96,7 @@ jobs:
           edit-mode: replace
 
   on-failure:
-    name: 部署失败
+    name: 提示部署失败
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -106,7 +106,7 @@ jobs:
       - deploy
     if: ${{ failure() }}
     steps:
-      - name: Find Comment
+      - name: 查找评论 ID
         uses: peter-evans/find-comment@v2
         id: fc
         with:
@@ -114,7 +114,7 @@ jobs:
           comment-author: "github-actions[bot]"
           body-includes: <!-- auto message -->
 
-      - name: Create or update comment
+      - name: 创建或更新评论：失败
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
