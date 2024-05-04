@@ -46,7 +46,7 @@ jobs:
           publish-dir: ".vitepress/dist"
           deploy-message: "Deploy from GitHub Actions"
           production-deploy: false
-          alias: deploy-preview-${{ github.event.number }}
+          alias: deploy-preview-wiki-${{ github.event.number }}
           enable-commit-comment: false
           enable-pull-request-comment: false
           enable-commit-status: false
