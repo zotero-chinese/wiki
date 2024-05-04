@@ -32,11 +32,6 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - name: 签出仓库
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: 下载构建内容
         uses: actions/download-artifact@v4
         with:
@@ -46,31 +41,24 @@ jobs:
       - name: 解压构建文件
         run: |
           tar -xvf dist.tar .vitepress/dist
-          ls -R -a
-
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 9
-
-      - name: 设置 Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: 安装 Netlify CLI
-        run: pnpm install -g netlify-cli
+          # ls -R -a
 
       - name: 推送到 Netlify
-        id: netlify-ubuntu-latest
-        timeout-minutes: 10
-        run: |
-          NETLIFY_JSON_OUTPUT=$(netlify deploy --dir=.vitepress/dist --alias=wiki-preview-${{ github.event.number }} --json)
-          echo $NETLIFY_JSON_OUTPUT
+        id: netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: ".vitepress/dist"
+          deploy-message: "Deploy from GitHub Actions"
+          production-deploy: false
+          alias: deploy-preview-${{ github.event.number }}
+          enable-commit-comment: false
+          enable-pull-request-comment: false
+          enable-commit-status: false
+          enable-github-deployment: false
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
 
       - name: 查找评论 ID
         uses: peter-evans/find-comment@v2
@@ -90,9 +78,9 @@ jobs:
 
             ## ✅ 成功部署预览！
 
-            | 类型     | 链接                                         |
-            |:---------|:--------------------------------------------|
-            | 预览地址  | ${{ env.NETLIFY_JSON_OUTPUT.deploy_url }}   |
+            | 类型     | 链接                            |
+            |:---------|:-------------------------------|
+            | 预览地址  | ${{ steps.netlify.outputs }}   |
           edit-mode: replace
 
   on-failure:
