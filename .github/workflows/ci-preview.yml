@@ -96,7 +96,7 @@ jobs:
           edit-mode: replace
 
   on-failure:
-    name: 提示部署失败
+    name: 提示部署结果
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -122,7 +122,7 @@ jobs:
           body: |
             <!-- auto message -->
 
-            ## ❌ Failed to deploy to Netlify
+            ## ❌ 部署预览失败
 
             部署失败，请查看工作流的运行状态和日志。
           edit-mode: replace
