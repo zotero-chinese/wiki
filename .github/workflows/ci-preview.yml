@@ -72,6 +72,17 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
+  comment:
+    name: 更新部署状态
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    needs:
+      - lint
+      - build
+      - deploy
+    if: ${{ always() }}
+    steps:
       - name: 查找评论 ID
         uses: peter-evans/find-comment@v2
         id: fc
@@ -81,6 +92,7 @@ jobs:
           body-includes: <!-- auto message -->
 
       - name: 创建或更新评论
+        if: ${{ success() }}
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
@@ -95,26 +107,8 @@ jobs:
             | 预览地址  | ${{ env.NETLIFY_URL.deploy_url }}   |
           edit-mode: replace
 
-  on-failure:
-    name: 提示部署失败
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-    needs:
-      - lint
-      - build
-      - deploy
-    if: ${{ failure() }}
-    steps:
-      - name: 查找评论 ID
-        uses: peter-evans/find-comment@v2
-        id: fc
-        with:
-          issue-number: ${{ github.event.number }}
-          comment-author: "github-actions[bot]"
-          body-includes: <!-- auto message -->
-
       - name: 创建或更新评论：失败
+        if: ${{ failure() }}
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
