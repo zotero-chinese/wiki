@@ -1,0 +1,119 @@
+name: Deploy in Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+env:
+  NETLIFY_JSON_OUTPUT: ""
+  NETLIFY_URL: ""
+
+jobs:
+  lint:
+    name: 检查文档格式
+    uses: ./.github/workflows/lint.yml
+    with:
+      fix: true
+
+  build:
+    name: 构建文档
+    uses: ./.github/workflows/build.yml
+
+  deploy:
+    name: Deploy to Netlify
+    needs:
+      - lint
+      - build
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: 下载构建内容
+        uses: actions/download-artifact@v4
+        with:
+          name: build-result
+          # path: dist.tar
+
+      - name: 解压构建文件
+        run: |
+          tar -xvf dist.tar .vitepress/dist
+          ls -R -a
+
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: 安装 Netlify CLI
+        run: pnpm install -g netlify-cli
+
+      - name: Push to Netlify
+        id: netlify-ubuntu-latest
+        timeout-minutes: 10
+        run: |
+          NETLIFY_JSON_OUTPUT=$(netlify deploy --dir=dist --alias=wiki-preview-${{ github.event.number }} --json)
+          echo $NETLIFY_JSON_OUTPUT
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: <!-- auto message -->
+
+      - name: Create or update comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.number }}
+          body: |
+            <!-- auto message -->
+
+            ## ✅ 成功部署预览！
+
+            | 类型     | 链接                                 |
+            |:---------|:------------------------------------|
+            | 预览地址  | ${{ env.NETLIFY_URL.deploy_url }}   |
+          edit-mode: replace
+
+  on-failure:
+    name: Failed to build previewing docs
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: ${{ failure() }}
+    steps:
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: <!-- auto message -->
+
+      - name: Create or update comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.number }}
+          body: |
+            <!-- auto message -->
+
+            ## ❌ Failed to deploy to Netlify
+
+            部署失败，请查看工作流的运行状态和日志。
+          edit-mode: replace
