@@ -7,6 +7,11 @@
 # Lib files
 **/.vuepress/public/assets/
 
+# VitePress Cache
+**/.vitepress/cache/**
+# VitePress Output
+**/.vitepress/dist/**
+
 # Node modules
 node_modules/
 

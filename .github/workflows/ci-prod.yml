@@ -1,0 +1,36 @@
+name: Deploy in Production Mode
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  lint:
+    name: 检查文档格式
+    uses: ./.github/workflows/lint.yml
+    with:
+      fix: false
+
+  build:
+    name: 构建文档
+    uses: ./.github/workflows/build.yml
+
+  send-dispatch:
+    name: 请求部署上线
+    if: github.repository == 'zotero-chinese/wiki'
+    needs:
+      - lint
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          repository: zotero-chinese/website
+          event-type: update-content
