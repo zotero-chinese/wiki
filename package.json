@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "^0.8.0",
+    "@mdit/plugin-footnote": "^0.10.0",
     "@types/node": "^20.12.7",
     "feed": "^4.2.2",
     "husky": "^9.0.11",
