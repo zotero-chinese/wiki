@@ -3,12 +3,9 @@ import { sidebar } from "./config/sidebar";
 import { nav } from "./config/navbar";
 import { markdown } from "./config/markdown";
 
-import { env } from "node:process";
-
 export default defineConfig({
   title: `Zotero 中文文档（预览版）`,
   lang: "zh-CN",
-  base: env.GITHUB_ACTIONS ? "/wiki/" : "/",
   markdown,
 
   themeConfig: {
