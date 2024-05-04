@@ -17,7 +17,7 @@
   "markdown.validate.fileLinks.enabled": "error",
   "markdown.validate.referenceLinks.enabled": "ignore",
   "markdown.copyFiles.destination": {
-    "**/*": "${documentWorkspaceFolder}/src/assets/"
+    "**/*": "${documentWorkspaceFolder}/assets/"
   },
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
@@ -31,19 +31,33 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
 
     /** custom begin **/
+
+    // npm
     // "node_modules": true,
-    // "package.json": true,
-    // "package-lock.json": true,
-    // "pnpm-lock.yaml": true
+    // "package.json": true
+    "package-lock.json": true,
+    "pnpm-lock.yaml": true,
+
+    // Git and GitHub config
     // "**/.*": true,
-    // ".github": true,
-    // ".gitignore": true,
-    // ".vscode": true,
-    // ".markdownlint.json": true,
-    // "**/.vuepress": true,
-    // "LICENSE": true
+    ".github": true,
+    ".gitignore": true,
+    ".husky": true,
+
+    // 3rd package config
+    ".vscode": true,
+    ".markdownlint-cli2.jsonc": true,
+    ".prettierignore": true,
+
+    // VitePress config
+    "**/.vitepress/cache": true,
+    "**/.vitepress/theme": true,
+    "**/.vitepress/tsconfig.json": true,
+
+    // Other files
+    "LICENSE": true
   }
 }

@@ -1,7 +1,11 @@
-name: Lint Markdown
+name: 检查文档格式
 
 on:
   workflow_call:
+    inputs:
+      fix:
+        required: true
+        type: boolean
 
 jobs:
   lint:
@@ -9,9 +13,41 @@ jobs:
     steps:
       - name: 签出仓库
         uses: actions/checkout@v4
-      - name: 运行 MarkdownLint
-        uses: DavidAnson/markdownlint-cli2-action@v16
         with:
-          globs: |
-            **/*.md
-            !test/*.md
+          fetch-depth: 0
+
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: 安装依赖
+        run: pnpm install
+
+      - name: 运行 Lint 检查
+        if: inputs.fix == false
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run lint:check
+
+      - name: 运行 Lint 修复
+        if: inputs.fix
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run lint:fix
+
+      - name: 提交 Lint 修复
+        if: inputs.fix
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 自动修改文件格式
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
