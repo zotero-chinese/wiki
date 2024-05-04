@@ -15,7 +15,7 @@ jobs:
           # submodules: true
 
       - name: 设置 pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: 9
 
