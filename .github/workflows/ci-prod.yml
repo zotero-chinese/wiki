@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,7 +22,7 @@ jobs:
 
   send-dispatch:
     name: 请求部署上线
-    if: github.ref_name == 'main' && github.event_name == 'push' && github.repository == 'zotero-chinese/wiki'
+    if: github.repository == 'zotero-chinese/wiki'
     needs:
       - lint
       - build
