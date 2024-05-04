@@ -36,7 +36,7 @@
     /** custom begin **/
 
     // npm
-    // "node_modules": true,
+    "node_modules": true,
     // "package.json": true
     "package-lock.json": true,
     "pnpm-lock.yaml": true,
@@ -45,19 +45,23 @@
     // "**/.*": true,
     ".github": true,
     ".gitignore": true,
+    ".gitattributes": true,
     ".husky": true,
 
     // 3rd package config
     ".vscode": true,
     ".markdownlint-cli2.jsonc": true,
     ".prettierignore": true,
+    ".obsidian": true,
 
     // VitePress config
     "**/.vitepress/cache": true,
     "**/.vitepress/theme": true,
     "**/.vitepress/tsconfig.json": true,
+    "**/.vitepress/config/markdown.ts": true,
 
     // Other files
+    "scripts": true,
     "LICENSE": true
   }
 }
