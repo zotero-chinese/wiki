@@ -1,4 +1,4 @@
-name: 部署预览
+name: 部署（预览环境）
 
 on:
   pull_request:
@@ -70,13 +70,16 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.number }}
           body: |
-            <!-- auto message -->
-
             ## ✅ 成功部署预览！
 
-            | 类型      | 链接                                    |
-            |:---------:|:--------------------------------------:|
-            | 预览地址  | ${{ steps.netlify.outputs.deploy-url }} |
+            | 类型         | 链接                                                                                                 |
+            |:-----------:|:----------------------------------------------------------------------------------------------------:|
+            | 预览地址     | ${{ steps.netlify.outputs.deploy-url }}                                                              |
+            | 最新提交     | ${{ github.sha }}                                                                                    |
+            | 部署日志     | [${{ github.workflow }} #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+
+            <!-- auto message -->
+
           edit-mode: replace
 
   on-failure:
@@ -104,9 +107,14 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.number }}
           body: |
-            <!-- auto message -->
-
             ## ❌ 部署预览失败
 
-            部署失败，请查看工作流的运行状态和日志。
+            | 类型         | 链接                                                                                                 |
+            |:-----------:|:----------------------------------------------------------------------------------------------------:|
+            | 预览地址     | 部署失败，请查看工作流运行日志。                                                                        |
+            | 最新提交     | ${{ github.sha }}                                                                                    |
+            | 部署日志     | [${{ github.workflow }} #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+
+            <!-- auto message -->
+
           edit-mode: replace

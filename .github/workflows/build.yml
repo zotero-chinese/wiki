@@ -1,4 +1,4 @@
-name: 构建预览版本
+name: 构建文档
 
 on:
   workflow_call:

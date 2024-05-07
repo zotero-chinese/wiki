@@ -1,4 +1,4 @@
-name: Deploy in Production Mode
+name: 部署（生产环境）
 
 on:
   push:

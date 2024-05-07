@@ -48,6 +48,6 @@ jobs:
         if: inputs.fix
         uses: EndBug/add-and-commit@v9
         with:
-          message: 自动修改文件格式
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
+          message: 自动修改文档格式
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
