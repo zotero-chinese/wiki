@@ -1,4 +1,4 @@
-name: 部署（预览环境）测试
+name: 部署（预览环境）
 
 on:
   pull_request_target:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   lint:
-    name: 检查文档格式-测试
+    name: 检查文档格式
     uses: ./.github/workflows/lint.yml
     with:
       fix: true
