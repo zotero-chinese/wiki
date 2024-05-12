@@ -1,43 +1,44 @@
 name: 部署（预览环境）
 
 on:
-  pull_request_target:
-    branches:
-      - main
-    paths:
-      - "**.md"
-      - ".vitepress/config/sidebar.ts"
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
+
+env:
+  PR_NUM: 0
 
 jobs:
-  lint:
-    name: 检查文档格式
-    uses: ./.github/workflows/lint.yml
-    permissions:
-      contents: write
-      pull-requests: write
-    with:
-      fix: true
-
-  build:
-    name: 构建文档
-    uses: ./.github/workflows/build.yml
-    permissions:
-      contents: read
-
-  deploy:
-    name: 部署预览
-    needs:
-      - lint
-      - build
+  on-success:
+    name: 推送到 Netlify
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - name: 下载构建内容
-        uses: actions/download-artifact@v4
+      - name: 下载构建内容 (工作流信息)
+        uses: dawidd6/action-download-artifact@v3
         with:
+          workflow_conclusion: success
+          run_id: ${{ github.event.workflow_run.id }}
+          name: pr-num
+          path: pr-num
+          allow_forks: true
+
+      - name: 获取 PR 编号
+        id: pr-num
+        run: |
+          echo "PR_NUM=$(cat pr-num/pr_num)" >> $GITHUB_ENV
+
+      - name: 下载构建内容
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          workflow_conclusion: success
+          run_id: ${{ github.event.workflow_run.id }}
           name: build-result
-          # path: dist.tar
+          allow_forks: true
 
       - name: 解压构建文件
         run: |
@@ -51,7 +52,7 @@ jobs:
           publish-dir: ".vitepress/dist"
           deploy-message: "Deploy from GitHub Actions"
           production-deploy: false
-          alias: deploy-preview-wiki-${{ github.event.number }}
+          alias: deploy-preview-wiki-${{ env.PR_NUM }}
           enable-commit-comment: false
           enable-pull-request-comment: false
           enable-commit-status: false
@@ -65,7 +66,7 @@ jobs:
         uses: peter-evans/find-comment@v2
         id: fc
         with:
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ env.PR_NUM }}
           comment-author: "github-actions[bot]"
           body-includes: <!-- auto message -->
 
@@ -73,7 +74,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ env.PR_NUM }}
           body: |
             ## ✅ 成功部署预览！
 
@@ -81,28 +82,38 @@ jobs:
             |:-----------:|:----------------------------------------------------------------------------------------------------:|
             | 预览地址     | ${{ steps.netlify.outputs.deploy-url }}                                                              |
             | 最新提交     | ${{ github.sha }}                                                                                    |
-            | 部署日志     | [${{ github.workflow }} #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+            | 部署日志     | [${{ github.event.workflow_run.name }} #${{ github.event.workflow_run.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}) |
 
             <!-- auto message -->
 
           edit-mode: replace
 
   on-failure:
-    name: 提示部署结果
+    name: 提示构建预览失败
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    needs:
-      - lint
-      - build
-      - deploy
-    if: ${{ failure() }}
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
+      - name: 下载构建内容 (工作流信息)
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          workflow_conclusion: success
+          run_id: ${{ github.event.workflow_run.id }}
+          name: pr-num
+          path: pr-num
+          allow_forks: true
+
+      - name: 获取 PR 编号
+        id: pr-num
+        run: |
+          echo "PR_NUM=$(cat pr-num/pr_num)" >> $GITHUB_ENV
+
       - name: 查找评论 ID
         uses: peter-evans/find-comment@v2
         id: fc
         with:
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ env.PR_NUM }}
           comment-author: "github-actions[bot]"
           body-includes: <!-- auto message -->
 
@@ -110,7 +121,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ env.PR_NUM }}
           body: |
             ## ❌ 部署预览失败
 
@@ -118,7 +129,7 @@ jobs:
             |:-----------:|:----------------------------------------------------------------------------------------------------:|
             | 预览地址     | 部署失败，请查看工作流运行日志。                                                                        |
             | 最新提交     | ${{ github.sha }}                                                                                    |
-            | 部署日志     | [${{ github.workflow }} #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
+            | 部署日志     | [${{ github.event.workflow_run.name }} #${{ github.event.workflow_run.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}) |
 
             <!-- auto message -->
 
