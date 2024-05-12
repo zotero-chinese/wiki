@@ -70,7 +70,9 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 :::
 
-目前国内支持 WebDAV 同步的只有坚果云网盘，常见的如百度网盘、阿里云盘、OneDrive 等均不支持 WebDAV 同步。后续教程将以坚果云网盘为例。
+目前常用的支持 WebDAV 同步的网盘包括[坚果云网盘](https://www.jianguoyun.com/)、[123 云盘](https://www.123pan.com/)、[InfiniCLOUDt](https://infini-cloud.net/en/index.html)，常见的如百度网盘、阿里云盘、OneDrive 等均不支持 WebDAV 同步。
+
+我们只推荐使用**坚果云网盘**，后续教程也将以坚果云网盘为例。
 
 如果您没有坚果云网盘的账户，请先 [注册坚果云](https://www.jianguoyun.com/d/signup)。
 
