@@ -1,10 +1,7 @@
-name: CI
+name: 部署（生产环境）
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -13,29 +10,12 @@ jobs:
   lint:
     name: 检查文档格式
     uses: ./.github/workflows/lint.yml
-    permissions:
-      contents: write
-      pull-requests: write
     with:
-      fix: ${{ github.event_name == 'pull_request' }}
+      fix: false
 
   build:
     name: 构建文档
     uses: ./.github/workflows/build.yml
-
-  upload:
-    name: 上传运行信息
-    runs-on: ubuntu-latest
-    if: github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
-    steps:
-      - name: 保存 PR 编号
-        run: |
-          echo "${{ github.event.number }}" > pr_num
-      - name: 上传 PR 编号
-        uses: actions/upload-artifact@v2
-        with:
-          name: pr-num
-          path: ./pr_num
 
   send-dispatch:
     name: 请求部署上线

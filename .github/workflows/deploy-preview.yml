@@ -1,9 +1,9 @@
-name: 部署（预览环境）
+name: 部署 (预览环境) 后处理
 
 on:
   workflow_run:
     workflows:
-      - CI
+      - 部署 (预览环境)
     types:
       - completed
 
@@ -18,7 +18,7 @@ jobs:
       pull-requests: write
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - name: 下载构建内容 (工作流信息)
+      - name: 下载工作流信息
         uses: dawidd6/action-download-artifact@v3
         with:
           workflow_conclusion: success
