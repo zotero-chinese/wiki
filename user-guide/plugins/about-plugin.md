@@ -17,7 +17,7 @@ updated: 2023-11-28 15:29:00
 ## 获取插件
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
-- 国内镜像：<https://plugins.zotero-chinese.com/#/>
+- 国内镜像：[https://zotero-chinese.com/plugins](https://zotero-chinese.com/plugins)
 
 ::: tip 火狐浏览器用户请选择另存为
 
