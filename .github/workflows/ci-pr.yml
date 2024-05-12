@@ -13,7 +13,7 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      fix: true
+      fix: false
 
   build:
     name: 构建文档
