@@ -4,21 +4,24 @@ on:
   pull_request_target:
     branches:
       - main
-
-permissions:
-  contents: write
-  pull-requests: write
+    paths:
+      - "**.md"
+      - ".vitepress/config/sidebar.ts"
 
 jobs:
   lint:
     name: 检查文档格式
     uses: ./.github/workflows/lint.yml
+    permissions:
+      contents: write
     with:
       fix: true
 
   build:
     name: 构建文档
     uses: ./.github/workflows/build.yml
+    permissions:
+      contents: read
 
   deploy:
     name: 部署预览
