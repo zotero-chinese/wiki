@@ -570,6 +570,10 @@ Zotero 里经常需要标记文献阅读状态，比如`在读`，`已读`等。
 
 ![关系图谱的使用](../../assets/image-zoterostyle-关系图谱的使用.gif)
 
+在文库中，你可以选择多个条目快速将他们关联起来。
+
+![关联快速建立](../../assets/image-zoterostyle-关联快速建立.png)
+
 ::: details 点击此处了解 关系图谱 的详细设置和使用方法
 
 ![关系图片的设置](../../assets/image-zoterostyle-关系图谱.png)
