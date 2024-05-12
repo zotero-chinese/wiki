@@ -1,7 +1,7 @@
 name: 部署（预览环境）
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
 

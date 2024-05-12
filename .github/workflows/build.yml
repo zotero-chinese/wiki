@@ -7,12 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 签出仓库
+      - name: 签出仓库 (base)
+        if: github.event_name != 'pull_request_target'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
+
+      - name: 签出仓库 (Pull Request)
+        if: github.event_name == 'pull_request_target'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v3
