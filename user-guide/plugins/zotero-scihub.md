@@ -16,7 +16,19 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
   - 适配 Zotero 6：<https://github.com/ethanwillis/zotero-scihub>
   - 适配 Zotero 7：<https://github.com/syt2/zotero-scipdf>
 - 插件下载：[Zotero 插件中文镜像](https://plugins.zotero-chinese.com/#/)
-- Scihub 镜像地址：`https://www.sci-hub.wf/`、`https://www.sci-hub.ee/`、`https://www.sci-hub.ren/`、`https://www.sci-hub.yt/`、`https://www.sci-hub.ru/`、`https://www.sci-hub.st/`
+- Scihub 镜像地址：`https://www.sci-hub.wf/`、`https://www.sci-hub.ee/`、`https://www.sci-hub.ren/`、`https://www.sci-hub.yt/`、`https://www.sci-hub.ru/`、`https://www.sci-hub.st/`、`https://www.wellesu.com`、`https://www.tesble.com`、`https://www.et-fine.com`
+
+::: tip
+
+由于不同地区的网络运营商可能存在访问限制，建议自行测试以确定可用的 Scihub 镜像地址
+
+:::
+
+::: warning
+
+请注意，提供的镜像地址仅用于下载学术论文。在使用过程中，不要轻信其中的捐款请求。
+
+:::
 
 ::: warning Sci-Hub 的文献访问限制
 
@@ -44,6 +56,10 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 这种情况通常是访问次数过多以后，Sichub 服务器识别到了机器人抓取从而出现了验证码验证，您需要登陆 Scihub 输入出现的验证码信息。
 
 建议在知网抓取文献的时候，建议关闭插件中的 `Automatic PDF Download`。部分中文文献带有 DOI 字段，在抓取这部分中文文献时，插件会访问 Scihub 进行下载，但由于 Scihub 网站基本上没有收录中文文献，所以插件也不会下载到 Pdf 文件。对 Scihub 网站过于频繁的访问会触发网站的验证机制。
+
+![连接至服务器时发生错误](../../assets/image-scihub报错_2.png)
+
+自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见[插件介绍](https://zotero-chinese.com/user-guide/plugins/zotero-scihub.html#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D)。
 
 ::: warning
 
