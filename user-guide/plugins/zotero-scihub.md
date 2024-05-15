@@ -59,7 +59,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ![连接至服务器时发生错误](../../assets/image-scihub报错_2.png)
 
-自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见[插件介绍](https://zotero-chinese.com/user-guide/plugins/zotero-scihub.html#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D)。
+自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
 
 ::: warning
 
