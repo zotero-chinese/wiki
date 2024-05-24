@@ -1,5 +1,6 @@
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
+import "./styles/custom.css";
 
 const tip = h("div", { class: "warning custom-block" }, [
   h("p", { class: "custom-block-title" }, "非正式文档页面"),
