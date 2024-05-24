@@ -35,11 +35,11 @@ Zotero 将是你优秀的科研助手！
 
 ### Zotero 优势
 
-![浏览器快速抓取文献至Zotero](../assets/image-zotero官方-渲染图-connector.png)
+![浏览器快速抓取文献至Zotero](../assets/images/image-zotero官方-渲染图-connector.png)
 
-![清晰明了的分层管理及标签分类](../assets/image-zotero官方-渲染图-管理条目.png)
+![清晰明了的分层管理及标签分类](../assets/images/image-zotero官方-渲染图-管理条目.png)
 
-![写作时方便快速的插入引文](../assets/image-zotero官方-插入引文.png)
+![写作时方便快速的插入引文](../assets/images/image-zotero官方-插入引文.png)
 
 一键抓取文献，保存一切
 

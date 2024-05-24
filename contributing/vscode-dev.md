@@ -9,20 +9,20 @@ icon: flag
 2. 等待页面加载完成
 3. 根据提示登录 GitHub 账号
 
-   ![根据提示登录 GitHub 账号](../assets/image-contribution-guide-vscode1.png)
+   ![根据提示登录 GitHub 账号](../assets/images/image-contribution-guide-vscode1.png)
 
 4. 根据提示安装推荐的插件
 
-   ![安装插件](../assets/image-贡献指南-安装插件.png)
+   ![安装插件](../assets/images/image-贡献指南-安装插件.png)
 
 5. 新建分支
    切换到 `源代码管理`窗格，依次选择`···` 按钮——`分支`——`创建分支`，输入分支名，并按回车确认。创建完成后根据提示切换到新分支。
 
-   ![新建分支](../assets/image-contribute-vscode-new-branch.png)
+   ![新建分支](../assets/images/image-contribute-vscode-new-branch.png)
 
-   ![输入新分支的名字](../assets/image-contribution-new-branch-name.png)
+   ![输入新分支的名字](../assets/images/image-contribution-new-branch-name.png)
 
-   ![切换到新分支](../assets/image-contribution-switch-to-new-branch.png)
+   ![切换到新分支](../assets/images/image-contribution-switch-to-new-branch.png)
 
    ::: tip 为什么要创建新分支？
 
@@ -36,7 +36,7 @@ icon: flag
 
 6. 进行对应的修改
 
-   ![进行对应的修改](../assets/image-贡献指南-进行对应的更改.png)
+   ![进行对应的修改](../assets/images/image-贡献指南-进行对应的更改.png)
 
    ::: tip 上传文件
    图片可以通过在 `src/assets/` 文件夹右击，点击 `上传` 来上传到仓库。
@@ -50,14 +50,14 @@ icon: flag
 
 7. 提交并推送
 
-   ![提交并推送](../assets/image-贡献指南-提交并推送.png)
+   ![提交并推送](../assets/images/image-贡献指南-提交并推送.png)
 
 8. 发起 Pull Request
 9. 等待社区管理员审核合并
 
 PR 发起后，机器人会自动检查 PR 内容是否符合规范，也会部署一个预览版本，可以在这里查看预览。
 
-![netlify预览pr](../assets/image-build-pr预览-1.png)
+![netlify预览pr](../assets/images/image-build-pr预览-1.png)
 
 ::: tip 哪些情况会导致检查错误？
 

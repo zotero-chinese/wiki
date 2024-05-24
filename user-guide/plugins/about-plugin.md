@@ -41,7 +41,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 或者点击`右上角的齿轮` => `Install Add-on From File...` => `选择刚刚下载的 xpi 文件`，即可安装成功。
 
-![安装插件](../../assets/image-zotero-plugin-install.png)
+![安装插件](../../assets/images/image-zotero-plugin-install.png)
 
 ::: tip
 
@@ -51,23 +51,23 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ::: details 无法安装插件"%S"。它可能无法与该版本的 Zotero 兼容
 
-![插件安装失败](../../assets/image-zotero-插件安装失败.png)
+![插件安装失败](../../assets/images/image-zotero-插件安装失败.png)
 
 一些同学在安装插件的时候发现插件安装失败，Zotero 提醒不兼容。这种情况是由于下载的插件版本与插件所支持 Zotero 的版本不一致所导致的。
 
 首先需要确定自己 Zotero 的版本，依次点击 `帮助` => `关于 Zotero`，即可看到自己 Zotero 的版本（如图则是 Zotero 6）
 
-![确定自己的版本号](../../assets/image-zotero-about-zotero.png)
+![确定自己的版本号](../../assets/images/image-zotero-about-zotero.png)
 
 在[国内镜像](https://plugins.zotero-chinese.com/#/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
 
-![目标 Zotero 版本](../../assets/image-目标zotero版本.png)
+![目标 Zotero 版本](../../assets/images/image-目标zotero版本.png)
 
 :::
 
 ## 更新插件
 
-![升级插件](../../assets/image-zotero-plugin-update.png)
+![升级插件](../../assets/images/image-zotero-plugin-update.png)
 
 依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 

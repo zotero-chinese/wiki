@@ -120,9 +120,9 @@ GitHub 相关资料：
 
    点击项目主页 <https://github.com/zotero-chinese/wiki/> 右上角的 Fork 按钮，将该项目复刻到个人 GitHub 账户下。
 
-   ![复刻仓库](../assets/image-fork-repo-1.png)
+   ![复刻仓库](../assets/images/image-fork-repo-1.png)
 
-   ![复刻仓库2](../assets/image-fork-repo-2-1.png)
+   ![复刻仓库2](../assets/images/image-fork-repo-2-1.png)
 
    复制完成后，个人 GitHub 帐号下便有了 <https://github.com/zotero-user/wiki/> 仓库。
 
@@ -130,11 +130,11 @@ GitHub 相关资料：
 
    打开 VS Code，点击 `欢迎页面` 的 `克隆 Git 仓库…`，在弹出窗口中选中 `从 GitHub 克隆`，然后选择自己账户下的 fork 仓库，确认，克隆完成后根据提示打开文件夹。
 
-   ![克隆Git仓库](../assets/8c581efa5ed9f3ac9d5771b89204bd6b_MD5.png)
+   ![克隆Git仓库](../assets/images/8c581efa5ed9f3ac9d5771b89204bd6b_MD5.png)
 
-   ![从GitHub克隆](../assets/741b873973ac5df93faf93cd1a195db2_MD5.png)
+   ![从GitHub克隆](../assets/images/741b873973ac5df93faf93cd1a195db2_MD5.png)
 
-   ![选择仓库](../assets/28f02608aa879ed189ecfecfcab57d16_MD5.png)
+   ![选择仓库](../assets/images/28f02608aa879ed189ecfecfcab57d16_MD5.png)
 
    ::: tip
 
@@ -151,7 +151,7 @@ npm install -g pnpm
 pnpm install
 ```
 
-![安装依赖](../assets/image-build-安装依赖-1.png)
+![安装依赖](../assets/images/image-build-安装依赖-1.png)
 
 ::: info
 
@@ -163,7 +163,7 @@ pnpm install
 
 1. 在本地创建并切换至新分支，假定新分支名为 `pr-workflow`（分支名需简短、描述性且独特）:
 
-   ![创建新分支](../assets/image-build-创建新分支-1.png)
+   ![创建新分支](../assets/images/image-build-创建新分支-1.png)
 
 2. 启动开发服务器
    使用以下命令启动开发服务器，如下图，开发服务器启动后，会给出几个本地链接，访问任一链接（通常为 Local）即可得到预览。
@@ -172,11 +172,11 @@ pnpm install
    pnpm run docs:dev
    ```
 
-   ![启动开服务器](../assets/image-build-启动开发服务器-1.png)
+   ![启动开服务器](../assets/images/image-build-启动开发服务器-1.png)
 
    开发服务器会监听所有 `.md` 文件的修改，当有文件发生保存时，服务器会自动更新预览并刷新网页。
 
-   ![开发服务器](../assets/image-build-dev-server-1.png)
+   ![开发服务器](../assets/images/image-build-dev-server-1.png)
 
 3. 在新建分支中对文档做修改，修改过程中，可以随时在浏览器中检查修改效果
 
@@ -186,9 +186,9 @@ pnpm install
 
    在左侧 " 源代码管理 " 选项卡中，输入一个简短的提交描述，点击提交，然后将修改推送到线上。
 
-   ![提交修改](../assets/image-build-提交修改-1.png)
+   ![提交修改](../assets/images/image-build-提交修改-1.png)
 
-   ![推送修改](../assets/image-build-推送修改-1.png)
+   ![推送修改](../assets/images/image-build-推送修改-1.png)
 
    ::: tip
 
@@ -220,7 +220,7 @@ pnpm install
 
    PR 发起后，Netlify 机器人会自动部署一个预览版本，可以在这里查看预览。
 
-   ![netlify预览pr](../assets/image-build-pr预览-1.png)
+   ![netlify预览pr](../assets/images/image-build-pr预览-1.png)
 
    提交的 PR 在接收前可能需要读者多次修改。这种情况并不要创建新 PR，只需继续本地 pr-workflow 分支中修改并提交，然后再次推送 pr-workflow 分支至远程 origin 即可，修改将自动添加到已提交的 PR 中。
 
@@ -228,7 +228,7 @@ pnpm install
 
 3. PR 被接受并合并至官方 main 分支后，则可以更新 main 分支，并删除 pr-workflow 分支
 
-   ![更新main分支](../assets/image-build-更新main分支-1.png)
+   ![更新main分支](../assets/images/image-build-更新main分支-1.png)
 
 ## 其他的脚本
 

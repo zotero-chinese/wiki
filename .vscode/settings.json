@@ -43,7 +43,7 @@
 
     // Git and GitHub config
     // "**/.*": true,
-    ".github": true,
+    // ".github": true,
     ".gitignore": true,
     ".gitattributes": true,
     ".husky": true,

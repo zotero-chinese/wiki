@@ -19,15 +19,15 @@ title: 直接生成参考文献表
 
 1. 先选择需要引用的文献
 
-   ![选择参考文献](../assets/image-zotero-选择参考文献.png)
+   ![选择参考文献](../assets/images/image-zotero-选择参考文献.png)
 
 2. 右键，在菜单中选择 用所选条目创建参考文献表
 
-   ![创建参考文献表](../assets/image-zotero-创建参考文献表.png)
+   ![创建参考文献表](../assets/images/image-zotero-创建参考文献表.png)
 
 3. 接着根据自己的需要选择需要的 参考文献格式 以及 输出方式
 
-   ![选择引文格式及输出方式](../assets/image-zotero-选择引文格式及输出方式.png)
+   ![选择引文格式及输出方式](../assets/images/image-zotero-选择引文格式及输出方式.png)
 
 4. 如果上一步输出方式选择复制到剪贴板中，此时上述文献的参考文献表就已经复制好了，在任意位置粘贴即可看到。
 
@@ -37,7 +37,7 @@ title: 直接生成参考文献表
 
    :::
 
-   ![粘贴参考文献表](../assets/image-粘贴参考文献表.png)
+   ![粘贴参考文献表](../assets/images/image-粘贴参考文献表.png)
 
 ::: tip 插件推荐
 

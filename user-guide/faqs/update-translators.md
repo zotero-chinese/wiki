@@ -32,7 +32,7 @@ updated: 2023-11-23 16:51:00
 
 2. 在 Zotero 设置中，进入 高级 设置，点击下方“自动检查转换器和样式的更新”后面的 立即更新 按钮。
 
-   ![更新官方 translator](../../assets/image-update-official-translators.jpg){width=60%}
+   ![更新官方 translator](../../assets/images/image-update-official-translators.jpg){width=60%}
 
    ::: tip
 
@@ -42,7 +42,7 @@ updated: 2023-11-23 16:51:00
 
 3. 进入 茉莉花 插件的设置，转到 非官方维护中文翻译器 部分，然后点击 更新全部 按钮。
 
-   ![更新非官网维护中文翻译器](../../assets/image-update-unofficial-translators.jpg){width=60%}
+   ![更新非官网维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg){width=60%}
 
 4. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
@@ -50,11 +50,11 @@ updated: 2023-11-23 16:51:00
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-chrome-2.jpg)
 
    :::
 
@@ -62,11 +62,11 @@ updated: 2023-11-23 16:51:00
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-safari-2.jpg)
 
    :::
 
@@ -78,7 +78,7 @@ updated: 2023-11-23 16:51:00
 
    你也可以通过检查日志的方式确保转换器成功更新
 
-   ![通过日志确保转换器成功更新](../../assets/image-update-translator-如何确保更新成功.jpg)
+   ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
 
    :::
 
@@ -92,23 +92,23 @@ updated: 2023-11-23 16:51:00
 
    例如，下图中的数据储存位置就是 `E:\Zotero File`，这里也可以点击“打开数据文件夹”快速打开你的数据文件夹。
 
-   ![数据储存位置](../../assets/image-zotero-数据储存位置.png)
+   ![数据储存位置](../../assets/images/image-zotero-数据储存位置.png)
 
 2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `E:\Zotero File\translators`），这里是 Zotero translators 的存放位置
 
-   ![translators的存放位置](../../assets/image-数据储存位置translators文件夹.png)
+   ![translators的存放位置](../../assets/images/image-数据储存位置translators文件夹.png)
 
 3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的 translators
 
-   ![手动在GitHub上下载translators](../../assets/image-手动在github下载translators.png)
+   ![手动在GitHub上下载translators](../../assets/images/image-手动在github下载translators.png)
 
 4. 将下载的 zip 文件解压后选择其中所有的 translators 文件（.js 文件），并复制
 
-   ![选择所有的translators文件](../../assets/image-translators文件.png)
+   ![选择所有的translators文件](../../assets/images/image-translators文件.png)
 
 5. 将所有的 translators 粘贴到第 1 步中 translators 文件夹并替换，此时已经完成 Zotero 中 translators 文件的更新
 
-   ![替换旧的translators](../../assets/image-手动更新translators.png)
+   ![替换旧的translators](../../assets/images/image-手动更新translators.png)
 
 6. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
@@ -116,11 +116,11 @@ updated: 2023-11-23 16:51:00
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-chrome-2.jpg)
 
    :::
 
@@ -128,11 +128,11 @@ updated: 2023-11-23 16:51:00
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![打开 Zotero Connector 的选项](../../assets/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
 
-      ![更新 Zotero Connector 中的 translators](../../assets/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-safari-2.jpg)
 
    :::
 
@@ -144,7 +144,7 @@ updated: 2023-11-23 16:51:00
 
    你也可以通过检查日志的方式确保转换器成功更新
 
-   ![通过日志确保转换器成功更新](../../assets/image-update-translator-如何确保更新成功.jpg)
+   ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
    :::
 
 此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。

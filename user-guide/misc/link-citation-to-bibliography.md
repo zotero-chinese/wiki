@@ -13,7 +13,7 @@ title: 在 Word 中把引注链接到参考文献表
 
 建立引注（citation）与参考文献表（bibliography）之间的单向超链接（引用 -> 参考书目），类似于 endnotes 的“Link in-text citations to references in the bibliography”：
 
-![EndNote 中关于链接引注和参考文献表的选项](../../assets/image-endnote-link-citation-to-bib.png)
+![EndNote 中关于链接引注和参考文献表的选项](../../assets/images/image-endnote-link-citation-to-bib.png)
 
 Zotero 官方不提供该功能，这是因为 Zotero 使用的 CSL 处理器将 citation 渲染为一个 filed，无法添加超链接 [^1]。
 
