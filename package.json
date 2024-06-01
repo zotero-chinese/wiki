@@ -13,15 +13,15 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.10.0",
-    "@types/node": "20.12.8",
+    "@mdit/plugin-footnote": "0.12.0",
+    "@types/node": "20.13.0",
     "feed": "4.2.2",
     "husky": "9.0.11",
-    "lint-staged": "15.2.2",
+    "lint-staged": "15.2.5",
     "markdownlint-cli2": "0.13.0",
     "prettier": "2.8.8",
-    "vitepress": "1.1.4",
-    "vue": "3.4.26"
+    "vitepress": "1.2.2",
+    "vue": "3.4.27"
   },
   "lint-staged": {
     "*.md": "prettier --write"
