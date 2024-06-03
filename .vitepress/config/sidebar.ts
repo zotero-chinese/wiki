@@ -155,9 +155,14 @@ export const sidebar = {
     { text: "脚手架", link: "/translator-dev-guide/scaffold" },
   ],
   "/contributing/": [
-    { text: "贡献指南", link: "/contributing/" },
-    { text: "语法风格", link: "/contributing/markdown" },
-    { text: "在线修改", link: "/contributing/vscode-dev" },
-    { text: "构建指南", link: "/contributing/build" },
+    { text: "参与指南", link: "/contributing/" },
+    { text: "文档贡献指南", link: "/contributing/wiki" },
+    { text: "文档语法风格", link: "/contributing/markdown" },
+    {
+      text: "通过 GitHub Workspace 在线修改文档",
+      link: "/contributing/github-workspace",
+    },
+    { text: "通过 VS Code 在线修改文档", link: "/contributing/vscode-dev" },
+    { text: "完整构建指南", link: "/contributing/build" },
   ],
 } satisfies DefaultTheme.Sidebar;
