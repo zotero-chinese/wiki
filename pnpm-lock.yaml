@@ -14,6 +14,12 @@ importers:
       '@types/node':
         specifier: 20.13.0
         version: 20.13.0
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.5
+        version: 5.0.5(vite@5.2.11(@types/node@20.13.0))(vue@3.4.27)
+      '@vue/compiler-sfc':
+        specifier: ^3.4.27
+        version: 3.4.27
       feed:
         specifier: 4.2.2
         version: 4.2.2
@@ -35,6 +41,9 @@ importers:
       vue:
         specifier: 3.4.27
         version: 3.4.27
+      vue-router:
+        specifier: ^4.3.2
+        version: 4.3.2(vue@3.4.27)
 
 packages:
 
@@ -410,8 +419,8 @@ packages:
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
-  '@vitejs/plugin-vue@5.0.4':
-    resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
+  '@vitejs/plugin-vue@5.0.5':
+    resolution: {integrity: sha512-LOjm7XeIimLBZyzinBQ6OSm3UBCNVCpLkxGC0oWmm2YPzVZoxMsdvNVimLTBzpAnR9hl/yn1SHGuRfe6/Td9rQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
@@ -428,6 +437,9 @@ packages:
 
   '@vue/compiler-ssr@3.4.27':
     resolution: {integrity: sha512-CVRzSJIltzMG5FcidsW0jKNQnNRYC8bT21VegyMMtHmhW3UOI7knmUehzswXLrExDLE6lQCZdrhD4ogI7c+vuw==}
+
+  '@vue/devtools-api@6.6.2':
+    resolution: {integrity: sha512-134clD8u7cBBXdmBbXI282gHGF7T/eAbD/G7mAK2llQF62IbI4ny28IVamZVMoJSvfImC2Xxnj732hXkJvUj6g==}
 
   '@vue/devtools-api@7.2.1':
     resolution: {integrity: sha512-6oNCtyFOrNdqm6GUkFujsCgFlpbsHLnZqq7edeM/+cxAbMyCWvsaCsIMUaz7AiluKLccCGEM8fhOsjaKgBvb7g==}
@@ -980,6 +992,11 @@ packages:
       '@vue/composition-api':
         optional: true
 
+  vue-router@4.3.2:
+    resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue@3.4.27:
     resolution: {integrity: sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==}
     peerDependencies:
@@ -1311,7 +1328,7 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vitejs/plugin-vue@5.0.4(vite@5.2.11(@types/node@20.13.0))(vue@3.4.27)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.2.11(@types/node@20.13.0))(vue@3.4.27)':
     dependencies:
       vite: 5.2.11(@types/node@20.13.0)
       vue: 3.4.27
@@ -1345,6 +1362,8 @@ snapshots:
     dependencies:
       '@vue/compiler-dom': 3.4.27
       '@vue/shared': 3.4.27
+
+  '@vue/devtools-api@6.6.2': {}
 
   '@vue/devtools-api@7.2.1(vue@3.4.27)':
     dependencies:
@@ -1859,7 +1878,7 @@ snapshots:
       '@shikijs/core': 1.6.1
       '@shikijs/transformers': 1.6.1
       '@types/markdown-it': 14.1.1
-      '@vitejs/plugin-vue': 5.0.4(vite@5.2.11(@types/node@20.13.0))(vue@3.4.27)
+      '@vitejs/plugin-vue': 5.0.5(vite@5.2.11(@types/node@20.13.0))(vue@3.4.27)
       '@vue/devtools-api': 7.2.1(vue@3.4.27)
       '@vue/shared': 3.4.27
       '@vueuse/core': 10.9.0(vue@3.4.27)
@@ -1901,6 +1920,11 @@ snapshots:
 
   vue-demi@0.14.7(vue@3.4.27):
     dependencies:
+      vue: 3.4.27
+
+  vue-router@4.3.2(vue@3.4.27):
+    dependencies:
+      '@vue/devtools-api': 6.6.2
       vue: 3.4.27
 
   vue@3.4.27:
