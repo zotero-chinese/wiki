@@ -4,11 +4,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/zotero-chinese/wiki)](#贡献者)
 [![GitHub License](https://img.shields.io/github/license/zotero-chinese/wiki)](#协议)
 [![GitHub repo size](https://img.shields.io/github/repo-size/zotero-chinese/wiki)](#zotero-中文文档仓库)
-
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/zotero-chinese/wiki/main)](#zotero-中文文档仓库)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aaa3fdac-5809-409e-b99d-012a232fed18/deploy-status)](https://app.netlify.com/sites/zotero-zh/deploys)
-[![Main Action](https://github.com/zotero-chinese/wiki/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/zotero-chinese/wiki/actions/workflows/main.yml)
-[![pages-build-deployment](https://github.com/zotero-chinese/zotero-chinese.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/zotero-chinese/zotero-chinese.github.io/actions/workflows/pages/pages-build-deployment)
 
 本仓库存储 Zotero 中文社区所建立的各种文档，包括 Zotero 用户文档、Zotero 插件开发文档、CSL 规范中文译文等。
 
