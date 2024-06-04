@@ -61,6 +61,8 @@ date: 2023-09-14 21:17:47
 
    在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器插件中仍然保留 `Update Translaors` 按钮，建议升级浏览器扩展。
 
+   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
+
    :::
 
    ::: details Google Chrome 和 Microsoft Edge
@@ -138,6 +140,8 @@ date: 2023-09-14 21:17:47
    ::: tip
 
    在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器插件中仍然保留 `Update Translaors` 按钮，建议升级浏览器拓展。
+
+   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
 
    :::
 
