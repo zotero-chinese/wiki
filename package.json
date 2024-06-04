@@ -15,12 +15,11 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.12.0",
     "@types/node": "20.13.0",
-    "feed": "4.2.2",
     "husky": "9.0.11",
     "lint-staged": "15.2.5",
     "markdownlint-cli2": "0.13.0",
     "prettier": "2.8.8",
-    "vitepress": "1.2.2",
+    "vitepress": "1.2.3",
     "vue": "3.4.27"
   },
   "lint-staged": {
