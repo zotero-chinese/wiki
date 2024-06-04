@@ -39,7 +39,7 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 
 ::: tip
 
-使用这种方法需要确保以安装浏览器插件 Zotero Connector。如未安装，请参考：[Zotero 下载与安装](install.md) 。
+使用这种方法需要确保以安装浏览器扩展 Zotero Connector。如未安装，请参考：[Zotero 下载与安装](install.md) 。
 
 :::
 

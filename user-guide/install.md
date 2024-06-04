@@ -14,9 +14,9 @@ updated: 2023-07-20 16:51:54
 
 ![image.png](../assets/images/image-下载Zotero.png)
 
-## 浏览器插件 Zotero Connector
+## 浏览器扩展 Zotero Connector
 
-Zotero 相较于其他文献管理软件的一大优势就是可以直接从网页中抓取元数据并存入数据库，这个过程通过浏览器插件 Zotero Connector 实现。
+Zotero 相较于其他文献管理软件的一大优势就是可以直接从网页中抓取元数据并存入数据库，这个过程通过浏览器扩展 Zotero Connector 实现。
 
 请在主程序安装完成后，打开常用的浏览器，点击上图右侧的 Install Connector 按钮下载。
 
@@ -32,7 +32,7 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 :::
 
-下载安装完毕后，在浏览器右上角可看到插件图标（![icon-connector-document.png](../assets/images/icon-connector-document.png)或![image.png](../assets/images/icon-connertor-zotero.png)）。此时，浏览器插件已经安装成功了。
+下载安装完毕后，在浏览器右上角可看到插件图标（![icon-connector-document.png](../assets/images/icon-connector-document.png)或![image.png](../assets/images/icon-connertor-zotero.png)）。此时，浏览器扩展已经安装成功了。
 
 当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document.png](../assets/images/icon-connector-document.png)，![image.png](../assets/images/icon-connertor-zotero.png)或![image.png](../assets/images/icon-connertor-zotero.png)等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](https://zotero.yuque.com/staff-gkhviy/zotero/lx3yts?view=doc_embed) 小节中展开。
 

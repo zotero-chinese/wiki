@@ -48,7 +48,7 @@ updated: 2023-11-23 16:51:00
 
    ::: tip
 
-   在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器插件中仍然保留 `Update Translaors` 按钮，建议升级浏览器扩展。
+   在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，建议升级浏览器扩展。
 
    :::
 
@@ -120,7 +120,7 @@ updated: 2023-11-23 16:51:00
 
    ::: tip
 
-   在 Zotero Connector v5.0.124 中，官方移除了`Update Translaors`按钮，如果你的浏览器插件中仍然保留`Update Translaors`按钮，建议升级浏览器拓展
+   在 Zotero Connector v5.0.124 中，官方移除了`Update Translaors`按钮，如果你的浏览器扩展中仍然保留`Update Translaors`按钮，建议升级浏览器扩展
 
    :::
 
