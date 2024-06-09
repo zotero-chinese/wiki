@@ -16,6 +16,7 @@
   "git.autofetch": true,
   "git.autoStash": true,
   "git.pruneOnFetch": true,
+  "git.enableSmartCommit": true,
   "git.branchProtection": ["main"],
   "git.branchProtectionPrompt": "alwaysPrompt",
   // "git.branchRandomName.enable": true,
@@ -31,7 +32,7 @@
   "markdown.validate.fileLinks.enabled": "error",
   "markdown.validate.referenceLinks.enabled": "ignore",
   "markdown.copyFiles.destination": {
-    "**/*": "${documentWorkspaceFolder}/assets/"
+    "**/*": "${documentWorkspaceFolder}/assets/images/"
   },
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
@@ -50,7 +51,7 @@
     /** custom begin **/
 
     // npm
-    "node_modules": true,
+    // "node_modules": true,
     // "package.json": true
     "package-lock.json": true,
     "pnpm-lock.yaml": true,

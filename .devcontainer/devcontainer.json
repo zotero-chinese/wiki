@@ -36,6 +36,13 @@
         "yzhang.markdown-all-in-one",
         "SimonSiefke.svg-preview"
       ]
+    },
+    "codespaces": {
+      "openFiles": [
+        "src/contributing/wiki.md",
+        "src/contributing/markdown.md",
+        "src/contributing/github-codespace.md"
+      ]
     }
   }
 
