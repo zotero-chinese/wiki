@@ -19,9 +19,13 @@ date: 2023-07-20 23:46:54
 - 文件名应尽量使用单词全称，避免使用各种形式的简写
 - 若文件名中含多个单词，应使用连字符 (hyphen) `-` 连接
 
-## 文档 Frontmatter 规范
+## 文档 FrontMatter 规范
 
-通过 Frontmatter 为每个 Markdown 页面引入配置。
+通过 FrontMatter 为每个 Markdown 页面引入配置。
+
+一般情况下，不需要手动配置 FrontMatter。
+
+:::: details
 
 Frontmatter 必须在 Markdown 文件的顶部，并且被包裹在一对三短划线中间。下面是一个基本的示例:
 
@@ -58,6 +62,8 @@ date: 2023-07-20 23:46:54
 尤其需要注意的是缩进，name 前空二格，加一个短横线 `-`，空一格。`url` 或 `email` 与 `name` 保持对齐，不需要加 `-`。
 
 :::
+
+::::
 
 ## 文档语法风格
 
@@ -274,7 +280,11 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+::: tip 代码块的高级应用
+
 块级代码允许设置行高亮、聚焦、diff 差异等，请参考 [Markdown 扩展 - VitePress](https://vitepress.dev/zh/guide/markdown#line-highlighting-in-code-blocks)
+
+:::
 
 ### 告示块
 

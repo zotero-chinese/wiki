@@ -6,6 +6,8 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/zotero-chinese/wiki)](#zotero-中文文档仓库)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/zotero-chinese/wiki/main)](#zotero-中文文档仓库)
 
+[![在 GitHub Codespaces 中打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/zotero-chinese/wiki?quickstart=1)
+
 本仓库存储 Zotero 中文社区所建立的各种文档，包括 Zotero 用户文档、Zotero 插件开发文档、CSL 规范中文译文等。
 
 ## 访问

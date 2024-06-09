@@ -7,19 +7,15 @@ updated: 2023-09-22 15:23:36
 
 # 构建指南
 
+此页面记录了本项目的完整构建步骤，主要针对喜欢本地开发的同学。
+
+为了降低操作门槛，本指南所述操作步骤均尽可能使用了图形化界面。对于熟悉 Git 的同学，仍可使用自己喜欢的方式进行操作。
+
 ## 项目概览
 
 本文档使用 Markdown 语法编写，产生的 Markdown 文件托管在 GitHub 上，使用 VitePress 作为静态页面生成器将 Markdown 文件构建为 HTML，使用 Netlify 作为持续集成供应商。
 
 目前仓库地址为 <https://github.com/zotero-chinese/wiki/> ，
-
-以下介绍了一次完整修改所需的步骤。
-
-::: tip
-
-为了降低操作门槛，本指南所述操作步骤均尽可能使用了图形化界面。对于熟悉 Git 的同学，仍可使用自己喜欢的方式进行操作。
-
-:::
 
 ## 环境配置
 
@@ -35,29 +31,23 @@ updated: 2023-09-22 15:23:36
 
 用户已安装 git。若未安装，可以使用以下命令安装或更新 git：
 
-::: tabs
+::: code-group
 
-@tab Fedora
-
-```bash
+```bash [Fedora]
 sudo dnf install git
 ```
 
-@tab Ubuntu/Debian
-
-```bash
+```bash [Ubuntu/Debian]
 sudo apt install git
 ```
 
-@tab macOS
-
-```bash
+```bash [macOS]
 brew install git
 ```
 
-@tab Windows
-
+```md [Windows]
 打开 <https://git-scm.com/downloads/> ，下载并安装 Git for Windows。
+```
 
 :::
 
@@ -98,13 +88,13 @@ GitHub 相关资料：
 
 ::: details 安装 Node.js
 
-安装 Node. js
+安装 Node. js：[Node.js 官网](https://nodejs.org/en)
 
 :::
 
 ::: details 安装 VS Code
 
-安装
+<https://code.visualstudio.com/>
 
 :::
 
@@ -161,6 +151,14 @@ pnpm install
 
 ## 修改文档
 
+::: tip 请参阅《使用代码空间修改》
+
+该小节请参阅 [通过 GitHub Codespace 在线修改文档 #修改和提交](./github-codespace.md#2-修改和提交) 了解详情。
+
+:::
+
+:::: details
+
 1. 在本地创建并切换至新分支，假定新分支名为 `pr-workflow`（分支名需简短、描述性且独特）:
 
    ![创建新分支](../assets/images/image-build-创建新分支-1.png)
@@ -204,6 +202,8 @@ pnpm install
 
    :::
 
+::::
+
 ## Pull Request
 
 1. 提交 PR
@@ -240,6 +240,6 @@ pnpm install
 
 一般情况下，图片路径错误、链接错误会导致报错。
 
-### pnpm run lint:md
+### pnpm run lint:fix
 
-运行 Markdown Lint。
+运行 Markdown Lint 和 Prettier，并修复可以自动修复的错误。
