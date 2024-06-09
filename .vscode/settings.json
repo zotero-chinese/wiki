@@ -78,5 +78,6 @@
     // Other files
     "scripts": true,
     "LICENSE": true
-  }
+  },
+  "git.enableSmartCommit": true
 }
