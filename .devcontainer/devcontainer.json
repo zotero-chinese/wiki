@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+  "name": "Zotero 中文社区文档开发容器",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [5173, 4173],
+  "portsAttributes": {
+    "5173": {
+      "label": "文档开发预览"
+    },
+    "4173": {
+      "label": "文档构建预览"
+    }
+  },
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pnpm i",
+  //   "postStartCommand": "pnpm docs:dev",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-zh-hans",
+        "esbenp.prettier-vscode",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "SimonSiefke.svg-preview"
+      ]
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
