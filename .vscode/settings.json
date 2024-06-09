@@ -16,6 +16,7 @@
   "git.autofetch": true,
   "git.autoStash": true,
   "git.pruneOnFetch": true,
+  "git.enableSmartCommit": true,
   "git.branchProtection": ["main"],
   "git.branchProtectionPrompt": "alwaysPrompt",
   // "git.branchRandomName.enable": true,
