@@ -22,7 +22,9 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 支持常用浏览器：Chrome（谷歌浏览器），Firefox（火狐浏览器），Edge（微软自带浏览器），Safari（macOS 自带浏览器）。
 
-::: tip
+此外，360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 的浏览器也适用 Chrome 的扩展。
+
+::: tip 谷歌浏览器可能需要科学上网
 
 由于 Google Chrome Store 在国内无法正常访问，所以如果没有科学上网的手段，建议在国内使用 Microsoft Edge 作为替代品。MS Edge 目前也基于 Chromium 项目，与 Chrome 具备几乎相同的网络兼容性，且可以享受在国内完全可用的同步与扩展服务。
 
@@ -32,9 +34,9 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 :::
 
-下载安装完毕后，在浏览器右上角可看到插件图标（![icon-connector-document.png](../assets/images/icon-connector-document.png)或![image.png](../assets/images/icon-connertor-zotero.png)）。此时，浏览器插件已经安装成功了。
+下载安装完毕后，在浏览器右上角可看到插件图标 ![Zotero](../assets/icons/z.svg)。此时，浏览器插件已经安装成功了。
 
-当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document.png](../assets/images/icon-connector-document.png)，![image.png](../assets/images/icon-connertor-zotero.png)或![image.png](../assets/images/icon-connertor-zotero.png)等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](https://zotero.yuque.com/staff-gkhviy/zotero/lx3yts?view=doc_embed) 小节中展开。
+当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document](../assets/icons/treeitem-journalArticle@2x.png)，![thesis](../assets/icons/treeitem-thesis@2x.png) 或 ![webpage](../assets/icons/treeitem-webpage@2x.png) 等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](./add-items.md) 小节中展开。
 
 ## 其他平台客户端
 
