@@ -14,9 +14,9 @@ updated: 2023-07-20 16:51:54
 
 ![image.png](../assets/images/image-下载Zotero.png)
 
-## 浏览器插件 Zotero Connector
+## 浏览器扩展 Zotero Connector
 
-Zotero 相较于其他文献管理软件的一大优势就是可以直接从网页中抓取元数据并存入数据库，这个过程通过浏览器插件 Zotero Connector 实现。
+Zotero 相较于其他文献管理软件的一大优势就是可以直接从网页中抓取元数据并存入数据库，这个过程通过浏览器扩展 Zotero Connector 实现。
 
 请在主程序安装完成后，打开常用的浏览器，点击上图右侧的 Install Connector 按钮下载。
 
