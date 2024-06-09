@@ -1,7 +1,6 @@
 ---
 title: 如何更新 Translator
 date: 2023-09-14 21:17:47
-updated: 2023-11-23 16:51:00
 ---
 
 # 如何更新 Translator
@@ -14,7 +13,27 @@ updated: 2023-11-23 16:51:00
 
 :::
 
-## 方法 1：一键自动更新
+## 方法 1：一键自动更新 <Badge text='推荐' />
+
+### 步骤 1. 更新官方转换器
+
+在 `Zotero 设置` 中，进入 `高级` 设置，点击下方“自动检查转换器和样式的更新”后面的 `立即更新` 按钮。
+
+![更新官方 translator](../../assets/images/image-update-official-translators.jpg)
+
+::: tip 推荐保持自动更新
+
+我们推荐保持勾选 “自动检查转换器和样式的更新” 以获得最新的官方转换器。
+
+:::
+
+::: warning “更新转换器” 和 “重置转换器” 是不同的！
+
+注意：如无必要，不要点设置页下面的“数据库维护 -> 重置转换器 (Reset Translators)” 按钮，这会删除整个 translators 文件夹。
+
+:::
+
+### 步骤 2. 更新中文转换器
 
 1. 安装新版茉莉花插件
 
@@ -30,21 +49,21 @@ updated: 2023-11-23 16:51:00
 
    :::
 
-2. 在 Zotero 设置中，进入 高级 设置，点击下方“自动检查转换器和样式的更新”后面的 立即更新 按钮。
+2. 进入 茉莉花 插件的设置，转到 “非官方维护中文翻译器” 部分，然后点击 “更新全部” 按钮。
 
-   ![更新官方 translator](../../assets/images/image-update-official-translators.jpg){width=60%}
+   ![更新非官网维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg)
+
+### 步骤 3. 更新 Zotero Connecter 的缓存
+
+1. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
    ::: tip
 
-   建议取消勾选“自动检查转换器和样式的更新”前面的复选框，这样可以避免非官方维护中文转换器被意外替换为官方的版本。如果遇到了文献抓取失败的问题，可再按照本文档的方法更新。
+   在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，建议升级浏览器扩展。
+
+   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
 
    :::
-
-3. 进入 茉莉花 插件的设置，转到 非官方维护中文翻译器 部分，然后点击 更新全部 按钮。
-
-   ![更新非官网维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg){width=60%}
-
-4. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
    ::: details Google Chrome 和 Microsoft Edge
 
@@ -52,21 +71,21 @@ updated: 2023-11-23 16:51:00
 
       ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
 
-   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
 
    :::
 
    ::: details Apple Safari
 
-   1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
+   3. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
       ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
 
-   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   4. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -74,7 +93,7 @@ updated: 2023-11-23 16:51:00
 
    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
 
-   点击 Update Translators 按钮时，请不要吝惜你的鼠标，经验上 **连续多点几（十）次** 通常更有效。
+   点击 Reset Translators 按钮时
 
    你也可以通过检查日志的方式确保转换器成功更新
 
@@ -82,11 +101,17 @@ updated: 2023-11-23 16:51:00
 
    :::
 
-5. 重启浏览器。
+2. 重启浏览器。
 
-6. 此时你已经完成了 translators 的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 4 和步骤 5 。
+3. 此时你已经完成了 translators 的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
 
 ## 方法 2：手动替换文件更新
+
+::: warning 不推荐这种方法
+
+我们推荐使用 “方法 1：自动更新” 完成转换器更新。
+
+:::
 
 1. 在 Zotero-编辑-设置-高级-文件和文件夹 找到自己的数据储存位置。
 
@@ -112,27 +137,35 @@ updated: 2023-11-23 16:51:00
 
 6. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
 
+   ::: tip
+
+   在 Zotero Connector v5.0.124 中，官方移除了`Update Translaors`按钮，如果你的浏览器扩展中仍然保留`Update Translaors`按钮，建议升级浏览器扩展
+
+   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
+
+   :::
+
    ::: details Google Chrome 和 Microsoft Edge
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
       ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
 
-   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-chrome-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
 
    :::
 
    ::: details Apple Safari
 
-   1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
+   3. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
       ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
 
-   2. 点击 Advanced 中的 Update Translators 按钮，**连续多点几（十）次**
+   4. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-safari-2.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -140,7 +173,7 @@ updated: 2023-11-23 16:51:00
 
    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
 
-   点击 Update Translators 按钮时，请不要吝惜你的鼠标，经验上 **连续多点几（十）次** 通常更有效。
+   点击 Reset Translators 按钮时
 
    你也可以通过检查日志的方式确保转换器成功更新
 

@@ -10,6 +10,7 @@ const tip = h("div", { class: "warning custom-block" }, [
 ]);
 
 export default {
+  extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
       "home-hero-image": () => h(tip),

@@ -159,7 +159,7 @@ RSSHub 地址，支持包括**Zotero**、 [Tiny Tiny RSS](https://www.appinn.com
 
 RSS、Miniflux、FreshRSS、Feedly、Inoreader、Feedbin、The Old Reader、Feeds.Pub、本地阅读器一旦检测出 RSS 地址，RSSHub Radar 就会在角标上显示出数量。
 
-RSSHub Radar 浏览器插件下载与安装（含教程）：GitHub 主页、Gitee 镜像主页、RSSHub Radar 与 Zotero 联动。
+RSSHub Radar 浏览器扩展下载与安装（含教程）：GitHub 主页、Gitee 镜像主页、RSSHub Radar 与 Zotero 联动。
 
 ![bili为例](../assets/images/image-feed-25.png)
 

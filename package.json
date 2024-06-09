@@ -4,9 +4,9 @@
   "description": "Zotero 中文手册",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress build",
+    "docs:preview": "vitepress preview",
     "lint:fix": "markdownlint-cli2 --fix **/*.md & prettier --write .",
     "lint:check": "markdownlint-cli2 **/*.md & prettier --check .",
     "git:sync-force": "bash scripts/sync-force.sh",
@@ -15,12 +15,11 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.12.0",
     "@types/node": "20.13.0",
-    "feed": "4.2.2",
     "husky": "9.0.11",
     "lint-staged": "15.2.5",
     "markdownlint-cli2": "0.13.0",
     "prettier": "2.8.8",
-    "vitepress": "1.2.2",
+    "vitepress": "1.2.3",
     "vue": "3.4.27"
   },
   "lint-staged": {

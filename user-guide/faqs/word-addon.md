@@ -287,9 +287,13 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ## 报错“无法与 Zotero 通讯”
 
-::: info 待办
+![无法与Zotero通讯](../../assets/images/image-zotero-addon-无法与Zotero通讯.jpg)
 
-:::
+遇到该问题时，请确保你的 Zotero 程序在运行的状态，如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：
+
+![重新安装加载项](../../assets/images/image-zotero-addon-重新安装加载项.jpg)
+
+依次打开 `编辑` - `设置` - `引用` - `重新安装加载项Microsoft Word`，然后重新打开 Word，问题即可得到解决。
 
 ## Zotero 在更新文档时出错
 

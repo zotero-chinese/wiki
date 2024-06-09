@@ -11,7 +11,7 @@ updated: 2023-11-28 15:29:00
 谈到 Zotero 插件，可能指的有三种东西：
 
 - 安装在 Zotero 里的，用于增强 Zotero 的功能，一般大家提起 `Zotero 插件` 都指的是这一类。本文档中提到的 Zotero 插件都指这一种。
-- （不是 Zotero 插件，是浏览器插件）安装在浏览器里的 Zotero Connecter，用于从网页上抓取文献元数据并存到 Zotero 里。
+- （不是 Zotero 插件，是浏览器扩展）安装在浏览器里的 Zotero Connecter，用于从网页上抓取文献元数据并存到 Zotero 里。
 - （不是 Zotero 插件，是 Word 加载项）在 Microsoft Word 中的，正确称呼是 Word 加载项，用来插入引用和参考文献信息。
 
 ## 获取插件

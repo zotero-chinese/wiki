@@ -12,6 +12,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // Git
+  "git.autofetch": true,
+  "git.autoStash": true,
+  "git.pruneOnFetch": true,
+  "git.branchProtection": ["main"],
+  "git.branchProtectionPrompt": "alwaysPrompt",
+  // "git.branchRandomName.enable": true,
+  "git.showProgress": true,
+
+  // NPM
+  "npm.autoDetect": "on",
+  "npm.enableRunFromFolder": true,
+  "npm.scriptExplorerAction": "run",
+
   /** Markdown 相关 **/
   "markdown.validate.enabled": true,
   "markdown.validate.fileLinks.enabled": "error",
@@ -43,7 +57,8 @@
 
     // Git and GitHub config
     // "**/.*": true,
-    // ".github": true,
+    ".github": true,
+    ".devcontainer": true,
     ".gitignore": true,
     ".gitattributes": true,
     ".husky": true,
