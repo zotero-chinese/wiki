@@ -39,9 +39,9 @@
     },
     "codespaces": {
       "openFiles": [
-        "src/contributing/wiki.md",
-        "src/contributing/markdown.md",
-        "src/contributing/github-codespace.md"
+        "./contributing/wiki.md",
+        "./contributing/markdown.md",
+        "./contributing/github-codespace.md"
       ]
     }
   }
