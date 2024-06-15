@@ -1,17 +1,16 @@
 ---
-title: 引文的样式
+title: 引文的格式
 icon: wand-magic-sparkles
 date: 2023-06-28 21:17:47
-updated: 2023-09-14 16:51:54
 ---
 
-# 引文的样式
+# 引文的格式
 
-Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提供了一组 CSL 格式，可以在 Zotero 内下载安装。
+Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提供了一组 CSL 样式，可以在 Zotero 内下载安装。
 
-但是官方的引用格式对国内期刊支持不全，且目前（CSL 1.0.2）仍未支持双语排版（“et al”与“等”混排），所以国内有热心开发者维护了一份第三方引文格式，读者可以按需下载使用。
+但是官方的 CSL 样式对国内期刊支持不全，且目前（CSL 1.0.2）仍未支持双语排版（“et al”与“等”混排），所以国内有热心开发者维护了一份第三方 CSL 样式，读者可以按需下载使用。
 
-## 官方引文格式下载
+## 官方 CSL 样式下载
 
 ::: tip
 
@@ -31,7 +30,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
    ![官方引文格式下载](../assets/images/image-zotero-官方引文格式.png)
 
-## 第三方引文格式
+## 第三方 CSL 样式下载
 
 ::: tip
 
@@ -41,9 +40,15 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 :::
 
-如果上述引文格式不符合你的要求，可到 [中文 CSL 样式](https://zotero-chinese.com/styles) 下载更多 CSL 引文格式：
+如果上述 CSL 样式不符合你的要求，可到 [中文 CSL 样式](https://zotero-chinese.com/styles) 下载更多 CSL 样式：
 
-1. 首先你需要在 [中文 CSL 样式](https://zotero-chinese.com/styles) 页面上找到合适的 CSL 样式，单击样式名进入样式详情页，然后下滑找到 “下载链接” 小节，将引文格式下载下来：
+1. 首先你需要在 [中文 CSL 样式](https://zotero-chinese.com/styles) 页面上找到合适的 CSL 样式。
+
+   你可以通过搜索和筛选快速找到你需要的样式，把鼠标放在样式的名称上来预览其引注和参考文献表，点击样式名称进入详情页可以查看更多条目的显示效果。
+
+   如果没有你想要的样式，可以点击页首的 “请求新样式 / 报告 CSL 样式问题” 来获取社区帮助。
+
+2. 单击样式名进入样式详情页，然后下滑找到 “下载链接” 小节，点击任意安装链接将样式安装到 Zotero。
 
    <!-- ![下载引文](../assets/images/image-github下载引文格式.png) -->
 
@@ -59,7 +64,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
    :::
 
-2. 在弹出的窗口中点击“确定”后即可将想要的引文格式添加到 Zotero，供后续引用使用。
+3. 在弹出的窗口中点击“确定”后即可将想要的 CSL 样式添加到 Zotero，供后续引用使用。
 
    ![确认安装引文格式](../assets/images/image-确认安装引文格式.png)
 
