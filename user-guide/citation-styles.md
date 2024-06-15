@@ -20,11 +20,11 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 :::
 
-1. 打开 Zotero 软件，选择“编辑—设置”，在弹出窗口中选择“引用”
+1. 打开 Zotero 软件，选择“编辑—设置”，在弹出窗口中选择“引用”。
 
-   ![引文格式管理](../assets/images/image-zotero-引文格式管理.png)
+   <!-- ![引文格式管理](../assets/images/image-zotero-引文格式管理.png) -->
 
-2. 若样式管理器中无符合的样式，可以通过“获取更多样式”，搜索期刊名，即可导入期刊要求的样式
+2. 若样式管理器中无符合的样式，可以通过“获取更多样式”，搜索期刊名，点击符合要求的样式名，即可导入样式。
 
    ![获取更多引文格式](../assets/images/image-zotero-获取更多引文格式.png)
 
@@ -40,37 +40,47 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 :::
 
-如果上述 CSL 样式不符合你的要求，可到 [中文 CSL 样式](https://zotero-chinese.com/styles) 下载更多 CSL 样式：
+如果上述 CSL 样式不符合你的要求，可到 [中文 CSL 样式](https://zotero-chinese.com/styles) 下载更多 CSL 样式。
 
-1. 首先你需要在 [中文 CSL 样式](https://zotero-chinese.com/styles) 页面上找到合适的 CSL 样式。
+### 1. 查找样式
 
-   你可以通过搜索和筛选快速找到你需要的样式，把鼠标放在样式的名称上来预览其引注和参考文献表，点击样式名称进入详情页可以查看更多条目的显示效果。
+首先你需要在 [中文 CSL 样式](https://zotero-chinese.com/styles) 页面上找到合适的 CSL 样式。
 
-   如果没有你想要的样式，可以点击页首的 “请求新样式 / 报告 CSL 样式问题” 来获取社区帮助。
+- 通过搜索和筛选快速找到你需要的样式
+- 把鼠标放在样式的名称上可以预览其引注和参考文献表
+- 点击样式名称进入详情页可以查看更多条目的显示效果
 
-2. 单击样式名进入样式详情页，然后下滑找到 “下载链接” 小节，点击任意安装链接将样式安装到 Zotero。
+如果没有你想要的样式，可以点击页首的 “请求新样式 / 报告 CSL 样式问题” 来获取社区帮助。
 
-   <!-- ![下载引文](../assets/images/image-github下载引文格式.png) -->
+### 2. 安装样式
 
-   ::: warning 确保 Zotero 启动
+1.  单击样式名进入样式详情页，然后下滑找到 “下载链接” 小节，点击任意安装链接。
 
-   注意需要在 Zotero 处于启动状态时点击，可以直接安装。若 Zotero 没有弹出窗口，则右击 - 另存为，将其保存为 `.csl` 文件，然后双击打开 CSL 文件。
+    ::: tip 自行选择可用链接
 
-   :::
+    网站为每一个样式提供了多个下载链接，请自行选择可用的链接。
 
-   ::: tip 自行选择可用链接
+    :::
 
-   网站为每一个样式提供了多个下载链接，请自行选择可用的链接。
+    ::: warning 确保 Zotero 启动
 
-   :::
+    :::
 
-3. 在弹出的窗口中点击“确定”后即可将想要的 CSL 样式添加到 Zotero，供后续引用使用。
+2.  通常情况下，如果 Zotero 处于启动状态，可以出现如下窗口，点击 `OK` 直接安装。
 
-   ![确认安装引文格式](../assets/images/image-确认安装引文格式.png)
+    ![确认安装引文格式](../assets/images/image-zotero-从connector添加csl样式.png)
 
-   由于这些 CSL 样式使用了 citeproc-js 提供了 CSL-M 扩展功能，因此安装时会出现“xxx.csl 不是一个有效的 CSL 1.0.2 样式文件，可能不能和 Zotero 一起正常工作”的警告，**属于正常现象，选择“OK”即可**。
+3.  若没有弹出上图窗口，则 `右击` - `另存为`，将其保存为 `.csl` 文件：
 
-   ![安装引文格式](../assets/images/image-安装引文格式.png)
+    ![另存为csl文件](../assets/images/image-另存为csl文件.png)
+
+    然后双击打开 CSL 文件，在弹出窗口中选择“安装”。
+
+    ![从文件安装csl样式](../assets/images/image-zotero-从文件安装csl样式.png)
+
+4.  由于这些 CSL 样式使用了 `citeproc-js` 提供了 CSL-M 扩展功能，因此安装时会出现“xxx.csl 不是一个有效的 CSL 1.0.2 样式文件，可能不能和 Zotero 一起正常工作”的警告，**属于正常现象，选择“OK”即可**。
+
+    ![安装引文格式 不是有效csl警告](../assets/images/image-安装引文格式-不是有效csl警告.png)
 
 ---
 
