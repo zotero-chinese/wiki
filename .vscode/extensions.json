@@ -4,5 +4,11 @@
     "davidanson.vscode-markdownlint",
     "yzhang.markdown-all-in-one",
     "SimonSiefke.svg-preview"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    "firefox-devtools.vscode-firefox-debug",
+    "christian-kohler.npm-intellisense"
   ]
 }
