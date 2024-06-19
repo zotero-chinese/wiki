@@ -1,6 +1,7 @@
 ---
 title: 如何更新 Translator
 date: 2023-09-14 21:17:47
+redirectFrom: /user-guide/faqs/update-translators.html
 ---
 
 # 如何更新 Translator
@@ -59,15 +60,17 @@ date: 2023-09-14 21:17:47
 
    ::: tip
 
-   在 Zotero Connector v5.0.124 中，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，建议升级浏览器扩展。
+   从 Zotero Connector v5.0.124 开始，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
 
    [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
 
    :::
 
-   ::: details Google Chrome 和 Microsoft Edge
+   请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360 极速浏览器等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
-   1. 右键点击 Zotero Connector 按钮，然后点击 选项
+   ::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
+
+   1. 右键点击 Zotero Connector 按钮，然后点击 选项/Preference
 
       ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
 
@@ -93,9 +96,7 @@ date: 2023-09-14 21:17:47
 
    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
 
-   点击 Reset Translators 按钮时
-
-   你也可以通过检查日志的方式确保转换器成功更新
+   点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新
 
    ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
 
@@ -181,3 +182,7 @@ date: 2023-09-14 21:17:47
    :::
 
 此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
+
+## 更新以后仍然有问题？你可能需要重装 Zotero Connector
+
+如果按照上面的步骤更新后仍然无法正常抓取，建议卸载并重装最新版本的 Zotero Connector 浏览器插件。
