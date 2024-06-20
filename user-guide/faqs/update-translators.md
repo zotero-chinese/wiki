@@ -21,17 +21,17 @@ Zotero 文库中主要有三类内容： **文献条目，附件文件，笔记*
 ![文库中常见的几种情况](../../assets/images/image-item-in-zotero.png)
 
 - **绿色**的情况最完美，可以正常阅读文献也可以正常引用；
-- **橙色**的情况有正确的文献信息，可以正常引用，在手动补充附件后也可以在 Zotero 中阅读论文全文；
-- **红色**的情况只有一个顶级附件，无法正常引用，必须为其创建/抓取一个条目后才能正常引用。
+- **橙色**的情况有正确的文献信息，可以正常引用，在[手动补充附件](../add-attachments.html#为条目添加附件)后也可以在 Zotero 中阅读论文全文；
+- **红色**的情况只有一个顶级附件，无法正常引用，必须为其[抓取](../add-items.html#通过附件添加条目-推荐)/[创建](../add-items.html#手动创建条目-万能方法)一个条目后才能正常引用。
 
 :::
 
-Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元数据）** ，以及相应的 **PDF 附件** 。
+Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两类内容： **文献信息（文献条目的元数据）** ，以及相应的 **附件（如 PDF 全文、网页截图等）** 。
 
-- 一般来说，只要你在网页上或 Zotero 里 **能够正确地识别出文献类型** （条目图标是正常的文献类型图标，而不是“其他”或“网页”类型），就已经意味着你的文献信息/元数据 **抓取是成功的** 了。
+- 一般来说，只要你在网页上或 Zotero 里 **能够正确地识别出文献类型** （[条目图标](../add-items.html#条目-item)与该文献的类型相对应），就已经意味着你的文献信息/元数据 **抓取是成功的** 了。如果希望抓取的是`学位论文`，条目左边的图标却是`网页`或`期刊文章`，这通常意味着抓取失败或抓取到的部分信息不准确。
 - 通过网页自动抓取 PDF 附件的功能在实际使用中比较玄学，可能会因为各种各样的限制无法自动抓到附件。 **如果条目抓取正常，只是抓不到附件，通常是无解的。**
 
-正因如此， **只要你能够正确抓取到文献信息，就不建议继续折腾下去了。如果抓不到 PDF 附件，建议直接手动下载后添加到 Zotero 里抓取好的条目中。** 。
+正因如此， **只要你能够正确抓取到文献信息，就不建议继续折腾下去了。如果抓不到 PDF 附件，建议直接手动下载后[添加到 Zotero 中抓取好的条目](../add-attachments.html#为条目添加附件)。** 。
 
 如果你不能正确地抓取文献信息，或者抓取后的条目里文献信息缺失，那么下面这篇文档会对你有所帮助。
 
@@ -71,7 +71,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
    更新 translator 之前请确保你安装的 茉莉花 插件已经是最新版本。如果你的 茉莉花 插件版本过低，更新可能会失败。最新的 茉莉花 插件安装包可在这里下载，然后覆盖安装即可：
 
-   中文插件商店：[https://plugins.zotero-chinese.com/](https://plugins.zotero-chinese.com/)
+   中文插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
 
    ::: tip
 
@@ -81,7 +81,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
 2. 进入 茉莉花 插件的设置，转到 “非官方维护中文翻译器” 部分，然后点击 “更新全部” 按钮。
 
-   ![更新非官网维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg)
+   ![更新非官方维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg)
 
    ::: info 提醒
 
@@ -95,7 +95,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
 
    [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
 
@@ -117,7 +117,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
    ::: details Apple Safari
 
-   虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge 或 Google Chrome 浏览器进行抓取。
+   虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
@@ -177,7 +177,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
 
    [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
 
@@ -199,7 +199,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
    ::: details Apple Safari
 
-   虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge 或 Google Chrome 浏览器进行抓取。
+   虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
@@ -240,9 +240,11 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
     Mozilla Firefox：点击浏览器界面右上角的 `三横线` 按钮，然后点击 `扩展和主题`。
 
-    ![在扩展中移除 Zotero Connector](../../assets/images/image-uninstall-connector-chrome.jpg)
+    ![在 Chrome 中打开管理扩展程序](../../assets/images/image-uninstall-connector-chrome.jpg)
 
 2.  找到 Zotero Connector，点击 `移除` / `删除` / `三个点` 按钮里的 `移除`。
+
+![在扩展中移除 Zotero Connector](../../assets/images/image-uninstall-connector-chrome2.jpg)
 
 3.  按照下面教程中的步骤重新安装最新版的 Zotero Connector 浏览器扩展。
 
@@ -252,7 +254,7 @@ Zotero 在网页上能抓取两类内容： **文献信息（文献条目的元�
 
 ::: details Apple Safari
 
-虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge 或 Google Chrome 浏览器进行抓取。
+虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
 Safari 的浏览器插件是跟随 Zotero 客户端一同安装的，重装 Zotero Connector 时通常需要卸载并重装 Zotero 客户端本体。
 
@@ -260,9 +262,11 @@ Safari 的浏览器插件是跟随 Zotero 客户端一同安装的，重装 Zote
 
 1.  打开 Safari，点击系统菜单栏左上角的 `Safari 浏览器`，然后点击 `设置`。
 
+    ![打开 Safari 设置](../../assets/images/image-uninstall-connector-safari.jpg)
+
 2.  在弹出的窗口中点击顶部的 `扩展` 选项卡，在左边栏找到 Zotero Connector，然后点击右边界面里的 `卸载`。
 
-    ![在扩展中点击卸载](../../assets/images/image-uninstall-connector-safari.jpg)
+    ![在扩展中点击卸载](../../assets/images/image-uninstall-connector-safari1.jpg)
 
 3.  点击弹窗中的 `在访达中显示`。
 
@@ -288,4 +292,4 @@ Safari 的浏览器插件是跟随 Zotero 客户端一同安装的，重装 Zote
 
 ## 使用其他添加条目的方式 <Badge text="初级" />
 
-如果以上所有操作都未能解决你遇到的抓取问题，可能你访问的网页目前无法通过 Zotero Connector 抓取文献信息。你可以尝试换其他网站进行抓取，或者改用 `通过附件添加条目`、`由通用格式的引用信息导入` 以及 `手动创建条目` 等备用方式。详细操作步骤请阅读 [添加条目教程](../add-items.md) 。
+如果以上所有操作都未能解决你遇到的抓取问题，可能你访问的网页目前无法通过 Zotero Connector 抓取文献信息。你可以尝试换其他网站进行抓取，或者改用 [通过附件添加条目](../add-items.html#通过附件添加条目-推荐)、[由通用格式的引用信息导入](../add-items.html#由通用格式的引用信息导入-通用方法) 以及 [手动创建条目](../add-items.html#手动创建条目-万能方法) 等备用方式。详细操作步骤请阅读 [添加条目教程](../add-items.md) 。

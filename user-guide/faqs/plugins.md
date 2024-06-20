@@ -28,5 +28,5 @@ order: 1
 
 ## 插件检查更新时提示未找到更新
 
-可能是确实没有更新，也可能是无法链接到 GitHub。请在插件商店寻找你需要的安装包：[https://plugins.zotero-chinese.com/#/](https://plugins.zotero-chinese.com/#/)
+可能是确实没有更新，也可能是无法链接到 GitHub。请在插件商店寻找你需要的安装包：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
 即使你能够打开 GitHub 页面，也并不代表 Zotero 能够顺利下载到插件更新。这取决于网络情况。

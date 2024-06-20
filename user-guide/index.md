@@ -47,7 +47,7 @@ updated: 2023-07-20 16:51:54
   - [Zotero 官方手册](https://www.zotero.org/support/)
   - [Zotero 论坛](https://forums.zotero.org/discussions)
 - Zotero 资源
-  - [Zotero 常用插件下载国内镜像](https://plugins.zotero-chinese.com/#/)
+  - [Zotero 常用插件下载国内镜像](https://zotero-chinese.com/plugins/)
   - [中文 CSL 样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
 - Zotero 开发者
   - [Zotero 插件开发中文文档](../plugin-dev-guide/index.md)

@@ -26,7 +26,7 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 ::: tip 谷歌浏览器可能需要科学上网
 
-由于 Google Chrome Store 在国内无法正常访问，所以如果没有科学上网的手段，建议在国内使用 Microsoft Edge 作为替代品。MS Edge 目前也基于 Chromium 项目，与 Chrome 具备几乎相同的网络兼容性，且可以享受在国内完全可用的同步与扩展服务。
+由于 Google Chrome Store 在国内无法正常访问，所以如果没有科学上网的手段，建议在国内使用 Microsoft Edge 作为替代品。Microsoft Edge 目前也基于 Chromium 项目，与 Chrome 具备几乎相同的网络兼容性，且可以享受在国内完全可用的同步与扩展服务。
 
 如果你使用谷歌浏览器且无法打开插件下载页面，可在其他镜像站下载。例如：
 
