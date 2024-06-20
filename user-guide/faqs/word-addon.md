@@ -8,7 +8,6 @@ author:
     url: https://github.com/wakewon
 date: 2023-10-04 11:38:09
 updated: 2024-01-31 20:01:21
-redirectFrom: /user-guide/faqs/word-addon.html
 order: 2
 ---
 
