@@ -26,22 +26,22 @@ Zotero 文库中主要有三类内容： **文献条目，附件文件，笔记*
 
 :::
 
-Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两类内容： **文献信息（文献条目的元数据）** ，以及相应的 **附件（如 PDF 全文、网页截图等）** 。
+Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两类内容： **文献信息（文献条目的元数据）** ，以及相应的 **附件（如 PDF 全文、网页截图等）** 。
 
-- 一般来说，只要你在网页上或 Zotero 里 **能够正确地识别出文献类型** （[条目图标](../add-items.md#条目-item)与该文献的类型相对应），就已经意味着你的文献信息/元数据 **抓取是成功的** 了。如果希望抓取的是`学位论文`，条目左边的图标却是`网页`或`期刊文章`，这通常意味着抓取失败或抓取到的部分信息不准确。
+- 一般来说，只要你在网页上或 Zotero 里 **能够正确地识别出文献类型** （[条目图标](../add-items.md#条目-item)与该文献的类型相对应），就已经意味着你的文献信息/元数据 **抓取是成功的** 。如果希望抓取的是`学位论文`，条目左边的图标却是`网页`或`期刊文章`，这通常意味着抓取失败或抓取到的部分信息不准确。
 - 通过网页自动抓取 PDF 附件的功能在实际使用中比较玄学，可能会因为各种各样的限制无法自动抓到附件。 **如果条目抓取正常，只是抓不到附件，通常是无解的。**
 
 正因如此， **只要你能够正确抓取到文献信息，就不建议继续折腾下去了。如果抓不到 PDF 附件，建议直接手动下载后[添加到 Zotero 中抓取好的条目](../add-attachments.md#为条目添加附件)。** 。
 
 如果你不能正确地抓取文献信息，或者抓取后的条目里文献信息缺失，那么下面这篇文档会对你有所帮助。
 
-## 更新抓取文献信息的 translator
+## 更新抓取文献信息的转换器
 
-在使用 Zotero 的过程中，我们经常需要更新 translators 来实现从网页快速抓取文献信息。通常，我们可以借助 Zotero 本身的功能以及 茉莉花 插件快速完成该操作。但当 Zotero 或 茉莉花 插件出现故障无法完成一键自动更新时，我们也可以手动下载新版的 translators 文件，并进行手动更新。
+在使用 Zotero 的过程中，我们经常需要更新 `转换器` 来实现从网页快速抓取文献信息。通常，我们可以借助 Zotero 本身的功能以及 茉莉花 插件快速完成该操作。但当 Zotero 或 茉莉花 插件出现故障无法完成一键自动更新时，我们也可以手动下载新版的转换器文件，并进行手动更新。
 
 ::: info 提醒
 
-这里的 translator 指的是 Zotero 从浏览器网页抓取文献信息时所需的转换器，在 Zotero 中有时也被称作是“翻译器”。如果你遇到的是语言翻译问题（如标题翻译、摘要翻译、文献阅读中的句段翻译等），通常与本文讲的 translator 无关，请参照 Translate for Zotero 插件的教程进行排查。
+这里的“转换器”指的是 Zotero 从浏览器网页抓取文献信息时所需的转换器，在 Zotero 中有时也被称作是“翻译器”或“translator”。如果你遇到的是语言翻译问题（如标题翻译、摘要翻译、文献阅读中的句段翻译等），通常与本文讲的转换器（translator）无关，请参照 Translate for Zotero 插件的教程进行排查。
 
 :::
 
@@ -51,7 +51,7 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
 在 `Zotero 设置` 中，进入 `高级` 设置，点击下方“自动检查转换器和样式的更新”后面的 `立即更新` 按钮。
 
-![更新官方 translator](../../assets/images/image-update-official-translators.jpg)
+![更新官方转换器](../../assets/images/image-update-official-translators.jpg)
 
 ::: tip 推荐保持自动更新
 
@@ -69,7 +69,7 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
 1. 安装新版茉莉花插件
 
-   更新 translator 之前请确保你安装的 茉莉花 插件已经是最新版本。如果你的 茉莉花 插件版本过低，更新可能会失败。最新的 茉莉花 插件安装包可在这里下载，然后覆盖安装即可：
+   更新转换器之前请确保你安装的 茉莉花 插件已经是最新版本。如果你的 茉莉花 插件版本过低，更新可能会失败。最新的 茉莉花 插件安装包可在这里下载，然后覆盖安装即可：
 
    中文插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
 
@@ -79,25 +79,23 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
    :::
 
-2. 进入 茉莉花 插件的设置，转到 “非官方维护中文翻译器” 部分，然后点击 “更新全部” 按钮。
+2. 进入 茉莉花 插件的设置，转到 “非官方维护中文转换器（翻译器）” 部分，然后点击 “更新全部” 按钮。
 
-   ![更新非官方维护中文翻译器](../../assets/images/image-update-unofficial-translators.jpg)
+   ![更新“非官方维护中文转换器”](../../assets/images/image-update-unofficial-translators.jpg)
 
    ::: info 提醒
 
-   建议不定期来这里更新一下非官方维护中文 tranlator。特别是再遇到中文文献无法抓取的时候，通常意味着这里的 translator 需要更新了。
+   建议不定期来这里更新一下非官方维护中文转换器（翻译器）。特别是在遇到中文文献无法抓取的时候，通常意味着这里的转换器需要更新了。
 
    :::
 
 #### 步骤 3. 更新 Zotero Connecter 的缓存
 
-1. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
+1. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
-
-   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
    :::
 
@@ -131,7 +129,7 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
    ::: warning
 
-   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
+   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
 
    点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新
 
@@ -141,9 +139,9 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
 2. 重启浏览器。
 
-3. 此时你已经完成了 translators 的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
+3. 此时你已经完成了转换器的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
 
-### 方法 2：手动替换文件更新 <Badge text="高级" />
+### 方法 2：手动替换转换器文件更新 <Badge text="高级" />
 
 ::: warning 不推荐这种方法
 
@@ -157,29 +155,27 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
    ![数据储存位置](../../assets/images/image-zotero-数据储存位置.png)
 
-2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `E:\Zotero File\translators`），这里是 Zotero translators 的存放位置
+2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `E:\Zotero File\translators`），这里是 Zotero 转换器 的存放位置。
 
-   ![translators的存放位置](../../assets/images/image-数据储存位置translators文件夹.png)
+   ![转换器的存放位置](../../assets/images/image-数据储存位置translators文件夹.png)
 
-3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的 translators
+3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的转换器。
 
-   ![手动在GitHub上下载translators](../../assets/images/image-手动在github下载translators.png)
+   ![手动在GitHub上下载转换器](../../assets/images/image-手动在github下载translators.png)
 
-4. 将下载的 zip 文件解压后选择其中所有的 translators 文件（.js 文件），并复制
+4. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
-   ![选择所有的translators文件](../../assets/images/image-translators文件.png)
+   ![选择所有的转换器文件](../../assets/images/image-translators文件.png)
 
-5. 将所有的 translators 粘贴到第 1 步中 translators 文件夹并替换，此时已经完成 Zotero 中 translators 文件的更新
+5. 将所有的转换器文件粘贴到第 1 步中 translators 文件夹并替换，此时已经完成 Zotero 中 转换器文件的更新。
 
-   ![替换旧的translators](../../assets/images/image-手动更新translators.png)
+   ![替换旧的转换器](../../assets/images/image-手动更新translators.png)
 
-6. 更新 **每一个浏览器** 中 Zotero Connector 插件里的 translators。
+6. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先升级 Zotero Connector 浏览器扩展再进行后续操作。
-
-   [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
    :::
 
@@ -213,7 +209,7 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
    ::: warning
 
-   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 插件更新 translators！
+   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
 
    点击 Reset Translators 按钮时
 
@@ -222,11 +218,11 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
    ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
    :::
 
-此时你已经完成了 translators 的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
+此时你已经完成了转换器的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
 
-## 卸载并重装 Zotero Connector 浏览器插件 <Badge text="中级" />
+## 卸载并重装 Zotero Connector 浏览器扩展 <Badge text="中级" />
 
-如果按照上面的步骤更新后仍然无法正常抓取，建议卸载并重装最新版本的 Zotero Connector 浏览器插件。
+如果按照上面的步骤更新后仍然无法正常抓取，建议卸载并重装最新版本的 Zotero Connector 浏览器扩展。
 
 请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
@@ -244,11 +240,11 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
 2.  找到 Zotero Connector，点击 `移除` / `删除` / `三个点` 按钮里的 `移除`。
 
-![在扩展中移除 Zotero Connector](../../assets/images/image-uninstall-connector-chrome2.jpg)
+    ![在扩展中移除 Zotero Connector](../../assets/images/image-uninstall-connector-chrome2.jpg)
 
-3.  按照下面教程中的步骤重新安装最新版的 Zotero Connector 浏览器扩展。
+3.  按照下面教程中的说明重新安装最新版的 Zotero Connector 浏览器扩展。
 
-    [获取 Zotero Connector 下载链接](../install.md#浏览器插件-zotero-connector)
+    [Zotero Connector 浏览器扩展安装说明](../install.md#浏览器扩展-zotero-connector)
 
 :::
 
@@ -256,7 +252,7 @@ Zotero Connector 浏览器插件在网页上抓取文献时通常可以得到两
 
 虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
-Safari 的浏览器插件是跟随 Zotero 客户端一同安装的，重装 Zotero Connector 时通常需要卸载并重装 Zotero 客户端本体。
+Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zotero Connector 时通常需要卸载并重装 Zotero 客户端本体。
 
 通常来说，仅删除 Zotero 客户端本体的执行文件不会影响到你的文库文献、设置、插件等数据，重新安装 Zotero 后所有内容都会保持以前的状态。如果不放心，你也可以先查看这一篇文档先备份一下 Zotero 数据文件和用户配置文件：[备份 Zotero 数据](../backup.md)
 
@@ -278,9 +274,9 @@ Safari 的浏览器插件是跟随 Zotero 客户端一同安装的，重装 Zote
 
 5.  重新从 Zotero 官网下载新的 Zotero 安装包并完成安装。[获取 Zotero 下载链接](../install.md)
 
-6.  运行一次 Zotero，此时 Safari 的 Zotero Connector 插件会自动安装。
+6.  运行一次 Zotero，此时 Safari 的 Zotero Connector 扩展会自动安装。
 
-7.  重新运行 Safari 浏览器，如果没有看到 Zotero Connector 插件图标，你可以在第 2 步的 `扩展` 选项卡中找到左边栏里的 Zotero Connector，确保它前面的复选框已经勾选。
+7.  重新运行 Safari 浏览器，如果没有看到 Zotero Connector 扩展图标，你可以在第 2 步的 `扩展` 选项卡中找到左边栏里的 Zotero Connector，确保它前面的复选框已经勾选。
 
 8.  如果 Zotero Connector 图标仍未出现，你可以在 Safari 窗口顶部的按钮区域空白处点鼠标右键，然后点击 `自定义工具栏...`，然后将下方的 Zotero Connector 图标拖到上方按钮区域里你希望放置的位置上。
 
