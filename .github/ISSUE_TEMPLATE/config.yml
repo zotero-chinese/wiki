@@ -1,5 +1,13 @@
 blank_issues_enabled: true
 contact_links:
+  - name: 查看参与指南
+    url: https://zotero-chinese.com/contributing/
+    about: "来这里了解如何参与到社区建设中！"
+
+  - name: 反馈关于网站的问题
+    url: https://github.com/zotero-chinese/website
+    about: "前往 zotero-chinese/website 仓库反馈关于网站的问题！"
+
   - name: 提问、求助、好想法
     url: https://github.com/orgs/zotero-chinese/discussions/new/choose
     about: "前往 Discussion 参与讨论！"
