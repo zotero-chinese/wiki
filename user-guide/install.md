@@ -26,17 +26,17 @@ Zotero 相较于其他文献管理软件的一大优势就是可以直接从网�
 
 ::: tip 谷歌浏览器可能需要科学上网
 
-由于 Google Chrome Store 在国内无法正常访问，所以如果没有科学上网的手段，建议在国内使用 Microsoft Edge 作为替代品。MS Edge 目前也基于 Chromium 项目，与 Chrome 具备几乎相同的网络兼容性，且可以享受在国内完全可用的同步与扩展服务。
+由于 Google Chrome Store 在国内无法正常访问，所以如果没有科学上网的手段，建议在国内使用 Microsoft Edge 作为替代品。Microsoft Edge 目前也基于 Chromium 项目，与 Chrome 具备几乎相同的网络兼容性，且可以享受在国内完全可用的同步与扩展服务。
 
-如果你使用谷歌浏览器且无法打开插件下载页面，可在其他镜像站下载。例如：
+如果你使用谷歌浏览器且无法打开扩展下载页面，可在其他镜像站下载。例如：
 
 - [https://www.crxsoso.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc](https://www.crxsoso.com/webstore/detail/ekhagklcjbdpajgpjgmbionohlpdbjgc)
 
 :::
 
-下载安装完毕后，在浏览器右上角可看到插件图标 ![Zotero](../assets/icons/z.svg)。此时，浏览器插件已经安装成功了。
+下载安装完毕后，在浏览器右上角可看到扩展图标 ![Zotero](../assets/icons/z.svg)。此时，浏览器扩展已经安装成功了。
 
-当你打开一个可抓取文献的网页时，插件图标会显示为![icon-connector-document](../assets/icons/treeitem-journalArticle@2x.png)，![thesis](../assets/icons/treeitem-thesis@2x.png) 或 ![webpage](../assets/icons/treeitem-webpage@2x.png) 等。稍后当我们设置完成，点击插件图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](./add-items.md) 小节中展开。
+当你打开一个可抓取文献的网页时，扩展图标会显示为![icon-connector-document](../assets/icons/treeitem-journalArticle@2x.png)，![thesis](../assets/icons/treeitem-thesis@2x.png) 或 ![webpage](../assets/icons/treeitem-webpage@2x.png) 等。稍后当我们设置完成，点击扩展图标即可抓取文献。具体使用方法将在 [将条目添加进文献库](./add-items.md) 小节中展开。
 
 ## 其他平台客户端
 

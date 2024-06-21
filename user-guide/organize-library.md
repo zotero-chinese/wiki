@@ -155,4 +155,4 @@ Zotero 支持最多 9 种彩色标签。通过为标签赋予颜色，可以：
 - 通过右键菜单批量增加或移除标签
 - 通过右键菜单移除不常用的标签
 
-可在 [https://github.com/windingwind/zotero-tag](https://github.com/windingwind/zotero-tag) 下载。（如果无法访问 GitHub，可从 Zotero 插件商店 [https://plugins.zotero-chinese.com/#/](https://plugins.zotero-chinese.com/#/) 下载）
+可在 [https://github.com/windingwind/zotero-tag](https://github.com/windingwind/zotero-tag) 下载。（如果无法访问 GitHub，可从 Zotero 插件商店 [https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/) 下载）
