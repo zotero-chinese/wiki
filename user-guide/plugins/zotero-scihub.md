@@ -6,7 +6,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ## 插件介绍
 
-这是 Zotero 的一个附加组件，会自动从 SciHub 上为带有 DOI 的条目自动下载 pdf 格式的论文文件。
+这是 Zotero 的一个插件，会自动从 SciHub 上为带有 DOI 的条目自动下载 pdf 格式的论文文件。
 
 一旦你安装该插件，右键单击你收藏中的任何项目。现在将有一个名为`Update Scihub PDF`的菜单选项。点击后，将从 Scihub 下载 PDF 格式的文件，并附加到 Zotero 中对应的条目下。
 

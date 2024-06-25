@@ -277,7 +277,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开【**工具/Tools**】-【**插件/Add-ons**】
+若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins / 附加组件 / Add-ons`，
 
 ![image.png](../../assets/images/image-tools-addon.png)
 
