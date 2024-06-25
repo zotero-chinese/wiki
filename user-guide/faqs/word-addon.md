@@ -224,7 +224,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 你需要：
 
-1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方引文格式)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
+1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方-csl-样式下载)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
 2. 需要在 Word 中指定当前文档使用的样式
 
    ![文档设置](../../assets/images/image-word-document-preferences2.png){width=60%}
