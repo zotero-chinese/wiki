@@ -37,7 +37,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ## 安装插件
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
+依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
 
 或者点击`右上角的齿轮` => `Install Add-on From File...` => `选择刚刚下载的 xpi 文件`，即可安装成功。
 
@@ -69,7 +69,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ![升级插件](../../assets/images/image-zotero-plugin-update.png)
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
+依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 
 ::: tip
 
