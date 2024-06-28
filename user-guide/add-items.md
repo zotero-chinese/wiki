@@ -136,7 +136,7 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 ![获取元数据成功](../assets/images/image-get-metadata-cn1.webp)
 
-如果你没有安装茉莉花，请前往 [插件商店](https://zotero-chinese.com/plugins) 下载安装插件。关于什么是插件，请参阅 [关于插件](./plugins/about-plugin.md)。
+如果你没有安装茉莉花，请前往 [茉莉花](./plugins/jasminum.md) 了解详情。关于什么是插件，请参阅 [关于插件](./plugins/about-plugin.md)。
 
 :::
 
