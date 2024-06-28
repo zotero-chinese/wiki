@@ -169,7 +169,7 @@ $ tree -L 1
 ✅ 备份 Locate 文件夹
 ✅ 备份 Zotero 配置及插件配置
 
-下载地址：[GitHub](https://github.com/l0o0/tara) 或 [中文社区插件合集页](https://plugins.zotero-chinese.com)
+下载地址：[GitHub](https://github.com/l0o0/tara) 或 [中文社区插件合集页](https://zotero-chinese.com/plugins)
 
 :::
 
