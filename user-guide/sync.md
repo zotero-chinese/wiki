@@ -142,4 +142,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 :::
 
 ::: tip 施工中
+
+[Alternative Syncing Solutions - Zotero Documentation](https://www.zotero.org/support/sync#alternative_syncing_solutions)
+
 :::

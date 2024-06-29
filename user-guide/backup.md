@@ -160,3 +160,18 @@ $ tree -L 1
 ## 使用插件蒲公英 `Tara` 进行数据的备份和恢复
 
 请参阅 [使用 Tara 备份数据](./plugins/tara.md)。
+
+## 从备份恢复数据
+
+::: info 施工中
+
+请参阅：[Restoring Your Zotero Data From a Backup - Zotero Documentation](https://www.zotero.org/support/zotero_data#restoring_your_zotero_data_from_a_backup)
+
+- Restoring Your Zotero Data Using Zotero Syncing
+- Restoring Your Zotero Data From a Backup
+- Restoring Your Zotero Data From a Backup and Overwriting Synced Changes
+- Restoring From the Last Automatic Backup
+- Restoring From the Last Upgrade Backup
+- Locating Missing Zotero Data
+
+:::
