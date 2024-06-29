@@ -15,7 +15,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 - Zotero SciHub 插件的 GitHub 地址：
   - 适配 Zotero 6：<https://github.com/ethanwillis/zotero-scihub>
   - 适配 Zotero 7：<https://github.com/syt2/zotero-scipdf>
-- 插件下载：[Zotero 插件中文镜像](https://zotero-chinese.com/plugins/)
+- 插件下载：[Zotero 插件中文镜像](https://zotero-chinese.com/plugins/#search=sci-hub)
 - Scihub 镜像地址：`https://www.sci-hub.wf/`、`https://www.sci-hub.ee/`、`https://www.sci-hub.ren/`、`https://www.sci-hub.yt/`、`https://www.sci-hub.ru/`、`https://www.sci-hub.st/`、`https://www.wellesu.com`、`https://www.tesble.com`、`https://www.et-fine.com`
 
 ::: tip

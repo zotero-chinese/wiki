@@ -7,7 +7,7 @@
 - 项目主页：[GitHub](https://github.com/northword/zotero-format-metadata/)
 - 插件下载地址
   - [GitHub Release](https://github.com/northword/zotero-format-metadata/releases)
-  - [国内镜像](https://zotero-chinese.com/plugins/)
+  - [国内镜像](https://zotero-chinese.com/plugins/#search=linter)
 
 :::
 
