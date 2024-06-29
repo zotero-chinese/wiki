@@ -85,14 +85,27 @@ export const sidebar = {
         },
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
         {
-          text: "无法打开“获取更多样式”",
-          link: "/user-guide/faqs/get-more-style-cannot-open",
+          text: "阅读器相关",
+          items: [
+            {
+              text: "PDF 上存在黑色遮罩",
+              link: "/user-guide/faqs/pdf-black-mask",
+            },
+          ],
         },
         {
-          text: "Emoji 变成了黑白的",
-          link: "/user-guide/faqs/monochrome-emoji",
+          text: "其他问题",
+          items: [
+            {
+              text: "无法打开“获取更多样式”",
+              link: "/user-guide/faqs/get-more-style-cannot-open",
+            },
+            {
+              text: "Emoji 变成了黑白的",
+              link: "/user-guide/faqs/monochrome-emoji",
+            },
+          ],
         },
-        { text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" },
       ],
     },
     {
