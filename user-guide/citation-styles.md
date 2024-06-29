@@ -10,7 +10,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 但是官方的 CSL 样式对国内期刊支持不全，且目前（CSL 1.0.2）仍未支持双语排版（“et al”与“等”混排），所以国内有热心开发者维护了一份第三方 CSL 样式，读者可以按需下载使用。
 
-## 官方 CSL 样式下载
+## 安装样式：从官方存储库
 
 ::: tip
 
@@ -30,7 +30,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
    ![官方引文格式下载](../assets/images/image-zotero-官方引文格式.png)
 
-## 第三方 CSL 样式下载
+## 安装样式：从第三方存储库
 
 ::: tip
 
@@ -85,3 +85,40 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 ---
 
 随后，你就可以在字处理软件中将样式切换为刚刚安装的，请参阅 [在 Word 中使用](./ms-word-plugin.md) 了解详情。
+
+## 管理和编辑样式
+
+您可以通过单击 Zotero 样式管理器中的「-」按钮来删除已安装的样式。在此选项卡中，您还可以预览 Zotero 中所选项目的样式输出并编辑已安装的样式。
+
+## 报告样式错误
+
+如果 CSL 样式未提供预期输出，请首先确保您正在运行最新（稳定）版本的 Zotero，并从安装最新版本的样式。
+
+一旦您确定样式偏离了样式指南、作者说明或已发布的示例，请报告该错误：
+
+- 对于从官方存储库安装的样式
+
+  请向 [Zotero 论坛](https://www.zotero.org/forum) 报告错误。您的帖子应使用标题 `Style Error: [Name of style]`，并提供样式指南的链接或摘录。
+
+- 对于从中文存储库安装的样式
+
+  请向 [中文 CSL 样式存储库](https://github.com/zotero-chinese/styles) 报告错误。
+
+此外，您也可以尝试自己编辑样式。
+
+## 请求新样式
+
+- 对于外文期刊或样式，请参阅：[Requesting New Styles - Zotero Documentation](https://www.zotero.org/support/styles#requesting_new_styles)。
+- 对于中文期刊或高校等的样式，请参阅：[Zotero 中文样式仓库](https://github.com/zotero-chinese/styles?tab=readme-ov-file#没有找到符合需要的样式)。
+
+## 问题
+
+::: warning
+
+无论是何种方式请求社区的帮助，响应时间都取决于社区贡献者的时间安排。Zotero 官方支持和我们（中文社区）均不对响应时间作出承诺，请耐心等待志愿者的更新。
+
+如有条件，欢迎自行修改并将成果贡献到上游仓库。
+
+:::
+
+对于 CSL 样式方面的问题，可以参阅：[Questions - Styles - Zotero Documentation](https://www.zotero.org/support/styles#questions)。
