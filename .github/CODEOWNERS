@@ -1,0 +1,48 @@
+# 代码负责人配置
+# 此文件用于 GitHub Pull Request 的自动 Request Review
+# 语法为：`模式  对仓库有写权限的账号`
+# 模式为 gitignore 语法，后出现的比先出现的优先级更高
+# 参考 <https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners>
+
+
+# 全局
+*                                        @northword
+
+
+# 配置文件
+.devcontainer                            @northword
+.github/                                 @northword
+.vitepress/                              @northword
+.vscode/                                 @northword
+scripts/                                 @northword
+
+
+# 贡献指南
+contributing/                            @northword
+contributing/wiki.md                     @zotero-chinese/document-maintainer
+
+
+# 用户文档
+user-guide/                              @zotero-chinese/document-maintainer
+user-guide/plugins/style.md              @Chikit-L
+user-guide/plugins/zotero-gpt.md         @Chikit-L
+user-guide/plugins/zotero-scihub.md      @Chikit-L
+user-guide/plugins/translate.md          @windingwind
+user-guide/plugins/better-notes.md       @windingwind
+user-guide/plugins/linter.md             @northword
+user-guide/plugins/jasminum.md           @l0o0
+user-guide/faqs/update-translators.md    @Chikit-L @jiaojiaodubai @wakewon
+user-guide/faqs/word-addon.md            @northword @wakewon
+user-guide/faqs/plugins.md               @wakewon @jiaojiaodubai
+
+
+# CSL 文档
+csl-dev-guide/                           @zepinglee @ZMAlt @jiaojiaodubai 
+
+
+# 插件开发文档
+plugin-dev-guide/                        @northword @windingwind @iShareStuff @volatile-static @l0o0
+
+
+# 转换器文档
+translator-dev-guide/                    @l0o0 @jiaojiaodubai
