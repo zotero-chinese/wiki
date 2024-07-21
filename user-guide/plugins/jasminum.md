@@ -26,6 +26,7 @@
 ### 01. 下载安装 Jasminum 插件
 
 在 [茉莉花 - Zotero 插件商店](https://zotero-chinese.com/plugins/#search=jasminum) 下载 `.xpi` 文件，插件安装见 [插件与功能扩展](./about-plugin.md) 。
+在 [Zotero 插件商店](https://zotero-chinese.com/plugins/#search=Jasminum) 下载 `Jasminum` ，插件安装见 [插件与功能扩展](./about-plugin.md) 。
 
 ### 02. 配置 PDFtk
 
