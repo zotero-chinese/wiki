@@ -14,6 +14,18 @@ updated: 2023-07-20 16:51:54
 
 ![image.png](../assets/images/image-下载Zotero.png)
 
+### 测试版本的 Zotero
+
+我们始终推荐大部分用户使用正式版本的 Zotero 而非测试版本，测试版本将面临包括但不限于崩溃、数据丢失等问题。
+
+::: details 获取 Zotero beta 版本
+
+你可以在 [Zotero Beta Builds - Zotero Documentation](https://www.zotero.org/support/beta_builds) 里下载测试版本的 Zotero。
+
+注意：测试版本的 Zotero 将强制保持最新构建版本，如果你需要旧版本的 beta 版本，可以前往 [Zotero 7 beta 历史版本](./faqs/zotero-7-beta-versions.md) 获取。
+
+:::
+
 ## 浏览器扩展 Zotero Connector
 
 Zotero 相较于其他文献管理软件的一大优势就是可以直接从网页中抓取元数据并存入数据库，这个过程通过浏览器扩展 Zotero Connector 实现。
