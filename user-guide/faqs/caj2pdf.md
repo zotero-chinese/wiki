@@ -1,27 +1,28 @@
 ---
-title: CAJ文件转化为PDF文件
+title: CAJ 文件转为 PDF 文件
 author:
   - name: Chikit_L
 date: 2024-7-21 15:24:09
 updated: 2024-7-21 15:24:09
 ---
 
-# caj 转换各方式优缺点对比
+# CAJ 文件转为 PDF 文件
+
+## caj 转换各方式优缺点对比
 
 | 方式                              | 优点                 | 缺点                 | 推荐度     |
 | --------------------------------- | -------------------- | -------------------- | ---------- |
 | [全球学术快报](#全球学术快报)     | 无损转换，最好的方式 | 需要软件             | ⭐⭐⭐⭐⭐ |
-| [caj2pdf 项目](#caj2pdf项目)      | 无损转换             | 部分文献转换失败     | ⭐⭐⭐⭐   |
+| [caj2pdf 项目](#caj2pdf-项目)     | 无损转换             | 部分文献转换失败     | ⭐⭐⭐⭐   |
 | [油猴脚本](#油猴脚本)             | 方便                 | 脚本更新可能不及时   | ⭐⭐⭐     |
-| [重命名](#重命名)                 | 方便                 | 许多文献转换失败     | ⭐         |
 | [虚拟打印机转换](#虚拟打印机转换) | 通用                 | 体积大，无法复制文字 | ⭐         |
 | [网页转换](#网页转换)             | 通用                 | 收费                 | ⭐         |
 
-# 全球学术快报
+## 全球学术快报
 
-官网：https://m.cnki.net/mcnkidown/index.html
+官网：<https://m.cnki.net/mcnkidown/index.html>
 
-注册知网帐号 ：https://my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net
+注册知网帐号 ：<https://my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net>
 
 进入 `资料库` - `打开更多`- 选择想要转换的 caj 文件
 
@@ -31,7 +32,7 @@ updated: 2024-7-21 15:24:09
 
 ![alt text](../../assets/images/image-caj2pdf-全球学术快报另存为.jpg)
 
-# caj2pdf 项目
+## caj2pdf 项目
 
 最初的[caj2pdf](https://github.com/caj2pdf/caj2pdf)项目由于长时间未更新以及没有可视化窗口，不推荐继续使用，更推荐使用[caj2pdf-qt](https://github.com/sainnhe/caj2pdf-qt)项目（[镜像站](https://caj2pdf-qt.sainnhe.dev/)）
 
@@ -39,49 +40,33 @@ updated: 2024-7-21 15:24:09
 
 特性：
 
-✅ 支持 CAJ/KDH/NH 文件格式
-
-✅ 跨平台 (Windows 7, 8, 10, 11; macOS; Linux)
-
-✅ 支持 32 & 64 位 CPU 架构
-
-✅ 批量转换
-
-✅ 多线程转换
-
-✅ 文件拖拽
-
+✅ 支持 CAJ/KDH/NH 文件格式  
+✅ 跨平台 (Windows 7, 8, 10, 11; macOS; Linux)  
+✅ 支持 32 & 64 位 CPU 架构  
+✅ 批量转换  
+✅ 多线程转换  
+✅ 文件拖拽  
 🔲 闭源引擎 ([caj2pdf#63](https://github.com/caj2pdf/caj2pdf/issues/63))
 
 ![alt text](../../assets/images/image-caj2pdf-caj2pdf.jpg)
 
-软件的使用也非常简单，`输入文件` → 选择`输出目录` → `开始转换`，等待数秒即可。部分 caj 文件会转换失败，失败的文件可尝试其他方法进行转换。
+软件的使用也非常简单，`输入文件` → 选择 `输出目录` → `开始转换`，等待数秒即可。部分 caj 文件会转换失败，失败的文件可尝试其他方法进行转换。
 
-# 油猴脚本
+## 油猴脚本
 
 [中国知网 CNKI 硕博论文 PDF 下载](https://greasyfork.org/zh-CN/scripts/389343-%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91cnki%E7%A1%95%E5%8D%9A%E8%AE%BA%E6%96%87pdf%E4%B8%8B%E8%BD%BD)
 
 ::: info 提醒
 
-    该方法依赖于浏览器的[Tampermonkey](https://www.tampermonkey.net/index.php?browser=chrome&locale=zh)插件，如果您未安装，请先安装[Tampermonkey](https://www.tampermonkey.net/index.php?browser=chrome&locale=zh)插件
+该方法依赖于浏览器的 [Tampermonkey](https://www.tampermonkey.net/index.php?browser=chrome&locale=zh) 插件，如果您未安装，请先安装 [Tampermonkey](https://www.tampermonkey.net/index.php?browser=chrome&locale=zh) 插件。
 
 :::
 
 ![alt text](../../assets/images/image-caj2pdf-油猴脚本下载文献.jpg)
 
-在搜索界面 点击 脚本的 `批量下载PDF` - `获取链接` - `PDF下载`- 下载对应的文章的 PDF 即可。
+在搜索界面 点击 脚本的 `批量下载PDF` - `获取链接` - `PDF下载` - 下载对应的文章的 PDF 即可。
 
-# 重命名
-
-右键单击 CAJ 文件，并选择“重命名”选项。然后将文件名的扩展名部分从".caj"改为".pdf"。
-
-::: info 提醒
-
-如果你看不到文件的拓展名，可以参考教程 [Windows10/11 显示文件扩展名 修改文件后缀名教程](https://blog.csdn.net/weixin_52799373/article/details/133306908#:~:text=Windows%2010%201%20%E9%9A%8F%E4%BE%BF%E6%89%93%E5%BC%80%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%9C%A8%E4%B8%8A%E6%96%B9%E5%B7%A5%E5%85%B7%E6%A0%8F%E7%82%B9%E5%87%BB%20%E2%80%9C%20%E6%9F%A5%E7%9C%8B%20%E2%80%9D%202,%E6%9C%80%E5%90%8E%E5%B0%86%20%E2%80%9C%20%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%20%E2%80%9D%20%E9%80%89%E4%B8%AD%205%20%E5%A6%82%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA%EF%BC%9A%20%E7%84%B6%E5%90%8E%E4%BD%A0%E5%B0%B1%E8%83%BD%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%90%8E%E7%BC%80%E4%BA%86%EF%BC%81)
-
-:::
-
-# 虚拟打印机转换
+## 虚拟打印机转换
 
 该方法需要电脑安装有[CAJViewer](https://cajviewer.cnki.net/)（或其他 CAJ 阅读器）以及 PDF 阅读器。
 
@@ -109,6 +94,6 @@ updated: 2024-7-21 15:24:09
 
 :::
 
-# 网页转换
+## 网页转换
 
 由于大部分在线转换功能的网页都需要付费使用，在此不做推荐。
