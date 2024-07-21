@@ -29,7 +29,7 @@ updated: 2023-11-28 15:29:00
 
 ::: tip Zotero 6 与 Zotero 7 的插件互不兼容
 
-Zotero 6（正式版）和 Zotero 7（测试版）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://plugins.zotero-chinese.com/)中有注明兼容的目标 Zotero 版本，下载时请务必注意。
+Zotero 6（正式版）和 Zotero 7（测试版）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://zotero-chinese.com/plugins/)中有注明兼容的目标 Zotero 版本，下载时请务必注意。
 
 Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相关的解决方案也仍不够完善。对于绝大多数一般用户，建议继续使用 Zotero 6 正式版，并跟随正式版的更新节奏升级。
 
@@ -37,7 +37,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ## 安装插件
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
+依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
 
 或者点击`右上角的齿轮` => `Install Add-on From File...` => `选择刚刚下载的 xpi 文件`，即可安装成功。
 
@@ -59,7 +59,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ![确定自己的版本号](../../assets/images/image-zotero-about-zotero.png)
 
-在[国内镜像](https://plugins.zotero-chinese.com/#/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
+在[国内镜像](https://zotero-chinese.com/plugins/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
 
 ![目标 Zotero 版本](../../assets/images/image-目标zotero版本.png)
 
@@ -69,11 +69,11 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 ![升级插件](../../assets/images/image-zotero-plugin-update.png)
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
+依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 
 ::: tip
 
-由于大部分插件的更新页面在 GitHub，国内部分地区可能无法直接访问，从而无法通过以上方式实现对插件的更新。如果无法直接访问插件的更新，可在此处下载最新版：<https://plugins.zotero-chinese.com/#/>
+由于大部分插件的更新页面在 GitHub，国内部分地区可能无法直接访问，从而无法通过以上方式实现对插件的更新。如果无法直接访问插件的更新，可在此处下载最新版：<https://zotero-chinese.com/plugins/>
 
 下载后，无需卸载原插件，按照安装插件的流程直接覆盖安装即可实现对插件的更新。
 

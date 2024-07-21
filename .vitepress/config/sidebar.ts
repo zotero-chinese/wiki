@@ -71,6 +71,7 @@ export const sidebar = {
         { text: "翻译", link: "/user-guide/plugins/translate" },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
         { text: "SCI Hub", link: "/user-guide/plugins/zotero-scihub" },
+        { text: "蒲公英", link: "/user-guide/plugins/tara" },
       ],
     },
     {
@@ -78,17 +79,33 @@ export const sidebar = {
       collapsed: true,
       items: [
         { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
+        {
+          text: "与抓取文献条目相关的",
+          link: "/user-guide/faqs/update-translators",
+        },
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
         {
-          text: "无法打开“获取更多样式”",
-          link: "/user-guide/faqs/get-more-style-cannot-open",
+          text: "阅读器相关",
+          items: [
+            {
+              text: "PDF 上存在黑色遮罩",
+              link: "/user-guide/faqs/pdf-black-mask",
+            },
+          ],
         },
         {
-          text: "Emoji 变成了黑白的",
-          link: "/user-guide/faqs/monochrome-emoji",
+          text: "其他问题",
+          items: [
+            {
+              text: "无法打开“获取更多样式”",
+              link: "/user-guide/faqs/get-more-style-cannot-open",
+            },
+            {
+              text: "Emoji 变成了黑白的",
+              link: "/user-guide/faqs/monochrome-emoji",
+            },
+          ],
         },
-        { text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" },
-        { text: "更新转换器", link: "/user-guide/faqs/update-translators" },
       ],
     },
     {

@@ -1,5 +1,16 @@
 # 茉莉花
 
+::: info 关于插件
+
+这个插件用来增强 Zotero 对中文文献的支持能力，包括自动更新中文 translators、根据中文文献名检索其元数据等。
+
+- 项目主页：[GitHub](https://github.com/l0o0/jasminum)
+- 插件下载地址
+  - [GitHub Release](https://github.com/l0o0/jasminum/releases)
+  - [国内镜像](https://zotero-chinese.com/plugins/#search=jasminum)
+
+:::
+
 比起其他的文献管理软件，原生的 Zotero 对中文支持并没有好到哪里去，但是得益于开源社区的维护，我们可以通过第三方 translator 库 [GitHub.com/l0o0/translators_CN](https://github.com/l0o0/translators_CN) 极大的提高其中文文献抓取能力。
 该库的主要维护者还开发了插件 [Jasminum - 茉莉花](https://github.com/l0o0/jasminum) 来继续增强 Zotero 的中文支持，茉莉花插件提供了如下功能：
 
@@ -14,6 +25,7 @@
 
 ### 01. 下载安装 Jasminum 插件
 
+在 [茉莉花 - Zotero 插件商店](https://zotero-chinese.com/plugins/#search=jasminum) 下载 `.xpi` 文件，插件安装见 [插件与功能扩展](./about-plugin.md) 。
 在 [Zotero 插件商店](https://zotero-chinese.com/plugins/#search=Jasminum) 下载 `Jasminum` ，插件安装见 [插件与功能扩展](./about-plugin.md) 。
 
 ### 02. 配置 PDFtk

@@ -6,7 +6,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ## 插件介绍
 
-这是 Zotero 的一个附加组件，会自动从 SciHub 上为带有 DOI 的条目自动下载 pdf 格式的论文文件。
+这是 Zotero 的一个插件，会自动从 SciHub 上为带有 DOI 的条目自动下载 pdf 格式的论文文件。
 
 一旦你安装该插件，右键单击你收藏中的任何项目。现在将有一个名为`Update Scihub PDF`的菜单选项。点击后，将从 Scihub 下载 PDF 格式的文件，并附加到 Zotero 中对应的条目下。
 
@@ -15,7 +15,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 - Zotero SciHub 插件的 GitHub 地址：
   - 适配 Zotero 6：<https://github.com/ethanwillis/zotero-scihub>
   - 适配 Zotero 7：<https://github.com/syt2/zotero-scipdf>
-- 插件下载：[Zotero 插件中文镜像](https://plugins.zotero-chinese.com/#/)
+- 插件下载：[Zotero 插件中文镜像](https://zotero-chinese.com/plugins/#search=sci-hub)
 - Scihub 镜像地址：`https://www.sci-hub.wf/`、`https://www.sci-hub.ee/`、`https://www.sci-hub.ren/`、`https://www.sci-hub.yt/`、`https://www.sci-hub.ru/`、`https://www.sci-hub.st/`、`https://www.wellesu.com`、`https://www.tesble.com`、`https://www.et-fine.com`
 
 ::: tip

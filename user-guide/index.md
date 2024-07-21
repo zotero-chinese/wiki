@@ -14,7 +14,7 @@ updated: 2023-07-20 16:51:54
 
 本文档由 [Zotero Chinese](https://github.com/zotero-chinese) 团队维护。有任何问题，欢迎在文档下方留言！
 
-本文档地址：[https://zotero-chinese.com/](https://zotero-chinese.com/)
+本文档地址：[zotero-chinese.com](https://zotero-chinese.com/)
 
 :::
 
@@ -47,8 +47,8 @@ updated: 2023-07-20 16:51:54
   - [Zotero 官方手册](https://www.zotero.org/support/)
   - [Zotero 论坛](https://forums.zotero.org/discussions)
 - Zotero 资源
-  - [Zotero 常用插件下载国内镜像](https://plugins.zotero-chinese.com/#/)
-  - [中文 CSL 样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
+  - [Zotero 常用插件下载国内镜像](https://zotero-chinese.com/plugins/)
+  - [中文 CSL 样式](https://zotero-chinese.com/styles)
 - Zotero 开发者
   - [Zotero 插件开发中文文档](../plugin-dev-guide/index.md)
   - [CSL 中文文档](../csl-dev-guide/index.md)
@@ -66,10 +66,14 @@ updated: 2023-07-20 16:51:54
 
 为了解决上述问题，我们创建了这个 Zotero 百科全书文档，权威、准确、一站式解决 Zotero 使用问题。
 
-## ❤️ 贡献指南
+## 💡 本文档与官方文档的差异
+
+本文的整体结构与官方文档保持一致，但合并了一些值得注意的隐藏点，加入了针对中文生态的描述。
+
+## ❤️ 参与到我们中
 
 ::: tip 我如何参与到文档维护中？
 
-请参阅：[贡献指南](../contributing/index.md)。
+当然，你可以通过多种方式支持我们，包括但不限于分享我们、参与讨论、修改文档等，请参阅：[参与指南](../contributing/index.md) 了解详情。
 
 :::

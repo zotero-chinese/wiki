@@ -14,7 +14,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 :::
 
-如果你觉得 Zotero 中文社区还可以，请分享给你的同学/同门/师兄弟姐妹/老师/网友！
+如果你觉得 Zotero 中文社区还可以，请分享给你的同学 / 同门 / 师兄弟姐妹 / 老师 / 好友！
 
 我们网站的地址是：`zotero-chinese.com`，你也可以在百度、必应或谷歌上搜索“Zotero 中文社区”找到我们。（目前，百度的搜索效果较必应要差一些，我们正在努力改进）
 
@@ -54,7 +54,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 难度：⭐⭐
 
-需要技能：无
+需要技能：Markdown
 
 :::
 
@@ -74,7 +74,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 难度：⭐⭐
 
-需要技能：TypeScript
+需要技能：TypeScript (OR not)
 
 :::
 
@@ -92,7 +92,9 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 :::
 
-请参阅样式仓库的自述文件。
+请参阅 [样式仓库的自述文件](https://github.com/zotero-chinese/styles)。
+
+如果你需要修改 CSL 样式，可以阅读 [CSL 开发指南](../csl-dev-guide/index.md)
 
 ## 提交转换器
 
@@ -103,6 +105,8 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 需要技能：JavaScript，HTML，CSS
 
 :::
+
+编写一个转换器，让 Zotero 导入中文文献更方便。
 
 请参阅 [转换器仓库的自述文件](https://github.com/l0o0/translators_CN#readme)。
 
@@ -127,3 +131,9 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 :::
 
 请参阅 [网站仓库的自述文件](https://github.com/zotero-chinese/website#readme)。
+
+## 参与 Zotero 社区的建设
+
+Zotero 是一个全球化的社区，它由各个国家的学者共同组成，在参与 Zotero 中文社区建设之外，您也可以参与 Zotero 官方社区的建设，请阅读 [Get Involved With Zotero](https://www.zotero.org/getinvolved/) 了解详情。
+
+特别地，如果你完善 Zotero 客户端的“中文”语言，可以加入 Zotero 官方在 Transifex 的翻译团队，请阅读 [Localization - Zotero Documentation](https://www.zotero.org/support/dev/localization) 以了解详情。

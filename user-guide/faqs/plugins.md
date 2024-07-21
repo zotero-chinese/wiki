@@ -8,7 +8,7 @@ order: 1
 
 ## 无法打开插件页面
 
-**如果你能看到 [插件/Add-ons] 选项，点击这一按钮的时候却没反应：** 请先完全退出 Zotero（Windows 用户关闭窗口后可能需要再任务管理器中结束 Zotero 相关的进程，macOS 用户建议使用 Command+Q 快捷键完全退出），然后再重新尝试。如果退出重开后依然没有，请重启电脑，然后再尝试。这是 Zotero 的一个 Bug。
+**如果你能看到 `插件 / Plugins / 附加组件 / Add-ons` 选项，点击这一按钮的时候却没反应：** 请先完全退出 Zotero（Windows 用户关闭窗口后可能需要再任务管理器中结束 Zotero 相关的进程，macOS 用户建议使用 Command+Q 快捷键完全退出），然后再重新尝试。如果退出重开后依然没有，请重启电脑，然后再尝试。这是 Zotero 的一个 Bug。
 
 ## 插件页面显示过大超出屏幕
 
@@ -28,5 +28,5 @@ order: 1
 
 ## 插件检查更新时提示未找到更新
 
-可能是确实没有更新，也可能是无法链接到 GitHub。请在插件商店寻找你需要的安装包：[https://plugins.zotero-chinese.com/#/](https://plugins.zotero-chinese.com/#/)
+可能是确实没有更新，也可能是无法链接到 GitHub。请在插件商店寻找你需要的安装包：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
 即使你能够打开 GitHub 页面，也并不代表 Zotero 能够顺利下载到插件更新。这取决于网络情况。

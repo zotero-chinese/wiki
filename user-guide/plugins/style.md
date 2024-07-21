@@ -10,7 +10,7 @@ date: 2024-03-13 21:39:17
 这是一个多彩的插件，用于增强 Zotero 的界面功能，让您享受阅读文献的乐趣！
 
 项目主页：<https://github.com/MuiseDestiny/zotero-style>
-下载地址：[插件商店 - Zotero 中文社区](https://plugins.zotero-chinese.com) 搜索 `style`。
+下载地址：[插件商店 - Zotero 中文社区](https://zotero-chinese.com/plugins/#search=ethereal+style)。
 
 :::
 

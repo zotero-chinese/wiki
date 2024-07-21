@@ -13,7 +13,7 @@ order: 2
 
 # 关于 Word 引用的各种问题
 
-本页面整理了一些使用字处理插件常遇到的一些问题，你可以在右侧大纲栏（部分窄屏设备也可能在左侧）快速定位到你需要的内容。
+本页面整理了一些使用字处理插件常遇到的一些问题，你可以在右侧大纲栏（部分窄屏设备也可能在顶部“页面导航”）快速定位到你需要的内容。
 
 如果没有在本页面找到你需要的问题，可以参考官方文档 [Zotero 文字处理插件报告的一些问题以及可能的解决方案](https://www.zotero.org/support/word_processor_plugin_troubleshooting)。
 
@@ -203,7 +203,7 @@ order: 2
 
 ::: tip 使用 Linter 插件快捷插入
 
-插件 [Linter for Zotero](../plugins/linter.md) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+插件 [Linter for Zotero](../plugins/linter.md) 提供了辅助输入这些富文本标签的功能，可前往 [插件商店](https://zotero-chinese.com/plugins)下载安装。
 
 :::
 
@@ -224,7 +224,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 你需要：
 
-1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方引文格式)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
+1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方-csl-样式下载)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
 2. 需要在 Word 中指定当前文档使用的样式
 
    ![文档设置](../../assets/images/image-word-document-preferences2.png){width=60%}
@@ -247,7 +247,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
    如果你的文献语言设定不规范，可以通过标题或作者字段对所有文献进行排序，然后分别选中英文文献，将其 [语言] 字段的信息统一为 `en`；取消选中后再选中中文文献，将其 `语言` 字段的信息统一为`zh`或者样式文件要求的样子。
 
-   插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://plugins.zotero-chinese.com)下载安装。
+   插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://zotero-chinese.com/plugins)下载安装。
 
    ![Linter 自动识别条目语言](../../assets/images/image-auto-edit-language.jpg){width=60%}
 
@@ -277,7 +277,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开【**工具/Tools**】-【**插件/Add-ons**】
+若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins / 附加组件 / Add-ons`，
 
 ![image.png](../../assets/images/image-tools-addon.png)
 
