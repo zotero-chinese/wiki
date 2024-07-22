@@ -35,7 +35,7 @@ author:
 
 由于 Zotero 基于 Firefox，因此可以使用 [Firefox 开发者工具](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/What_are_browser_developer_tools) 与 DOM 交互、设置代码断点、跟踪网络请求等。
 
-Zotero 7 beta 版本内建 Firefox 115 开发工具。要在打开浏览器工具箱的情况下启动 beta 构建，请在命令行上传递 `-jsdebugger` 标志：
+Zotero 7 beta 版本内建 Firefox 115 开发者工具。要在启动 Zotero 时打开开发者工具，请在命令行上传递 `-jsdebugger` 标志：
 
 ```bash
 /Applications/Zotero\ Beta.app/Contents/MacOS/zotero -ZoteroDebugText -jsdebugger
@@ -49,7 +49,7 @@ Zotero 7 beta 版本内建 Firefox 115 开发工具。要在打开浏览器工�
 
 ::: info 即将实现：在菜单栏中直接打开开发者工具
 
-Zotero 团队正在添加打开“开发者工具”的菜单，见 [PR #3387](https://github.com/zotero/zotero/pull/3387)，此 PR 合并后即可直接从菜单呼出开发者工具，而无需在启动时传入 `--jsdebugger` 标志。
+Zotero 团队正在添加“浏览器工具箱”菜单，以便直接从菜单呼出开发者工具，而无需在启动时传入 `--jsdebugger` 标志，见 [PR #3387](https://github.com/zotero/zotero/pull/3387)。
 
 :::
 
