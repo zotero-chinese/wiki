@@ -37,7 +37,7 @@ export const wikiContributors: WikiContributor[] = [
   {
     name: "Chikit-L",
     username: "Chikit-L",
-    mapByNameAliases: ["Chikit_L"],
+    mapByNameAliases: ["Chikit_L", "Chikit"],
   },
   {
     name: "l0o0",
