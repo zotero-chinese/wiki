@@ -2,12 +2,10 @@
 title: 为什么使用 Zotero
 # order: 1
 icon: heart
-author:
-  - name: winding
-    url: https://github.com/windingwind
-  - name: northword
-    url: https://northword.cn
-  - name: 汪汪
+authors:
+  - winding
+  - northword
+  - 汪汪
 date: 2023-04-19 22:27:07
 updated: 2023-07-20 16:51:54
 ---

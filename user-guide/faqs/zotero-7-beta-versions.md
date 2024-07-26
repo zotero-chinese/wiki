@@ -1,8 +1,6 @@
 ---
 title: Zotero 7 Beta 历史版本下载
 date: 2024-07-21 15:26:17
-author:
-  - name: Chikit_L
 ---
 
 # Zotero 7 Beta 历史版本下载

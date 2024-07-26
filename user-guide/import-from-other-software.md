@@ -1,6 +1,6 @@
 ---
-author:
-  - name: 阿狸
+authors:
+  - 阿狸
 icon: copy
 ---
 

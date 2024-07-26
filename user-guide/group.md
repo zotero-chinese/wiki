@@ -1,9 +1,9 @@
 ---
 title: 群组
 icon: user-group
-author:
-  - name: Ali
-  - name: Northword
+authors:
+  - Ali
+  - Northword
 date: 2023-06-28 21:19:17
 updated: 2023-12-06 18:51:54
 ---

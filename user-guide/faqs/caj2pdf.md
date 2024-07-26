@@ -1,7 +1,7 @@
 ---
 title: CAJ 文件转为 PDF 文件
-author:
-  - name: Chikit_L
+authors:
+  - Chikit_L
 date: 2024-7-21 15:24:09
 updated: 2024-7-21 15:24:09
 ---

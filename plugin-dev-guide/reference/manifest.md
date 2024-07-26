@@ -1,7 +1,6 @@
 ---
-author:
-  - name: northword
-    url: https://github.com/northword/
+authors:
+  - northword
 ---
 
 # 插件清单

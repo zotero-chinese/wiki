@@ -1,7 +1,6 @@
 ---
-author:
-  - name: windingwind
-    url: https://github.com/windingwind/
+authors:
+  - windingwind
 ---
 
 # Zotero 事件机制

@@ -1,8 +1,8 @@
 ---
 title: Feed
 icon: rss
-author:
-  - name: 阿狸
+authors:
+  - 阿狸
 ---
 
 # Feed RSS

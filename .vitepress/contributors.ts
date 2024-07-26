@@ -12,19 +12,33 @@ export interface WikiContributor {
    *
    * 主要针对多个账号属于同一个人的情况
    */
-  nameAliases?: string[];
+  mapByNameAliases?: string[];
   /**
    * 邮箱别名
    *
    * 主要针对多个账号属于同一个人的情况
    */
-  emailAliases?: string[];
+  mapByEmailAliases?: string[];
+  /**
+   * 主页
+   *
+   * 可以连接到个人主页，如果不填，默认使用 GitHub 主页
+   */
+  links?: string[];
 }
 
 export const wikiContributors: WikiContributor[] = [
   {
+    name: 'Northword',
+    username: 'northword',
+    mapByEmailAliases: [
+      '44738481+northword@users.noreply.github.com',
+    ],
+  },
+  {
     name: "Chikit-L",
     username: "Chikit-L",
+    mapByNameAliases: ["Chikit_L"]
   },
   {
     name: "l0o0",
