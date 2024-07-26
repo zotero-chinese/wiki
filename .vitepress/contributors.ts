@@ -31,6 +31,7 @@ export const wikiContributors: WikiContributor[] = [
   {
     name: "Northword",
     username: "northword",
+    mapByNameAliases: ["northword"],
     mapByEmailAliases: ["44738481+northword@users.noreply.github.com"],
   },
   {
@@ -57,6 +58,7 @@ export const wikiContributors: WikiContributor[] = [
   {
     name: "wakewon",
     username: "wakewon",
+    mapByNameAliases: ["Victor"],
   },
   {
     name: "syt2",
@@ -65,5 +67,6 @@ export const wikiContributors: WikiContributor[] = [
   {
     name: "windingwind",
     username: "windingwind",
+    mapByNameAliases: ["winding"],
   },
 ];
