@@ -29,16 +29,14 @@ export interface WikiContributor {
 
 export const wikiContributors: WikiContributor[] = [
   {
-    name: 'Northword',
-    username: 'northword',
-    mapByEmailAliases: [
-      '44738481+northword@users.noreply.github.com',
-    ],
+    name: "Northword",
+    username: "northword",
+    mapByEmailAliases: ["44738481+northword@users.noreply.github.com"],
   },
   {
     name: "Chikit-L",
     username: "Chikit-L",
-    mapByNameAliases: ["Chikit_L"]
+    mapByNameAliases: ["Chikit_L"],
   },
   {
     name: "l0o0",
