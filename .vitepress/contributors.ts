@@ -44,8 +44,9 @@ export const wikiContributors: WikiContributor[] = [
     username: "l0o0",
   },
   {
-    name: "Comte0825",
+    name: "阿狸",
     username: "Comte0825",
+    mapByNameAliases: ["Comte0825", "Ali"],
   },
   {
     name: "Maple-YZ",
@@ -56,9 +57,9 @@ export const wikiContributors: WikiContributor[] = [
     username: "jiaojiaodubai",
   },
   {
-    name: "wakewon",
+    name: "可口可乐",
     username: "wakewon",
-    mapByNameAliases: ["Victor"],
+    mapByNameAliases: ["Victor", "wakewon"],
   },
   {
     name: "syt2",
@@ -68,5 +69,10 @@ export const wikiContributors: WikiContributor[] = [
     name: "windingwind",
     username: "windingwind",
     mapByNameAliases: ["winding"],
+  },
+  {
+    name: "不秃燃的小老弟",
+    username: "MoYuXianR",
+    mapByNameAliases: ["MoYuXianR"],
   },
 ];
