@@ -1,10 +1,8 @@
 ---
-author:
-  - name: windingwind
-    url: https://github.com/windingwind/
-  - name: ShareStuff
-  - name: northword
-    url: https://github.com/northword/
+authors:
+  - windingwind
+  - ShareStuff
+  - northword
 ---
 
 # Zotero 首选项

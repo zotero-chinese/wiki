@@ -1,10 +1,8 @@
 ---
-author:
-  - name: windingwind
-    url: https://github.com/windingwind/
-  - name: ShareStuff
-  - name: northword
-    url: https://github.com/northword/
+authors:
+  - windingwind
+  - ShareStuff
+  - northword
 ---
 
 # 调试代码
