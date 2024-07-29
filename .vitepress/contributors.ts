@@ -71,8 +71,12 @@ export const wikiContributors: WikiContributor[] = [
     mapByNameAliases: ["winding"],
   },
   {
-    name: "不秃燃的小老弟",
+    name: "X木林森 Z2.3",
     username: "MoYuXianR",
     mapByNameAliases: ["MoYuXianR"],
+  },
+  {
+    name: "zepinglee",
+    username: "zepinglee",
   },
 ];
