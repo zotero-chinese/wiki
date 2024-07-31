@@ -1,11 +1,10 @@
 ---
-author:
-  - name: Northword
-  - name: winding
-  - name: ShareStuff
-  - name: Chikit_L
-  - name: 可口可乐
-    url: https://github.com/wakewon
+authors:
+  - Northword
+  - winding
+  - ShareStuff
+  - Chikit_L
+  - 可口可乐
 date: 2023-10-04 11:38:09
 updated: 2024-01-31 20:01:21
 order: 2

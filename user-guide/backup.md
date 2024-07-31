@@ -1,11 +1,9 @@
 ---
 title: 备份
 icon: database
-author:
-  - name: Chikit-L
-    url: https://github.com/Chikit-L
-  - name: Northword
-    url: https://northword.dev
+authors:
+  - Chikit-L
+  - Northword
 date: 2023-06-28 21:19:25
 updated: 2023-10-04 18:38:54
 ---

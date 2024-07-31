@@ -1,8 +1,8 @@
 ---
 title: 通过 VBA 在 WPS 中使用 Word 插件
-author:
-  - name: winding
-  - name: 不秃燃的小老弟
+authors:
+  - winding
+  - 不秃燃的小老弟
 date: 2022-11-08 11:38:09
 updated: 2023-10-04 12:06:44
 ---

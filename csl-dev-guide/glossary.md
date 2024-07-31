@@ -1,8 +1,7 @@
 ---
 title: 术语对照表
-author:
-  - name: jiaojiaodubai
-    url: https://github.com/jiaojiaodubai
+authors:
+  - jiaojiaodubai
 date: 2024-02-16 00:51:03
 ---
 

@@ -1,8 +1,7 @@
 ---
 date: 2022-07-29 20:23:17
-author:
-  - name: Northword
-    url: https://northword.dev
+authors:
+  - Northword
 updated: 2023-10-04 11:59:36
 title: 在 Word 中把引注链接到参考文献表
 ---

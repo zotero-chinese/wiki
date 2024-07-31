@@ -13,7 +13,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      "home-hero-image": () => h(tip),
+      // "home-hero-image": () => h(tip),
       "doc-footer-before": () => h(tip),
     });
   },

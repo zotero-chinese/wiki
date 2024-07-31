@@ -1,4 +1,5 @@
 import { footnote } from "@mdit/plugin-footnote";
+import { mark } from "@mdit/plugin-mark";
 import type { UserConfig } from "vitepress";
 
 export const markdown: UserConfig["markdown"] = {
@@ -16,5 +17,6 @@ export const markdown: UserConfig["markdown"] = {
   },
   config: (md) => {
     md.use(footnote);
+    md.use(mark);
   },
 };

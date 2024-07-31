@@ -14,7 +14,7 @@ updated: 2023-07-20 16:51:54
 
 本文档由 [Zotero Chinese](https://github.com/zotero-chinese) 团队维护。有任何问题，欢迎在文档下方留言！
 
-本文档地址：[https://zotero-chinese.com/](https://zotero-chinese.com/)
+本文档地址：[`zotero-chinese.com`](https://zotero-chinese.com/)
 
 :::
 

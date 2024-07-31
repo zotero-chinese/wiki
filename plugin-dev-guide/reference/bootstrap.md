@@ -1,9 +1,7 @@
 ---
-author:
-  - name: windingwind
-    url: https://github.com/windingwind/
-  - name: northword
-    url: https://github.com/northword/
+authors:
+  - windingwind
+  - northword
 ---
 
 # 引导脚本
