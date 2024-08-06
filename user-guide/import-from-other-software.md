@@ -67,7 +67,9 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
 ![选择文件](../assets/images/endnote-xml-open.png)
 
-在弹出的 import 界面中如下图选择以下两个选项，将导入的题录单独放在一个文件夹，然后将条目的 PDF 附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
+在弹出的 import 窗口中，有两类选项，第一类是导入的题录信息的位置：是否将题录信息导入到一个新的分类。
+
+第二类是文件的位置：我们推荐选择“Copy files to the Zotero storage folder”，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
 
 ![Zotero导入向导第二步](../assets/images/endnote-zotero-import-option2.png)
 
