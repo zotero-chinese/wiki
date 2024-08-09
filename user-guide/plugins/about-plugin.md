@@ -17,7 +17,7 @@ updated: 2023-11-28 15:29:00
 ## 获取插件
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
-- 国内镜像：[https://zotero-chinese.com/plugins](https://zotero-chinese.com/plugins)
+- Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins](https://zotero-chinese.com/plugins)
 
 ::: tip 火狐浏览器用户请选择另存为
 
@@ -29,17 +29,15 @@ updated: 2023-11-28 15:29:00
 
 ::: tip Zotero 6 与 Zotero 7 的插件互不兼容
 
-Zotero 6（正式版）和 Zotero 7（测试版）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://zotero-chinese.com/plugins/)中有注明兼容的目标 Zotero 版本，下载时请务必注意。
-
-Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相关的解决方案也仍不够完善。对于绝大多数一般用户，建议继续使用 Zotero 6 正式版，并跟随正式版的更新节奏升级。
+Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://zotero-chinese.com/plugins/) 中有注明兼容的目标 Zotero 版本，下载时请务必注意。
 
 :::
 
 ## 安装插件
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
+依次点击 `Zotero 菜单栏` -> `工具（Tools）` -> `插件（Plugins）`，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
 
-或者点击`右上角的齿轮` => `Install Add-on From File...` => `选择刚刚下载的 xpi 文件`，即可安装成功。
+或者点击 `右上角的齿轮` -> `Install Add-on From File...` -> `选择刚刚下载的 xpi 文件`，即可安装成功。
 
 ![安装插件](../../assets/images/image-zotero-plugin-install.png)
 
@@ -49,27 +47,11 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 
 :::
 
-::: details 无法安装插件"%S"。它可能无法与该版本的 Zotero 兼容
-
-![插件安装失败](../../assets/images/image-zotero-插件安装失败.png)
-
-一些同学在安装插件的时候发现插件安装失败，Zotero 提醒不兼容。这种情况是由于下载的插件版本与插件所支持 Zotero 的版本不一致所导致的。
-
-首先需要确定自己 Zotero 的版本，依次点击 `帮助` => `关于 Zotero`，即可看到自己 Zotero 的版本（如图则是 Zotero 6）
-
-![确定自己的版本号](../../assets/images/image-zotero-about-zotero.png)
-
-在[国内镜像](https://zotero-chinese.com/plugins/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
-
-![目标 Zotero 版本](../../assets/images/image-目标zotero版本.png)
-
-:::
-
 ## 更新插件
 
 ![升级插件](../../assets/images/image-zotero-plugin-update.png)
 
-依次点击 `Zotero 菜单栏` => `工具（Tools）`=> `附加组件（Add-on）/ 插件（Plugins）` => `右上角的齿轮` => `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
+依次点击 `Zotero 菜单栏` -> `工具（Tools）` -> `插件（Plugins）` -> `右上角的齿轮` -> `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 
 ::: tip
 
@@ -78,3 +60,7 @@ Zotero 7 目前仍为测试版，使用中可能会遇到一些新问题，相�
 下载后，无需卸载原插件，按照安装插件的流程直接覆盖安装即可实现对插件的更新。
 
 :::
+
+## 常见问题
+
+请见 [插件安装的常见问题](../faqs/plugins.md)。
