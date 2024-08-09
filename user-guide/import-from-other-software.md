@@ -8,31 +8,52 @@ icon: copy
 
 ## 从 Endnote 导入
 
-**1、复制要导出的文献到新库（New library）**
+### 导出 EndNote 库
 
-注意：默认位置通常在**我的文档/Endnote.data**，此步骤使用于无法找到默认库的文件路径的用户，如能找到，请跳到**2、导出 Endnote 题录和附件**。
-打开 Endnote 软件，点击左上角工具栏【Referrence】=>【Copy Reference To】=>【New Library...】
+Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 EndNote 导出您的库为 XML 格式。
 
-![Endnote菜单](../assets/images/endnote-menu.png)
+对于较旧的 EndNote 库，可能需要在导出之前将图形转换为附件。步骤为：“References”菜单 -> “Figure” -> “Convert Figures to File Attachments…”。
 
-如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 Zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击【Save】
+1. 如果您想要导出 EndNote 库的子集，请先选择您想要导出的条目
+2. 转到“File”菜单 → “Export”。将弹出一个对话框，询问您导出文件的保存位置
+3. 在上一步弹出的对话框中导航到您的 EndNote 数据目录（通常为 `我的文档/endnote.data`）。该目录包含一个“PDF”文件夹，但您应确保选择数据目录而不是任何子文件夹（例如 PDF 文件夹）内
 
-![Endnote输出目录](../assets/images/endnote-save.png)
+   ::: warning
 
-Endnote 内打开保存的新库，点击左上角工具栏【File】=>【Export】
+   这个很重要！ Zotero 将在相对于导出的 XML 文件位置的目录中查找文件附件。如果您将此文件保存在错误的位置，则当您导入 Zotero 时，文件附件将不会包含在内。
 
-![Endnote导出](../assets/images/endnote-export.png)
+   :::
 
-**2、导出 Endnote 题录和附件**
+   ::: details 找不到库存储在了哪里？
 
-如下图所示，在弹出的窗口选择**1、复制要导出的文献到新库**中所保存的新库目录（也可以找到默认目录，该目录下包含“PDF”、“sdb”），但请不要选择“PDF”/“sdb”这两个子目录！！！
-图中 ② 处请选择 XML 格式，然后点击保存，test.data 文件夹下将会出现一个后缀名为 xml 的文件。
+   有两种方法，一种方法为搜索 enl 文件。
 
-![Endnote XML](../assets/images/endnote-xml.png)
+   另一种方法为复制要导出的文献到新库（New library）：
 
-![Endnote 选择XML格式](../assets/images/endnote-toxml.png)
+   打开 Endnote 软件，点击左上角工具栏【Referrence】=>【Copy Reference To】=>【New Library...】
 
-**3、导入 Zotero**
+   ![Endnote菜单](../assets/images/endnote-menu.png)
+
+   如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 Zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击【Save】
+
+   ![Endnote输出目录](../assets/images/endnote-save.png)
+
+   Endnote 内打开保存的新库，点击左上角工具栏【File】=>【Export】
+
+   ![Endnote导出](../assets/images/endnote-export.png)
+
+   :::
+
+4. 选择“保存类型”为“XML”
+5. 如果您只想导出库的子集，请选中“Export Selected References”框，否则，请确保未选中它
+6. 点击“Save”
+7. 退出 EndNote
+
+### 导入 Zotero
+
+如果您不导入到空库中，我们强烈建议您 [备份 Zotero 数据目录](./backup.md)。备份后，如果你对这次导入不满意，只需从备份中恢复您的库即可。
+
+您还应该在 Zotero 的 [同步](./sync.md) 首选项中暂时禁用自动同步。导入库并检查确保您对导入的数据满意后，您可以重新启用自动同步。
 
 打开 Zotero，在左上角工具栏选择【文件】=>【导入...】
 
@@ -42,11 +63,13 @@ Endnote 内打开保存的新库，点击左上角工具栏【File】=>【Export
 
 ![Zotero导入选项](../assets/images/endnote-zotero-import-option.png)
 
-在弹出的文件浏览器界面选择步骤**2、导出 Endnote 题录和附件**中保存的 xml 文件，点击【Open】
+在弹出的文件浏览器界面选择从 EndNote 中导出的 xml 文件，点击【Open】
 
 ![选择文件](../assets/images/endnote-xml-open.png)
 
-在弹出的 import 界面中如下图选择以下两个选项，将导入的题录单独放在一个文件夹，然后将条目的 PDF 附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
+在弹出的 import 窗口中，有两类选项，第一类是导入的题录信息的位置：是否将题录信息导入到一个新的分类。
+
+第二类是文件的位置：我们推荐选择“Copy files to the Zotero storage folder”，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
 
 ![Zotero导入向导第二步](../assets/images/endnote-zotero-import-option2.png)
 
