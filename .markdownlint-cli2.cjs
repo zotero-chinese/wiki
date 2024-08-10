@@ -38,13 +38,13 @@ module.exports = {
           replace: "「$1」",
           searchScope: "text",
         },
-        // {
-        //   name: "->",
-        //   message: "请使用 '->' 而不是 '=>'",
-        //   searchPattern: `/=>|=》/g`,
-        //   replace: "->",
-        //   searchScope: "text",
-        // },
+        {
+          name: "->",
+          message: "请使用 '->' 作为步骤连接符号",
+          searchPattern: `/=>|=》/g`,
+          replace: "->",
+          searchScope: "text",
+        },
         // {
         //   name: "链接空格",
         //   message: "链接周围应有空格",

@@ -30,7 +30,7 @@ order: 1
 
 3. 检查插件适配的 Zotero 版本
 
-   首先需要确定自己 Zotero 的版本，依次点击 `帮助` => `关于 Zotero`，即可看到自己 Zotero 的版本（如图则是 Zotero 6）。
+   首先需要确定自己 Zotero 的版本，依次点击 `帮助` -> `关于 Zotero`，即可看到自己 Zotero 的版本（如图则是 Zotero 6）。
 
    ![确定自己的版本号](../../assets/images/zotero-about-zotero.png)
 
