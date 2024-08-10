@@ -276,11 +276,11 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins`，
+若上图的「**文字处理软件/Word Processors**」没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins`，
 
 ![image.png](../../assets/images/tools-addon.png)
 
-找到【**Zotero Word for Windows Integration**】插件，确保其没有处理禁用状态。
+找到「**Zotero Word for Windows Integration**」插件，确保其没有处理禁用状态。
 
 ![image.png](../../assets/images/zotero-addon-manager.png)
 

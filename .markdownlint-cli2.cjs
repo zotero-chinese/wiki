@@ -31,6 +31,13 @@ module.exports = {
           replace: "「$1」",
           searchScope: "text",
         },
+        {
+          name: "中括号",
+          message: "不使用中括号【】",
+          searchPattern: `/\s*【([^【】]+?)】\s*/g`,
+          replace: "「$1」",
+          searchScope: "text",
+        },
         // {
         //   name: "->",
         //   message: "请使用 '->' 而不是 '=>'",

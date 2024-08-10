@@ -30,15 +30,15 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
    另一种方法为复制要导出的文献到新库（New library）：
 
-   打开 Endnote 软件，点击左上角工具栏【Referrence】=>【Copy Reference To】=>【New Library...】
+   打开 Endnote 软件，点击左上角工具栏「Referrence」=>「Copy Reference To」=>「New Library...」
 
    ![Endnote菜单](../assets/images/endnote-menu.png)
 
-   如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 Zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击【Save】
+   如下图示，在弹出来的文件浏览器页面选择一个容易找到的文件夹（以桌面为例，图中步骤 ①），接着自定义库的名称（后续导入 Zotero 内成为一个新文件夹默认使用该名称，图中步骤 ② 以**test**为例），点击「Save」
 
    ![Endnote输出目录](../assets/images/endnote-save.png)
 
-   Endnote 内打开保存的新库，点击左上角工具栏【File】=>【Export】
+   Endnote 内打开保存的新库，点击左上角工具栏「File」=>「Export」
 
    ![Endnote导出](../assets/images/endnote-export.png)
 
@@ -55,21 +55,21 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
 您还应该在 Zotero 的 [同步](./sync.md) 首选项中暂时禁用自动同步。导入库并检查确保您对导入的数据满意后，您可以重新启用自动同步。
 
-打开 Zotero，在左上角工具栏选择【文件】=>【导入...】
+打开 Zotero，在左上角工具栏选择「文件」=>「导入...」
 
 ![Zotero 菜单](../assets/images/endnote-zotero-import.png)
 
-如下图示，在弹出的 import 窗口界面选择【A file（BibTex，RIS,Zotero RDF,etc.）】,点击继续
+如下图示，在弹出的 import 窗口界面选择「A file（BibTex，RIS,Zotero RDF,etc.）」,点击继续
 
 ![Zotero导入选项](../assets/images/endnote-zotero-import-option.png)
 
-在弹出的文件浏览器界面选择从 EndNote 中导出的 xml 文件，点击【Open】
+在弹出的文件浏览器界面选择从 EndNote 中导出的 xml 文件，点击「Open」
 
 ![选择文件](../assets/images/endnote-xml-open.png)
 
 在弹出的 import 窗口中，有两类选项，第一类是导入的题录信息的位置：是否将题录信息导入到一个新的分类。
 
-第二类是文件的位置：我们推荐选择「Copy files to the Zotero storage folder」，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
+第二类是文件的位置：我们推荐选择「Copy files to the Zotero storage folder」，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击「继续」。
 
 ![Zotero导入向导第二步](../assets/images/endnote-zotero-import-option2.png)
 
@@ -105,7 +105,7 @@ Word 2016/2019/Office 365 for Windows:
 
 `C:\Users\<currentusername>\AppData\Roaming\Microsoft\Bibliography\Style`
 
-打开访达，左上角工具栏点击【前往】=>【前往文件夹】
+打开访达，左上角工具栏点击「前往」=>「前往文件夹」
 
 ![Word 导出](../assets/images/word-export-folder.png)
 
@@ -119,7 +119,7 @@ Word 2016/2019/Office 365 for Windows:
 
 **3、Word 引文导出**
 
-打开 Word 文件，如下图中 ① 所示，在选项卡中点击【引用】，紧接着点击图中 ② 所示，切换引文格式
+打开 Word 文件，如下图中 ① 所示，在选项卡中点击「引用」，紧接着点击图中 ② 所示，切换引文格式
 
 ![Word切换引文格式](../assets/images/word-export-reference.png)
 
@@ -133,7 +133,7 @@ Word 2016/2019/Office 365 for Windows:
 
 **4、导入 Zotero**
 
-打开 Zotero，在「我的文库」中选择（或新建后选中）一个文件夹，用于存放要导入的文献条目，在左上角工具栏点击【文件】=>【从剪切板导入】
+打开 Zotero，在「我的文库」中选择（或新建后选中）一个文件夹，用于存放要导入的文献条目，在左上角工具栏点击「文件」=>「从剪切板导入」
 
 ![导入Zotero菜单](../assets/images/word-zotero-import.png)
 
@@ -174,4 +174,4 @@ Word 2016/2019/Office 365 for Windows:
 - XML ContextObject
 - Unqualified Dublin Core RDF
 
-您还可以通过支持【导出上述文件格式的网站或软件】中导入题录到 Zotero，例如 Reference Manager、RefWorks、Papers、Google Scholar Library、ReadCube 等，方法是下载好以上的标准化的参考格式文件，例如 RIS、BibTeX 或 CSL JSON，然后通过单击「文件」→「导入...」导入 Zotero，然后选择「文件」，即可导入 Zotero。
+您还可以通过支持「导出上述文件格式的网站或软件」中导入题录到 Zotero，例如 Reference Manager、RefWorks、Papers、Google Scholar Library、ReadCube 等，方法是下载好以上的标准化的参考格式文件，例如 RIS、BibTeX 或 CSL JSON，然后通过单击「文件」→「导入...」导入 Zotero，然后选择「文件」，即可导入 Zotero。
