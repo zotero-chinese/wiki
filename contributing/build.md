@@ -120,11 +120,11 @@ GitHub 相关资料：
 
    打开 VS Code，点击 `欢迎页面` 的 `克隆 Git 仓库…`，在弹出窗口中选中 `从 GitHub 克隆`，然后选择自己账户下的 fork 仓库，确认，克隆完成后根据提示打开文件夹。
 
-   ![克隆Git仓库](../assets/images/contributing/8c581efa5ed9f3ac9d5771b89204bd6b_MD5.png)
+   ![克隆Git仓库](../assets/images/contributing/vsc-克隆git仓库.png)
 
-   ![从GitHub克隆](../assets/images/contributing/741b873973ac5df93faf93cd1a195db2_MD5.png)
+   ![从GitHub克隆](../assets/images/contributing/vsc-输入仓库地址.png)
 
-   ![选择仓库](../assets/images/contributing/28f02608aa879ed189ecfecfcab57d16_MD5.png)
+   ![选择仓库](../assets/images/contributing/vsc-选中需要克隆的仓库.png)
 
    ::: tip
 
