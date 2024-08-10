@@ -11,9 +11,9 @@ updated: 2023-07-20 16:51:54
 
 ## 分类管理
 
-分类的图标类似文件夹：![image.png](../assets/images/icon-collection.png)。分类是所有文献条目的父级（也允许存在不属于任何分类的条目）可在主界面左侧查看分类列表，类似于文件夹的列表。可以拖动分类来归纳到不同层级。
+分类的图标类似文件夹：![分类图标](../assets/icons/treesource-collection.png)。分类是所有文献条目的父级（也允许存在不属于任何分类的条目）可在主界面左侧查看分类列表，类似于文件夹的列表。可以拖动分类来归纳到不同层级。
 
-在个人账户中，所有分类都属于![image.png](../assets/images/icon-我的文库.png)。在群组中，分类属于各自的群组。
+在个人账户中，所有分类都属于 「![image.png](../assets/icons/treesource-library.png) 我的文库」。在群组中，分类属于各自的群组。
 
 ![image.png](../assets/images/文库合集-1.png)
 
@@ -27,7 +27,7 @@ updated: 2023-07-20 16:51:54
 
 ### 新建分类
 
-在主界面左上角，点击![image.png](../assets/images/icon-新建分类.png)，即可新建分类（collection）。
+在主界面左上角，点击 ![image.png](../assets/icons/toolbar-collection-add.png)，即可新建分类（collection）。
 
 或者，在菜单栏=>文件，新建分类：
 
@@ -107,7 +107,7 @@ Zotero 通过标签来管理文献。对于同一类文献，可为其添加标�
 
 ### 添加/删除标签
 
-在主界面中，选中条目，在右侧栏的标签面板可以进行添加/删除。点击 Add 可新增标签，点击已有标签右侧的![image.png](../assets/images/icon-删除标签.png)可以删除标签。
+在主界面中，选中条目，在右侧栏的标签面板可以进行添加/删除。点击 Add 可新增标签，点击已有标签右侧的 「-」 可以删除标签。
 
 ![image.png](../assets/images/标签.png)
 

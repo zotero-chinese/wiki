@@ -47,7 +47,7 @@ order: 2
 
 **目前新版本里横向布置三个大按钮分别是：**
 
-1. ![插入引文](../../assets/images/icon-word-插入引文-large.png) **插入/编辑引注** `Add/Edit Citation`
+1. ![插入引文](../../assets/icons/integration/icon-word-插入引文-large.png) **插入/编辑引注** `Add/Edit Citation`
 
 在当前光标位置插入或编辑引注。
 
@@ -57,7 +57,7 @@ order: 2
 
 :::
 
-2. ![添加参考文献表](../../assets/images/icon-word-添加参考文献表-larger.png) **插入/编辑参考文献表** `Add/Edit Bibliography`
+2. ![添加参考文献表](../../assets/icons/integration/icon-word-添加参考文献表-larger.png) **插入/编辑参考文献表** `Add/Edit Bibliography`
 
 在光标当前位置插入或编辑已存在的参考文献表。
 
@@ -79,15 +79,15 @@ order: 2
 
 **三个纵向布置的小按钮分别是：**
 
-1. ![文档首选项](../../assets/images/icon-word-文档首选项.png) **文档首选项** `Document Preferences`
+1. ![文档首选项](../../assets/icons/integration/icon-word-文档首选项.png) **文档首选项** `Document Preferences`
 
 更改参考文献样式或语言，开启/关闭自动更新引注功能。
 
-2. ![刷新](../../assets/images/icon-word-刷新.png) **刷新** `Refresh`
+2. ![刷新](../../assets/icons/integration/icon-word-刷新.png) **刷新** `Refresh`
 
 更新引注引注编号及文末参考文献表内容，关闭自动更新引注功能后需手动点击此按钮更新引注。
 
-3. ![unlink](../../assets/images/icon-word-unlink.png) **取消链接引注** `Unlink Citations`
+3. ![unlink](../../assets/icons/integration/icon-word-unlink.png) **取消链接引注** `Unlink Citations`
 
 删除所有 Zotero 域代码且断开与 Zotero 文库链接。点击后所有的引注和文末的参考文献表都会变成纯文本。
 
@@ -149,7 +149,7 @@ order: 2
 
 ![文档设置](../../assets/images/word-document-preferences.png){width=60%}
 
-在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/images/icon-word-刷新.png) 按钮更新引用信息及编号** 。在 Zotero 6.0 新版本下，这个更新可能非常缓慢，你需要多一点耐心。
+在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/icons/integration/icon-word-刷新.png) 按钮更新引用信息及编号** 。在 Zotero 6.0 新版本下，这个更新可能非常缓慢，你需要多一点耐心。
 
 ## 格式问题
 

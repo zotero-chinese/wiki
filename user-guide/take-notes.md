@@ -30,9 +30,9 @@ Zotero 会自动记忆打开的文献与当前阅读位置。在下一次打开 
 
 ### 界面区域
 
-- 左侧是预览栏，可预览缩../目录；
-- 右侧是信息/笔记栏，可查看当前文献信息![image.png](../assets/images/icon-文献信息窗格.png)或编辑笔记![image.png](../assets/images/icon-笔记.png)；
-- 上方横条是工具栏，可在此缩放、移动页面，或使用高亮注释（alt+1）![image.png](../assets/images/icon-reader-高亮注释.png)，文字注释（alt+2）![image.png](../assets/images/icon-reader-文字注释.png)，框选注释（alt+3）![image.png](../assets/images/icon-reader-选框注释.png)，设置注释颜色（alt+4 切换）![image.png](../assets/images/reader-设置注释颜色.png)；
+- 左侧是预览栏，可预览缩略图 / 目录；
+- 右侧是信息/笔记栏；
+- 上方横条是工具栏，可在此缩放、移动页面，或使用高亮注释（alt+1）、文字注释（alt+2）、框选注释（alt+3）等，设置注释颜色（alt+4 切换）；
 - 中央是阅读区域。
 
 ![image.png](../assets/images/reader-注释.png)
