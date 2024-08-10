@@ -22,7 +22,7 @@ order: 1
 
 **如果安装的时候提示** `无法安装插件“%S”。他可能无法与该版本的 Zotero 兼容。`：
 
-![插件安装失败](../../assets/images/image-zotero-插件安装失败.png)
+![插件安装失败](../../assets/images/zotero-插件安装失败.png)
 
 1. 请检查下载的插件格式。如果从 GitHub 下载，安装包在右侧的 Release 中的 xpi 文件。请不要下载源码。
 
@@ -32,11 +32,11 @@ order: 1
 
    首先需要确定自己 Zotero 的版本，依次点击 `帮助` => `关于 Zotero`，即可看到自己 Zotero 的版本（如图则是 Zotero 6）。
 
-   ![确定自己的版本号](../../assets/images/image-zotero-about-zotero.png)
+   ![确定自己的版本号](../../assets/images/zotero-about-zotero.png)
 
    在[国内镜像](https://zotero-chinese.com/plugins/)下载插件时，查看页面中`目标 Zotero 版本`找到适合自己的插件版本，点击后面的下载链接就可以下载到适合自己的插件。
 
-   ![目标 Zotero 版本](../../assets/images/image-目标zotero版本.png)
+   ![目标 Zotero 版本](../../assets/images/目标zotero版本.png)
 
 ## 插件检查更新时提示未找到更新
 

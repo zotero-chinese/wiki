@@ -17,11 +17,11 @@ icon: flag
 2. 等待页面加载完成
 3. 根据提示登录 GitHub 账号
 
-   ![根据提示登录 GitHub 账号](../assets/images/contributing/image-contribution-guide-vscode1.png)
+   ![根据提示登录 GitHub 账号](../assets/images/contributing/contribution-guide-vscode1.png)
 
 4. 根据提示安装推荐的插件
 
-   ![安装插件](../assets/images/contributing/image-贡献指南-安装插件.png)
+   ![安装插件](../assets/images/contributing/贡献指南-安装插件.png)
 
 5. 新建分支
 6. 进行对应的修改

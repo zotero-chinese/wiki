@@ -54,7 +54,7 @@
 
 您还可以「附加 URI 链接...」以添加指向网页（ `http://` 或 `https://` ）或计算机上其他程序（例如 OneNote `onenote://` ）的链接。
 
-![添加附件](../assets/images/image-添加附件.png)
+![添加附件](../assets/images/添加附件.png)
 
 当您右键单击某个条目并选择「添加附件」时，这些选项也可用。
 

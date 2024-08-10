@@ -21,41 +21,41 @@ Tara 是一个用于备份和恢复 Zotero 配置的插件，支持备份：
 
 下载安装 Tara 插件后，通过点击 `Tara` 图标来创建一个备份
 
-![开始备份](../../assets/images/zotero-plugin-tara/image-Tara-创建备份.png)
+![开始备份](../../assets/images/zotero-plugin-tara/Tara-创建备份.png)
 
 创建成功后，会在 Zotero 中生成一个 `Tara_backup` 的条目并自动生成一个 ZIP 格式的附件，这个就是备份文件。
 
 如果你再点一次创建，会再生成个附件，你可以选择不同时间段的备份文件进行恢复。
 
-![备份文件](../../assets/images/zotero-plugin-tara/image-Tara-备份文件.png)
+![备份文件](../../assets/images/zotero-plugin-tara/Tara-备份文件.png)
 
 ## 恢复备份
 
 点击`恢复`
 
-![恢复备份](../../assets/images/zotero-plugin-tara/image-Tara-恢复备份.png)
+![恢复备份](../../assets/images/zotero-plugin-tara/Tara-恢复备份.png)
 
 可以根据时间来选择要恢复的备份
 
-![选择要恢复备份](../../assets/images/zotero-plugin-tara/image-Tara-选择要恢复的备份.png)
+![选择要恢复备份](../../assets/images/zotero-plugin-tara/Tara-选择要恢复的备份.png)
 
 等待备份恢复完成，再重启 Zotero
 
-![备份恢复完成](../../assets/images/zotero-plugin-tara/image-Tara-备份恢复完成.png)
+![备份恢复完成](../../assets/images/zotero-plugin-tara/Tara-备份恢复完成.png)
 
 ## 导出备份文件
 
 点击`导出`
 
-![导出备份](../../assets/images/zotero-plugin-tara/image-Tara-导出备份.png)
+![导出备份](../../assets/images/zotero-plugin-tara/Tara-导出备份.png)
 
 等待完成后，去备份目录查看文件是否生成
 
-![导出备份成功](../../assets/images/zotero-plugin-tara/image-Tara-导出备份成功.png)
+![导出备份成功](../../assets/images/zotero-plugin-tara/Tara-导出备份成功.png)
 
 导出时，会将当成的配置信息和插件导出到一个单独 ZIP 文件中，导出的备份会默认储存在 `数据储存文件夹\backup` 下。
 
-![导出的备份文件](../../assets/images/zotero-plugin-tara/image-Tara-导出的备份.png)
+![导出的备份文件](../../assets/images/zotero-plugin-tara/Tara-导出的备份.png)
 
 ## 在新电脑上进行数据恢复
 

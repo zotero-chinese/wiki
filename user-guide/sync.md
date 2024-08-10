@@ -34,7 +34,7 @@ updated: 2023-09-23 20:52:08
 
 之后您可以在 `Zotero`-`编辑`-`设置`-`同步`-`设置`中 输入您的帐号密码，进行登陆。
 
-![账号登录](../assets/images/image-zotero-帐号登陆.png)
+![账号登录](../assets/images/zotero-帐号登陆.png)
 
 每个 Zotero 用户都可以获得 300 MB 的免费 Zotero 存储空间，用于存储附加文件，并可 [购买更大的存储空间](https://www.zotero.org/settings/storage?ref=sib)。如果您拥有钞能力，这是最简单的备份方法，在登陆您的 Zotero 账户并完成购买后无需其他任何设置。
 
@@ -92,34 +92,34 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 2. 登录后点击 右侧用户名=>账户信息
 
-   ![账户信息](../assets/images/image-坚果云-账户信息.png)
+   ![账户信息](../assets/images/坚果云-账户信息.png)
 
 3. 选择安全选项，下滑到底，点击添加应用。
 
-   ![添加应用](../assets/images/image-坚果云-添加应用.png)
+   ![添加应用](../assets/images/坚果云-添加应用.png)
 
 4. 完成后，记录下生成的密码。
 
-   ![生成应用密码](../assets/images/image-坚果云-生成密码.png)
+   ![生成应用密码](../assets/images/坚果云-生成密码.png)
 
-   ![复制应用密码](../assets/images/image-坚果云-密码.png)
+   ![复制应用密码](../assets/images/坚果云-密码.png)
 
 5. 打开 `Zotero`，`编辑`——`设置`——`同步`——`文件同步`，使用 `Zotero` 改成 `WebDAV`，并填写你的坚果云的服务器地址：`dav.jianguoyun.com/dav`。
    用户名是坚果云账号，密码是上一步中的应用密码（非坚果云账号登录密码），设置好后点击 `Verify Server` 即可。
 
-   ![登陆WebDAV账户](../assets/images/image-zotero-登陆webdav账户.png)
+   ![登陆WebDAV账户](../assets/images/zotero-登陆webdav账户.png)
 
 6. 到此处，电脑上关于坚果云的同步设置就完成了。
 
 7. 回到首页，点击右边的绿色的圈就可以同步更新，如果是第一次设置，会提示在坚果云里自动创建一个名叫 `Zotero` 的文件夹，用于存放同步更新的文件。
 
-   ![同步图标](../assets/images/image-zotero-同步图标.png)
+   ![同步图标](../assets/images/zotero-同步图标.png)
 
 ::: details 自定义存放路径
 
 如果在坚果云里新建了一个文件夹，想将文件放在那个文件夹里的话，那么在填写服务器地址时，需要添加对应的文件夹名字（建议文件夹用英文或数字命名），例如 work，那么服务器地址填写如下:
 
-![WebDAV网址设置](../assets/images/image-zotero-webdav网址设置.png)
+![WebDAV网址设置](../assets/images/zotero-webdav网址设置.png)
 
 此时，你的 Zotero 的同步文件将会放在 `根目录/work/Zotero` 中。
 

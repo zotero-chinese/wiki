@@ -27,7 +27,7 @@ updated: 2023-10-04 12:06:44
 
 ## 一、没有显示 Zotero 加载项
 
-![image.png](../../assets/images/image-wps-没有显示加载项.png)
+![image.png](../../assets/images/wps-没有显示加载项.png)
 
 :::info
 
@@ -39,7 +39,7 @@ updated: 2023-10-04 12:06:44
 
 检查 Zotero 是否已正常安装好**Microsoft Word 加载项**。安装此加载项的步骤，详见 Zotero 百科全书的 [【引文|插件】Word 加载项相关问题](../faqs/word-addon.md)（点击左侧蓝字自查）
 
-![重新安装 Word 插件](../../assets/images/image-settings-reinstalll-word-plugin.png)
+![重新安装 Word 插件](../../assets/images/settings-reinstalll-word-plugin.png)
 
 ### 2、WPS.VBA 插件的安装
 

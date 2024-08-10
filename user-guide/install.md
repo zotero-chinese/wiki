@@ -12,7 +12,7 @@ updated: 2023-07-20 16:51:54
 
 请在 [Zotero 官网](https://www.zotero.org/download/) 下载对应自己操作系统的安装包。
 
-![下载 Zotero](../assets/images/image-下载Zotero.png)
+![下载 Zotero](../assets/images/下载Zotero.png)
 
 ### 测试版本的 Zotero
 

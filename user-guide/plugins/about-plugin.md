@@ -39,7 +39,7 @@ Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，
 
 或者点击 `右上角的齿轮` -> `Install Add-on From File...` -> `选择刚刚下载的 xpi 文件`，即可安装成功。
 
-![安装插件](../../assets/images/image-zotero-plugin-install.png)
+![安装插件](../../assets/images/zotero-plugin-install.png)
 
 ::: tip
 
@@ -49,7 +49,7 @@ Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，
 
 ## 更新插件
 
-![升级插件](../../assets/images/image-zotero-plugin-update.png)
+![升级插件](../../assets/images/zotero-plugin-update.png)
 
 依次点击 `Zotero 菜单栏` -> `工具（Tools）` -> `插件（Plugins）` -> `右上角的齿轮` -> `Check for Updates` 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 

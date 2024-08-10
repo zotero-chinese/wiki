@@ -41,7 +41,7 @@ order: 2
 
 请注意， **Zotero 在更新至 6.0.23 或更高版本后，Word 选项卡里的按钮顺序有调整。** 新版本交换了第二个和第三个按钮的位置， **在阅读教程的时候请注意点击的按钮具体是哪一个，不要只去数是第几个按钮。**
 
-![Zotero Word 插件选项卡](../../assets/images/image-word-zotero窗格.png)
+![Zotero Word 插件选项卡](../../assets/images/word-zotero窗格.png)
 
 :::: details 按钮功能说明
 
@@ -113,9 +113,9 @@ order: 2
 
 1.  **Zotero 有两种插入文献的方式，一种是搜索对话框，另一种是经典视图的选择窗：**
 
-![引文对话框](../../assets/images/image-word-引文对话框.png)
+![引文对话框](../../assets/images/word-引文对话框.png)
 
-![经典引文对话框](../../assets/images/image-word-引文对话框-经典.png)
+![经典引文对话框](../../assets/images/word-引文对话框-经典.png)
 
 如果你在使用新式搜索框，推荐采用`年份 作者姓名`进行检索（两个关键词中间敲一个空格）。
 
@@ -141,13 +141,13 @@ order: 2
 
 4. 如果你 **在插入完成后想重新修改引用信息** ，请先在 Word 中插好的编号角标中间点一下，使输入光标在角标内（此时角标会变为灰色），然后点 `插入/编辑引注` 按钮即可编辑/增删此处引用的文献。
 
-![编辑引注](../../assets/images/image-edit-citation.jpg){width=60%}
+![编辑引注](../../assets/images/edit-citation.jpg){width=60%}
 
 5. 在 `插入/编辑引注` 过程中，请务必在选择文献过程中 **不要转到其他窗口去翻看查阅** 。如果边翻看边插入，很有可能导致插入失败并报错。如果插入过程中希望查阅信息，你可以先按回车键确认本次插入，待查阅完成后再用第 4 点提醒中的方法编辑/补充引用。
 
 6. Zotero 在插入文献时更新角标的速度非常缓慢， **建议关闭自动更新引用** 。这一设置在 Word 中的 Zotero 选项卡内：
 
-![文档设置](../../assets/images/image-word-document-preferences.png){width=60%}
+![文档设置](../../assets/images/word-document-preferences.png){width=60%}
 
 在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/images/icon-word-刷新.png) 按钮更新引用信息及编号** 。在 Zotero 6.0 新版本下，这个更新可能非常缓慢，你需要多一点耐心。
 
@@ -196,7 +196,7 @@ order: 2
 
 如上示例在 Zotero 条目信息中对需要为下标的单词两侧分别加上 `<sub>`和`</sub>`，回到在 Word 中点击 `Refresh` 刷新条目信息即可看到下标效果已经成功实现。
 
-![点击`Refresh`刷新条目信息](../../assets/images/image-Refresh.png)
+![点击`Refresh`刷新条目信息](../../assets/images/Refresh.png)
 
 ::::
 
@@ -226,7 +226,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md#第三方-csl-样式下载)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
 2. 需要在 Word 中指定当前文档使用的样式
 
-   ![文档设置](../../assets/images/image-word-document-preferences2.png){width=60%}
+   ![文档设置](../../assets/images/word-document-preferences2.png){width=60%}
 
    ::: warning
 
@@ -248,7 +248,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
    插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://zotero-chinese.com/plugins)下载安装。
 
-   ![Linter 自动识别条目语言](../../assets/images/image-auto-edit-language.jpg){width=60%}
+   ![Linter 自动识别条目语言](../../assets/images/auto-edit-language.jpg){width=60%}
 
    :::
 
@@ -258,7 +258,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 4. 如果你设置的样式全都正确，却发现有的正文角标里的内容多了点东西（页码），可以编辑一下这一处引用，把不必要的信息删掉：
 
-![编辑引文](../../assets/images/image-word-编辑引文.png)
+![编辑引文](../../assets/images/word-编辑引文.png)
 
 ## Word 中没有 Zotero 选项卡
 
@@ -268,7 +268,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 2. 打开 `Zotero 首选项`。
 3. 在 `引用/Cite` -`文字处理软件/Word Processors` 中点击 `重新安装 Microsoft Word 加载项/Reinstall Microsoft Word Add-in` 即可完成安装/更新/重装。
 
-![重新安装Word插件](../../assets/images/image-settings-reinstalll-word-plugin.png)
+![重新安装Word插件](../../assets/images/settings-reinstalll-word-plugin.png)
 
 :::warning
 
@@ -278,19 +278,19 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 若上图的【**文字处理软件/Word Processors**】没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins`，
 
-![image.png](../../assets/images/image-tools-addon.png)
+![image.png](../../assets/images/tools-addon.png)
 
 找到【**Zotero Word for Windows Integration**】插件，确保其没有处理禁用状态。
 
-![image.png](../../assets/images/image-zotero-addon-manager.png)
+![image.png](../../assets/images/zotero-addon-manager.png)
 
 ## 报错“无法与 Zotero 通讯”
 
-![无法与Zotero通讯](../../assets/images/image-zotero-addon-无法与Zotero通讯.jpg)
+![无法与Zotero通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
 
 遇到该问题时，请确保你的 Zotero 程序在运行的状态，如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：
 
-![重新安装加载项](../../assets/images/image-zotero-addon-重新安装加载项.jpg)
+![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
 依次打开 `编辑` - `设置` - `引用` - `重新安装加载项Microsoft Word`，然后重新打开 Word，问题即可得到解决。
 
@@ -302,7 +302,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-![更新文档时出错](../../assets/images/image-更新文档时出错.png)
+![更新文档时出错](../../assets/images/更新文档时出错.png)
 
 如果您在尝试在一个**新的空文档**中使用 Zotero 时出错，请参阅 [文字处理器插件故障排除](https://www.zotero.org/support/word_processor_plugin_troubleshooting)。
 
@@ -313,7 +313,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
    在`文件-选项-高级`，勾选 `键入内容替换所选文字`，问题即可得到解决。
    如问题未得到解决，请按照后续步骤逐步进行排查。
 
-   ![键入内容替换所选文字](../../assets/images/image-键入内容替换所选文字.png)
+   ![键入内容替换所选文字](../../assets/images/键入内容替换所选文字.png)
 
 2. 重启 Zotero 和 Word。
 
@@ -343,7 +343,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ### 您已经修改该引文，是否保留更改？
 
-![image.png](../../assets/images/image-word-确认保存修改.png)
+![image.png](../../assets/images/word-确认保存修改.png)
 
 该弹窗通常是用户手动修改了引文或参考文献表，比如该弹窗即为某文献在文中编码为“[1]”，用户手动把它修改为了“[111]”，Zotero 再次刷新时会询问用户是否保留这些修改？
 
@@ -373,7 +373,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ::: details Zotero 引文在 Word 中产生的域代码截图
 
-![image.png](../../assets/images/image-word-域代码.png)
+![image.png](../../assets/images/word-域代码.png)
 
 :::
 
