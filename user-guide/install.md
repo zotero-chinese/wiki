@@ -10,9 +10,9 @@ updated: 2023-07-20 16:51:54
 
 ## 主程序（PC）
 
-请在 [Zotero 官网 (https://zotero.org)](https://zotero.org) 下载对应自己操作系统的安装包。
+请在 [Zotero 官网](https://www.zotero.org/download/) 下载对应自己操作系统的安装包。
 
-![image.png](../assets/images/image-下载Zotero.png)
+![下载 Zotero](../assets/images/下载Zotero.png)
 
 ### 测试版本的 Zotero
 
@@ -68,6 +68,8 @@ Zotero 官方现已发布 [Zotero for Android 测试版](https://forums.zotero.o
 
 - [Google Play](https://play.google.com/store/apps/details?id=org.zotero.android)
 - [LingXingZhong 镜像](https://ftp.linxingzhong.top/Zotero_android/)
+
+我们也创建了一个仓库提供从源码编译的 Zotero Android 版本，见 [`northword/zotero-android-nightly-build`](https://github.com/northword/zotero-android-nightly-build) 仓库，但需注意，这个仓库发布的极不稳定，仅供测试使用！
 
 在官方版本正式发布前， Android 用户可使用以下第三方客户端：
 

@@ -74,7 +74,7 @@
     "**/.vitepress/cache": true,
     "**/.vitepress/theme": true,
     "**/.vitepress/tsconfig.json": true,
-    "**/.vitepress/config/markdown.ts": true,
+    "**/.vitepress/markdown.ts": true,
 
     // Other files
     "scripts": true,

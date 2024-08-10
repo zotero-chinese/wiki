@@ -11,11 +11,11 @@ updated: 2023-07-20 16:51:54
 
 ## 分类管理
 
-分类的图标类似文件夹：![image.png](../assets/images/icon-collection.png)。分类是所有文献条目的父级（也允许存在不属于任何分类的条目）可在主界面左侧查看分类列表，类似于文件夹的列表。可以拖动分类来归纳到不同层级。
+分类的图标类似文件夹：![分类图标](../assets/icons/treesource-collection.png)。分类是所有文献条目的父级（也允许存在不属于任何分类的条目）可在主界面左侧查看分类列表，类似于文件夹的列表。可以拖动分类来归纳到不同层级。
 
-在个人账户中，所有分类都属于![image.png](../assets/images/icon-我的文库.png)。在群组中，分类属于各自的群组。
+在个人账户中，所有分类都属于 「![image.png](../assets/icons/treesource-library.png) 我的文库」。在群组中，分类属于各自的群组。
 
-![image.png](../assets/images/image-文库合集-1.png)
+![image.png](../assets/images/文库合集-1.png)
 
 :::warning
 
@@ -27,17 +27,17 @@ updated: 2023-07-20 16:51:54
 
 ### 新建分类
 
-在主界面左上角，点击![image.png](../assets/images/icon-新建分类.png)，即可新建分类（collection）。
+在主界面左上角，点击 ![image.png](../assets/icons/toolbar-collection-add.png)，即可新建分类（collection）。
 
 或者，在菜单栏=>文件，新建分类：
 
-![image.png](../assets/images/image-新建合集-菜单.png)
+![image.png](../assets/images/新建合集-菜单.png)
 
-![image.png](../assets/images/image-新建合集.png)
+![image.png](../assets/images/新建合集.png)
 
 或者，右键单击现有的分类来创建子分类：
 
-![image.png](../assets/images/image-新建子合集.png)
+![image.png](../assets/images/新建子合集.png)
 
 > 💡 如何知道文献属于哪个或哪些分类？
 > 用鼠标点击选中文献条目后，按住 Ctrl/Cmd，文献所属的（分类）文件夹就会黄色高亮显示。
@@ -51,7 +51,7 @@ updated: 2023-07-20 16:51:54
 则二、三级分类内的文献都会在一级分类中显示，尽管你可能没有手动将其添加到一级分类。
 
 > 可以通过菜单栏=>查看=>从子集合中显示条目来开启/关闭这一功能。关闭后，所有文献仅会在其所属的分类中显示。
-> ![image.png](../assets/images/image-显示子集合中的条目.png)
+> ![image.png](../assets/images/显示子集合中的条目.png)
 
 ### 删除分类
 
@@ -74,7 +74,7 @@ updated: 2023-07-20 16:51:54
 
 在左侧栏有重复条目入口，点击后可以看到整个库中的重复条目，并可以手动确认要保留的版本，然后执行合并。
 
-![image.png](../assets/images/image-合并重复条目.png)
+![image.png](../assets/images/合并重复条目.png)
 
 ### 删除条目
 
@@ -82,7 +82,7 @@ updated: 2023-07-20 16:51:54
 
 在左侧栏打开回收站，可以选择内容并还原/彻底删除。右键点击回收站，可以清空回收站。
 
-![image.png](../assets/images/image-回收站.png)
+![image.png](../assets/images/回收站.png)
 
 ### 导出条目或 PDF
 
@@ -90,7 +90,7 @@ updated: 2023-07-20 16:51:54
 
 要导出 PDF（带高亮注释），请选中一个或多个条目后，从菜单栏 文件=>导出 PDFs：
 
-![image.png](../assets/images/image-menu-文件.png)
+![image.png](../assets/images/menu-文件.png)
 
 ## 标签管理
 
@@ -98,35 +98,35 @@ Zotero 通过标签来管理文献。对于同一类文献，可为其添加标�
 
 标签根据添加方式分为两类：自动标签与用户标签。自动标签是 Zotero 在抓取文献时提取的关键字；手动标签是用户添加的标签。下图中，橙色为自动标签，蓝色为手动标签。
 
-![image.png](../assets/images/image-标签管理.png)
+![image.png](../assets/images/标签管理.png)
 
 > 💡 关于自动标签
 > Zotero 会自动为新文献添加自动标签。可在菜单栏=>编辑=>设置=>常规=>使用关键词和标题自动给条目添加标签来开启/关闭这个功能。
 
-![image.png](../assets/images/image-使用关键词和标题自动给条目添加标签.png)
+![image.png](../assets/images/使用关键词和标题自动给条目添加标签.png)
 
 ### 添加/删除标签
 
-在主界面中，选中条目，在右侧栏的标签面板可以进行添加/删除。点击 Add 可新增标签，点击已有标签右侧的![image.png](../assets/images/icon-删除标签.png)可以删除标签。
+在主界面中，选中条目，在右侧栏的标签面板可以进行添加/删除。点击 Add 可新增标签，点击已有标签右侧的 「-」 可以删除标签。
 
-![image.png](../assets/images/image-标签.png)
+![image.png](../assets/images/标签.png)
 
 如果要删除所有自动标签，可在左下角标签栏的功能按钮中选择“删除此文献库中的自动标签”。
 
-![image.png](../assets/images/image-删除自动标签.png)
+![image.png](../assets/images/删除自动标签.png)
 
 ### 利用标签快速筛选文献
 
 在主界面的左下角是标签栏，可以点击其中的数个标签来筛选对应的文献条目。
 
-![image.png](../assets/images/image-首页左下角标签区域.png)
+![image.png](../assets/images/首页左下角标签区域.png)
 
 ### 设置彩色标签/设置星级
 
 Zotero 支持最多 9 种彩色标签。通过为标签赋予颜色，可以：
 
-- 具有彩色标签的条目上有彩色方块显示：![image.png](../assets/images/image-彩色标签.png)
-- 如果标签内容是 emoji 表情符号，将会显示符号内容，例如 ⭐：![image.png](../assets/images/image-标签-emoji.png)
+- 具有彩色标签的条目上有彩色方块显示：![image.png](../assets/images/彩色标签.png)
+- 如果标签内容是 emoji 表情符号，将会显示符号内容，例如 ⭐：![image.png](../assets/images/标签-emoji.png)
 - 通过快捷键（数字 1-9）快速添加标签
 
 设置方法是：
@@ -134,15 +134,15 @@ Zotero 支持最多 9 种彩色标签。通过为标签赋予颜色，可以：
 1. 通过前述添加标签的方法添加你需要的标签到任意一个文献（例如，⭐）
 2. 此时可以在主界面左下角的标签管理器中看到这个标签。右键单击，选择“指派颜色”。
 
-   ![添加标签](../assets/images/image-添加标签-添加颜色.png)
+   ![添加标签](../assets/images/添加标签-添加颜色.png)
 
 3. 在弹出窗口中设置一个颜色与快捷键位置（不能重复）。
 
-   ![选择标签颜色及位置](../assets/images/image-选择标签颜色及位置.png)
+   ![选择标签颜色及位置](../assets/images/选择标签颜色及位置.png)
 
 4. 此时在库中可以看到标签颜色或 emoji 图形。
 
-   ![星标或颜色](../assets/images/image-标签-星标或颜色.png)
+   ![星标或颜色](../assets/images/标签-星标或颜色.png)
 
 ### 自动未读与批量增删标签
 

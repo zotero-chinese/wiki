@@ -56,11 +56,11 @@ date: 2023-07-20 23:05:53
 
    打开需要修改的文档网页，点击末尾左下角的 “在 GitHub 上编辑此页”，网页会自动跳转到 GitHub 编辑文档源码的页面。
 
-   ![点击编辑此页](../assets/images/贡献指南-点击编辑此页.png)
+   ![点击编辑此页](../assets/images/contributing/贡献指南-点击编辑此页.png)
 
    如果你是第一次贡献，则会提示需要 fork 才能继续，请点击 “Fork this repositiry” 继续即可。
 
-   ![fork仓库](../assets/images/贡献指南-fork仓库.png)
+   ![fork仓库](../assets/images/contributing/贡献指南-fork仓库.png)
 
    编辑需要修改的地方，文档风格和 Markdown 语法请参阅 [文档风格指南 #Markdown 语法](markdown.md#文档语法风格)。
 
@@ -68,21 +68,21 @@ date: 2023-07-20 23:05:53
 
    修改完后，点击右上角的 `Commit Changes...`，
 
-   ![修改内容](../assets/images/贡献指南-修改内容.png)
+   ![修改内容](../assets/images/contributing/贡献指南-修改内容.png)
 
    在弹窗中在下方的 “Commit changes” 中输入有关此次修改的标题和具体描述。然后点击“Propose changes”。
 
-   ![输入提交信息](../assets/images/贡献指南-输入提交信息.png)
+   ![输入提交信息](../assets/images/contributing/贡献指南-输入提交信息.png)
 
 3. 提交 PR
 
    在 “Comparing changes” 页面中，，点击“Create Pull request”。
 
-   ![创建PR](../assets/images/贡献指南-创建pr2.png)
+   ![创建PR](../assets/images/contributing/贡献指南-创建pr2.png)
 
    输入此 PR 的标题和具体描述。点击 “Create pull request” 即可。
 
-   ![创建pr详情](../assets/images/贡献指南-创建pr3.png)
+   ![创建pr详情](../assets/images/contributing/贡献指南-创建pr3.png)
 
    PR 提交后，CI 工具会自动对提交的 PR 生成一个预览链接并评论在 PR 中，可以在此预览修改的结果。
 
