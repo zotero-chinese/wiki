@@ -26,11 +26,11 @@ updated: 2024-7-21 15:24:09
 
 进入 `资料库` - `打开更多`- 选择想要转换的 caj 文件
 
-![alt text](../../assets/images/image-caj2pdf-全球学术快报打开文献.jpg)
+![alt text](../../assets/images/caj2pdf-全球学术快报打开文献.jpg)
 
 在文献界面 `右键` - `另存为`- 保存 pdf 至指定目录即可。
 
-![alt text](../../assets/images/image-caj2pdf-全球学术快报另存为.jpg)
+![alt text](../../assets/images/caj2pdf-全球学术快报另存为.jpg)
 
 ## caj2pdf 项目
 
@@ -48,7 +48,7 @@ updated: 2024-7-21 15:24:09
 ✅ 文件拖拽  
 🔲 闭源引擎 ([caj2pdf#63](https://github.com/caj2pdf/caj2pdf/issues/63))
 
-![alt text](../../assets/images/image-caj2pdf-caj2pdf.jpg)
+![alt text](../../assets/images/caj2pdf-caj2pdf.jpg)
 
 软件的使用也非常简单，`输入文件` → 选择 `输出目录` → `开始转换`，等待数秒即可。部分 caj 文件会转换失败，失败的文件可尝试其他方法进行转换。
 
@@ -62,7 +62,7 @@ updated: 2024-7-21 15:24:09
 
 :::
 
-![alt text](../../assets/images/image-caj2pdf-油猴脚本下载文献.jpg)
+![alt text](../../assets/images/caj2pdf-油猴脚本下载文献.jpg)
 
 在搜索界面 点击 脚本的 `批量下载PDF` - `获取链接` - `PDF下载` - 下载对应的文章的 PDF 即可。
 
@@ -78,15 +78,15 @@ updated: 2024-7-21 15:24:09
 
 1.使用 CAJViewer 打开 CAJ 文件，然后点击 `文件` - `打印`
 
-![alt text](../../assets/images/image-caj2pdf-cajviewer打印.jpg)
+![alt text](../../assets/images/caj2pdf-cajviewer打印.jpg)
 
 2.选择打印机。由于电脑上安装的 PDF 阅读器不同，虚拟打印机的名称也会有所不同。在此示例中，选择 `Microsoft Print to PDF` 。
 
-![alt text](../../assets/images/image-caj2pdf-cajviewer选择打印机.jpg)
+![alt text](../../assets/images/caj2pdf-cajviewer选择打印机.jpg)
 
 3.选择保存位置后，等待转换完成即可。
 
-![alt text](../../assets/images/image-caj2pdf-cajviewer正在打印.jpg)
+![alt text](../../assets/images/caj2pdf-cajviewer正在打印.jpg)
 
 ::: info 提醒
 

@@ -16,15 +16,15 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 如果这是你第一次贡献文档，或是你有相当长一段时间没有打开过 CodeSpace 了，你将会看到下面的界面：
 
-![创建代码空间](../assets/images/贡献指南-创建codespace.png)
+![创建代码空间](../assets/images/contributing/贡献指南-创建codespace.png)
 
 选择绿色按钮 “Create new codespace” 以创建一个新的代码空间，然后等待页面加载完成，创建进度条完成：
 
-![创建codespace进度条](../assets/images/贡献指南-创建codespace进度条.png)
+![创建codespace进度条](../assets/images/contributing/贡献指南-创建codespace进度条.png)
 
 随后，你将进入到如下页面，代码空间配置完成。
 
-![创建codespace完成](../assets/images/贡献指南-vsc首页.png)
+![创建codespace完成](../assets/images/contributing/贡献指南-vsc首页.png)
 
 ### 非初次贡献
 
@@ -34,7 +34,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 也可以通过点击绿色按钮“Resume this codespace”进入这个 CodeSpace。
 
-![复用CodeSpace](../assets/images/贡献指南-复用codespace.png)
+![复用CodeSpace](../assets/images/contributing/贡献指南-复用codespace.png)
 
 你也可以通过点击“Create a new one”来继续创建一个新的 CodeSpace，但通常我们可以直接复用已有的。
 
@@ -46,19 +46,19 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 如果你是第一次贡献，则选择`创建新分支`，
 
-![新建分支](../assets/images/image-contribute-vscode-new-branch.png)
+![新建分支](../assets/images/contributing/contribute-vscode-new-branch.png)
 
 否则，选择 `创建新分支依据...`，然后选择 `upstream/main`，
 
-![新建分支基于](../assets/images/贡献指南-新建分支基于.png)
+![新建分支基于](../assets/images/contributing/贡献指南-新建分支基于.png)
 
-![依据上游分支](../assets/images/贡献指南-新分支依据上游.png)
+![依据上游分支](../assets/images/contributing/贡献指南-新分支依据上游.png)
 
 输入分支名，并按回车确认。创建完成后根据提示切换到新分支。
 
-![输入新分支的名字](../assets/images/image-contribution-new-branch-name.png)
+![输入新分支的名字](../assets/images/contributing/contribution-new-branch-name.png)
 
-![切换到新分支](../assets/images/image-contribution-switch-to-new-branch.png)
+![切换到新分支](../assets/images/contributing/contribution-switch-to-new-branch.png)
 
 ::: info 什么是分支？为什么要创建新分支？
 
@@ -76,7 +76,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 你可以在左侧“资源管理器”中选择你想要修改的文件，在中间部分编辑文件，进行修改。
 
-![进行对应的修改](../assets/images/image-贡献指南-进行对应的更改.png)
+![进行对应的修改](../assets/images/contributing/贡献指南-进行对应的更改.png)
 
 ::: tip 文档风格和语法
 
@@ -92,7 +92,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 粘贴的图片会自动保存到 `src/assets/images/` 目录，你可以通过在图片路径上右击，选择“重命名符号”来快速重命名图片文件。
 
-![重命名图片](../assets/images/贡献指南-重命名图片.png)
+![重命名图片](../assets/images/contributing/贡献指南-重命名图片.png)
 
 :::
 
@@ -102,13 +102,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 如果你没有找到 `NPM 脚本` 窗格，可以在下图 “资源管理器” 后方的菜单中勾选 “NPM Scripts” 来显示这个窗格。
 
-![启动开发服务器](../assets/images/贡献指南-启动开发服务器.png)
+![启动开发服务器](../assets/images/contributing/贡献指南-启动开发服务器.png)
 
 运行脚本后，会自动打开一个浏览器窗口，这个网页会实时更新你在编辑器中所做出的修改。
 
 如果你意外关闭了这个网页，可以在上图右下角所示“终端”中，按住 `Ctrl` + 单击 `https://localhost:5137`，再次打开这个网页。
 
-![预览页面](../assets/images/贡献指南-文档预览页面.png)
+![预览页面](../assets/images/contributing/贡献指南-文档预览页面.png)
 
 ### 2.4 提交并推送修改
 
@@ -116,17 +116,17 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 切换到 `源代码管理` 窗格，在输入框中输入一个简短的修改描述，然后点击按钮 `提交 / Commit`。
 
-<!-- ![提交并推送](../assets/images/image-贡献指南-提交并推送.png) -->
+<!-- ![提交并推送](../assets/images/贡献指南-提交并推送.png) -->
 
-![提交](../assets/images/贡献指南-提交.png)
+![提交](../assets/images/contributing/贡献指南-提交.png)
 
 如果你在 [2.1 创建新分支](#21-创建新分支) 完成了创建分支的操作，那么点击“提交”后，将会出现下面的界面：
 
-![发布分支](../assets/images/贡献指南-发布分支.png)
+![发布分支](../assets/images/contributing/贡献指南-发布分支.png)
 
 点击“发布分支”。如果你是第一次贡献，你将收到一个弹窗提示你是否需要创建一个分支仓库（fork），点击“创建分支 / Create fork”：
 
-![发布分支-创建fork](../assets/images/贡献指南-发布分支-创建fork.png)
+![发布分支-创建fork](../assets/images/contributing/贡献指南-发布分支-创建fork.png)
 
 创建完成后，编辑器右下角将出现两个弹窗，提示已完成。
 
@@ -136,13 +136,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 点击上面弹窗的蓝色按钮“创建拉取请求 / Create Pull Request”，
 
-![创建pr](../assets/images/贡献指南-创建pr.png)
+![创建pr](../assets/images/contributing/贡献指南-创建pr.png)
 
 在左侧新出现的界面里，为拉取请求写一个简单明了的标题，简单写一个描述，然后点击蓝色按钮“Create / 创建”。
 
-![完善pr信息](../assets/images/贡献指南-完善pr信息.png)
+![完善pr信息](../assets/images/contributing/贡献指南-完善pr信息.png)
 
-![pr详情](../assets/images/贡献指南-pr详情.png)
+![pr详情](../assets/images/contributing/贡献指南-pr详情.png)
 
 ### 2.6 PR 修改
 
@@ -162,7 +162,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
    如果你是第一次贡献，需要管理员审核后机器人才能运行，这是保障安全需要的。
 
-   ![netlify预览pr](../assets/images/image-build-pr预览-1.png)
+   ![netlify预览pr](../assets/images/contributing/build-pr预览-1.png)
 
    ::: tip 哪些情况会导致检查错误？
 
@@ -174,13 +174,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 3. PR 被接受并合并至官方 main 分支后，则可以更新 main 分支，并删除 pr-workflow 分支
 
-   ![更新main分支](../assets/images/image-build-更新main分支-1.png)
+   ![更新main分支](../assets/images/contributing/build-更新main分支-1.png)
 
 ## 3 关闭 CodeSpace
 
 点击左下角蓝色按钮“Codespaces: xxxxxx”，在上方弹出的菜单中选择“Stop Current Codespace”，就可以关闭代码空间了，然后你可以安全的关闭浏览器。
 
-![关闭codespace](../assets/images/贡献指南-关闭codespace.png)
+![关闭codespace](../assets/images/contributing/贡献指南-关闭codespace.png)
 
 当然，你也可以直接关闭浏览器，默认情况下，代码空间在 30 分支无活动后会自动关闭。
 

@@ -18,7 +18,7 @@ Zotero 文库中主要有三类内容： **文献条目，附件文件，笔记*
 ::: info 一点说明
 
 以下是文库中常见的几种情况：
-![文库中常见的几种情况](../../assets/images/image-item-in-zotero.png)
+![文库中常见的几种情况](../../assets/images/item-in-zotero.png)
 
 - **绿色**的情况最完美，可以正常阅读文献也可以正常引用；
 - **橙色**的情况有正确的文献信息，可以正常引用，在[手动补充附件](../add-attachments.md#为条目添加附件)后也可以在 Zotero 中阅读论文全文；
@@ -51,7 +51,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 在 `Zotero 设置` 中，进入 `高级` 设置，点击下方“自动检查转换器和样式的更新”后面的 `立即更新` 按钮。
 
-![更新官方转换器](../../assets/images/image-update-official-translators.jpg)
+![更新官方转换器](../../assets/images/update-official-translators.jpg)
 
 ::: tip 推荐保持自动更新
 
@@ -73,7 +73,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 2. 进入茉莉花插件的设置，转到 “非官方维护中文转换器（翻译器）” 部分，然后点击 “更新全部” 按钮。
 
-   ![更新“非官方维护中文转换器”](../../assets/images/image-update-unofficial-translators.jpg)
+   ![更新“非官方维护中文转换器”](../../assets/images/update-unofficial-translators.jpg)
 
    ::: info 提醒
 
@@ -97,11 +97,11 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项/Preference
 
-      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -111,11 +111,11 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -125,7 +125,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新
 
-   ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
+   ![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
 
    :::
 
@@ -145,23 +145,23 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    例如，下图中的数据储存位置就是 `E:\Zotero File`，这里也可以点击“打开数据文件夹”快速打开你的数据文件夹。
 
-   ![数据储存位置](../../assets/images/image-zotero-数据储存位置.png)
+   ![数据储存位置](../../assets/images/zotero-数据储存位置.png)
 
 2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `E:\Zotero File\translators`），这里是 Zotero 转换器 的存放位置。
 
-   ![转换器的存放位置](../../assets/images/image-数据储存位置translators文件夹.png)
+   ![转换器的存放位置](../../assets/images/数据储存位置translators文件夹.png)
 
 3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的转换器。
 
-   ![手动在GitHub上下载转换器](../../assets/images/image-手动在github下载translators.png)
+   ![手动在GitHub上下载转换器](../../assets/images/手动在github下载translators.png)
 
 4. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
-   ![选择所有的转换器文件](../../assets/images/image-translators文件.png)
+   ![选择所有的转换器文件](../../assets/images/translators文件.png)
 
 5. 将所有的转换器文件粘贴到第 1 步中 translators 文件夹并替换，此时已经完成 Zotero 中 转换器文件的更新。
 
-   ![替换旧的转换器](../../assets/images/image-手动更新translators.png)
+   ![替换旧的转换器](../../assets/images/手动更新translators.png)
 
 6. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
 
@@ -177,11 +177,11 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    1. 右键点击 Zotero Connector 按钮，然后点击 选项
 
-      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-chrome-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
 
    2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -191,11 +191,11 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
 
-      ![打开 Zotero Connector 的选项](../../assets/images/image-update-translator-safari-1.jpg)
+      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
 
    2. 点击 Advanced 中的 Reset Translators 按钮
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/image-update-translator-ResetTranslators.jpg)
+      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
    :::
 
@@ -207,7 +207,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    你也可以通过检查日志的方式确保转换器成功更新
 
-   ![通过日志确保转换器成功更新](../../assets/images/image-update-translator-如何确保更新成功.jpg)
+   ![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
    :::
 
 此时你已经完成了转换器的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
@@ -228,11 +228,11 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
     Mozilla Firefox：点击浏览器界面右上角的 `三横线` 按钮，然后点击 `扩展和主题`。
 
-    ![在 Chrome 中打开管理扩展程序](../../assets/images/image-uninstall-connector-chrome.jpg)
+    ![在 Chrome 中打开管理扩展程序](../../assets/images/uninstall-connector-chrome.jpg)
 
 2.  找到 Zotero Connector，点击 `移除` / `删除` / `三个点` 按钮里的 `移除`。
 
-    ![在扩展中移除 Zotero Connector](../../assets/images/image-uninstall-connector-chrome2.jpg)
+    ![在扩展中移除 Zotero Connector](../../assets/images/uninstall-connector-chrome2.jpg)
 
 3.  按照下面教程中的说明重新安装最新版的 Zotero Connector 浏览器扩展。
 
@@ -250,19 +250,19 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 1.  打开 Safari，点击系统菜单栏左上角的 `Safari 浏览器`，然后点击 `设置`。
 
-    ![打开 Safari 设置](../../assets/images/image-uninstall-connector-safari.jpg)
+    ![打开 Safari 设置](../../assets/images/uninstall-connector-safari.jpg)
 
 2.  在弹出的窗口中点击顶部的 `扩展` 选项卡，在左边栏找到 Zotero Connector，然后点击右边界面里的 `卸载`。
 
-    ![在扩展中点击卸载](../../assets/images/image-uninstall-connector-safari1.jpg)
+    ![在扩展中点击卸载](../../assets/images/uninstall-connector-safari1.jpg)
 
 3.  点击弹窗中的 `在访达中显示`。
 
-    ![在访达中显示](../../assets/images/image-uninstall-connector-safari2.jpg)
+    ![在访达中显示](../../assets/images/uninstall-connector-safari2.jpg)
 
 4.  完全退出 Safari 浏览器，然后回到上一步的访达界面中，将 Zotero 程序文件删除（如果不小心关闭了刚刚弹出的访达窗口，你也可以重新开启一个访达窗口，然后在左边栏中点击 `应用程序`，然后删除里面的 Zotero 程序文件）。
 
-![删除 Zotero 程序文件](../../assets/images/image-uninstall-connector-safari3.jpg)
+![删除 Zotero 程序文件](../../assets/images/uninstall-connector-safari3.jpg)
 
 5.  重新从 Zotero 官网下载新的 Zotero 安装包并完成安装。[获取 Zotero 下载链接](../install.md)
 
@@ -272,9 +272,9 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 8.  如果 Zotero Connector 图标仍未出现，你可以在 Safari 窗口顶部的按钮区域空白处点鼠标右键，然后点击 `自定义工具栏...`，然后将下方的 Zotero Connector 图标拖到上方按钮区域里你希望放置的位置上。
 
-![自定义工具栏](../../assets/images/image-connector-safari-button.jpg)
+![自定义工具栏](../../assets/images/connector-safari-button.jpg)
 
-![将 Zotero Connector 按钮拖至合适位置](../../assets/images/image-connector-safari-button2.jpg)
+![将 Zotero Connector 按钮拖至合适位置](../../assets/images/connector-safari-button2.jpg)
 
 :::
 

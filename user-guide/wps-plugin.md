@@ -32,11 +32,11 @@ updated: 2023-09-24 14:49:15
 
 可能有一些同学的电脑里已经安装 Python3，可以按 `WIN + R`，在弹出的窗口输入 `cmd`
 
-![运行CMD](../assets/images/image-run-cmd.png)
+![运行CMD](../assets/images/run-cmd.png)
 
 点击确认后，再出现的小黑屏上输入 `python --version`
 
-![查看Python版本](../assets/images/image-run-python-version.png)
+![查看Python版本](../assets/images/run-python-version.png)
 
 注意看，只要出现 `Python 3.xx.xx`，就说明 Python3 已经正确安装，直接进入下一步。如果出现其他的，说明 Python3 未正确安装，请按下面的步骤进行安装。
 
@@ -44,11 +44,11 @@ updated: 2023-09-24 14:49:15
 
 这里以 miniconda 示例，安装时默认设置，除了下面截图的设置，要记得打勾，把 Python 添加到环境变量里
 
-![安装miniconda](../assets/images/image-miniconda-install.png)
+![安装miniconda](../assets/images/miniconda-install.png)
 
 安装了官网 Python 的同学，需要手动将 Python 添加到环境变量里
 
-![安装Python](../assets/images/image-python-install.png)
+![安装Python](../assets/images/python-install.png)
 
 安装成功后，在小黑屏运行 `python --version`，出现 `Python 3.xx.xx` 说明安装成功。
 
@@ -58,23 +58,23 @@ updated: 2023-09-24 14:49:15
 
 将下载后的压缩包解压后，看到的文件如下
 
-![解压后的文件列表](../assets/images/wps-pluginfile-list.png)
+![解压后的文件列表](../assets/images/wps/wps-pluginfile-list.png)
 
 #### Windows 系统
 
 Windows 系统直接双击 `windows安装与卸载.bat` 安装文件，你可能会遇到下面的警告提示
 
-![点击更多信息](../assets/images/image-wps-warn1.png)
+![点击更多信息](../assets/images/wps/wps-warn1.png)
 
-![点击仍要运行](../assets/images/image-wps-warn2.png)
+![点击仍要运行](../assets/images/wps/wps-warn2.png)
 
 运行后出现的提示窗口，输入 `1`，并按确认，进行安装
 
-![选择1](../assets/images/image-wps-install.png)
+![选择1](../assets/images/wps/wps-install.png)
 
 安装成功的提示
 
-![安装成功](../assets/images/image-wps-success.png)
+![安装成功](../assets/images/wps/wps-success.png)
 
 #### Linux 系统
 
@@ -93,7 +93,7 @@ WPS 插件的按钮与 Word 插件类似
 - Export，导出其他文本编辑器兼容的文本格式
 - About，插件相关信息
 
-![WPS插件UI按钮](../assets/images/image-wps-plugin-ui-buttons.png)
+![WPS插件UI按钮](../assets/images/wps/wps-plugin-ui-buttons.png)
 
 具体的操作过程，请参考 [在 Word 中插入参考文献](./ms-word-plugin.md)
 
@@ -101,11 +101,11 @@ WPS 插件的按钮与 Word 插件类似
 
 如果你之前安装把 Word 里的 Zotero 插件强行安装到 WPS，那样出现多个的 Zotero 选项
 
-![多个Zotero选择](../assets/images/image-wps-plugin-ui.png)
+![多个Zotero选择](../assets/images/wps/wps-plugin-ui.png)
 
 先打开 `C:\Users\你的用户名\AppData\Roaming\kingsoft\wps` 目录 (注意用户名换成你自己的)，找到 `startup` 目录，删掉里面的 `zotero.dotm` 文件，这个文件是直接从 Zotero 的 Word 插件里复制到 WPS 里，需要 WPS 有 VBA 环境，现在已经不需要了，可以删掉。
 
-![WPS插件安装路径](../assets/images/image-wps-vba-plugin-install-path.png)
+![WPS插件安装路径](../assets/images/wps/wps-vba-plugin-install-path.png)
 
 ## 4. 可能遇到的问题
 
