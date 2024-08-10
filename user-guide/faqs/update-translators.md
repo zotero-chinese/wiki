@@ -87,7 +87,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
    :::
 
@@ -167,7 +167,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 `Advanced` -> `Translators` 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
    :::
 
@@ -222,9 +222,9 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 1.  进入浏览器的管理扩展程序页面
 
-    Google Chrome：点击浏览器界面右上角的 `三个点` 按钮，然后点击 `扩展程序` -> `管理扩展程序`。
+    Google Chrome：点击浏览器界面右上角的 `三个点` 按钮，然后点击 「扩展程序」->「管理扩展程序」。
 
-    Microsoft Edge：点击浏览器界面右上角的 `三个点` 按钮，然后点击 `扩展` -> `管理扩展`。
+    Microsoft Edge：点击浏览器界面右上角的 `三个点` 按钮，然后点击 「扩展」->「管理扩展」。
 
     Mozilla Firefox：点击浏览器界面右上角的 `三横线` 按钮，然后点击 `扩展和主题`。
 

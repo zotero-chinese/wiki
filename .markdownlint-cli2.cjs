@@ -40,9 +40,23 @@ module.exports = {
         },
         {
           name: "->",
-          message: "请使用 '->' 作为步骤连接符号",
-          searchPattern: `/=>|=》/g`,
+          message: "请使用 '->' 作为步骤连接符号，两边空一格",
+          searchPattern: `/=>|=》|-》/g`,
           replace: "->",
+          searchScope: "text",
+        },
+        {
+          name: "界面元素",
+          message: "请使用直角引号包裹界面元素",
+          searchPattern: "/`([^`]*)` ?->/g",
+          replace: "「$1」->",
+          searchScope: "text",
+        },
+        {
+          name: "界面元素",
+          message: "请使用直角引号包裹界面元素",
+          searchPattern: "/-> ?`([^`]*)`/g",
+          replace: "->「$1」",
           searchScope: "text",
         },
         // {
