@@ -12,11 +12,11 @@ icon: copy
 
 Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 EndNote 导出您的库为 XML 格式。
 
-对于较旧的 EndNote 库，可能需要在导出之前将图形转换为附件。步骤为：“References”菜单 -> “Figure” -> “Convert Figures to File Attachments…”。
+对于较旧的 EndNote 库，可能需要在导出之前将图形转换为附件。步骤为：「References」菜单 -> 「Figure」 -> 「Convert Figures to File Attachments…」。
 
 1. 如果您想要导出 EndNote 库的子集，请先选择您想要导出的条目
-2. 转到“File”菜单 → “Export”。将弹出一个对话框，询问您导出文件的保存位置
-3. 在上一步弹出的对话框中导航到您的 EndNote 数据目录（通常为 `我的文档/endnote.data`）。该目录包含一个“PDF”文件夹，但您应确保选择数据目录而不是任何子文件夹（例如 PDF 文件夹）内
+2. 转到「File」菜单 → 「Export」。将弹出一个对话框，询问您导出文件的保存位置
+3. 在上一步弹出的对话框中导航到您的 EndNote 数据目录（通常为 `我的文档/endnote.data`）。该目录包含一个「PDF」文件夹，但您应确保选择数据目录而不是任何子文件夹（例如 PDF 文件夹）内
 
    ::: warning
 
@@ -44,9 +44,9 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
    :::
 
-4. 选择“保存类型”为“XML”
-5. 如果您只想导出库的子集，请选中“Export Selected References”框，否则，请确保未选中它
-6. 点击“Save”
+4. 选择「保存类型」为「XML」
+5. 如果您只想导出库的子集，请选中「Export Selected References」框，否则，请确保未选中它
+6. 点击「Save」
 7. 退出 EndNote
 
 ### 导入 Zotero
@@ -69,7 +69,7 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
 在弹出的 import 窗口中，有两类选项，第一类是导入的题录信息的位置：是否将题录信息导入到一个新的分类。
 
-第二类是文件的位置：我们推荐选择“Copy files to the Zotero storage folder”，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
+第二类是文件的位置：我们推荐选择「Copy files to the Zotero storage folder」，这将条目的 PDF 等附件也导入到 Zotero 的存储文件夹中，便于 Zotero 同步（否则只是存储文件链接，在其他设备打不开附件），最后点击【继续】。
 
 ![Zotero导入向导第二步](../assets/images/endnote-zotero-import-option2.png)
 
@@ -77,7 +77,7 @@ Zotero 无法直接导入 `.enl` 格式的 EndNote 库，因此第一步是从 E
 
 ![Zotero 导入完成](../assets/images/endnote-zotero-succ.png)
 
-请注意，如下图示，如果 Zotero 在 EndNote XML 数据中遇到它不支持的任何字段（例如，自定义字段、作者地址、作者隶属关系），它会将这些数据添加到附加到导入项目的注释笔记中。这些注释将标记为“\_EndnoteXML 导入”。如果导入增加了许多这些注释笔记，Zotero 的性能可能会受到负面影响。您应该查看其中每个注释，以确定是否需要保留数据并删除任何不必要的注释笔记。此外，还应检查这些注释笔记，以确定是否可以将任何数据迁移到正确的 Zotero 字段（如果以非标准方式使用 EndNote 字段，这一点尤其重要）。
+请注意，如下图示，如果 Zotero 在 EndNote XML 数据中遇到它不支持的任何字段（例如，自定义字段、作者地址、作者隶属关系），它会将这些数据添加到附加到导入项目的注释笔记中。这些注释将标记为「\_EndnoteXML 导入」。如果导入增加了许多这些注释笔记，Zotero 的性能可能会受到负面影响。您应该查看其中每个注释，以确定是否需要保留数据并删除任何不必要的注释笔记。此外，还应检查这些注释笔记，以确定是否可以将任何数据迁移到正确的 Zotero 字段（如果以非标准方式使用 EndNote 字段，这一点尤其重要）。
 
 ![Zotero导入非标字段](../assets/images/endnote-zotero-caution.png)
 
@@ -123,7 +123,7 @@ Word 2016/2019/Office 365 for Windows:
 
 ![Word切换引文格式](../assets/images/word-export-reference.png)
 
-选择“Bibtex Export”
+选择「Bibtex Export」
 
 ![选择bibtex export](../assets/images/word-export-reference-format.png)
 
@@ -133,7 +133,7 @@ Word 2016/2019/Office 365 for Windows:
 
 **4、导入 Zotero**
 
-打开 Zotero，在“我的文库”中选择（或新建后选中）一个文件夹，用于存放要导入的文献条目，在左上角工具栏点击【文件】=>【从剪切板导入】
+打开 Zotero，在「我的文库」中选择（或新建后选中）一个文件夹，用于存放要导入的文献条目，在左上角工具栏点击【文件】=>【从剪切板导入】
 
 ![导入Zotero菜单](../assets/images/word-zotero-import.png)
 
@@ -174,4 +174,4 @@ Word 2016/2019/Office 365 for Windows:
 - XML ContextObject
 - Unqualified Dublin Core RDF
 
-您还可以通过支持【导出上述文件格式的网站或软件】中导入题录到 Zotero，例如 Reference Manager、RefWorks、Papers、Google Scholar Library、ReadCube 等，方法是下载好以上的标准化的参考格式文件，例如 RIS、BibTeX 或 CSL JSON，然后通过单击“文件”→“导入...”导入 Zotero，然后选择“文件”，即可导入 Zotero。
+您还可以通过支持【导出上述文件格式的网站或软件】中导入题录到 Zotero，例如 Reference Manager、RefWorks、Papers、Google Scholar Library、ReadCube 等，方法是下载好以上的标准化的参考格式文件，例如 RIS、BibTeX 或 CSL JSON，然后通过单击「文件」→「导入...」导入 Zotero，然后选择「文件」，即可导入 Zotero。

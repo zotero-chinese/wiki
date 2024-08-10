@@ -26,7 +26,7 @@ date: 2023-07-20 23:05:53
 
 - 修正错别字、语句不通等
 - 修正文档中的错误或不清晰的描述
-- 文档里出现“TODO”、“施工中”、“待办”等字样的内容
+- 文档里出现「TODO」、「施工中」、「待办」等字样的内容
 - 我们在文档仓库里列出的 [待办项](https://github.com/zotero-chinese/wiki/issues)
 - 调整章节结构，使文档条理更清晰
 - 增加示例、专题或入门教程
@@ -54,11 +54,11 @@ date: 2023-07-20 23:05:53
 
 1. 在线修改
 
-   打开需要修改的文档网页，点击末尾左下角的 “在 GitHub 上编辑此页”，网页会自动跳转到 GitHub 编辑文档源码的页面。
+   打开需要修改的文档网页，点击末尾左下角的 「在 GitHub 上编辑此页」，网页会自动跳转到 GitHub 编辑文档源码的页面。
 
    ![点击编辑此页](../assets/images/contributing/贡献指南-点击编辑此页.png)
 
-   如果你是第一次贡献，则会提示需要 fork 才能继续，请点击 “Fork this repositiry” 继续即可。
+   如果你是第一次贡献，则会提示需要 fork 才能继续，请点击 「Fork this repositiry」 继续即可。
 
    ![fork仓库](../assets/images/contributing/贡献指南-fork仓库.png)
 
@@ -70,17 +70,17 @@ date: 2023-07-20 23:05:53
 
    ![修改内容](../assets/images/contributing/贡献指南-修改内容.png)
 
-   在弹窗中在下方的 “Commit changes” 中输入有关此次修改的标题和具体描述。然后点击“Propose changes”。
+   在弹窗中在下方的 「Commit changes」 中输入有关此次修改的标题和具体描述。然后点击「Propose changes」。
 
    ![输入提交信息](../assets/images/contributing/贡献指南-输入提交信息.png)
 
 3. 提交 PR
 
-   在 “Comparing changes” 页面中，，点击“Create Pull request”。
+   在 「Comparing changes」 页面中，，点击「Create Pull request」。
 
    ![创建PR](../assets/images/contributing/贡献指南-创建pr2.png)
 
-   输入此 PR 的标题和具体描述。点击 “Create pull request” 即可。
+   输入此 PR 的标题和具体描述。点击 「Create pull request」 即可。
 
    ![创建pr详情](../assets/images/contributing/贡献指南-创建pr3.png)
 

@@ -47,7 +47,7 @@ Zotero 7 beta 版本内建 Firefox 115 开发者工具。要在启动 Zotero 时
 
 ::: info 即将实现：在菜单栏中直接打开开发者工具
 
-Zotero 团队正在添加“浏览器工具箱”菜单，以便直接从菜单呼出开发者工具，而无需在启动时传入 `--jsdebugger` 标志，见 [PR #3387](https://github.com/zotero/zotero/pull/3387)。
+Zotero 团队正在添加「浏览器工具箱」菜单，以便直接从菜单呼出开发者工具，而无需在启动时传入 `--jsdebugger` 标志，见 [PR #3387](https://github.com/zotero/zotero/pull/3387)。
 
 :::
 

@@ -67,7 +67,7 @@ date: 2024-03-13 21:39:17
 
 ![阅读进度条](../../assets/images/zotero-plugin-style/zoterostyle-阅读进度条.png)
 
-其二是在[命令框](#命令框)。用选中要查看的这条文献,按 `Shift + P`，一个的命令窗口出现了。你可以点击“高能阅读进度条”,以查看你阅读的详细时间。鼠标点击进度条，还可以快速跳转到 PDF 对应页面。
+其二是在[命令框](#命令框)。用选中要查看的这条文献,按 `Shift + P`，一个的命令窗口出现了。你可以点击「高能阅读进度条」,以查看你阅读的详细时间。鼠标点击进度条，还可以快速跳转到 PDF 对应页面。
 
 ![按下`Shift + P`](../../assets/images/zotero-plugin-style/zoterostyle-阅读进度条shiftp.png)
 
@@ -190,7 +190,7 @@ date: 2024-03-13 21:39:17
 
 #### easyScholar 密钥
 
-1.  密钥申请：在 easyScholar 官网首页登录后，点击右上角用户名进入后台，点击 “开放接口”，即可看见[密钥](https://www.easyscholar.cc/console/user/open)。
+1.  密钥申请：在 easyScholar 官网首页登录后，点击右上角用户名进入后台，点击 「开放接口」，即可看见[密钥](https://www.easyscholar.cc/console/user/open)。
 
     ⚠️ 请保护好你的密钥，不要以任何方式透漏给任何人。⚠️
 
@@ -353,7 +353,7 @@ CAS quartiles 中科院分区升级版:
 
 ### 创建者
 
-Zotero 支持显示创建者列，但仅能显示第一作者，如”Polygon et al.“，”张三 等“。
+Zotero 支持显示创建者列，但仅能显示第一作者，如 「Polygon et al.」，「张三 等」。
 
 通过 Style 你可以自定义作者的显示，使其显示末尾作者（很多情况下，末尾作者是我们较为关注的通讯作者）。
 

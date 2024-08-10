@@ -66,7 +66,7 @@
 
     // 3rd package config
     ".vscode": true,
-    ".markdownlint-cli2.jsonc": true,
+    // ".markdownlint-cli2.jsonc": true,
     ".prettierignore": true,
     ".obsidian": true,
 

@@ -19,7 +19,7 @@ Zotero bib 是 Zotero 官方维护的一个引文生成器，使用它，你可�
 使用：
 
 1. 打开 <https://zbib.org/>
-2. 在下图输入框中输入需要引用的条目链接/识别符等，然后点击“Cite”
+2. 在下图输入框中输入需要引用的条目链接/识别符等，然后点击「Cite」
 
    ![zbib首页](../assets/images/bib-首页.png)
 
@@ -29,6 +29,6 @@ Zotero bib 是 Zotero 官方维护的一个引文生成器，使用它，你可�
 
 4. 继续重复第 2 步可以添加多个条目
 5. 已添加的条目将会存储在浏览器，下次打开网页仍然可以看到，直到你清除浏览器 Cookie 或手动删除。
-6. 点击“Copy to Clipboard”可以将结果复制到粘贴板。
+6. 点击「Copy to Clipboard」可以将结果复制到粘贴板。
 
    ![zbib复制结果](../assets/images/bib-复制结果.png)

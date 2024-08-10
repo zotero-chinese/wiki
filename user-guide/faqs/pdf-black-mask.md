@@ -16,10 +16,10 @@ redirectFrom: /user-guide/faqs/%E8%A7%A3%E5%86%B3pdf%E5%9B%BE%E7%89%87%E4%B8%8A%
 
 具体操作步骤如下：
 
-1. 在菜单编辑选择“设置”：
+1. 在菜单编辑选择「设置」：
    ![编辑器](../../assets/images/zotero-编辑器.png)
 1. 弹出如下图所示的对话框。
-   点击“I accept the risk”
+   点击「I accept the risk」
    ![同意承担风险](../../assets/images/zotero-我同意承担风险.png)
 1. 在搜索框中输入 acceleration，双击搜索到的 layers.acceleration.disabled，Value 将变为 true。然后重新启动 Zotero，即可解决问题。
    ![将 layers.acceleration.disabled 设置为 true](../../assets/images/zotero-layers.acceleration.disabled.png)

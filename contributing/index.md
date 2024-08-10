@@ -16,7 +16,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 如果你觉得 Zotero 中文社区还可以，请分享给你的同学 / 同门 / 师兄弟姐妹 / 老师 / 好友！
 
-我们网站的地址是：`zotero-chinese.com`，你也可以在百度、必应或谷歌上搜索“Zotero 中文社区”找到我们。（目前，百度的搜索效果较必应要差一些，我们正在努力改进）
+我们网站的地址是：`zotero-chinese.com`，你也可以在百度、必应或谷歌上搜索「Zotero 中文社区」找到我们。（目前，百度的搜索效果较必应要差一些，我们正在努力改进）
 
 我们欢迎大家在微信、小红书、B 站等平台上分享我们的网址，以帮助更多的同学！
 
@@ -35,7 +35,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 读者可以多种途径参与讨论。
 
 1. 在 GitHub 上的文档源码仓库下 [提交 ISSUE](https://github.com/zotero-chinese/wiki/issues)；
-2. 在 GitHub Zotero Chinese 组织的 [Discussions 上讨论](https://github.com/orgs/zotero-chinese/discussions)（也可以直接点击文档网页底部的“参与讨论”）；
+2. 在 GitHub Zotero Chinese 组织的 [Discussions 上讨论](https://github.com/orgs/zotero-chinese/discussions)（也可以直接点击文档网页底部的「参与讨论」）；
 3. 在网页底部评论区留言；
 
    ::: info
@@ -136,4 +136,4 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
 
 Zotero 是一个全球化的社区，它由各个国家的学者共同组成，在参与 Zotero 中文社区建设之外，您也可以参与 Zotero 官方社区的建设，请阅读 [Get Involved With Zotero](https://www.zotero.org/getinvolved/) 了解详情。
 
-特别地，如果你完善 Zotero 客户端的“中文”语言，可以加入 Zotero 官方在 Transifex 的翻译团队，请阅读 [Localization - Zotero Documentation](https://www.zotero.org/support/dev/localization) 以了解详情。
+特别地，如果你完善 Zotero 客户端的「中文」语言，可以加入 Zotero 官方在 Transifex 的翻译团队，请阅读 [Localization - Zotero Documentation](https://www.zotero.org/support/dev/localization) 以了解详情。

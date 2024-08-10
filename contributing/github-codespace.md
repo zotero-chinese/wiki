@@ -2,7 +2,7 @@
 
 GitHub 代码空间是托管在云上的开发环境，这使得我们无需再安装 VS Code, Node.js 和 Git 等开发软件，就可以对文档进行维护编辑。
 
-从名称很明显可以看出，“代码空间”是由 GitHub 运营的，因此使用此方法显然需要一个 GitHub 账号。
+从名称很明显可以看出，「代码空间」是由 GitHub 运营的，因此使用此方法显然需要一个 GitHub 账号。
 
 ## 1 进入代码空间
 
@@ -18,7 +18,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ![创建代码空间](../assets/images/contributing/贡献指南-创建codespace.png)
 
-选择绿色按钮 “Create new codespace” 以创建一个新的代码空间，然后等待页面加载完成，创建进度条完成：
+选择绿色按钮 「Create new codespace」 以创建一个新的代码空间，然后等待页面加载完成，创建进度条完成：
 
 ![创建codespace进度条](../assets/images/contributing/贡献指南-创建codespace进度条.png)
 
@@ -30,13 +30,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 如果你曾在近期创建过 CodeSpace，点击上述按钮时，你将在列表中看到一个已存在的 CodeSpace 。
 
-可以通过点击 CodeSpace 的名称（下图为 “potential halibut”，但每个人创建的名称可能略有差异）进入这个 CodeSpace；
+可以通过点击 CodeSpace 的名称（下图为 「potential halibut」，但每个人创建的名称可能略有差异）进入这个 CodeSpace；
 
-也可以通过点击绿色按钮“Resume this codespace”进入这个 CodeSpace。
+也可以通过点击绿色按钮「Resume this codespace」进入这个 CodeSpace。
 
 ![复用CodeSpace](../assets/images/contributing/贡献指南-复用codespace.png)
 
-你也可以通过点击“Create a new one”来继续创建一个新的 CodeSpace，但通常我们可以直接复用已有的。
+你也可以通过点击「Create a new one」来继续创建一个新的 CodeSpace，但通常我们可以直接复用已有的。
 
 ## 2 修改和提交
 
@@ -74,7 +74,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ### 2.2 修改内容
 
-你可以在左侧“资源管理器”中选择你想要修改的文件，在中间部分编辑文件，进行修改。
+你可以在左侧「资源管理器」中选择你想要修改的文件，在中间部分编辑文件，进行修改。
 
 ![进行对应的修改](../assets/images/contributing/贡献指南-进行对应的更改.png)
 
@@ -90,7 +90,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 也可以直接 `ctrl+v` 粘贴图片。
 
-粘贴的图片会自动保存到 `src/assets/images/` 目录，你可以通过在图片路径上右击，选择“重命名符号”来快速重命名图片文件。
+粘贴的图片会自动保存到 `src/assets/images/` 目录，你可以通过在图片路径上右击，选择「重命名符号」来快速重命名图片文件。
 
 ![重命名图片](../assets/images/contributing/贡献指南-重命名图片.png)
 
@@ -100,19 +100,19 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 你可以在下图所示 `NPM 脚本` 窗格运行 `docs:dev` 脚本，来启动一个开发服务器。
 
-如果你没有找到 `NPM 脚本` 窗格，可以在下图 “资源管理器” 后方的菜单中勾选 “NPM Scripts” 来显示这个窗格。
+如果你没有找到 `NPM 脚本` 窗格，可以在下图 「资源管理器」 后方的菜单中勾选 「NPM Scripts」 来显示这个窗格。
 
 ![启动开发服务器](../assets/images/contributing/贡献指南-启动开发服务器.png)
 
 运行脚本后，会自动打开一个浏览器窗口，这个网页会实时更新你在编辑器中所做出的修改。
 
-如果你意外关闭了这个网页，可以在上图右下角所示“终端”中，按住 `Ctrl` + 单击 `https://localhost:5137`，再次打开这个网页。
+如果你意外关闭了这个网页，可以在上图右下角所示「终端」中，按住 `Ctrl` + 单击 `https://localhost:5137`，再次打开这个网页。
 
 ![预览页面](../assets/images/contributing/贡献指南-文档预览页面.png)
 
 ### 2.4 提交并推送修改
 
-你可以简单地把“提交”理解为“保存”。如果你已经完成修改，或是想要临时存储一下，可以按照下述流程。
+你可以简单地把「提交」理解为「保存」。如果你已经完成修改，或是想要临时存储一下，可以按照下述流程。
 
 切换到 `源代码管理` 窗格，在输入框中输入一个简短的修改描述，然后点击按钮 `提交 / Commit`。
 
@@ -120,11 +120,11 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ![提交](../assets/images/contributing/贡献指南-提交.png)
 
-如果你在 [2.1 创建新分支](#21-创建新分支) 完成了创建分支的操作，那么点击“提交”后，将会出现下面的界面：
+如果你在 [2.1 创建新分支](#21-创建新分支) 完成了创建分支的操作，那么点击「提交」后，将会出现下面的界面：
 
 ![发布分支](../assets/images/contributing/贡献指南-发布分支.png)
 
-点击“发布分支”。如果你是第一次贡献，你将收到一个弹窗提示你是否需要创建一个分支仓库（fork），点击“创建分支 / Create fork”：
+点击「发布分支」。如果你是第一次贡献，你将收到一个弹窗提示你是否需要创建一个分支仓库（fork），点击「创建分支 / Create fork」：
 
 ![发布分支-创建fork](../assets/images/contributing/贡献指南-发布分支-创建fork.png)
 
@@ -134,11 +134,11 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 前一步的提交只是提交到了自己的仓库，维护者很难注意到，当你认为你修改的差不多了的时候，就可以把修改提交到文档仓库让大家审核，也就是发起 Pull Request。
 
-点击上面弹窗的蓝色按钮“创建拉取请求 / Create Pull Request”，
+点击上面弹窗的蓝色按钮「创建拉取请求 / Create Pull Request」，
 
 ![创建pr](../assets/images/contributing/贡献指南-创建pr.png)
 
-在左侧新出现的界面里，为拉取请求写一个简单明了的标题，简单写一个描述，然后点击蓝色按钮“Create / 创建”。
+在左侧新出现的界面里，为拉取请求写一个简单明了的标题，简单写一个描述，然后点击蓝色按钮「Create / 创建」。
 
 ![完善pr信息](../assets/images/contributing/贡献指南-完善pr信息.png)
 
@@ -178,7 +178,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ## 3 关闭 CodeSpace
 
-点击左下角蓝色按钮“Codespaces: xxxxxx”，在上方弹出的菜单中选择“Stop Current Codespace”，就可以关闭代码空间了，然后你可以安全的关闭浏览器。
+点击左下角蓝色按钮「Codespaces: xxxxxx」，在上方弹出的菜单中选择「Stop Current Codespace」，就可以关闭代码空间了，然后你可以安全的关闭浏览器。
 
 ![关闭codespace](../assets/images/contributing/贡献指南-关闭codespace.png)
 
@@ -192,7 +192,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ### 我提交的 PR 总有冲突
 
-在新建分支是，请选择“从 upstream/main 新建分支”，以确保始终是基于最新的文档修改。
+在新建分支是，请选择「从 upstream/main 新建分支」，以确保始终是基于最新的文档修改。
 
 如果还有问题，可以在每一次修改前都运行 `git:force-sync` 脚本。
 
