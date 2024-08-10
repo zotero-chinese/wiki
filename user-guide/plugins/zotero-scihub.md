@@ -40,7 +40,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ### 插件设置
 
-![插件设置](../../assets/images/image-zotero-scihub.png)
+![插件设置](../../assets/images/zotero-plugin-scihub/image-zotero-scihub.png)
 
 `Automatic PDF Download`:勾选后，在添加条目以后会自动为带有 DOI 的条目下载 Pdf 格式的论文。
 
@@ -50,14 +50,14 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 部分用户在使用过程中经常会碰到以下弹窗错误：
 
-![插件报错](../../assets/images/image-scihub报错.png)
-![插件报错](../../assets/images/image-scihub报错_1.png)
+![插件报错](../../assets/images/zotero-plugin-scihub/image-scihub报错.png)
+![插件报错](../../assets/images/zotero-plugin-scihub/image-scihub报错_1.png)
 
 这种情况通常是访问次数过多以后，Sichub 服务器识别到了机器人抓取从而出现了验证码验证，您需要登陆 Scihub 输入出现的验证码信息。
 
 建议在知网抓取文献的时候，建议关闭插件中的 `Automatic PDF Download`。部分中文文献带有 DOI 字段，在抓取这部分中文文献时，插件会访问 Scihub 进行下载，但由于 Scihub 网站基本上没有收录中文文献，所以插件也不会下载到 Pdf 文件。对 Scihub 网站过于频繁的访问会触发网站的验证机制。
 
-![连接至服务器时发生错误](../../assets/images/image-scihub报错_2.png)
+![连接至服务器时发生错误](../../assets/images/zotero-plugin-scihub/image-scihub报错_2.png)
 
 自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
 
