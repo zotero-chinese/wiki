@@ -116,17 +116,18 @@ date: 2023-10-04 11:38:09
 
 ::: info 标题
 
-`Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR`
-
-`Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR`
+```diff
+-- Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR
+++ Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR
+```
 
 :::
 
 ::: info 参考文献表
 
-[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on ==SO2== resistance of birnessite for low-temperature ==NH3-SCR==, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 
-[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO~2~ resistance of birnessite for low-temperature NH~3~-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on ==SO<sub>2</sub>== resistance of birnessite for low-temperature ==NH<sub>3</sub>-SCR==, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 
 :::
 
