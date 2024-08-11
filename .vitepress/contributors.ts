@@ -5,6 +5,8 @@ export interface WikiContributor {
   name: string;
   /**
    * 贡献者的 GitHub 用户名
+   *
+   * 如果没有配置 links 和 avatar，网站将根据这个属性生成链接和头像
    */
   username: string;
   /**
