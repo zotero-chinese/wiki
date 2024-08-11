@@ -5,6 +5,7 @@ authors:
   - ShareStuff
   - Chikit_L
   - 可口可乐
+  - zepinglee
 date: 2023-10-04 11:38:09
 ---
 
@@ -89,11 +90,16 @@ date: 2023-10-04 11:38:09
 
 ### 为何 `[100]` 和 `[99]` 后的空隙不一样
 
-::: info 待办
+例如下面这种情况：
 
-<https://github.com/zotero-chinese/wiki/issues/232>
+```plain
+[99] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[100]     X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+```
 
-:::
+这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在 「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
+
+当然，你也可以通过在 Word 中调整制表符宽度来修复这个问题。
 
 ## CSL 样式问题
 
