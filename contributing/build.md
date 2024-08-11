@@ -145,7 +145,7 @@ pnpm install
 
 ::: info
 
-上述“环境配置”步骤只需在第一次修改代码时执行一次，一旦复制或克隆某仓库后，就无需再次复制或克隆。
+上述「环境配置」步骤只需在第一次修改代码时执行一次，一旦复制或克隆某仓库后，就无需再次复制或克隆。
 
 :::
 
@@ -210,9 +210,9 @@ pnpm install
 
    进入个人 GitHub 帐号下的复制仓库（即 <https://github.com/你的名字/wiki/>）。
 
-   一般 GitHub 会自动提示有可提交的 PR，点击 “Compare & pull request”，输入此 PR 的标题和具体描述，
+   一般 GitHub 会自动提示有可提交的 PR，点击 「Compare & pull request」，输入此 PR 的标题和具体描述，
 
-   最后点击 “Create pull request” 即可。
+   最后点击 「Create pull request」 即可。
 
 2. 审核、评论以及修改 PR
 

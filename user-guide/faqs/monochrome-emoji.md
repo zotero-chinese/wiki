@@ -25,10 +25,10 @@ redirectFrom: /user-guide/faqs/Emoji%E5%8F%98%E6%88%90%E4%BA%86%E9%BB%91%E7%99%B
 
 具体操作步骤如下：
 
-1. 在菜单编辑选择“设置”：
+1. 在菜单编辑选择「设置」：
    ![编辑器](../../assets/images/zotero-编辑器.png)
 2. 弹出如下图所示的对话框。
-   点击“I accept the risk”
+   点击「I accept the risk」
    ![同意承担风险](../../assets/images/zotero-我同意承担风险.png)
 3. 在搜索框中输入 emoji，双击搜索到的 `font.name-list.emoji`，由 `Segoe UI Emoji, Twemoji Mozilla` 修改为 `EmojiOne Mozilla`。
    ![修改为"EmojiOne Mozilla"](../../assets/images/zotero-修改font.name-list.emoji.png)

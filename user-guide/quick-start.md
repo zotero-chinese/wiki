@@ -50,7 +50,7 @@ Zotero 是一个文献管理软件。它旨在存储、管理和引用参考书�
 
 [![image](../assets/images/quick-start/快速上手-分类.png)](https://www.zotero.org/support/collections_and_tags#collections)
 
-左侧窗格的 `我的文库` 中包含个人账户下的的所有条目。右键单击 `我的文库` 或单击 新建分类 按钮（![image](../assets/icons/toolbar-collection-add.png) 在左窗格上方）创建一个新分类，即一个用于收纳文献条目的文件夹，其中可以放置特定主题相关的条目。将分类想象为音乐播放器中的播放列表：分类中的条目是文库中条目的一个“链接”。同一条目可以同时属于多个分类。
+左侧窗格的 `我的文库` 中包含个人账户下的的所有条目。右键单击 `我的文库` 或单击 新建分类 按钮（![image](../assets/icons/toolbar-collection-add.png) 在左窗格上方）创建一个新分类，即一个用于收纳文献条目的文件夹，其中可以放置特定主题相关的条目。将分类想象为音乐播放器中的播放列表：分类中的条目是文库中条目的一个「链接」。同一条目可以同时属于多个分类。
 
 ### 标签
 
@@ -62,7 +62,7 @@ Zotero 是一个文献管理软件。它旨在存储、管理和引用参考书�
 
 [![image](../assets/images/quick-start/快速上手-搜索.png)](https://www.zotero.org/support/searching)
 
-[快速搜索](https://www.zotero.org/support/searching) 显示元数据、标签或全文内容与搜索词匹配的条目。单击搜索框左侧的放大镜图标将打开“高级搜索”窗口，允许进行更复杂或更具体的搜索。
+[快速搜索](https://www.zotero.org/support/searching) 显示元数据、标签或全文内容与搜索词匹配的条目。单击搜索框左侧的放大镜图标将打开「高级搜索」窗口，允许进行更复杂或更具体的搜索。
 
 ### 保存的搜索
 

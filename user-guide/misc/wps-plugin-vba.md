@@ -37,7 +37,7 @@ updated: 2023-10-04 12:06:44
 
 ### 1、检查 Microsoft Word 加载项
 
-检查 Zotero 是否已正常安装好**Microsoft Word 加载项**。安装此加载项的步骤，详见 Zotero 百科全书的 [【引文|插件】Word 加载项相关问题](../faqs/word-addon.md)（点击左侧蓝字自查）
+检查 Zotero 是否已正常安装好**Microsoft Word 加载项**。安装此加载项的步骤，详见 Zotero 百科全书的 [「引文|插件」Word 加载项相关问题](../faqs/word-addon.md)（点击左侧蓝字自查）
 
 ![重新安装 Word 插件](../../assets/images/settings-reinstalll-word-plugin.png)
 
@@ -55,23 +55,23 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ![image.png](../../assets/images/wps/wps-双击vba安装程序.png)
 
-2）**双击**打开 WPS. VBA 安装程序，依次单击【**Next**】，最后单击【**Finish**】。用 WPS 打开任意一个 Word 文档，检查是否正常显示 Zotero 加载项。
+2）**双击**打开 WPS. VBA 安装程序，依次单击「**Next**」，最后单击「**Finish**」。用 WPS 打开任意一个 Word 文档，检查是否正常显示 Zotero 加载项。
 
 ![image.png](../../assets/images/wps/wps-安装vba.png)
 
 :::warning
 
-若 WPS. VBA 安装后，仍未显示 Zotero 加载项，或需将【**宏安全性**】设成低（但不建议）。除此外可见下方**3、补充 Zotero. dotm 文件**
+若 WPS. VBA 安装后，仍未显示 Zotero 加载项，或需将「**宏安全性**」设成低（但不建议）。除此外可见下方**3、补充 Zotero. dotm 文件**
 
 :::
 
 ### 3、补充 Zotero.dotm 文件
 
-1）在 Zotero 图标处**右键单击**，单击【**打开文件所在的位置**】打开 Zotero 安装路径
+1）在 Zotero 图标处**右键单击**，单击「**打开文件所在的位置**」打开 Zotero 安装路径
 
 ![image.png](../../assets/images/wps/wps-打开zotero所在位置.png)
 
-2）依次双击打开【**extensions**】-【**<zoteroWinWordIntegration@zotero.org>】-【install**】文件夹，复制 **Zotero.dotm** 文件。
+2）依次双击打开「**extensions**」-「**<zoteroWinWordIntegration@zotero.org>」-「install**」文件夹，复制 **Zotero.dotm** 文件。
 
 ![image.png](../../assets/images/wps/wps-word模板位置.png)
 
@@ -83,7 +83,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 :::
 
-3）在 WPS 图标处**右键单击**，单击【**打开文件所在的位置**】打开 WPS 安装路径。
+3）在 WPS 图标处**右键单击**，单击「**打开文件所在的位置**」打开 WPS 安装路径。
 
 ![image.png](../../assets/images/wps/wps-打开wps程序目录.png)
 
@@ -93,13 +93,13 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 :::
 
-4）找到并打开**版本最新**的文件夹（即**数字最大**），再依次打开【**office6**】-【**startup**】
+4）找到并打开**版本最新**的文件夹（即**数字最大**），再依次打开「**office6**」-「**startup**」
 
 ![image.png](../../assets/images/wps/wps-选择wps程序目录版本.png)
 
 ![image.png](../../assets/images/wps/wps-程序目录-office6.png)
 
-5）在 WPS 的【**startup**】启动项文件夹内，粘贴 **Zotero.dotm** 文件。再次用 WPS 打开任一 Word 文档，检查 WPS 是否已显示 Zotero 加载项。
+5）在 WPS 的「**startup**」启动项文件夹内，粘贴 **Zotero.dotm** 文件。再次用 WPS 打开任一 Word 文档，检查 WPS 是否已显示 Zotero 加载项。
 
 ![image.png](../../assets/images/wps/wps-startup目录.png)
 
@@ -131,7 +131,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ### 2、解决方法二
 
-1）单击【**开发者工具**】-【**加载项**】，弹出的对话框单击【**选用**】。
+1）单击「**开发者工具**」-「**加载项**」，弹出的对话框单击「**选用**」。
 
 ![image.png](../../assets/images/wps/wps-选择加载项模板.png)
 
@@ -143,7 +143,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 :::warning
 
-若【**开发工具**】选项卡的内容为灰色，即无法点击操作。
+若「**开发工具**」选项卡的内容为灰色，即无法点击操作。
 
 **解决方法**：安装 WPS. VBA 插件（详见本文档 **WPS. VBA 插件的安装**）
 
@@ -151,25 +151,25 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 :::
 
-2）弹出对话框，双击进入上方地址栏并复制**地址**，或地址栏处右键单击，再单击【**将地址复制为文本**】。复制好地址后，即可关闭当前窗口。
+2）弹出对话框，双击进入上方地址栏并复制**地址**，或地址栏处右键单击，再单击「**将地址复制为文本**」。复制好地址后，即可关闭当前窗口。
 
 ![image.png](../../assets/images/wps/wps-复制地址.png)
 
-3）单击【**文件**】选项卡，再单击【**打开**】。将 **地址** 粘贴至【**文件名**】，【**文件类型**】选择 **所有文件**，然后单击【**打开**】。
+3）单击「**文件**」选项卡，再单击「**打开**」。将 **地址** 粘贴至「**文件名**」，「**文件类型**」选择 **所有文件**，然后单击「**打开**」。
 
 ![image.png](../../assets/images/wps/wps-保存文件.png)
 
 ![image.png](../../assets/images/wps/wps-保存模板位置.png)
 
-4）选中 **Normal.dotm** 文件，单击【**打开**】，随之打开名为 **Normal.dotm** 文档。
+4）选中 **Normal.dotm** 文件，单击「**打开**」，随之打开名为 **Normal.dotm** 文档。
 
 ![image.png](../../assets/images/wps/wps-打开模板文件.png)
 
-5）在 **Normal.dotm** 文档内，依次单击【**文件**】-【**文档加密**】-【**属性**】
+5）在 **Normal.dotm** 文档内，依次单击「**文件**」-「**文档加密**」-「**属性**」
 
 ![image.png](../../assets/images/wps/wps-文件属性.png)
 
-6）在 **Normal.dotm** 属性对话框，切换到【**自定义**】窗口，【**名称**】和【**取值**】分别输入 **ZOTERO_PREF_1** 和 **1** ，点击【**添加**】。同理，再添加上 **ZOTERO_PREF_2** 和 **1** ，最后点击【**确定**】。
+6）在 **Normal.dotm** 属性对话框，切换到「**自定义**」窗口，「**名称**」和「**取值**」分别输入 **ZOTERO_PREF_1** 和 **1** ，点击「**添加**」。同理，再添加上 **ZOTERO_PREF_2** 和 **1** ，最后点击「**确定**」。
 
 ![image.png](../../assets/images/wps/wps-修改模板参数.png)
 
@@ -177,7 +177,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 ![image.png](../../assets/images/wps/wps-添加自定义属性.png)
 
-7）左上角单击【**保存**】图标或快捷键 **Ctrl+S** 保存 **Normal.dotm** 文档。重新用 WPS 打开一个 Word 文档检查是否不再出现报错窗口。
+7）左上角单击「**保存**」图标或快捷键 **Ctrl+S** 保存 **Normal.dotm** 文档。重新用 WPS 打开一个 Word 文档检查是否不再出现报错窗口。
 
 ![image.png](../../assets/images/wps/wps-保存模板.png)
 
@@ -235,11 +235,11 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 #### 只保留 1 个 Zotero 加载项
 
-1）依次单击【**开发者工具**】-【**加载项**】。 单击选中 **Zotero.dotm**，单击【**禁用**】。
+1）依次单击「**开发者工具**」-「**加载项**」。 单击选中 **Zotero.dotm**，单击「**禁用**」。
 
 ![image.png](../../assets/images/wps/wps-禁用原模板.png)
 
-2）**Zotero.dotm** 前面方框，此刻已更改成 **取消勾选**，点击【**确定**】即可。
+2）**Zotero.dotm** 前面方框，此刻已更改成 **取消勾选**，点击「**确定**」即可。
 
 ![image.png](../../assets/images/wps/wps-确定编辑.png)
 

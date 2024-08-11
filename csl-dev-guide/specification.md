@@ -1201,7 +1201,7 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 - "year-suffix" - 对名字相同的折叠项，折叠相同的年份，例如： "(Doe 2000a, 2000b)" 变为 "(Doe 2000a, b)"。
 - "year-suffix-ranged" - 对名字相同的折叠项，折叠年份范围，例如： "(Doe 2000a, b, c, e)" 变为 "(Doe 2000a–c,e)"。
 
-当 `disambiguate-add-year-suffix` 设置为 `"false"` 时，或者引用中包含位置（例如：“(Doe 2000a-c, 2000d, p. 5, 2000e,f)”，"Doe 2000d" 有一个页码位置），"year-suffix" 和 "year-suffix-ranged" 回退到 "year"。
+当 `disambiguate-add-year-suffix` 设置为 `"false"` 时，或者引用中包含位置（例如：「(Doe 2000a-c, 2000d, p. 5, 2000e,f)」，"Doe 2000d" 有一个页码位置），"year-suffix" 和 "year-suffix-ranged" 回退到 "year"。
 
 `year-suffix-delimiter`
 
@@ -2134,10 +2134,10 @@ The CSL syntax does not have support for configuration of links. However, proces
 If the bibliography entry for an item renders any of the following identifiers, the identifier should be anchored as a link, with the target of the link as follows:
 
 1. `url`: output as is
-2. `doi`: prepend with “[https://doi.org/](https://doi.org/)”
-3. `pmid`: prepend with “[https://www.ncbi.nlm.nih.gov/pubmed/](https://www.ncbi.nlm.nih.gov/pubmed/)”
-4. `pmcid`: prepend with “[https://www.ncbi.nlm.nih.gov/pmc/articles/](https://www.ncbi.nlm.nih.gov/pmc/articles/)”
+2. `doi`: prepend with 「[https://doi.org/](https://doi.org/)」
+3. `pmid`: prepend with 「[https://www.ncbi.nlm.nih.gov/pubmed/](https://www.ncbi.nlm.nih.gov/pubmed/)」
+4. `pmcid`: prepend with 「[https://www.ncbi.nlm.nih.gov/pmc/articles/](https://www.ncbi.nlm.nih.gov/pmc/articles/)」
 
-If the identifier is rendered as a URI, include rendered URI components (e.g. “[https://doi.org/](https://doi.org/)”) in the link anchor. Do not include any other affix text in the link anchor (e.g. “Available from: “, “doi: “, “PMID: “).
+If the identifier is rendered as a URI, include rendered URI components (e.g. 「[https://doi.org/](https://doi.org/)」) in the link anchor. Do not include any other affix text in the link anchor (e.g. “Available from: “, “doi: “, “PMID: “).
 
 Citation processors should include an option flag for calling applications to disable bibliography linking behavior.

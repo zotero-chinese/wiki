@@ -10,7 +10,7 @@ title: 在 Word 中把引注链接到参考文献表
 
 ## 描述
 
-建立引注（citation）与参考文献表（bibliography）之间的单向超链接（引用 -> 参考书目），类似于 endnotes 的“Link in-text citations to references in the bibliography”：
+建立引注（citation）与参考文献表（bibliography）之间的单向超链接（引用 -> 参考书目），类似于 endnotes 的「Link in-text citations to references in the bibliography」：
 
 ![EndNote 中关于链接引注和参考文献表的选项](../../assets/images/endnote-link-citation-to-bib.png)
 
