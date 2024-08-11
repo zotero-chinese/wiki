@@ -267,45 +267,36 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 1. 确认已经 refresh
 2. 确认不是孤立条目，若为孤立条目，删除重插。阅读：[判断孤立条目](../ms-word-plugin.md#孤立的条目)。
 
-## Word 加载项报错相关
+## Word 加载项错误相关
 
 ### Word 中没有 Zotero 选项卡
 
 一些朋友在 Word 中的 Zotero 选项卡突然消失了，或者使用的时候报错要求重装/升级该加载项。 **这一加载项需要在 Zotero 首选项 中安装** 。具体步骤如下：
 
 1. 保存好正在编辑的 Word 文档，并**彻底退出 Word**。
-2. 打开 `Zotero 首选项`。
-3. 在 `引用/Cite` -`文字处理软件/Word Processors` 中点击 `重新安装 Microsoft Word 加载项/Reinstall Microsoft Word Add-in` 即可完成安装/更新/重装。
+2. 在 Zotero 中，「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」
 
-![重新安装Word插件](../../assets/images/settings-reinstalll-word-plugin.png)
+![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
-:::warning
+:::info
 
 如果退出 Word 后重新安装这一加载项仍然报错，建议重启电脑后再尝试。
 
 :::
 
-若上图的「**文字处理软件/Word Processors**」没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins`，
-
-![image.png](../../assets/images/tools-addon.png)
-
-找到「**Zotero Word for Windows Integration**」插件，确保其没有处理禁用状态。
-
-![image.png](../../assets/images/zotero-addon-manager.png)
-
 ### 报错「无法与 Zotero 通讯」
 
 ![无法与Zotero通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
 
-遇到该问题时，请确保你的 Zotero 程序在运行的状态，如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：
+遇到该问题时，请确保你的 Zotero 程序处于运行状态
+
+如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开 「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
 
 ![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
-依次打开 `编辑` - `设置` - `引用` - `重新安装加载项Microsoft Word`，然后重新打开 Word，问题即可得到解决。
-
 ### Zotero 在更新文档时出错
 
-::: tip
+::: info
 
 本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice ，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
 
