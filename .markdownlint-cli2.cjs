@@ -144,6 +144,8 @@ module.exports = {
         "ThemeColorPicker",
         "ToggleFullScreenButton",
         "ToggleRTLButton",
+        "sub",
+        "sup",
       ],
     },
     // 兼容 Prettier 禁用

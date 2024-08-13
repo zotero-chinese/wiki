@@ -5,9 +5,8 @@ authors:
   - ShareStuff
   - Chikit_L
   - 可口可乐
+  - zepinglee
 date: 2023-10-04 11:38:09
-updated: 2024-01-31 20:01:21
-order: 2
 ---
 
 # 关于 Word 引用的各种问题
@@ -18,13 +17,17 @@ order: 2
 
 如果仍没有找到你需要的问题，可以考虑在 Zotero 中文社区提问咨询或前往 Zotero 官方论坛发帖求助。
 
+## 目录
+
 [[TOC]]
 
 ## 插入参考文献的基础教程
 
-在开始排查问题之前，请务必先了解 Zotero 的 Word 加载项中各个按钮的功能和用法。在 Word 中插入参考文献的基本操作请阅读：
+在开始排查问题之前，请务必先了解 Zotero 的 Word 加载项中各个按钮的功能和用法。
 
-[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)
+在 Word 中插入参考文献的基本操作请阅读：[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)。
+
+::: details 视频教程
 
 此外，关于 Zotero 参考文献插入及排版的基本教程您还可以观看这个视频：
 
@@ -37,79 +40,17 @@ order: 2
 3. 如何在 Word 中插入参考文献。
 4. 如何在 Word 中设置引用样式。
 
-::::: info 提醒
-
-请注意， **Zotero 在更新至 6.0.23 或更高版本后，Word 选项卡里的按钮顺序有调整。** 新版本交换了第二个和第三个按钮的位置， **在阅读教程的时候请注意点击的按钮具体是哪一个，不要只去数是第几个按钮。**
-
-![Zotero Word 插件选项卡](../../assets/images/word-zotero窗格.png)
-
-:::: details 按钮功能说明
-
-**目前新版本里横向布置三个大按钮分别是：**
-
-1. ![插入引文](../../assets/icons/integration/icon-word-插入引文-large.png) **插入/编辑引注** `Add/Edit Citation`
-
-在当前光标位置插入或编辑引注。
-
-::: tip
-
-此按钮只是插入引注，不会在文末自动生成参考文献表。要插入参考文献表，请点击 `插入/编辑参考文献表` 按钮。
-
 :::
 
-2. ![添加参考文献表](../../assets/icons/integration/icon-word-添加参考文献表-larger.png) **插入/编辑参考文献表** `Add/Edit Bibliography`
+在实际使用中，有一些操作上的小技巧，在这里略作整理：
 
-在光标当前位置插入或编辑已存在的参考文献表。
-
-::: info
-
-一般情况下，在文末写一个 `参考文献` 标题，然后按回车另起一行，再点击这个按钮插入参考文献表。
-
-:::
-
-3.  **插入笔记** `Add Note`
-
-在光标当前位置插入笔记。
-
-::: tip
-
-此功能不常用，点击后会出现黄色插入框。如果不小心点开了，可以用键盘上的 `Esc` 键关闭黄色插入框。
-
-:::
-
-**三个纵向布置的小按钮分别是：**
-
-1. ![文档首选项](../../assets/icons/integration/icon-word-文档首选项.png) **文档首选项** `Document Preferences`
-
-更改参考文献样式或语言，开启/关闭自动更新引注功能。
-
-2. ![刷新](../../assets/icons/integration/icon-word-刷新.png) **刷新** `Refresh`
-
-更新引注引注编号及文末参考文献表内容，关闭自动更新引注功能后需手动点击此按钮更新引注。
-
-3. ![unlink](../../assets/icons/integration/icon-word-unlink.png) **取消链接引注** `Unlink Citations`
-
-删除所有 Zotero 域代码且断开与 Zotero 文库链接。点击后所有的引注和文末的参考文献表都会变成纯文本。
-
-::: warning
-
-该操作不可逆，一旦断开连接，所有的引注信息都会变成纯文本，无法再自动更新编号和参考文献表，也无法恢复到以前带有链接的状态。因此强烈建议在断开连接之前将文档另存一份备用，仅将用于提交/共享的副本断开连接。
-
-:::
-
-::::
-
-:::::
+:::: details
 
 ::: warning
 
 在插入文献之前， **请务必先将 Zotero 里英文论文详细信息中的 `语言/Language` 字段改为** `en` 或 `en-US` 等与文献语言一致的信息，否则在中英文混排时可能会遇到错误。具体方法见后文里 **中英文混排** 部分的内容。
 
 :::
-
-## 插入引用常见的操作问题
-
-在实际使用中，有一些操作上的小技巧，在这里略作整理：
 
 1.  **Zotero 有两种插入文献的方式，一种是搜索对话框，另一种是经典视图的选择窗：**
 
@@ -123,23 +64,7 @@ order: 2
 
 2. 如果你使用搜索框， **输入中文关键词后没有候选项目** ，请 **按一下键盘的空格键** ，然后就有候选项了。
 
-3. 如果你 **在一处位置想同时引用多个文献** ，请在插入引用时 **一次性插入每一个文献** ，不要分成两次分开插。
-
-:::: tip 插入多条文献
-
-**在使用搜索窗时** ，先加入第一个文献，然后不要急着按回车确认插入，而是改为 **按一下空格然后继续搜下一个文献** 。直到所有文献都完成插入之后再按回车确认本次插入。
-
-**在使用经典选择窗时** ，点击左下角的 `多重来源/Multiple Sources` 来实现同时插入多个文献。具体操作请参见[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)
-
-::: info
-
-注：这个窗口内可以多选，可以在左边窗口一次性选择多个条目，然后统一点向右的箭头加到右边。待全部文献添加完成后，再点击确认完成插入。
-
-:::
-
-::::
-
-4. 如果你 **在插入完成后想重新修改引用信息** ，请先在 Word 中插好的编号角标中间点一下，使输入光标在角标内（此时角标会变为灰色），然后点 `插入/编辑引注` 按钮即可编辑/增删此处引用的文献。
+3. 如果你 **在插入完成后想重新修改引用信息** ，请先在 Word 中插好的编号角标中间点一下，使输入光标在角标内（此时角标会变为灰色），然后点 `插入/编辑引注` 按钮即可编辑/增删此处引用的文献。
 
 ![编辑引注](../../assets/images/edit-citation.jpg){width=60%}
 
@@ -151,7 +76,9 @@ order: 2
 
 在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/icons/integration/icon-word-刷新.png) 按钮更新引用信息及编号** 。在 Zotero 6.0 新版本下，这个更新可能非常缓慢，你需要多一点耐心。
 
-## 格式问题
+::::
+
+## Word 段落格式问题
 
 ### 调整缩进、行距等格式
 
@@ -161,9 +88,24 @@ order: 2
 
 [如何设置 Zotero 生成的参考文献格式，刷新后不变？](https://zhuanlan.zhihu.com/p/58969571)
 
+### 为何 `[100]` 和 `[99]` 后的空隙不一样
+
+例如下面这种情况：
+
+```plain
+[99] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[100]     X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+```
+
+这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在 「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
+
+当然，你也可以通过在 Word 中调整制表符宽度来修复这个问题。
+
+## CSL 样式问题
+
 ### 设置斜体及上下标等
 
-一些论文的题目需要在参考文献中表现为上标、下标或者斜体：如 CO~2~，H^+^、_Nature_，这该如何实现呢？
+一些论文的题目中包含上标、下标或者斜体：如 CO<sub>2</sub>，H<sup>+</sup>，这该如何实现呢？
 
 方式一：~~插入参考文献后在 Word 中手动修改，但是这种方法每次刷新后需要重新设置非常麻烦。~~（这是不正确的方式，不推荐）
 
@@ -180,17 +122,18 @@ order: 2
 
 ::: info 标题
 
-`Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR`
-
-`Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR`
+```diff
+-- Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR
+++ Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR
+```
 
 :::
 
 ::: info 参考文献表
 
-[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO2 resistance of birnessite for low-temperature NH3-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on ==SO2== resistance of birnessite for low-temperature ==NH3-SCR==, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 
-[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO~2~ resistance of birnessite for low-temperature NH~3~-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
+[1] X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on ==SO<sub>2</sub>== resistance of birnessite for low-temperature ==NH<sub>3</sub>-SCR==, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 
 :::
 
@@ -223,10 +166,11 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 你需要：
 
-1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md)；你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
-2. 需要在 Word 中指定当前文档使用的样式
+1. 安装支持双语排版的 CSL 样式文件，见 [安装支持双语排版的参考文献样式](../citation-styles.md)；
 
-   ![文档设置](../../assets/images/word-document-preferences2.png){width=60%}
+   你也可以根据你自己的需要修改属于自己的样式文件，可以看一下这个视频教程自行定制样式：[style csl 文件简单编辑](https://zhuanlan.zhihu.com/p/336009544)
+
+2. 在 Word 中指定当前文档使用的样式
 
    ::: warning
 
@@ -236,67 +180,127 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 3. 在 Zotero 中为每一个条目添加语言，中文条目填写 `zh` 或 `zh-CN`，英文条目填写 `en` 或 `en-US`。
 
-### 注意事项及与样式相关的常见问题
+中英文混排的各个样式文件通常是依靠 Zotero 文献条目信息中的 `语言/Language`，你需要在插入参考文献之前 **预先将英文和中文文献的语言设定为相应要求的内容** 。
 
-1. 中英文混排的各个样式文件通常是依靠 Zotero 文献条目信息中的 `语言/Language`，你需要在插入参考文献之前 **预先将英文和中文文献的语言设定为相应要求的内容** 。一般来说，常见的中英混排 csl 样式文件通常要求将英文文献 `信息/Info` 中 `语言/language` 字段修改为`en`，而中文文献设置成`zh` 或 `zh-CN`。
+一般来说，常见的中英混排 csl 样式文件通常要求将英文文献 `信息/Info` 中 `语言/language` 字段修改为`en`，而中文文献设置成`zh` 或 `zh-CN`。
 
-   ::: warning
+::: warning
 
-   请务必注意，英文文献的语言需要设置为 `en` ，而不是其他任何内容！（即便设置成 english 也不行！）
+请务必注意，英文文献的语言需要设置为 `en` ，而不是其他任何内容！（即便设置成 `english` 也不行！）
 
-   如果你的文献语言设定不规范，可以通过标题或作者字段对所有文献进行排序，然后分别选中英文文献，将其 [语言] 字段的信息统一为 `en`；取消选中后再选中中文文献，将其 `语言` 字段的信息统一为`zh`或者样式文件要求的样子。
+如果你的文献语言设定不规范，可以通过标题或作者字段对所有文献进行排序，然后分别选中英文文献，将其 [语言] 字段的信息统一为 `en`；取消选中后再选中中文文献，将其 `语言` 字段的信息统一为`zh`或者样式文件要求的样子。
 
-   插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://zotero-chinese.com/plugins)下载安装。
+:::
 
-   ![Linter 自动识别条目语言](../../assets/images/auto-edit-language.jpg){width=60%}
+::: info 使用插件快速设置「语言」字段
 
-   :::
+插件 [Linter for Zotero](../plugins/linter.md) 提供了自动识别条目语言并设定语言字段的功能，可前往 [插件商店](https://zotero-chinese.com/plugins)下载安装。
 
-2. 如果你设置了新样式后，样式仍未变更，你可以在 **Word 上 `Zotero` 插件选项卡中的 `Document Preferences` 里** 随意切换到任何一个其他样式，确定。等待更新完成后，重新进设置里改回你想用的设置，文档会再次刷新，然后就好了。
+![Linter 自动识别条目语言](../../assets/images/auto-edit-language.jpg){width=60%}
 
-3. Word 中参考文献的显示内容是 csl 文件决定的。如果你觉得 **参考文献里显示的内容** 不符合你的要求，你需要按照前面的教程修改 csl 文件。
+:::
 
-4. 如果你设置的样式全都正确，却发现有的正文角标里的内容多了点东西（页码），可以编辑一下这一处引用，把不必要的信息删掉：
+### 为何期刊论文会有多余的「/OL」、引用日期、URL 和 DOI
+
+::: info 待办
+
+[为何期刊论文会有多余的「/OL」、引用日期、URL 和 DOI？](https://github.com/zotero-chinese/styles/wiki/FAQ#%E4%B8%BA%E4%BD%95%E6%9C%9F%E5%88%8A%E8%AE%BA%E6%96%87%E4%BC%9A%E6%9C%89%E5%A4%9A%E4%BD%99%E7%9A%84ol%E5%BC%95%E7%94%A8%E6%97%A5%E6%9C%9Furl-%E5%92%8C-doi)
+
+:::
+
+### 为何学位论文类型显示 `[博士]` 而不是 `[博士学位论文]`
+
+::: info 待办
+
+[为何学位论文类型显示「[博士]」而不是「[博士学位论文]」？](https://github.com/zotero-chinese/styles/wiki/FAQ#%E4%B8%BA%E4%BD%95%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E7%B1%BB%E5%9E%8B%E6%98%BE%E7%A4%BA%E5%8D%9A%E5%A3%AB%E8%80%8C%E4%B8%8D%E6%98%AF%E5%8D%9A%E5%A3%AB%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87)
+
+:::
+
+### 为何著者出版年制会显示多余的名，例如「Wang Y et al.」
+
+::: info 待办
+
+[为何著者出版年制会显示多余的名，例如「Wang Y et al.」？](https://github.com/zotero-chinese/styles/wiki/FAQ#%E4%B8%BA%E4%BD%95%E8%91%97%E8%80%85%E5%87%BA%E7%89%88%E5%B9%B4%E5%88%B6%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%A4%9A%E4%BD%99%E7%9A%84%E5%90%8D%E4%BE%8B%E5%A6%82wang-y-et-al)
+
+:::
+
+### 为何顺序编码制后会显示多余的 a, b
+
+::: info 待办
+
+同上
+
+:::
+
+## 用户操作相关
+
+### 为何我在同一地方引用多篇文献显示 `[1][2]` 而不是 `[1, 2]`
+
+如果你 **在一处位置想同时引用多个文献** ，请在插入引用时 **一次性插入每一个文献** ，不要分成两次分开插。
+
+**在使用搜索窗时** ，先加入第一个文献，然后不要急着按回车确认插入，而是改为 **按一下空格然后继续搜下一个文献** 。直到所有文献都完成插入之后再按回车确认本次插入。
+
+**在使用经典选择窗时** ，点击左下角的 `多重来源/Multiple Sources` 来实现同时插入多个文献。具体操作请参见 [在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)。
+
+::: info
+
+注：这个窗口内可以多选，可以在左边窗口一次性选择多个条目，然后统一点向右的箭头加到右边。待全部文献添加完成后，再点击确认完成插入。
+
+:::
+
+### 为何引注中有多余的页码
+
+如果你设置的样式全都正确，却发现有的正文角标里的内容多了点东西（页码），可以编辑一下这一处引用，把不必要的信息删掉：
 
 ![编辑引文](../../assets/images/word-编辑引文.png)
 
-## Word 中没有 Zotero 选项卡
+### 没有监测到引用
+
+::: tip 待办
+
+<https://www.zotero.org/support/kb/word_field_codes>
+
+:::
+
+### 为何我在 Zotero 里修改了题录信息，但文档里没有更新
+
+1. 确认已经 refresh
+2. 确认不是孤立条目，若为孤立条目，删除重插。阅读：[判断孤立条目](../ms-word-plugin.md#孤立的条目)。
+
+### 为何文档末尾没有参考文献表
+
+通过「添加/编辑引注」按钮添加引注不会自动添加参考文献表，你需要点「添加/编辑参考文献表」来添加参考文献表，请阅读 [在 Word 中添加参考文献表](../ms-word-plugin.md#添加参考文献表)。
+
+## Word 加载项错误相关
+
+### Word 中没有 Zotero 选项卡
 
 一些朋友在 Word 中的 Zotero 选项卡突然消失了，或者使用的时候报错要求重装/升级该加载项。 **这一加载项需要在 Zotero 首选项 中安装** 。具体步骤如下：
 
 1. 保存好正在编辑的 Word 文档，并**彻底退出 Word**。
-2. 打开 `Zotero 首选项`。
-3. 在 `引用/Cite` -`文字处理软件/Word Processors` 中点击 `重新安装 Microsoft Word 加载项/Reinstall Microsoft Word Add-in` 即可完成安装/更新/重装。
+2. 在 Zotero 中，「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」
 
-![重新安装Word插件](../../assets/images/settings-reinstalll-word-plugin.png)
+![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
-:::warning
+:::info
 
 如果退出 Word 后重新安装这一加载项仍然报错，建议重启电脑后再尝试。
 
 :::
 
-若上图的「**文字处理软件/Word Processors**」没有内容显示，则需要在 Zotero 软件界面，单击打开 `工具/Tools` - `插件 / Plugins`，
-
-![image.png](../../assets/images/tools-addon.png)
-
-找到「**Zotero Word for Windows Integration**」插件，确保其没有处理禁用状态。
-
-![image.png](../../assets/images/zotero-addon-manager.png)
-
-## 报错「无法与 Zotero 通讯」
+### 报错「无法与 Zotero 通讯」
 
 ![无法与Zotero通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
 
-遇到该问题时，请确保你的 Zotero 程序在运行的状态，如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：
+遇到该问题时，请确保你的 Zotero 程序处于运行状态
+
+如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开 「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
 
 ![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
-依次打开 `编辑` - `设置` - `引用` - `重新安装加载项Microsoft Word`，然后重新打开 Word，问题即可得到解决。
+### Zotero 在更新文档时出错
 
-## Zotero 在更新文档时出错
-
-::: tip
+::: info
 
 本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice ，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
 
@@ -512,7 +516,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 可以看到，多了第六行 `"dontUpdate": true,`，我们将这一行去掉，再更新域代码，即可恢复 Zotero 对该处的更新。
 
-### 字段是代码而不是引文/参考书目文本
+#### 字段是代码而不是引注/参考文献表文本
 
 ::: tip 待办
 
@@ -520,19 +524,11 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-### 引文或参考书目总是以灰色或其他颜色突出显示
+#### 引注或参考文献表的背景总是灰色的
 
 ::: tip 待办
 
 <https://www.zotero.org/support/kb/citations_highlighted>
-
-:::
-
-## 没有监测到引用
-
-::: tip 待办
-
-<https://www.zotero.org/support/kb/word_field_codes>
 
 :::
 
