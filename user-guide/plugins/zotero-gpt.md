@@ -59,14 +59,15 @@ Awesome GPT for Zotero 是一个由 MuiseDestiny 创建的开源 Zotero 插件�
 
 如果你是用的是第三方所提供的 SecretKey，那么还需要输入`/api xxxxxxxxxxxxxxx`（具体的 api 通过查看第三方的网站获取。如果你是用的是 OpenAi 官方提供的密钥，那此时可以直接跳过设置。）
 
-默认的模型使用的是`gpt-3.5-turbo`，如果你想使用 GPT4，那么你需要输入`/model gpt4`（前提是你已经购买 GPT4）
+Zotero GPT 默认的模型使用的是`gpt-3.5-turbo`，如果你想使用 GPT4 或其他模型，请查看[模型选择说明](#模型选择说明)
 
 你也可以通过`/report`指令随时查看 Zotero GPT 的相关配置
-注意：如果使用的官方密钥，那么此时`api`应该是`https://api.openai.com/`
+
+注意：如果使用的官方密钥，那么您的`API`应该是`https://api.openai.com/`
 
 ![查看配置](../../assets/images/zotero-plugin-gpt/zoterogpt-report.png)
 
-设置好`SecretKey`和`api`以后，你的 Zotero GPT 已经可以正常使用了。
+设置好`SecretKey`和`API`以后，你的 Zotero GPT 已经可以正常使用了。
 
 ![提问](../../assets/images/zotero-plugin-gpt/zoterogpt-提问.png)
 
@@ -85,6 +86,32 @@ Awesome GPT for Zotero 是一个由 MuiseDestiny 创建的开源 Zotero 插件�
 如果你没有密钥，并且不能访问 openai，那么推荐使用免费的[GPT-API-free](https://github.com/chatanywhere/GPT_API_free)项目
 
 注意：使用该项目所获取的 SecretKey，api 应该更换成**`https://api.chatanywhere.tech`**或者**`https://api.chatanywhere.com.cn`**
+
+### 模型选择说明
+
+在使用 Zotero GPT 插件时，您可以通过`/model`命令来指定希望使用的 GPT 模型。
+
+如果您使用的是 Openai 的 GPT 模型，要查询可用的模型名称，您可以访问 OpenAI 的官方文档页面：[OpenAI Models Documentation](https://platform.openai.com/docs/models)。
+
+如果您使用的是第三方代理的服务，请访问第三方代理的网站查询模型名称。
+
+::: tip 💡GPT-4 的 API 需要单独订阅
+
+GPT-4 的 API 和 ChatGPT plus 之间是相互独立的，**订阅了 ChatGPT plus 以后并不能直接使用 GPT-4 的 API**。想要使用 GPT-4 的 API，您必须对帐号进行充值。
+
+如何开通 GPT-4 的 API：[点击查看教程](https://zhuanlan.zhihu.com/p/672598723)
+
+:::
+
+Zotero GPT 默认的模型使用的是`gpt-3.5-turbo`，如果您希望使用特定的 GPT 模型，请按照以下步骤操作：
+
+1.通过`ctrl + /`指令打开 Zotero GPT
+
+2.输入`/model 模型名称`（例如`/model GPT-4o`），其中“模型名称”应替换为您在 [OpenAI 官方文档](https://platform.openai.com/docs/models)中找到的确切模型名称
+
+3.按下回车键来应用您的选择。
+
+4.确保您使用的 API 密钥和 API 地址与您选择的模型兼容。。
 
 ### 使用`Zotero GPT`
 
