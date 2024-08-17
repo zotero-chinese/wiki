@@ -105,13 +105,13 @@ GPT-4 的 API 和 ChatGPT plus 之间是相互独立的，**订阅了 ChatGPT pl
 
 Zotero GPT 默认的模型使用的是`gpt-3.5-turbo`，如果您希望使用特定的 GPT 模型，请按照以下步骤操作：
 
-1.通过`ctrl + /`指令打开 Zotero GPT
+1. 通过`ctrl + /`指令打开 Zotero GPT
 
-2.输入`/model 模型名称`（例如`/model GPT-4o`），其中“模型名称”应替换为您在 [OpenAI 官方文档](https://platform.openai.com/docs/models)中找到的确切模型名称
+2. 输入`/model 模型名称`（例如`/model GPT-4o`），其中「模型名称」应替换为您在 [OpenAI 官方文档](https://platform.openai.com/docs/models)中找到的确切模型名称
 
-3.按下回车键来应用您的选择。
+3. 按下回车键来应用您的选择。
 
-4.确保您使用的 API 密钥和 API 地址与您选择的模型兼容。。
+4. 确保您使用的 API 密钥和 API 地址与您选择的模型兼容。。
 
 ### 使用`Zotero GPT`
 
@@ -122,16 +122,23 @@ Zotero GPT 默认的模型使用的是`gpt-3.5-turbo`，如果您希望使用特
 你可以通过以下四种方式与 GPT 进行交流
 
 1. 问题 + 回车
+
    在输入框内输入你的问题，按下回车，此时与 GPT 直接进行对话
 
 2. 问题 + 命令标签
+
    例如在输入框内输入`这篇文章的研究背景是什么`并点击`AskPDF`，此时 GPT 会对 PDF 进行阅读后回复你的问题。
+
    ![问题命令标签提问](../../assets/images/zotero-plugin-gpt/zoterogpt-问题命令标签.png)
 
 3. 关键词触发命令标签
+
    命令标签也可以通过关键词进行触发
+
    例如在输入框内输入`这篇论文写了什么`，此时命令标签`AskPDF`会被选中，这时可以直接按下回车，实现问题+命令标签快速提问。
+
    该功能是通过命令标签中的`trigger`实现的，你可以对各个命令标签的`trigger`进行自定义
+
    ![自定义trigger](../../assets/images/zotero-plugin-gpt/zoterogpt-trigger.png)
 
 4.`Ctrl + 回车` 会自动执行上一次的命令标签
