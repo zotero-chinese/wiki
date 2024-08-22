@@ -32,7 +32,7 @@
 #### 2.1 下载与安装 PDFtk
 
 **Windows**
-下载并安装 [PDFtk server](https://www.pdflabs.com/tools/pdftk-server/) ，并记录 PDFtk 的安装路径（例如安装在 `C: \Program Files (x86)\PDFtk`）。
+下载并安装 [PDFtk server](https://www.pdflabs.com/tools/pdftk-server/) ，并记录 PDFtk 的安装路径（例如安装在 `C:\Program Files (x86)\PDFtk`）。
 **macOS**
 MAC 用户参考 [这里](https://github.com/l0o0/jasminum#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8) 。
 
