@@ -38,7 +38,7 @@ MAC 用户参考 [这里](https://github.com/l0o0/jasminum#%E5%A6%82%E4%BD%95%E4
 
 #### 2.2 在茉莉花中配置 PDFtk 路径
 
-在 `Zotero` — `编辑` — `设置` — `茉莉花` — `PDFtk Server 路径设置` 中填写 `<PDFtk install dir>/bin` （例如 `C: \Program Files (x86)\PDFtk\bin`）（即 PDFtk 可执行文件所在目录）。
+在 「Zotero」->「编辑」->「设置」->「茉莉花」->「PDFtk Server 路径设置」中填写 `<PDFtk install dir>/bin` （例如 `C: \Program Files (x86)\PDFtk\bin`）（即 PDFtk 可执行文件所在目录）。
 
 ### 03. 安装/更新 中文 Translator
 
