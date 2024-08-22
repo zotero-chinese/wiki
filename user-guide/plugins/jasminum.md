@@ -44,4 +44,4 @@ MAC 用户参考 [这里](https://github.com/l0o0/jasminum#%E5%A6%82%E4%BD%95%E4
 
 ### 03. 安装/更新 中文 Translator
 
-教程详见 [一键自动更新 Translator](../faqs/update-translators.md#更新抓取文献信息的转换器)
+教程详见 [一键自动更新 Translator](../faqs/update-translators.md#更新抓取文献信息的转换器) 。
