@@ -33,6 +33,26 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 正因如此， **只要你能够正确抓取到文献信息，就不建议继续折腾下去了。如果抓不到 PDF 附件，建议直接手动下载后[添加到 Zotero 中抓取好的条目](../add-attachments.md#为条目添加附件)。** 。
 
+::: warning ⚠ 避免批量抓取文献
+
+无论何时，请避免进行大量的批量抓取操作，严重时可能导致封禁！！！
+
+:::
+
+::: info 💡 关于抓取页面
+
+在文献搜索界面或阅读界面进行条目抓取非常容易失败，请在文献的详情页（如下）进行条目的抓取。
+
+![文献详情页](../../assets/images/image-update-translators-文献详情页1.jpg)
+
+![文献详情页](../../assets/images/image-update-translators-文献详情页2.jpg)
+:::
+
+::: info 💡 关于 ScienceDirect
+
+ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Zotero 7 中针对该措施推出了一项新功能。当你尝试抓取 ScienceDirect 上的文章时，Zotero 会显示 ScienceDirect 的验证码页面。如果你完成了验证码，Zotero 则会完成 PDF 的下载。
+:::
+
 如果你不能正确地抓取文献信息，或者抓取后的条目里文献信息缺失，那么下面这篇文档会对你有所帮助。
 
 ## 更新抓取文献信息的转换器

@@ -42,10 +42,20 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 使用这种方法需要确保以安装浏览器扩展 Zotero Connector。如未安装，请参考：[Zotero 下载与安装](install.md) 。
 
 :::
+::: tip 💡 关于 ScienceDirect
+
+ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Zotero 7 中针对该措施推出了一项新功能。当你尝试抓取 ScienceDirect 上的文章时，Zotero 会显示 ScienceDirect 的验证码页面。如果你完成了验证码，Zotero 则会完成 PDF 的下载。
+:::
 
 通过浏览器添加条目是最方便的途径之一，也是 Zotero 的特色功能之一。
 
 当所在的网页呈现出不同的内容类型时，Zotero Connector 会显示不同的图标（各种类别的图标见 [#条目-item](#条目-item)）。例如，如果打开的是一篇期刊文章，那么图标就会变成下图（红框圈出）。
+
+::: warning ⚠ 避免批量抓取文献
+
+无论何时，请避免进行大量的文献抓取操作，严重时可能导致封禁！！！
+
+:::
 
 ![从浏览器导入条目](../assets/images/从浏览器导入条目.png)
 
@@ -66,6 +76,15 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 如果抓取失败且尝试了上述办法仍然不能解决，请手动下载 PDF 附件并通过附件添加条目。
 
+:::
+
+::: info 💡 关于抓取页面
+
+在文献搜索界面或阅读界面进行条目抓取非常容易失败，请在文献的详情页（如下）进行条目的抓取。
+
+![文献详情页](../../assets/images/image-update-translators-文献详情页1.jpg)
+
+![文献详情页](../../assets/images/image-update-translators-文献详情页2.jpg)
 :::
 
 ## 通过附件添加条目（推荐）
