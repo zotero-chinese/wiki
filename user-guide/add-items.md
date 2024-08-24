@@ -47,20 +47,45 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 
 当所在的网页呈现出不同的内容类型时，Zotero Connector 会显示不同的图标（各种类别的图标见 [#条目-item](#条目-item)）。例如，如果打开的是一篇期刊文章，那么图标就会变成下图（红框圈出）。
 
+::: warning ⚠ 避免批量抓取文献
+
+无论何时，请避免进行大量的文献抓取操作，严重时可能导致封禁！
+
+:::
+
 ![从浏览器导入条目](../assets/images/从浏览器导入条目.png)
 
 点击该图标，将在网页右上角显示如下的对话框，选择保存的合集位置，添加标签，即可将网页对应的文献的元数据录入 Zotero ：
 
 ![从浏览器添加条目-对话框](../assets/images/从浏览器添加条目-对话框.png)
 
+::: tip ScienceDirect 需要手动完成反爬虫验证
+
+ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Zotero 7 中针对该措施推出了一项新功能。当你尝试抓取 ScienceDirect 上的文章时，Zotero 会显示 ScienceDirect 的验证码页面。如果你完成了验证码，Zotero 则会完成 PDF 的下载。
+
+:::
+
 此时打开 Zotero，将会自动定位到保存时选择的合集：
 
 ![添加条目后信息窗格](../assets/images/添加条目后信息窗格.png)
 
+:::: info 尽量在文献详情页抓取
+
+在文献搜索界面或阅读界面进行条目抓取非常容易失败，请在文献的详情页（如下）进行条目的抓取。
+
+::: details 典型的详情页示例
+
+![文献详情页](../assets/images/update-translators-文献详情页1.png)
+
+![文献详情页](../assets/images/update-translators-文献详情页2.png)
+
+:::
+
+::::
+
 ::: tip
 
-Connector 抓取中文文献能力依靠中文 Translator 支持，更新 Translator 请参考：
-[如何更新 Translator](./faqs/update-translators.md)。
+Connector 抓取中文文献能力依靠中文 Translator 支持，更新 Translator 请参考：[如何更新 Translator](./faqs/update-translators.md)。
 
 Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 抓取时不能自动下载 PDF / 无法自动给添加的 PDF 附件创建条目](https://zotero.yuque.com/staff-gkhviy/zotero/mribmi?view=doc_embed)
 
