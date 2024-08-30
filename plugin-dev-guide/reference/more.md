@@ -77,7 +77,7 @@ ReaderInstance 对象的 `_iframeWindow` 属性是阅读器的 `window` 对象�
 以第一页为例，索引为 0：
 
 ```typescript
-const reader = Zotero.Reader.getByTabID(Zotero_Tabs).selectedID);
+const reader = Zotero.Reader.getByTabID(Zotero_Tabs.selectedID);
 const PDFViewerApplication = reader._iframeWindow.wrappedJSObject.PDFViewerApplication;
 await PDFViewerApplication.pdfLoadingTask.promise;
 await PDFViewerApplication.pdfViewer.pagesPromise;
