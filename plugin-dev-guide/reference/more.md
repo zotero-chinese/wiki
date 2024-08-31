@@ -78,13 +78,13 @@ ReaderInstance 对象的 `_iframeWindow` 属性是阅读器的 `window` 对象�
 
 ```typescript
 const reader = Zotero.Reader.getByTabID(Zotero_Tabs.selectedID);
-const PDFViewerApplication = reader._iframeWindow.wrappedJSObject.PDFViewerApplication;
+const PDFViewerApplication =
+  reader._iframeWindow.wrappedJSObject.PDFViewerApplication;
 await PDFViewerApplication.pdfLoadingTask.promise;
 await PDFViewerApplication.pdfViewer.pagesPromise;
 let pages = PDFViewerApplication.pdfViewer._pages;
 let pdfPage = pages[0].pdfPage;
 let items = (await pdfPage.getTextContent()).items;
-
 ```
 
 这里以 `item=items[0]` 为例：
