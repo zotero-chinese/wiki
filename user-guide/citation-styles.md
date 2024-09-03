@@ -2,6 +2,7 @@
 title: 引文的格式
 icon: wand-magic-sparkles
 date: 2023-06-28 21:17:47
+outline: deep
 ---
 
 # 引文的格式
@@ -54,35 +55,43 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 
 ### 2. 安装样式
 
-1.  单击样式名进入样式详情页，然后下滑找到 「下载链接」 小节，点击任意安装链接。
+单击样式名进入样式详情页，然后下滑找到 「下载链接」 小节，你可以看到很多安装链接。根据「下载链接」小节的描述，我们有两类安装样式的方法：
 
-    ::: tip 自行选择可用链接
+::: tip 自行选择可用链接
 
-    网站为每一个样式提供了多个下载链接，请自行选择可用的链接。
+网站为每一个样式提供了多个下载链接，请自行选择可用的链接。
 
-    :::
+:::
 
-    ::: warning 确保 Zotero 启动
+#### 2.1 通过 Zotero Connector 直接安装样式
 
-    :::
+有的链接已经被 Zotero Connector 适配，因此可以直接安装，对于这类链接：
 
-2.  通常情况下，如果 Zotero 处于启动状态，可以出现如下窗口，点击 `OK` 直接安装。
+在确保 **Zotero 处于启动状态**时，**直接点击链接**，浏览器打开了一个新的网页，Zotero Connector 会在新的网页中显示一个「确认安装」的弹窗，直接点击「OK」即可：
 
-    ![确认安装引文格式](../assets/images/zotero-从connector添加csl样式.png)
+![确认安装引文格式](../assets/images/zotero-从connector添加csl样式.png)
 
-3.  若没有弹出上图窗口，则 `右击` - `另存为`，将其保存为 `.csl` 文件：
+::: warning 确保 Zotero 启动
 
-    ![另存为csl文件](../assets/images/另存为csl文件.png)
+:::
 
-    然后双击打开 CSL 文件，在弹出窗口中选择「安装」。
+有小概率情况无法弹出这个「确认安装」的弹窗，可以尝试关闭页面重新打开。如果仍然不行，请尝试下面的「先下载文件后安装」。
 
-    ![从文件安装csl样式](../assets/images/zotero-从文件安装csl样式.png)
+#### 2.2 先下载文件后安装
 
-4.  由于这些 CSL 样式使用了 `citeproc-js` 提供了 CSL-M 扩展功能，因此安装时会出现「xxx.csl 不是一个有效的 CSL 1.0.2 样式文件，可能不能和 Zotero 一起正常工作」的警告，**属于正常现象，选择「OK」即可**。
+根据「下载链接」部分里的提示，有的链接直接单击就可以下载文件，有的链接需要你手动 「右击」-「另存为」，按照提示的方法，将其保存为 `.csl` 文件：
 
-    ![安装引文格式 不是有效csl警告](../assets/images/安装引文格式-不是有效csl警告.png)
+![另存为csl文件](../assets/images/另存为csl文件.png)
 
----
+然后双击打开 CSL 文件，在弹出窗口中选择「安装」。
+
+![从文件安装csl样式](../assets/images/zotero-从文件安装csl样式.png)
+
+#### 注意
+
+由于这些 CSL 样式使用了 `citeproc-js` 提供了 CSL-M 扩展功能，因此安装时会出现「xxx.csl 不是一个有效的 CSL 1.0.2 样式文件，可能不能和 Zotero 一起正常工作」的警告，**属于正常现象，选择「OK」即可**。
+
+![安装引文格式 不是有效csl警告](../assets/images/安装引文格式-不是有效csl警告.png)
 
 随后，你就可以在字处理软件中将样式切换为刚刚安装的，请参阅 [在 Word 中使用](./ms-word-plugin.md) 了解详情。
 
@@ -111,7 +120,7 @@ Zotero 使用 Citation Style Language 来生成引文格式，Zotero 官方提�
 - 对于外文期刊或样式，请参阅：[Requesting New Styles - Zotero Documentation](https://www.zotero.org/support/styles#requesting_new_styles)。
 - 对于中文期刊或高校等的样式，请参阅：[Zotero 中文样式仓库](https://github.com/zotero-chinese/styles?tab=readme-ov-file#没有找到符合需要的样式)。
 
-## 问题
+## 常见问题
 
 ::: warning
 
