@@ -37,15 +37,7 @@ Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，
 
 依次点击 「Zotero 菜单栏」->「工具（Tools）」->「插件（Plugins）」，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
 
-或者点击 「右上角的齿轮」->「Install Add-on From File...」->「选择刚刚下载的 xpi 文件」，即可安装成功。
-
-::: tip
-
-**请不要一次性同时安装多个插件，否则可能导致插件安装不正确。**
-注意：这里指的一次性安装多个插件是指：一次性拖入多个插件的xpi安装包进入Zotero的插件管理界面；或是在`Install Plugin From File`中同时选择多个插件的xpi安装包。
-**遇到此问题，可以先将所有插件卸载，随后逐个（一次只安装一个）安装插件即可。**
-
-:::
+或者点击 「右上角的齿轮」->「Install plugin From File...」->「选择刚刚下载的 xpi 文件」，即可安装成功。
 
 ![安装插件](../../assets/images/zotero-plugin-install.png)
 
