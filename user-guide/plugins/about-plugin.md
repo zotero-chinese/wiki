@@ -17,7 +17,32 @@ updated: 2023-11-28 15:29:00
 ## 获取插件
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
-- Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins](https://zotero-chinese.com/plugins)
+- Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
+- 插件的 GitHub 主页
+
+  ::: details 点击此处了解 如何在 GitHub 上下载 Zotero 插件
+
+  1. 访问插件的 GitHub 页面
+
+     搜索你要的 Zotero 插件。例如你可以直接搜索「Zotero Style」。
+
+  2. 查找插件的 Release 页面
+
+     进入插件的 GitHub 仓库页面后，点击页面右下角的「Releases」标签。
+
+     如果没有看到 Release 标签，可以直接在页面 URL 后加上 `/releases`，例如：<https://github.com/MuiseDestiny/zotero-style/releases>
+
+     ![Releases](../../assets/images/about-plugin-github-releases.png)
+
+  3. 下载插件文件
+
+     在 Releases 页面，你会看到插件的发布版本列表。每个版本可能会有不同的文件，例如 `.xpi` 文件（这是 Zotero 插件的安装文件）。
+
+     找到需要的版本，点击 Assets 下的可下载文件。通常是 `.xpi` 文件，点击即可下载。
+
+     ![下载插件](../../assets/images/about-plugin-github-download-xpi.jpg)
+
+  :::
 
 ::: tip 火狐浏览器用户请选择另存为
 
