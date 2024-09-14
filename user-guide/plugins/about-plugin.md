@@ -32,7 +32,7 @@ updated: 2023-11-28 15:29:00
 
      如果没有看到 Release 标签，可以直接在页面 URL 后加上 `/releases`，例如：<https://github.com/MuiseDestiny/zotero-style/releases>
 
-     ![Releases](../../assets/images/image-about-plugin-Releases.jpg)
+     ![Releases](../../assets/images/about-plugin-github-releases.png)
 
   3. 下载插件文件
 
@@ -40,7 +40,7 @@ updated: 2023-11-28 15:29:00
 
      找到需要的版本，点击 Assets 下的可下载文件。通常是 `.xpi` 文件，点击即可下载。
 
-     ![下载插件](../../assets/images/image-about-plugin-下载xpi.jpg)
+     ![下载插件](../../assets/images/about-plugin-github-download-xpi.jpg)
 
   :::
 
