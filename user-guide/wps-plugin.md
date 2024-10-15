@@ -109,4 +109,23 @@ WPS 插件的按钮与 Word 插件类似
 
 ## 4. 可能遇到的问题
 
+### 4.1 不会自动出现
+
 使用中可能点击按钮后，Zotero 的窗口不会自动出现，可以手动点击一下任务栏中的 Zotero 图标，让 Zotero 的窗口跳到最前。
+
+### 4.2 插件安装后 WPS 内不显示
+
+该部分教程来自与[官方文档](https://p.kdocs.cn/s/ZPIJCBAABE)
+
+若安装 Zotero 插件后，打开 WPS 不显示，请按照以下步骤操作：
+
+1. 关闭 WPS。
+2. 打开 Zotero 的安装包路径
+   C:\Program Files (x86)\Zotero\extensions\<zoteroWinWordIntegration@zotero.org>\install
+3. 找到文件 Zotero.dotm，复制
+   ![image](../assets/images/WPS_Problems.png)
+4. 将第 3 步复制的文件粘贴到以下目录路径
+   C:\Users\Administrator\AppData\Roaming\kingsoft\WPS\startup
+   ![image](../assets/images/WPS_Problems-1.png)
+5. 重启 WPS，即可看到 Zotero 插件
+   ![image](../assets/images/WPS_Problems-2.png)
