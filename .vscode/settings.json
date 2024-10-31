@@ -12,7 +12,7 @@
   },
   "markdown.updateLinksOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
+    "source.fixAll.markdownlint": "explicit"
   },
   // "explorer.sortOrder": "mixed",
   "explorer.excludeGitIgnore": false,
