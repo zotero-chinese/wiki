@@ -15,7 +15,7 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.13.1",
     "@mdit/plugin-mark": "^0.13.0",
-    "@types/node": "20.17.5",
+    "@types/node": "22.8.6",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
     "markdownlint-cli2": "0.14.0",
