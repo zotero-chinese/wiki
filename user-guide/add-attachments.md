@@ -58,6 +58,28 @@
 
 当您右键单击某个条目并选择「添加附件」时，这些选项也可用。
 
+### 查找全文（查找可用 PDF）
+
+![查找全文](../assets/images/查找全文.png)
+
+当条目不存在附件时，可右击该条目并选择「查找全文」来使用 解析器 自动下载文献。
+
+Zotero 已经内置了 Unpaywall 数据镜像，因此不需要为其配置自定义解析器，当你使用默认的解析器点击「查找全文」后，Zotero 会自动从 Unpaywall 下载文献。
+
+如何自定义解析器：
+
+[官方文档](https://www.zotero.org/support/kb/custom_pdf_resolvers)
+
+[如何将解析器更改为 Sci-Hub](https://zotero-chinese.com/user-guide/plugins/zotero-scihub)
+
+![下载结果](../assets/images/查找全文结果.png)
+
+::: tip
+
+无论使用默认解析器（Unpaywall）还是将解析器更改为 SCI-HUB，「查找全文」功能都无法下载中文文献，因为这些数据库没有收录中文文献（或收录量极少）。
+
+:::
+
 ## 访问文件
 
 双击条目即可打开该文件，也可以右击该条目并选择「查看 PDF」或「查看文件」。
