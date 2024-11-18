@@ -62,15 +62,14 @@
 
 ![查找全文](../assets/images/查找全文.png)
 
-当条目不存在附件时，可右击该条目并选择「查找全文」来使用 解析器 自动下载文献。
+当条目不存在附件时，可右击该条目并选择「查找全文」来使用「解析器」自动下载文献。
 
 Zotero 已经内置了 Unpaywall 数据镜像，因此不需要为其配置自定义解析器，当你使用默认的解析器点击「查找全文」后，Zotero 会自动从 Unpaywall 下载文献。
 
 如何自定义解析器：
 
-[官方文档](https://www.zotero.org/support/kb/custom_pdf_resolvers)
-
-[如何将解析器更改为 Sci-Hub](./plugins/zotero-scihub)
+- [Custom PDF Resolvers - Zotero 官方文档](https://www.zotero.org/support/kb/custom_pdf_resolvers)
+- [如何将解析器更改为 Sci-Hub](./plugins/zotero-scihub)
 
 ![下载结果](../assets/images/查找全文结果.png)
 
