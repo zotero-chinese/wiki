@@ -70,7 +70,7 @@ Zotero 已经内置了 Unpaywall 数据镜像，因此不需要为其配置自�
 
 [官方文档](https://www.zotero.org/support/kb/custom_pdf_resolvers)
 
-[如何将解析器更改为 Sci-Hub](https://zotero-chinese.com/user-guide/plugins/zotero-scihub)
+[如何将解析器更改为 Sci-Hub](./plugins/zotero-scihub)
 
 ![下载结果](../assets/images/查找全文结果.png)
 
