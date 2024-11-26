@@ -29,7 +29,15 @@ date: 2024-11-25 23:00:00
 
 ### 搭配云同步
 
-如果想在多台设备上看文献，云同步必不可少。然而，Zotero 提供的 300MB 免费空间捉襟见肘；虽然 Zotero 也兼容 WebDAV 协议，但是很多云存储服务（如 OneDrive、百度云盘等）并不提供稳定的 WebDAV 服务；如果想使用 Syncthing 等 P2P 同步更是无从谈起。
+::: warning 警告
+
+如果您的主要用途是云同步，请注意：
+- 这种同步方案并非首选，我们优先推荐使用支持 WebDAV 的网盘来进行同步（请参阅[通过 WebDAV 同步附件](https://zotero-chinese.com/user-guide/sync#通过-webdav-同步附件)文档章节）；推荐仅当拟使用的同步服务不支持 WebDAV 时，再使用这种方式。
+- 这种方式不支持同步到 Zotero 官方 iOS 和 Android 客户端。
+
+:::
+
+如果想在多台设备上看文献，云同步必不可少。然而，Zotero 提供的 300MB 免费空间捉襟见肘；虽然 Zotero 也兼容 WebDAV 协议，但是很多云存储服务（如 OneDrive、百度网盘等）并不提供稳定的 WebDAV 服务；如果想使用 Syncthing 等 P2P 同步更是无从谈起。
 
 ZotMoov 可以将所有附件聚合在指定文件夹下，从而方便地使用各种云同步软件。
 
