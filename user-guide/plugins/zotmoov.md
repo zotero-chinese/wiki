@@ -9,6 +9,7 @@ date: 2024-11-25 23:00:00
 ::: tip 简介
 
 用于管理 Zotero 7 的文献附件，它支持以下功能：
+
 - 自动/手动将附件移动/复制到指定目录
 - 在 Zotero 中删除附件时，自动将其从计算机中删除
 - 轻松将指定目录中最后修改的文件添加进 Zotero 条目
@@ -32,7 +33,8 @@ date: 2024-11-25 23:00:00
 ::: warning 警告
 
 如果您的主要用途是云同步，请注意：
-- 这种同步方案并非首选，我们优先推荐使用支持 WebDAV 的网盘来进行同步（请参阅[通过 WebDAV 同步附件](https://zotero-chinese.com/user-guide/sync#通过-webdav-同步附件)文档章节）；推荐仅当拟使用的同步服务不支持 WebDAV 时，再使用这种方式。
+
+- 这种同步方案并非首选，我们优先推荐使用支持 WebDAV 的网盘来进行同步（请参阅 [通过 WebDAV 同步附件](https://zotero-chinese.com/user-guide/sync#通过-webdav-同步附件) 文档章节）；推荐仅当拟使用的同步服务不支持 WebDAV 时，再使用这种方式。
 - 这种方式不支持同步到 Zotero 官方 iOS 和 Android 客户端。
 
 :::
@@ -51,9 +53,9 @@ ZotMoov 可以将所有附件聚合在指定文件夹下，从而方便地使用
 
 安装插件后，
 
-1. 打开`设置 -> ZotMoov`，将 `移动附件到以下目录` 选项设置为你想要的目录。
-2. 如果需要在多台设备之间同步，打开`设置 -> 高级`，将`文件和文件夹 -> 已链接附件的根目录`选项也设置为这个目录。
-3. ZotMoov 默认只作用于新增的附件，旧有的附件并不会自动更新，你可以按 `Ctrl+A` 全选所有文献后，点击右键菜单的 `ZotMoov：移动附件到预设目录`来更新所有文件。
+1. 打开「设置」->「ZotMoov」，将「移动附件到以下目录」选项设置为你想要的目录。
+2. 如果需要在多台设备之间同步，打开「设置」 -> 「高级」，将「文件和文件夹」 -> 「已链接附件的根目录」选项也设置为这个目录。
+3. ZotMoov 默认只作用于新增的附件，旧有的附件并不会自动更新，你可以按 `Ctrl + A` 全选所有文献后，点击右键菜单的「ZotMoov：移动附件到预设目录」来更新所有文件。
 
 其他选项请根据自己的需求设置。
 
@@ -63,12 +65,12 @@ ZotMoov 可以将所有附件聚合在指定文件夹下，从而方便地使用
 
 （以下内容译自 [ZotMoov 官方 README](https://github.com/wileyyugioh/zotmoov#migrating-from-zotfile)）
 
-ZotMoov 按理说应该不会破坏 ZotFile 现有的链接文件。但为了确保安全，在更新到 Zotero 7 之前，请[对 Zotero 数据进行备份](https://www.zotero.org/support/zotero_data#backing_up_your_zotero_data)，并对 ZotFile 文件夹进行备份。
+ZotMoov 按理说应该不会破坏 ZotFile 现有的链接文件。但为了确保安全，在更新到 Zotero 7 之前，请 [对 Zotero 数据进行备份](https://www.zotero.org/support/zotero_data#backing_up_your_zotero_data)，并对 ZotFile 文件夹进行备份。
 
 如果你不介意新旧文件混在一起，ZotMoov 的数据目录可以就是之前的 ZotFile 目录；或者，如果你想将文件分开存放，可以选择一个新的数据目录。
 
 而对于 ZotFile 的 tablet 文件，你可以使用官方的 [ZotFile Recovery 插件](https://github.com/jlegewie/ZotFile-Recovery) 来恢复。
 
-有一个可能会出现的问题是[已链接附件的根目录](https://www.zotero.org/support/preferences/advanced#linked_attachment_base_directory)功能。如果你之前使用了这个功能（请检查`设置 -> 高级 -> 文件和文件夹 -> 已链接附件的根目录`），你可能需要修改根目录，改成一个既包含 ZotFile 文件又包含 ZotMoov 文件的文件夹。
+有一个可能会出现的问题是 [已链接附件的根目录](https://www.zotero.org/support/preferences/advanced#linked_attachment_base_directory)功能。如果你之前使用了这个功能（请检查「设置」->「高级」->「文件和文件夹」->「已链接附件的根目录」），你可能需要修改根目录，改成一个既包含 ZotFile 文件又包含 ZotMoov 文件的文件夹。
 
 最简单的方法是直接复用 ZotFile 文件夹，或者将 ZotMoov 文件夹放在之前的 ZotFile 文件夹内。例如，ZotMoov 数据文件夹可以是 `ZotFile/` 或 `ZotFile/ZotMoov/`。
