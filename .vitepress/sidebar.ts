@@ -103,6 +103,7 @@ export const sidebar = {
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
         { text: "SCI Hub", link: "/user-guide/plugins/zotero-scihub" },
         { text: "蒲公英", link: "/user-guide/plugins/tara" },
+        { text: "ZotMoov", link: "/user-guide/plugins/zotmoov" },
       ],
     },
     {
