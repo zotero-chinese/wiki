@@ -2,7 +2,6 @@
 title: 在 WPS 中插入参考文献
 icon: file-word
 date: 2023-09-22 20:36:31
-updated: 2023-09-24 14:49:15
 ---
 
 # 在 WPS 中插入参考文献
@@ -121,7 +120,7 @@ WPS 插件的按钮与 Word 插件类似
 
 1. 关闭 WPS。
 2. 打开 Zotero 的安装包路径
-   C:\Program Files (x86)\Zotero\extensions\<zoteroWinWordIntegration@zotero.org>\install
+   `C:\Program Files (x86)\Zotero\extensions\zoteroWinWordIntegration@zotero.org\install`
 3. 找到文件 Zotero.dotm，复制
    ![image](../assets/images/WPS_Problems.png)
 4. 将第 3 步复制的文件粘贴到以下目录路径
