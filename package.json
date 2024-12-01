@@ -13,15 +13,15 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.13.1",
-    "@mdit/plugin-mark": "^0.13.0",
-    "@types/node": "22.8.6",
-    "husky": "9.1.6",
+    "@mdit/plugin-footnote": "0.14.0",
+    "@mdit/plugin-mark": "^0.14.0",
+    "@types/node": "22.10.1",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "markdownlint-cli2": "0.14.0",
+    "markdownlint-cli2": "0.15.0",
     "markdownlint-rule-search-replace": "^1.2.0",
     "prettier": "2.8.8",
-    "vitepress": "1.4.3"
+    "vitepress": "1.5.0"
   },
   "prettier": {
     "tabWidth": 2,
