@@ -45,7 +45,7 @@ Zotero 中文社区接受多种形式的贡献，请阅读这一份指南，以�
    :::
 
 4. 加入 QQ 群：[913637964](https://qm.qq.com/q/joBSs1HIFa)，[617148016](https://qm.qq.com/q/a3fnR5YLGo)，[893963769](https://qm.qq.com/q/rFk6CayJRC)，[666489129](https://qm.qq.com/q/n3PZ1aRWnI)，[145248977](https://qm.qq.com/q/i7GVnNwD0k)，[317995116](https://qm.qq.com/q/V8KzSdZo42)，962963257；
-5. 加入 QQ 频道：[点击加入 QQ 频道【Zotero 中文频道】](https://pd.qq.com/s/88fhhl9bv)；
+5. 加入 QQ 频道：[点击加入 QQ 频道「Zotero 中文频道」](https://pd.qq.com/s/88fhhl9bv)；
 6. 在各自途径回复讨论，解答问题；
 
 ## 维护文档
