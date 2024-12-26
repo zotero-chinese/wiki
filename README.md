@@ -32,7 +32,34 @@
 
 ## 贡献指南
 
-本项目接收多种方式的贡献，详情请参阅 [贡献指南](https://zotero-chinese.com/contributing/)。
+本项目接收多种方式的贡献，下面是一个简单的操作提示，详细内容请参阅 [文档贡献指南](https://zotero-chinese.com/contributing/wiki)。
+
+```bash
+# 克隆代码仓库
+git clone https://github.com/zotero-chinese/wiki.git wiki/
+cd wiki/
+
+# 启用 pnpm 包管理器
+corepack enable
+
+# 安装依赖项
+pnpm i
+
+# 预览
+pnpm docs:dev
+
+# 格式修复
+pnpm lint:fix
+```
+
+当无法启动预览时，请在确保本地仓库是最新的前提下，重新运行以下两个命令：
+
+```bash
+corepack enable
+pnpm i
+```
+
+若仍存在问题，可以在 ISSUE 开贴讨论。
 
 ## 贡献者
 
