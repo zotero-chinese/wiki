@@ -1,4 +1,4 @@
-name: 部署 (预览环境)
+name: ci-pr
 
 on:
   pull_request:

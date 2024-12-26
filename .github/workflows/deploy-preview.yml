@@ -1,9 +1,9 @@
-name: 部署 (预览环境) 后处理
+name: Push to Netlify
 
 on:
   workflow_run:
     workflows:
-      - 部署 (预览环境)
+      - ci-pr
     types:
       - completed
 
