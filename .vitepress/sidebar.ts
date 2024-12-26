@@ -105,31 +105,31 @@ export const sidebar = {
           items: [
             {
               text: "翻译插件介绍",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/translate",
+              link: "/user-guide/plugins/translate/index",
             },
             {
               text: "阿里翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/aliyun",
+              link: "/user-guide/plugins/translate/aliyun",
             },
             {
               text: "百度翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/baidu",
+              link: "/user-guide/plugins/translate/baidu",
             },
             {
               text: "火山翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/volcengine",
+              link: "/user-guide/plugins/translate/volcengine",
             },
             {
               text: "腾讯翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/tencent",
+              link: "/user-guide/plugins/translate/tencent",
             },
             {
               text: "微软翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/microsoft",
+              link: "/user-guide/plugins/translate/microsoft",
             },
             {
               text: "小牛翻译接口申请及配置",
-              link: "/user-guide/plugins/pdf-translate-for-zotero/niutrans",
+              link: "/user-guide/plugins/translate/niutrans",
             },
           ],
         },
