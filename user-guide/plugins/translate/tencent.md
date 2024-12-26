@@ -30,7 +30,7 @@ title: 腾讯翻译接口申请和配置
 
 ![创建密钥](../../../assets/images/zotero-plugin-translate/tencent-7.png)
 
-，在弹出窗口，点击“下载 CSV 文件“，请妥善保存好这个文件。密钥创建之后是不能在后台查询到的，请一定要保管好（如果找不到了，就重新新建一个密钥）。
+在弹出窗口，点击“下载 CSV 文件“，请妥善保存好这个文件。密钥创建之后是不能在后台查询到的，请一定要保管好（如果找不到了，就重新新建一个密钥）。
 
 ![下载密钥](../../../assets/images/zotero-plugin-translate/tencent-8.png)
 
@@ -69,7 +69,7 @@ title: 腾讯翻译接口申请和配置
 
 ## 5. 测试
 
-在 Zotero 中随便打开一个英文 PDF，划词翻译，看看效果正常不
+在 Zotero 中随便打开一个英文 PDF，划词翻译，看看效果是否正常。
 
 ![测试配置是否成功](../../../assets/images/zotero-plugin-translate/tencent-15.png)
 

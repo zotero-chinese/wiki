@@ -88,7 +88,7 @@
 | law        | 法律法规领域 | 中文（简）-> 英语、英语 -> 中文（简） |
 | contract   | 合同领域     | 中文（简）-> 英语、英语 -> 中文（简） |
 
-以上信息参考 [百度开发文档](https://fanyi-api.baidu.com/product/123)
+以上信息参考 [百度开发文档](https://fanyi-api.baidu.com/product/123)。
 
 这里假设我申请到的 APP ID 为 `12345`，密钥为 `abcde`，选择生物医药领域为 `medicine`。介绍如何在 Zotero 翻译插件中设置。
 
