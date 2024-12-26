@@ -13,7 +13,8 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      fix: false
+      fix: true
+    secrets: inherit
 
   build:
     name: 构建文档
