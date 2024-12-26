@@ -91,34 +91,14 @@ export const sidebar = {
           text: "翻译插件",
           collapsed: true,
           items: [
-            {
-              text: "翻译插件介绍",
-              link: "/user-guide/plugins/translate/index",
-            },
-            {
-              text: "阿里翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/aliyun",
-            },
-            {
-              text: "百度翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/baidu",
-            },
-            {
-              text: "火山翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/volcengine",
-            },
-            {
-              text: "腾讯翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/tencent",
-            },
-            {
-              text: "微软翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/microsoft",
-            },
-            {
-              text: "小牛翻译接口申请及配置",
-              link: "/user-guide/plugins/translate/niutrans",
-            },
+            { text: "插件介绍", link: "/user-guide/plugins/translate/index" },
+            { text: "接口申请：阿里", link: "/user-guide/plugins/translate/aliyun" },
+            { text: "接口申请：百度", link: "/user-guide/plugins/translate/baidu" },
+            { text: "接口申请：火山", link: "/user-guide/plugins/translate/volcengine" },
+            { text: "接口申请：腾讯", link: "/user-guide/plugins/translate/tencent" },
+            { text: "接口申请：微软", link: "/user-guide/plugins/translate/microsoft" },
+            { text: "接口申请：小牛", link: "/user-guide/plugins/translate/niutrans" },
+            // { text: "常见问题", link: "/user-guide/plugins/translate/faqs" },
           ],
         },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
