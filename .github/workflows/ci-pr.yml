@@ -1,4 +1,4 @@
-name: 部署 (预览环境)
+name: ci-pr
 
 on:
   pull_request:
@@ -13,16 +13,22 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      fix: false
+      fix: true
+    secrets: inherit
 
   build:
     name: 构建文档
+    needs:
+      - lint
     uses: ./.github/workflows/build.yml
 
   upload:
-    name: 上传运行信息
+    name: 请求部署预览
     runs-on: ubuntu-latest
     if: github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
+    needs:
+      - lint
+      - build
     steps:
       - name: 保存 PR 编号
         run: |
