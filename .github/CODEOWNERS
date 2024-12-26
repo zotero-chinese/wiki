@@ -27,10 +27,11 @@ user-guide/                              @zotero-chinese/document-maintainer
 user-guide/plugins/style.md              @Chikit-L
 user-guide/plugins/zotero-gpt.md         @Chikit-L
 user-guide/plugins/zotero-scihub.md      @Chikit-L
-user-guide/plugins/translate.md          @windingwind
+user-guide/plugins/translate/            @windingwind
 user-guide/plugins/better-notes.md       @windingwind
 user-guide/plugins/linter.md             @northword
 user-guide/plugins/jasminum.md           @l0o0
+user-guide/plugins/magic.md              @l0o0
 user-guide/faqs/update-translators.md    @Chikit-L @jiaojiaodubai @wakewon
 user-guide/faqs/word-addon.md            @northword @wakewon
 user-guide/faqs/plugins.md               @wakewon @jiaojiaodubai
