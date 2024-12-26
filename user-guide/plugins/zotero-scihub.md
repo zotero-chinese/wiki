@@ -2,15 +2,13 @@
 redirectFrom: /user-guide/plugins/Zotero-scihub.html
 ---
 
-# Zotero SciHub
+# SciHub
 
 ## 插件介绍
 
 这是 Zotero 的一个插件，会自动从 SciHub 上为带有 DOI 的条目自动下载 pdf 格式的论文文件。
 
-一旦你安装该插件，右键单击你收藏中的任何项目。现在将有一个名为`Update Scihub PDF`的菜单选项。点击后，将从 Scihub 下载 PDF 格式的文件，并附加到 Zotero 中对应的条目下。
-
-同时对于您在安装此插件后添加的任何新论文，将会在后台从 SciHub 上自动下载对应的论文，并附加到 Zotero 中对应的条目下。
+对于您在安装此插件后添加的任何新论文，将会在后台从 SciHub 上自动下载对应的论文，并附加到 Zotero 中对应的条目下。
 
 - Zotero SciHub 插件的 GitHub 地址：
   - 适配 Zotero 6：<https://github.com/ethanwillis/zotero-scihub>
@@ -38,7 +36,51 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ## 插件使用方法
 
-### 插件设置
+### Zotero-scipdf
+
+::: tip
+
+该插件只适用于 Zotero 7， Zotero 6 请使用 [Zotero-scihub](#zotero-scihub).
+
+:::
+
+Zotero-scipdf 插件利用了 Zotero 内自带的 [PDF resolvers](https://www.zotero.org/support/kb/custom_pdf_resolvers)方案，将 Sci-Hub 的 `resolver` 自动填入 `extensions.Zotero.findPDFs.resolvers` 字段，以实现在 Zotero 内从 sci-hub 下载 pdf。
+
+#### 插件设置
+
+首次安装时插件会内置部分常用的 Sci-Hub 站点，若需要添加其他 Sci-Hub 站点，或删除已有 Sci-Hub 站点的，可以在插件的设置界面内编辑，不同的站点以`,`或`，`分割。最新的 Scihub 镜像地址详见 [插件介绍](#插件介绍)。
+
+![插件设置](../../assets/images/zotero-scipdf.png)
+
+#### 插件使用
+
+对于安装插件前已经缺失附件的 item，右键该 item，点击查找全文即可
+
+![查找全文](../../assets/images/查找全文.png)
+
+对于新增的带有 DOI 的条目，如果在首选项内勾选了自动下载 PDF 选项，则 Zotero 会自动尝试下载附件
+
+#### 常见问题
+
+- 缺失 DOI 的条目没有查找全文选项，也无法通过 scihub 下载
+
+- 已经关联了附件的条目没有查找全文选项
+
+::: tip
+
+使用该插件在下载 pdf 被 Sci-Hub 拒绝时不会出现任何提示。
+
+:::
+
+### Zotero-scihub
+
+#### 插件设置及使用
+
+::: tip
+
+该插件只适用于 Zotero 6 ，Zotero 7 请使用 [Zotero-scipdf](#zotero-scipdf).
+
+:::
 
 ![插件设置](../../assets/images/zotero-plugin-scihub/zotero-scihub.png)
 
@@ -46,7 +88,9 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 `Scihub URL`：这里可自定义 Scihub 镜像的网站的地址。
 
-### 常见问题
+一旦你安装该插件，右键单击你收藏中的任何项目。现在将有一个名为`Update Scihub PDF`的菜单选项。点击后，将从 Scihub 下载 PDF 格式的文件，并附加到 Zotero 中对应的条目下。
+
+#### 常见问题
 
 部分用户在使用过程中经常会碰到以下弹窗错误：
 
@@ -59,7 +103,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ![连接至服务器时发生错误](../../assets/images/zotero-plugin-scihub/scihub报错_2.png)
 
-自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
+自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0 ，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Scihub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
 
 ::: warning
 
@@ -67,15 +111,9 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 :::
 
-## 不使用插件的原始方法
+## 自定义 PDF Resolvers
 
-::: tip
-
-[这种方法](https://www.zotero.org/support/kb/custom_pdf_resolvers)在修改 Scihub 地址时较为繁琐，但优点是不会遇到 Scihub 验证码弹窗。
-
-当被 Scihub 拒绝时，两种方法都无法抓取文献。
-
-:::
+[PDF Resolvers](https://www.zotero.org/support/kb/custom_pdf_resolvers)可以通过修改配置中的 `extensions.zotero.findPDFs.resolvers` （首选项 - 配置编辑器）进行配置。该值应为一个包含配置对象数组的 JSON 字符串 ，支持 HTM L 和 JSON 格式的来源。
 
 ::: warning 谨慎使用此方法
 

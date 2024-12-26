@@ -7,21 +7,21 @@
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "lint:fix": "markdownlint-cli2 --fix **/*.md & prettier --write .",
-    "lint:check": "markdownlint-cli2 **/*.md & prettier --check .",
+    "lint:fix": "markdownlint-cli2 --fix **/*.md && prettier --write .",
+    "lint:check": "markdownlint-cli2 **/*.md && prettier --check .",
     "git:sync-force": "bash scripts/sync-force.sh",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.13.1",
-    "@mdit/plugin-mark": "^0.13.0",
-    "@types/node": "22.8.6",
-    "husky": "9.1.6",
+    "@mdit/plugin-footnote": "0.14.0",
+    "@mdit/plugin-mark": "^0.14.0",
+    "@types/node": "22.10.1",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "markdownlint-cli2": "0.14.0",
+    "markdownlint-cli2": "0.15.0",
     "markdownlint-rule-search-replace": "^1.2.0",
     "prettier": "2.8.8",
-    "vitepress": "1.4.3"
+    "vitepress": "1.5.0"
   },
   "prettier": {
     "tabWidth": 2,
@@ -32,5 +32,5 @@
   "lint-staged": {
     "*.md": "prettier --write"
   },
-  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
+  "packageManager": "pnpm@9.15.1"
 }

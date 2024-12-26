@@ -2,7 +2,6 @@
 title: 构建指南
 icon: fab fa-dev
 date: 2023-07-21 11:08:04
-updated: 2023-09-22 15:23:36
 ---
 
 # 构建指南
@@ -137,7 +136,7 @@ GitHub 相关资料：
 通过下面的命令安装依赖项。
 
 ```bash
-npm install -g pnpm
+corepack enable
 pnpm install
 ```
 
@@ -182,7 +181,7 @@ pnpm install
 
 4. 提交 commit
 
-   在左侧 " 源代码管理 " 选项卡中，输入一个简短的提交描述，点击提交，然后将修改推送到线上。
+   在左侧「源代码管理」选项卡中，输入一个简短的提交描述，点击提交，然后将修改推送到线上。
 
    ![提交修改](../assets/images/contributing/build-提交修改-1.png)
 
@@ -243,3 +242,32 @@ pnpm install
 ### pnpm run lint:fix
 
 运行 Markdown Lint 和 Prettier，并修复可以自动修复的错误。
+
+## 常见问题
+
+### PNPM 命令不存在
+
+请先使用下面命令安装 pnpm：
+
+```bash
+corepack enable
+```
+
+### PNPM 版本不正确
+
+请先使用下面命令安装 pnpm：
+
+```bash
+corepack enable
+```
+
+### 其他问题
+
+当无法启动预览时，请在确保本地仓库是最新的前提下，重新运行以下两个命令：
+
+```bash
+corepack enable
+pnpm i
+```
+
+若仍存在问题，可以在 ISSUE 开贴讨论。
