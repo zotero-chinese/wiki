@@ -97,9 +97,42 @@ export const sidebar = {
         },
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "Linter", link: "/user-guide/plugins/linter" },
-        { text: "Magic", link: "/user-guide/plugins/magic" },
+        { text: "Magic全文翻译", link: "/user-guide/plugins/magic" },
         { text: "Style", link: "/user-guide/plugins/style" },
-        { text: "翻译", link: "/user-guide/plugins/translate" },
+        { 
+          text: "翻译插件",
+          collapsed: true,
+          items: [
+            {
+              text: "翻译插件介绍",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/translate"
+            },
+            {
+              text: "阿里翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/aliyun"
+            },
+            {
+              text: "百度翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/baidu"
+            },
+            {
+              text: "火山翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/volcengine"
+            },
+            {
+              text: "腾讯翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/tencent"
+            },
+            {
+              text: "微软翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/microsoft"
+            },
+            {
+              text: "小牛翻译接口申请及配置",
+              link: "/user-guide/plugins/pdf-translate-for-zotero/niutrans"
+            },
+          ]
+        },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
         { text: "SCI Hub", link: "/user-guide/plugins/zotero-scihub" },
         { text: "蒲公英", link: "/user-guide/plugins/tara" },
