@@ -25,17 +25,16 @@ Zotero PDF Translate 是由 @windingwind 开发的，用于文献管理软件 Zo
 
 我们收集整理了一些国内常用的翻译引擎，这些带密钥的翻译引擎，同知网，海词等相比，更加稳定，大批量和频繁使用时不容易出错。
 
-
-| 引擎名称 | 免费额度 | 参考文档 | 备注 |
-| -- | -- | -- | -- |
-| 小牛翻译         | 新注册获得100W，用完为止                | [小牛翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/niutrans)                                               | 免费用户QPS=5，字段长度最大为5000                  |
-| 百度翻译         | 每月免费100W                      | [百度翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/baidu)                                               | QPS=10，超出部分49元/百万字符                    |
-| 百度垂直领域       | 每月免费50W                       | [百度翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/baidu)                                               | 对生物医药领域有优化 QPS=10                      |
-| 腾讯翻译         | 每月免费500W                      | [腾讯翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/tencent) | 每月免费额度非常多 QPS=5，翻译太快，容易报错，超出部分58元/百万字符 |
-| 彩云小译         | 新用户注册会获得 100 万字的免费翻译额度,有效期一个月 |                                                                                                                                | 39元/百万字符                               |
-| 火山翻译         | 每月免费200万字符流量                  | [火山翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/volcengine)                                               | QPS=10，超出部分49元/百万字符                    |
-| 阿里翻译         | 每月免费100万字符流量                  | [阿里翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/aliyun)                                               | QPS=50，超出部分50元/百万字符                    |
-| 微软翻译         | 每月免费200W流量（新用户前12个月才有）        | [微软翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/microsoft)                                               | 超出部分 10美元/百万字符                         |
+| 引擎名称     | 免费额度                                             | 参考文档                                                                          | 备注                                                                  |
+| ------------ | ---------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 小牛翻译     | 新注册获得 100W，用完为止                            | [小牛翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/niutrans)   | 免费用户 QPS=5，字段长度最大为 5000                                   |
+| 百度翻译     | 每月免费 100W                                        | [百度翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/baidu)      | QPS=10，超出部分 49 元/百万字符                                       |
+| 百度垂直领域 | 每月免费 50W                                         | [百度翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/baidu)      | 对生物医药领域有优化 QPS=10                                           |
+| 腾讯翻译     | 每月免费 500W                                        | [腾讯翻译接口申请和配置](/user-guide/plugins/pdf-translate-for-zotero/tencent)    | 每月免费额度非常多 QPS=5，翻译太快，容易报错，超出部分 58 元/百万字符 |
+| 彩云小译     | 新用户注册会获得 100 万字的免费翻译额度,有效期一个月 |                                                                                   | 39 元/百万字符                                                        |
+| 火山翻译     | 每月免费 200 万字符流量                              | [火山翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/volcengine) | QPS=10，超出部分 49 元/百万字符                                       |
+| 阿里翻译     | 每月免费 100 万字符流量                              | [阿里翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/aliyun)     | QPS=50，超出部分 50 元/百万字符                                       |
+| 微软翻译     | 每月免费 200W 流量（新用户前 12 个月才有）           | [微软翻译接口申请及配置](/user-guide/plugins/pdf-translate-for-zotero/microsoft)  | 超出部分 10 美元/百万字符                                             |
 
 ::: tip
 

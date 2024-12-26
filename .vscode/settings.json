@@ -58,7 +58,7 @@
 
     // Git and GitHub config
     // "**/.*": true,
-    ".github": true,
+    // ".github": true,
     ".devcontainer": true,
     ".gitignore": true,
     ".gitattributes": true,
