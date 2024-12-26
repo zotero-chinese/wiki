@@ -97,7 +97,7 @@ export const sidebar = {
         },
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "Linter", link: "/user-guide/plugins/linter" },
-        { text: "Magic全文翻译", link: "/user-guide/plugins/magic" },
+        { text: "Magic 全文翻译", link: "/user-guide/plugins/magic" },
         { text: "Style", link: "/user-guide/plugins/style" },
         {
           text: "翻译插件",
