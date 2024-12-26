@@ -1,4 +1,4 @@
-name: 部署（生产环境）
+name: ci
 
 on:
   push:
