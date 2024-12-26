@@ -27,7 +27,15 @@
     "tabWidth": 2,
     "printWidth": 80,
     "proseWrap": "preserve",
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "overrides": [
+      {
+        "files": "**/*.ts",
+        "options": {
+          "printWidth": 120
+        }
+      }
+    ]
   },
   "lint-staged": {
     "*.md": "prettier --write"
