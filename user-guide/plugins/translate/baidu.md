@@ -1,12 +1,6 @@
----
-title: 百度翻译接口申请和配置
-authors:
-  - l0o0
----
-
 # 百度翻译接口申请和配置
 
-百度翻译和垂直领域翻译免费额度
+百度翻译和垂直领域翻译免费额度：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-1.png)
 
@@ -20,14 +14,14 @@ authors:
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-3.png)
 
-网页上直接列出了通用文本翻译和领域翻译，这两个就是常说的百度翻译和百度垂直领域翻译。这两个的区别是
+网页上直接列出了通用文本翻译和领域翻译，这两个就是常说的百度翻译和百度垂直领域翻译。这两个的区别是：
 
 - 免费额度不同，垂直领域相比通用文本翻译免费额度少，每月只有 50W
 - 精细度不同。为了提升特定领域机器翻译的准确度，百度翻译针对多个垂直领域模型进行了优化，特定领域术语翻译相较于通用文本翻译 API 结果更为准确，句式更加符合该行业特点。
 
 目前已开通科技电子、水利机械、生物医药等 3 个垂直领域，不过只有生物医药支持中英互译，剩下两个只支持中文到英文。建议生物医药相关专业的同学，可以试试使用垂直领域翻译接口。
 
-访问 [https://fanyi-api.baidu.com/product/11](https://fanyi-api.baidu.com/product/11)，直接点击下方立即使用
+访问 [https://fanyi-api.baidu.com/product/11](https://fanyi-api.baidu.com/product/11)，直接点击下方立即使用：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-4.png)
 
@@ -45,7 +39,7 @@ authors:
 
 ## 2. 百度翻译（通用文本翻译）接口申请
 
-访问 [https://fanyi-api.baidu.com/choose](https://fanyi-api.baidu.com/choose) ，选择通用文本翻译，点下一步
+访问 [https://fanyi-api.baidu.com/choose](https://fanyi-api.baidu.com/choose) ，选择通用文本翻译，点下一步：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-8.png)
 
@@ -63,7 +57,7 @@ authors:
 
 ## 3. 百度垂直领域（领域翻译）接口申请
 
-打开这个网页 [https://fanyi-api.baidu.com/choose](https://fanyi-api.baidu.com/choose)，选择领域翻译，点下一步
+打开这个网页 [https://fanyi-api.baidu.com/choose](https://fanyi-api.baidu.com/choose)，选择领域翻译，点下一步：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-13.png)
 
@@ -79,7 +73,7 @@ authors:
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-16.png)
 
-垂直领域翻译还需要一个领域参数，不过电子科技领域和水利机械领域只支持中文到英文，只有生物医药领域支持中英互译。建议相关专业的同学添加该参数
+垂直领域翻译还需要一个领域参数，不过电子科技领域和水利机械领域只支持中文到英文，只有生物医药领域支持中英互译。建议相关专业的同学添加该参数：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-17.png)
 
@@ -89,13 +83,13 @@ authors:
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-18.png)
 
-提示窗口点 OK
+提示窗口点 OK：
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-19.png)
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-20.png)
 
-这里填入 12345#abcde
+这里填入 `12345#abcde`。
 
 ### 4.2 百度垂直领域（领域翻译）设置
 
@@ -103,7 +97,7 @@ authors:
 
 ![](../../../assets/images/zotero-plugin-translate/baidu-22.png)
 
-密钥处填入 12345#abcde#medicine
+密钥处填入 `12345#abcde#medicine`。
 
 ## 5. 接口测试
 
