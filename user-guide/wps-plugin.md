@@ -6,10 +6,13 @@ date: 2023-09-22 20:36:31
 
 # 在 WPS 中插入参考文献
 
-在 WPS 中使用插件参考文献，目前有两种方法
+在 WPS 中使用插件参考文献，目前有三种方法
 
+- 使用 WPS-Zotero插件（tankwyn开发，wangrui5015修改），支持Win/Linux/Mac三种平台的WPS和Zotero
 - 使用 VBA，借用 Word 的插件
 - 使用 WPS JavaScript API 制作的插件
+
+wangrui5015修改版本的WPS-Zotero插件地址：[https://gitee.com/wangrui5015/Zotero-WPSJS](https://gitee.com/wangrui5015/Zotero-WPSJS)
 
 使用 WPS 的 VBA 插件插入参考这篇：[完美在 WPS 中使用 Zotero 的方法](https://zhuanlan.zhihu.com/p/579975093)，该方法这个方法需要依赖 WPS 的 VBA 环境，需要升级到某些付费版本才行（当然也有破解版）。
 
