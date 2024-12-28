@@ -53,10 +53,7 @@ export const sidebar = {
         { text: "管理文库", link: "/user-guide/organize-library" },
         { text: "阅读与笔记", link: "/user-guide/take-notes" },
         { text: "订阅流", link: "/user-guide/feed" },
-        {
-          text: "从其他软件导入",
-          link: "/user-guide/import-from-other-software",
-        },
+        { text: "从其他软件导入", link: "/user-guide/import-from-other-software" },
       ],
     },
     {
@@ -66,14 +63,8 @@ export const sidebar = {
         { text: "引文风格", link: "/user-guide/citation-styles" },
         { text: "在 Word 中使用", link: "/user-guide/ms-word-plugin" },
         { text: "在 WPS 中使用", link: "/user-guide/wps-plugin" },
-        {
-          text: "直接创建参考文献表",
-          link: "/user-guide/create-bibliographies-within-zotero",
-        },
-        {
-          text: "通过 ZBib 创建",
-          link: "/user-guide/create-bibliographies-via-zbib",
-        },
+        { text: "直接创建参考文献表", link: "/user-guide/create-bibliographies-within-zotero" },
+        { text: "通过 ZBib 创建", link: "/user-guide/create-bibliographies-via-zbib" },
       ],
     },
     {
@@ -91,10 +82,7 @@ export const sidebar = {
       items: [
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
-        {
-          text: "Easier Citation",
-          link: "/user-guide/plugins/easier-citation",
-        },
+        { text: "Easier Citation", link: "/user-guide/plugins/easier-citation" },
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "Linter", link: "/user-guide/plugins/linter" },
         { text: "Magic 全文翻译", link: "/user-guide/plugins/magic" },
@@ -126,12 +114,7 @@ export const sidebar = {
         {
           text: "与安装有关的",
           collapsed: true,
-          items: [
-            {
-              text: "Zotero 7 历史版本下载",
-              link: "/user-guide/faqs/zotero-7-beta-versions",
-            },
-          ],
+          items: [{ text: "Zotero 7 历史版本下载", link: "/user-guide/faqs/zotero-7-beta-versions" }],
         },
         { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
         {
@@ -141,24 +124,13 @@ export const sidebar = {
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
         {
           text: "与阅读器相关",
-          items: [
-            {
-              text: "PDF 上存在黑色遮罩",
-              link: "/user-guide/faqs/pdf-black-mask",
-            },
-          ],
+          items: [{ text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" }],
         },
         {
           text: "其他问题",
           items: [
-            {
-              text: "无法打开“获取更多样式”",
-              link: "/user-guide/faqs/get-more-style-cannot-open",
-            },
-            {
-              text: "Emoji 变成了黑白的",
-              link: "/user-guide/faqs/monochrome-emoji",
-            },
+            { text: "无法打开“获取更多样式”", link: "/user-guide/faqs/get-more-style-cannot-open" },
+            { text: "Emoji 变成了黑白的", link: "/user-guide/faqs/monochrome-emoji" },
             { text: "将 CAJ 转为 PDF", link: "/user-guide/faqs/caj2pdf" },
           ],
         },
@@ -169,14 +141,8 @@ export const sidebar = {
       collapsed: true,
       items: [
         { text: "高级选项", link: "/user-guide/misc/preference" },
-        {
-          text: "通过 VBA 在 WPS 中插入引文",
-          link: "/user-guide/misc/wps-plugin-vba",
-        },
-        {
-          text: "将引注链接到参考文献表",
-          link: "/user-guide/misc/link-citation-to-bibliography",
-        },
+        { text: "通过 VBA 在 WPS 中插入引文", link: "/user-guide/misc/wps-plugin-vba" },
+        { text: "将引注链接到参考文献表", link: "/user-guide/misc/link-citation-to-bibliography" },
       ],
     },
   ],
@@ -231,10 +197,7 @@ export const sidebar = {
     { text: "参与指南", link: "/contributing/" },
     { text: "文档贡献指南", link: "/contributing/wiki" },
     { text: "文档语法风格", link: "/contributing/markdown" },
-    {
-      text: "通过 GitHub 代码空间在线修改文档",
-      link: "/contributing/github-codespace",
-    },
+    { text: "通过 GitHub 代码空间在线修改文档", link: "/contributing/github-codespace" },
     { text: "通过 VS Code 在线修改文档", link: "/contributing/vscode-dev" },
     { text: "完整构建指南", link: "/contributing/build" },
   ],
