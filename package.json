@@ -15,10 +15,10 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.14.0",
     "@mdit/plugin-mark": "^0.14.0",
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "husky": "9.1.7",
-    "lint-staged": "15.2.10",
-    "markdownlint-cli2": "0.15.0",
+    "lint-staged": "15.3.0",
+    "markdownlint-cli2": "0.17.1",
     "markdownlint-rule-search-replace": "^1.2.0",
     "prettier": "2.8.8",
     "vitepress": "1.5.0"
@@ -40,5 +40,5 @@
   "lint-staged": {
     "*.md": "prettier --write"
   },
-  "packageManager": "pnpm@9.15.1"
+  "packageManager": "pnpm@9.15.2"
 }
