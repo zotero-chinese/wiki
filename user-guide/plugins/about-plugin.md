@@ -16,8 +16,15 @@ updated: 2023-11-28 15:29:00
 
 ## 获取插件
 
+::: tip
+
+你可以通过[插件市场（Add-on Market for Zotero）](./zotero-addons.md)更便捷地安装、更新和卸载插件。不过，您仍需根据以下教程完成该插件的安装步骤。
+
+:::
+
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
 - Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
+
 - 插件的 GitHub 主页
 
   ::: details 点击此处了解 如何在 GitHub 上下载 Zotero 插件

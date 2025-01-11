@@ -47,7 +47,7 @@
 
 ::: tip
 
-Zotero 官方已经在测试 Android 版本客户端，预计 2024 年会发布。
+Zotero 官方已经在测试 Android 版本客户端，预计 2025 年发布。
 
 :::
 
@@ -78,3 +78,14 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2024 年会发布�
 3. 配置完毕，点开某个条目，点击 PDF 图标，会自动下载 PDF。有可能下载失败，重试即可
 
    ![Zoo 中下载 PDF](../assets/images/zoo-download-pdf.png){width=50%}
+
+## 常见问题
+
+### The attached file is not available on the WebDAV server.
+
+![alt text](../assets/images/7211b19200621befe412eed5417e1128.png)
+
+![alt text](../assets/images/ce70ce22c48f794d199da2439af1d003.png)
+![alt text](../assets/images/c4cbd12f0a7a978fe1456c2833ddd968.png)
+![alt text](../assets/images/6c7fae8734dbb3b53180898aa445c27b.png)
+然后回主界面右上角点同步按钮，等同步完成
