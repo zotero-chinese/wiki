@@ -163,6 +163,7 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 如果你没有安装茉莉花，请前往 [茉莉花](./plugins/jasminum.md) 了解详情。关于什么是插件，请参阅 [关于插件](./plugins/about-plugin.md)。
 
+并保证你的**茉莉花插件**、**Translator**、**connector**都为最新版。更新 Translator 请参考：[如何更新 Translator](./faqs/update-translators.md)
 :::
 
 由于为中文文献抓取知网元数据时需要根据文件名检索文献信息， 这一功能对文件名的要求较高。具体要求请看如下说明：

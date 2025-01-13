@@ -18,6 +18,7 @@ updated: 2023-11-28 15:29:00
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
 - Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
+
 - 插件的 GitHub 主页
 
   ::: details 点击此处了解 如何在 GitHub 上下载 Zotero 插件
@@ -55,6 +56,12 @@ updated: 2023-11-28 15:29:00
 ::: tip Zotero 6 与 Zotero 7 的插件互不兼容
 
 Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，请在下载插件安装包时下载与你 Zotero 版本适配的版本。[中文插件商店](https://zotero-chinese.com/plugins/) 中有注明兼容的目标 Zotero 版本，下载时请务必注意。
+
+:::
+
+::: tip
+
+你可以通过 [插件市场（Add-on Market for Zotero）](./zotero-addons.md) 更便捷地安装、更新和卸载插件。不过，您仍需根据以下教程完成该插件的安装步骤。
 
 :::
 
