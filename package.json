@@ -31,5 +31,6 @@
   },
   "lint-staged": {
     "*.md": "prettier --write"
-  }
+  },
+  "packageManager": "pnpm@9.15.2"
 }

@@ -78,4 +78,3 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2025 年发布。
 3. 配置完毕，点开某个条目，点击 PDF 图标，会自动下载 PDF。有可能下载失败，重试即可
 
    ![Zoo 中下载 PDF](../assets/images/zoo-download-pdf.png){width=50%}
-

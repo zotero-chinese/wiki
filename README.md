@@ -34,6 +34,22 @@
 
 本项目接收多种方式的贡献，详情请参阅 [贡献指南](https://zotero-chinese.com/contributing/)。
 
+下面的命令作为提示：
+
+```bash
+# 启用 corepack
+corepack enable
+
+# 安装依赖
+pnpm i
+
+# 启动预览
+pnpm docs:dev
+
+# 检查格式
+pnpm lint:check
+```
+
 ## 贡献者
 
 感谢所有贡献者！
