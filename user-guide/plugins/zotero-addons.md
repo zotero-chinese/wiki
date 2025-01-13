@@ -19,23 +19,33 @@ date: 2024-12-20 20:31:17
 
 ## 使用方法
 
-安装完成后，您可以通过以下两种方式访问插件市场：
+安装完成后，您可以通过以下两种方式访问插件市场。
 
-1. 点击 Zotero 工具栏中的插件按钮![icon](../../assets/images/zotero_addons_icon.png)。
+### 打开插件市场
+
+#### 1. 通过工具栏按钮
+
+点击 Zotero 工具栏中的插件按钮![icon](../../assets/images/zotero_addons_icon.png)。
 
 ![通过工具栏访问](../../assets/images/zotero_addons_工具栏.png)
 
-2. 在 Zotero 「工具」 菜单中选择「插件市场」进入。
+#### 2. 通过菜单
+
+在 Zotero 「工具」 菜单中选择「插件市场」进入。
 
 ![通过菜单访问](../../assets/images/zotero_addons——菜单访问.png)
 
-- 在 「插件市场」中可以快速实现插件的安装、更新、卸载、禁用等功能
+### 管理插件
+
+在 「插件市场」中可以快速实现插件的安装、更新、卸载、禁用等功能
 
 ![管理插件](../../assets/images/zotero_addons_管理插件.png)
 
-- 勾选右下键的 `自动更新插件`后，Zotero 插件市场插件会在后台自动实现插件的更新。
+### 自动更新插件
 
-  ![自动更新](../../assets/images/zotero_addons_自动更新.png)
+勾选右下键的 `自动更新插件` 后，Zotero 插件市场插件会在后台自动实现插件的更新。
+
+![自动更新](../../assets/images/zotero_addons_自动更新.png)
 
 ## 插件数据源
 
@@ -43,11 +53,11 @@ date: 2024-12-20 20:31:17
 
 ![更换数据源](../../assets/images/zotero_addons_更换数据源.png)
 
-当 **插件列表无法刷新** 或者 **插件无法下载**时，说明可能遇到了网络问题，此时可通过更换数据源来尝试解决。
+当 **插件列表无法刷新** 或者 **插件无法下载** 时，说明可能遇到了网络问题，此时可通过更换数据源来尝试解决。
 
 ### 默认数据源
 
-#### Zotero 中文社区（Zotero-chinese/Zotero-plugins）
+#### Zotero 中文社区（`zotero-chinese/zotero-plugins`）
 
 插件的主要数据源来自 Zotero 中文社区。若您是国内用户，推荐选择此数据源，以获取优化的插件列表。
 
