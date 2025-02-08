@@ -61,22 +61,6 @@ pnpm i
 
 若仍存在问题，可以在 ISSUE 开贴讨论。
 
-下面的命令作为提示：
-
-```bash
-# 启用 corepack
-corepack enable
-
-# 安装依赖
-pnpm i
-
-# 启动预览
-pnpm docs:dev
-
-# 检查格式
-pnpm lint:check
-```
-
 ## 贡献者
 
 感谢所有贡献者！
