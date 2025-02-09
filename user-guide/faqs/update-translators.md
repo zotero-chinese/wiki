@@ -99,7 +99,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 2. 进入茉莉花插件的设置，转到 「非官方维护中文转换器（翻译器）」 部分，然后点击 「更新全部」 按钮。
 
-   ![更新「非官方维护中文转换器」](../../assets/images/update-unofficial-translators.jpg)
+   ![更新「非官方维护中文转换器」](../../assets/images/update-unofficial-translators.png)
 
    ::: info 提醒
 
