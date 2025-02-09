@@ -27,19 +27,6 @@
 
 在 [Zotero 插件商店](https://zotero-chinese.com/plugins/#search=Jasminum) 下载 `jasminum` ，插件安装见 [插件与功能扩展](./about-plugin.md) 。
 
-### 02. 配置 PDFtk
-
-#### 2.1 下载与安装 PDFtk
-
-**Windows**
-下载并安装 [PDFtk server](https://www.pdflabs.com/tools/pdftk-server/) ，并记录 PDFtk 的安装路径（例如安装在 `C:\Program Files (x86)\PDFtk`）。
-**macOS**
-MAC 用户参考 [这里](https://github.com/l0o0/jasminum#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8) 。
-
-#### 2.2 在茉莉花中配置 PDFtk 路径
-
-在 「Zotero」->「编辑」->「设置」->「茉莉花」->「PDFtk Server 路径设置」中填写 `<PDFtk install dir>/bin` （例如 `C: \Program Files (x86)\PDFtk\bin`）（即 PDFtk 可执行文件所在目录）。
-
-### 03. 安装/更新 中文 Translator
+### 02. 安装/更新 中文 Translator
 
 教程详见 [一键自动更新 Translator](../faqs/update-translators.md#更新抓取文献信息的转换器) 。
