@@ -56,7 +56,7 @@ Zotero 是一个文献管理软件。它旨在存储、管理和引用参考书�
 
 [![image](../assets/images/quick-start/快速上手-标签.png)](https://www.zotero.org/support/collections_and_tags#tags)
 
-可以为条目分配 [标签](https://www.zotero.org/support/collections_and_tags#tags)。标签由用户命名。可以根据需要为条目分配任意数量的标签。使用左侧窗格底部的标签选择器或通过右侧窗格中任何条目的标签选项卡添加或删除标签。最多可以为 6 个标签分配**颜色**。彩色标签在条目列表中显示，并且可以使用键盘上的数字键快速添加或删除。
+可以为条目分配 [标签](https://www.zotero.org/support/collections_and_tags#tags)。标签由用户命名。可以根据需要为条目分配任意数量的标签。使用左侧窗格底部的标签选择器或通过右侧窗格中任何条目的标签选项卡添加或删除标签。最多可以为 9 个标签分配**颜色**。彩色标签在条目列表中显示，并且可以使用键盘上的数字键快速添加或删除。
 
 ### 搜索
 
