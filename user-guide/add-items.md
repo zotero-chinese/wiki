@@ -197,7 +197,9 @@ Connector 抓取文献错误解决：[从浏览器抓取条目时发生错误 / 
 
 ::: info 对于 Zotero 6 用户
 
-由于 Zotero 6 上的茉莉花插件已经基本停止维护，在 Zotero 6 上使用本功能很可能会遇到兼容问题抓取失败。建议您在做好[备份](./backup.md)后，尽快[升级到 Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)，然后安装最新版的[茉莉花](./plugins/jasminum.md)插件为中文 PDF 抓取期刊元数据。
+由于 Zotero 6 上的茉莉花插件已经基本停止维护，在 Zotero 6 上使用本功能很可能会遇到兼容问题抓取失败。建议您在做好[备份](./backup.md)后，尽快升级到 Zotero 7，然后安装最新版的[茉莉花](./plugins/jasminum.md)插件为中文 PDF 抓取期刊元数据。
+
+升级 Zotero 7 正式版的步骤和常见问题的解答请阅读：[你好，Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)。
 
 :::
 
