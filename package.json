@@ -15,7 +15,7 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.16.0",
     "@mdit/plugin-mark": "^0.16.0",
-    "@types/node": "22.13.0",
+    "@types/node": "22.13.7",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
     "markdownlint-cli2": "0.17.2",
@@ -40,5 +40,5 @@
   "lint-staged": {
     "*.md": "prettier --write"
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@9.15.6"
 }
