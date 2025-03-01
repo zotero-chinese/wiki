@@ -5,7 +5,7 @@ date: 2023-09-14 21:17:47
 
 # 抓取文献条目信息的常见问题
 
-本页面整理了一些抓取文献条目信息相关问题，你可以在右侧大纲栏（部分窄屏设备也可能在顶部「页面导航」）快速定位到你需要的内容。
+本页面整理了一些抓取文献条目信息相关问题，你可以在右侧大纲栏（部分窄屏设备也可能在顶部「页面导航」）或下面的目录快速定位到你需要的内容。
 
 如果仍没有找到你需要的问题，可以考虑在 Zotero 中文社区提问咨询或前往 Zotero 官方论坛发帖求助。
 
@@ -26,6 +26,8 @@ Zotero 文库中主要有三类内容： **文献条目，附件文件，笔记*
 
 :::
 
+## 使用 Zotero Connector 浏览器扩展在网页上抓取文献时遇到问题
+
 Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两类内容： **文献信息（文献条目的元数据）** ，以及相应的 **附件（如 PDF 全文、网页截图等）** 。
 
 - 一般来说，只要你在网页上或 Zotero 里 **能够正确地识别出文献类型** （[条目图标](../add-items.md#条目-item) 与该文献的类型相对应），就已经意味着你的文献信息/元数据 **抓取是成功的** 。如果希望抓取的是「学位论文」，条目左边的图标却是「网页」或「期刊文章」，这通常意味着抓取失败或抓取到的部分信息不准确。
@@ -41,7 +43,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 :::: info 尽量在文献详情页抓取
 
-在文献搜索界面或阅读界面进行条目抓取非常容易失败，请在文献的详情页（如下）进行条目的抓取。
+Zotero Connector 在「文献搜索」界面或「全文阅读」界面进行条目抓取时非常容易失败，建议您在文献的详情页（如下）进行条目的抓取。
 
 ::: details 典型的详情页示例
 
@@ -53,6 +55,14 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 ::::
 
+::: info 尽量避免在校外访问页面中抓取文献
+
+部分「校外访问」服务可能修改网站网址或内容，导致 Zotero 转换器在校外页面抓取文献信息时出现兼容性问题。通常，抓取文献信息无需校园网权限，建议直接访问出版商或期刊官网获取信息，再通过校外访问服务单独下载 PDF 文件，手动添加至 Zotero 文献条目中，具体操作请参考[添加附件指南](../add-attachments.md#为条目添加附件)。
+
+为减少校外访问服务中的抓取问题，您可在 Zotero Connector 设置中配置校外访问代理。详细配置步骤请参阅[Zotero 官方文档](https://www.zotero.org/support/connector/preferences/proxies)。
+
+:::
+
 ::: tip ScienceDirect 需要手动完成反爬虫验证
 
 ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Zotero 7 中针对该措施推出了一项新功能。当你尝试抓取 ScienceDirect 上的文章时，Zotero 会显示 ScienceDirect 的验证码页面。如果你完成了验证码，Zotero 则会完成 PDF 的下载。
@@ -61,7 +71,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 如果你不能正确地抓取文献信息，或者抓取后的条目里文献信息缺失，那么下面这篇文档会对你有所帮助。
 
-## 更新抓取文献信息的转换器
+### 更新抓取文献信息的转换器 <Badge text="初级" />
 
 在使用 Zotero 的过程中，我们经常需要更新 `转换器` 来实现从网页快速抓取文献信息。通常，我们可以借助 Zotero 本身的功能以及 茉莉花 插件快速完成该操作。但当 Zotero 或 茉莉花 插件出现故障无法完成一键自动更新时，我们也可以手动下载新版的转换器文件，并进行手动更新。
 
@@ -71,9 +81,9 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 :::
 
-### 方法 1：一键自动更新 <Badge text='推荐' />
+#### 方法 1：一键自动更新 <Badge text='推荐' />
 
-#### 步骤 1. 更新官方转换器
+##### 步骤 1. 更新官方转换器
 
 在 `Zotero 设置` 中，进入 `高级` 设置，点击下方「自动检查转换器和样式的更新」后面的 `立即更新` 按钮。
 
@@ -91,23 +101,41 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 :::
 
-#### 步骤 2. 更新中文转换器
+##### 步骤 2. 更新中文转换器
 
 1. 安装/更新茉莉花插件
 
    茉莉花插件是一个 Zotero 中文生态增强插件，提供了中文转换器的更新服务，请确保你安装了最新版本的茉莉花插件，浏览 [茉莉花](../plugins/jasminum.md) 了解详情。
 
-2. 进入茉莉花插件的设置，转到 「非官方维护中文转换器（翻译器）」 部分，然后点击 「更新全部」 按钮。
+2. 进入茉莉花插件的设置，转到 「中文转换器设置」 部分，然后点击 「立即更新转换」 按钮。
 
-   ![更新「非官方维护中文转换器」](../../assets/images/update-unofficial-translators.png)
+   ![更新「中文转换器」](../../assets/images/update-unofficial-translators.png)
 
-   ::: info 提醒
+   请耐心等待更新完成，更新完成后会显示「转换器已下载更新」的提示。如果更新长时间没有反应，您也可以开启一些访问国际互联网的工具后再尝试更新。更新可能会持续几分钟，取决于您的网络环境，请耐心等待。
 
-   建议不定期来这里更新一下非官方维护中文转换器（翻译器）。特别是在遇到中文文献无法抓取的时候，通常意味着这里的转换器需要更新了。
+   ![「中文转换器」更新成功](../../assets/images/update-unofficial-translators-success.png)
+
+   ::: info 对于 Zotero 6 用户
+
+   如果您使用的是 Zotero 6，茉莉花插件的设置界面会有所不同。请在茉莉花插件的设置界面中找到 「非官方维护中文转换器（翻译器）」 部分，然后点击 「更新全部」 按钮。如果您的转换器列表为空，或点击「更新全部」后本地版本的日期和最新版本的日期仍然不一致，通常意味着您的茉莉花插件版本过老，请务必确保安装了最新版本的茉莉花插件后再重试。
+
+   Zotero 7 的正式版已经发布，由于 Zotero 6 的插件已经基本停止维护，可能会遇到兼容性问题，建议您在做好[备份](../backup.md)后，尽快升级到 Zotero 7。
+
+   升级 Zotero 7 正式版的步骤和常见问题的解答请阅读：[你好，Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)。
 
    :::
 
-#### 步骤 3. 更新 Zotero Connecter 的缓存
+   ::: info 提醒
+
+   建议勾选「自动更新转换器」，保持转换器为最新版本。
+
+   您还可以点击转换器详情旁边的「点击查看」按钮，确认您的转换器版本是否为最新版本。特别是在遇到中文文献无法抓取的时候，通常意味着这里的转换器需要更新了。
+
+   如果自动更新失败，您也可以手动点击「立即更新转换」按钮进行更新，并在转换器详情页面确认更新成功。
+
+   :::
+
+##### 步骤 3. 更新 Zotero Connecter 的缓存
 
 1. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
 
@@ -121,11 +149,11 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    ::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
 
-   1. 右键点击 Zotero Connector 按钮，然后点击 选项/Preference
+   1. 右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
 
-   2. 点击 Advanced 中的 Reset Translators 按钮
+   2. 点击「Advanced」中的「Reset Translators」按钮
 
       ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
@@ -135,11 +163,11 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
-   1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
+   1. 在网页空白处点鼠标右键，然后点击「Zotero Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
 
-   2. 点击 Advanced 中的 Reset Translators 按钮
+   2. 点击「Advanced」中的「Reset Translators」按钮
 
       ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
@@ -149,9 +177,11 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
 
-   点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新
+   点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新：
 
    ![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
+
+   如果日志「Translators: Saved xxx translators.」中显示的数量少于 500 个，转换器更新很可能出现了问题，建议尝试[重装 Zotero Connector 浏览器扩展](#卸载并重装-zotero-connector-浏览器扩展)，以及[重置 Zotero 转换器](#重置-zotero-的转换器)，然后再尝试重新更新。
 
    :::
 
@@ -159,13 +189,15 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 3. 此时你已经完成了转换器的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
 
-### 方法 2：手动替换转换器文件更新 <Badge text="高级" />
+#### 方法 2：手动替换转换器文件更新 <Badge text="高级" />
 
 ::: warning 不推荐这种方法
 
 我们推荐使用 「方法 1：自动更新」 完成转换器更新。
 
 :::
+
+:::: details 手动更新转换器的步骤
 
 1. 在 Zotero-编辑-设置-高级-文件和文件夹 找到自己的数据储存位置。
 
@@ -201,11 +233,11 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    ::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
 
-   1. 右键点击 Zotero Connector 按钮，然后点击 选项
+   1. 右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
 
-   2. 点击 Advanced 中的 Reset Translators 按钮
+   2. 点击「Advanced」中的「Reset Translators」按钮
 
       ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
@@ -215,11 +247,11 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
-   1. 在网页空白处点鼠标右键，然后点击 Zotero Preference
+   1. 在网页空白处点鼠标右键，然后点击「Zotero Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
 
-   2. 点击 Advanced 中的 Reset Translators 按钮
+   2. 点击「Advanced」中的「Reset Translators」按钮
 
       ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
@@ -229,16 +261,19 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
 
-   点击 Reset Translators 按钮时
-
-   你也可以通过检查日志的方式确保转换器成功更新
+   点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新：
 
    ![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
+
+   如果日志「Translators: Saved xxx translators.」中显示的数量少于 500 个，转换器更新很可能出现了问题，建议尝试[重装 Zotero Connector 浏览器扩展](#卸载并重装-zotero-connector-浏览器扩展)，以及[重置 Zotero 转换器](#重置-zotero-的转换器)，然后再尝试重新更新。
+
    :::
 
 此时你已经完成了转换器的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
 
-## 卸载并重装 Zotero Connector 浏览器扩展 <Badge text="中级" />
+::::
+
+### 卸载并重装 Zotero Connector 浏览器扩展 <Badge text="中级" />
 
 如果按照上面的步骤更新后仍然无法正常抓取，建议卸载并重装最新版本的 Zotero Connector 浏览器扩展。
 
@@ -303,6 +338,53 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 ![将 Zotero Connector 按钮拖至合适位置](../../assets/images/connector-safari-button2.jpg)
 
 :::
+
+### 重置 Zotero 的转换器 <Badge text="中级" />
+
+如果您已尝试上述所有方法仍无法解决问题，可尝试重置 Zotero 的转换器。此操作将重置 Zotero 数据文件夹内所有转换器。
+
+1. 在 `Zotero 设置` 中，点击「高级」-> 「文件和文件夹」->「数据库维护」中的「重置转换器…」按钮。
+
+   ![重置转换器](../../assets/images/zotero-reset-translator.png)
+
+2. 重新更新所有转换器，具体操作请参考 [更新抓取文献信息的转换器](#更新抓取文献信息的转换器)。
+
+### 前往其他网站进行抓取 <Badge text="初级" />
+
+在成功更新转换器后，若当前网站仍无法完整、准确地抓取文献信息，您可以尝试前往其他站点进行抓取：
+
+- 对于外文文献，除了 Google Scholar、Web of Science、PubMed 等文献检索网站，直接访问论文出版商的详情信息页通常能获取最完整的信息。
+
+- 对于中文文献，建议访问「[Zotero 中文转换器](https://zotero-chinese.com/translators/)」，查看支持的网站列表，选择其他网站进行搜索和抓取。特别注意，对于图书专著，需核实 Zotero 抓取的信息是否完整准确。
+
+## 为 Zotero 中的 PDF 附件检索元数据时遇到问题
+
+通常，Zotero 能自动为直接添加的 PDF 附件检索元数据，并自动创建对应条目。英文文献的元数据直接从 PDF 文件获取后进行检索，而中文文献则需要借助[茉莉花](../plugins/jasminum.md)插件通过文件名识别。具体步骤请参考：[通过附件添加条目教程](../add-items.md#通过附件添加条目推荐)。
+
+::: tip 小提示
+
+如果您通过附件添加条目信息，建议添加后逐一检查条目的元数据。自动匹配的元数据可能有误，使用前请人工核对。
+
+:::
+
+::: info 对于 Zotero 6 用户
+
+由于 Zotero 6 上的茉莉花插件已经基本停止维护，在 Zotero 6 上使用茉莉花插件的「抓取知网元数据」功能为中文 PDF 检索元数据时很可能会失败。建议您在做好[备份](../backup.md)后，尽快升级到 Zotero 7，然后安装最新版的[茉莉花](../plugins/jasminum.md)插件为中文 PDF 抓取期刊元数据。
+
+升级 Zotero 7 正式版的步骤和常见问题的解答请阅读：[你好，Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)。
+
+:::
+
+为 PDF 附件检索元数据时，可能遇到的问题有：
+
+1. 网络问题：如果检索持续停滞，可能是网络连接问题。建议尝试更换网络环境，或稍后重试。对于外文文献，您可以开启一些访问国际互联网的工具后再尝试检索元数据。
+2. 附件不是独立的顶级条目：如果这一附件已经有了附属条目了，是无法重新触发抓取元数据的，此时右键菜单里不会出现「检索元数据」和「抓取期刊元数据」按钮。请将附件从条目中拖出到文献列表空白区域或任意两个条目之间的间隙，使其成为独立的顶级条目，然后再尝试检索元数据。
+3. 中文文献使用错功能：中文文献的元数据检索依赖茉莉花插件，需使用茉莉花插件的「抓取期刊元数据」功能。如果您使用的是 Zotero 自带的「检索元数据」功能，检索大概率会失败，或识别出一个英文条目。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
+4. 茉莉花插件版本过旧：如果您使用的茉莉花插件版本过旧，可能会导致中文文献的元数据抓取失败。请确保您安装了最新版本的茉莉花插件，详见插件文档：[茉莉花](../plugins/jasminum.md)。
+5. 中文文献文件名不规范：中文文献的元数据检索依赖文件名，文件名不规范可能导致检索失败。建议将文件名改为文献标题，或根据文件名特点修改文件名识别模板，然后再重新尝试检索元数据。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
+6. 不支持抓取或其他问题：不管是中文文献还是英文文献，都有可能会遇到检索失败的情况（特别是对于图书专著）。如果检索失败，建议采用其他方式获得文献条目，然后将 PDF 文件以附件的形式添加到该条目上（将附件拖到该条目上即可，但不要拖到条目之间的间隙里）。
+
+更多注意事项，请阅读：[通过附件添加条目教程](../add-items.md#通过附件添加条目-推荐)。
 
 ## 使用其他添加条目的方式 <Badge text="初级" />
 
