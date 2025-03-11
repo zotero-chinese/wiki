@@ -16,9 +16,13 @@ title: 在 Word 中把引注链接到参考文献表
 
 Zotero 官方不提供该功能，这是因为 Zotero 使用的 CSL 处理器将 citation 渲染为一个 filed，无法添加超链接 [^1]。
 
+以下提供两种方法来实现为 citation 添加超链接的功能。
+
+## Word 宏
+
 从 Zotero 论坛发现了通过 Word 宏实现的功能 [^2]，虽有一些缺陷，但基本可以达成需求。
 
-## 配置及使用
+### 配置及使用
 
 在 Word 里新建一个宏，添加宏代码如下：
 
@@ -239,11 +243,41 @@ Public Sub ZoteroLinkCitation()
         End Function
 ```
 
+## Python 脚本
+
+通过使用 Python 的 pywin32 库，可以在 Python 中实现与 Word 宏类似的功能。
+
+### 使用前的注意事项
+
+- 本 Python 代码仅对引用格式为 `(作者, 年份)` 的文档做过测试
+
+### 配置及使用
+
+1. 直接下载 [link-zotero-citation-bibliography](https://github.com/Syize/link-zotero-citation-bibliography) 仓库中的 [link-zotero-citation-bibliography.py](https://github.com/Syize/link-zotero-citation-bibliography/blob/master/link-zotero-citation-bibliography.py) 文件。
+2. 安装以下依赖库：
+   - pywin32
+   - rich
+
+```bash
+pip install pywin32 rich
+```
+
+3. 修改代码中的以下设置：
+   - `word_file_path`：您的 Word 文档的绝对路径。
+   - `new_file_path`：新保存的 Word 文档的绝对路径。
+4. (可选) 修改函数 `create_hyperlinks_to_literature_bookmarks` 参数值：
+   - `setColor`：为 citation 设置的字体颜色，默认为蓝色。你可以通过查阅 VBA 的手册获取相应颜色的值[^3]。
+   - `etal_number`：使用 `et al.` 或 `等` 代替作者名字时的作者数。
+5. 运行代码。
+
 ## 缺陷和注意事项
 
-- 手动更新引注时会出现引注已被修改的弹窗
-- 无法实现从参考文献表跳转到引注
-- 同时引用多个引注时只能链接最后一个。
+- 手动更新引注时会出现引注已被修改的弹窗。
+- 无法实现从参考文献表跳转到引注。
+- 使用 Word 宏方法时，同时引用多个引注时只能链接最后一个。
+- Python 脚本未对顺序引注测试过。
+- 当你选择 Unlink Citations 时，添加的所有超链接会失效。
 
 [^1]: 来源添加
 [^2]: [Word: Possibility to link references and bibliography in a document? -  Zotero Forums](https://forums.zotero.org/discussion/comment/324312/#Comment_324312)
+[^3]: [VBA 文档](https://learn.microsoft.com/zh-cn/office/vba/api/word.wdcolor)
