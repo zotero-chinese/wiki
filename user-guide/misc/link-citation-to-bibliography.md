@@ -253,22 +253,27 @@ Public Sub ZoteroLinkCitation()
 
 ### 配置及使用
 
-1. 直接下载 [link-zotero-citation-bibliography](https://github.com/Syize/link-zotero-citation-bibliography) 仓库中的 [link-zotero-citation-bibliography.py](https://github.com/Syize/link-zotero-citation-bibliography/blob/master/link-zotero-citation-bibliography.py) 文件。
+1. 直接克隆 [link-zotero-citation-bibliography](https://github.com/Syize/link-zotero-citation-bibliography) 仓库。
 2. 安装以下依赖库：
    - pywin32
+   - pyzotero
    - rich
 
 ```bash
-pip install pywin32 rich
+pip install pywin32 rich pyzotero
 ```
 
-3. 修改代码中的以下设置：
+3. 修改`main.py`中的以下设置：
+
+   - `zotero_id`和`zotero_api_key`：用于和 Zotero 通讯的 ID 和密钥，获取方式请查阅[pyzotero](https://pyzotero.readthedocs.io/en/latest/index.html)的手册。
+
    - `word_file_path`：您的 Word 文档的绝对路径。
    - `new_file_path`：新保存的 Word 文档的绝对路径。
-4. (可选) 修改函数 `create_hyperlinks_to_literature_bookmarks` 参数值：
+   - (可选) 修改`src/run.py`中函数 `add_hyperlinks_to_citations` 参数值：
    - `setColor`：为 citation 设置的字体颜色，默认为蓝色。你可以通过查阅 VBA 的手册获取相应颜色的值[^3]。
-   - `etal_number`：使用 `et al.` 或 `等` 代替作者名字时的作者数。
-5. 运行代码。
+   - `noUnderLine`：是否去除超链接的下划线。
+
+4. 运行`main.py`。
 
 ## 缺陷和注意事项
 
