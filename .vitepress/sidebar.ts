@@ -109,6 +109,16 @@ export const sidebar = {
       ],
     },
     {
+      text: "第三方软件集成",
+      collapsed: true,
+      items: [
+        {
+          text: "利用 Obsidian Web Clipper 保存网页",
+          link: "/user-guide/integration/obsidian-web-clipper",
+        },
+      ],
+    },
+    {
       text: "常见问题",
       collapsed: true,
       items: [
