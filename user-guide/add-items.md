@@ -30,6 +30,7 @@ Zotero 的基本文件单元，用来表示一篇论文、一本书等的题录�
 附件，通常是文件，例如论文的全文 PDF、支持材料等。常见的附件包括：
 
 - PDF 附件 ![icon-pdf.png](../assets/icons/item-type/attachment-pdf.svg)
+- Ebook 附件 ![icon-epub.png](../assets/icons/item-type/attachment-epub.svg)
 - 笔记附件 ![icon-笔记附件.png](../assets/icons/item-type/note.svg)
 - 网页快照 ![icon-网页快照.png](../assets/icons/item-type/attachment-snapshot.svg)
 
