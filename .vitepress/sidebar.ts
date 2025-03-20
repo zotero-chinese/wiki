@@ -99,7 +99,7 @@ export const sidebar = {
             { text: "接口申请：微软", link: "/user-guide/plugins/translate/microsoft" },
             { text: "接口申请：小牛", link: "/user-guide/plugins/translate/niutrans" },
             { text: "接口申请：DeepL", link: "/user-guide/plugins/translate/deepl" },
-            { text: "DeepLx项目", link: "/user-guide/plugins/translate/deeplx" },
+            { text: "DeepLx 项目", link: "/user-guide/plugins/translate/deeplx" },
             // { text: "常见问题", link: "/user-guide/plugins/translate/faqs" },
           ],
         },

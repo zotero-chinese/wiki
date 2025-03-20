@@ -1,6 +1,8 @@
 # DeepLx 项目
 
-由于各种原因，在国内注册 DeepL 的免费计划都十分困难。于是出现了[DeepLX](https://github.com/OwO-Network/DeepLX/?tab=readme-ov-file)项目，该项目可让用户在不注册账号的前提下，使用 DeepL 作为翻译服务。DeepLX 是一款基于 DeepL 翻译引擎的开源工具，旨在为用户提供免费、高质量的翻译服务。它通过调用 DeepL 的 API 接口，实现文本、文档等多种内容的翻译功能。DeepLX 的优势在于其翻译质量高，支持多种语言，且操作简单易用。
+由于各种原因，在国内注册 DeepL 的免费计划都十分困难。于是出现了 [DeepLX](https://github.com/OwO-Network/DeepLX/?tab=readme-ov-file) 项目，该项目可让用户在不注册账号的前提下，使用 DeepL 作为翻译服务。
+
+DeepLX 是一款基于 DeepL 翻译引擎的开源工具，旨在为用户提供免费、高质量的翻译服务。它通过调用 DeepL 的 API 接口，实现文本、文档等多种内容的翻译功能。DeepLX 的优势在于其翻译质量高，支持多种语言，且操作简单易用。
 
 ::: warning
 
@@ -30,7 +32,7 @@ DeepLX 的使用需要进行部署，涉及 Docker 或服务器相关知识。�
 
 ::: details 如何申请免费的 Serv00
 
-访问[Serv00 官网](https://www.serv00.com/)，注意看是否有名额注册，点击「注册账户」进入注册页面。
+访问 [Serv00 官网](https://www.serv00.com/)，注意看是否有名额注册，点击「注册账户」进入注册页面。
 
 ![Serv00](../../../assets/images/zotero-plugin-translate/deepl-serv00.png)
 
