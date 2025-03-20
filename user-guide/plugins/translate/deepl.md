@@ -20,7 +20,7 @@ DeepL api 免费版包括：
 
 选择适合您的 API 套餐服务，点击免费注册/立即订阅，这里选择哪个套餐均可。
 
-![选择套餐](../../../assets/images/translate-deepl-套餐选择.png)
+![选择套餐](../../../assets/images/zotero-plugin-translate/deepl-套餐选择.png)
 
 详细教程略过
 
@@ -28,6 +28,6 @@ DeepL api 免费版包括：
 
 打开翻译插件的设置，根据申请的套餐选择接口 免费/pro
 
-![Deepl插件设置](../../../assets/images/translate-deepl-接口选择.png)
+![Deepl插件设置](../../../assets/images/zotero-plugin-translate/deepl-接口选择.png)
 
 DeepL 的 API 验证密钥，在 DeepL 官网的账户信息页面可以看到。格式类似`xxx-xxx-xxx:fx`。
