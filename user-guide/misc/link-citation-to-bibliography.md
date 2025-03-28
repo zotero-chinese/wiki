@@ -245,16 +245,16 @@ Public Sub ZoteroLinkCitation()
 
 ## Python 脚本
 
-Python 包[noterools](https://github.com/Syize/noterools)提供了可以 zotero 的引用添加超链接的函数。
+Python 包 [noterools](https://github.com/Syize/noterools) 提供了可以 Zotero 的引用添加超链接的函数。更多关于该 Python 包的信息请查看 [GitHub 仓库](https://github.com/Syize/noterools)。
 
 ### 使用前的注意事项
 
-- `noterools`实际上也是通过操作 Word 来添加的超链接，由于依赖库的原因其只能在 Windows 环境下使用。
-- 在为`(作者, 年份)`引用格式添加超链接时，`noterools`还会修正参考文献表中没有被正确设置为斜体的刊物名称或出版商名称。*顺序引用格式*目前还不支持此功能。
+- `noterools` 实际上也是通过操作 Word 来添加的超链接，由于依赖库的原因其只能在 Windows 环境下使用。
+- 在为 `(作者, 年份)` 引用格式添加超链接时，`noterools` 还会修正参考文献表中没有被正确设置为斜体的刊物名称或出版商名称。**顺序引用格式目前还不支持此功能**。
 
 ### 使用方法
 
-1. 使用 pip 安装`noterools`
+1. 使用 pip 安装 `noterools`
 
 ```bash
 pip install -U noterools
@@ -266,7 +266,7 @@ pip install -U noterools
 from noterools import Word, add_citation_cross_ref_hook, add_cross_ref_style_hook
 
 if __name__ == '__main__':
-    # 你想要添加超链接的Word文档路径
+    # 你想要添加超链接的 Word 文档路径
     word_file_path = r"E:\Documents\Word\test.docx"
     # 新文档的保存路径
     new_file_path = r"E:\Documents\Word\test_new.docx"
@@ -274,10 +274,21 @@ if __name__ == '__main__':
     with Word(word_file_path, save_path=new_file_path) as word:
         # 为顺序引用格式添加超链接
         add_citation_cross_ref_hook(word, is_numbered=True)
-        # 为(作者, 年份)引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
-        add_citation_cross_ref_hook(word, is_numbered=False)
-        # 为(作者, 年份)引用格式添加超链接，不修正参考文献表
-        add_citation_cross_ref_hook(word, is_numbered=False, set_container_title_italic=False)
+
+        # 为 (作者, 年份) 引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
+        # 由于 Word 中的超链接默认为蓝色，而 noterools 仅会将超链接添加到 年份 上，所以 作者名称 和 年份 的颜色会不一致
+        # add_citation_cross_ref_hook(word, is_numbered=False)
+
+        # 通过设置 color 的值，可以设置整个引用的颜色(不包含括号)
+        # 0: 黑色
+        # 16711680: 蓝色
+        # 更多颜色请参考 Word 中的颜色枚举类型: https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
+        # add_citation_cross_ref_hook(word, is_numbered=False, color=0)
+
+        # set_container_title_italic 用于控制是否修正参考文献表中没有正确设置为斜体的名称
+        # 你可以通过将其设置为 False 来关闭这项功能
+        # add_citation_cross_ref_hook(word, is_numbered=False, set_container_title_italic=False)
+
         # 执行操作
         word.perform()
 ```
