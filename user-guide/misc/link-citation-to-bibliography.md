@@ -245,44 +245,60 @@ Public Sub ZoteroLinkCitation()
 
 ## Python 脚本
 
-通过使用 Python 的 pywin32 库，可以在 Python 中实现与 Word 宏类似的功能。
+Python 包 [noterools](https://github.com/Syize/noterools) 提供了可以 Zotero 的引用添加超链接的函数。更多关于该 Python 包的信息请查看 [GitHub 仓库](https://github.com/Syize/noterools)。
 
 ### 使用前的注意事项
 
-- 本 Python 代码仅对引用格式为 `(作者, 年份)` 的文档做过测试
+- `noterools` 实际上也是通过操作 Word 来添加的超链接，由于依赖库的原因其只能在 Windows 环境下使用。
+- 在为 `(作者, 年份)` 引用格式添加超链接时，`noterools` 还会修正参考文献表中没有被正确设置为斜体的刊物名称或出版商名称。**顺序引用格式目前还不支持此功能**。
 
-### 配置及使用
+### 使用方法
 
-1. 直接克隆 [link-zotero-citation-bibliography](https://github.com/Syize/link-zotero-citation-bibliography) 仓库。
-2. 安装以下依赖库：
-   - pywin32
-   - pyzotero
-   - rich
+1. 使用 pip 安装 `noterools`
 
 ```bash
-pip install pywin32 rich pyzotero
+pip install -U noterools
 ```
 
-3. 修改`main.py`中的以下设置：
+2. 创建一个简单的 Python 脚本调用其中的函数。以下是一个简单的示例
 
-   - `zotero_id`和`zotero_api_key`：用于和 Zotero 通讯的 ID 和密钥，获取方式请查阅[pyzotero](https://pyzotero.readthedocs.io/en/latest/index.html)的手册。
+```python
+from noterools import Word, add_citation_cross_ref_hook, add_cross_ref_style_hook
 
-   - `word_file_path`：您的 Word 文档的绝对路径。
-   - `new_file_path`：新保存的 Word 文档的绝对路径。
-   - (可选) 修改`src/run.py`中函数 `add_hyperlinks_to_citations` 参数值：
-   - `setColor`：为 citation 设置的字体颜色，默认为蓝色。你可以通过查阅 VBA 的手册获取相应颜色的值[^3]。
-   - `noUnderLine`：是否去除超链接的下划线。
+if __name__ == '__main__':
+    # 你想要添加超链接的 Word 文档路径
+    word_file_path = r"E:\Documents\Word\test.docx"
+    # 新文档的保存路径
+    new_file_path = r"E:\Documents\Word\test_new.docx"
 
-4. 运行`main.py`。
+    with Word(word_file_path, save_path=new_file_path) as word:
+        # 为顺序引用格式添加超链接
+        add_citation_cross_ref_hook(word, is_numbered=True)
+
+        # 为 (作者, 年份) 引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
+        # 由于 Word 中的超链接默认为蓝色，而 noterools 仅会将超链接添加到 年份 上，所以 作者名称 和 年份 的颜色会不一致
+        # add_citation_cross_ref_hook(word, is_numbered=False)
+
+        # 通过设置 color 的值，可以设置整个引用的颜色(不包含括号)
+        # 0: 黑色
+        # 16711680: 蓝色
+        # 更多颜色请参考 Word 中的颜色枚举类型: https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
+        # add_citation_cross_ref_hook(word, is_numbered=False, color=0)
+
+        # set_container_title_italic 用于控制是否修正参考文献表中没有正确设置为斜体的名称
+        # 你可以通过将其设置为 False 来关闭这项功能
+        # add_citation_cross_ref_hook(word, is_numbered=False, set_container_title_italic=False)
+
+        # 执行操作
+        word.perform()
+```
 
 ## 缺陷和注意事项
 
 - 手动更新引注时会出现引注已被修改的弹窗。
 - 无法实现从参考文献表跳转到引注。
 - 使用 Word 宏方法时，同时引用多个引注时只能链接最后一个。
-- Python 脚本未对顺序引注测试过。
 - 当你选择 Unlink Citations 时，添加的所有超链接会失效。
 
 [^1]: 来源添加
 [^2]: [Word: Possibility to link references and bibliography in a document? -  Zotero Forums](https://forums.zotero.org/discussion/comment/324312/#Comment_324312)
-[^3]: [VBA 文档](https://learn.microsoft.com/zh-cn/office/vba/api/word.wdcolor)
