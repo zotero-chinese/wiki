@@ -13,11 +13,11 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.16.0",
+    "@mdit/plugin-footnote": "0.16.8",
     "@mdit/plugin-mark": "^0.16.0",
-    "@types/node": "22.13.7",
+    "@types/node": "22.13.14",
     "husky": "9.1.7",
-    "lint-staged": "15.4.3",
+    "lint-staged": "15.5.0",
     "markdownlint-cli2": "0.17.2",
     "markdownlint-rule-search-replace": "^1.2.0",
     "prettier": "2.8.8",
@@ -40,5 +40,5 @@
   "lint-staged": {
     "*.md": "prettier --write"
   },
-  "packageManager": "pnpm@10.5.2"
+  "packageManager": "pnpm@10.7.0"
 }
