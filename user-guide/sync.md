@@ -32,9 +32,9 @@ updated: 2023-09-23 20:52:08
 
 :::
 
-之后您可以在 `Zotero`-`编辑`-`设置`-`同步`-`设置`中 输入您的 Zotero 帐号密码，进行登陆。
+之后您可以在 `Zotero` → `编辑` → `设置` → `同步` → `数据同步`中 输入您的 Zotero 帐号密码，进行登录。
 
-![账号登录](../assets/images/zotero-帐号登陆.png)
+![账号登录](../assets/images/zotero-帐号登录.png)
 
 ::: tip
 
