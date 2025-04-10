@@ -125,7 +125,7 @@ date: 2025-04-10
      - 这种代理后的链接中未包含原始 Host（`d.wanfangdata.com.cn`）。
    - **类型 2**: 代理后链接中保留了编码后的原始 Host
      - 例如：`http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
-     - 对于这一种代理，原始链接的 Host 被编码后嵌入到代理链接的域名中。（`d.wanfangdata.com.cn` 被编码为 `d-wanfangdata-com-cn-s`添加到了代理后的链接中）。
+     - 对于这一种代理，原始链接的 Host 被编码后嵌入到代理链接的域名中。（`d.wanfangdata.com.cn` 被编码为 `d-wanfangdata-com-cn`添加到了代理后的链接中）。
 
 2. **创建代理规则**
 
