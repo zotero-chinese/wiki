@@ -100,139 +100,157 @@ date: 2025-04-10
 
 如果您需要使用学校的 WebVPN 访问数据库，建议配置 Zotero Connector 选项中的「Proxies」，确保 Zotero Connector 能够正确识别经 WebVPN 代理后的页面链接。
 
-这里提供了常见的两种情况，介绍如何配置 Zotero Connector 选项中的「Proxies」。
+#### 配置步骤
 
-::: details 情况 1：WebVPN 代理后的链接里没有原始链接的 Host
+不同的 WebVPN 的链接结构可能不同，在配置 Zotero Connector 的代理规则时，需要根据实际的 WebVPN 代理链接的结构特点进行处理。这里以一篇万方官网的期刊文章为例进行说明。
 
-#### 1. 分析原始网页链接和 WebVPN 代理后的链接之间的对应关系
+假设原始链接为：`https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
 
-##### 1.1 原始网页链接的组成部分
+1. **分析链接结构**
 
-以万方官网的期刊文章链接为例：
+   首先，需要分析原始链接的结构，确定协议、主机和路径部分。示例原始链接的结构如下：
 
-`https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+| 结构项           | 内容                         |
+| ---------------- | ---------------------------- |
+| Protocol（协议） | `https://`                   |
+| Host（主机）     | `d.wanfangdata.com.cn`       |
+| Path（路径）     | `periodical/hjkxyj202501001` |
 
-**链接分解**：
+1. **确定代理链接的结构特点**
 
-- **Protocol (协议)**: `https://`  
-  （从开头到第一个冒号的部分）
-- **Host (主机)**: `d.wanfangdata.com.cn`  
-  （第一个双斜杠 `//` 和第一个单斜杠 `/` 之间的部分）
-- **Path (路径)**: `periodical/hjkxyj202501001`  
-  （第一个单斜杠 `/` 之后的部分）
+   WebVPN 代理通常有两种主要类型：
 
-##### 1.2 WebVPN 代理地址
+   - **类型 1**: 代理后链接中不保留原始 Host
+     - 例如：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
+     - 这种代理后的链接中未包含原始 Host（`d.wanfangdata.com.cn`）。
+   - **类型 2**: 代理后链接中保留了编码后的原始 Host
+     - 例如：`http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
+     - 对于这一种代理，原始链接的 Host 被编码后嵌入到代理链接的域名中。（`d.wanfangdata.com.cn` 被编码为 `d-wanfangdata-com-cn-s`添加到了代理后的链接中）。
 
-经过四川省图书馆 VPN 代理后，同一条链接变为：
+2. **创建代理规则**
 
-`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
+   - 在 Zotero Connector 浏览器扩展中，进入「Proxies」→「Configured Proxies」
+   - 点击 `+` 按钮添加新规则
 
-**变化对比**：
+3. **填写代理规则参数**
 
-- **原 Host**: `d.wanfangdata.com.cn` → **代理后 Host**: `portal.sclib.cn`
-- **Path 前缀变化**: 增加了 `interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/`，但原路径 `periodical/hjkxyj202501001` 完整保留。
+   - **Login URL Schema**: 填写登录 WebVPN 的登录入口链接。非必填项。
+   - **Proxied URL Schema**: 填写代理链接的结构。比较 WebVPN 代理链接和原始链接的结构，将代理链接中与原始链接相同的部分使用以下替换符来表示：
+     - `%h`: 用于替换原始链接的 Host 部分（ Host 中的 `.` 会被替换为 `-`）
+     - `%p`: 用于替换原始链接的 Path 部分
+     - `%u`: 用于替换完整的原始 URL
+   - **Hostnames**: 点击 `+` 按钮，然后在「Hostname」中输入此规则适用的网站域名（如 `d.wanfangdata.com.cn`）
 
-也就是说，经过四川省图书馆的 WebVPN 代理后，原始链接中 `Path` 沿用到了代理后的链接中，接到了新的 Host 和 Path 前缀后面。代理后的链接不再需要填写原始链接的 `Host` 和 `完整链接`。
+4. **适配更多网站**
 
-#### 2. 配置 Zotero Connector 的代理规则
+   - 如果不同网站的 Proxied URL Schema 相同，则该代理规则可用于多个网站，可直接在「Hostnames」中添加更多域名；
+   - 如果不同网站代理链接中未被替换的部分存在不同，需配置的 Proxied URL Schema 也就不同，则需在「Configured Proxies」创建多条规则。
 
-##### 2.1. **创建代理规则**
+![Zotero Connector Proxies 哈工大](../../assets/images/zotero-connector-proxies-hit.png)
 
-在 Zotero Connector 浏览器扩展的设置中，进入 「Proxies」→「Configured Proxies\*\*」，点击 `+` 新增规则。
+#### 常见 WebVPN 代理的参数示例
 
-##### 2.2. **填写关键参数**
+下面，我们为两种常见的 WebVPN 代理类型给出相应的配置示例。
 
-- **Login URL Schema**:
-  用于登录你的 WebVPN 代理的链接，可不填。如四川省图书馆数字资源导航：
+::: details WebVPN 代理类型 1：代理链接不保留原始 Host
 
-  `https://portal.sclib.cn/interlibSSO/main/main.jsp`
+在这种类型下，代理后的链接完全使用新的域名。
 
-- **Proxied URL Schema**:
-  在代理链接中，把官网链接的 `Host`、`Path`、`完整链接` 分别替换为 `%h`、`%p`、`%u`。
+##### 示例链接
 
-  根据前面的对比可知，四川省图书馆的 WebVPN 链接中只有 `Path` 沿用了下来，接在了代理后新的 Host 和 Path 前缀后面。此时，代理链接中不需要原链接中的 `Host` 和 `完整链接`。因此这里的代理链接的组成为：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/` + `%p`。
+- 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+- 代理后链接: `https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
 
-  此时，Proxied URL Schema 需要填写：
-  `https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/%p`
+##### 配置参数确定方法
 
-- **Hostnames**:
-  点击 `+` 添加 `d.wanfangdata.com.cn`，表示此规则仅对万方数据生效。
+1. 拆分原始链接
 
-#### 3. 为其他网站添加更多的代理规则
+| 结构项   | 内容                         |
+| -------- | ---------------------------- |
+| Protocol | `https://`                   |
+| Host     | `d.wanfangdata.com.cn`       |
+| Path     | `periodical/hjkxyj202501001` |
 
-如果当前的规则可以适用于其他网站，可以在该规则的 `Hostnames` 中添加更多的 Host 名称。如果当前的规则不适用于其他网站，可以继续添加更多的代理规则，具体步骤与上述相同，只需根据不同网站的 WebVPN 代理链接进行相应的修改即可。
+2. 比较原始链接和代理后链接的结构，确定需要替换的部分
 
-对于当前案例的情况，代理后链接中加入的 Path 前缀与原始链接的 `Host` 有关，但不能通过 `%h` 直接得到，因此不能通过直接添加 `Hostnames` 兼容更多网站。如果需要为其他网站添加代理规则，需要重新分析其他原始链接和 WebVPN 代理后的链接之间的对应关系，配置更多代理规则。具体步骤与上述相同。
+   - 原始链接中的 Host 部分未在代理后链接中出现，因此 `%h` 不需要使用；
+   - 原始链接中的 Path 部分 `periodical/hjkxyj202501001` 在代理后链接中保持不变，这部分内容可以用 `%p` 表示；
+   - 代理后链接中没有用到完整的原始 URL，因此 `%u` 不需要使用。
+
+3. 应用替换符构建 Proxied URL Schema
+
+   将代理链接中可替换的部分替换为对应的替换符，其余部分直接保留原有内容，拼接 Proxied URL Schema。
+
+   - 拆分代理后链接中可替换的部分：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/` + `periodical/hjkxyj202501001`
+   - 使用替换符号替换可替换的部分：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/` + `%p`
+
+4. 配置参数
+
+- Login URL Schema（自行查询登录页面链接，非必填）: `https://portal.sclib.cn/interlibSSO/main/index.jsp`
+- Proxied URL Schema: `https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/%p`
+- Hostnames: 点击 `+` 按钮，在「Hostname」中输入 `d.wanfangdata.com.cn`，表示此规则仅对万方数据生效。
+
+5. 为其他网站添加更多的代理规则
+
+比较不同网站代理后链接，可以发现这一类的代理后链接中未被替换的部分存在不同，因此不能通过直接添加 `Hostnames` 兼容更多网站。如果需要为其他网站添加代理规则，需要重新分析其他原始链接和 WebVPN 代理后的链接之间的对应关系，配置更多代理规则。具体步骤与上述相同。
 
 ![Zotero Connector Proxies 四川图书馆](../../assets/images/zotero-connector-proxies-sclib.png)
 
 :::
 
-::: details 情况 2：WebVPN 代理后的链接里保留了原始链接的 Host
+::: details WebVPN 代理类型 2：代理链接保留原始 Host
 
-#### 1. 分析原始网页链接和 WebVPN 代理后的链接之间的对应关系
+在这种类型下，原始链接的 Host 被编码后嵌入到代理链接的域名中。
 
-##### 1.1 原始网页链接的组成部分
+##### 示例链接
 
-以万方官网的期刊文章链接为例：
+- 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+- 代理后链接: `http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
 
-`https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+##### 配置参数确定方法
 
-**链接分解**：
+1. 拆分原始链接
 
-- **Protocol (协议)**: `https://`  
-  （从开头到第一个冒号的部分）
-- **Host (主机)**: `d.wanfangdata.com.cn`  
-  （第一个双斜杠 `//` 和第一个单斜杠 `/` 之间的部分）
-- **Path (路径)**: `periodical/hjkxyj202501001`  
-  （第一个单斜杠 `/` 之后的部分）
+| 结构项   | 内容                         |
+| -------- | ---------------------------- |
+| Protocol | `https://`                   |
+| Host     | `d.wanfangdata.com.cn`       |
+| Path     | `periodical/hjkxyj202501001` |
 
-##### 1.2 WebVPN 代理地址
+2. 比较原始链接和代理后链接的结构，确定需要替换的部分
 
-经过哈尔滨工业大学 WebVPN 代理后，同一条链接变为：
+   - 原始链接中的 Host 部分 `d.wanfangdata.com.cn` 在被编码后变为 `d-wanfangdata-com-cn`（Zotero Connector 会自动将 `.` 替换为 `-`），代理后链接中的相应内容可以用 `%h` 表示；
+   - 原始链接中的 Path 部分 `periodical/hjkxyj202501001` 在代理后链接中保持不变，这部分内容可以用 `%p` 表示；
+   - 代理后链接中没有用到完整的原始 URL，因此 `%u` 不需要使用。
+   - 代理后链接中编码后的 Host 之后有一个 `-s` 的部分（`d-wanfangdata-com-cn-s`），这部分说明原始链接的协议是 `https`，如果原始链接的协议是 `http`，则没有这一部分。这一部分无法用替换符表示，需要在 Proxied URL Schema 中直接保留。
+   - 无论原始链接的 Protocol 是 `http` 还是 `https`，代理后链接的协议都是 `http`，因此在 Proxied URL Schema 中需要将协议部分写为 `http://`。
 
-`http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
+3. 应用替换符构建 Proxied URL Schema
 
-**变化对比**：
+   将代理链接中可替换的部分替换为对应的替换符，其余部分直接保留原有内容，拼接 Proxied URL Schema。
 
-- **原 Host**: `d.wanfangdata.com.cn` → **代理后 Host**: `d-wanfangdata-com-cn-s.ivpn.hit.edu.cn`
-- **Path**: `periodical/hjkxyj202501001` 保持不变。
+   - 拆分代理后链接中可替换的部分：`http://` + `d-wanfangdata-com-cn` + `-s` + `.ivpn.hit.edu.cn:1080/` + `periodical/hjkxyj202501001`
+   - 使用替换符号替换可替换的部分：`http://` + `%h` + `-s` + `.ivpn.hit.edu.cn:1080/` + `%p`
 
-也就是说，经过哈尔滨工业大学的 WebVPN 代理后，原始链接的 `Host` 被重新编码并嵌入到了代理后的 Host 中，`Path` 完整保留。代理后的链接不再需要填写原始链接的 `完整链接`。
+4. 配置参数
 
-具体来看，代理后链接变为 http 链接，原始链接的 `Host` `d.wanfangdata.com.cn` 被重新编码为 `d-wanfangdata-com-cn`（这一过程 Zotero Connector 可以自动处理）。对于 https 链接，代理后的链接中增加了 `-s` 后缀和 `ivpn.hit.edu.cn:1080` 的后缀，最后完整保留 `Path`。
+- Login URL Schema（自行查询登录页面链接，非必填）: `https://ivpn.hit.edu.cn`
+- Proxied URL Schema: `http://%h-s.ivpn.hit.edu.cn:1080/%p`
+- Hostnames: 点击 `+` 按钮，在「Hostname」中输入 `d.wanfangdata.com.cn`，表示此规则对万方数据生效。
 
-#### 2. 配置 Zotero Connector 的代理规则
+5. 为其他网站添加更多的代理规则
 
-##### 2.1. **创建代理规则**
+这种模式的 WebVPN 可以为多个不同的网站仅使用一条代理规则。因为无论访问哪个站点，代理链接的结构都是相同的，未被替换符替换的部分保持不变。仅有 Protocol 为 `http` 时需要另外添加一条去掉 `-s` 的规则（目前绝大多数网站已经使用 `https` 协议）。如果需要为其他网站添加代理规则，只需在「Hostnames」中添加更多的域名即可。
 
-在 Zotero Connector 浏览器扩展的设置中，进入 「Proxies」→「Configured Proxies\*\*」，点击 `+` 新增规则。
-
-##### 2.2. **填写关键参数**
-
-- **Login URL Schema**:
-  用于登录你的 WebVPN 代理的链接，可不填。如哈尔滨工业大学 WebVPN 登录页面：
-
-  `https://ivpn.hit.edu.cn`
-
-- **Proxied URL Schema**:
-  在代理链接中，把官网链接的 `Host`、`Path`、`完整链接`分别替换为 `%h`、`%p`、`%u`。
-
-  根据前面的对比可知，哈尔滨工业大学的 WebVPN 链接中，代理后链接变为 http 链接，原始链接的 `Host` 可被 Zotero Connector 自动重新编码成 `%h`，对于 https 链接，代理后的链接中增加了 `-s` 后缀和 `ivpn.hit.edu.cn:1080` 的后缀，最后完整保留 `Path`。此时，代理链接中不需要原链接中的 `完整链接`。因此这里的代理链接的组成为：`http://` + `%h` + `-s` + `.ivpn.hit.edu.cn:1080/` + `%p`。
-
-  此时，Proxied URL Schema 需要填写：
-  `http://%h-s.ivpn.hit.edu.cn:1080/%p`
-
-- **Hostnames**:
-  点击 `+` 添加 `d.wanfangdata.com.cn`，表示此规则仅对万方数据生效。
-
-#### 3. 为其他网站添加更多的代理规则
-
-如果当前的规则可以适用于其他网站，可以在该规则的 `Hostnames` 中添加更多的 Host 名称。如果当前的规则不适用于其他网站，可以继续添加更多的代理规则，具体步骤与上述相同，只需根据不同网站的 WebVPN 代理链接进行相应的修改即可。
-
-对于当前案例的情况，不同网站的 `Host` 都可被 Zotero Connector 自动重新编码成 `%h`，`Path` 完整保留并替换为 `%p`，其余内容均保持不变。因此可以直接给当前的规则添加 `Hostnames` 兼容更多网站，而不需要重复添加更多的代理规则。
+例如，如果您还需要访问 IEEE Xplore，则可以直接在 Hostnames 中添加 `ieeexplore.ieee.org`，表示此规则也适用于 IEEE Xplore。
 
 ![Zotero Connector Proxies 哈工大](../../assets/images/zotero-connector-proxies-hit.png)
+
+:::
+
+::: tip 提醒
+
+不同学校/机构的 WebVPN 的链接结构可能不同，也可能出现其他情况，这里只是罗列了两种国内常见的 WebVPN 样式。您需要分析不同网站的 WebVPN 代理链接和原始链接之间的对应关系，根据配置步骤配置相应的代理规则。
 
 :::
 
