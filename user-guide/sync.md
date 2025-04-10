@@ -123,6 +123,14 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 #### PC 端
 
+::: tip
+
+目前坚果云官方团队已经开发了 Zotero 的坚果云单点登录插件 [Nutstore SSO](https://zotero-chinese.com/plugins/#search=Nutstore%20SSO)，可以直接通过插件登录坚果云账户并自动配置好 WebDAV。
+
+如果您不希望使用插件进行配置，您仍然可以参照下面的手动配置步骤进行配置。
+
+:::
+
 1. 在[坚果云官网登陆](https://www.jianguoyun.com/d/login)您的坚果云账户。
 
 2. 登录后点击 右侧用户名->账户信息
