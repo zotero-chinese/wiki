@@ -98,13 +98,13 @@ date: 2025-04-10
 
 如果通过学校的 WebVPN 访问数据库，实际访问的链接会变得与数据库官网的原始链接不同，很有可能导致 Zotero Connector 无法为该网站正确匹配到相应的转换器，最终只能抓到一个网页快照。
 
-如果您需要使用学校的 WebVPN 访问数据库，建议配置 Zotero Connector 选项中的「Proxies」，确保 Zotero Connector 能够正确识别经 WebVPN 代理后的页面链接。
+如果您需要使用学校的 WebVPN 访问数据库，请阅读下面的教程配置 Zotero Connector 选项中的「Proxies」。
 
 ::: tip 提醒
 
 Zotero Connector 的「Proxies」选项配置较为繁琐，建议优先使用其他校外方式途径访问数据库。
 
-如果您仍需使用 WebVPN 访问数据库，请仔细阅读下面的 Zotero Connector 代理配置教程，正确配置 Zotero Connector 的「Proxies」选项。
+如果您仍需使用 WebVPN 访问数据库，请仔细阅读下面的 Zotero Connector 代理配置教程，正确配置 Zotero Connector 的「Proxies」选项，确保 Zotero Connector 能够正确识别经 WebVPN 代理后的页面链接。
 
 :::
 
