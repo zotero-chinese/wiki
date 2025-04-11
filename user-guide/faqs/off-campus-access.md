@@ -25,7 +25,7 @@ date: 2025-04-10
 - **第三方文献资源站**：如 Unpaywall、Sci-Hub 等站点，提供免费获取文献的服务。
 - **文献互助平台**：如科研通等平台，用户可以在上面分享和请求文献。
 
-::: tip 提醒
+::: details 使用校外访问服务时抓取失败的常见原因
 
 通过校外访问服务访问数据库可能会导致 Zotero 无法正常抓取文献信息或附件，主要原因包括：
 
@@ -99,6 +99,22 @@ date: 2025-04-10
 如果通过学校的 WebVPN 访问数据库，实际访问的链接会变得与数据库官网的原始链接不同，很有可能导致 Zotero Connector 无法为该网站正确匹配到相应的转换器，最终只能抓到一个网页快照。
 
 如果您需要使用学校的 WebVPN 访问数据库，建议配置 Zotero Connector 选项中的「Proxies」，确保 Zotero Connector 能够正确识别经 WebVPN 代理后的页面链接。
+
+::: tip 提醒
+
+Zotero Connector 的「Proxies」选项配置较为繁琐，建议优先使用其他校外方式途径访问数据库。
+
+如果您仍需使用 WebVPN 访问数据库，请仔细阅读下面的 Zotero Connector 代理配置教程，正确配置 Zotero Connector 的「Proxies」选项。
+
+:::
+
+:::: details Zotero Connector 代理配置教程
+
+::: warning 注意
+
+Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。macOS 用户建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器抓取文献。
+
+:::
 
 #### 配置步骤
 
@@ -253,6 +269,8 @@ date: 2025-04-10
 不同学校/机构的 WebVPN 的链接结构可能不同，也可能出现其他情况，这里只是罗列了两种国内常见的 WebVPN 样式。您需要分析不同网站的 WebVPN 代理链接和原始链接之间的对应关系，根据配置步骤配置相应的代理规则。
 
 :::
+
+::::
 
 ## 使用其它方式添加条目 <Badge text="初级" />
 
