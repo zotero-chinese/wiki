@@ -172,12 +172,12 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 
 在这种类型下，代理后的链接完全使用新的域名。
 
-##### 示例链接
+**示例链接**
 
 - 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
 - 代理后链接: `https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
 
-##### 配置参数确定方法
+**配置参数确定方法**
 
 1. 拆分原始链接
 
@@ -218,12 +218,12 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 
 在这种类型下，原始链接的 Host 被编码后嵌入到代理链接的域名中。
 
-##### 示例链接
+**示例链接**
 
 - 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
 - 代理后链接: `http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
 
-##### 配置参数确定方法
+**配置参数确定方法**
 
 1. 拆分原始链接
 

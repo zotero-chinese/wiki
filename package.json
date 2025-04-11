@@ -7,8 +7,8 @@
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "lint:fix": "markdownlint-cli2 --fix **/*.md && prettier --write .",
-    "lint:check": "markdownlint-cli2 **/*.md && prettier --check .",
+    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\" && prettier --write .",
+    "lint:check": "markdownlint-cli2 \"**/*.md\" && prettier --check .",
     "git:sync-force": "bash scripts/sync-force.sh",
     "prepare": "husky"
   },
