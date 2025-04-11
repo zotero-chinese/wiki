@@ -35,7 +35,7 @@ Zotero Connector 浏览器扩展在网页上抓取文献时通常可以得到两
 
 正因如此， **只要你能够正确抓取到文献信息，就不建议继续折腾下去了。如果抓不到 PDF 附件，建议直接手动下载后 [添加到 Zotero 中抓取好的条目](../add-attachments.md#为条目添加附件)** 。
 
-::: warning ⚠ 避免批量抓取文献
+::: danger 避免批量抓取文献
 
 无论何时，请避免进行大量的批量抓取操作，严重时可能导致封禁！
 
@@ -55,17 +55,17 @@ Zotero Connector 在「文献搜索」界面或「全文阅读」界面进行条
 
 ::::
 
-::: info 尽量避免在校外访问页面中抓取文献
+::: tip 关于校外访问页面中抓取文献的提醒
 
-部分「校外访问」服务可能修改网站网址或内容，导致 Zotero 转换器在校外页面抓取文献信息时出现兼容性问题。通常，抓取文献信息无需校园网权限，建议直接访问出版商或期刊官网获取信息，再通过校外访问服务单独下载 PDF 文件，手动添加至 Zotero 文献条目中，具体操作请参考[添加附件指南](../add-attachments.md#为条目添加附件)。
-
-为减少校外访问服务中的抓取问题，您可在 Zotero Connector 设置中配置校外访问代理。详细配置步骤请参阅[Zotero 官方文档](https://www.zotero.org/support/connector/preferences/proxies)。
+为减少使用校外访问服务中的抓取问题，建议您使用数据库官网的外部访问服务。如果您需要使用 WebVPN ，建议您在 Zotero Connector 设置中配置校外访问代理。关于使用校外访问服务时的更多注意事项和配置教程请参阅：[校外访问抓取的问题](./off-campus-access)
 
 :::
 
 ::: tip ScienceDirect 需要手动完成反爬虫验证
 
 ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Zotero 7 中针对该措施推出了一项新功能。当你尝试抓取 ScienceDirect 上的文章时，Zotero 会显示 ScienceDirect 的验证码页面。如果你完成了验证码，Zotero 则会完成 PDF 的下载。
+
+如果 Zotero 的弹窗中一直循环要求进行人机验证，始终无法成功抓取到 PDF，请尝试在 ScienceDirect 的网页中手动下载 PDF 附件，然后[将其添加到 Zotero 中](../add-attachments#为条目添加附件)。
 
 :::
 
