@@ -97,7 +97,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::: warning 「更新转换器」 和 「重置转换器」 是不同的！
 
-注意：如无必要，不要点设置页下面的「数据库维护 -> 重置转换器 (Reset Translators)」 按钮，这会删除整个 translators 文件夹。
+注意：正常情况下，更新转换器时不需要点设置页下面的「数据库维护」→「重置转换器 (Reset Translators)」 按钮，这会删除整个 translators 文件夹。
 
 :::
 
@@ -113,7 +113,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    请耐心等待更新完成，更新完成后会有「转换器更新完成」的弹窗提示。如果更新长时间没有反应，您也可以开启一些访问国际互联网的工具后再尝试更新。更新可能会持续几分钟，取决于您的网络环境，请耐心等待。
 
-   ![「中文转换器」更新成功](../../assets/images/update-unofficial-translators-success.png)
+   ![「中文转换器」更新成功](../../assets/images/update-unofficial-translators-success.png){width=50%}
 
    ::: info 对于 Zotero 6 用户
 
@@ -193,83 +193,96 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::: warning 不推荐这种方法
 
-我们推荐使用 「方法 1：自动更新」 完成转换器更新。
+我们推荐使用 「方法 1：一键自动更新」 完成转换器更新。手动更新下载转换器的步骤比较繁琐，且从 GitHub 下载文件时对网络环境要求较高，可能会导致下载失败。如果您因为特殊原因无法完成自动更新，才需要考虑手动更新转换器。
 
 :::
 
 :::: details 手动更新转换器的步骤
 
-1. 在 Zotero-编辑-设置-高级-文件和文件夹 找到自己的数据储存位置。
+1. 在 Zotero →「编辑」→「设置」→「高级」→「文件和文件夹」找到自己的「数据储存位置」。点击「打开数据文件夹」快速打开你的数据文件夹。
 
-   例如，下图中的数据储存位置就是 `E:\Zotero File`，这里也可以点击「打开数据文件夹」快速打开你的数据文件夹。
+   例如，下图中的数据储存位置就是 `D:\ZoteroDataDirectory`。
 
    ![数据储存位置](../../assets/images/zotero-数据储存位置.png)
 
-2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `E:\Zotero File\translators`），这里是 Zotero 转换器 的存放位置。
+2. 找到数据文件夹中的 translators 文件夹（对上图而言就是 `D:\ZoteroDataDirectory\translators`），这里是 Zotero 转换器 的存放位置。
 
    ![转换器的存放位置](../../assets/images/数据储存位置translators文件夹.png)
 
-3. 在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的转换器。
+3. 首先，在 [Zotero 官方转换器仓库](https://github.com/zotero/translators) 下载最新的官方转换器。
 
-   ![手动在GitHub上下载转换器](../../assets/images/手动在github下载translators.png)
+   ![手动在GitHub上下载转换器](../../assets/images/手动在github下载官方translators.png)
 
 4. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
-   ![选择所有的转换器文件](../../assets/images/translators文件.png)
+   ![选择所有的转换器文件](../../assets/images/官方translators文件.png)
 
-5. 将所有的转换器文件粘贴到第 1 步中 translators 文件夹并替换，此时已经完成 Zotero 中 转换器文件的更新。
+5. 将所有的转换器文件粘贴到第 2 步中 translators 文件夹并替换，此时已经完成 Zotero 的官方转换器文件的更新。
 
-   ![替换旧的转换器](../../assets/images/手动更新translators.png)
+   ![替换旧的转换器](../../assets/images/手动更新官方translators.png)
 
-6. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
+6. 然后，在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的中文转换器。
 
-   ::: tip
+![手动在GitHub上下载转换器](../../assets/images/手动在github下载translators.png)
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
+10. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
-   :::
+![选择所有的转换器文件](../../assets/images/translators文件.png)
+![选择所有的转换器文件](../../assets/images/translators文件2.png)
 
-   请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
+11. 将所有的转换器文件粘贴到第 2 步中 translators 文件夹并替换，此时已经完成 Zotero 的中文转换器文件的更新。
 
-   ::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
+![替换旧的转换器](../../assets/images/手动更新translators.png)
 
-   1. 右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
+12. 更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators）。
 
-      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
+::: tip
 
-   2. 点击「Advanced」中的「Reset Translators」按钮
+从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
+:::
 
-   :::
+请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
-   ::: details Apple Safari
+::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
 
-   虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
+1.  右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
-   1. 在网页空白处点鼠标右键，然后点击「Zotero Preference」
+    ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
 
-      ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
+2.  点击「Advanced」中的「Reset Translators」按钮
 
-   2. 点击「Advanced」中的「Reset Translators」按钮
+    ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
-      ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
+:::
 
-   :::
+::: details Apple Safari
 
-   ::: warning
+虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
 
-   **这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
+1.  在网页空白处点鼠标右键，然后点击「Zotero Preference」
 
-   点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新：
+    ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
 
-   ![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
+2.  点击「Advanced」中的「Reset Translators」按钮
 
-   如果日志「Translators: Saved xxx translators.」中显示的数量少于 500 个，转换器更新很可能出现了问题，建议尝试[重装 Zotero Connector 浏览器扩展](#卸载并重装-zotero-connector-浏览器扩展)，以及[重置 Zotero 转换器](#重置-zotero-的转换器)，然后再尝试重新更新。
+    ![更新 Zotero Connector 中的 translators](../../assets/images/update-translator-ResetTranslators.jpg)
 
-   :::
+:::
 
-此时你已经完成了转换器的更新，此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-5 正确的前提下，可重复几次步骤 6。
+::: warning
+
+**这一步骤非常关键！** 请务必确保为 **每一个浏览器** 中的 Zotero Connector 扩展更新转换器！
+
+点击 Reset Translators 按钮时，你也可以通过检查日志的方式确保转换器成功更新：
+
+![通过日志确保转换器成功更新](../../assets/images/update-translator-如何确保更新成功.jpg)
+
+如果日志「Translators: Saved xxx translators.」中显示的数量少于 500 个，转换器更新很可能出现了问题，建议尝试[重装 Zotero Connector 浏览器扩展](#卸载并重装-zotero-connector-浏览器扩展)，以及[重置 Zotero 转换器](#重置-zotero-的转换器)，然后再尝试重新更新。
+
+:::
+
+此时你已经完成了转换器的更新，此时如果你的浏览器仍然不能完成对文献的识别，请再次更新 **每一个浏览器** 中 Zotero Connector 扩展里的转换器（translators），或继续尝试下面的其他方法。
 
 ::::
 
@@ -377,13 +390,13 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 为 PDF 附件检索元数据时，可能遇到的问题有：
 
-1. 网络问题：如果检索持续停滞，可能是网络连接问题。建议尝试更换网络环境，或稍后重试。对于外文文献，您可以开启一些访问国际互联网的工具后再尝试检索元数据。
-2. 附件不是独立的顶级条目：如果这一附件已经有了附属条目了，是无法重新触发抓取元数据的，此时右键菜单里不会出现「检索元数据」和「抓取期刊元数据」按钮。请将附件从条目中拖出到文献列表空白区域或任意两个条目之间的间隙，使其成为独立的顶级条目，然后再尝试检索元数据。
-3. 中文文献使用错功能：中文文献的元数据检索依赖茉莉花插件，需使用茉莉花插件的「抓取期刊元数据」功能。如果您使用的是 Zotero 自带的「检索元数据」功能，检索大概率会失败，或识别出一个英文条目。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
-4. 茉莉花插件版本过旧：如果您使用的茉莉花插件版本过旧，可能会导致中文文献的元数据抓取失败。请确保您安装了最新版本的茉莉花插件，详见插件文档：[茉莉花](../plugins/jasminum.md)。
-5. 中文文献文件名不规范：中文文献的元数据检索依赖文件名，文件名不规范可能导致检索失败。建议将文件名改为文献标题，或根据文件名特点修改文件名识别模板，然后再重新尝试检索元数据。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
-6. 转换器故障或版本过低：请根据[更新转换器教程](#更新抓取文献信息的转换器)中的步骤更新转换器，特别关注[在浏览器里更新 Zotero Connecter 的缓存](#步骤-3-更新-zotero-connecter-的缓存)时的日志，确保更新成功。如果更新失败，请按照文档中的指引进行处理。
-7. 不支持抓取或其他问题：不管是中文文献还是英文文献，都有可能会遇到检索失败的情况（特别是对于图书专著）。如果检索失败，建议采用其他方式获得文献条目，然后将 PDF 文件以附件的形式添加到该条目上（将附件拖到该条目上即可，但不要拖到条目之间的间隙里）。
+1. **网络问题**：如果检索持续停滞，可能是网络连接问题。建议尝试更换网络环境，或稍后重试。对于外文文献，您可以开启一些访问国际互联网的工具后再尝试检索元数据。
+2. **附件不是独立的顶级条目**：如果这一附件已经有了附属条目了，是无法重新触发抓取元数据的，此时右键菜单里不会出现「检索元数据」和「抓取期刊元数据」按钮。请将附件从条目中拖出到文献列表空白区域或任意两个条目之间的间隙，使其成为独立的顶级条目，然后再尝试检索元数据。
+3. **中文文献使用错功能**：中文文献的元数据检索依赖茉莉花插件，需使用茉莉花插件的「抓取期刊元数据」功能。如果您使用的是 Zotero 自带的「检索元数据」功能，检索大概率会失败，或识别出一个英文条目。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
+4. **茉莉花插件版本过旧**：如果您使用的茉莉花插件版本过旧，可能会导致中文文献的元数据抓取失败。请确保您安装了最新版本的茉莉花插件，详见插件文档：[茉莉花](../plugins/jasminum.md)。
+5. **中文文献文件名不规范**：中文文献的元数据检索依赖文件名，文件名不规范可能导致检索失败。建议将文件名改为文献标题，或根据文件名特点修改文件名识别模板，然后再重新尝试检索元数据。详见：[中文文献附件自动识别](../add-items.md#中文文献附件自动识别)。
+6. **转换器故障或版本过低**：请根据[更新转换器教程](#更新抓取文献信息的转换器)中的步骤更新转换器，特别关注[在浏览器里更新 Zotero Connecter 的缓存](#步骤-3-更新-zotero-connecter-的缓存)时的日志，确保更新成功。如果更新失败，请按照文档中的指引进行处理。
+7. **不支持抓取或其他问题**：不管是中文文献还是英文文献，都有可能会遇到检索失败的情况（特别是对于图书专著）。如果检索失败，建议采用其他方式获得文献条目，然后将 PDF 文件以附件的形式添加到该条目上（将附件拖到该条目上即可，但不要拖到条目之间的间隙里）。
 
 更多注意事项，请阅读：[通过附件添加条目教程](../add-items.md#通过附件添加条目-推荐)。
 
