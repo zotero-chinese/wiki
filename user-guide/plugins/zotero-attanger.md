@@ -15,6 +15,7 @@ Zotero Attanger 是一款专为 Zotero 7 设计的附件管理插件，旨在替
 
 Zotero Attanger 的主要功能包括：
 
+- **便捷的添加附件方式**：为条目一键附加本地已经下载好的附件。
 - **附件重命名增强**：在重命名附件时，同时将该附件在 Zotero 中的标题改为与附件的文件名一致。
 - **附件外部存储增强**：借助 Zotero 的「链接的文件」功能，将附件按照自定义规则移动至 Zotero 数据文件夹之外的其他目录。
 - **基于同步盘的多设备同步**：通过第三方云盘（如 iCloud、OneDrive、百度云盘同步空间、阿里云盘备份盘）实现附件跨设备同步。
@@ -25,7 +26,7 @@ Zotero Attanger 的主要功能包括：
 
 如果您的主要用途是云同步，请注意：
 
-- 这种同步方案并非首选，我们优先推荐使用支持 WebDAV 的网盘来进行同步（请参阅 [通过 WebDAV 同步附件](../sync#通过-webdav-同步附件) 文档章节）；推荐仅当拟使用的同步服务不支持 WebDAV 时，再使用这种方式。
+- 使用 Attanger + 同步盘的同步方案并非首选，我们优先推荐使用支持 WebDAV 的网盘来进行同步（请参阅 [通过 WebDAV 同步附件](../sync#通过-webdav-同步附件) 文档章节）；推荐仅当拟使用的同步服务不支持 WebDAV 时，再使用这种方式。
 - 这种方式不支持同步到 Zotero 官方 iOS 和 Android 客户端。
 - 不正确的配置可能导致附件丢失。
 
@@ -46,7 +47,106 @@ Zotero Attanger 的主要功能包括：
 
 插件安装教程：[安装插件教程](about-plugin#安装插件)
 
-## 三、配置指南
+## 三、基础配置指南 <Badge text="初级" />
+
+Zotero Attanger 中较为简单的基础功能有：
+
+- **匹配附件**：为条目补充附件
+- **附加新文件**：为条目补充附件
+- **重命名附件**：重命名附件、在文献列表中的附件标题上直接看到附件文件名
+
+如果您只需要使用这些基础功能，请参考以下步骤进行配置。
+
+### 3.1. 基础配置
+
+1. 打开 Zotero，点击 **编辑 → 设置 → Attanger**。
+   ![Zotero Attanger 基础配置](../../assets/images/zotero-attanger-basic-setup.png)
+2. 将「源路径」的「根目录」设置为浏览器的默认下载目录（如 `C:\Users\你的系统用户名\Downloads`）。
+3. 在「附加类型」中选择「副本」。
+4. 勾选「其他设置」中的「自动重命名添加的附件」选项，取消勾选「自动移动添加的附件」选项。
+5. 在「重命名/移动的附件类型」中添加需要处理的更多文件格式的后缀名（如 `.caj` 等）。
+6. 在 Zotero 设置中按需设置重命名规则。
+
+:::: details Zotero 文件重命名规则设置教程
+
+1. 打开 Zotero 设置中「常规」选项卡 →「文件重命名」中点击「自定义文件名格式...」按钮，打开 Zotero 的文件名格式设置窗口。
+   ![Zotero 文件重命名规则设置](../../assets/images/zotero-file-renaming-setup.png)
+2. 在文件名格式设置窗口中，您可以根据需要自定义文件名模板。您可以访问以下链接，了解更多关于文件名模板的编写方法：
+
+   - [Zotero 文件重命名规则生成器](https://www.wieke.cn/tools/rename-rule-generator.html)
+   - [Zotero 官方文档：File Renaming](https://www.zotero.org/support/file_renaming)
+
+   这里提供几个文件名模板案例供尝试，您可以直接点击规则框中右侧的「复制」按钮复制这一规则，然后在 Zotero 的文件名格式设置窗口中粘贴到「文件名模板」文本框中。
+
+   ::: details 案例 1：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。
+
+   ```
+   {{ year suffix="_" }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ itemType localize="true"  prefix="_" }}
+   ```
+
+   使用效果：
+
+   - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+   - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰_期刊文章.pdf`
+   - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi_期刊文章.pdf`
+   - `2014_数值分析_SauerTimothy_图书.pdf`
+
+   :::
+
+   ::: details 案例 2：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。当条目类型是期刊文章时，文献类型不显示。
+
+   ```
+   {{ year suffix="_" }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ if itemType != "journalArticle" }}{{ itemType localize="true"  prefix="_" }}{{ endif }}
+   ```
+
+   使用效果：
+
+   - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+   - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
+   - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`
+   - `2014_数值分析_SauerTimothy_图书.pdf`
+
+   :::
+
+   ::: details 案例 3：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。当条目类型是期刊文章时，文献类型不显示。对于书籍类型的条目，将文献类型写在最前，发表年份写在最后。
+
+   ```
+   {{ if itemType == "book" }}{{ itemType localize="true"  suffix="_" }}{{ else }}{{ year suffix="_" }}{{ endif }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ if itemType != "journalArticle" }}{{ if itemType == "book" }}{{ year prefix="_" }}{{ else }}{{ itemType localize="true"  prefix="_" }}{{ endif }}{{ endif }}
+   ```
+
+   使用效果：
+
+   - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+   - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
+   - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`
+   - `图书_数值分析_SauerTimothy_2014.pdf`
+
+   :::
+
+3. 当您在文库中选择了一个条目时，窗口中的「预览」部分会显示当前条目的文件名格式。
+   ![Zotero 文件重命名规则预览](../../assets/images/zotero-file-renaming-preview.png)
+
+::::
+
+7. 如果您需要同步附件文件，请阅读：[WebDAV 附件同步教程](../sync#通过-webdav-同步附件)。
+
+### 3.2. 使用基础功能
+
+1. 在 Zotero 中选中一个条目，点击右键，选择「匹配附件」，即可从源路径中根据标题自动匹配附件并添加到该条目中。
+   ![Zotero Attanger 匹配附件和附加新文件](../../assets/images/zotero-attanger-add-attachment.png)
+
+2. 在 Zotero 中选中一个条目，点击右键，选择「附加新文件」，即可从源路径中自动匹配最新的附件并添加到该条目中。
+
+3. 在 Zotero 中选中一个条目，点击右键，选择「附件管理」→ 「重命名附件」，即可将该条目的附件重命名为文件名格式设置中的规则，并将该条目中的附件标题改为与附件的文件名一致。
+   ![Zotero Attanger 重命名附件](../../assets/images/zotero-attanger-rename-attachment.png)
+
+## 四、进阶配置指南 <Badge text="中级" />
+
+如果您需要使用 Attanger 的高级功能，或者需要使用第三方同步盘来实现附件的多设备同步，请务必仔细阅读下面的进阶配置文档：
+
+::::: details 进阶配置文档
+
+## J1. 进阶配置 <Badge text="中级" />
 
 Zotero Attanger 各项功能需要的配置项不同，具体如下：
 
@@ -91,7 +191,7 @@ Zotero Attanger 各项功能需要的配置项不同，具体如下：
 
 ::::
 
-### 3.1. 附加类型设置
+### J1.1. 附加类型设置
 
 这一设置项用于配置 Attanger 处理附件的方式，默认选择作为「副本」存储附件，由 Zotero 管理附件。您可以根据需要选择「作为链接」存储附件。
 
@@ -117,7 +217,7 @@ Zotero Attanger 各项功能需要的配置项不同，具体如下：
 
 :::
 
-### 3.2. 路径配置
+### J1.2. 路径配置
 
 Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 
@@ -139,7 +239,7 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 
 :::
 
-#### 3.2.1 Zotero Attanger 插件的「源路径」设置 <Badge text="初级" />
+#### J1.2.1 Zotero Attanger 插件的「源路径」设置 <Badge text="初级" />
 
 在不使用插件时，如果想为文献条目添加附件，通常需要手动将文件拖拽到 Zotero 中的条目上，或者使用 Zotero 的「添加附件」功能来选择文件。使用 Attanger 插件后，可以通过「匹配附件」和「附加新文件」功能来自动为条目添加附件。「匹配附件」功能会在指定的源路径中搜索符合条件的文件，并将其添加到 Zotero 中的条目下；「附加新文件」功能会将源路径中最新的文件添加到 Zotero 中的条目下。这两个功能的最终效果等同于将文件拖拽到 Zotero 中的条目上。
 
@@ -151,7 +251,7 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 
 一般来说，您可以将源路径设置为浏览器的默认下载目录（如 `C:\Users\你的系统用户名\Downloads`），这样在使用「匹配附件」时，Attanger 会自动在下载目录下匹配符合条件的文件，或使用「附加新文件」功能自动将刚下载的文件添加到条目中。如果您有其他文件夹需要搜索，也可以将源路径设置为该文件夹。需要注意的是，「匹配附件」和「附加新文件」功能仅会在源路径的根目录下搜索文件，不会搜索该路径下其他子目录中的文件。
 
-#### 3.2.2 Zotero Attanger 插件的「靶路径」设置 <Badge text="中级" />
+#### J1.2.2 Zotero Attanger 插件的「靶路径」设置 <Badge text="中级" />
 
 如果在「附加类型」中选择将文件作为「链接」附加到条目下，Attanger 在「移动附件」时，会将附件重命名并移动到指定的靶路径中。文件的最终路径为`根目录/子目录/文件名.扩展名`。
 
@@ -160,7 +260,7 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 - **根目录**：根目录在作为「链接」存储时必填，可以设置为云盘同步目录（如 `D:\OneDrive\ZoteroAttachment`），如果没有同步需求也可以设为普通本地目录。如果您有多个设备，请在每一个设备上根据实际情况选择相应的目录。这一项需要与 Zotero 高级设置中的「已链接附件的根目录」一致。
 - **子目录**：子目录结构支持自定义，可以留空。如果这一项留空，则所有附件都将存放在根目录下。这一项默认设置为 `{{collection}}` ，即自动创建与 Zotero 中的分类结构一致的子目录。并将附件存放在对应的子目录中。您也可以根据需要设置为其他值（如设置为 `{{year}}` 时按照文献的发表年份整理附件），也可以用正斜杠作为子文件夹分隔符，设置多级子目录（如设置为 `{{collection}}/{{year}}` 时会在分类目录下创建年份二级子目录来整理附件）。这里可用的变量详见：[[Zotero 官方文档] File Renaming](https://www.zotero.org/support/file_renaming)
 
-#### 3.2.3 Zotero 高级设置中的「已链接附件的根目录」设置 <Badge text="中级" />
+#### J1.2.3 Zotero 高级设置中的「已链接附件的根目录」设置 <Badge text="中级" />
 
 为方便多设备同步，您需要在 Zotero 高级设置中配置「已链接附件的根目录」。这一项需要与 Attanger 插件设置中的靶路径根目录一致。
 
@@ -179,36 +279,92 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 
 :::
 
-### 3.3. 其他设置
+### J1.3. 其他设置
 
 Zotero Attanger 提供了一些其他设置选项，包括添加附件时自动移动、自动重命名等。这里主要对「重命名规则」和「重命名/移动的附件类型」进行说明。
 
-#### 3.3.1. 重命名规则 <Badge text="中级" />
+#### J1.3.1. 重命名规则 <Badge text="中级" />
 
 Zotero Attanger 目前直接使用 Zotero 本身的文件重命名规则。无论将文件作为「副本」还是「链接」存储，均可使用该规则进行重命名。
 
 - 您可以点击「靶路径」设置中的「设置重命名规则...」按钮，打开 Zotero 的文件名格式设置窗口。
 - 您也可以直接在 Zotero 设置中「常规」选项卡 →「文件重命名」中点击「自定义文件名格式...」按钮，打开 Zotero 的文件名格式设置窗口。
 
+您可以阅读下面的文件重命名规则设置教程，了解如何设置文件名格式。
+
+:::: details Zotero 文件重命名规则设置教程
+
 在文件名格式设置窗口中，您可以根据需要自定义文件名模板。当您在文库中选择了一个条目时，窗口中的「预览」部分会显示当前条目的文件名格式。如果需要定制自己的文件名模板，您可以访问以下链接，了解更多关于文件名格式的设置方法：
 
 - [Zotero 文件重命名规则生成器](https://www.wieke.cn/tools/rename-rule-generator.html)
 - [Zotero 官方文档：File Renaming](https://www.zotero.org/support/file_renaming)。
 
-#### 3.3.2. 重命名/移动的附件类型 <Badge text="中级" />
+这里提供几个文件名模板案例供尝试，您可以直接点击规则框中右侧的「复制」按钮复制这一规则，然后在 Zotero 的文件名格式设置窗口中粘贴到「文件名模板」文本框中。
+
+::: details 案例 1：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。
+
+```
+{{ year suffix="_" }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ itemType localize="true"  prefix="_" }}
+```
+
+使用效果：
+
+- `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+- `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰_期刊文章.pdf`
+- `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi_期刊文章.pdf`
+- `2014_数值分析_SauerTimothy_图书.pdf`
+
+:::
+
+::: details 案例 2：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。当条目类型是期刊文章时，文献类型不显示。
+
+```
+{{ year suffix="_" }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ if itemType != "journalArticle" }}{{ itemType localize="true"  prefix="_" }}{{ endif }}
+```
+
+使用效果：
+
+- `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+- `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
+- `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`
+- `2014_数值分析_SauerTimothy_图书.pdf`
+
+:::
+
+::: details 案例 3：「发表年份*标题*作者\_文献类型」，支持中文和外文文献姓名的不同处理，不显示「等」或「et al.」等字样。当条目类型是期刊文章时，文献类型不显示。对于书籍类型的条目，将文献类型写在最前，发表年份写在最后。
+
+```
+{{ if itemType == "book" }}{{ itemType localize="true"  suffix="_" }}{{ else }}{{ year suffix="_" }}{{ endif }}{{ title truncate="50" suffix="_" }}{{ if language =="zh" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh-CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ elseif language =="zh_CN" }}{{ authors name="family-given" name-part-separator="" join=" " max="2" }}{{ else }}{{ authors name="given-family" initialize="given" join=" and " max="2" }}{{ endif }}{{ if itemType != "journalArticle" }}{{ if itemType == "book" }}{{ year prefix="_" }}{{ else }}{{ itemType localize="true"  prefix="_" }}{{ endif }}{{ endif }}
+```
+
+使用效果：
+
+- `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
+- `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
+- `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`
+- `图书_数值分析_SauerTimothy_2014.pdf`
+
+:::
+
+当您在文库中选择了一个条目时，窗口中的「预览」部分会显示当前条目的文件名格式。
+![Zotero 文件重命名规则预览](../../assets/images/zotero-file-renaming-preview.png)
+
+::::
+
+#### J1.3.2. 重命名/移动的附件类型 <Badge text="中级" />
 
 Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以根据需要选择要处理的文件类型。默认支持 PDF、docx、txt 等格式。
 
 如果您需要 Attanger 移动更多其他类型的文件，您可以在「重命名/移动的附件类型」中添加新的扩展名（如要使用 Attanger 移动 CAJ 文件，则在类型最后加上 `,caj` 即可）。
 
-## 四、基于同步盘的多设备同步实现
+## J2. 基于同步盘的多设备同步实现
 
-### 4.1. 同步逻辑
+### J2.1. 同步逻辑
 
 - Zotero Attanger 将附件重命名并移动到云盘目录，Zotero 仅保留附件链接。
 - 云盘自动同步文件，其他设备通过附件链接打开本地同步好的附件。
 
-### 4.2. 操作步骤
+### J2.2. 操作步骤
 
 1. **首次同步**
    - 根据[配置指南](#三、配置指南)将[附加类型](#_3-1-附加类型设置)设为「链接」，并设置好[靶路径](#_3-2-2-zotero-attanger-插件的「靶路径」设置)和[已链接附件的根目录](#_3-2-3-zotero-高级设置中的「已链接附件的根目录」设置)。
@@ -225,9 +381,9 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 :::
 
-## 五、常见问题
+## J3、进阶配置的常见问题
 
-### 5.1. Zotero 中删除附件时，系统中的文件无法同步删除
+### J3.1. Zotero 中删除附件时，系统中的文件无法同步删除
 
 这是 Zotero 链接的附件的特性。当您使用 Zotero 的「删除条目...」功能删除一个链接的附件时，Zotero 仅删除数据库中的链接，而不会删除链接指向的文件本身。
 
@@ -241,7 +397,7 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 :::
 
-### 5.2. 附件无法打开
+### J3.2. 附件无法打开
 
 如果遇到附件无法打开，通常是路径配置问题。请按照以下步骤检查：
 
@@ -249,14 +405,14 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 2. 根据[路径配置](#_3-2-路径配置)，检查「靶路径」和「已链接附件的根目录」设置是否正确。
 3. 直接访问报错里提示找不到附件的路径，检查在该路径下是否存在该附件文件，以及该文件能否正常打开。如果不存在，清检查同步设置和路径设置。
 
-### 5.3. 插件工作不正常
+### J3.3. 插件工作不正常
 
 如果插件工作不正常，通常是插件和 Zotero 版本不匹配，或者插件插件版本过低。请按照以下步骤处理：
 
 1. 更新 Zotero 版本：将 Zotero 更新到最新的正式版。可从 Zotero 官网下载最新的正式版覆盖安装。
 2. 更新插件版本：按照[插件安装步骤](#二、安装步骤)下载最新的插件安装包并覆盖安装。
 
-### 5.4. 点击「移动附件」后，附件没有被移动
+### J3.4. 点击「移动附件」后，附件没有被移动
 
 这种问题通常是由于「重命名/移动的附件类型」设置中没有您当前文件的后缀名，请在该设置中补充：
 
@@ -264,7 +420,9 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 此外，只有拥有所属上级文献条目的附件才能被移动。如果您选中的附件是一个独立的顶级条目，则无法被移动。请先为该附件创建上级条目，完善条目信息，然后再尝试移动。
 
-## 六、由链接的附件转换为存储的附件
+:::::
+
+## 五、由链接的附件转换为存储的附件 <Badge text="初级" />
 
 如果您希望从 Zotero Attanger + 同步盘 的同步方案切换到 Zotero 官方的 WebDAV 同步方案，您可以将链接的附件转换回存储的附件。操作步骤如下：
 
@@ -278,11 +436,11 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 :::
 
-## 七、其他注意事项
+## 八、其他注意事项
 
 - **Zotero Attanger 仅支持 Zotero 7**：Zotero 6 用户需使用 ZotFile 插件。
-- **请勿直接在系统移动文件或编辑文件名**：可能导致 Zotero 链接失效。
+- **请勿直接在系统移动文件或编辑文件名**：会导致 Zotero 无法打开附件。
 
-## 八、提交反馈
+## 九、提交反馈
 
 如遇插件故障，可在 [GitHub Issues](https://github.com/MuiseDestiny/zotero-attanger/issues) 提交反馈。请配合截图清晰描述问题，并提供你的 Zotero 和 Attanger 插件的具体版本号。
