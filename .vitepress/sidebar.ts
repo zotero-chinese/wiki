@@ -133,6 +133,7 @@ export const sidebar = {
             { text: "无法打开“获取更多样式”", link: "/user-guide/faqs/get-more-style-cannot-open" },
             { text: "Emoji 变成了黑白的", link: "/user-guide/faqs/monochrome-emoji" },
             { text: "将 CAJ 转为 PDF", link: "/user-guide/faqs/caj2pdf" },
+            { text: "校外访问抓取的问题", link: "/user-guide/faqs/off-campus-access" },
           ],
         },
       ],
