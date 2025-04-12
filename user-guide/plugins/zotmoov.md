@@ -75,3 +75,7 @@ ZotMoov 按理说应该不会破坏 ZotFile 现有的链接文件。但为了确
 有一个可能会出现的问题是 [已链接附件的根目录](https://www.zotero.org/support/preferences/advanced#linked_attachment_base_directory)功能。如果你之前使用了这个功能（请检查「设置」->「高级」->「文件和文件夹」->「已链接附件的根目录」），你可能需要修改根目录，改成一个既包含 ZotFile 文件又包含 ZotMoov 文件的文件夹。
 
 最简单的方法是直接复用 ZotFile 文件夹，或者将 ZotMoov 文件夹放在之前的 ZotFile 文件夹内。例如，ZotMoov 数据文件夹可以是 `ZotFile/` 或 `ZotFile/ZotMoov/`。
+
+## 常见问题
+
+如果您在使用 ZotMoov + 同步盘同步时遇到问题，请阅读：[Attanger/ZotMoov + 同步盘同步问题](../faqs/sync#attanger-zotmoov-同步盘同步问题)。
