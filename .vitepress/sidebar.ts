@@ -130,7 +130,10 @@ export const sidebar = {
         },
         {
           text: "数据文件夹相关",
-          items: [{ text: "如何自定义数据文件夹", link: "/user-guide/faqs/custom-data-directory" }],
+          items: [
+            { text: "自定义数据文件夹位置", link: "/user-guide/faqs/custom-data-directory" },
+            { text: "从备份中恢复 Zotero 数据", link: "/user-guide/faqs/restore-data-from-backup" },
+          ],
         },
         {
           text: "其他问题",

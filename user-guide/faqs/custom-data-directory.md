@@ -9,12 +9,14 @@ Zotero 默认将所有文献条目、PDF、批注、笔记等存储在系统默�
 
 ::: danger
 
-无论你选择何种同步方案，也无论基于何种原因， 切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录!（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
+无论你选择何种同步方案，也无论基于何种原因，切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录!（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
 
 这样做在某些情况下可能会导致你的 Zotero 数据库损坏，带来严重的问题！官方对于这一问题的说明见这两篇文章：
 
 - [How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
 - [Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
+
+如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您停止同步，并根据下面的教程将数据文件夹迁移到本地的其他位置。
 
 :::
 
@@ -64,7 +66,7 @@ Zotero 默认将所有文献条目、PDF、批注、笔记等存储在系统默�
    重新打开 Zotero，检查文库中的文献是否齐全，附件是否可以正常打开。
 
 6. **完成迁移**  
-   如果一切正常，您已经成功将 Zotero 的数据目录迁移到新的位置。确认迁移完成且数据完整后，可以删除原数据目录下的文件。
+   如果一切正常，您已经成功将 Zotero 的数据目录迁移到新的位置。确认迁移完成且数据完整后，可以删除原数据目录下的文件。但建议先保留一段时间，直到确定迁移的数据无误。
 
    ::: tip 提醒
 
