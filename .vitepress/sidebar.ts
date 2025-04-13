@@ -129,6 +129,10 @@ export const sidebar = {
           items: [{ text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" }],
         },
         {
+          text: "数据文件夹相关",
+          items: [{ text: "如何自定义数据文件夹", link: "/user-guide/faqs/custom-data-directory" }],
+        },
+        {
           text: "其他问题",
           items: [
             { text: "无法打开“获取更多样式”", link: "/user-guide/faqs/get-more-style-cannot-open" },
