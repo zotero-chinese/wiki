@@ -129,7 +129,7 @@ export const sidebar = {
           items: [{ text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" }],
         },
         {
-          text: "数据文件夹相关",
+          text: "与数据文件夹相关",
           items: [
             { text: "自定义数据文件夹位置", link: "/user-guide/faqs/custom-data-directory" },
             { text: "从备份中恢复 Zotero 数据", link: "/user-guide/faqs/restore-data-from-backup" },
