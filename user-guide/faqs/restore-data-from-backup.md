@@ -182,4 +182,8 @@ Zotero 只同步明确的删除操作，因此仅同步一个空库不会覆盖�
 
 如果尝试以上方法后仍无法找到您的数据，可能需要：搜索计算机上的其他位置，寻找包含 `zotero.sqlite` 的其他文件夹。在找到合适的备份文件后，参照 [从本地备份恢复数据](#从本地备份恢复数据) 的步骤进行恢复。
 
-如果您仍然无法成功恢复数据，您可以前往 [Zotero 官方论坛](https://forums.zotero.org/) 发帖提问寻求帮助。
+## 仍然无法解决？
+
+如果上面的步骤均无法解决您的问题，您可以阅读官方文档：[Restoring Your Zotero Data From a Backup - Zotero Documentation](https://www.zotero.org/support/zotero_data#restoring_your_zotero_data_from_a_backup)，了解更多细节和解决方案。
+
+如果您确实无法成功恢复数据，您可以前往 [Zotero 官方论坛](https://forums.zotero.org/) 发帖提问寻求帮助。
