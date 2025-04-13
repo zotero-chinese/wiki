@@ -118,7 +118,7 @@ export const sidebar = {
         {
           text: "与安装有关的",
           collapsed: true,
-          items: [{ text: "Zotero 7 历史版本下载", link: "/user-guide/faqs/zotero-7-beta-versions" }],
+          items: [{ text: "Zotero 7 与 Zotero Beta", link: "/user-guide/faqs/zotero-7-beta-versions" }],
         },
         { text: "与抓取文献条目相关的", link: "/user-guide/faqs/update-translators" },
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },

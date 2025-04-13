@@ -1,19 +1,19 @@
 ---
-title: Zotero 7 Beta 历史版本下载
+title: Zotero 7 与 Zotero Beta
 date: 2024-07-21 15:26:17
 ---
 
-# Zotero 7 Beta 历史版本下载
+# Zotero 7 与 Zotero Beta
 
-::: tip
+Zotero 7 正式版已经发布，我们强烈建议绝大部分用户使用稳定的正式版 Zotero，而不是 Beta 版本。安装或升级 Zotero 7 正式版请阅读：[你好，Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)。
 
-Zotero 7 已正式发布，我们强烈建议绝大部分用户使用稳定版的 Zotero 而不是 Beta 版本。安装或升级 Zotero 7 正式版请阅读：[你好，Zotero 7](https://zotero-chinese.com/blog/posts/hello-zotero-7)。
+## Zotero Beta 下载
 
-:::
+Zotero 的 Beta 版本是测试版，包含正在测试的新特性和新功能。Beta 版可能存在 Bug，运行可能不稳定，部分插件也没有及时适配最新的 Beta 版。
 
-本页面提供了 Zotero 7 Beta 部分历史版本的下载链接。如果您确定要使用 Beta 版本，我们强烈建议使用最新版本的 Zotero 7 Beta，以确保获得最佳体验和最新功能。下载最新的 Beta 版本请访问：[Zotero Beta 下载页面](https://www.zotero.org/support/beta_builds)。
+如果您确定要使用 Beta 版本，且具有较强的解决问题能力，能够接受可能出现的故障，我们建议您使用最新版本的 Zotero 7 Beta，以确保获得最佳体验和最新功能。下载最新的 Beta 版本请访问：[Zotero Beta 下载页面](https://www.zotero.org/support/beta_builds)。
 
-::: details Zotero 7 Beta 部分历史版本列表
+::: details Zotero 7 Beta 部分早期历史版本列表
 
 | 版本号 | 提交哈希  | 便携版                                                                                                                   | 安装版                                                                                                                     |
 | :----: | :-------: | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
