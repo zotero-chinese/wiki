@@ -42,9 +42,9 @@ date: 2025-04-13
 
    首先访问 [Zotero 官网](https://www.zotero.org/user/login) 登录您的账户，然后点击页面顶部的 `Web Library` 进入在线文献库，确认在线库中的数据是否完整且正确。
 
-   ::: details 如果您使用「WebDAV 同步」或「Attanger/Zotmoov + 同步盘」方案同步附件...
+   ::: details 如果您使用「WebDAV 同步」或「Attanger/ZotMoov + 同步盘」方案同步附件...
 
-   如果您使用了「WebDAV 同步」或「Attanger/Zotmoov + 同步盘」方案同步附件，由于附件未同步在 Zotero 官方存储空间，您会在在线库中看到附件的文件名，但无法下载和查看附件，这是正常的。
+   如果您使用了「WebDAV 同步」或「Attanger/ZotMoov + 同步盘」方案同步附件，由于附件未同步在 Zotero 官方存储空间，您会在在线库中看到附件的文件名，但无法下载和查看附件，这是正常的。
 
    您可能需要前往 WebDAV 网盘或同步盘服务商的网页端检查附件是否完整。一般来说，您可以通过网盘中附件存储文件夹占用的空间大小来粗略判断附件同步是否完整。
 

@@ -2,7 +2,7 @@
 
 ## iOS
 
-官方已经发布了 Zotero for iOS，并且支持支持 WebDAV 同步，iOS 端的设置相对比较简单，只需要登陆 Zotero 账户和完成 WebDAV 网盘设置即可。
+官方已经发布了 Zotero for iOS，并且支持支持 WebDAV 同步，iOS 端的设置相对比较简单，只需要登录 Zotero 账户和完成 WebDAV 网盘设置即可。
 
 ### 安装
 
@@ -16,11 +16,11 @@
 
 :::
 
-1. 在第一次打开 Zotero 时，会提醒登陆，选择 Sign In（此时需要登陆你的 Zotero 账户）
+1. 在第一次打开 Zotero 时，会提醒登录，选择 Sign In（此时需要登录你的 Zotero 账户）
 
-   ![登陆Zotero账户](../assets/images/iOS登陆.jpg){width=50%}
+   ![登录Zotero账户](../assets/images/iOS登陆.jpg){width=50%}
 
-2. 登陆完成后，返回 app 主页，点击右上角的齿轮图标
+2. 登录完成后，返回 app 主页，点击右上角的齿轮图标
 
    ![app首页](../assets/images/iOS首页.png)
 
@@ -31,7 +31,7 @@
    - 附件同步方式：`WebDAV`
    - WebDAV 地址：`dav.jianguoyun.com/dav`
    - 坚果云账户：邮箱
-   - 密码：此处的密码是在坚果云中创建的应用密码，不是坚果云网盘的登陆密码）
+   - 密码：此处的密码是在坚果云中创建的应用密码，不是坚果云网盘的登录密码）
 
    ::: details 如何获取坚果云的应用密码
 
