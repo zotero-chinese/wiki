@@ -292,17 +292,28 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::::
 
-### 更新浏览器版本 <Badge text="初级" />
+### 更新网页浏览器的版本 <Badge text="初级" />
 
-如果您的浏览器版本过低，有可能导致 Zotero Connector 无法正常工作（详见 [官方的说明](https://forums.zotero.org/discussion/123456/zotero-connector-no-longer-works-in-old-version-of-chrome#latest)）。请确保您的浏览器版本已经更新到最新。
+如果您的网页浏览器版本过低，有可能导致 Zotero Connector 无法正常工作（详见 [官方的说明](https://forums.zotero.org/discussion/123456/zotero-connector-no-longer-works-in-old-version-of-chrome#latest)）。请务必确保您的浏览器版本已经更新到最新。
 
 浏览器更新完成后，建议您重新更新 Zotero Connector 的转换器，具体操作请参考： [更新抓取文献信息的转换器](#更新抓取文献信息的转换器)。
 
-::: info 提醒
+:::: info 提醒
 
-由于网络问题，国内网络环境下可能无法直接更新 Google Chrome。您可以尝试在国外网络环境下尝试更新，或改用 Microsoft Edge、Mozilla Firefox 等其他浏览器，并更新到最新版本。
+由于网络问题，国内网络环境下可能无法直接在更新 Google Chrome 。您可以尝试在国外网络环境下尝试更新。或改用 Microsoft Edge、Mozilla Firefox 等其他浏览器，并更新到最新版本。
+
+如果您无法在浏览器中直接自动更新，您也可以前往浏览器官方网站，直接下载最新版本的安装包覆盖安装。
+
+::: details 常见浏览器的官网
+
+- [Google Chrome](https://www.google.com/chrome/)
+- [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/) <Badge text="推荐" />
+- [Mozilla Firefox（国际官网）](https://www.mozilla.org/zh-CN/firefox/new/) <Badge text="推荐" />
+- [Firefox 火狐浏览器（中国官网）](https://www.firefox.com.cn/)
 
 :::
+
+::::
 
 ### 卸载并重装 Zotero Connector 浏览器扩展 <Badge text="中级" />
 
