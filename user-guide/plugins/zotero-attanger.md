@@ -59,7 +59,7 @@ Zotero Attanger 中较为简单的基础功能有：
 
 ### 3.1. 基础配置
 
-1. 打开 Zotero，点击 **编辑 → 设置 → Attanger**。
+1. 打开 Zotero，点击 `编辑` → `设置` → `Attanger`。
    ![Zotero Attanger 基础配置](../../assets/images/zotero-attanger-basic-setup.png)
 2. 将「源路径」的「根目录」设置为浏览器的默认下载目录（如 `C:\Users\你的系统用户名\Downloads`）。
 3. 在「附加类型」中选择「副本」。
@@ -230,12 +230,14 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 
 ::: danger
 
-无论你选择何种同步方案， 切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中（包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录 ！（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
+无论你选择何种同步方案，也无论基于何种原因，切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录!（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
 
 这样做在某些情况下可能会导致你的 Zotero 数据库损坏，带来严重的问题！官方对于这一问题的说明见这两篇文章：
 
 - [How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
 - [Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
+
+如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您停止同步，并根据 [自定义数据文件夹](../faqs/custom-data-directory) 的教程将数据文件夹迁移到本地的其他位置。
 
 :::
 
@@ -385,24 +387,14 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 ### J3.1. Zotero 中删除附件时，系统中的文件无法同步删除
 
-这是 Zotero 链接的附件的特性。当您使用 Zotero 的「删除条目...」功能删除一个链接的附件时，Zotero 仅删除数据库中的链接，而不会删除链接指向的文件本身。
-
-针对这一问题，您可以下载并安装 [Del Item With Attachment 插件](https://zotero-chinese.com/plugins/#search=Del+Item+With+Attachment)，然后在文库中选中需要删除的条目（或条目中的附件），右键点击，选择 「删除附件」→「删除条目和附件」，即可删除 Zotero 中的链接和系统中的文件。
-
-::: tip 提示
-
-请注意，使用 Del Item With Attachment 插件的功能删除附件时，即便条目只是被删除到回收站中，系统中的文件也会在点击时直接被删除，无法被恢复。如果条目从回收站中恢复，附件链接会无法打开，只能新下载一个附件，然后将失效的附件链接定位到新下载的附件上。
-
-如果你选中的只是条目中的附件，您仍然可以使用 Del Item With Attachment 插件的「删除条目和附件」功能来删除附件。此操作不会导致附件所述的上级文献信息条目被删除，也不会导致其他未被选中的附件被删除。对于 Zotero 来说，此时删除的条目即为这个附件。
-
-:::
+这是 Zotero 链接的附件的特性。详细说明和解决方案见：[删除 Zotero 中链接的附件时，同时删除系统中的文件](../faqs/sync#教程-删除-zotero-中链接的附件时-同时删除系统中的文件)。
 
 ### J3.2. 附件无法打开
 
 如果遇到附件无法打开，通常是路径配置问题。请按照以下步骤检查：
 
 1. 在添加这一附件的电脑上检查这一附件能否正常打开。如果所有设备都无法打开，可能说明这一附件已丢失，请重新下载。
-2. 根据[路径配置](#J1.2.-路径配置)，检查「靶路径」和「已链接附件的根目录」设置是否正确。
+2. 根据[路径配置](#j1-2-路径配置)，检查「靶路径」和「已链接附件的根目录」设置是否正确。
 3. 直接访问报错里提示找不到附件的路径，检查在该路径下是否存在该附件文件，以及该文件能否正常打开。如果不存在，清检查同步设置和路径设置。
 
 ### J3.3. 插件工作不正常
@@ -416,31 +408,25 @@ Zotero Attanger 支持多种文件类型的附件重命名和移动。您可以�
 
 这种问题通常是由于「重命名/移动的附件类型」设置中没有您当前文件的后缀名，请在该设置中补充：
 
-- 点击 Zotero → 编辑 → 设置 → Zotero Attanger，在「重命名/移动的附件类型」中添加文件后缀名（如 `,caj`），然后再尝试。
+- 点击 `Zotero` → `编辑` → `设置` → `Zotero Attanger`，在「重命名/移动的附件类型」中添加文件后缀名（如 `,caj`），然后再尝试。
 
 此外，只有拥有所属上级文献条目的附件才能被移动。如果您选中的附件是一个独立的顶级条目，则无法被移动。请先为该附件创建上级条目，完善条目信息，然后再尝试移动。
+
+### J3.5. 更多常见问题
+
+更多常见问题，请阅读：[Attanger/ZotMoov + 同步盘同步问题](../faqs/sync#attanger-zotmoov-同步盘同步问题)。
 
 :::::
 
 ## 五、由链接的附件转换为存储的附件 <Badge text="初级" />
 
-如果您希望从 Zotero Attanger + 同步盘 的同步方案切换到 Zotero 官方的 WebDAV 同步方案，您可以将链接的附件转换回存储的附件。操作步骤如下：
+如果您希望从 Zotero Attanger + 同步盘 的同步方案切换到 Zotero 官方的 WebDAV 同步方案，您可以将链接的附件转换回存储的附件。操作教程见：[迁移到 WebDAV 同步方案](../faqs/sync#教程-迁移到-webdav-同步方案)。
 
-1. 将 Zotero Attanger 插件的「附加类型」设置为「副本」。
-2. 在 Zotero 中选中所有文献条目（键盘快捷键 `Ctrl` + `a`），右击任意条目，然后点击 「附件管理」 → 「撤销移动附件」，将链接的附件转换为存储的附件。此操作会将链接的附件重新作为副本存储在 Zotero 数据目录中，重新由 Zotero 管理。在「转换为存储文件」窗口中，可以按需勾选「存储后删除原始文件」，删除靶目录中的原始文件，删除后附件只存在于 Zotero 数据目录中。
-3. 如果需要设置 WebDAV 同步，请参考这篇文章：[通过 WebDAV 同步附件教程](../sync.md#通过-webdav-同步附件)。
-
-::: tip 提示
-
-如果您未安装 Attanger，您也可以在全选文献后，使用 Zotero 菜单栏中的「工具」→「管理附件」→「转换已链接文件为已存储文件...」功能，将链接的附件转换为存储的附件。Zotero Attanger 的「撤销移动附件」实际上使用的也是这一功能。
-
-:::
-
-## 八、其他注意事项
+## 六、其他注意事项
 
 - **Zotero Attanger 仅支持 Zotero 7**：Zotero 6 用户需使用 ZotFile 插件。
 - **请勿直接在系统移动文件或编辑文件名**：会导致 Zotero 无法打开附件。
 
-## 九、提交反馈
+## 七、提交反馈
 
 如遇插件故障，可在 [GitHub Issues](https://github.com/MuiseDestiny/zotero-attanger/issues) 提交反馈。请配合截图清晰描述问题，并提供你的 Zotero 和 Attanger 插件的具体版本号。

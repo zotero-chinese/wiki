@@ -104,7 +104,7 @@ export const sidebar = {
           ],
         },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
-        { text: "SCI Hub", link: "/user-guide/plugins/zotero-scihub" },
+        { text: "Sci-Hub", link: "/user-guide/plugins/zotero-scihub" },
         { text: "蒲公英", link: "/user-guide/plugins/tara" },
         { text: "Zotero Attanger", link: "/user-guide/plugins/zotero-attanger" },
         { text: "ZotMoov", link: "/user-guide/plugins/zotmoov" },
@@ -118,14 +118,22 @@ export const sidebar = {
         {
           text: "与安装有关的",
           collapsed: true,
-          items: [{ text: "Zotero 7 历史版本下载", link: "/user-guide/faqs/zotero-7-beta-versions" }],
+          items: [{ text: "Zotero 7 与 Zotero Beta", link: "/user-guide/faqs/zotero-7-beta-versions" }],
         },
-        { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
         { text: "与抓取文献条目相关的", link: "/user-guide/faqs/update-translators" },
         { text: "与 Word 引用相关的", link: "/user-guide/faqs/word-addon" },
+        { text: "与同步相关的", link: "/user-guide/faqs/sync" },
+        { text: "与插件相关的", link: "/user-guide/faqs/plugins" },
         {
           text: "与阅读器相关",
           items: [{ text: "PDF 上存在黑色遮罩", link: "/user-guide/faqs/pdf-black-mask" }],
+        },
+        {
+          text: "与数据文件夹相关",
+          items: [
+            { text: "自定义数据文件夹位置", link: "/user-guide/faqs/custom-data-directory" },
+            { text: "从备份中恢复 Zotero 数据", link: "/user-guide/faqs/restore-data-from-backup" },
+          ],
         },
         {
           text: "其他问题",
