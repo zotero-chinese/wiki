@@ -22,7 +22,7 @@ updated: 2023-09-23 20:52:08
 - [How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
 - [Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
 
-如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您停止同步，并根据 [自定义数据文件夹](./faqs/custom-data-directory) 的教程将数据文件夹迁移到本地的其他位置。
+如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您做好[备份](./backup#手动备份)，根据 [自定义数据文件夹](./faqs/custom-data-directory) 的教程将数据文件夹迁移到本地的其他位置，且确保未使用任何工具直接同步这一数据文件夹。
 
 :::
 
@@ -143,7 +143,7 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 ::: tip
 
-目前坚果云官方团队已经开发了 Zotero 的坚果云单点登录插件 [Nutstore SSO](https://zotero-chinese.com/plugins/#search=Nutstore%20SSO)，可以直接通过插件登录坚果云账户并自动配置好 WebDAV。
+目前坚果云官方团队已经开发了 Zotero 的坚果云官方 Zotero 同步插件 [Nutstore SSO](https://zotero-chinese.com/plugins/#search=Nutstore%20SSO)，可以直接通过插件登录坚果云账户并自动配置好 WebDAV。坚果云官方同步插件的使用方法请阅读： [坚果云官方 Zotero 同步插件使用教程](https://mp.weixin.qq.com/s/w9pzcuikfJ7hC9t3yVa-qw)。
 
 如果您不希望使用插件进行配置，您仍然可以参照下面的手动配置步骤进行配置。
 
