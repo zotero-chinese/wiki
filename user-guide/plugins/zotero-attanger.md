@@ -237,7 +237,7 @@ Zotero Attanger 在使用时涉及到多个路径配置项，主要包括：
 - [How can I access my library from multiple computers?](https://www.zotero.org/support/sync#alternative_syncing_solutions)
 - [Can I store my Zotero data directory in a cloud storage folder?](https://www.zotero.org/support/kb/data_directory_in_cloud_storage_folder)
 
-如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您停止同步，并根据 [自定义数据文件夹](../faqs/custom-data-directory) 的教程将数据文件夹迁移到本地的其他位置。
+如果您已经将 Zotero 数据文件夹直接同步到网盘中，请您做好[备份](../backup#手动备份)，根据 [自定义数据文件夹](../faqs/custom-data-directory) 的教程将数据文件夹迁移到本地的其他位置，且确保未使用任何工具直接同步这一数据文件夹。
 
 :::
 
