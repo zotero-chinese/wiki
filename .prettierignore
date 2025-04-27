@@ -24,3 +24,6 @@ package-lock.json
 yarn.lock
 
 .husky/
+
+# 脚本生成的文件
+assets/compressed-images.json
