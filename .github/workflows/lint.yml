@@ -34,6 +34,7 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run lint:check
+          pnpm run compress-images --check
 
       - name: 运行 Lint 修复
         if: inputs.fix
