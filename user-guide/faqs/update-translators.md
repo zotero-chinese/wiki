@@ -71,7 +71,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 如果你不能正确地抓取文献信息，或者抓取后的条目里文献信息缺失，那么下面的内容会对你有所帮助。
 
-### 更新抓取文献信息的转换器 <Badge text="初级" />
+### 更新抓取文献信息的转换器<Badge text="初级" />
 
 在使用 Zotero 的过程中，我们经常需要更新 `转换器` 来实现从网页快速抓取文献信息。通常，我们可以借助 Zotero 本身的功能以及 茉莉花 插件快速完成该操作。但当 Zotero 或 茉莉花 插件出现故障无法完成一键自动更新时，我们也可以手动下载新版的转换器文件，并进行手动更新。
 
@@ -81,7 +81,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 :::
 
-#### 方法 1：一键自动更新 <Badge text='推荐' />
+#### 方法 1：一键自动更新<Badge text='推荐' />
 
 ##### 步骤 1. 更新官方转换器
 
@@ -119,7 +119,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    「转换器更新完成」的提示仅表示茉莉花已经结束了转换器的更新，但仍可能有部分中文转换器更新失败。建议您在更新后点击转换器详情旁边的「点击查看」按钮，确认您的转换器版本是否为最新版本。特别是在遇到中文文献无法抓取的时候，通常意味着这里有部分转换器更新失败。
 
-   如果有部分转换器更新失败，您可以尝试点击「更新全部」按钮重新进行更新，或者按照[手动更新转换器教程](#方法-2-手动替换转换器文件更新)进行更新。
+   如果有部分转换器更新失败，您可以尝试点击「更新全部」按钮重新进行更新，或者按照[手动更新转换器教程](#方法-2手动替换转换器文件更新)进行更新。
 
    :::
 
@@ -195,7 +195,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 3. 此时你已经完成了转换器的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
 
-#### 方法 2：手动替换转换器文件更新 <Badge text="高级" />
+#### 方法 2：手动替换转换器文件更新<Badge text="高级" />
 
 ::: warning 不推荐这种方法
 
@@ -292,7 +292,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::::
 
-### 更新网页浏览器的版本 <Badge text="初级" />
+### 更新网页浏览器的版本<Badge text="初级" />
 
 如果您的网页浏览器版本过低，有可能导致 Zotero Connector 无法正常工作（详见 [官方的说明](https://forums.zotero.org/discussion/123456/zotero-connector-no-longer-works-in-old-version-of-chrome#latest)）。请务必确保您的浏览器版本已经更新到最新。
 
@@ -307,15 +307,15 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 ::: details 常见浏览器的官网
 
 - [Google Chrome](https://www.google.com/chrome/)
-- [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/) <Badge text="推荐" />
-- [Mozilla Firefox（国际官网）](https://www.mozilla.org/zh-CN/firefox/new/) <Badge text="推荐" />
+- [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/)<Badge text="推荐" />
+- [Mozilla Firefox（国际官网）](https://www.mozilla.org/zh-CN/firefox/new/)<Badge text="推荐" />
 - [Firefox 火狐浏览器（中国官网）](https://www.firefox.com.cn/)
 
 :::
 
 ::::
 
-### 卸载并重装 Zotero Connector 浏览器扩展 <Badge text="中级" />
+### 卸载并重装 Zotero Connector 浏览器扩展<Badge text="中级" />
 
 如果按照上面的步骤更新后仍然无法正常抓取，建议卸载并重装最新版本的 Zotero Connector 浏览器扩展。
 
@@ -381,7 +381,7 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 :::
 
-### 重置 Zotero 的转换器 <Badge text="中级" />
+### 重置 Zotero 的转换器<Badge text="中级" />
 
 如果您已尝试上述所有方法仍无法解决问题，可尝试重置 Zotero 的转换器。此操作将重置 Zotero 数据文件夹内所有转换器。
 
@@ -391,7 +391,7 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 2. 重新更新所有转换器，具体操作请参考 [更新抓取文献信息的转换器](#更新抓取文献信息的转换器)。
 
-### 检查数据文件夹状态是否正常 <Badge text="初级" />
+### 检查数据文件夹状态是否正常<Badge text="初级" />
 
 如果上述的方法都无法解决问题，请阅读下面的说明，检查您是否属于这种特殊情况：
 
@@ -409,7 +409,7 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 ::::
 
-### 前往其他网站进行抓取 <Badge text="初级" />
+### 前往其他网站进行抓取<Badge text="初级" />
 
 在成功更新转换器后，若当前网站仍无法完整、准确地抓取文献信息，您可以尝试前往其他站点进行抓取：
 
@@ -447,6 +447,6 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 更多注意事项，请阅读：[通过附件添加条目教程](../add-items.md#通过附件添加条目-推荐)。
 
-## 使用其他添加条目的方式 <Badge text="初级" />
+## 使用其他添加条目的方式<Badge text="初级" />
 
 如果以上所有操作都未能解决你遇到的抓取问题，可能你访问的网页目前无法通过 Zotero Connector 抓取文献信息。你可以尝试换其他网站进行抓取，或者使用 [通过附件添加条目](../add-items.md#通过附件添加条目-推荐)、[由通用格式的引用信息导入](../add-items.md#由通用格式的引用信息导入-通用方法) 以及 [手动创建条目](../add-items.md#手动创建条目-万能方法) 等添加条目方式。详细操作步骤请阅读 [添加条目教程](../add-items.md) 。

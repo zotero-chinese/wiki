@@ -16,7 +16,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 :::
 
-## 重复条目 <Badge text="中级" />
+## 重复条目<Badge text="中级" />
 
 ::: info Todo：待完善
 

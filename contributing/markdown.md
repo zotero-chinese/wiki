@@ -368,7 +368,7 @@ console.log(foo(5));
 
 :::
 
-### 徽章 <Badge text="推荐" />
+### 徽章<Badge text="推荐" />
 
 可以通过徽章来标记文档阅读难度、推荐等。语法如下，可以在正文和标题中使用，但是不能在一级标题（页面标题）中使用。
 
@@ -387,6 +387,18 @@ console.log(foo(5));
 <Badge text="推荐" />
 
 通过 DOI 更新元数据 <Badge text="初级" /> 。
+
+在标题中使用时，需要注意 `<Badge>` 前尽量不要有空格，否则标题的锚点末尾会产生多余的空格，而 VitePress、VS Code、MarkdownLint 对这个空格的处理各不相同，会导致 Lint 错误。即：
+
+```md
+## 标题<Badge text="推荐" />
+```
+
+而不是
+
+```md
+## 标题 <Badge text="推荐" />
+```
 
 ### 告示块
 

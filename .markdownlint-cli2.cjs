@@ -156,10 +156,6 @@ module.exports = {
     MD040: false,
     MD046: false,
     MD049: false,
-    // MD051/link-fragments: 不得不临时禁用此规则，
-    // 因为我们在标题中包含了 <Badge text="中级" /> 等标志，
-    // 这会导致 Markdownlint 报错，但实际上我们是可以接受的
-    MD051: false,
   },
   customRules: ["markdownlint-rule-search-replace"],
 

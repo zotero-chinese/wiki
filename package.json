@@ -22,10 +22,10 @@
     "markdownlint-cli2": "0.17.2",
     "markdownlint-rule-search-replace": "^1.2.0",
     "prettier": "2.8.8",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.3",
     "sharp": "^0.34.1",
     "tinyglobby": "^0.2.13",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
     "vitepress": "1.6.3"
   },
   "prettier": {

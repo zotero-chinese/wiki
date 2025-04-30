@@ -26,7 +26,7 @@ updated: 2023-09-23 20:52:08
 
 :::
 
-## 数据的同步 <Badge text="初级" />
+## 数据的同步<Badge text="初级" />
 
 ::: tip
 
@@ -81,7 +81,7 @@ updated: 2023-09-23 20:52:08
 
 ::::
 
-### Zotero 官方存储空间 <Badge text="初级" />
+### Zotero 官方存储空间<Badge text="初级" />
 
 Zotero 官方提供了存储空间用于存储文件附件，您可以在 `Zotero`-`编辑`-`设置`-`同步`-`文件同步`中选择 `Zotero` 作为附件的同步方式。
 
@@ -106,7 +106,7 @@ Zotero 官方提供了存储空间用于存储文件附件，您可以在 `Zoter
 
 :::
 
-### 通过 WebDAV 同步附件 <Badge text="初级" />
+### 通过 WebDAV 同步附件<Badge text="初级" />
 
 ::: info 什么是 WebDAV
 
@@ -218,7 +218,7 @@ Zotero 的 iOS/iPadOS 官方客户端的配置教程见：[移动端配置教程
 
 Zotero 的 Android 官方客户端和第三方客户端的配置教程见：[移动端配置教程](./mobile.md#android)。
 
-### 通过第三方网盘同步附件 <Badge text="高级" />
+### 通过第三方网盘同步附件<Badge text="高级" />
 
 ::: danger
 
