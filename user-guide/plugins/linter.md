@@ -17,7 +17,7 @@
 
 ## 快速设置上下标、粗体和斜体
 
-Zotero 的参考文献表中的富文本内容需要手动插入 HTML 标签来实现 （详见 [^rich_text_bibliography]），这对于不爱折腾的人来说非常麻烦，虽然 Zotero 的文档上提及将在后续版本支持富文本可视化编辑，然而数年过去了，该议题没有任何进展，故本插件提供了快捷插入这些 HTML 标签的途径。
+Zotero 的参考文献表中的富文本内容需要手动插入 HTML 标签来实现（详见 [^rich_text_bibliography]），这对于不爱折腾的人来说非常麻烦，虽然 Zotero 的文档上提及将在后续版本支持富文本可视化编辑，然而数年过去了，该议题没有任何进展，故本插件提供了快捷插入这些 HTML 标签的途径。
 
 [^rich_text_bibliography]: <https://www.zotero.org/support/kb/rich_text_bibliography>
 
@@ -51,7 +51,7 @@ Zotero 文档建议将标题存储为「句子式大写」的格式，这将有�
 
 对于期刊标题，插件将使相同的期刊统一。
 
-插件内置了一个包含约 10 万条期刊缩写的数据集（来自 JabRef 和 Woodward Library ），插件将首先在本地数据集里查询期刊缩写；
+插件内置了一个包含约 10 万条期刊缩写的数据集（来自 JabRef 和 Woodward Library），插件将首先在本地数据集里查询期刊缩写；
 
 若无则根据 [ISSN List of Title Word Abbreviations](https://www.issn.org/services/online-services/access-to-the-ltwa/) 推断其缩写（可在首选项中关闭此行为）；
 

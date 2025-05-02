@@ -18,23 +18,23 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 ![创建代码空间](../assets/images/contributing/贡献指南-创建codespace.png)
 
-选择绿色按钮 「Create new codespace」 以创建一个新的代码空间，然后等待页面加载完成，创建进度条完成：
+选择绿色按钮「Create new codespace」以创建一个新的代码空间，然后等待页面加载完成，创建进度条完成：
 
-![创建codespace进度条](../assets/images/contributing/贡献指南-创建codespace进度条.png)
+![创建 codespace 进度条](../assets/images/contributing/贡献指南-创建codespace进度条.png)
 
 随后，你将进入到如下页面，代码空间配置完成。
 
-![创建codespace完成](../assets/images/contributing/贡献指南-vsc首页.png)
+![创建 codespace 完成](../assets/images/contributing/贡献指南-vsc首页.png)
 
 ### 非初次贡献
 
-如果你曾在近期创建过 CodeSpace，点击上述按钮时，你将在列表中看到一个已存在的 CodeSpace 。
+如果你曾在近期创建过 CodeSpace，点击上述按钮时，你将在列表中看到一个已存在的 CodeSpace。
 
-可以通过点击 CodeSpace 的名称（下图为 「potential halibut」，但每个人创建的名称可能略有差异）进入这个 CodeSpace；
+可以通过点击 CodeSpace 的名称（下图为「potential halibut」，但每个人创建的名称可能略有差异）进入这个 CodeSpace；
 
 也可以通过点击绿色按钮「Resume this codespace」进入这个 CodeSpace。
 
-![复用CodeSpace](../assets/images/contributing/贡献指南-复用codespace.png)
+![复用 CodeSpace](../assets/images/contributing/贡献指南-复用codespace.png)
 
 你也可以通过点击「Create a new one」来继续创建一个新的 CodeSpace，但通常我们可以直接复用已有的。
 
@@ -100,7 +100,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 你可以在下图所示 `NPM 脚本` 窗格运行 `docs:dev` 脚本，来启动一个开发服务器。
 
-如果你没有找到 `NPM 脚本` 窗格，可以在下图 「资源管理器」 后方的菜单中勾选 「NPM Scripts」 来显示这个窗格。
+如果你没有找到 `NPM 脚本` 窗格，可以在下图「资源管理器」后方的菜单中勾选「NPM Scripts」来显示这个窗格。
 
 ![启动开发服务器](../assets/images/contributing/贡献指南-启动开发服务器.png)
 
@@ -126,7 +126,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 点击「发布分支」。如果你是第一次贡献，你将收到一个弹窗提示你是否需要创建一个分支仓库（fork），点击「创建分支 / Create fork」：
 
-![发布分支-创建fork](../assets/images/contributing/贡献指南-发布分支-创建fork.png)
+![发布分支-创建 fork](../assets/images/contributing/贡献指南-发布分支-创建fork.png)
 
 创建完成后，编辑器右下角将出现两个弹窗，提示已完成。
 
@@ -136,13 +136,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 点击上面弹窗的蓝色按钮「创建拉取请求 / Create Pull Request」，
 
-![创建pr](../assets/images/contributing/贡献指南-创建pr.png)
+![创建 pr](../assets/images/contributing/贡献指南-创建pr.png)
 
 在左侧新出现的界面里，为拉取请求写一个简单明了的标题，简单写一个描述，然后点击蓝色按钮「Create / 创建」。
 
-![完善pr信息](../assets/images/contributing/贡献指南-完善pr信息.png)
+![完善 pr 信息](../assets/images/contributing/贡献指南-完善pr信息.png)
 
-![pr详情](../assets/images/contributing/贡献指南-pr详情.png)
+![pr 详情](../assets/images/contributing/贡献指南-pr详情.png)
 
 ### 2.6 PR 修改
 
@@ -162,7 +162,7 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
    如果你是第一次贡献，需要管理员审核后机器人才能运行，这是保障安全需要的。
 
-   ![netlify预览pr](../assets/images/contributing/build-pr预览-1.png)
+   ![netlify 预览 pr](../assets/images/contributing/build-pr预览-1.png)
 
    ::: tip 哪些情况会导致检查错误？
 
@@ -174,13 +174,13 @@ GitHub 代码空间是托管在云上的开发环境，这使得我们无需再�
 
 3. PR 被接受并合并至官方 main 分支后，则可以更新 main 分支，并删除 pr-workflow 分支
 
-   ![更新main分支](../assets/images/contributing/build-更新main分支-1.png)
+   ![更新 main 分支](../assets/images/contributing/build-更新main分支-1.png)
 
 ## 3 关闭 CodeSpace
 
 点击左下角蓝色按钮「Codespaces: xxxxxx」，在上方弹出的菜单中选择「Stop Current Codespace」，就可以关闭代码空间了，然后你可以安全的关闭浏览器。
 
-![关闭codespace](../assets/images/contributing/贡献指南-关闭codespace.png)
+![关闭 codespace](../assets/images/contributing/贡献指南-关闭codespace.png)
 
 当然，你也可以直接关闭浏览器，默认情况下，代码空间在 30 分支无活动后会自动关闭。
 

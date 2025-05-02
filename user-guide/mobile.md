@@ -18,11 +18,11 @@
 
 1. 在第一次打开 Zotero 时，会提醒登录，选择 Sign In（此时需要登录你的 Zotero 账户）
 
-   ![登录Zotero账户](../assets/images/iOS登陆.jpg){width=50%}
+   ![登录 Zotero 账户](../assets/images/iOS登陆.jpg){width=50%}
 
 2. 登录完成后，返回 app 主页，点击右上角的齿轮图标
 
-   ![app首页](../assets/images/iOS首页.png)
+   ![app 首页](../assets/images/iOS首页.png)
 
 3. 点击 `account` 进入同步设置
 
@@ -55,7 +55,7 @@
 
    验证服务器后显示`Verified` 表示设置成功。
 
-   ![iOS同步登陆](../assets/images/iOS同步登陆.png)
+   ![iOS 同步登陆](../assets/images/iOS同步登陆.png)
 
 5. 等待片刻文献即可同步成功。可以点击文献直接阅读，也点击文献右侧的 `i` 标志查看文献信息
    ![文献同步成功](../assets/images/iOS文献同步成功.png)

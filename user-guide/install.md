@@ -150,7 +150,7 @@ Zotero 官方现已发布 [Zotero for Android 测试版](https://forums.zotero.o
 
 我们也创建了一个仓库提供从源码编译的 Zotero Android 版本，见 [`northword/zotero-android-nightly-build`](https://github.com/northword/zotero-android-nightly-build) 仓库，但需注意，这个仓库发布的极不稳定，仅供测试使用！
 
-在官方版本正式发布前， Android 用户可使用以下第三方客户端：
+在官方版本正式发布前，Android 用户可使用以下第三方客户端：
 
 - Zoo for Zotero：
 

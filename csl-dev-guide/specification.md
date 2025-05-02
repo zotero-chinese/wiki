@@ -17,7 +17,7 @@ updated: 2023-07-22 20:49:04
 
 ## 介绍
 
-CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格式，用来描述引文、注释和参考文献的格式，他提供了：
+CSL（Citation Style Language，引文样式语言）是一种基于 XML 的格式，用来描述引文、注释和参考文献的格式，他提供了：
 
 - 一种开放的 (开源的) 格式
 - 紧凑、稳定的样式
@@ -34,7 +34,7 @@ CSL（Citation Style Language，引文样式语言） 是一种基于 XML 的格
 
 ::: info 译者注：关于 IETF RFC 2119 协议
 
-RFC ，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
+RFC，即 **R**equest **f**or **C**omments，意见征求稿，是由 [The Internet Engineering Task Force](http://www.ietf.org/) 制作的文档，其中许多是各种 Internet 协议的官方标准。
 
 RFC 2119 协议全文：<<https://www.ietf.org/rfc/rfc2119.txt>
 
@@ -138,7 +138,7 @@ CSL 文件有 3 种类型：独立样式、从属样式（都使用 `.csl` 作�
 
 #### `class`
 
-🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#csstyle-根元素) 是 in-text 类型（值 `in-text`） 或者 note 类型（值 `note`）。
+🏳️ Default: *none* — 决定样式的 [引文格式](./primer.md#csstyle-根元素) 是 in-text 类型（值 `in-text`）或者 note 类型（值 `note`）。
 
 ::: info 译者注
 
@@ -166,7 +166,7 @@ en-US：
 
 此外，`cs:style` 可能携带任意的 [全局选项](specification.md#全局选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 。
 
-在这些属性中，[从属样式](#从属样式) 中，只有 `version` 是必须的， `default-locale` 属性可以设置用来代替的默认的本地化文件 。其他的属性是可以忽略的。
+在这些属性中，[从属样式](#从属样式) 中，只有 `version` 是必须的， `default-locale` 属性可以设置用来代替的默认的本地化文件。其他的属性是可以忽略的。
 
 下面是一个 [独立样式](#独立样式) 的 `cs:style` 示例，第一行是 XML 声明：
 
@@ -181,7 +181,7 @@ en-US：
 
 `cs:info`
 
-🏳️ Default: *none* · ⚠ Required · ⚠ 必须为第一个子元素 — 描述样式的元数据 ：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
+🏳️ Default: *none* · ⚠ Required · ⚠ 必须为第一个子元素 — 描述样式的元数据：样式名称（style name）、样式 ID（ID）、样式作者（authors）。
 
 `cs:citation`
 
@@ -235,7 +235,7 @@ en-US：
 
 ##### `cs:issn/cs:essn/cs:issnl`
 
-🏳️ Default: *none* · Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN 。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
+🏳️ Default: *none* · Optional — `cs:issn` 元素可以多次使用，用来表示该 CSL 对应的期刊的 ISSN。 `cs:eissn` 和 `cs:issnl` 可以分别用来表示 eISSN 和 [ISSN-L](http://www.issn.org/2-22637-What-is-an-ISSN-L.php) 。
 
 ##### `cs:link`
 
@@ -302,7 +302,7 @@ en-US：
 
 #### Citation
 
-`cs:citation` 元素描述了引注的格式，其中引注可以是一条或者多条。引注的格式可能是 in-text citations（即文字中的引注）和 notes（注记）。in-text citations 包括 (`author`，例: `[Doe]`，`author-date`，例: `[Doe 1999]`，`label`，例: `[doe99]`，或者 `number`，例:`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
+`cs:citation` 元素描述了引注的格式，其中引注可以是一条或者多条。引注的格式可能是 in-text citations（即文字中的引注）和 notes（注记）。in-text citations 包括 (`author`，例：`[Doe]`，`author-date`，例：`[Doe 1999]`，`label`，例：`[doe99]`，或者 `number`，例：`[1]` ) 。这要求 `cs:layout` 子元素来描述什么样的数据，以及怎么被引用（见 [Layout](specification.md#Layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，用来描述引文的排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引文选项](specification.md#引文选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 的例子：
 
 ```xml
 <citation>
@@ -480,7 +480,7 @@ B. Locale files/本地化文件
 
 术语是本地化的字符串，比如通过使用 `"and"` 术语，`"Doe and Smith"` 在语言环境从英语到德语的转换中会自动变为 `"Doe und Smith"`。术语用 `cs:term` 元素定义，是 `cs:terms` 元素的子元素。每个 `cs:term` 元素必须携带一个 `name` 属性，其属性值可以设置为 [附录 II 术语](#附录 II 术语) 列表中的值。
 
-术语可以直接在 `cs:term` 的内容中定义，或者，在某些情况下，比如在需要单数和复数的情况下可以分别在子元素 `cs:single` 和 `cs:multiple` 中定义， (例如:`"page"` 和 `"pages"`)。
+术语可以直接在 `cs:term` 的内容中定义，或者，在某些情况下，比如在需要单数和复数的情况下可以分别在子元素 `cs:single` 和 `cs:multiple` 中定义， (例如：`"page"` 和 `"pages"`)。
 
 术语必须使用 `cs:term` 元素来定义，并在其中使用 `form` 属性来设置特定格式，`form` 可以设置的值为：
 
@@ -502,7 +502,7 @@ B. Locale files/本地化文件
 
 `"ordinal"` 术语定义了默认的序数后缀格式，但这些默认的后缀可以被下面的术语对某些数字进行覆盖：
 
-- `"ordinal-00"` 到 `"ordinal-09"` - 默认地，当术语名称的最后一位数字与要渲染的数字的最后一个数字相同时，将使用在这个范围内的对应的术语。比如：`"ordinal-00"` 能够匹配数字 0 、10、20 等等。通过设置属性 `match` 为 `"last-two-difits"`（默认值为 `"last-digit"`），匹配范围将为变为两位，例如：0、100、200 等。当 `match` 术语设置为 `"whole-number"` 时，只有术语与要渲染的数字相同时，才会实现匹配。
+- `"ordinal-00"` 到 `"ordinal-09"` - 默认地，当术语名称的最后一位数字与要渲染的数字的最后一个数字相同时，将使用在这个范围内的对应的术语。比如：`"ordinal-00"` 能够匹配数字 0、10、20 等等。通过设置属性 `match` 为 `"last-two-difits"`（默认值为 `"last-digit"`），匹配范围将为变为两位，例如：0、100、200 等。当 `match` 术语设置为 `"whole-number"` 时，只有术语与要渲染的数字相同时，才会实现匹配。
 - `"ordinal-10"` 到 `"ordinal-99"`- 默认地，当要渲染的数字的最后两位和术语中相同时，使用这个范围的术语。当 `match` 属性设置为 `"whole-number"` 时（默认为 `"last-two-digits"`），只有术语与要渲染的数字相同时，才会实现匹配。
 
 当渲染的数据对上面的两组都匹配时（比如：13 可以同时匹配 `"ordinal-03"` 和 `"ordinal-13"`），则使用 `"ordinal-10"` 到 `"ordinal-99"`。
@@ -586,7 +586,7 @@ B. Locale files/本地化文件
 
 - `variable`- 渲染一个变量的文本内容。属性值必须是 [标准变量](#标准变量)。可以与 `form` 属性一起选择变量的 `"long"`（默认）或 `"short"` 形式（例如：设置题目，完整题目或者简写）。如果选择了 `"short"` 形式，但是却没法获得，就使用 `"long"` 形式来渲染。
 - `macro` - 渲染宏的文字输出。属性值必须和 `cs:macro` 元素的 `name` 属性的值相匹配。
-- `term` - 渲染术语。属性必须是 [附录 II 术语](#附录 II 术语) 中的术语列表中的一个。通过设置复数属性 `plura l` 来这只其使用单数还是复数形式，其中 `"true"` 为默认，表示使用复数形式，设置为 `"false"` 表示使用单数形式。 使用 `form` 属性可以设置术语的形式，其值可以为 `"long"` （默认）、`"short"`、`"verb"`、`"verb-short"` 或者 `"symbol"` （见 [术语](#术语)）.
+- `term` - 渲染术语。属性必须是 [附录 II 术语](#附录 II 术语) 中的术语列表中的一个。通过设置复数属性 `plura l` 来这只其使用单数还是复数形式，其中 `"true"` 为默认，表示使用复数形式，设置为 `"false"` 表示使用单数形式。使用 `form` 属性可以设置术语的形式，其值可以为 `"long"` （默认）、`"short"`、`"verb"`、`"verb-short"` 或者 `"symbol"` （见 [术语](#术语)）.
 - `value` - 渲染属性值自己。
 
 一个 `cs:text` 的渲染 `title` 变量的例子：
@@ -601,7 +601,7 @@ B. Locale files/本地化文件
 
 `cs:date` 渲染元素输出必须从 [日期变量](#日期变量) 列表中的选择。日期可以以本地化或者非本地化格式呈现。
 
-[本地化的日期格式](#本地化日期格式) 通过可选的 `form` 属性来选择，其值必须设置为 `"numeric"`（完全的数字格式 ，例如：12-15-2005）或者 `"text"`（非数字的月份格式，例如： December 15, 2005）。本地化日期格式可以通过两种方式进行自定义。第一种：`date-parts` 属性可以用来设置不同的日期组成部分。其值可以设置为：
+[本地化的日期格式](#本地化日期格式) 通过可选的 `form` 属性来选择，其值必须设置为 `"numeric"`（完全的数字格式，例如：12-15-2005）或者 `"text"`（非数字的月份格式，例如：December 15, 2005）。本地化日期格式可以通过两种方式进行自定义。第一种：`date-parts` 属性可以用来设置不同的日期组成部分。其值可以设置为：
 
 - `"year-month-day"` - 默认值，渲染年，月，日
 - `"year-month"` - 渲染年月
@@ -717,7 +717,7 @@ B. Locale files/本地化文件
 
 - "numeric" - 默认，例如： "1", "2", "3"
 - "ordinal" - 序数数字，例如： "1st", "2nd", "3rd"。序数后缀可以使用术语定义 (见 [序数后缀](#序数后缀).
-- "long-ordinal" - 长序数，例如： "first", "second", "third"。畅序数使用术语 "long-ordinal-01" 到 "long-ordinal-10" 定义, 用来在数字 1 到 10 使用。对于其他的数字，长序数渲染的结果讲和序数相同.
+- "long-ordinal" - 长序数，例如： "first", "second", "third"。畅序数使用术语 "long-ordinal-01" 到 "long-ordinal-10" 定义，用来在数字 1 到 10 使用。对于其他的数字，长序数渲染的结果讲和序数相同。
 - "roman" - 罗马数字，例如："i", "ii", "iii"
 
 带有前缀或者后缀的数字不能使用罗马数字进行排序或者渲染（例如："2E" 仍然时 "2E"）。没有词缀的数字可以被分别转换（"2, 3" 可以转换为 "2nd, 3rd", "second, third" 或者 "ii, iii"）。
@@ -734,7 +734,7 @@ B. Locale files/本地化文件
 </names>
 ```
 
-`cs:names` 有四个子元素:`cs:name`，`cs:et-al`，`cs:substitute` 和 `cs:label`。 `cs:names` 元素可能会携带 [affixes](https://docs.citationstyles.org/en/stable/specification.html#affixes), [display](https://docs.citationstyles.org/en/stable/specification.html#display) 和 [formatting](https://docs.citationstyles.org/en/stable/specification.html#formatting) 属性。
+`cs:names` 有四个子元素：`cs:name`，`cs:et-al`，`cs:substitute` 和 `cs:label`。 `cs:names` 元素可能会携带 [affixes](https://docs.citationstyles.org/en/stable/specification.html#affixes), [display](https://docs.citationstyles.org/en/stable/specification.html#display) 和 [formatting](https://docs.citationstyles.org/en/stable/specification.html#formatting) 属性。
 
 #### Name
 
@@ -770,8 +770,8 @@ B. Locale files/本地化文件
 在名字列表中确定何时使用分隔符来分割最后一个作者和倒数第二个作者。如果 `and` 没有被设置，则不论 `delimiter-precedes-last` 属性的值，名字分隔符总是使用。
 
 - "contextual" - 默认，当名字列表中的名字有 3 个或以上时使用。下面在使用 3 个名字时，在 `and` 前使用了分隔符 `,`
-  - 2 个名字: "J. Doe and T. Williams"
-  - 3 个名字: "J. Doe, S. Smith, and T. Williams"
+  - 2 个名字："J. Doe and T. Williams"
+  - 3 个名字："J. Doe, S. Smith, and T. Williams"
 - "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `"first"` 时，仅在第一个名字后使用了分隔符 `,`
   - "Doe, J., and T. Williams"
   - "Doe, J., S. Smith and T. Williams"
@@ -982,13 +982,13 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#name)），同时�
 </group>
 ```
 
-可以生成 `"page 3"` 或者 `"pages 5-7"`。`cs:label` 可能会携带下面的属性:
+可以生成 `"page 3"` 或者 `"pages 5-7"`。`cs:label` 可能会携带下面的属性：
 
 `form`
 
 ​ 选择术语的形式，可以设置为下面的值：
 
-- "long" - （默认）， 例如： "page" 术语渲染为 "page"/"pages"
+- "long" - （默认），例如： "page" 术语渲染为 "page"/"pages"
 - "short" - 例如： "page" 术语渲染为 "p."/"pp."
 - "symbol" - 例如： "section" 术语渲染为 "§"/"§§"
 
@@ -1041,7 +1041,7 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#name)），同时�
 
 `is-numeric`
 
-​ 测试给定的变量（[附录 IV 变量](#附录 IV 变量)）是不是包含数字部分。如果内容仅由数字构成，则识别为数字。数字可以带有前缀、后缀（"D2"，"2b"，"L2d"）、并且可能被逗号，连字符或 `&` 分隔（"2, 3"，"2-4"，"2 & 4"）。 例如， "2nd" 被识别为 "true" ，但 "second" 和 "2nd edition" 被识别为 "false".
+​ 测试给定的变量（[附录 IV 变量](#附录 IV 变量)）是不是包含数字部分。如果内容仅由数字构成，则识别为数字。数字可以带有前缀、后缀（"D2"，"2b"，"L2d"）、并且可能被逗号，连字符或 `&` 分隔（"2, 3"，"2-4"，"2 & 4"）。例如， "2nd" 被识别为 "true" ，但 "second" 和 "2nd edition" 被识别为 "false".
 
 `is-uncertain-date`
 
@@ -1227,7 +1227,7 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 
 `second-field-align`
 
-​ 如果该属性被设置，则书目条目的后续行沿第二字段对齐。 使用 "flush" 时，第一个字段与边距齐平。 对于 "margin"，第一个字段放在 margin 中，随后的行与 margin 对齐。例如，当第一个字段设置为 `<text variable="citation-number" suffix=". "/>`
+​ 如果该属性被设置，则书目条目的后续行沿第二字段对齐。使用 "flush" 时，第一个字段与边距齐平。对于 "margin"，第一个字段放在 margin 中，随后的行与 margin 对齐。例如，当第一个字段设置为 `<text variable="citation-number" suffix=". "/>`
 
 ```
 9.  Adams, D. (2002). The Ultimate Hitchhiker's Guide to the
@@ -1335,11 +1335,11 @@ Doe, Williams et al. 2005.
 
 `page-range-format`
 
-​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`"chicago"` ("321–28")， `"expanded"` ( "321–328")， `"minimal"` ("321–8")， 或者 `" minimal-two"` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录 V 页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
+​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`"chicago"` ("321–28")， `"expanded"` ( "321–328")， `"minimal"` ("321–8")，或者 `" minimal-two"` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录 V 页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
 
 ##### Name Particles
 
-​ 西方人的名字中经常包括一个或者多个小部分，例如,`"de"` 在荷兰人的名字中 `"W. de Koning"`。在仅显示姓氏时，这些小部分可以分为必须保留和可删除（或译为不可省略和可省略）两种类型：这两种类型分别称为 `non-dropping` 部分和 `dropping` 部分。一个单个的名字可以同时包括这两种类型（不能删除的类型始终位于可删除类型的后面）。例如，`"W. de Koning"` 和法国名字 `"Jean de la Fontaine"` 可以被解构为：
+​ 西方人的名字中经常包括一个或者多个小部分，例如，`"de"` 在荷兰人的名字中 `"W. de Koning"`。在仅显示姓氏时，这些小部分可以分为必须保留和可删除（或译为不可省略和可省略）两种类型：这两种类型分别称为 `non-dropping` 部分和 `dropping` 部分。一个单个的名字可以同时包括这两种类型（不能删除的类型始终位于可删除类型的后面）。例如，`"W. de Koning"` 和法国名字 `"Jean de la Fontaine"` 可以被解构为：
 
 ```json
 {
@@ -1367,7 +1367,7 @@ Doe, Williams et al. 2005.
 
 - 主排序键值 "La Fontaine"
 - 次排序键值 "de"
-- 第三排序键值: "Jean"
+- 第三排序键值："Jean"
 
 **Sort order B: 不可省略粒子降级**
 
@@ -1381,7 +1381,7 @@ Doe, Williams et al. 2005.
 
 ​ 用来设置在倒写的名字中不可省略粒子的显示和排序方式（例如 Koning W. de）。可设置的值为：
 
-- "never": 不可省略粒子被作为姓中的一部分对待，并附加可省略粒子（"de Koning, W." "La Fontaine, Jean de"）。不可省略粒子作为主排序键值的一部分 (排序 A，例如. "de Koning, W." 将出现在首字母 "D" 的区域).
+- "never": 不可省略粒子被作为姓中的一部分对待，并附加可省略粒子（"de Koning, W." "La Fontaine, Jean de"）。不可省略粒子作为主排序键值的一部分 (排序 A，例如。"de Koning, W." 将出现在首字母 "D" 的区域).
 - "sort-only": 显示的方式和 "never" 相同，但是不可省略粒子降级作为二级排序键值。（排序 B, "de Koning, W." 出现在首字母 "K" 的区域).
 - "display-and-sort" （默认），可省略粒子和不可省略粒子在最后（ "Koning, W. de" 和 "Fontaine, Jean de La"）。对名字排序，所有的粒子都是二级排序键值的一部分。（排序 B，"Koning, W. de" 出现在首字母 "K" 的区域).
 
@@ -1420,7 +1420,7 @@ Doe, Williams et al. 2005.
 
 ​ `cs:citation` 和 `cs:bibliography` 元素可以在 `cs:layout` 元素之前携带一个 `cs:sort` 子元素，来实现对引文或者参考文献条目的排序。在缺失 `cs:sort` 元素时，引文和文献条目将会使用他们在文章中出现的顺序来排序。
 
-​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录 IV 变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`"ascending"`，默认）或者降序（`"descending"`）。属性 `names-min`,`names-use-first`,`names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字.
+​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录 IV 变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`"ascending"`，默认）或者降序（`"descending"`）。属性 `names-min`,`names-use-first`,`names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字。
 
 ​ 排序的键值是按顺序求值的，也就是说：首先，使用第一个排序键值对所有的项目进行排序。然后使用第二个键值对第一个键值排序后的结果进行排序，直到所有的键值都完成排序为止。如果键值为空，就放到最后。
 
@@ -1462,7 +1462,7 @@ Doe, Williams et al. 2005.
 
 ​ "citation-number" 和 "year-suffix" 变量的折叠范围以短划线分隔，例如 "（1-3，5）" 和 "（Doe 2000a-c，e）"。
 
-​ "locator" 变量总是使用一个短划线代替任意的连字符。 对 "page" 变量来说，只有 `cs:style` 中的 `page-ran ge-format` 属性被设置时，替换才会执行（见 [页码范围](#范围分隔符)）。
+​ "locator" 变量总是使用一个短划线代替任意的连字符。对 "page" 变量来说，只有 `cs:style` 中的 `page-ran ge-format` 属性被设置时，替换才会执行（见 [页码范围](#范围分隔符)）。
 
 ### 格式化
 
@@ -1478,7 +1478,7 @@ Doe, Williams et al. 2005.
 
 `font-variant`
 
-Allows for the use of small capitals, 值可以设置为:
+Allows for the use of small capitals, 值可以设置为：
 
 - "normal" 默认
 - "small-caps"
@@ -2103,13 +2103,13 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 `"chicago"`
 
-| 第一个数字                               | 第二个数字                                         | 例                                   |
-| ---------------------------------------- | -------------------------------------------------- | ------------------------------------ |
-| 小于 100                                 | 使用所有的位数                                     | 3–10; 71–72                          |
-| 100 或者 100 的整数                      | 使用所有的位数                                     | 100–104; 600–613; 1100–1123          |
-| 100 到 109 （包括对应 100 的倍数的范围） | 仅使用有变化的部分，忽略不需要的 0                 | 107–8; 505–17; 1002–6                |
-| 110 到 199 （包括对应 100 的倍数的范围） | 根据需要使用两位数或者更多                         | 321–25; 415–532; 11564–68; 13792–803 |
-| 4 位数                                   | 如果数字是 4 位并且其中有 3 位不同，使用所有的位数 | 1496–1504; 2787–2816                 |
+| 第一个数字                              | 第二个数字                                         | 例                                   |
+| --------------------------------------- | -------------------------------------------------- | ------------------------------------ |
+| 小于 100                                | 使用所有的位数                                     | 3–10; 71–72                          |
+| 100 或者 100 的整数                     | 使用所有的位数                                     | 100–104; 600–613; 1100–1123          |
+| 100 到 109（包括对应 100 的倍数的范围） | 仅使用有变化的部分，忽略不需要的 0                 | 107–8; 505–17; 1002–6                |
+| 110 到 199（包括对应 100 的倍数的范围） | 根据需要使用两位数或者更多                         | 321–25; 415–532; 11564–68; 13792–803 |
+| 4 位数                                  | 如果数字是 4 位并且其中有 3 位不同，使用所有的位数 | 1496–1504; 2787–2816                 |
 
 `"expanded"`
 

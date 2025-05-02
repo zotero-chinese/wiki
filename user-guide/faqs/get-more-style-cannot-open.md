@@ -21,7 +21,7 @@ redirectFrom: /user-guide/faqs/%E2%80%9C%E8%8E%B7%E5%8F%96%E6%9B%B4%E5%A4%9A%E6%
 
    依次点击 `编辑-设置-同步` 下 `退出账户`，之后重启 Zotero 该问题可解决。
 
-   ![退出Zotero账户](../../assets/images/zotero-退出账户.png)
+   ![退出 Zotero 账户](../../assets/images/zotero-退出账户.png)
 
 3. 手动安装
 
@@ -35,6 +35,6 @@ redirectFrom: /user-guide/faqs/%E2%80%9C%E8%8E%B7%E5%8F%96%E6%9B%B4%E5%A4%9A%E6%
    ① 选择`OK`时，Zotero 会将所选择的引文格式自动下载安装，完成后，网页右上角会有完成提醒。
    ![引文格式安装完成](../../assets/images/zotero-引文格式安装完成.png)
 
-   ② 选择`Cancel`时，浏览器会下载所选择的引文格式到本地,然后通过`Zotero-编辑-设置-引用-样式` 下 `+`安装安装刚刚所下载的引文格式
+   ② 选择`Cancel`时，浏览器会下载所选择的引文格式到本地，然后通过`Zotero-编辑-设置-引用-样式` 下 `+`安装安装刚刚所下载的引文格式
    ![引文格式下载完成](../../assets/images/引文格式下载.png)
    ![安装本地引文格式](../../assets/images/zotero-安装本地引文格式.png)

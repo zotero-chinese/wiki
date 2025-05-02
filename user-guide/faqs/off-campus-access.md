@@ -152,7 +152,7 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 
    - **Login URL Schema**: 填写登录 WebVPN 的登录入口链接。非必填项。
    - **Proxied URL Schema**: 填写代理链接的结构。比较 WebVPN 代理链接和原始链接的结构，将代理链接中与原始链接相同的部分使用以下替换符来表示：
-     - `%h`: 用于替换原始链接的 Host 部分（ Host 中的 `.` 会被替换为 `-`）
+     - `%h`: 用于替换原始链接的 Host 部分（Host 中的 `.` 会被替换为 `-`）
      - `%p`: 用于替换原始链接的 Path 部分
      - `%u`: 用于替换完整的原始 URL
    - **Hostnames**: 点击 `+` 按钮，然后在「Hostname」中输入此规则适用的网站域名（如 `d.wanfangdata.com.cn`）
@@ -174,8 +174,8 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 
 **示例链接**
 
-- 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
-- 代理后链接: `https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
+- 原始链接：`https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+- 代理后链接：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
 
 **配置参数确定方法**
 
@@ -220,8 +220,8 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 
 **示例链接**
 
-- 原始链接: `https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
-- 代理后链接: `http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
+- 原始链接：`https://d.wanfangdata.com.cn/periodical/hjkxyj202501001`
+- 代理后链接：`http://d-wanfangdata-com-cn-s.ivpn.hit.edu.cn:1080/periodical/hjkxyj202501001`
 
 **配置参数确定方法**
 

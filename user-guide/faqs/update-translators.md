@@ -91,13 +91,13 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::: tip 推荐保持自动更新
 
-我们推荐保持勾选 「自动检查转换器和样式的更新」 以获得最新的官方转换器。
+我们推荐保持勾选「自动检查转换器和样式的更新」以获得最新的官方转换器。
 
 :::
 
-::: warning 「更新转换器」 和 「重置转换器」 是不同的！
+::: warning「更新转换器」和「重置转换器」是不同的！
 
-注意：正常情况下，更新转换器时不需要点设置页下面的「数据库维护」→「重置转换器 (Reset Translators)」 按钮，这会删除整个 translators 文件夹。
+注意：正常情况下，更新转换器时不需要点设置页下面的「数据库维护」→「重置转换器 (Reset Translators)」按钮，这会删除整个 translators 文件夹。
 
 :::
 
@@ -107,7 +107,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    茉莉花插件是一个 Zotero 中文生态增强插件，提供了中文转换器的更新服务，请确保你安装了最新版本的茉莉花插件，浏览 [茉莉花](../plugins/jasminum.md) 了解详情。
 
-2. 进入茉莉花插件的设置，转到 「中文转换器设置」 部分，然后点击 「立即更新」 按钮。这一按钮点一下即可，请不要快速连续点多次，以免出现意外错误。
+2. 进入茉莉花插件的设置，转到「中文转换器设置」部分，然后点击「立即更新」按钮。这一按钮点一下即可，请不要快速连续点多次，以免出现意外错误。
 
    ![更新「中文转换器」](../../assets/images/update-unofficial-translators.png)
 
@@ -125,7 +125,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    ::: info 对于 Zotero 6 用户
 
-   如果您使用的是 Zotero 6，茉莉花插件的设置界面会有所不同。请在茉莉花插件的设置界面中找到 「非官方维护中文转换器（翻译器）」 部分，然后点击 「更新全部」 按钮。如果您的转换器列表为空，或点击「更新全部」后本地版本的日期和最新版本的日期仍然不一致，通常意味着您的茉莉花插件版本过老，请务必确保安装了最新版本的茉莉花插件后再重试。
+   如果您使用的是 Zotero 6，茉莉花插件的设置界面会有所不同。请在茉莉花插件的设置界面中找到「非官方维护中文转换器（翻译器）」部分，然后点击「更新全部」按钮。如果您的转换器列表为空，或点击「更新全部」后本地版本的日期和最新版本的日期仍然不一致，通常意味着您的茉莉花插件版本过老，请务必确保安装了最新版本的茉莉花插件后再重试。
 
    Zotero 7 的正式版已经发布，由于 Zotero 6 的插件已经基本停止维护，可能会遇到兼容性问题，建议您在做好[备份](../backup.md)后，尽快升级到 Zotero 7。
 
@@ -147,13 +147,13 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
    ::: tip
 
-   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
+   从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里「Advanced」->「Translators」中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
    :::
 
    请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
-   ::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
+   ::: details Google Chrome、Microsoft Edge 和 Mozilla Firefox
 
    1. 右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
@@ -193,13 +193,13 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 2. 重启浏览器。
 
-3. 此时你已经完成了转换器的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3 。
+3. 此时你已经完成了转换器的更新。此时如果你的浏览器仍然不能完成对文献的识别，在确保步骤 1-2 正确的前提下，可重复几次步骤 3。
 
 #### 方法 2：手动替换转换器文件更新<Badge text="高级" />
 
 ::: warning 不推荐这种方法
 
-我们推荐使用 「方法 1：一键自动更新」 完成转换器更新。手动更新下载转换器的步骤比较繁琐，且从 GitHub 下载文件时对网络环境要求较高，可能会导致下载失败。如果您因为特殊原因无法完成自动更新，才需要考虑手动更新转换器。
+我们推荐使用「方法 1：一键自动更新」完成转换器更新。手动更新下载转换器的步骤比较繁琐，且从 GitHub 下载文件时对网络环境要求较高，可能会导致下载失败。如果您因为特殊原因无法完成自动更新，才需要考虑手动更新转换器。
 
 :::
 
@@ -217,7 +217,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 3. 首先，在 [Zotero 官方转换器仓库](https://github.com/zotero/translators) 下载最新的官方转换器。
 
-   ![手动在GitHub上下载转换器](../../assets/images/手动在github下载官方translators.png)
+   ![手动在 GitHub 上下载转换器](../../assets/images/手动在github下载官方translators.png)
 
 4. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
@@ -229,7 +229,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 6. 然后，在 [Zotero translators 中文维护小组](https://github.com/l0o0/translators_CN) 下载最新的中文转换器。
 
-![手动在GitHub上下载转换器](../../assets/images/手动在github下载translators.png)
+![手动在 GitHub 上下载转换器](../../assets/images/手动在github下载translators.png)
 
 10. 将下载的 zip 文件解压后选择其中所有的转换器文件（.js 文件），并复制。
 
@@ -244,13 +244,13 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 ::: tip
 
-从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里 「Advanced」->「Translators」 中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
+从 Zotero Connector v5.0.124 开始，官方移除了 Zotero Connector 设置里「Advanced」->「Translators」中的 `Update Translaors` 按钮，如果你的浏览器扩展中仍然保留 `Update Translaors` 按钮，请务必先[升级 Zotero Connector 浏览器扩展](../install.md#浏览器扩展-zotero-connector)再进行后续操作。
 
 :::
 
 请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
-::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
+::: details Google Chrome、Microsoft Edge 和 Mozilla Firefox
 
 1.  右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
@@ -300,7 +300,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 :::: info 提醒
 
-由于网络问题，国内网络环境下可能无法直接在更新 Google Chrome 。您可以尝试在国外网络环境下尝试更新。或改用 Microsoft Edge、Mozilla Firefox 等其他浏览器，并更新到最新版本。
+由于网络问题，国内网络环境下可能无法直接在更新 Google Chrome。您可以尝试在国外网络环境下尝试更新。或改用 Microsoft Edge、Mozilla Firefox 等其他浏览器，并更新到最新版本。
 
 如果您无法在浏览器中直接自动更新，您也可以前往浏览器官方网站，直接下载最新版本的安装包覆盖安装。
 
@@ -321,13 +321,13 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
-::: details Google Chrome、 Microsoft Edge 和 Mozilla Firefox
+::: details Google Chrome、Microsoft Edge 和 Mozilla Firefox
 
 1.  进入浏览器的管理扩展程序页面
 
-    Google Chrome：点击浏览器界面右上角的 `三个点` 按钮，然后点击 「扩展程序」->「管理扩展程序」。
+    Google Chrome：点击浏览器界面右上角的 `三个点` 按钮，然后点击「扩展程序」->「管理扩展程序」。
 
-    Microsoft Edge：点击浏览器界面右上角的 `三个点` 按钮，然后点击 「扩展」->「管理扩展」。
+    Microsoft Edge：点击浏览器界面右上角的 `三个点` 按钮，然后点击「扩展」->「管理扩展」。
 
     Mozilla Firefox：点击浏览器界面右上角的 `三横线` 按钮，然后点击 `扩展和主题`。
 
@@ -399,7 +399,7 @@ Safari 的浏览器扩展是跟随 Zotero 客户端一同安装的，重装 Zote
 
 ::: danger
 
-无论你选择何种同步方案，也无论基于何种原因，切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中 （包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录!（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
+无论你选择何种同步方案，也无论基于何种原因，切勿将 Zotero 的 `数据存储位置/Data Directory` 自定义为任何网盘的同步文件夹中（包括 iCloud），也切勿使用任何网盘/同步盘的备份功能直接同步/备份这一目录!（包括但不限于直接使用坚果云的官方客户端直接同步备份这一文件夹）
 
 这样做在某些情况下可能会导致你的 Zotero 数据库损坏，带来严重的问题！这样做也可能导致转换器更新失败，影响文献信息的抓取！
 

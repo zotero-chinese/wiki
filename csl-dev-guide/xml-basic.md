@@ -54,14 +54,13 @@ updated: 2022-08-03 10:17:53
 <Price>21000</Price>
 
 4. 带有内容和属性的元素
-<Price MoneyKind="RMB">21000</Price>  # MoneyKind 为属性  21000为元素值
+<Price MoneyKind="RMB">21000</Price>  # MoneyKind 为属性  21000 为元素值
 或者是
 <NotebookComputer>
 Style =" LX2000"
 CPU =" PIII600"
 RAM ="128M "
 </NotebookComputer>
-
 ```
 
 所有的元素都包含在根元素中，为根元素的子元素，子元素还还可以包含子元素。
@@ -106,6 +105,6 @@ RAM ="128M "
 ```xml
 <Para1>John asked &quot;What&apos;s your name?&quot;</Para1>
 
-中间的结果:
+中间的结果：
 John asked "What's your name? "
 ```

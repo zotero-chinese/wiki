@@ -55,7 +55,7 @@ Awesome GPT for Zotero 是一个由 MuiseDestiny 创建的开源 Zotero 插件�
 通过`ctrl + /`指令打开 Zotero GPT，然后输入`/secretKey sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`（这里要换成你自己的密钥），进行密钥的设置。
 （也可以通过 `编辑`-`设置`-`高级`-`编辑器`-`extensions.zotero.zoterogpt.secretKey`中 查看/设置 自己的密钥）
 
-![设置SecretKey](../../assets/images/zotero-plugin-gpt/zoterogpt-设置密钥.png)
+![设置 SecretKey](../../assets/images/zotero-plugin-gpt/zoterogpt-设置密钥.png)
 
 如果你是用的是第三方所提供的 SecretKey，那么还需要输入`/api xxxxxxxxxxxxxxx`（具体的 api 通过查看第三方的网站获取。如果你是用的是 OpenAi 官方提供的密钥，那此时可以直接跳过设置。）
 
@@ -135,11 +135,11 @@ Zotero GPT 默认的模型使用的是`gpt-3.5-turbo`，如果您希望使用特
 
    命令标签也可以通过关键词进行触发
 
-   例如在输入框内输入`这篇论文写了什么`，此时命令标签`AskPDF`会被选中，这时可以直接按下回车，实现问题+命令标签快速提问。
+   例如在输入框内输入`这篇论文写了什么`，此时命令标签`AskPDF`会被选中，这时可以直接按下回车，实现问题 + 命令标签快速提问。
 
    该功能是通过命令标签中的`trigger`实现的，你可以对各个命令标签的`trigger`进行自定义
 
-   ![自定义trigger](../../assets/images/zotero-plugin-gpt/zoterogpt-trigger.png)
+   ![自定义 trigger](../../assets/images/zotero-plugin-gpt/zoterogpt-trigger.png)
 
 4.`Ctrl + 回车` 会自动执行上一次的命令标签
 

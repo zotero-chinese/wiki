@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@zotero-chinese/markdownlint-config': link:../configs/packages/markdownlint-config
+  '@zotero-chinese/prettier-config': link:../configs/packages/prettier-config
+
 importers:
 
   .:
@@ -17,6 +21,15 @@ importers:
       '@types/node':
         specifier: 22.13.14
         version: 22.13.14
+      '@zotero-chinese/markdownlint-config':
+        specifier: link:../configs/packages/markdownlint-config
+        version: link:../configs/packages/markdownlint-config
+      '@zotero-chinese/prettier-config':
+        specifier: link:../configs/packages/prettier-config
+        version: link:../configs/packages/prettier-config
+      autocorrect-node:
+        specifier: ^2.14.0
+        version: 2.14.0
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -26,12 +39,9 @@ importers:
       markdownlint-cli2:
         specifier: 0.17.2
         version: 0.17.2
-      markdownlint-rule-search-replace:
-        specifier: ^1.2.0
-        version: 1.2.0
       prettier:
-        specifier: 2.8.8
-        version: 2.8.8
+        specifier: ^3.5.3
+        version: 3.5.3
       sharp:
         specifier: ^0.34.1
         version: 0.34.1
@@ -883,6 +893,41 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
+  autocorrect-node-darwin-arm64@2.14.0:
+    resolution: {integrity: sha512-l5IRTQz6zYAlkfEc5emIDXBkayD0MIwPPAVXCFMceFwyTNhAJ5veoKqRrsPuBVthIbfYKtAUs9oy9oFoHQn7bw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  autocorrect-node-darwin-x64@2.14.0:
+    resolution: {integrity: sha512-vRO0lwfXff2Fs41NzdDqN5t4VQ03M0Xsn6Tk4OjMrbjoWJqaEq05KZOTSaSF/wEs/7E1VoaI9Kz+c0fqylVX4Q==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  autocorrect-node-linux-x64-gnu@2.14.0:
+    resolution: {integrity: sha512-v1y1wh340cbhrHSZZP0oPkvWUprDtUIwnBP69Bls27VhQ2ZyVV4eijDNOP//yGUyUunMB0rtWoZaBsq8ugt1Kg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  autocorrect-node-linux-x64-musl@2.14.0:
+    resolution: {integrity: sha512-3LifiLG61VIXBrOITpD/REcg/ZEUuLz/P2XUWMCfGqhzoUb8oFgM3o0A6extvIH2NefiHMndB9kNbfQjXCl3zA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  autocorrect-node-win32-x64-msvc@2.14.0:
+    resolution: {integrity: sha512-OM6TeGUW0+4R9KtUYTYNEwlInd+b2kumw/B1HCbCzb1F7HpfaNxnZiMk1li0bdPPBDzD5YuzwM30VJZMCWIi5A==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  autocorrect-node@2.14.0:
+    resolution: {integrity: sha512-Pkdw3Hr1Wbtpm8f7KYOaPnHFa7TNVo9dyuOffVaNGN3iWWRBs011XBuCJUEmHV097kJkab94cs4P6KJ4pvI41g==}
+    engines: {node: '>= 10'}
+    hasBin: true
+
   birpc@2.3.0:
     resolution: {integrity: sha512-ijbtkn/F3Pvzb6jHypHRyve2QApOCZDR25D/VnkY2G/lBNcXCTsnsCxgY4k4PkVB7zfwzYbY3O9Lcqe3xufS5g==}
 
@@ -1181,18 +1226,6 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  markdownlint-micromark@0.1.2:
-    resolution: {integrity: sha512-jRxlQg8KpOfM2IbCL9RXM8ZiYWz2rv6DlZAnGv8ASJQpUh6byTBnEsbuMZ6T2/uIgntyf7SKg/mEaEBo1164fQ==}
-    engines: {node: '>=14.18.0'}
-
-  markdownlint-rule-helpers@0.21.0:
-    resolution: {integrity: sha512-27WM6H76t79EZjEl3jSabV0ZzXsC5QaSslI/5N1XuXV0mJRA6i3BPMGFrtZUbhlCNgtY6oC9h5JhtpDMv95tKg==}
-    engines: {node: '>=16'}
-
-  markdownlint-rule-search-replace@1.2.0:
-    resolution: {integrity: sha512-l2eeVjb0ijxO+dO1ZrODcht+qnJ0VuiAAdBx1J8oa2kAugXl3NhxAGjfNuTfEJae5OQbdSGT+NjMczyzBXvWMA==}
-    engines: {node: '>=16'}
-
   markdownlint@0.37.4:
     resolution: {integrity: sha512-u00joA/syf3VhWh6/ybVFkib5Zpj2e5KB/cfCei8fkSRuums6nyisTWGqjTWIOFoFwuXoTBQQiqlB4qFKp8ncQ==}
     engines: {node: '>=18'}
@@ -1367,9 +1400,9 @@ packages:
   preact@10.26.5:
     resolution: {integrity: sha512-fmpDkgfGU6JYux9teDWLhj9mKN55tyepwYbxHgQuIxbWQzgFg5vk7Mrrtfx7xRxq798ynkY4DDDxZr235Kk+4w==}
 
-  prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
     hasBin: true
 
   property-information@7.0.0:
@@ -2288,6 +2321,29 @@ snapshots:
 
   argparse@2.0.1: {}
 
+  autocorrect-node-darwin-arm64@2.14.0:
+    optional: true
+
+  autocorrect-node-darwin-x64@2.14.0:
+    optional: true
+
+  autocorrect-node-linux-x64-gnu@2.14.0:
+    optional: true
+
+  autocorrect-node-linux-x64-musl@2.14.0:
+    optional: true
+
+  autocorrect-node-win32-x64-msvc@2.14.0:
+    optional: true
+
+  autocorrect-node@2.14.0:
+    optionalDependencies:
+      autocorrect-node-darwin-arm64: 2.14.0
+      autocorrect-node-darwin-x64: 2.14.0
+      autocorrect-node-linux-x64-gnu: 2.14.0
+      autocorrect-node-linux-x64-musl: 2.14.0
+      autocorrect-node-win32-x64-msvc: 2.14.0
+
   birpc@2.3.0: {}
 
   braces@3.0.3:
@@ -2632,16 +2688,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  markdownlint-micromark@0.1.2: {}
-
-  markdownlint-rule-helpers@0.21.0:
-    dependencies:
-      markdownlint-micromark: 0.1.2
-
-  markdownlint-rule-search-replace@1.2.0:
-    dependencies:
-      markdownlint-rule-helpers: 0.21.0
-
   markdownlint@0.37.4:
     dependencies:
       markdown-it: 14.1.0
@@ -2915,7 +2961,7 @@ snapshots:
 
   preact@10.26.5: {}
 
-  prettier@2.8.8: {}
+  prettier@3.5.3: {}
 
   property-information@7.0.0: {}
 
