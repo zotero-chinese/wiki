@@ -111,7 +111,7 @@ GitHub 相关资料：
 
    ![复刻仓库](../assets/images/contributing/fork-repo-1.png)
 
-   ![复刻仓库2](../assets/images/contributing/fork-repo-2-1.png)
+   ![复刻仓库 2](../assets/images/contributing/fork-repo-2-1.png)
 
    复制完成后，个人 GitHub 帐号下便有了 <https://github.com/zotero-user/wiki/> 仓库。
 
@@ -119,9 +119,9 @@ GitHub 相关资料：
 
    打开 VS Code，点击 `欢迎页面` 的 `克隆 Git 仓库…`，在弹出窗口中选中 `从 GitHub 克隆`，然后选择自己账户下的 fork 仓库，确认，克隆完成后根据提示打开文件夹。
 
-   ![克隆Git仓库](../assets/images/contributing/vsc-克隆git仓库.png)
+   ![克隆 Git 仓库](../assets/images/contributing/vsc-克隆git仓库.png)
 
-   ![从GitHub克隆](../assets/images/contributing/vsc-输入仓库地址.png)
+   ![从 GitHub 克隆](../assets/images/contributing/vsc-输入仓库地址.png)
 
    ![选择仓库](../assets/images/contributing/vsc-选中需要克隆的仓库.png)
 
@@ -209,9 +209,9 @@ pnpm install
 
    进入个人 GitHub 帐号下的复制仓库（即 <https://github.com/你的名字/wiki/>）。
 
-   一般 GitHub 会自动提示有可提交的 PR，点击 「Compare & pull request」，输入此 PR 的标题和具体描述，
+   一般 GitHub 会自动提示有可提交的 PR，点击「Compare & pull request」，输入此 PR 的标题和具体描述，
 
-   最后点击 「Create pull request」 即可。
+   最后点击「Create pull request」即可。
 
 2. 审核、评论以及修改 PR
 
@@ -219,7 +219,7 @@ pnpm install
 
    PR 发起后，Netlify 机器人会自动部署一个预览版本，可以在这里查看预览。
 
-   ![netlify预览pr](../assets/images/contributing/build-pr预览-1.png)
+   ![netlify 预览 pr](../assets/images/contributing/build-pr预览-1.png)
 
    提交的 PR 在接收前可能需要读者多次修改。这种情况并不要创建新 PR，只需继续本地 pr-workflow 分支中修改并提交，然后再次推送 pr-workflow 分支至远程 origin 即可，修改将自动添加到已提交的 PR 中。
 
@@ -227,7 +227,7 @@ pnpm install
 
 3. PR 被接受并合并至官方 main 分支后，则可以更新 main 分支，并删除 pr-workflow 分支
 
-   ![更新main分支](../assets/images/contributing/build-更新main分支-1.png)
+   ![更新 main 分支](../assets/images/contributing/build-更新main分支-1.png)
 
 ## 其他的脚本
 

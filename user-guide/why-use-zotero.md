@@ -18,7 +18,7 @@ date: 2023-04-19 22:27:07
 
 ## Zotero 是你的科研助理
 
-![Zotero主界面](https://www.zotero.org/static/images/home/screenshot-7.0@2x.png)
+![Zotero 主界面](https://www.zotero.org/static/images/home/screenshot-7.0@2x.png)
 
 Zotero 是一款免费、易于使用的工具，可以帮助您收集、管理、阅读、批注、引用和共享文献。使用 Zotero 将使你的学术生产效率大增。
 
@@ -32,7 +32,7 @@ Zotero 是一款免费、易于使用的工具，可以帮助您收集、管理�
 
 需要 JSTOR 的文章或 arXiv.org 的预印本？亦或者是《纽约时报》的新闻报道还是图书馆的书籍？Zotero 随时随地为您服务。
 
-![浏览器快速抓取文献至Zotero](../assets/images/zotero官方-渲染图-connector.png)
+![浏览器快速抓取文献至 Zotero](../assets/images/zotero官方-渲染图-connector.png)
 
 ### 按你想要的方式管理文献
 
@@ -80,17 +80,17 @@ Zotero 社区的有力支持。当使用 Zotero 遇到问题时，你可以收�
 
 ### 持续改进
 
-Zotero 自 2006 年问世以来，我们每天都在努力使其变得更好。我们定期添加新功能，如果您发现错误，我们通常会在一两天内为您提供修复程序。[^1] 我们会努力支持新版本的操作系统、浏览器和文字处理器。 Zotero 开发人员公开工作，因此您可以在 GitHub 上关注随时查看正在开发的内容，并且可以通过参与 Zotero 论坛的讨论来直接影响软件的方向。
+Zotero 自 2006 年问世以来，我们每天都在努力使其变得更好。我们定期添加新功能，如果您发现错误，我们通常会在一两天内为您提供修复程序。[^1] 我们会努力支持新版本的操作系统、浏览器和文字处理器。Zotero 开发人员公开工作，因此您可以在 GitHub 上关注随时查看正在开发的内容，并且可以通过参与 Zotero 论坛的讨论来直接影响软件的方向。
 
 ### 开源和免费
 
-作为一个开源工具，Zotero 在两种意义上是免费的：您无需付费即可使用它，并且您可以自由地更改其代码以使其执行您想要的操作。第一个的好处是显而易见的，但第二个对于您委托研究数据的程序至关重要。 Zotero 始终保证用户完全访问自己的数据，但开源意味着您无需相信我们的话。如果明天运行 Zotero 的组织就消失了，或者如果我们做出了一个没有把用户利益放在第一位的决定，那么其他人就可以自由地获取 Zotero 的源代码并继续维护和改进它。[^3]
+作为一个开源工具，Zotero 在两种意义上是免费的：您无需付费即可使用它，并且您可以自由地更改其代码以使其执行您想要的操作。第一个的好处是显而易见的，但第二个对于您委托研究数据的程序至关重要。Zotero 始终保证用户完全访问自己的数据，但开源意味着您无需相信我们的话。如果明天运行 Zotero 的组织就消失了，或者如果我们做出了一个没有把用户利益放在第一位的决定，那么其他人就可以自由地获取 Zotero 的源代码并继续维护和改进它。[^3]
 
 作为更广泛的开源社区的一部分，我们致力于支持开放软件和开放标准。我们帮助创建了现在大多数参考软件中使用的引文风格语言，并且我们目前正在为开放科学工具联合路线图做出贡献。我们构建的工具供维基百科编辑使用 Zotero 强大的网络保存功能来引用来源。我们创建的所有软件都可以免费供其他人使用和修改。[^4]
 
 ### 高级功能
 
-如果 Zotero 不是一个强大、专业的工具，那么最好的策略也毫无意义。 Zotero 具有无与伦比的能力，可以[保存来自网站、期刊文章、报纸等的高质量出版物数据](https://www.zotero.org/support/adding_items_to_zotero#via_your_web_browser)，或者[检索您拖入的 PDF 的出版物数据](https://www.zotero.org/support/retrieve_pdf_metadata)。Word、LibreOffice 和 Google Docs 的[文字处理器集成](https://www.zotero.org/support/word_processor_integration)使其易于管理您撰写时的引文和参考书目。[内置 PDF 阅读器](https://www.zotero.org/blog/zotero-6)可让您标记 PDF，然后将引用的引文和评论直接提取到笔记或文字处理文档中。 Zotero 可以通过 [DOI 或 ISBN 自动添加出版物数据](https://www.zotero.org/support/adding_items_to_zotero#add_item_by_identifier)，并在您无法访问论文时[查找开放获取的 PDF](https://www.zotero.org/blog/improved-pdf-retrieval-with-unpaywall-integration/)。您可以创建[高级搜索](https://www.zotero.org/support/searching) - 例如，提及上个月添加的某个关键字的所有文章 - 并将它们保存为自动更新集合。当您在浏览器中打开付费页面时，Zotero 可以通过您机构的代理自动重定向您，以便您可以访问 PDF。如果您试图引用一篇被撤回的论文，Zotero 甚至[可以警告您](https://www.zotero.org/blog/retracted-item-notifications/)。
+如果 Zotero 不是一个强大、专业的工具，那么最好的策略也毫无意义。Zotero 具有无与伦比的能力，可以[保存来自网站、期刊文章、报纸等的高质量出版物数据](https://www.zotero.org/support/adding_items_to_zotero#via_your_web_browser)，或者[检索您拖入的 PDF 的出版物数据](https://www.zotero.org/support/retrieve_pdf_metadata)。Word、LibreOffice 和 Google Docs 的[文字处理器集成](https://www.zotero.org/support/word_processor_integration)使其易于管理您撰写时的引文和参考书目。[内置 PDF 阅读器](https://www.zotero.org/blog/zotero-6)可让您标记 PDF，然后将引用的引文和评论直接提取到笔记或文字处理文档中。Zotero 可以通过 [DOI 或 ISBN 自动添加出版物数据](https://www.zotero.org/support/adding_items_to_zotero#add_item_by_identifier)，并在您无法访问论文时[查找开放获取的 PDF](https://www.zotero.org/blog/improved-pdf-retrieval-with-unpaywall-integration/)。您可以创建[高级搜索](https://www.zotero.org/support/searching) - 例如，提及上个月添加的某个关键字的所有文章 - 并将它们保存为自动更新集合。当您在浏览器中打开付费页面时，Zotero 可以通过您机构的代理自动重定向您，以便您可以访问 PDF。如果您试图引用一篇被撤回的论文，Zotero 甚至[可以警告您](https://www.zotero.org/blog/retracted-item-notifications/)。
 
 除了 Zotero 自身的功能之外，插件系统还允许外部开发人员向 Zotero 添加[高级功能](https://www.zotero.org/support/plugins)，例如[更灵活的文件管理](http://zotfile.com/)和[改进的 BibTeX 支持](https://retorque.re/zotero-better-bibtex/)。
 
@@ -104,13 +104,13 @@ Zotero 被设计为一款功能强大、灵活的工具，几乎可以适应任�
 
 如果您在使用 Zotero 时遇到问题，我们强烈建议您在 Zotero 论坛上发帖，Zotero 开发人员和社区专家可以在其中引导您解决遇到的任何问题，并帮助您找出最佳工作流程。
 
-最后，如果您仍然发现 Zotero 超出您的需要，请查看 Zotero Bib ，我们免费、简单、基于网络的工具，用于创建参考书目，基于 Zotero 中相同的高级保存和引用功能。
+最后，如果您仍然发现 Zotero 超出您的需要，请查看 Zotero Bib，我们免费、简单、基于网络的工具，用于创建参考书目，基于 Zotero 中相同的高级保存和引用功能。
 
 ### 不完全基于网络
 
 Zotero 主要是一个在您自己的计算机上运行的程序。如果您选择创建帐户并同步数据，您还可以访问 `zotero.org` 上的网络图书馆。然而，虽然网络库允许您查看和编辑数据以及访问同步文件，但要获得完整功能，您需要在每台同步计算机上安装 Zotero。
 
-如果您无法安装软件而只需要创建参考书目，请尝试 ZoteroBib 。
+如果您无法安装软件而只需要创建参考书目，请尝试 ZoteroBib。
 
 ### 没有私人支持
 
@@ -154,7 +154,10 @@ NoteExpress 只支持 Windows 系统，Mac 和 Linux 系统则被拒之门外。
 
 知网研学的订阅费用，高校版 198RMB/年，标准版 998RMB/年，尊享版 3298RMB/年，还请自行体会。
 
-[^1]: 其他参考文献管理器经历了很长一段时间几乎没有发展，这会破坏生产力，甚至阻碍对研究数据的访问。例如，EndNote [直到发布 7 个月后才支持 Word 2016 for Mac](https://twitter.com/EndNoteNews/status/694563436408143872)。 Mendeley 花了数年时间来[支持最新版本的 macOS](https://www.mendeley.com/release-notes/v1_18) ，并花了[两个月的时间](https://blog.mendeley.com/2018/07/18/how-to-recover-your-files-and-annotations-in-mendeley-desktop-july-2018/)来解决有关 PDF 从用户库中消失的报告。
+[^1]: 其他参考文献管理器经历了很长一段时间几乎没有发展，这会破坏生产力，甚至阻碍对研究数据的访问。例如，EndNote [直到发布 7 个月后才支持 Word 2016 for Mac](https://twitter.com/EndNoteNews/status/694563436408143872)。Mendeley 花了数年时间来[支持最新版本的 macOS](https://www.mendeley.com/release-notes/v1_18) ，并花了[两个月的时间](https://blog.mendeley.com/2018/07/18/how-to-recover-your-files-and-annotations-in-mendeley-desktop-july-2018/)来解决有关 PDF 从用户库中消失的报告。
+
 [^2]: Mendeley、RefWorks、EndNote Web 和 Paperpile 都要求您登录，因此如果它们的所有者[决定停止支持他们的软件](https://blog.mendeley.com/2021/03/11/mendeley-refocusing-announcement-mobile-app-retirement/)，或者即使他们的服务暂时关闭，您也将无法打开您的图书馆。
+
 [^3]: [Mendeley 会加密您的数据库](https://www.zotero.org/support/kb/mendeley_import)，防止您将数据完整导出到其他工具，甚至在您无法打开程序时根本无法访问您的数据。 [EndNote 声称](https://en.wikipedia.org/wiki/EndNote#Legal_dispute_with_Zotero)没有人可以在没有他们的软件的情况下打开 EndNote 文件。
-[^4]: Mendeley、RefWorks、Papers 和 Paperpile 都是专有且闭源的，但它们依赖于 Zotero 社区创建的开源软件。所有这些都使用为增强 Zotero 的引用能力而开发的[引文处理器](https://github.com/Juris-M/citeproc-js)。他们提供的[数千种引文样式](https://github.com/citation-style-language/styles)中的大多数都是由 Zotero 用户请求或创建的。 Mendeley 文字处理插件基于 [Zotero 插件的早期版本](https://www.mendeley.com/release-notes/v1_19_2)。 RefWorks [使用 Zotero 的站点翻译器](<https://knowledge.exlibrisgroup.com/RefWorks/Product_Documentation/RefWorks_User_Guide/Appendix%3A_Supported_Save_to_RefWorks_Sites_(Translators)>)来保存浏览器中的书目数据。通过使用 Zotero，您将获得更好的支持和更早的更新，以及影响这些工具开发的机会。
+
+[^4]: Mendeley、RefWorks、Papers 和 Paperpile 都是专有且闭源的，但它们依赖于 Zotero 社区创建的开源软件。所有这些都使用为增强 Zotero 的引用能力而开发的[引文处理器](https://github.com/Juris-M/citeproc-js)。他们提供的[数千种引文样式](https://github.com/citation-style-language/styles)中的大多数都是由 Zotero 用户请求或创建的。Mendeley 文字处理插件基于 [Zotero 插件的早期版本](https://www.mendeley.com/release-notes/v1_19_2)。 RefWorks [使用 Zotero 的站点翻译器](<https://knowledge.exlibrisgroup.com/RefWorks/Product_Documentation/RefWorks_User_Guide/Appendix%3A_Supported_Save_to_RefWorks_Sites_(Translators)>)来保存浏览器中的书目数据。通过使用 Zotero，您将获得更好的支持和更早的更新，以及影响这些工具开发的机会。

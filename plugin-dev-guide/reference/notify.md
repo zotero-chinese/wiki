@@ -71,7 +71,7 @@ declare namespace _ZoteroTypes {
       ref: { notify: Notifier.Notify },
       types?: Notifier.Type[],
       id?: string,
-      priority?: number
+      priority?: number,
     ): string;
   }
 }
@@ -87,7 +87,7 @@ notifierCallback = {
     event: string,
     type: string,
     ids: Array<string>,
-    extraData: object
+    extraData: object,
   ) => {
     // You can add your code to the corresponding notify type
     if (

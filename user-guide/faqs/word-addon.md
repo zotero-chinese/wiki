@@ -62,7 +62,7 @@ date: 2023-10-04 11:38:09
 
 下载地址 2：[点击跳转下载页面](https://www.123pan.com/s/3eJyjv-FD6Ch.html) 提取码：3Sk7
 
-::: info 《Zotero 参考文献排版指南》主要内容
+::: info《Zotero 参考文献排版指南》主要内容
 
 《Zotero 参考文献排版指南》包括以下问题的解答：
 
@@ -145,7 +145,7 @@ date: 2023-10-04 11:38:09
 [100]     X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 ```
 
-这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在 「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
+这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
 
 当然，你也可以通过在 Word 中调整制表符宽度来修复这个问题。
 
@@ -187,7 +187,7 @@ date: 2023-10-04 11:38:09
 
 如上示例在 Zotero 条目信息中对需要为下标的单词两侧分别加上 `<sub>`和`</sub>`，回到在 Word 中点击 `Refresh` 刷新条目信息即可看到下标效果已经成功实现。
 
-![点击`Refresh`刷新条目信息](../../assets/images/word-刷新.png)
+![点击 `Refresh` 刷新条目信息](../../assets/images/word-刷新.png)
 
 ::::
 
@@ -338,11 +338,11 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ### 报错「无法与 Zotero 通讯」
 
-![无法与Zotero通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
+![无法与 Zotero 通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
 
 遇到该问题时，请确保你的 Zotero 程序处于运行状态
 
-如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开 「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
+如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
 
 ![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
@@ -350,7 +350,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ::: info
 
-本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice ，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
+本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
 
 :::
 
@@ -409,7 +409,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ::: warning
 
-所有的引注顺序更改都应在 Word 「引文编辑对话框」中进行，而不是手动修改！
+所有的引注顺序更改都应在 Word「引文编辑对话框」中进行，而不是手动修改！
 
 所有的引注/参考文献表的样式修改都应在 CSL 文件中进行，而不是手动修改！
 
@@ -417,7 +417,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-如果已经点了 「是 yes」，Zotero 不再对这一处引文进行更新，而后续又想要 Zotero 对其更新，可以参照下一节。
+如果已经点了「是 yes」，Zotero 不再对这一处引文进行更新，而后续又想要 Zotero 对其更新，可以参照下一节。
 
 #### 使 Zotero 恢复对引文的更新
 
@@ -450,7 +450,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "type": "article-journal",
         "abstract": "To explore effective way for the complete catalytic degradation of toluene at low temperature, catalysts with diverse activity of adsorbed oxygen (Oads) and lattice oxygen (Olatt) are synthesized by introducing Sr2+ into the birnessite structure. Sr modification highly improved low-temperature catalytic activity and CO2 selectivity of toluene oxidation under moist condition, especially on the BS-7.5 (Sr:Mn = 0.075) catalyst. A series of physiochemical characterizations and DFT calculations identified abundant Olatt with higher activity in Sr-doped birnessite and higher activity of Oads in pure birnessite. In situ DRIFTS analysis further confirmed that activation of Olatt introduced by Sr replacement of Mn governed the reaction process towards continuous deep oxidation of toluene. These findings provide a deeper understanding of the mechanism of toluene degradation and strongly pave a way for improving the complete catalytic oxidation performance of VOCs at low temperature over MnO2 catalysts from the aspect of regulating active oxygen-related properties.",
         "archive": "Q1",
-        "archive_location": "工程技术1区 Top",
+        "archive_location": "工程技术 1 区 Top",
         "call-number": "8.04",
         "collection-title": "无",
         "container-title": "Fuel",
@@ -459,9 +459,9 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "journalAbbreviation": "Fuel",
         "language": "en",
         "license": "8.04",
-        "note": "JCR分区: Q1\n中科院分区升级版: 工程技术1区\n中科院分区基础版: 工程技术2区\n影响因子: 8.04\n5年影响因子: 6.63\nEI: 是",
+        "note": "JCR 分区：Q1\n中科院分区升级版：工程技术 1 区\n中科院分区基础版：工程技术 2 区\n影响因子：8.04\n5 年影响因子：6.63\nEI: 是",
         "page": "124116",
-        "source": "能源与燃料2区 工程：化工1区",
+        "source": "能源与燃料 2 区 工程：化工 1 区",
         "title": "Regulating oxygen species for promoted deep oxidation of toluene: A comparative study of adsorbed oxygen and lattice oxygen",
         "title-short": "Regulating oxygen species for promoted deep oxidation of toluene",
         "volume": "321",
@@ -517,7 +517,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "type": "article-journal",
         "abstract": "To explore effective way for the complete catalytic degradation of toluene at low temperature, catalysts with diverse activity of adsorbed oxygen (Oads) and lattice oxygen (Olatt) are synthesized by introducing Sr2+ into the birnessite structure. Sr modification highly improved low-temperature catalytic activity and CO2 selectivity of toluene oxidation under moist condition, especially on the BS-7.5 (Sr:Mn = 0.075) catalyst. A series of physiochemical characterizations and DFT calculations identified abundant Olatt with higher activity in Sr-doped birnessite and higher activity of Oads in pure birnessite. In situ DRIFTS analysis further confirmed that activation of Olatt introduced by Sr replacement of Mn governed the reaction process towards continuous deep oxidation of toluene. These findings provide a deeper understanding of the mechanism of toluene degradation and strongly pave a way for improving the complete catalytic oxidation performance of VOCs at low temperature over MnO2 catalysts from the aspect of regulating active oxygen-related properties.",
         "archive": "Q1",
-        "archive_location": "工程技术1区 Top",
+        "archive_location": "工程技术 1 区 Top",
         "call-number": "8.04",
         "collection-title": "无",
         "container-title": "Fuel",
@@ -526,9 +526,9 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "journalAbbreviation": "Fuel",
         "language": "en",
         "license": "8.04",
-        "note": "JCR分区: Q1\n中科院分区升级版: 工程技术1区\n中科院分区基础版: 工程技术2区\n影响因子: 8.04\n5年影响因子: 6.63\nEI: 是",
+        "note": "JCR 分区：Q1\n中科院分区升级版：工程技术 1 区\n中科院分区基础版：工程技术 2 区\n影响因子：8.04\n5 年影响因子：6.63\nEI: 是",
         "page": "124116",
-        "source": "能源与燃料2区 工程：化工1区",
+        "source": "能源与燃料 2 区 工程：化工 1 区",
         "title": "Regulating oxygen species for promoted deep oxidation of toluene: A comparative study of adsorbed oxygen and lattice oxygen",
         "title-short": "Regulating oxygen species for promoted deep oxidation of toluene",
         "volume": "321",

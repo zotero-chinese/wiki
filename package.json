@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "description": "Zotero 中文手册",
   "type": "module",
+  "packageManager": "pnpm@10.7.0",
   "scripts": {
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\" && prettier --write .",
-    "lint:check": "markdownlint-cli2 \"**/*.md\" && prettier --check .",
+    "lint:fix": "prettier --write . && autocorrect --fix && markdownlint-cli2 --fix",
+    "lint:check": "prettier --check . && autocorrect --lint && markdownlint-cli2",
     "git:sync-force": "bash scripts/sync-force.sh",
     "compress-images": "tsx scripts/compress-images.ts",
     "prepare": "husky"
@@ -17,33 +18,24 @@
     "@mdit/plugin-footnote": "0.16.8",
     "@mdit/plugin-mark": "^0.16.0",
     "@types/node": "22.13.14",
+    "@zotero-chinese/markdownlint-config": "^1.0.4",
+    "@zotero-chinese/prettier-config": "^1.0.4",
+    "autocorrect-node": "^2.14.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.0",
     "markdownlint-cli2": "0.17.2",
-    "markdownlint-rule-search-replace": "^1.2.0",
-    "prettier": "2.8.8",
+    "prettier": "^3.5.3",
     "sharp": "^0.34.1",
     "tinyglobby": "^0.2.13",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
     "vitepress": "1.6.3"
   },
-  "prettier": {
-    "tabWidth": 2,
-    "printWidth": 80,
-    "proseWrap": "preserve",
-    "endOfLine": "lf",
-    "overrides": [
-      {
-        "files": "**/*.ts",
-        "options": {
-          "printWidth": 120
-        }
-      }
-    ]
-  },
+  "prettier": "@zotero-chinese/prettier-config",
   "lint-staged": {
-    "*.md": "prettier --write"
-  },
-  "packageManager": "pnpm@10.7.0"
+    "*": [
+      "prettier --write",
+      "autocorrect --lint"
+    ]
+  }
 }

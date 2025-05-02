@@ -37,7 +37,7 @@ updated: 2023-10-04 12:06:44
 
 ### 1、检查 Microsoft Word 加载项
 
-检查 Zotero 是否已正常安装好**Microsoft Word 加载项**。安装此加载项的步骤，详见 Zotero 百科全书的 [「引文|插件」Word 加载项相关问题](../faqs/word-addon.md)（点击左侧蓝字自查）
+检查 Zotero 是否已正常安装好**Microsoft Word 加载项**。安装此加载项的步骤，详见 Zotero 百科全书的 [「引文 | 插件」Word 加载项相关问题](../faqs/word-addon.md)（点击左侧蓝字自查）
 
 ![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
@@ -235,7 +235,7 @@ WPS 专业版等版本一般已自带 VBA 宏功能，Zotero 加载项如有使�
 
 #### 只保留 1 个 Zotero 加载项
 
-1）依次单击「**开发者工具**」-「**加载项**」。 单击选中 **Zotero.dotm**，单击「**禁用**」。
+1）依次单击「**开发者工具**」-「**加载项**」。单击选中 **Zotero.dotm**，单击「**禁用**」。
 
 ![image.png](../../assets/images/wps/wps-禁用原模板.png)
 

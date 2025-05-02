@@ -22,7 +22,7 @@ updated: 2024-7-21 15:24:09
 
 官网：<https://m.cnki.net/mcnkidown/index.html>
 
-注册知网帐号 ：<https://my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net>
+注册知网帐号：<https://my.cnki.net/Register/CommonRegister.aspx?returnUrl=https://www.cnki.net>
 
 进入 `资料库` - `打开更多`- 选择想要转换的 caj 文件
 

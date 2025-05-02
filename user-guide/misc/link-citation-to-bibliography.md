@@ -275,14 +275,14 @@ if __name__ == '__main__':
         # 为顺序引用格式添加超链接
         add_citation_cross_ref_hook(word, is_numbered=True)
 
-        # 为 (作者, 年份) 引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
+        # 为 (作者，年份) 引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
         # 由于 Word 中的超链接默认为蓝色，而 noterools 仅会将超链接添加到 年份 上，所以 作者名称 和 年份 的颜色会不一致
         # add_citation_cross_ref_hook(word, is_numbered=False)
 
-        # 通过设置 color 的值，可以设置整个引用的颜色(不包含括号)
+        # 通过设置 color 的值，可以设置整个引用的颜色 (不包含括号)
         # 0: 黑色
         # 16711680: 蓝色
-        # 更多颜色请参考 Word 中的颜色枚举类型: https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
+        # 更多颜色请参考 Word 中的颜色枚举类型：https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
         # add_citation_cross_ref_hook(word, is_numbered=False, color=0)
 
         # set_container_title_italic 用于控制是否修正参考文献表中没有正确设置为斜体的名称
@@ -301,4 +301,5 @@ if __name__ == '__main__':
 - 当你选择 Unlink Citations 时，添加的所有超链接会失效。
 
 [^1]: 来源添加
+
 [^2]: [Word: Possibility to link references and bibliography in a document? -  Zotero Forums](https://forums.zotero.org/discussion/comment/324312/#Comment_324312)

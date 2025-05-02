@@ -18,7 +18,7 @@ Zotero PDF Translate 插件设置小牛翻译接口，注意请直接输入 API�
 
 ## 3. 100 万翻译流量赠送
 
-![扫码获取100万流量](../../../assets/images/zotero-plugin-translate/niutrans-3.png)
+![扫码获取 100 万流量](../../../assets/images/zotero-plugin-translate/niutrans-3.png)
 
 扫描关注公众号，绑定好账号后就可领取 100 万翻译流量。
 

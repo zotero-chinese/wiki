@@ -23,7 +23,7 @@ const files = globSync("**/*.{jpg,jpeg,png,webp}", {
 }).sort((a, b) => a.localeCompare(b));
 
 if (files.length === 0) {
-  console.log("未发现图片.");
+  console.log("未发现图片。");
   process.exit(0);
 }
 
@@ -82,7 +82,7 @@ await Promise.all(
       .createHash("sha1")
       .update(await fs.readFile(fullPath))
       .digest("hex");
-  })
+  }),
 );
 
 await fs.writeFile(cacheFile, JSON.stringify(cache, null, 2));
@@ -115,7 +115,7 @@ if (compressed.length === 0) {
       原大小: formatSize(orgSize),
       新大小: formatSize(newSize),
       压缩率: `${percent}%`,
-    }))
+    })),
   );
 }
 

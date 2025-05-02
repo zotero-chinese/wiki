@@ -60,7 +60,7 @@ box.tabpanels.append(panel);
 
 ReaderInstance 对象的 `_iframeWindow` 属性是阅读器的 `window` 对象，也就是在网页版所看到的内容，它包含了整个 pdf 阅读器的 document 对象与 wrappedJSObject 字段。
 
-通过调用 `._iframeWindow.wrappedJSObject` 可在阅读器命名空间外访问其局部变量，其中的方法有 `zoteroCopyImage` 和 `zoteroSaveImageAs` 等。同时他包含了 `PDFViewerApplication` 对象.
+通过调用 `._iframeWindow.wrappedJSObject` 可在阅读器命名空间外访问其局部变量，其中的方法有 `zoteroCopyImage` 和 `zoteroSaveImageAs` 等。同时他包含了 `PDFViewerApplication` 对象。
 
 该部分源码在 [pdf-reader/src at master · Zotero/pdf-reader](https://github.com/zotero/pdf-reader/tree/master/src)
 
@@ -101,7 +101,7 @@ let items = (await pdfPage.getTextContent()).items;
 }
 ```
 
-这里的 `item.chars` 记录了 `item.str` 的每个字符对应的渲染信息。除了宽高外，`item.transform` 还提供了(`x=item.transform[4]`, `y=item.transform[5]`)位置信息。这个位置以 pdf 页面左下角为原点。
+这里的 `item.chars` 记录了 `item.str` 的每个字符对应的渲染信息。除了宽高外，`item.transform` 还提供了 (`x=item.transform[4]`, `y=item.transform[5]`) 位置信息。这个位置以 pdf 页面左下角为原点。
 
 根据 pdf 页面内的文字可以解析出所有参考文献，详见：[GitHub - MuiseDestiny/Zotero-reference: Zotero 插件，侧边栏显示正在阅读文献的所有参考文献](https://github.com/MuiseDestiny/zotero-reference)
 
@@ -214,7 +214,7 @@ class CopyHelper {
     const container = imgTools.decodeImageFromBuffer(
       buffer,
       buffer.length,
-      channel.contentType
+      channel.contentType,
     );
 
     this.transferable.addDataFlavor(channel.contentType);
@@ -226,7 +226,7 @@ class CopyHelper {
     this.clipboardService.setData(
       this.transferable,
       null,
-      Components.interfaces.nsIClipboard.kGlobalClipboard
+      Components.interfaces.nsIClipboard.kGlobalClipboard,
     );
   }
 }
@@ -249,14 +249,14 @@ popMsg.changeHeadline("[Error]", "", "Chartero");
 popMsg.addDescription("----------");
 
 let prog = new popMsg.ItemProgress("chrome://zotero/skin/cross.png", "No!");
-prog.setProgress(100); // 默认0是灰色图标，100是正常图标，其他是进度条
+prog.setProgress(100); // 默认 0 是灰色图标，100 是正常图标，其他是进度条
 popMsg.addDescription('<a href="http://github.com">link</a>');
 
 // 指定父元素实现缩进
 let prog1 = new popMsg.ItemProgress(
   "chrome://chartero/skin/bookmark.png",
   "hello",
-  prog
+  prog,
 );
 
 popMsg.show();

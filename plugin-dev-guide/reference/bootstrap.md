@@ -75,7 +75,7 @@ function shutdown() {
 
 ## 样例
 
-关于 `bootstrap.js` 的样例，可参考前章提到的插件框架。它将插件的根对象注册到全局变量 `Zotero` 中，在任何引入了 Zotero 的位置均可使用。 或参考 Zutilo 插件。它将插件的根对象注册为一个全局变量。缺陷是在非主窗口内引入插件代码将较为复杂。
+关于 `bootstrap.js` 的样例，可参考前章提到的插件框架。它将插件的根对象注册到全局变量 `Zotero` 中，在任何引入了 Zotero 的位置均可使用。或参考 Zutilo 插件。它将插件的根对象注册为一个全局变量。缺陷是在非主窗口内引入插件代码将较为复杂。
 
 - [Zotero-addon-template/bootstrap.js at bootstrap · windingwind/Zotero-addon-template](https://github.com/windingwind/zotero-addon-template/blob/main/addon/bootstrap.js)
 - [Zutilo/bootstrap.js at master · wshanks/Zutilo](https://github.com/wshanks/Zutilo/blob/master/addon/bootstrap.js)

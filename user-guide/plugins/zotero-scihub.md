@@ -40,7 +40,7 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 ::: tip
 
-该插件只适用于 Zotero 7， Zotero 6 请使用 [Zotero-scihub](#zotero-scihub).
+该插件只适用于 Zotero 7，Zotero 6 请使用 [Zotero-scihub](#zotero-scihub).
 
 :::
 
@@ -78,7 +78,7 @@ Zotero-scipdf 插件利用了 Zotero 内自带的 [PDF resolvers](https://www.zo
 
 ::: tip
 
-该插件只适用于 Zotero 6 ，Zotero 7 请使用 [Zotero-scipdf](#zotero-scipdf).
+该插件只适用于 Zotero 6，Zotero 7 请使用 [Zotero-scipdf](#zotero-scipdf).
 
 :::
 
@@ -103,7 +103,7 @@ Zotero-scipdf 插件利用了 Zotero 内自带的 [PDF resolvers](https://www.zo
 
 ![连接至服务器时发生错误](../../assets/images/zotero-plugin-scihub/scihub报错_2.png)
 
-自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0 ，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Sci-Hub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
+自 2024 年 1 月 23 日起，Sci-Hub 的部分域名被劫持到了 0.0.0.0，导致国内用户暂时无法直接搜索。请在插件设置中更新至最新的 Sci-Hub 镜像地址，镜像地址详见 [插件介绍](#插件介绍)。
 
 ::: warning
 
@@ -113,7 +113,7 @@ Zotero-scipdf 插件利用了 Zotero 内自带的 [PDF resolvers](https://www.zo
 
 ## 自定义 PDF Resolvers
 
-[PDF Resolvers](https://www.zotero.org/support/kb/custom_pdf_resolvers)可以通过修改配置中的 `extensions.zotero.findPDFs.resolvers` （首选项 - 配置编辑器）进行配置。该值应为一个包含配置对象数组的 JSON 字符串 ，支持 HTM L 和 JSON 格式的来源。
+[PDF Resolvers](https://www.zotero.org/support/kb/custom_pdf_resolvers)可以通过修改配置中的 `extensions.zotero.findPDFs.resolvers` （首选项 - 配置编辑器）进行配置。该值应为一个包含配置对象数组的 JSON 字符串，支持 HTM L 和 JSON 格式的来源。
 
 ::: warning 谨慎使用此方法
 
@@ -127,7 +127,7 @@ Zotero-scipdf 插件利用了 Zotero 内自带的 [PDF resolvers](https://www.zo
 
    ![编辑器](../../assets/images/zotero-编辑器.png)
 
-2. 弹出如下图所示的对话框。 点击`I accept the risk`
+2. 弹出如下图所示的对话框。点击`I accept the risk`
 
    ![同意承担风险](../../assets/images/zotero-我同意承担风险.png)
 

@@ -22,7 +22,7 @@
 
 访问 [https://fanyi-api.baidu.com/product/11](https://fanyi-api.baidu.com/product/11)，直接点击下方立即使用：
 
-![开通通用文本翻译API](../../../assets/images/zotero-plugin-translate/baidu-4.png)
+![开通通用文本翻译 API](../../../assets/images/zotero-plugin-translate/baidu-4.png)
 
 点击之后可能出现验证（手机或实名制认证），请按照说明进行验证，提升免费额度。
 
@@ -40,7 +40,7 @@
 
 访问 [https://fanyi-api.baidu.com/choose](https://fanyi-api.baidu.com/choose) ，选择通用文本翻译，点下一步：
 
-![通用文本翻译API开通](../../../assets/images/zotero-plugin-translate/baidu-8.png)
+![通用文本翻译 API 开通](../../../assets/images/zotero-plugin-translate/baidu-8.png)
 
 ![开通高级版](../../../assets/images/zotero-plugin-translate/baidu-9.png)
 
