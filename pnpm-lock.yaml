@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@zotero-chinese/markdownlint-config': link:../configs/packages/markdownlint-config
-  '@zotero-chinese/prettier-config': link:../configs/packages/prettier-config
-
 importers:
 
   .:
@@ -22,11 +18,11 @@ importers:
         specifier: 22.13.14
         version: 22.13.14
       '@zotero-chinese/markdownlint-config':
-        specifier: link:../configs/packages/markdownlint-config
-        version: link:../configs/packages/markdownlint-config
+        specifier: ^1.0.4
+        version: 1.0.4
       '@zotero-chinese/prettier-config':
-        specifier: link:../configs/packages/prettier-config
-        version: link:../configs/packages/prettier-config
+        specifier: ^1.0.4
+        version: 1.0.4(prettier@3.5.3)
       autocorrect-node:
         specifier: ^2.14.0
         version: 2.14.0
@@ -874,6 +870,12 @@ packages:
   '@vueuse/shared@12.8.2':
     resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
 
+  '@zotero-chinese/markdownlint-config@1.0.4':
+    resolution: {integrity: sha512-K/uXyQPd1FLB3EQTTpd9grSXsWZXByljrWJmfS8twUDDJV+1M3dPj0ke/6VfucdPLKNfUGyhNOwTgVBfK1xG9g==}
+
+  '@zotero-chinese/prettier-config@1.0.4':
+    resolution: {integrity: sha512-B34pHixX/evsH5hF7BTMsXZZWj2Z4rZiYYSsjYUKbJJhzicr3lM1l6fs9zueRbHCbGRHl0KRDsWjuv9XyT06yg==}
+
   algoliasearch@5.23.4:
     resolution: {integrity: sha512-QzAKFHl3fm53s44VHrTdEo0TkpL3XVUYQpnZy1r6/EHvMAyIg+O4hwprzlsNmcCHTNyVcF2S13DAUn7XhkC6qg==}
     engines: {node: '>= 14.0.0'}
@@ -1399,6 +1401,12 @@ packages:
 
   preact@10.26.5:
     resolution: {integrity: sha512-fmpDkgfGU6JYux9teDWLhj9mKN55tyepwYbxHgQuIxbWQzgFg5vk7Mrrtfx7xRxq798ynkY4DDDxZr235Kk+4w==}
+
+  prettier-plugin-autocorrect@0.4.2:
+    resolution: {integrity: sha512-OBC/Z8+rTAOS7kjbOznFqk2f+7g37qLO3MGpe4E/MR5tlwiWwsO1I9AFs8Ipi0RL9WxGTXponD89YPnQEfKG1w==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      prettier: ^3.0.3
 
   prettier@3.5.3:
     resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
@@ -2295,6 +2303,14 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@zotero-chinese/markdownlint-config@1.0.4': {}
+
+  '@zotero-chinese/prettier-config@1.0.4(prettier@3.5.3)':
+    dependencies:
+      prettier-plugin-autocorrect: 0.4.2(prettier@3.5.3)
+    transitivePeerDependencies:
+      - prettier
+
   algoliasearch@5.23.4:
     dependencies:
       '@algolia/client-abtesting': 5.23.4
@@ -2960,6 +2976,11 @@ snapshots:
       source-map-js: 1.2.1
 
   preact@10.26.5: {}
+
+  prettier-plugin-autocorrect@0.4.2(prettier@3.5.3):
+    dependencies:
+      autocorrect-node: 2.14.0
+      prettier: 3.5.3
 
   prettier@3.5.3: {}
 
