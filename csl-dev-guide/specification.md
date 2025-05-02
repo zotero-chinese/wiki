@@ -30,7 +30,7 @@ updated: 2023-07-22 20:49:04
 
 ## 术语
 
-::: note 译者注
+::: info 译者注
 
 本节是英文文档中对所用情态动词的说明，本文已经将这些单词翻译为中文，读者可以直接跳过这部分。
 
@@ -38,7 +38,7 @@ updated: 2023-07-22 20:49:04
 
 本文涉及的情态动词 MUST、MUST NOT、REQUIRED、SHALL、SHALL NOT、SHOULD、SHOULD NOT、RECOMMENDED、MAY 和 OPTIONAL 的含义按照 [IETF RFC 2119](http://tools.ietf.org/html/rfc2119) 中的描述来理解。
 
-::: note IETF RFC 2119
+::: info IETF RFC 2119
 
 国际互联网工程任务组（[The Internet Engineering Task Force](http://www.ietf.org/)，IETF）是一个致力于推动互联网可持续发展的国际组织。意见征求稿（[Request for Comments](https://www.ietf.org/standards/rfcs/)，RFC）是由 IETF 发布的技术文档，其中许多互联网技术协议已在互联网技术领域得到广泛应用。
 
@@ -60,7 +60,7 @@ updated: 2023-07-22 20:49:04
 
 CSL XML 命名空间的 URI 是 <http://purl.org/net/xbiblio/csl>。
 
-::: note URI 和 URL
+::: info URI 和 URL
 
 统一资源标识符（Uniform Resource Identifier，URI），是标识资源的字符序列，所谓「资源」既可以是实际存在的物理资源，也可以是虚拟的互联网资源，一个特定的 URI 对应一个确定的资源。
 
@@ -93,7 +93,7 @@ CSL 样式是有效的 XML，但是对于那些旨在输出文本的属性，CSL
 - year-suffix-delimiter
 - value
 
-::: note 属性值规范化
+::: info 属性值规范化
 
 XML 是对格式要求较为严格的标记语言，万维网联盟（The World Wide Web Consortium，W3C）在 [XML 1.0 推荐标准](https://www.w3.org/TR/xml/#AVNormalize) 和 [XML 1.1 推荐标准](https://www.w3.org/TR/2006/REC-xml11-20060816/#AVNormalize) 中要求 XML 的属性值需要满足一系列规范，其中提到：
 
@@ -107,7 +107,7 @@ XML 是对格式要求较为严格的标记语言，万维网联盟（The World 
 
 有 3 种 CSL 文件：独立样式和从属样式（都使用 `.csl` 作为扩展名），以及本地化文件（名为 `locales-xx-XX.xml`，其中 `xx-XX` 表示语言及其方言，例如 `en-US` 表示美式英语）。
 
-::: note 译者注
+::: info 译者注
 
 这里的「方言」主要是依据世界各地区的词汇、字型和语法进行划分的。例如中国台湾地区使用繁体字，词汇习惯和大陆地区也有所不同，就划分为中文的一种方言（`zh-TW`）；除特别行政区外，中国各省市的口音虽有差异，但正式的书面语使用相同的词汇、字型和语法（即普通话），因此划分为同一种「方言」（`zh-CN`）。
 
@@ -121,7 +121,7 @@ XML 是对格式要求较为严格的标记语言，万维网联盟（The World 
 
 从属样式是独立样式的别名（alias），其内容仅限于样式元数据，不包括任何格式指令（唯一的例外是：从属样式可以重新指定样式区域）。
 
-::: note 译者注
+::: info 译者注
 
 这里提到的「别名」并不意味着「从属样式就是独立样式的另一种叫法」。从属样式和独立样式是两个不同的概念，它们的代码结构也不同，但任何一个从属样式总是对应一个独立样式，并且采用那个独立样式的格式指令。因此从使用效果来看，某个从属样式就如同它所对应的那个独立样式。
 
@@ -133,7 +133,7 @@ XML 是对格式要求较为严格的标记语言，万维网联盟（The World 
 
 每个本地化文件包含一系列对某种特定方言的本地化数据（术语翻译、本地化日期格式以及语法选项）。
 
-::: note 译者注
+::: info 译者注
 
 本地化文件使同一个 CSL 样式适用不同的语言环境，比如在中文环境中使用，中文的本地化文件可以将英文中的 `et al.` 替换为 `等` 。
 
@@ -147,7 +147,7 @@ XML 是对格式要求较为严格的标记语言，万维网联盟（The World 
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-::: note XML 声明的格式
+::: info XML 声明的格式
 
 XML 声明不属于 XML 元素，故其书写格式与元素有所不同，既不是 `<atg>…</tag>` 这样成对的结构，也不是 `<tag/>` 这样的自闭合结构。需要注意，XML 声明必须包含版本和编码属性，并且作为 XML 文件的第一个非空行出现。
 
@@ -165,7 +165,7 @@ XML 声明不属于 XML 元素，故其书写格式与元素有所不同，既�
 
 决定样式的 [引注格式](./primer.md#csstyle-根元素) 是 in-text 风格（值 `in-text`）还是 note 风格（值 `note`）。
 
-::: note 译者注
+::: info 译者注
 
 in-text 表示引注在正文中，note 则表示引注不在正文中，可能是脚注等。
 
@@ -365,7 +365,7 @@ zh：中文
 
 下面是一个实例：引用中包含条目标题，当条目类型为 `book` 时，标题以意大利体渲染。
 
-::: note Italics 和 Slanted
+::: info Italics 和 Slanted
 
 由于「意大利体」（Italics）风格的字体略微倾斜，因而又常常被称为「斜体」。但「意大利体」和「斜体」（Slanted）之间有一些区别，详细讨论可参考 [此处](https://tex.stackexchange.com/questions/68931/what-is-the-difference-between-italics-and-slanted-tex)。简而言之，「意大利体」是一种接近手写的字体风格，类似中文里的「楷体」，与之相提并论的「罗马体」则类似中文里的「宋体」，而「斜体」仅表示在某种字体的基础上增加倾斜效果。
 
@@ -425,7 +425,7 @@ zh：中文
 </style>
 ```
 
-::: note HTML 字符实体
+::: info HTML 字符实体
 
 在上面的例子中，你可能注意到 `&amp;` 这段奇怪的文本，它其实是一个 [HTML 字符实体](https://developer.mozilla.org/zh-CN/docs/Glossary/Entity)。XML 和 HTML 等文件中使用一些字符（如 `<`、`>`等）来编写代码，但有时我们不得不显示这些字符，为了避免和正常的代码产生混淆，需要用 HTML 字符实体来代表这些字符，`&amp;` 就是字符 `&`对应的 HTML 字符实体。如果你编写的 CSL 样式文件无法被正常解析，可以排查一下是不是没有正确使用 HTML 字符实体来转述特殊字符。
 
@@ -464,7 +464,7 @@ B. 本地化文件
 
 一旦某个可本地化单元被找到，回退就会停止。对于术语来说，当它们被设置为空字符串（例如 `<term name="and"/>` 或者 `<term name="and"></term>`）的时候也满足这个规则。地区回退在术语形式的回退之前进行（见 [术语](#术语)）。
 
-::: note Fallback
+::: info Fallback
 
 Fallback（回退）是一种经常在编程中使用的机制，即准备一系列方案（A、B、C…），并预先设定方案的优先级，当 A 方案失效时就自动采用 B 方案……依此类推。
 
@@ -558,7 +558,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 当进行到 [地区回退](#地区回退)，`ordinal` 术语、`ordinal-00` 到 `ordinal-99` 的术语的表现和其他术语有所不同。其他术语可以被单独地（重新）定义，但通过 `cs:locale` （重新）定义的任何序数术语都将替换先前已经定义过的序数术语。
 
-::: note 译者注
+::: info 译者注
 
 以上关于序数后缀的特性主要是考虑到了英语中序数「1st, 2nd, 3rd, nth…」的表达方式。英语的数字 - 序数转换已经内置在 CSL 的本地化文件中，但中文的序数采用「第」作为前缀，因而无法用本节特性来实现，制作中文样式的读者可以不必细究以上内容。
 
@@ -1690,7 +1690,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 I 学科分类
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1723,7 +1723,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 II 术语
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1842,7 +1842,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 III 文献类型
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -1884,7 +1884,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 ## 附录 IV 变量
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -2152,7 +2152,7 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 ## 附录 V 页码范围格式
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
@@ -2182,7 +2182,7 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 ## 附录 VI 链接
 
-::: note WIP
+::: info WIP
 此小节正在施工中
 :::
 
