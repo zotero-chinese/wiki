@@ -95,7 +95,7 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
 
 :::
 
-::: warning「更新转换器」和「重置转换器」是不同的！
+::: warning 注意「更新转换器」和「重置转换器」是不同的！
 
 注意：正常情况下，更新转换器时不需要点设置页下面的「数据库维护」→「重置转换器 (Reset Translators)」按钮，这会删除整个 translators 文件夹。
 
