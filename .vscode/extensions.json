@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "esbenp.prettier-vscode",
+    "huacnlee.autocorrect",
     "davidanson.vscode-markdownlint",
     "yzhang.markdown-all-in-one",
     "SimonSiefke.svg-preview"

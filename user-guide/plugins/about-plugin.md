@@ -18,6 +18,7 @@ updated: 2023-11-28 15:29:00
 
 - 官方插件收录链接：<https://www.zotero.org/support/plugins>
 - Zotero 中文社区插件商店：[https://zotero-chinese.com/plugins/](https://zotero-chinese.com/plugins/)
+
 - 插件的 GitHub 主页
 
   ::: details 点击此处了解 如何在 GitHub 上下载 Zotero 插件
@@ -46,7 +47,7 @@ updated: 2023-11-28 15:29:00
 
 ::: tip 火狐浏览器用户请选择另存为
 
-插件的后缀名为 `.xpi` ， 如果下载到后缀为 `.xpi` 的文件，不要解压，解压后会导致插件无法安装。
+插件的后缀名为 `.xpi` ，如果下载到后缀为 `.xpi` 的文件，不要解压，解压后会导致插件无法安装。
 
 `.xpi` 也是火狐浏览器的插件后缀，因此火狐浏览器无法直接通过点击链接进行下载，需要右击链接，选择另存为，才可将插件保存至本地。
 
@@ -58,11 +59,17 @@ Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，
 
 :::
 
+::: tip
+
+你可以通过 [插件市场（Add-on Market for Zotero）](./zotero-addons.md) 更便捷地安装、更新和卸载插件。不过，您仍需根据以下教程完成该插件的安装步骤。
+
+:::
+
 ## 安装插件
 
-依次点击 「Zotero 菜单栏」->「工具（Tools）」->「插件（Plugins）」，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
+依次点击「Zotero 菜单栏」->「工具（Tools）」->「插件（Plugins）」，然后将下载的 xpi 文件拖入插件窗口，即可完成安装。
 
-或者点击 「右上角的齿轮」->「Install plugin From File...」->「选择刚刚下载的 xpi 文件」，即可安装成功。
+或者点击「右上角的齿轮」->「Install plugin From File...」->「选择刚刚下载的 xpi 文件」，即可安装成功。
 
 ![安装插件](../../assets/images/zotero-plugin-install.png)
 
@@ -76,7 +83,7 @@ Zotero 6（上一版本）和 Zotero 7（最新版本）的插件互不兼容，
 
 ![升级插件](../../assets/images/zotero-plugin-update.png)
 
-依次点击 「Zotero 菜单栏」->「工具（Tools）」->「插件（Plugins）」->「右上角的齿轮」->「Check for Updates」 后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
+依次点击「Zotero 菜单栏」->「工具（Tools）」->「插件（Plugins）」->「右上角的齿轮」->「Check for Updates」后 Zotero 会对插件的版本进行检查，并自动对插件进行更新。
 
 ::: tip
 

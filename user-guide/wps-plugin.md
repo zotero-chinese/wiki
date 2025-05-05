@@ -28,29 +28,29 @@ wangrui5015修改版本的WPS-Zotero插件地址：[https://gitee.com/wangrui501
 
 ## 1. 安装插件
 
-因为 WPS 接口的一些限制，本插件的使用还需要使用到**Python3**，Linux 系统内一般默认安装了 Python3， 使用 Windows 的同学，需要提前安装好 Python3。使用 Windows 的同学从下面的 `1.1 Windows 下 Python3 环境的安装` 部分开始，使用 Linux 的同学可直接跳过这部分，看后面的安装部分就行。
+因为 WPS 接口的一些限制，本插件的使用还需要使用到**Python3**，Linux 系统内一般默认安装了 Python3，使用 Windows 的同学，需要提前安装好 Python3。使用 Windows 的同学从下面的 `1.1 Windows 下 Python3 环境的安装` 部分开始，使用 Linux 的同学可直接跳过这部分，看后面的安装部分就行。
 
 ### 1.1 Windows 下 Python3 环境的安装
 
 可能有一些同学的电脑里已经安装 Python3，可以按 `WIN + R`，在弹出的窗口输入 `cmd`
 
-![运行CMD](../assets/images/run-cmd.png)
+![运行 CMD](../assets/images/run-cmd.png)
 
 点击确认后，再出现的小黑屏上输入 `python --version`
 
-![查看Python版本](../assets/images/run-python-version.png)
+![查看 Python 版本](../assets/images/run-python-version.png)
 
 注意看，只要出现 `Python 3.xx.xx`，就说明 Python3 已经正确安装，直接进入下一步。如果出现其他的，说明 Python3 未正确安装，请按下面的步骤进行安装。
 
-下载 Python3 安装包，[64 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)，[32 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5.exe)，不知道自己电脑是几位的，就选 64 位。如果上面两个链接下载太慢 (不开代理 ，官网下载速度慢已经 10 多年了)，可试试安装 [miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py39_23.5.2-0-Windows-x86_64.exe)。
+下载 Python3 安装包，[64 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)，[32 位下载地址](https://www.python.org/ftp/python/3.11.5/python-3.11.5.exe)，不知道自己电脑是几位的，就选 64 位。如果上面两个链接下载太慢 (不开代理，官网下载速度慢已经 10 多年了)，可试试安装 [miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py39_23.5.2-0-Windows-x86_64.exe)。
 
 这里以 miniconda 示例，安装时默认设置，除了下面截图的设置，要记得打勾，把 Python 添加到环境变量里
 
-![安装miniconda](../assets/images/miniconda-install.png)
+![安装 miniconda](../assets/images/miniconda-install.png)
 
 安装了官网 Python 的同学，需要手动将 Python 添加到环境变量里
 
-![安装Python](../assets/images/python-install.png)
+![安装 Python](../assets/images/python-install.png)
 
 安装成功后，在小黑屏运行 `python --version`，出现 `Python 3.xx.xx` 说明安装成功。
 
@@ -72,7 +72,7 @@ Windows 系统直接双击 `windows安装与卸载.bat` 安装文件，你可能
 
 运行后出现的提示窗口，输入 `1`，并按确认，进行安装
 
-![选择1](../assets/images/wps/wps-install.png)
+![选择 1](../assets/images/wps/wps-install.png)
 
 安装成功的提示
 
@@ -95,7 +95,7 @@ WPS 插件的按钮与 Word 插件类似
 - Export，导出其他文本编辑器兼容的文本格式
 - About，插件相关信息
 
-![WPS插件UI按钮](../assets/images/wps/wps-plugin-ui-buttons.png)
+![WPS 插件 UI 按钮](../assets/images/wps/wps-plugin-ui-buttons.png)
 
 具体的操作过程，请参考 [在 Word 中插入参考文献](./ms-word-plugin.md)
 
@@ -103,11 +103,11 @@ WPS 插件的按钮与 Word 插件类似
 
 如果你之前安装把 Word 里的 Zotero 插件强行安装到 WPS，那样出现多个的 Zotero 选项
 
-![多个Zotero选择](../assets/images/wps/wps-plugin-ui.png)
+![多个 Zotero 选择](../assets/images/wps/wps-plugin-ui.png)
 
 先打开 `C:\Users\你的用户名\AppData\Roaming\kingsoft\wps` 目录 (注意用户名换成你自己的)，找到 `startup` 目录，删掉里面的 `zotero.dotm` 文件，这个文件是直接从 Zotero 的 Word 插件里复制到 WPS 里，需要 WPS 有 VBA 环境，现在已经不需要了，可以删掉。
 
-![WPS插件安装路径](../assets/images/wps/wps-vba-plugin-install-path.png)
+![WPS 插件安装路径](../assets/images/wps/wps-vba-plugin-install-path.png)
 
 ## 4. 可能遇到的问题
 

@@ -27,7 +27,7 @@ Feed 是发现新研究的好方法。通过 Feed，您可以订阅来自期刊�
 
 #### Zotero 6
 
-在 Zotero 主界面，左上角工具栏选择 ![群组icon](../assets/images/feed-1.png) - 新建订阅 - 从网址...
+在 Zotero 主界面，左上角工具栏选择 ![群组 icon](../assets/images/feed-1.png) - 新建订阅 - 从网址...
 
 ![Zotero 6 新建订阅](../assets/images/feed-2.png)
 
@@ -71,7 +71,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 ![添加到文库](../assets/images/feed-8.png)
 
-点开 Zotero 某一期刊/RSS 订阅内容，点击具体条目，看到右侧信息栏，点击![添加到文库icon](../assets/images/feed-9.png) 中的 ▽ 倒三角图标，选择你想要保存到的本地文库文件夹 📂/在线群组文件夹 📂，再点击"添加到 XXXX"，即可从订阅中添加到自己的文献库/某个群组文库中（可以同时添加到若干个文库）。
+点开 Zotero 某一期刊/RSS 订阅内容，点击具体条目，看到右侧信息栏，点击![添加到文库 icon](../assets/images/feed-9.png) 中的 ▽ 倒三角图标，选择你想要保存到的本地文库文件夹 📂/在线群组文件夹 📂，再点击"添加到 XXXX"，即可从订阅中添加到自己的文献库/某个群组文库中（可以同时添加到若干个文库）。
 
 ### 订阅界面右键功能介绍
 
@@ -103,7 +103,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 在期刊主页左上角找到并点击「RSS 订阅」
 
-![知网创建rss](../assets/images/feed-13.png)
+![知网创建 rss](../assets/images/feed-13.png)
 
 复制浏览器地址栏中的网址
 
@@ -111,7 +111,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 在复制网址后，你会得到类似 `https://navi.cnki.net/knavi/rss/SHXJ` 的链接。由于 Zotero 无法识别该链接，需要将网址中的 `navi.cnki.net` 修改为 `rss.cnki.net`，即修改为`https://rss.cnki.net/knavi/rss/SHXJ` 。修改完成后，按照[新建订阅](./feed.md#新建订阅)步骤填入并设置即可。
 
-![Zotero订阅知网](../assets/images/feed-订阅知网.png)
+![Zotero 订阅知网](../assets/images/feed-订阅知网.png)
 
 #### 万方数据库
 
@@ -133,9 +133,9 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 ### 英文期刊订阅
 
-一般而言英文期刊/数据库都在期刊页面提供了 RSS 订阅选项，只需要找 RSS 图标![RSS图标](../assets/images/feed-19.png) ，即可获取订阅网址（RSS 地址）
+一般而言英文期刊/数据库都在期刊页面提供了 RSS 订阅选项，只需要找 RSS 图标![RSS 图标](../assets/images/feed-19.png) ，即可获取订阅网址（RSS 地址）
 
-打开 Annual Review of Psychology 网页，找到右上角的 RSS feed ![RSS图标](../assets/images/feed-19.png)
+打开 Annual Review of Psychology 网页，找到右上角的 RSS feed ![RSS 图标](../assets/images/feed-19.png)
 符号，点击打开
 
 ![Annual Review of Psychology](../assets/images/feed-20.png)
@@ -152,7 +152,7 @@ Zotero 的订阅内容并不会保存在个人文库中，也不可以直接引�
 
 如下图示，点击搜索框下面的"Create RSS"，进入该关键词订阅的设置界面
 
-![PubMed订阅](../assets/images/feed-23.png)
+![PubMed 订阅](../assets/images/feed-23.png)
 
 在设置界面，修改为合适"Number of items displayed"（追踪的文献条目数量），点击"Create RSS"，生成"RSS Feed link"后点击 copy，将其按照"一、Zotero 订阅设置"的方法填入 Zotero，即可订阅追踪该关键词的相关文献进展。
 
@@ -175,12 +175,12 @@ RSS、Miniflux、FreshRSS、Feedly、Inoreader、Feedbin、The Old Reader、Feed
 
 RSSHub Radar 浏览器扩展下载与安装（含教程）：GitHub 主页、Gitee 镜像主页、RSSHub Radar 与 Zotero 联动。
 
-![bili为例](../assets/images/feed-25.png)
+![bili 为例](../assets/images/feed-25.png)
 
 打开你想关注的 UP 主（以 sharestuff 为例），点击浏览器右上角的 RSSHub
 Radar 插件图标
 
-![RSSHUB订阅bili](../assets/images/feed-26.png)
+![RSSHUB 订阅 bili](../assets/images/feed-26.png)
 
 选择所需要订阅的内容，点击"复制"，进入 Zotero 进行 URL 订阅即可。
 

@@ -19,7 +19,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 下载工作流信息
-        uses: dawidd6/action-download-artifact@v7
+        uses: dawidd6/action-download-artifact@v9
         with:
           workflow_conclusion: success
           run_id: ${{ github.event.workflow_run.id }}
@@ -33,7 +33,7 @@ jobs:
           echo "PR_NUM=$(cat pr-num/pr_num)" >> $GITHUB_ENV
 
       - name: 下载构建内容
-        uses: dawidd6/action-download-artifact@v7
+        uses: dawidd6/action-download-artifact@v9
         with:
           workflow_conclusion: success
           run_id: ${{ github.event.workflow_run.id }}
@@ -96,7 +96,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
       - name: 下载构建内容 (工作流信息)
-        uses: dawidd6/action-download-artifact@v7
+        uses: dawidd6/action-download-artifact@v9
         with:
           workflow_conclusion: success
           run_id: ${{ github.event.workflow_run.id }}

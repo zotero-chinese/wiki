@@ -26,13 +26,13 @@ updated: 2023-09-19 23:23:59
 
 从操作系统的任务栏/程序面板打开 Zotero。
 
-### Zotero 是做什么的?
+### Zotero 是做什么的？
 
 ![image](../assets/images/quick-start/快速上手-zotero可以做什么.png)
 
 Zotero 是一个文献管理软件。它旨在存储、管理和引用参考书目，例如书籍和文章。在 Zotero 中，这些引用中的每一个都构成一个条目。更广泛地说，Zotero 是收集和组织研究信息和资源的强大工具。
 
-### 有何种类型的条目?
+### 有何种类型的条目？
 
 ![image](../assets/images/quick-start/快速上手-条目类型.png)
 
@@ -56,7 +56,7 @@ Zotero 是一个文献管理软件。它旨在存储、管理和引用参考书�
 
 [![image](../assets/images/quick-start/快速上手-标签.png)](https://www.zotero.org/support/collections_and_tags#tags)
 
-可以为条目分配 [标签](https://www.zotero.org/support/collections_and_tags#tags)。标签由用户命名。可以根据需要为条目分配任意数量的标签。使用左侧窗格底部的标签选择器或通过右侧窗格中任何条目的标签选项卡添加或删除标签。最多可以为 6 个标签分配**颜色**。彩色标签在条目列表中显示，并且可以使用键盘上的数字键快速添加或删除。
+可以为条目分配 [标签](https://www.zotero.org/support/collections_and_tags#tags)。标签由用户命名。可以根据需要为条目分配任意数量的标签。使用左侧窗格底部的标签选择器或通过右侧窗格中任何条目的标签选项卡添加或删除标签。最多可以为 9 个标签分配**颜色**。彩色标签在条目列表中显示，并且可以使用键盘上的数字键快速添加或删除。
 
 ### 搜索
 
@@ -170,7 +170,7 @@ Zotero 还可以将 [引文和参考书目](https://www.zotero.org/support/creat
 
 [![image](../assets/images/quick-start/快速上手-同步.png)](https://www.zotero.org/support/sync)
 
-通过 [Zotero 同步](https://www.zotero.org/support/sync) 在多台计算机上使用 Zotero 。图书馆条目和笔记通过 Zotero 服务器同步（无限存储），而附件同步可以使用 Zotero 服务器或您自己的 WebDAV 服务来同步文件，例如 PDF、图像或音频/视频。
+通过 [Zotero 同步](https://www.zotero.org/support/sync) 在多台计算机上使用 Zotero。图书馆条目和笔记通过 Zotero 服务器同步（无限存储），而附件同步可以使用 Zotero 服务器或您自己的 WebDAV 服务来同步文件，例如 PDF、图像或音频/视频。
 
 ### Zotero Servers
 

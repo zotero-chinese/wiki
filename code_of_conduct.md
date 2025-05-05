@@ -77,7 +77,7 @@ icon: circle-info
 
 ## 参见
 
-本行为准则改编自 [Contributor Covenant][homepage] 2.1 版, 参见 [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1]。
+本行为准则改编自 [Contributor Covenant][homepage] 2.1 版，参见 [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1]。
 
 社区处理方针灵感来源于 [Mozilla's code of conduct enforcement ladder][Mozilla CoC]。
 

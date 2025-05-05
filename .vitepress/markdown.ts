@@ -16,6 +16,15 @@ export const markdown: UserConfig["markdown"] = {
     lazyLoading: true,
   },
   config: (md) => {
+    // 不要在内联代码中使用 Vue 插值语法
+    // https://github.com/vuejs/vitepress/discussions/3724#discussioncomment-8963669
+    // https://github.com/vuejs/vitepress/discussions/480
+    // https://github.com/vuejs/vitepress/issues/559
+    const defaultCodeInline = md.renderer.rules.code_inline!;
+    md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
+      tokens[idx].attrSet("v-pre", "");
+      return defaultCodeInline(tokens, idx, options, env, self);
+    };
     md.use(footnote);
     md.use(mark);
   },

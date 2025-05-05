@@ -6,18 +6,6 @@ updated: 2023-07-22 20:39:20
 
 # CSL 中文文档
 
-> [!warning]
-> 此页面正在施工中。
+此文档是对 [CSL 英文文档](https://docs.citationstyles.org/en/stable/primer.html) 的翻译。它最初由 [ZMAlt](https://github.com/ZMAlt) 维护并发布于 [CSL-chinese documentation](https://csl-chinese.readthedocs.io/en/latest/)，后来 [Zotero Chinese](https://github.com/zotero-chinese) 社区接管了维护工作。
 
-CSL (Citation Style Language) 是一种基于 XML 的语言，用来描述或格式化引用和参考文献目录的开源语言。使用 CSL 的参考文献管理软件包括 Zotero，Mendeley，Papers。
-
-Zotero 文件管理软件开源且简单。CSL 的发展与 Zotero 有一定的关系，Zotero 也是第一个使用 CSL 的文献管理软件。$\LaTeX$ 一直是国际上期刊投稿的主流，但现在的越来越多的国际期刊除提供 $\LaTeX$ 模板外，同时还支持 Word 格式投稿。国内投稿或者各种报告大多要求都是 Word 格式。Zotero 可以在 Word 中生成和 $\LaTeX$ 同样漂亮的引用和参考文献目录。
-
-由 CSL 编写的 style 定义了引用和参考文献目录的格式。Zotero 就是通过 style 来生成指定格式的引用和参考文献目录。据统计，现在已经有超过 9000 个 style，覆盖了大多数的常见的 SCI 期刊。在 Zotero 中能很容易检索到对应期刊的 style。但是即使有这么多的 style，仍然有可能有的期刊没有对应的 style。此外，有的 style 年代久远，已经不符合期刊 author guideline 中的要求，因此，我们需要学习 CSL 来定制需要的 style，至少能在已有的 style 上修改来满足期刊的要求。但是遗憾的是，国内 CSL 的资料几乎没有。
-
-本项目是对 [CSL 英文文档](https://docs.citationstyles.org/en/stable/primer.html) 的翻译。本人能力有限，理解和翻译有误处请大家谅解，同时欢迎 issue 和 pull。
-
-本文档基于 [Welcome to CSL-chinese’s documentation! — CSL-chinese documentation](https://csl-chinese.readthedocs.io/en/latest/) 修改。
-
-> [!caution]
-> 文档中，凡标注 Work in progress 的均为正在施工的页面，无法确保与现有英文文档相一致，无法确保译文修改前后的一致性、准确性，请酌情阅读。
+出版物对参考文献的一系列引注规则构成了其引注样式，CSL 旨在提供一种计算机可读的语言来描述这些规则，从而在文献管理软件（如 [Zotero](https://www.zotero.org/)、[Mendeley](https://www.mendeley.com/)、[Papers](https://www.papersapp.com/)）中自动生成引注。虽然 CSL 已经涵盖多个语言地区的数千种样式，但现实的需求是多样的，如果你没能在 CSL 样式仓库（[官方仓库](https://www.zotero.org/styles) 或 [中文社区仓库](https://zotero-chinese.com/styles/)）中找到合适的样式，而且 [申请新样式](https://zotero-chinese.com/user-guide/citation-styles#%E8%AF%B7%E6%B1%82%E6%96%B0%E6%A0%B7%E5%BC%8F) 的周期太长，那么你可以参考本文档着手修改或创建自己的样式。

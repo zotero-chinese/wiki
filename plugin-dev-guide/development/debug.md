@@ -9,7 +9,7 @@ authors:
 
 ## 通过 Run JavaScript 调试
 
-从 「菜单栏」->「工具」->「开发者」->「Run JavaScript」 打开界面。
+从「菜单栏」->「工具」->「开发者」->「Run JavaScript」打开界面。
 
 在左侧键入代码，点击运行即可在右侧看到输出。
 
@@ -17,8 +17,8 @@ authors:
 
 ## 通过 `Zotero.debug` 输出日志
 
-- 使用 `Zotero.debug` 输出到 「菜单栏」->「帮助」->「输出日志排错」->「查看输出文件」；
-- 使用 `Zotero.log` 输出到 「菜单栏」->「工具」->「开发者」->「Error Console」。
+- 使用 `Zotero.debug` 输出到「菜单栏」->「帮助」->「输出日志排错」->「查看输出文件」；
+- 使用 `Zotero.log` 输出到「菜单栏」->「工具」->「开发者」->「Error Console」。
 
 ::: tip 不推荐使用 `console` 作为调试/日志输出
 
@@ -57,7 +57,7 @@ Zotero 团队正在添加「浏览器工具箱」菜单，以便直接从菜单�
 
 :::
 
-## 通过火狐浏览器远程调试 <Badge text='已弃用' />
+## 通过火狐浏览器远程调试<Badge text='已弃用' />
 
 :::: details 已过时：通过火狐浏览器远程调试连接到 Zotero
 
@@ -69,7 +69,7 @@ Zotero 团队正在添加「浏览器工具箱」菜单，以便直接从菜单�
 
 截止至最后编辑日期，Zotero 底层基于 Firefox 115 ESR。
 
-1. 打开 Zotero Beta，打开 「菜单栏」->「编辑」->「设置」->「高级」->「设置编辑器」，搜索 `debug` 并将 `devtools.debugger.remote-enable` 和 `devtools.debugger.remote-websocket` 设置为 `true`。
+1. 打开 Zotero Beta，打开「菜单栏」->「编辑」->「设置」->「高级」->「设置编辑器」，搜索 `debug` 并将 `devtools.debugger.remote-enable` 和 `devtools.debugger.remote-websocket` 设置为 `true`。
 
 2. 使用 `--debugger` 参数启动 Zotero。
    也可以将启动参数写入快捷方式。

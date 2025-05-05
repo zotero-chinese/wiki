@@ -63,7 +63,7 @@ window.openDialog(
   "chrome://zotero/content/selectItemsDialog.xhtml",
   "",
   "chrome,dialog=no,centerscreen,resizable=yes",
-  io
+  io,
 );
 io.deferred.promise.then(() => console.debug(io));
 ```

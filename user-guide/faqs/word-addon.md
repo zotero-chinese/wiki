@@ -27,13 +27,15 @@ date: 2023-10-04 11:38:09
 
 在 Word 中插入参考文献的基本操作请阅读：[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)。
 
-::: details 视频教程
+:::: details 视频教程
 
 此外，关于 Zotero 参考文献插入及排版的基本教程您还可以观看这个视频：
 
 [Zotero 文献在 Word 中的引用](https://www.bilibili.com/video/BV1ma4y1f7yg/)
 
-其中包括以下问题的解答：
+::: info 视频教程主要内容
+
+视频教程包括以下问题的解答：
 
 1. 如何安装/重新安装 Word 中的 Zotero 工具条（Word 加载项）。
 2. 如何从 Zotero 官方下载参考文献格式。
@@ -42,13 +44,59 @@ date: 2023-10-04 11:38:09
 
 :::
 
-在实际使用中，有一些操作上的小技巧，在这里略作整理：
+在观看视频教程后，仍然建议您阅读[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)，以便更好地理解一些操作技巧和注意事项。
 
-:::: details
+::::
 
 ::: warning
 
-在插入文献之前， **请务必先将 Zotero 里英文论文详细信息中的 `语言/Language` 字段改为** `en` 或 `en-US` 等与文献语言一致的信息，否则在中英文混排时可能会遇到错误。具体方法见后文里 **中英文混排** 部分的内容。
+在继续阅读本文档之前，请务必先仔细阅读[在 Word 中插入参考文献的基础教程](../ms-word-plugin.md)，熟悉 Zotero 的 Word 加载项各个功能的用法。基础教程中涉及到的基础操作，本文档将不再赘述。
+
+:::
+
+## Word 参考文献排版教程
+
+在 Word 中配合 Zotero 插入参考文献时，您可以阅读《Zotero 参考文献排版指南》解决参考文献排版的问题。
+
+下载地址 1：[点击跳转下载页面](https://wwp.lanzoum.com/b02lwj8cf) 提取码：ghfw
+
+下载地址 2：[点击跳转下载页面](https://www.123pan.com/s/3eJyjv-FD6Ch.html) 提取码：3Sk7
+
+::: info Zotero 参考文献排版指南主要内容
+
+《Zotero 参考文献排版指南》包括以下问题的解答：
+
+1. 防止顺序编码的引注断行不良
+2. 修改尾注的字体和段落格式
+3. 修改脚注的字体和段落格式
+4. 将个别字符设为上标、下标或斜体
+5. 脚注有多余的空行
+6. 引注或脚注带有虚下划线
+7. 脚注设置带圈序号、10 以上序号不带圈问题
+8. 设置带方括号的脚注序号
+9. 引注字体大小不一致
+10. 尾注序号后的间隔问题
+11. 尾注词间距问题
+12. 分章节插入尾注
+13. 「交叉引用」或「书签跳转」
+
+:::
+
+::: warning
+
+关于 Word 排版的各类问题（如参考文献列表的各种「空格」和对齐问题），请务必仔细阅读上面的《Zotero 参考文献排版指南》。
+
+本页面后续的文档更多关注 Zotero 的 Word 加载项的使用问题。
+
+:::
+
+## Zotero Word 加载项的使用技巧
+
+在实际使用中，有一些操作上的小技巧，在这里略作整理：
+
+::: warning
+
+在插入文献之前， **请务必先将 Zotero 里英文论文详细信息中的 `语言/Language` 字段改为** `en` 或 `en-US` 等与文献语言一致的信息，否则在中英文混排时可能会遇到错误。具体方法见后文里 **[中英文混排](#中英文混排)** 部分的内容。
 
 :::
 
@@ -64,9 +112,11 @@ date: 2023-10-04 11:38:09
 
 2. 如果你使用搜索框， **输入中文关键词后没有候选项目** ，请 **按一下键盘的空格键** ，然后就有候选项了。
 
-3. 如果你 **在插入完成后想重新修改引用信息** ，请先在 Word 中插好的编号角标中间点一下，使输入光标在角标内（此时角标会变为灰色），然后点 `插入/编辑引注` 按钮即可编辑/增删此处引用的文献。
+3. 如果你 **在插入完成后想重新修改引用的更多信息** ，请使用 [编辑引注](../ms-word-plugin.md#编辑引注) 功能。
 
-![编辑引注](../../assets/images/edit-citation.jpg){width=60%}
+4. 如果你已经在一处引注中引用了多个文献，想要 **删除其中的某篇文献** ，请使用 [编辑引注](../ms-word-plugin.md#编辑引注) 的方式进行删除。 **请不要直接在 Word 中删除角标中的数字中文字** ，这样会导致 Zotero 后续无法更新。
+
+   如果你已经直接编辑了角标文字，可以参照 [使 Zotero 恢复对引文的更新](#使-zotero-恢复对引文的更新) 的方法来恢复，或者删除这一整个引注角标，重新插入这几篇文献。
 
 5. 在 `插入/编辑引注` 过程中，请务必在选择文献过程中 **不要转到其他窗口去翻看查阅** 。如果边翻看边插入，很有可能导致插入失败并报错。如果插入过程中希望查阅信息，你可以先按回车键确认本次插入，待查阅完成后再用第 4 点提醒中的方法编辑/补充引用。
 
@@ -74,9 +124,7 @@ date: 2023-10-04 11:38:09
 
 ![文档设置](../../assets/images/word-document-preferences.png){width=60%}
 
-在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/icons/integration/icon-word-刷新.png) 按钮更新引用信息及编号** 。在 Zotero 6.0 新版本下，这个更新可能非常缓慢，你需要多一点耐心。
-
-::::
+在关闭之后，你 **需要在增删引用项目后手动点 `刷新`![刷新](../../assets/icons/integration/icon-word-刷新.png) 按钮更新引用信息及编号** 。这个更新可能非常缓慢，你需要多一点耐心。
 
 ## Word 段落格式问题
 
@@ -97,7 +145,7 @@ date: 2023-10-04 11:38:09
 [100]     X. Fang, Y. Liu, L. Chen, Y. Cheng, Influence of surface active groups on SO<sub>2</sub> resistance of birnessite for low-temperature NH<sub>3</sub>-SCR, Chem. Eng. J. 399 (2020) 125798. <https://doi.org/10.1016/j.cej.2020.125798>.
 ```
 
-这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在 「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
+这是 Zotero 的一个陈年 Bug，当编号进位时，制表符宽度没有自动调整，需要在「[文档首选项](../ms-word-plugin.md#文档首选项)」中把样式切换为其他任意的，再切换回来，以重新计算制表符宽度。
 
 当然，你也可以通过在 Word 中调整制表符宽度来修复这个问题。
 
@@ -139,7 +187,7 @@ date: 2023-10-04 11:38:09
 
 如上示例在 Zotero 条目信息中对需要为下标的单词两侧分别加上 `<sub>`和`</sub>`，回到在 Word 中点击 `Refresh` 刷新条目信息即可看到下标效果已经成功实现。
 
-![点击`Refresh`刷新条目信息](../../assets/images/word-刷新.png)
+![点击 `Refresh` 刷新条目信息](../../assets/images/word-刷新.png)
 
 ::::
 
@@ -290,11 +338,11 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ### 报错「无法与 Zotero 通讯」
 
-![无法与Zotero通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
+![无法与 Zotero 通讯](../../assets/images/zotero-addon-无法与Zotero通讯.jpg)
 
 遇到该问题时，请确保你的 Zotero 程序处于运行状态
 
-如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开 「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
+如果你的 Zotero 在运行状态，依然遇到该问题，可以通过重新安装加载项来解决：依次打开「编辑」 -> 「设置」 -> 「引用」 -> 「重新安装加载项 Microsoft Word」，然后重新打开 Word。
 
 ![重新安装加载项](../../assets/images/zotero-addon-重新安装加载项.jpg)
 
@@ -302,7 +350,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ::: info
 
-本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice ，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
+本小节在翻译 [官方文档](https://www.zotero.org/support/kb/debugging_broken_documents) 的基础上，进行了再次整合，以 Microsoft Word 为例进行操作。如果您使用的是 Google Docs 或者 LibreOffice，可访问 [官方文档 | 排除文字处理器文档中的错误](https://www.zotero.org/support/kb/debugging_broken_documents) 获取帮助。
 
 :::
 
@@ -361,7 +409,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 ::: warning
 
-所有的引注顺序更改都应在 Word 「引文编辑对话框」中进行，而不是手动修改！
+所有的引注顺序更改都应在 Word「引文编辑对话框」中进行，而不是手动修改！
 
 所有的引注/参考文献表的样式修改都应在 CSL 文件中进行，而不是手动修改！
 
@@ -369,7 +417,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
 
 :::
 
-如果已经点了 「是 yes」，Zotero 不再对这一处引文进行更新，而后续又想要 Zotero 对其更新，可以参照下一节。
+如果已经点了「是 yes」，Zotero 不再对这一处引文进行更新，而后续又想要 Zotero 对其更新，可以参照下一节。
 
 #### 使 Zotero 恢复对引文的更新
 
@@ -402,7 +450,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "type": "article-journal",
         "abstract": "To explore effective way for the complete catalytic degradation of toluene at low temperature, catalysts with diverse activity of adsorbed oxygen (Oads) and lattice oxygen (Olatt) are synthesized by introducing Sr2+ into the birnessite structure. Sr modification highly improved low-temperature catalytic activity and CO2 selectivity of toluene oxidation under moist condition, especially on the BS-7.5 (Sr:Mn = 0.075) catalyst. A series of physiochemical characterizations and DFT calculations identified abundant Olatt with higher activity in Sr-doped birnessite and higher activity of Oads in pure birnessite. In situ DRIFTS analysis further confirmed that activation of Olatt introduced by Sr replacement of Mn governed the reaction process towards continuous deep oxidation of toluene. These findings provide a deeper understanding of the mechanism of toluene degradation and strongly pave a way for improving the complete catalytic oxidation performance of VOCs at low temperature over MnO2 catalysts from the aspect of regulating active oxygen-related properties.",
         "archive": "Q1",
-        "archive_location": "工程技术1区 Top",
+        "archive_location": "工程技术 1 区 Top",
         "call-number": "8.04",
         "collection-title": "无",
         "container-title": "Fuel",
@@ -411,9 +459,9 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "journalAbbreviation": "Fuel",
         "language": "en",
         "license": "8.04",
-        "note": "JCR分区: Q1\n中科院分区升级版: 工程技术1区\n中科院分区基础版: 工程技术2区\n影响因子: 8.04\n5年影响因子: 6.63\nEI: 是",
+        "note": "JCR 分区：Q1\n中科院分区升级版：工程技术 1 区\n中科院分区基础版：工程技术 2 区\n影响因子：8.04\n5 年影响因子：6.63\nEI: 是",
         "page": "124116",
-        "source": "能源与燃料2区 工程：化工1区",
+        "source": "能源与燃料 2 区 工程：化工 1 区",
         "title": "Regulating oxygen species for promoted deep oxidation of toluene: A comparative study of adsorbed oxygen and lattice oxygen",
         "title-short": "Regulating oxygen species for promoted deep oxidation of toluene",
         "volume": "321",
@@ -469,7 +517,7 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "type": "article-journal",
         "abstract": "To explore effective way for the complete catalytic degradation of toluene at low temperature, catalysts with diverse activity of adsorbed oxygen (Oads) and lattice oxygen (Olatt) are synthesized by introducing Sr2+ into the birnessite structure. Sr modification highly improved low-temperature catalytic activity and CO2 selectivity of toluene oxidation under moist condition, especially on the BS-7.5 (Sr:Mn = 0.075) catalyst. A series of physiochemical characterizations and DFT calculations identified abundant Olatt with higher activity in Sr-doped birnessite and higher activity of Oads in pure birnessite. In situ DRIFTS analysis further confirmed that activation of Olatt introduced by Sr replacement of Mn governed the reaction process towards continuous deep oxidation of toluene. These findings provide a deeper understanding of the mechanism of toluene degradation and strongly pave a way for improving the complete catalytic oxidation performance of VOCs at low temperature over MnO2 catalysts from the aspect of regulating active oxygen-related properties.",
         "archive": "Q1",
-        "archive_location": "工程技术1区 Top",
+        "archive_location": "工程技术 1 区 Top",
         "call-number": "8.04",
         "collection-title": "无",
         "container-title": "Fuel",
@@ -478,9 +526,9 @@ Zotero 官方样式对于中英文混排支持得十分差劲，尤其是在 `�
         "journalAbbreviation": "Fuel",
         "language": "en",
         "license": "8.04",
-        "note": "JCR分区: Q1\n中科院分区升级版: 工程技术1区\n中科院分区基础版: 工程技术2区\n影响因子: 8.04\n5年影响因子: 6.63\nEI: 是",
+        "note": "JCR 分区：Q1\n中科院分区升级版：工程技术 1 区\n中科院分区基础版：工程技术 2 区\n影响因子：8.04\n5 年影响因子：6.63\nEI: 是",
         "page": "124116",
-        "source": "能源与燃料2区 工程：化工1区",
+        "source": "能源与燃料 2 区 工程：化工 1 区",
         "title": "Regulating oxygen species for promoted deep oxidation of toluene: A comparative study of adsorbed oxygen and lattice oxygen",
         "title-short": "Regulating oxygen species for promoted deep oxidation of toluene",
         "volume": "321",

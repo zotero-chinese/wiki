@@ -50,6 +50,9 @@ pnpm docs:dev
 
 # 格式修复
 pnpm lint:fix
+
+# 压缩图片
+pnpm compress-images
 ```
 
 当无法启动预览时，请在确保本地仓库是最新的前提下，重新运行以下两个命令：

@@ -37,6 +37,11 @@
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
 
+  /** autocorrect 相关 **/
+  "autocorrect.enable": true,
+  "autocorrect.enableLint": true,
+  "autocorrect.formatOnSave": true,
+
   /** 文件管理器相关  **/
   // "explorer.sortOrder": "mixed",
   "explorer.excludeGitIgnore": false,
@@ -66,8 +71,9 @@
 
     // 3rd package config
     ".vscode": true,
-    // ".markdownlint-cli2.jsonc": true,
+    ".markdownlint-cli2.mjs": true,
     ".prettierignore": true,
+    ".autocorrectrc": true,
     ".obsidian": true,
 
     // VitePress config
