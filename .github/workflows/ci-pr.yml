@@ -64,7 +64,7 @@ jobs:
   upload:
     name: 请求部署预览
     runs-on: ubuntu-latest
-    if: github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
+    if: always() && github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
     needs:
       - lint
       - build
