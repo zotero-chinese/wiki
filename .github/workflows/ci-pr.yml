@@ -48,7 +48,7 @@ jobs:
 
       - name: 提交 Lint 修复
         if: ${{ !github.event.pull_request.head.repo.fork }}
-        uses: EndBug/add-and-commit
+        uses: EndBug/add-and-commit@v9
         with:
           message: 自动修改文档格式
           author_name: github-actions[bot]
