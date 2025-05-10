@@ -5,10 +5,6 @@ date: 2022-08-01 16:55:26
 updated: 2023-07-22 20:49:04
 ---
 
-<!-- 禁用 MarkdownLint no-space-in-code 规则，因为 CSL 部分属性值本身带有空格 -->
-<!-- https://github.com/zotero-chinese/wiki/issues/382 -->
-<!-- markdownlint-disable MD038 -->
-
 # CSL 1.0.2 规范
 
 主要作者：[Rintze M. Zelle， PhD](https://twitter.com/rintzezelle)、 [Brenton M. Wiernik](https://twitter.com/bmwiernik)、Frank G. Bennett， Jr.、 Bruce D’Arcus、Denis Maier
