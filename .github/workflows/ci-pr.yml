@@ -48,12 +48,11 @@ jobs:
 
       - name: 提交 Lint 修复
         if: ${{ !github.event.pull_request.head.repo.fork }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m '自动修改文档格式'
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 自动修改文档格式
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
 
   build:
     name: 构建文档

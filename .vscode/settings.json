@@ -72,6 +72,7 @@
     // 3rd package config
     ".vscode": true,
     ".markdownlint-cli2.mjs": true,
+    "**/.markdownlint.mjs": true,
     ".prettierignore": true,
     ".autocorrectrc": true,
     ".obsidian": true,
@@ -84,6 +85,7 @@
 
     // Other files
     "scripts": true,
+    "assets/compressed-images.json": true,
     "LICENSE": true
   }
 }
