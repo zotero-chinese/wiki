@@ -1,9 +1,9 @@
-name: 部署预览
+name: deploy-preview
 
 on:
   workflow_run:
     workflows:
-      - ci-pr
+      - build
     types:
       - completed
 
