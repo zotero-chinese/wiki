@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   autofix:
+    name: 检查文档格式
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
