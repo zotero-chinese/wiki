@@ -6,58 +6,8 @@ on:
       - main
 
 jobs:
-  lint:
-    name: 检查文档格式
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: 签出仓库
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
-
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: 设置 Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: 安装依赖
-        run: pnpm install
-
-      - name: 运行 Lint 检查
-        if: ${{ github.event.pull_request.head.repo.fork }}
-        run: |-
-          pnpm run lint:check
-          pnpm run compress-images --check
-
-      - name: 运行 Lint 修复
-        if: ${{ !github.event.pull_request.head.repo.fork }}
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run lint:fix
-          pnpm run compress-images
-
-      - name: 提交 Lint 修复
-        if: ${{ !github.event.pull_request.head.repo.fork }}
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: 自动修改文档格式
-          author_name: github-actions[bot]
-          author_email: github-actions[bot]@users.noreply.github.com
-
   build:
     name: 构建文档
-    needs:
-      - lint
     uses: ./.github/workflows/build.yml
 
   upload:
@@ -65,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     if: always() && github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
     needs:
-      - lint
       - build
     steps:
       - name: 保存 PR 编号
