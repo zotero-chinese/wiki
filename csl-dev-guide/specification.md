@@ -149,7 +149,7 @@ XML 是对格式要求较为严格的标记语言，万维网联盟（The World 
 
 ::: info XML 声明的格式
 
-XML 声明不属于 XML 元素，故其书写格式与元素有所不同，既不是 `<atg>…</tag>` 这样成对的结构，也不是 `<tag/>` 这样的自闭合结构。需要注意，XML 声明必须包含版本和编码属性，并且作为 XML 文件的第一个非空行出现。
+XML 声明不属于 XML 元素，故其书写格式与元素有所不同，既不是 `<tag>…</tag>` 这样成对的结构，也不是 `<tag/>` 这样的自闭合结构。需要注意，XML 声明必须包含版本和编码属性，并且作为 XML 文件的第一个非空行出现。
 
 :::
 
@@ -194,7 +194,7 @@ zh：中文
 
 样式的 CSL 版本。对于兼容 CSL 1.0 的样式，其值必须设置为 `1.0`。
 
-此外，`cs:style` 可以携带任意的 [全局选项](specification.md#全局选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 。
+此外，`cs:style` 可以携带任意的 [全局选项](#全局选项) 和 [可继承的名称选项](#可继承的名称选项) 。
 
 在这些属性中，只有 `version` 对于 [从属样式](#从属样式) 内的 `cs:style` 是必须的，而 `default-locale` 属性则可以用来设置样式的地区。`cs:style` 还有其他属性可以设置，但此处先省略。
 
@@ -320,7 +320,7 @@ zh：中文
 
 #### 引注（Citation）
 
-引注由一个或多个参考信息源的引用组成，`cs:citation` 元素描述了引注的格式。引注的形式可能是 in-text 风格（`author` 例如「[Doe]」、`author-date`例如「[Doe 1999]」、`label` 例如「[doe99]」，或者 `number`例如「[1]」）或者 notes 风格。必要的 `cs:layout` 子元素描述了引注中什么样的参考文献数据应该怎么被引用（见 [Layout](#布局layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，它可以用来确定一个引注中的引用应该如何排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引注选项](#引注选项) 和 [可继承的名称选项](specification.md#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 元素的例子：
+引注由一个或多个参考信息源的引用组成，`cs:citation` 元素描述了引注的格式。引注的形式可能是 in-text 风格（`author` 例如「Doe」、`author-date`例如「Doe 1999」、`label` 例如「doe99」，或者 `number`例如「1」）或者 notes 风格。必要的 `cs:layout` 子元素描述了引注中什么样的参考文献数据应该怎么被引用（见 [Layout](#布局layout) ）。在 `cs:layout` 之前可能会有 `cs:sort` 元素，它可以用来确定一个引注中的引用应该如何排序（见 [排序](#排序)）。此外，`cs:style` 可能携带任意的 [引注选项](#引注选项) 和 [可继承的名称选项](#可继承的名称选项) 中的属性。下面是一个 `cs:citation` 元素的例子：
 
 ```xml
 <citation>
@@ -809,7 +809,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 `delimiter`
 
-指定 ​ 用于分隔名称变量中的名字的文本字符串。默认的是 `,`(e.g. "Doe, Smith")。
+指定 ​ 用于分隔名称变量中的名字的文本字符串。默认的是 `, `(e.g. "Doe, Smith")。
 
 `delimiter-precedes-et-al`
 
@@ -817,8 +817,8 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 - "contextual" - (default), 在作者列表中有 2 个及以上的人时使用
   - 1 name: "J. Doe et al."
-  - 2 names: "J. Doe, S. Smith, et al." 两个人，则在最后一个人名和 `et-al` 间使用 `,` 分隔
-- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，第一个名字的前后部分 Doe 和 J 发生了反转，因此在第一个名字后面使用了分隔符 `,`
+  - 2 names: "J. Doe, S. Smith, et al." 两个人，则在最后一个人名和 `et-al` 间使用 `, ` 分隔
+- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，第一个名字的前后部分 Doe 和 J 发生了反转，因此在第一个名字后面使用了分隔符 `, `
   - "Doe, J., et al."
   - "Doe, J., S. Smith et al."
 - "always" - 不论几个名字或者怎样的设置，总是使用
@@ -832,10 +832,10 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 在名字列表中确定何时使用分隔符来分割最后一个作者和倒数第二个作者。如果 `and` 没有被设置，则不论 `delimiter-precedes-last` 属性的值，名字分隔符总是使用。
 
-- "contextual" - 默认，当名字列表中的名字有 3 个或以上时使用。下面在使用 3 个名字时，在 `and` 前使用了分隔符 `,`
+- "contextual" - 默认，当名字列表中的名字有 3 个或以上时使用。下面在使用 3 个名字时，在 `and` 前使用了分隔符 `, `
   - 2 个名字："J. Doe and T. Williams"
   - 3 个名字："J. Doe, S. Smith, and T. Williams"
-- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，仅在第一个名字后使用了分隔符 `,`
+- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，仅在第一个名字后使用了分隔符 `, `
   - "Doe, J., and T. Williams"
   - "Doe, J., S. Smith and T. Williams"
 - "always" - 分隔符一直使用。
@@ -897,7 +897,7 @@ Feldmann, … S. G. Oliver
 
 `sort-separator`
 
-设置名字的不同部分由于 `name-as-sort-order` 属性导致的内部位置变换后的分隔符。默认值为 `,`（Doe, John）。和 `name-as-sort-order` 属性相同，该属性只适用于拉丁字母和西里尔字母的名字。
+设置名字的不同部分由于 `name-as-sort-order` 属性导致的内部位置变换后的分隔符。默认值为 `, `（Doe, John）。和 `name-as-sort-order` 属性相同，该属性只适用于拉丁字母和西里尔字母的名字。
 
 `cs:name` 元素也可以携带 [词缀](#词缀affixes) 和 [格式化](#格式化formatting)。
 
@@ -1104,11 +1104,11 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），�
 
 `is-numeric`
 
-​ 测试给定的变量（[附录 IV 变量](#附录 IV 变量)）是不是包含数字部分。如果内容仅由数字构成，则识别为数字。数字可以带有前缀、后缀（"D2"，"2b"，"L2d"）、并且可能被逗号，连字符或 `&` 分隔（"2, 3"，"2-4"，"2 & 4"）。例如， "2nd" 被识别为 "true" ，但 "second" 和 "2nd edition" 被识别为 "false".
+​ 测试给定的变量（[附录 IV 变量](#附录-iv-变量)）是不是包含数字部分。如果内容仅由数字构成，则识别为数字。数字可以带有前缀、后缀（"D2"，"2b"，"L2d"）、并且可能被逗号，连字符或 `&` 分隔（"2, 3"，"2-4"，"2 & 4"）。例如， "2nd" 被识别为 "true" ，但 "second" 和 "2nd edition" 被识别为 "false".
 
 `is-uncertain-date`
 
-​ 判断给定的 [日期变量](#日期变量) 是不是包含 [近似日期](#Approximate Dates)。
+​ 判断给定的 [日期变量](#日期变量) 是不是包含 [近似日期](#近似日期approximate-dates)。
 
 `locator`
 
@@ -1138,11 +1138,11 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 `type`
 
-​ 测试项目是不是和给定的类型匹配（[附录 III 类型](#附录 III 类型)）。这里的类型指条目的类型，例如，书，期刊文献，学位论文。
+​ 测试项目是不是和给定的类型匹配（[附录 III 类型](#附录-iii-文献类型)）。这里的类型指条目的类型，例如，书，期刊文献，学位论文。
 
 `variable`
 
-​ 测试给定变量（[附录 IV 变量](#附录 IV 变量)）的默认的形式 (long) 是不是为空。
+​ 测试给定变量（[附录 IV 变量](#附录-iv-变量)）的默认的形式 (long) 是不是为空。
 
 ---
 
@@ -1158,7 +1158,7 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 ### 选项
 
-样式可以使用不同的元素来进行特定的配置。在 `cs:citation` 元素中设置元素可以配置特定的 [引文选项](#引注选项)；在 `cs:bibliography` 元素和 [全局选项](#全局选项)（同时影响引文和参考文献条目）中，可以配置特定的参考文献条目。继承的名字选项可以在 `cs:style`,`cs:style` 和 `cs:bibliography` 中设置。最后，[本地化选项](#本地化选项) 可以在 `cs:locale` 元素中设置。
+样式可以使用不同的元素来进行特定的配置。在 `cs:citation` 元素中设置元素可以配置特定的 [引文选项](#引注选项)；在 `cs:bibliography` 元素和 [全局选项](#全局选项)（同时影响引文和参考文献条目）中，可以配置特定的参考文献条目。继承的名字选项可以在 `cs:style`, `cs:style` 和 `cs:bibliography` 中设置。最后，[本地化选项](#本地化选项) 可以在 `cs:locale` 元素中设置。
 
 #### 引注选项
 
@@ -1239,11 +1239,11 @@ Whenever position="ibid-with-locator" tests true, position="ibid" also tests tru
 
 通过引用分组，可以将相同名称的文本引用放在一起，比如：(Doe 1999; Smith 2002; Doe 2006; Doe et al. 2007) 将会变为 (Doe 1999; Doe 2006; Smith 2002; Doe et al. 2007)。引用分组在引用排序和消除歧义后执行。分组后的引用保持其相对顺序，并移到第一个改组中引用出现的第一个位置。
 
-引用分组可以在 `cs:citation` 元素中通过设置 `cite-group-delimiter` 属性或者 `collapse` 属性（见 [cite collapsing](#cite collapsing)）激活。
+引用分组可以在 `cs:citation` 元素中通过设置 `cite-group-delimiter` 属性或者 `collapse` 属性（见 [cite collapsing](#cite-collapsing引用折叠)）激活。
 
 `cite-group-delimiter`
 
-激活引用分组并为引用组中的引用指定分隔符，默认为 `,`。例如，当 `cs:citation` 元素中的 `cs:layout` 中的 `delimiter` 设置为 `;` 时，`collapse` 设置为 `year`，`cite-group-delimiter` 设置为 `,`，将生成类似 "(Doe 1999,2001; Jones 2000)" 的引用。
+激活引用分组并为引用组中的引用指定分隔符，默认为 `, `。例如，当 `cs:citation` 元素中的 `cs:layout` 中的 `delimiter` 设置为 `;` 时，`collapse` 设置为 `year`，`cite-group-delimiter` 设置为 `, `，将生成类似 "(Doe 1999,2001; Jones 2000)" 的引用。
 
 ##### cite collapsing/引用折叠
 
@@ -1262,11 +1262,11 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 
 `year-suffix-delimiter`
 
-​ 设置年份后缀的分隔符。默认在 `cs:citation` 元素的 `cs:layout` 中设置。例如：当 `collapse` 设置为 `year-suffix`，`cs:citation` 中的 `cs:layout` 的 `delimiter` 元素设置为 `;`，并且 `year-suffix-delimiter` 设置为 `,` 时，渲染结果将类似于 "(Doe 1999a,b; Jones 2000)"。
+​ 设置年份后缀的分隔符。默认在 `cs:citation` 元素的 `cs:layout` 中设置。例如：当 `collapse` 设置为 `year-suffix`，`cs:citation` 中的 `cs:layout` 的 `delimiter` 元素设置为 `;`，并且 `year-suffix-delimiter` 设置为 `, ` 时，渲染结果将类似于 "(Doe 1999a,b; Jones 2000)"。
 
 `after-collapse-delimiter`
 
-​ 设置折叠后的引用组要使用的分隔符。默认在 `cs:citation` 元素的 `cs:layout` 中设置。例如：当 `collapse` 设置为 `year`，`cs:citation` 中的 `cs:layout` 的 `delimiter` 元素设置为 `,`，并且 `after-collapse-delimiter` 设置为 `;` 时，渲染结果将类似于 "(Doe 1999, 2001; Jones 2000, Brown 2001)"。
+​ 设置折叠后的引用组要使用的分隔符。默认在 `cs:citation` 元素的 `cs:layout` 中设置。例如：当 `collapse` 设置为 `year`，`cs:citation` 中的 `cs:layout` 的 `delimiter` 元素设置为 `, `，并且 `after-collapse-delimiter` 设置为 `;` 时，渲染结果将类似于 "(Doe 1999, 2001; Jones 2000, Brown 2001)"。
 
 ##### 标注距离
 
@@ -1392,7 +1392,7 @@ Doe, Williams et al. 2005.
 
 `page-range-format`
 
-​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`chicago` ("321–28")， `expanded` ( "321–328")， `minimal` ("321–8")，或者 `minimal-two` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录 V 页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
+​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`chicago` ("321–28")， `expanded` ( "321–328")， `minimal` ("321–8")，或者 `minimal-two` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录-v-页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
 
 ##### Name Particles
 
@@ -1477,7 +1477,7 @@ Doe, Williams et al. 2005.
 
 ​ `cs:citation` 和 `cs:bibliography` 元素可以在 `cs:layout` 元素之前携带一个 `cs:sort` 子元素，来实现对引文或者参考文献条目的排序。在缺失 `cs:sort` 元素时，引文和文献条目将会使用他们在文章中出现的顺序来排序。
 
-​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录 IV 变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`ascending`，默认）或者降序（`descending`）。属性 `names-min`,`names-use-first`,`names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字。
+​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录-iv-变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`ascending`，默认）或者降序（`descending`）。属性 `names-min`, `names-use-first`, `names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字。
 
 ​ 排序的键值是按顺序求值的，也就是说：首先，使用第一个排序键值对所有的项目进行排序。然后使用第二个键值对第一个键值排序后的结果进行排序，直到所有的键值都完成排序为止。如果键值为空，就放到最后。
 
@@ -1645,7 +1645,7 @@ C. 带有注释的条目，注释显示在参下方的缩进块中。
 
 ### 引述（quotes）
 
-​ `quotes` 属性可以在 `cs:text` 中设置。当设置为 `true` 时（默认为 `false`），渲染文本将会被包含在引用中。本地化的 `punctuation-in-quote` 选项控制用来连接的逗号或者句号是出现在引号的内部还是外部（默认外部），见 [Locale options](#Locale options)。
+​ `quotes` 属性可以在 `cs:text` 中设置。当设置为 `true` 时（默认为 `false`），渲染文本将会被包含在引用中。本地化的 `punctuation-in-quote` 选项控制用来连接的逗号或者句号是出现在引号的内部还是外部（默认外部），见 [Locale options](#本地化选项)。
 
 ### 剥除句点（Strip-periods）
 
@@ -1653,7 +1653,7 @@ C. 带有注释的条目，注释显示在参下方的缩进块中。
 
 ### 文本大小写（text-case）
 
-​ `text-case` 属性可以在 `cs:date`,`cs:date-part`,`cs:label`,`cs:name-part`,`cs:number` 和 `cs:text` 中设置，可设置的值为：
+​ `text-case` 属性可以在 `cs:date`, `cs:date-part`, `cs:label`, `cs:name-part`, `cs:number` 和 `cs:text` 中设置，可设置的值为：
 
 - "lowercase": 使用小写字母渲染文本
 - "uppercase": 使用大写字母渲染文本
@@ -2170,11 +2170,11 @@ Number variables are a subset of the [Standard Variables](https://docs.citations
 
 `expanded`
 
-​ 扩展模式，不适用缩写。eg. 42–45、321–328、2787–2816
+​ 扩展模式，不适用缩写。eg. 「42–45」、「321–328」、「2787–2816」
 
 `minimal`
 
-​ 第二个数字中重复的所有数字都被省略：42–5，321–8，2787–816
+​ 第二个数字中重复的所有数字都被省略：「42–5」，「321–8」，「2787–816」
 
 `minimal-two`
 
@@ -2191,10 +2191,10 @@ The CSL syntax does not have support for configuration of links. However, proces
 If the bibliography entry for an item renders any of the following identifiers, the identifier should be anchored as a link, with the target of the link as follows:
 
 1. `url`: output as is
-2. `doi`: prepend with 「[https://doi.org/](https://doi.org/)」
-3. `pmid`: prepend with 「[https://www.ncbi.nlm.nih.gov/pubmed/](https://www.ncbi.nlm.nih.gov/pubmed/)」
-4. `pmcid`: prepend with 「[https://www.ncbi.nlm.nih.gov/pmc/articles/](https://www.ncbi.nlm.nih.gov/pmc/articles/)」
+2. `doi`: prepend with `https://doi.org/`
+3. `pmid`: prepend with `https://www.ncbi.nlm.nih.gov/pubmed/`
+4. `pmcid`: prepend with `https://www.ncbi.nlm.nih.gov/pmc/articles/`
 
-If the identifier is rendered as a URI, include rendered URI components (e.g. 「[https://doi.org/](https://doi.org/)」) in the link anchor. Do not include any other affix text in the link anchor (e.g. “Available from: “, “doi: “, “PMID: “).
+If the identifier is rendered as a URI, include rendered URI components (e.g. `https://doi.org/`) in the link anchor. Do not include any other affix text in the link anchor (e.g. 「Available from: 」, 「doi: 」, 「PMID: 」).
 
 Citation processors should include an option flag for calling applications to disable bibliography linking behavior.

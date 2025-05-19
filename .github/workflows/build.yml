@@ -1,10 +1,14 @@
-name: 构建文档
+name: build
 
 on:
   workflow_call:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
+    name: 构建文档
     runs-on: ubuntu-latest
     steps:
       - name: 签出仓库
@@ -40,3 +44,19 @@ jobs:
           name: build-result
           path: |
             dist.tar
+
+  upload:
+    name: 上传 PR 预览信息
+    runs-on: ubuntu-latest
+    if: always() && github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
+    needs:
+      - build
+    steps:
+      - name: 保存 PR 编号
+        run: |
+          echo "${{ github.event.number }}" > pr_num
+      - name: 上传 PR 编号
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-num
+          path: ./pr_num
