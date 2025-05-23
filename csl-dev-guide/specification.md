@@ -7,7 +7,7 @@ updated: 2023-07-22 20:49:04
 
 # CSL 1.0.2 规范
 
-主要作者：[Rintze M. Zelle， PhD](https://twitter.com/rintzezelle)、 [Brenton M. Wiernik](https://twitter.com/bmwiernik)、Frank G. Bennett， Jr.、 Bruce D’Arcus、Denis Maier
+主要作者：[Rintze M. Zelle, PhD](https://twitter.com/rintzezelle)、 [Brenton M. Wiernik](https://twitter.com/bmwiernik)、Frank G. Bennett, Jr.、 Bruce D’Arcus、Denis Maier
 
 其他贡献者：Julien Gonzalez、Sebastian Karcher、Sylvester Keil、Cormac Relf、Lars Willighagen and other CSL contributors.
 
@@ -17,7 +17,7 @@ updated: 2023-07-22 20:49:04
 
 ## 介绍
 
-引注样式语言（Citation Style Language，CSL）是一种基于 XML 的格式，用于描述引注、注释和参考文献表的格式，它带来了：
+引注样式语言（Citation Style Language，CSL）是一种基于 [XML](./xml-basic.md) 的格式，用于描述引注、注释和参考文献表的格式，它带来了：
 
 - 一种开放（开源）的格式
 - 紧凑、稳定的样式
@@ -161,8 +161,6 @@ XML 声明不属于 XML 元素，故其书写格式与元素有所不同，既�
 
 #### `class`
 
-**默认值**：无
-
 决定样式的 [引注格式](./primer.md#csstyle-根元素) 是 in-text 风格（值 `in-text`）还是 note 风格（值 `note`）。
 
 ::: info 译者注
@@ -172,8 +170,6 @@ in-text 表示引注在正文中，note 则表示引注不在正文中，可能�
 :::
 
 #### `default-locale`（可选）
-
-**默认值**：无
 
 为样式的本地化设值默认的地区。取值必须是 [语言 - 地区代码](http://books.xmlschemata.org/relaxng/ch19-77191.html)。
 
@@ -189,8 +185,6 @@ zh：中文
 :::
 
 #### `version`
-
-**默认值**：无
 
 样式的 CSL 版本。对于兼容 CSL 1.0 的样式，其值必须设置为 `1.0`。
 
@@ -433,7 +427,7 @@ zh：中文
 
 #### 地区回退
 
-本地化文件为语言方言提供了本地化数据（例如「en-US」代表美式英语），而样式中可选的 `cs:locale` 元素可以缺省 `xml:lang`属性，或者设置为某种语言（如「en」代表英语）或方言而具备这一属性。地区回退是一种用于确定从上述哪一个数据源（本地化文件或 `cs:locale`）中检索可本地化单元（日期格式、本地化选项或者术语的特定形式）的机制。
+本地化文件为语言方言提供了本地化数据（例如「en-US」代表美式英语），而样式中可选的 `cs:locale` 元素可以省略 `xml:lang` 属性，或者设置为某种语言（如「en」代表英语）或方言而具备这一属性。地区回退是一种用于确定从上述哪一个数据源（本地化文件或 `cs:locale`）中检索可本地化单元（日期格式、本地化选项或者术语的特定形式）的机制。
 
 对于同一种语言的方言，其中一种被定义为主要方言，其他则都是次级方言。截至本文档编辑前，包含次级方言的本地化文件包括：
 
@@ -545,7 +539,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 #### 序数后缀
 
-数字变量可以随 `cs:number` 以 `ordinal` 形式（即序数形式）渲染，比如：`2nd`（见[数字](#数字number)）。序数后缀（对 `2nd` 而言是 `nd`）通过术语来定义。
+数字变量可以随 `cs:number` 以 `ordinal` 形式（即序数形式）渲染，比如：`2nd`（见 [数字](#数字number)）。序数后缀（对 `2nd` 而言是 `nd`）通过术语来定义。
 
 `ordinal` 术语定义了默认的序数后缀，但这些默认的后缀可以被下面的术语对某些数字进行覆盖：
 
@@ -554,7 +548,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 当要渲染的数字与上面的两组术语都匹配时（比如：`13` 可以同时匹配 `ordinal-03` 和 `ordinal-13`），则采用 `ordinal-10` 到 `ordinal-99` 分组内的术语。
 
-序数术语在在 CSL 1.0 中的表现和 CSL 1.0.1 及之后的版本中的有所不同。当样式和本地化文件中都没有定义 `ordinal` 术语，但是定义了 `ordinal-00` 到 `ordinal-04`，CSL 1.0 采用的方案是：`orginal-01` 用于以 `1` 结尾的数字（以 `11` 结尾的数字除外），`ordinal-02` 用于以 `2` 结尾的数字（以 `12` 结尾的数字除外），`ordinal -03` 表示以 `3` 结尾（以 `13` 结尾的数字除外），`ordinal-04` 表示所有其他数字。
+序数术语在 CSL 1.0 中的表现和 CSL 1.0.1 及之后的版本中的有所不同。当样式和本地化文件中都没有定义 `ordinal` 术语，但是定义了 `ordinal-00` 到 `ordinal-04`，CSL 1.0 采用的方案是：`orginal-01` 用于以 `1` 结尾的数字（以 `11` 结尾的数字除外），`ordinal-02` 用于以 `2` 结尾的数字（以 `12` 结尾的数字除外），`ordinal -03` 表示以 `3` 结尾（以 `13` 结尾的数字除外），`ordinal-04` 表示所有其他数字。
 
 当进行到 [地区回退](#地区回退)，`ordinal` 术语、`ordinal-00` 到 `ordinal-99` 的术语的表现和其他术语有所不同。其他术语可以被单独地（重新）定义，但通过 `cs:locale` （重新）定义的任何序数术语都将替换先前已经定义过的序数术语。
 
@@ -566,7 +560,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 #### 长序数
 
-数字变量可以随 `cs:number` 以 `long-ordinal`形式渲染，比如「second」（见[数字](#数字number)）。长序数术语（对「2」而言是「second」）通过 `long-ordinal-01` 到 `long-ordinal-10` 的术语来定义。
+数字变量可以随 `cs:number` 以 `long-ordinal` 形式渲染，比如「second」（见 [数字](#数字number)）。长序数术语（对「2」而言是「second」）通过 `long-ordinal-01` 到 `long-ordinal-10` 的术语来定义。
 
 长序数形式仅适用于数字 1 到 10。其他数字的 `long-ordinal` 形式会回退到 `ordinal`。
 
@@ -607,7 +601,7 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 
 可以在 `cs:date` 中定义两种本地化的日期格式：一种是 `numeric`（例如「12-15-2005」），另一种是 `text`（例如「December 15, 2005」）。这些格式在带有必要属性 `form` 的 `cs:date` 元素中设置。
 
-日期格式使用 `cs:date-part` 子元素来构造（见 [日期成分](#日期成分date-part)）。当 `cs:date-part` 的 `name` 属性设置为 `day`、`month` 或 `year` 时，这些元素的顺序会反映到对应的日、月和年的显示顺序上。可以在 `cs:date` 和 `cs:date-part` 元素上设置 [格式化](#格式化formatting) 和 [大小写](#文本大小写text-case)属性来将日期格式化。可以在 `cs:date` 元素上设置 `delimiter` 属性以指定 `cs:date-part` 元素之间的分隔符，并且 [词缀](#词缀affixes) 也可以应用于 `cs:date-part` 元素。
+日期格式使用 `cs:date-part` 子元素来构造（见 [日期成分](#日期成分date-part)）。当 `cs:date-part` 的 `name` 属性设置为 `day`、`month` 或 `year` 时，这些元素的顺序会反映到对应的日、月和年的显示顺序上。可以在 `cs:date` 和 `cs:date-part` 元素上设置 [格式化](#格式化formatting) 和 [文本大小写](#文本大小写text-case) 属性来将日期格式化。可以在 `cs:date` 元素上设置 `delimiter` 属性以指定 `cs:date-part` 元素之间的分隔符，并且 [词缀](#词缀affixes) 也可以应用于 `cs:date-part` 元素。
 
 **注意**：定义本地化日期格式时，不允许在 `cs:date` 上使用词缀。此限制是为了将语言环境决定的词缀（设置在 `cs：date-part` 元素上）与样式决定的词缀（设置在调用 `cs:date` 元素的元素上，例如括号）区分开。在宏中调用本地化日期格式的例子如下：
 
@@ -766,11 +760,11 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 </style>
 ```
 
-将输出「2005」（正常日期）和「ca.2003」近似日期）。
+将输出「2005」（正常日期）和「ca.2003」（近似日期）。
 
 ### 数字（Number）
 
-`cs:number` 渲染元素输出必要属性 `variable` 所选的数字变量。[数字变量](#数字变量)是[标准变量](#标准变量)的子集。
+`cs:number` 渲染元素输出必要属性 `variable` 所选的数字变量。[数字变量](#数字变量) 是 [标准变量](#标准变量) 的子集。
 
 使用 `cs:number` 元素来渲染数字变量时，如果该变量只包含数字内容（由 `is-numeric` 的规则来决定，见 [选择语句](#选择语句choose)），数字会被提取出来。当变量内容包含非数字内容（例如「特别版」）时，变量内容将被渲染为原样。
 
@@ -779,17 +773,17 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 提取出来的数字可以通过可选的 `form` 属性行进格式化，其值可以设置为：
 
 - `numeric` - （默认），例如：「1」、「2」、「3」
-- `ordinal` - 即序数，例如「1st」、「2nd」、「3rd」。序数后缀可以使用术语定义（见[序数后缀](#序数后缀)）.
+- `ordinal` - 即序数，例如「1st」、「2nd」、「3rd」。序数后缀可以使用术语定义（见 [序数后缀](#序数后缀)）.
 - `long-ordinal` - 即长序数，例如「first」、「second」、「third」。长序数使用术语 `long-ordinal-01` 至 `long-ordinal-10` 定义，用来给数字 1 到 10 使用。对于其他数字，`long-ordinal` 回退至 `ordinal`。
 - `roman` - 即罗马数字，例如「i」、「ii」、「iii」
 
-带有前缀或者后缀的数字不能序数化或者以罗马数字渲染（例如：「2E」仍然渲染为「2E」）。不带词缀的数字会被独立地转换（「2, 3」可以转换为「2nd, 3rd」、「second, third、或者」ii, iii“）。
+带有前缀或者后缀的数字不能序数化或者以罗马数字渲染（例如：「2E」仍然渲染为「2E」）。不带词缀的数字会被独立地转换（「2, 3」可以转换为「2nd, 3rd」、「second, third」、或者「ii, iii」）。
 
-`cs:number` 可能会携带 [词缀](#词缀affixes)、[显示](#显示display)、[格式化](#格式化formatting)和[文本大小写](#文本大小写text-case) 属性。
+`cs:number` 可能会携带 [词缀](#词缀affixes)、[显示](#显示display)、[格式化](#格式化formatting) 和 [文本大小写](#文本大小写text-case) 属性。
 
 ### 名称容器（Names）
 
-`cs:names` 渲染元素输出一个或多个[名称变量](#名称变量)（通过必选属性 `variable` 来选择）的内容，其中每一个变量可以包含一个或者多个名称（例如，`author` 变量包含被引条目的作用作者）。如果选择了多个变量（使用单个空格分隔，见下面的例子），每个变量将会按指定的顺序单独渲染，但是有一个例外：当选择的变量中包括 `editor` 和 `translator`，且这两个名称变量的内容相同时，则这两个变量中只有一个会被渲染。在此基础上，如果 `cs:names` 元素中包含一个 `cs:label` 元素，则 `editortranslator` 术语将替换掉默认的 `editor` 和 `translator` 术语（例如输出结果为“Doe(editor & tranlator)）。设置在 `cs:names` 上的 [`delimiter`](#分隔符delimiter) 属性可以用来分隔不同的名称变量（例如，「Doe, Smith (editors); Johnson (translator)」中间使用了分号隔开）。
+`cs:names` 渲染元素输出一个或多个 [名称变量](#名称变量)（通过必选属性 `variable` 来选择）的内容，其中每一个变量可以包含一个或者多个名称（例如，`author` 变量包含被引条目的作者）。如果选择了多个变量（使用单个空格分隔，见下面的例子），每个变量将会按指定的顺序单独渲染，但是有一个例外：当选择的变量中包括 `editor` 和 `translator`，且这两个名称变量的内容相同，则只有一个名称变量会被渲染。在此基础上，如果 `cs:names` 元素中包含一个 `cs:label` 元素，则 `editortranslator` 术语将替换掉默认的 `editor` 和 `translator` 术语（例如输出结果为「Doe(editor & tranlator)」）。设置在 `cs:names` 上的 [`delimiter`](#分隔符delimiter) 属性可以用来分隔不同的名称变量（例如，「Doe, Smith (editors); Johnson (translator)」中间使用了分号隔开）。
 
 ```xml
 <names variable="editor translator" delimiter="; ">
@@ -797,65 +791,77 @@ CSL 样式设计为可以兼容不同地区的语言表达习惯，本地化就�
 </names>
 ```
 
-`cs:names` 有四个子元素（下面将讨论）：`cs:name`、`cs:et-al`、`cs:substitute` 和 `cs:label`。 `cs:names` 元素可能会携带[词缀](#词缀affixes)、[显示](#显示display) 和[格式化](#格式化formatting) 属性。
+`cs:names` 有四个子元素（下面将讨论）：`cs:name`、`cs:et-al`、`cs:substitute` 和 `cs:label`。 `cs:names` 元素可能会携带 [词缀](#词缀affixes)、[显示](#显示display) 和 [格式化](#格式化formatting) 属性。
+
+::: info 译者注
+
+考虑到文献的创建者并不一定是有名有姓的个人，还有可能是组织，此处将「name」译为「名称」而非「名字」。
+
+:::
 
 #### 名称（Name）
 
-`cs:name` 元素的，`cs:names` 元素的可选子元素，可以用来描述单个名称的格式以及带有名称变量的名称中的分隔符。`cs:name` 可能携带下面的属性：
+`cs:name` 元素的，`cs:names` 元素的可选子元素，可以用来描述单个名称的格式以及带有名称变量的名称中的分隔符。`cs:name` 可以携带以下属性：
 
-`and`
+##### `and`
 
 指定名称变量中倒数第二个名称和倒数第一个名称的分隔符。可选的值为 `text`（选用 `and` 术语，例如「Doe, Johnson and Smith」）或者 `symbol`（例如「Doe, Johnson & Smith」）。
 
-`delimiter`
+##### `delimiter`
 
-指定 ​ 用于分隔名称变量中的名字的文本字符串。默认的是 `, `(e.g. "Doe, Smith")。
+指定用于分隔名称变量中的名称的文本字符串。默认为 `, `(例如「Doe, Smith」)。
 
-`delimiter-precedes-et-al`
+##### `delimiter-precedes-et-al`
 
-指定用于在使用 `et-al` 缩写的情况下，在截断的姓名列表和 `et-al` 术语之间何时使用分隔符或者空格。该属性可选的值有：
+在使用 `et-al` 缩写的情况下，指定在截断的名称列表和 `et-al` 术语之间何时使用分隔符或者空格。允许的值有：
 
-- "contextual" - (default), 在作者列表中有 2 个及以上的人时使用
-  - 1 name: "J. Doe et al."
-  - 2 names: "J. Doe, S. Smith, et al." 两个人，则在最后一个人名和 `et-al` 间使用 `, ` 分隔
-- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，第一个名字的前后部分 Doe 和 J 发生了反转，因此在第一个名字后面使用了分隔符 `, `
-  - "Doe, J., et al."
-  - "Doe, J., S. Smith et al."
-- "always" - 不论几个名字或者怎样的设置，总是使用
-  - 1 name: "J. Doe, et al."
-  - 2 names: "J. Doe, S. Smith, et al."
-- "never" - 禁止使用分隔符，不论几个名字。
-  - 1 name: "J. Doe et al."
-  - 2 names: "J. Doe, S. Smith et al."
+- `contextual` - （默认）, 在名称列表中有 2 个及以上的名称时使用
+  - 1 个名称：「J. Doe et al.」
+  - 2 个名称：「J. Doe, S. Smith, et al.」
+- `after-inverted-name` - 在 `name-as-sort-order` 属性使当前的名称发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，第一个名字的前后部分 Doe 和 J 发生了反转，因此在第一个名字后面使用了分隔符 `, `
+  - 「1Doe, J., et al.」
+  - 「Doe, J., S. Smith et al.」
+- `always` - 始终使用名称分隔符
+  - 1 个名称：「J. Doe, et al.」
+  - 2 个名称：「J. Doe, S. Smith, et al.」
+- `never` - 永不使用名称分隔符
+  - 1 个名称：「J. Doe et al.」
+  - 2 个名称：「J. Doe, S. Smith et al.」
 
-`delimiter-precedes-last`
+##### `delimiter-precedes-last`
 
-在名字列表中确定何时使用分隔符来分割最后一个作者和倒数第二个作者。如果 `and` 没有被设置，则不论 `delimiter-precedes-last` 属性的值，名字分隔符总是使用。
+确定何时使用分隔符来分割名称列表中的倒数第二个名称和最后一个名称（如果没有设置 `and`，则不论 `delimiter-precedes-last` 属性的值如何，名称分隔符总是使用）。
 
-- "contextual" - 默认，当名字列表中的名字有 3 个或以上时使用。下面在使用 3 个名字时，在 `and` 前使用了分隔符 `, `
-  - 2 个名字："J. Doe and T. Williams"
-  - 3 个名字："J. Doe, S. Smith, and T. Williams"
-- "after-inverted-name" - 在 `name-as-sort-order` 属性使当前的名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时，仅在第一个名字后使用了分隔符 `, `
-  - "Doe, J., and T. Williams"
-  - "Doe, J., S. Smith and T. Williams"
-- "always" - 分隔符一直使用。
-  - 2 names: "J. Doe, and T. Williams"
-  - 3 names: "J. Doe, S. Smith, and T. Williams"
-- "never" - 禁用分隔符
-  - 2 names: "J. Doe and T. Williams"
-  - 3 names: "J. Doe, S. Smith and T. Williams"
+- `contextual` - （默认），当名称列表中的名称有 3 个或以上时使用。
+  - 2 个名称：「J. Doe and T. Williams」
+  - 3 个名称：「J. Doe, S. Smith, and T. Williams」
+- `after-inverted-name` - 在 `name-as-sort-order` 属性使上一个名字发生了颠倒时使用。例如：当 `name-as-sort-order` 属性设置为 `first` 时
+  - 「Doe, J., and T. Williams」
+  - 「Doe, J., S. Smith and T. Williams」
+- `always` - 始终使用分隔符
+  - 2 个名称：「J. Doe, and T. Williams」
+  - 3 个名称：「J. Doe, S. Smith, and T. Williams」
+- `never` - 永不使用名称分隔符
+  - 2 个名称：「J. Doe and T. Williams」
+  - 3 个名称：「J. Doe, S. Smith and T. Williams」
 
-`et-al-min`/`et-al-use-first`
+##### `et-al-min`/`et-al-use-first`
 
-通过设置这两个属性，可是使用 `et-al` 对名字列表进行缩写。如果名称变量中的名字的数目超过了 `et-al-min` 属性设置的值，则达到 `et-al-use-first` 设置的名称数量后，渲染的名字列表将被截断。`et-al`（或者 `and others`）术语用来添加到截断列表的后面（见 [et-al](#等et-al)）。默认地，当名字列表被截断到单个名字，则名字和 `et-al` 术语之间使用空格进行隔开（例如：Doe et al.）。当一个名字列表被截断到两个或者三个名字，则使用分隔符（例如：Doe, Smith, et al.）。这些行为可以使用 `delimiter-precedes-et-al` 属性来设置。
+通过设置这两个属性，可以启用 et-al 式的缩写。如果名称变量中的名称的数目超过了 `et-al-min` 属性设置的值，则达到 `et-al-use-first` 设置的名称数量后，渲染的名称列表将被截断。`et-al`（或者 `and others`）术语用来添加到截断列表的后面（见 [et-al](#等et-al)）。默认地，当名称列表被截断到单个名称，则名称和 `et-al` 术语之间使用空格分隔（例如：Doe et al.）。当一个名称列表被截断为两个及以上的名称，则使用名称分隔符（例如：Doe, Smith, et al.）。这些行为可以使用 `delimiter-precedes-et-al` 属性来设置。
 
-`et-al-subsequent-min`/`st-al-subsequent-use-first`
+##### `et-al-subsequent-min`/`et-al-subsequent-use-first`
 
-如果使用了这两个属性，则属性的值分别替换 `et-al-min` 和 `et-al-use-first` 的值以便后续引用。
+如果使用了这两个属性，则在二次引注时用这两个属性的值分别代替 `et-al-min` 和 `et-al-use-first` 的值。
 
-`et-al-use-last`
+::: info 二次引注
 
-当该属性设置为 `true` 时，（默认为 `false`），则使用下面的格式：截断的名称列表，分隔符，省略号，名称列表最后一个名字。这个属性只能在名称列表有多余两个的名称时使用。例：
+为了便于表述，如果一个引注引用了之前已经被引用过的条目，本文就称这个引注为「二次引注」。
+
+:::
+
+##### `et-al-use-last`
+
+当该属性设置为 `true`（默认为 `false`）时，et-al 缩写所截断的名称列表后将跟着名称分隔符、省略号以及原先名称列表中的最后一个名称。这个属性只能在初始名称列表比截断后的名称列表至少多两个名称时才会起效。例如：
 
 ```
 A. Goffeau, B. G. Barrell, H. Bussey, R. W. Davis, B. Dujon, H.
@@ -864,112 +870,132 @@ Feldmann, … S. G. Oliver
 
 ---
 
-下面讨论的属性将只会影响单个人的名字，这里先给出名字的组成部分。单个人的名字必须含有 "family" 部分，还可以含有 "given"，"suffix"，"non-dropping-particle"，和 "dropping particle" 等部分。下面对这些部分分别进行解释：
+下面所讨论的这些剩下的属性，只对人名有影响。这里先给出名字的组成部分。人名需要一个「姓（family）」姓名成分，还可能包含「名（given）」、「后缀（suffix）」、「不可省略小品词（non-droping-particle）」和「可省略小品词（dropping-particle）」姓名成分。这些姓名成分定义如下：
 
-- "family" - 姓氏，必须去掉 particle（译注：暂译为粒子）和后缀
-- "given" - 全名 "John Edward" 或者 J. E.
-- "suffix" - 名字后缀，比如：外国人常用的 Jr 或者罗马数字（经常翻译为 xx 世，比如伊丽莎白二世） "Jr." in "John Smith Jr." 或者 "III" in "Bill Gates III"
-- "non-dropping-particle" - 不可删除（省略）的粒子。当只显示姓氏的时候，不能省略 ("de" in the Dutch surname "de Koning") ，但是可能会在姓氏中分别对待，比如在排序的时候
-- "dropping-particle" - 可删除的粒子。当只显示姓氏的是欧，可以省略 ("van" in "Ludwig van Beethoven", which becomes "Beethoven")
+- 「family」 - 去掉所有小品词和后缀的姓
+- 「given」 - 可以使全名「John Edward」或者缩写「J. E.」
+- 「suffix」 - 名字后缀，比如「John Smith Jr.」中的「Jr」或者「Bill Gates III」的「III」
+- 「non-dropping-particle」 - 显示姓氏的时不能省略的小品词（例如德国人名「van Gogh」中的「van」），但也可以独立于姓氏来看待，例如排序姓名时
+- "dropping-particle" - 当只显示姓时，可省略的小品词（例如「Ludwig van Beethoven」中的「van」，这个名字在只显示姓氏时变成「Beethoven」；又如「Alexander von Humboldt」中的「von」，这个名字在只显示姓氏时变成「Humboldt」）
 
-下面的属性将会影响单个人的名称的渲染：
+::: info 小品词
 
-`form`
+> 小品词是句法上不能独立，要依附于其他句法成分，词汇意义上比较虚，但是具有语法意义或特定语气表达功能的词。——[《中国大百科全书》](https://www.zgbk.com/ecph/words?SiteID=1&ID=518031&Type=bkzyb&SubID=224216)
 
-指定是否显示名字的所有部分（默认为 `long`），或者只显示姓氏和不可省略粒子（值为 `short`）。除这两种情况外，还可以设置为 `count`，返回使用 `cs:names` 元素渲染的部分的总数（考虑 `et-al` 缩写和编辑/翻译等折叠的影响）。
+:::
 
-`initialize`
+::: info 译者注
 
-当该属性设置为 `false` 时（默认的结果为 `true`），并且 `initialize-with` 属性被设置时，全名将不使用缩写。但是，如果在全名中有单独的大写字母的时候，仍然会添加 ``initialize-with` 的值。例如：当 `initialize` 设置为 `false`，并且`initialize-with` 设置为 `.` 时，James T kirk 将会变为 James T. Kirk。
+上面例子中：
 
-`initialize-with`
+1. 「John Smith Jr.」中的「Jr」是「Junior」的缩写，表示此人与另一位较年长的家庭成员同名，可译为「小约翰·史密斯」
+2. 「Bill Gates III」中的「III」是「IIIrd」的缩写，表示此人是家族中第三个使用此名称的人，可译为「比尔·盖茨三世」。
 
-当该实行被设置时，全名将会使用缩写。该属性将会在每个首字母后添加属性值，比如：上述的名字会变为 J.J. Doe。对于合成的全名，例如：Jean-luc，可以使用全局的带有连字符的 `initialize-with-hyphen` 属性来设置其缩写形式（见 [人名中的连字符](#人名中的连字符)）。
+:::
 
-`name-as-sort-order`
+影响人名的属性有：
 
-指定名字的显示顺序为：姓，然后是名，例如：John Doe 变为 Doe,John。该属性值可以设置为：
+##### `form`
 
-- "first" - 属性只影响名称变量中的第一个名字
-- "all" - 属性将会影响所有的名字
+指定是否显示名字的所有部分（默认值 `long`），或者只显示姓氏和不可省略小品词（值 `short`）。第三个可能的值 `count`，则会返回使用 `cs:names` 元素所渲染的名称总数（考虑 `et-al` 缩写和编者/译者折叠的影响）。
 
-注意：即使 `name-as-sort-order` 改变了名字内部的顺序，最终显示的顺序不一定与包含粒子和后缀的名字的相同（见 [名字内部顺序](#名字内部顺序)）。`name-as-sort-order` 只影响以拉丁字母或者西里尔字母书写的名字。其他字母书写的名字（比如，亚洲的大部分名字）总是将全名中的姓显示在前面。
+##### `initialize`
 
-`sort-separator`
+设置了 `initialize-with` 属性时，如果该属性设置为 `false`（默认的结果为 `true`），则名不会被缩写。但是，`initialize-with` 的值依然会添加到名的首字母后（例如：当 `initialize` 设置为 `false`，并且`initialize-with` 设置为 `.` 时，「James T kirk」将会变为「James T. Kirk」）。
 
-设置名字的不同部分由于 `name-as-sort-order` 属性导致的内部位置变换后的分隔符。默认值为 `, `（Doe, John）。和 `name-as-sort-order` 属性相同，该属性只适用于拉丁字母和西里尔字母的名字。
+::: info 首字母
 
-`cs:name` 元素也可以携带 [词缀](#词缀affixes) 和 [格式化](#格式化formatting)。
+在和姓名有关的语境里，「首字母」（initial）即名的第一个字母，往往特指全名中每一个单词的第一个字母。
+:::
 
-#### 名字内部顺序
+##### `initialize-with`
 
-名字内部各部分的顺序取决于 `cs:name` 元素中 `form` 和 `name-as-sort-order` 属性和 `cs:style` 元素中的 `demote-non-droping-particle` 属性的设置。名称各部分的显示和排序的属性通常是不同的。下面将对名字顺序进行简单的介绍：
+当该属性被设置时，名将会使用缩写。属性值添加在每个首字母后（属性值 `.` 将得到「J. J. Dne」这样的结果）。对于合成的名（例如「Jean-Luc」），可以使用全局的带有连字符的 `initialize-with-hyphen` 属性来设置其缩写形式（见 [缩写名中的连字符](#缩写名中的连字符)）。
 
-**拉丁/西里尔名字的显示顺序**
+##### `name-as-sort-order`
 
----
+指定名字的显示顺序为先姓后名（例如「John Doe」会变成「Doe, John」）。这个属性有两个可能的值：
 
-条件：`form` 属性设置为 `long`
+- `first` - 属性只影响名称变量中的第一个名字
+- `all` - 属性将会影响所有的名字
 
-顺序：1. 名 2. 可省略粒子 3. 不可省略粒子 4. 姓 5. 后缀
+注意：即使 `name-as-sort-order` 改变了姓名成分的顺序，最终显示的顺序不一定与包含小品词和后缀的姓名中的顺序相同（见 [姓名成分顺序](#姓名成分顺序)）。而且，`name-as-sort-order` 只影响那些名通常在姓前面的书写系统，例如拉丁文、希腊文、西里尔文和阿拉伯文。相反，亚洲书写系统中的姓名总是按照先姓后名的顺序显示。
 
-示例：Jean de La Fontaine III
+::: info 译者注
 
----
+`name-as-sort-order` 可以直译为「按照排序顺序显示姓名」。即使在先名后姓的书写系统中，正式文档中也往往按姓氏来对人名进行排序，因此先姓后名的顺序就是所谓「排序顺序」。
 
-条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `never` 或者 `sort-only`
+:::
 
-顺序：1. 不可省略粒子 2. 姓 3. 名 4. 可省略粒子 5. 后缀
+##### `sort-separator`
 
-示例：La Fontaine, Jean de, III
+为那些被 `name-as-sort-order` 属性交换了位置的姓名成分设置分隔符，默认值为 `, `（Doe, John）。和 `name-as-sort-order` 属性的情况一样，该属性只影响那些「先名后姓」书写系统中的姓名。
 
----
+`cs:name` 元素还可以携带 [词缀](#词缀affixes) 和 [格式化](#格式化formatting) 属性。
 
-条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `display-and-sort`
+#### 姓名成分顺序
 
-顺序：1. 姓 2. 名 3. 可省略粒子 4. 不可省略粒子 5. 后缀
+姓名成分的顺序取决于 `cs:name` 元素中 `form` 和 `name-as-sort-order` 属性的值、 `cs:style` 元素中的 `demote-non-droping-particle` 属性（一个 [全局选项](#全局选项) ）的值，以及单个名字所在的书写系统。注意，姓名成分的显示和排序顺序通常是不同的，可能的顺序概述如下：
 
-示例：Fontaine, Jean de La III
-
----
-
-条件：`form` 属性设置为 `short`
-
-顺序：1. 不可省略粒子 2. 姓
-
-示例：La Fontaine
+**「先名后姓」书写系统（拉丁文等）中的姓名显示顺序**
 
 ---
 
-**拉丁/西里尔名字的排序顺序**
+1. 条件：`form` 属性设置为 `long`
+
+   - 顺序：1. 名 2. 可省略小品词 3. 不可省略小品词 4. 姓 5. 后缀
+   - 示例：[Vincent] [] [van] [Gogh] [III]
+   - 示例：[Alexander] [von] [] [Humboldt] [Jr.]
 
 ---
 
-条件：`demote-non-dropping-particle` 属性设置为 `never`
+2. 条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `never` 或者 `sort-only`
 
-顺序：1. 不可省略粒子 + 姓 2. 可省略粒子 3. 名 4. 后缀
-
-示例：La Fontaine de Jean III
-
----
-
-条件：`demote-non-dropping-particle` 属性设置为 `sort-only` 或者 `display-and-sort`
-
-顺序：1. 姓 2. 可省略粒子 + 不可省略粒子 3. 名 4. 后缀
-
-示例：Fontaine de La Jean III
+   - 顺序：1. 不可省略小品词 2. 姓 3. 名 4. 可省略小品词 5. 后缀
+   - 示例：[van] [Gogh], [Vincent] [], [III]
 
 ---
 
-**非拉丁和非西里尔名字的显示和排序顺序**
+3. 条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `display-and-sort`
+
+   - 顺序：1. 姓 2. 名 3. 可省略小品词 4. 不可省略小品词 5. 后缀
+   - 示例：[Gogh], [Vincent] [] [van], [III]
 
 ---
 
-条件：`form` 属性设置为 `long`
+4. 条件：`form` 属性设置为 `short`
 
-顺序：1. 姓 2. 名
+   - 顺序：1. 不可省略小品词 2. 姓
+   - 示例：[van] [Gogh]
 
-示例：张三 或者 Zhang San
+---
+
+**「先名后姓」书写系统（拉丁文等）中的姓名排序顺序**
+
+---
+
+1. 条件：`demote-non-dropping-particle` 属性设置为 `never`
+
+   - 顺序：1. 不可省略小品词 + 姓 2. 可省略小品词 3. 名 4. 后缀
+   - 示例：[van Gogh] [] [Vincent] [III]
+
+---
+
+2. 条件：`demote-non-dropping-particle` 属性设置为 `sort-only` 或者 `display-and-sort`
+
+   - 顺序：1. 姓 2. 可省略小品词 + 不可省略小品词 3. 名 4. 后缀
+   - 示例：[Gogh] [van] [Vincent] [III]
+
+---
+
+**「先姓后名」书写系统（中文等）中的姓名显示和排序顺序**
+
+---
+
+1. 条件：`form` 属性设置为 `long`
+
+   - 顺序：1. 姓 2. 名
+   - 示例：张三
 
 ---
 
@@ -977,19 +1003,21 @@ Feldmann, … S. G. Oliver
 
 顺序：1. 姓
 
-示例：张 或者 Zhang
+示例：张
 
 ---
 
+没有姓名成分的非人名按原样排序，但前面的英语冠词（「a」、「an」、「the」）会被去掉。例如「The New York Times」会被当作「New York Times」来排序。
+
 #### 名字格式化
 
-`cs:name` 元素可能会携带一个或者两个 `cs:name-part` 子元素来对名字的小部分进行特定的格式化。`cs:name-part` 必须携带 `name` 属性，设置为 `given` 或者 `family`。
+`cs:name` 元素可能会携带一个或者两个 `cs:name-part` 子元素来针对特定姓名成分进行格式化。`cs:name-part` 必须携带 `name` 属性，设置为 `given` 或者 `family`。
 
-如果设置为 `given`，`cs:name-part` 元素的 [格式化](#格式化formatting) 和 [文字大小写](#文本大小写text-case) 属性会影响 `given` 和 `dropping-particle` 部分。[词缀](#词缀affixes) 出现在 `given` 左右，将该部分扩起来。
+如果设置为 `given`，`cs:name-part` 元素的 [格式化](#格式化formatting) 和 [文字大小写](#文本大小写text-case) 属性会影响 `given` 和 `dropping-particle` 姓名成分。[词缀](#词缀affixes) 包围 `given` 成分，包括反转姓名中所有后续的姓名小品词。
 
-如果设置为 `family`，`cs:name-part` 元素的 [格式化](#格式化formatting) 和 [文字大小写](#文本大小写text-case) 属性会影响 `given` 和 `non-dropping-particle` 部分。[词缀](#词缀affixes) 出现在 `family` 左右，将该部分扩起来。
+如果设置为 `family`，`cs:name-part` 元素的 [格式化](#格式化formatting) 和 [文字大小写](#文本大小写text-case) 属性会影响 `family` 和 `non-dropping-particle` 部分。[词缀](#词缀affixes) 包围在 `family` 成分，包括未反转姓名中所有前置的小品词和「suffix」成分。
 
-`suffix` 部分不受 name-part 部分格式限制。`cs:name-part` 元素不影响 name-part 渲染的顺序。下面的代码，将产生类似 Jane DOE 的效果：
+姓名成分格式化不适用于 `suffix` 成分。`cs:name-part` 元素的使用不影响哪一个姓名成分以何种顺序渲染。下面的代码，将产生类似「Jane DOE」的效果：
 
 ```xml
 <names variable="author">
@@ -1001,17 +1029,29 @@ Feldmann, … S. G. Oliver
 
 #### 等（Et-al）
 
-Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），同时也可以使用可选的 `cs:et-al` 元素设置，`cs:et-al` 元素必须放在 `cs:name` 元素后。`term` 属性可以被设置为 `et-al`（默认）或者 `and others`。[格式化](#格式化formatting) 属性可以用来设置 et-al 的格式，下面是 `et-al` 术语的一个例子：
+Et-al 缩写通过 `et-al-…` 属性来控制（见[名称](#名称name)），它可以进一步使用可选的 `cs:et-al` 元素来自定义，该元素必须放在 `cs:name` 元素后面（如果存在的话）。
+
+[格式化](#格式化formatting)属性可以用在 `cs:et-al` 元素上，例如将 `at-al` 术语斜体化：
 
 ```xml
 <names variable="author">
-  <et-al term="and others" font-style="italic"/>
+  <et-al font-style="italic"/>
 </names>
 ```
 
-#### 备用角色（Substitute）
+`term` 属性还可以被设置为 `et-al`（默认）或者 `and others`，以便使用另一个术语：
 
-可选的 `cs:substitute` 元素，是 `cs:names` 的子元素，且必须是最后一个子元素，在父元素 `cs:names` 中指定的 [名称变量](#名称变量) 为空时添加替换。替换必须放在 `cs:substitute` 元素中，并且必须包含一个或者多个渲染元素（除 `cs:layout`）。`cs:names` 的简洁版本没有子元素，继承了 `cs:names` 元素中在 `cs:name` 和 `cs:et-al` 子元素的属性值。如果 `cs:substitute` 元素包含了多个子元素，第一个非空的元素用于替换。替换变量在输出的其余部分被抑制，以防止重复。下面的例子中：`author` 名称变量为空时，就被 `editor` 名称变量替换，在没有 editor 时，则使用 `title` 宏替换。
+```xml
+
+<names variable="author">
+  <et-al term="and others"/>
+</names>
+
+```
+
+#### 替补（Substitute）
+
+可选的 `cs:substitute` 元素，必须当作 `cs:name` 的最后一个子元素来使用，如果父元素 `cs:names` 中指定的 [名称变量](#名称变量) 为空则加以取代。用于取代的内容通过 `cs:substitute` 的子元素来确定，并且必须包含一个或者多个渲染元素（除了 `cs:layout`）。可以用一个没有子元素的简洁版 `cs:names` 作为子元素，它继承了最初那个 `cs:names` 元素在子元素 `cs:name` 和 `cs:et-al` 上设置的属性值。如果 `cs:substitute` 元素包含多个子元素，并且第一个元素返回了非空的结果用于替换，则其他替代变量会在剩下的输出中被抑制以避免重复。替代变量还会被视为空值以便决定是否抑制封闭的 `cs:group`。下面的例子中：`author` 名称变量为空时，就被 `editor` 名称变量替换，当没有编者时，则使用 `title` 宏替换。
 
 ```xml
 <macro name="author">
@@ -1024,19 +1064,25 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），�
 </macro>
 ```
 
+::: info 译者注
+
+此处的「替代变量」泛指 `cs:substitute` 内部的子元素，而非附录中提到的 CSL 标准变量。`cs:substitute` 默认为空，且只输出首个非空子元素。
+
+:::
+
 #### `cs:names` 中的标签
 
-`cs:label` 元素是可选的（见 [Label](#标签label)），而且必须位于 `cs:name` 和 `cs:et-al` 元素后，在 `cs:substitute` 元素前。当 `cs:label` 作为 `cs:names` 元素的子元素时，`cs:label` 不能携带 `variable` 属性，而是使用父元素 `cs:names` 中的变量。第二个区别是：`form` 属性可以设置为 `verb` 或者 `verb-short`，其所有允许的值为：
+`cs:names` 里可以放一个 `cs:label` 元素（见 [Label](#标签label)）。它必须出现在 `cs:substitute` 元素之前。`cs:label` 相对于 `cs:name`的位置决定了输出文本中名称和标签的顺序。当 `cs:label` 作为 `cs:names` 元素的子元素时，`cs:label` 不能携带 `variable` 属性，而是使用父元素 `cs:names` 中的变量。和在别处使用 `cs:label` 的第二个区别是：`form` 属性可以设置为 `verb` 或者 `verb-short`，因此所有允许的值为：
 
-- "long" - （默认）, 例如， "editor" 术语渲染为 "editor" 和 "editors"
-- "short" - 例如，"editor" 术语渲染为 "ed." 和 "eds"
-- "verb" - 例如，"editor" 术语渲染为 "edited by"
-- "verb-short" - 例如，"editor" 术语渲染为 "ed."
-- "symbol" - 例如，"section" 术语渲染为 "§" 和 "§§"
+- `long` - （默认）, 例如，对于「editor」术语，渲染为「editor」和「editors」
+- `short` - 例如，对于「editor」术语，渲染为「ed.」「eds」
+- `verb` - 例如，对于「editor」术语，渲染为「edited by」
+- `verb-short` - 例如，对于「editor」术语，渲染为「ed.」
+- `symbol` - 例如，对于「section」术语，渲染为「§」和「§§」
 
 ### 标签（Label）
 
-`cs:label` 渲染元素输出与所选变量匹配的术语，该属性必须设置为 "locator"、"page" 或数字变量之一。只有当选择的变量是非空的时候，术语才会渲染。例如：
+`cs:label` 渲染元素输出与其必要属性 `variable` 所选变量相匹配的术语，该属性必须设为 `locator`、`page` 或 [数字变量](#数字变量) 之一。只有当选择的变量是非空的时候，术语才会渲染。例如：
 
 ```xml
 <group delimiter=" ">
@@ -1045,29 +1091,29 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），�
 </group>
 ```
 
-可以生成 `page 3` 或者 `pages 5-7`。`cs:label` 可能会携带下面的属性：
+可以输出 `page 3` 或者 `pages 5-7`。`cs:label` 可能会携带下面的属性：
 
-`form`
+#### `form`
 
-​ 选择术语的形式，可以设置为下面的值：
+​ 选择术语的形式，允许的值为：
 
-- "long" - （默认），例如： "page" 术语渲染为 "page"/"pages"
-- "short" - 例如： "page" 术语渲染为 "p."/"pp."
-- "symbol" - 例如： "section" 术语渲染为 "§"/"§§"
+- `long` - （默认），例如：对于「page」术语，渲染为「page」或「pages」
+- `short` - 例如：对于「page」术语，渲染为「p.」者「pp.」
+- `symbol` - 例如：对于「section」术语，渲染为「§」者「§§」
 
-`plural`
+#### `plural`
 
-​ 设置术语的复数形式，可以使用下面的值：
+设置术语的复数形式，允许的值为：
 
-- "contextual" - （默认），复数形式的渲染和具体的内容相匹配。当内容中包含多个数字时，使用复数形式。如下面的渲染结果："page 1"，"pages 1-3"，"volume 2"，"volumes 2 & 4"。或者在使用 `number-of-pages` 和 `number-of-volumes` 时，数字大于 1，例如： ("1 volume" 和 "3 volumes"。
-- "always" - 总是使用复数形式，不管具体的内容如何。例如："pages 1" 和 "pages 1-3"
-- "never" - 禁止使用复数形式，不管具体内容： "page 1" 和 "page 1-3"
+- `contextual` - （默认），术语的复数形式和变量内容相匹配。当内容中包含多个数字时，使用复数形式。如下面的渲染结果：「page 1」、「pages 1-3」、「volume 2」、「volumes 2 & 4」。或者在使用 `number-of-pages` 和 `number-of-volumes` 变量时，数字大于 1（「1 volume」和「3 volumes」）。
+- `always` - 永远使用复数形式，例如：「pages 1」和「pages 1-3」
+- `never` - 永远使用单数形式，例如”page 1”和「page 1-3」
 
-`cs:label` 也可能会携带 [affixes](https://docs.citationstyles.org/en/stable/specification.html#affixes), [formatting](https://docs.citationstyles.org/en/stable/specification.html#formatting), [text-case](https://docs.citationstyles.org/en/stable/specification.html#text-case) 和 [strip-periods](https://docs.citationstyles.org/en/stable/specification.html#strip-periods) 属性。
+`cs:label` 也可能携带 [词缀](#词缀affixes)、[格式化](#格式化formatting)、[文本大小写](#文本大小写text-case) 和 [剥除句点](#剥除句点strip-periods) 属性。
 
-### 分组（Group）
+### 编组（Group）
 
-`cs:group` 元素必须包含一个或者多个渲染元素（除了 `cs:layout`）。`cs:group` 可以携带 `delimiter` 属性来分隔子元素以及 `affixes`、`display` 和 `formatting` 属性。`cs:group` 隐含的条件，当以下情况出现时，`cs:group` 和它的子元素将会被抑制：a) 在 `cs:group` 中至少一个渲染元素调用了变量（直接地或者通过宏调用），b) 所有被调用得变量都为空。
+`cs:group` 元素必须包含一个或者多个渲染元素（除了 `cs:layout`）。`cs:group` 可以携带 `delimiter` 属性来分隔子元素，此外还能携带 [词缀](#词缀affixes)、[显示](#显示display) 和 [格式化](#格式化formatting) 属性（作用于整个组的输出）。`cs:group` 隐式地表现为一个有条件的元素，当以下情况同时出现时，`cs:group` 及其子元素将会被抑制：a) 在 `cs:group` 中至少一个渲染元素调用了变量（直接或者通过宏调用），b) 所有被调用的变量都为空。例如，
 
 ```xml
 <layout>
@@ -1079,11 +1125,11 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），�
 </layout>
 ```
 
-上述代码可以生成 `retrieved from http://dx.doi.org/10.1128/AEM.02591-07` 类似得结果，但是当 URL 为空的时候，不生成结果。
+输出「retrieved from <http://dx.doi.org/10.1128/AEM.02591-07>」，但是当 URL 为空候，不生成结果。
 
 ### 选择语句（Choose）
 
-`cs:choose` 元素允许有条件的渲染元素。下面的例子的意思为：在 `issud` 日期变量存在的情况下，就实施渲染，如果不存在，就给出 `no date` 术语：
+`cs:choose` 元素允许有条件的渲染 [渲染元素](#渲染元素)。下面的例子在 `issud` 日期变量存在时就渲染它，否则渲染 `no date` 术语：
 
 ```xml
 <choose>
@@ -1096,156 +1142,181 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见 [Name](#名称name)），�
 </choose>
 ```
 
-`cs:choose` 元素中必须还有 `cs:if` 子元素，后面还可以有一个或者多个 `cs:else-if` 子元素以及一个可选的用来结尾的 `cs:else` 元素。`cs:if` 和 `cs:else-if` 元素可能回包含任意个除 `cs:layout` 的渲染元素。由于空的 `cs:else` 元素是多余的，所以 `cs:else` 元素必须至少包含一个渲染元素。`cs:if` 和 `cs:else-if` 元素必须含有一个或多个判断条件，这些条件可以使用下买的属性设置：
+`cs:choose` 元素中必须有一个 `cs:if` 子元素，它后面还可以跟一个或者多个 `cs:else-if` 子元素，以及一个可选的 `cs:else` 结束元素。`cs:if` 和 `cs:else-if` 元素可以包含任意个 [渲染元素](#渲染元素)（除了 `cs:layout`）。由于空的 `cs:else` 元素是多余的，所以 `cs:else` 元素必须至少包含一个渲染元素。`cs:if` 和 `cs:else-if` 元素必须含有一个或多个判断条件，这些条件可以使用下面的属性设置：
 
-`disambiguate`
+#### `disambiguate`
 
-​ 当改属性设置为 `true`(唯一允许的值) 的时候，在元素内容消除了两个相同的引用时渲染。当所有其他消除歧义的方法都不能识别唯一的目标时，才进行消除歧义的尝试。
+当该属性设置为 `true`（唯一允许的值）时，只有当它消除了两个相同的引注时才会渲染元素的内容。只有其他消歧方法都未能使目标源能被唯一识别时，才进行 [消除歧义](#消除歧义) 中所述的这种尝试。
 
-`is-numeric`
+#### `is-numeric`
 
-​ 测试给定的变量（[附录 IV 变量](#附录-iv-变量)）是不是包含数字部分。如果内容仅由数字构成，则识别为数字。数字可以带有前缀、后缀（"D2"，"2b"，"L2d"）、并且可能被逗号，连字符或 `&` 分隔（"2, 3"，"2-4"，"2 & 4"）。例如， "2nd" 被识别为 "true" ，但 "second" 和 "2nd edition" 被识别为 "false".
+测试给定的变量（[附录 IV 变量](#附录-iv-变量)）是否包含数字内容。如果内容仅由数字构成，则识别为数字。数字可以带有前缀和后缀（「D2」、「2b」、「L2d」），并且可能被逗号、连字符或「&」符号分隔（「2, 3」、「2-4」、「2 & 4」）。例如，「2nd」被识别为「true」，但「second」「2nd edition」识别为「false」
 
-`is-uncertain-date`
+#### `is-uncertain-date`
 
-​ 判断给定的 [日期变量](#日期变量) 是不是包含 [近似日期](#近似日期approximate-dates)。
+判断给定的 [日期变量](#日期变量) 是否包含 [近似日期](#近似日期approximate-dates)。
 
-`locator`
+#### `locator`
 
-​ 判断位置是不是和给定的位置符合。这里的位置主要是在一个文档中的位置，比如，题目，第几段。使用 "sub-verbo" 判断是不是 "sub-verbo" 类型
+判断定位词是否和给定的定位词类型相匹配（见 [定位词](#定位词locators)）。比如，使用「sub-verbo」判断是不是「sub-verbo」类型的定位符
 
-`position`
+#### `position`
 
-​ 判断引用的位置湿否和给定的位置匹配。当在 `cs:bibliography` 中调用时，`position` 的结果为 "false"。位置可以使用下面的选项测试：
+判断引用的位置是否和给定的位置匹配（术语：引注由一个或多个指向单独条目的引用组成）。当在 `cs:bibliography` 范围内调用时，`position` 的结果为「false」。位置可以使用下面的选项测试：
 
-- "first": 第一个引用项的位置
-- "ibid"/"ibid-with-locator"/"subsequent": 引用先前引用的项目的引用，Such cites may also have the "ibid" or "ibid-with-locator" position when:
+- `first`: 第一次引用某个条目的引注所在位置
+- `ibid`/`ibid-with-locator`/`subsequent`: 引注在引用了先前引用过的条目时具有 `subsequen` 位置。当处于以下情况时，这样的引注还可能具有 `ibid` 或者 `ibid-with-locator` 位置：
 
-  1. the current cite immediately follows on another cite, within the same citation, that references the same item
+  1.  在同一个引注中，当前引用紧跟在另一个指向相同条目的引用之后
+  2.  当前的引用是引注中的第一个引用，而且上一个引注包含一个指向相同条目的单独引用
 
-  or
+  如果满足上面任何一种情况，定位词的出现决定了这个引注会被指定为哪种位置：
 
-  1. the current cite is the first cite in the citation, and the previous citation consists of a single cite referencing the same item
+  - **前一个引用没有定位词**：如果当前引用有定位词，则当前引用的位置是 `ibid-with-locator`，否则是 `ibid` 。
+  - **前一个引用有定位词**: 如果当前引用具有相同的定位词，则当前引用的位置是 `ibid`。如果二者的定位词不同，则当前引用的位置是 `ibid-with-locator`。如果当前引用缺少定位词，则当前引用的位置是 `subsequent`。
 
-  If either requirement is met, the presence of locators determines which position is assigned:
+- `near-note`：一个引用跟在另一个指向相同条目的引用后。两个引用都必须在脚注或尾注中，并且两个引用的距离没有超过 `near-note-distance` 选项（见 [注释距离](#注释距离)）中定义的最大距离（使用脚注或尾注的数量计算）。
 
-  - **Preceding cite does not have a locator**: if the current cite has a locator, the position of the current cite is "ibid-with-locator". Otherwise the position is "ibid".
-  - **Preceding cite does have a locator**: if the current cite has the same locator, the position of the current cite is "ibid". If the locator differs the position is "ibid-with-locator". If the current cite lacks a locator its only position is "subsequent".
+当 `position="ibid-with-locator"` 检测为真时，`position="ibid"` 也会检测为真。而且当 `position="ibid"` 或者 `position="near-note"` 检测为真时，`position="subsequent"` 也会检测为真。
 
-- "near-note": position of a cite following another cite referencing the same item. Both cites have to be located in foot or endnotes, and the distance between both cites may not exceed the maximum distance (measured in number of foot or endnotes) set with the `near-note-distance` option (see [Note Distance](https://docs.citationstyles.org/en/stable/specification.html#note-distance)).
+::: info 译者注
 
-Whenever position="ibid-with-locator" tests true, position="ibid" also tests true. And whenever position="ibid" or position="near-note" test true, position="subsequent" also tests true.
+「ibid.」是拉丁语「ibidem」的缩写，意思是「出处同上」，用于在重复引用时简化引注内容。`subsequent` 是指「二次引用」，只要本次引用中包含已经引用过的条目就可归为此类。从语义上讲，「同上」不宜用在相距过远的引用之间，否则难以找出上文。因此规定只有两个引用之间没有其他引用的时候才是 `ibid`，即「相邻且相同」。特别地，如果这两个引用不在同一个引注中，要求前一个引用单独成注，如此才能指代明确。`near-note` 则对使用位置作了限定，但只要求彼此不超过某个预设的距离，而不要求它们直接相邻，即「相近且相同」。
 
-`type`
+:::
 
-​ 测试项目是不是和给定的类型匹配（[附录 III 类型](#附录-iii-文献类型)）。这里的类型指条目的类型，例如，书，期刊文献，学位论文。
+#### `type`
 
-`variable`
+​测试条目是否和给定的类型匹配（[附录 III 条目类型](#附录-iii-条目类型)）。
 
-​ 测试给定变量（[附录 IV 变量](#附录-iv-变量)）的默认的形式 (long) 是不是为空。
+#### `variable`
+
+​测试给定变量（[附录 IV 变量](#附录-iv-变量)）的默认的形式（`long`）是否为空。
 
 ---
 
-除了 `disambiguate` 外，所有的条件都允许有多个测试值，多个测试值使用空格分隔（"book thesis"）。
+除了 `disambiguate` 外，所有的条件都允许有多个测试值（使用空格分隔，例如`book thesis`）。
 
 `cs:if` 元素和 `cs:else-if` 元素可能会携带 `match` 属性用来控制判断的逻辑，`match` 可设置的值为：
 
-- "all" - 默认，仅当所有给定测试值都为 true 的时候结果才为 true
-- "any" - 当任意一个值为 true 的时候，结果就为 true
-- "none" - 当没有值测试为 true 的时候，结果为 true
+- `all` - （默认），仅当所有给定测试值都为 `true` 的时候，结果才为 `true`
+- `any` - 当任意一个值为 `true` 的时候，结果就为 `true`
+- `none` - 当没有值测试为 `true` 的时候，结果为 `true`
 
 ## 样式的行为
 
 ### 选项
 
-样式可以使用不同的元素来进行特定的配置。在 `cs:citation` 元素中设置元素可以配置特定的 [引文选项](#引注选项)；在 `cs:bibliography` 元素和 [全局选项](#全局选项)（同时影响引文和参考文献条目）中，可以配置特定的参考文献条目。继承的名字选项可以在 `cs:style`, `cs:style` 和 `cs:bibliography` 中设置。最后，[本地化选项](#本地化选项) 可以在 `cs:locale` 元素中设置。
+被作为属性设置在 `cs:citation` 上的 [引注选项](#引注选项) 、设置在 `cs:bibliography` 上的 [参考文献表选项](#参考文献表选项) 和设置在 `cs:style` 上的 [全局选项](#全局选项)（同时影响引注和参考文献表）可以用来配置样式。[可继承的名称选项](#可继承的名称选项) 可以设置在 `cs:style`、`cs:style` 和 `cs:bibliography` 之上。最后，[本地化选项](#本地化选项) 可以在 `cs:locale` 元素上设置。
 
 #### 引注选项
 
 ##### 消除歧义
 
-当一个引用对应多个参考文献条目的时候会产生歧义。下面有四种方法用来消除歧义：
+当一个引用对应多个参考文献表题注的时候会产生歧义。有四种可行的方法来消除这样的歧义，这些方法按下面的顺序被依次尝试：
 
-1. 显示更多作者姓名
-2. 扩展姓名（添加缩写或者完整的名）
-3. 添加年份后缀
-4. 在 `cs:choose` 的 `disambiguate` 属性为 true 的时候，实行渲染
+1. 扩展姓名（添加首字母或者名）
+2. 显示更多姓名
+3. 渲染 `cs:choose` 条件语句上 `disambiguate` 属性测试为 `true` 的引注。
+4. 添加年份后缀
 
-方法 2 也可以在全局名称歧义消除异己整个文档中有歧义的地方。
+::: info 译者注
 
-消除歧义的方法在下面属性被设置的时候，将会被激活，并且按上述列表中的方法进行尝试：
+简便起见，套用计算机语言学的概念，下文会将「消除歧义」简称为「消歧」。相应地，「消除歧义的方法」简称为「消歧方法」，「消除了歧义的引用」则称之为「已消歧引用」。
 
-`disambiguate-add-names` 步骤 1
+:::
 
-​ 如果设置为 `true`（默认为 `false`），使用 et-al 缩写锁代替的名字列表会逐个的加入到渲染列表中，知道添加的名字可以消除引用歧义为止。
+方法 1 还可以出于全局 _姓名消歧_ 的目的来使用，把整个文档中混淆的和未混淆的引注都进行转换。
 
-`disambiguate-add-givenname` 步骤 2
+这四种消歧方法可以通过下面的选项属性来单独激活：
 
-​ 如果设置为 `true`（默认为 `false`），产生歧义的名字将被扩展。名字扩展可以使用 `givenname-disambiguation-rule` 设置。下面是一个例子。
+##### `disambiguate-add-givenname` [方法 1]
+
+如果设置为 `true`（默认为 `false`），产生歧义的名字（它们在 `short` 形式或首字母缩写的 `long` 形式时相同，但加上首字母或显示全名后不同）将被扩展。名字扩展可以使用 `givenname-disambiguation-rule` 设置。下面是一个例子。
 
 | 含有歧义的引用               | 消除歧义的引用                     |
 | ---------------------------- | ---------------------------------- |
 | (Simpson 2005; Simpson 2005) | (H. Simpson 2005; B. Simpson 2005) |
 | (Doe 1950; Doe 1950)         | (John Doe 1950; Jane Doe 1950)     |
 
-如果不能通过扩展名字来实现消除歧义，当 `disambiguate-add-names` 属性设置为 `true`， the names still hidden as a result of et-al abbreviation after the disambiguation attempt of `disambiguate-add-names` are added one by one to all members of a set of ambiguous cites, until no more cites in the set can be disambiguated by adding expanded names.
-
 `givenname-disambiguation-rule`
 
-用来指定 a) 名字扩展的目的是不是仅限于消除歧义，还是对消除歧义的名字有其他的目的 (只有在后面的情况中，有歧义的名字才会在明确的引用中扩展，例如：从 (Doe 1950; Doe 2000) 扩展到 (Jane Doe 1950; John Doe 2000)) b) 名称扩展是针对全部还是针对每个引用的名字 c) 扩展名字的方法。
+用来指定 a) 名字扩展的目的是仅限于消除引用歧义，还是额外包括消除姓名歧义（只有在后面的情况中，才会在未混淆的引用中扩展有歧义的名字，例如：从 (Doe 1950; Doe 2000) 扩展到 (Jane Doe 1950; John Doe 2000)）b) 名字扩展是针对所有名字启用，还是只对每个引用的第一个名字启用 c) 扩展每一个名字的方法。
+
+::: info 译者注
+
+「引用歧义」是指同一个 author-date 引注中，两条引用的作者名和年份都相同，但实际指代的文献不同，此时无法分辨引注所对应的题注。
+
+「姓名歧义」则是指同一个 autho-date 引注中，两条引用的作者名相同、年份不同，可以通过对照年份来判断该引用所对应的题注。
+
+:::
 
 **扩展单个名字**
 
 ​ 扩展单个名字的步骤是：
 
-1. 如果 `initialize-with` 被设置并且 `initialize` 的值为默认的 true：
-   (a) 可以通过 `long` 而不是 `short` 的形式来渲染首字母 (e.g. Doe 变为 J. Doe)
-   (b) 如果 `initialize` 设置为 `flase`，完整的姓名被渲染，而不是首字母（J. Doe 变为 John Doe）
-2. 如果 `initialize-with` 没有被设置，使用 `long` 格式渲染完整的姓名（Doe 变为 John Doe）
+1. 如果设置了 `initialize-with`，并且 `initialize` 具有默认值 `true`：
+   (a) 通过将名字显然为 `long` 而非 `short` 来显示首字母（例如「Doe」变为「J. Doe」）。
+   (b) 当 `initialize` 被设为 `flase`，渲染完整的名而非首字母（例如「J. Doe」变为「John Doe」）。
+2. 如果没有设置 `initialize-with`，使用 `long` 形式渲染完整的姓名（「Doe」变为「John Doe」）。
 
 **消除歧义法则**
 
-​ `givenname-disambiguation-rule` 属性可设置的值为：
+​ `givenname-disambiguation-rule` 允许的值为：
 
-​ "all-name"
+​ `all-names`
 
-​ 名字扩展具有消除名字歧义和消除引用歧义的双重目的。在渲染的有歧义的名称中，所有的有歧义的或者没有歧义的名字都将被消除歧义。
+​名字扩展具有消除引用歧义和消除姓名歧义的双重目的。在混淆和未混淆的引用中，所有渲染后有歧义的名字都需要消除歧义。所有姓名都逐步转换，直到不再有歧义。无法消除歧义的名字将保持不变。
 
-​ "all-names-with-initials"
+`​all-names-with-initials`
 
-​ 和 "all-name" 一样，但是名称的扩展仅限于缩写。当 `initialize-with` 没被设置或者 `initialize` 被设置为 `false` 时，不会进行消除歧义的尝试。
+​和 `all-names` 一样，但是名字扩展的手段仅限于显示首字母（见前文步骤 1(a)）。`initialize-with` 没有被设置或者 `initialize` 被设置为 `false` 时，不会进行消除歧义的尝试。
 
-​ "primary-name"
+`primary-name`
 
-​ 和 "all-name" 一样，但是消除歧义仅限于每个引用的第一个名字。
+​和 `all-names` 一样，但是仅对每个引用的第一个名字消除歧义。
 
-​ "primary-name-with-initials"
+`primary-name-with-initials`
 
-​ 和 "all-names-with-initials" 一样，但是消除歧义仅限于每个引用的第一个名字。
+​和 `all-names-with-initials` 一样，但是仅对每个引用的第一个名字消除歧义。
 
-​ "by-cite"
+`by-cite`
 
-​ 默认，和 "all-name" 一样，但是名称扩展的目的仅限于消除引用的歧义，只有有歧义的名字在有歧义的引用中才会被影响，并且在引用的第一个名字消除歧义后就停止消除歧义。
+​默认值。和 `all-names` 一样，但是名字扩展的目的仅限于消除引用的歧义，只有处在混淆引用中有歧义的名字才会受影响，并且消歧行为中止于消除了引用歧义的名字后。
 
-`disambiguate-add-year-suffix` 步骤 3
+##### `disambiguate-add-names` [方法 2]
 
-如果设置为 `true`（默认为 `false`），字母序的年后缀将会被添加到有歧义的名字上（"Doe 2007, Doe 2007" 变为 "Doe 2007a, Doe 2007b"）。当字母序到达 `z`，后，就会启用两个字母（"z", "aa", "ab", …, "az", "ba" 等等）。
+如果设置为 `true`（默认为 `false`），原本会因 et-al 缩写而隐藏的名字将会被逐一添加到混淆的引用中，直到不再有引用可以通过添加名称来消除歧义为止。
 
----
+如果 `disambiguate-add-names` 和 `disambiguate-add-names` 同时被设为 `true`，则首先采用姓名扩展来渲染姓名。如果引用无法通过扩展所渲染的名字来（完全）消除歧义，则由于 et-al 缩写而隐藏的姓名将被逐个添加到混淆的引注中。如果有助于消除混淆的引用，则被添加的名字也会被扩展。这个流程将会持续到不再有引用可以通过添加扩展的姓名来消除歧义。
 
-如果应用上述的歧义消除方法后仍然存在歧义，则尝试通过 `disambiguate` 条件来渲染不同的引用 [步骤 4] (见 [choose](#选择语句choose))。
+在上面对消歧方法 (1) 和 方法 (2) 的描述中，我们假设每一个（消除了歧义的）引注都有明确的关联指向其参考文献表题录。为了确保每一个引用都确实唯一地标识其在参考文献表中的题注，这些用于区分引用的详细信息（例如姓名、首字母和全名）必须显示在对应的参考文献表题注中。如果没有满足这个要求，消歧方法 (1) 和方法 (2) 还会应用于所有混淆引用的参考文献表题录，直到不再有可通过添加（扩展）姓名来消除歧义的题录。每种方法只在已经被用于消除引用歧义后才会对所涉及的参考文献表题录生效。
+
+##### `disambiguate` 条件 [方法 3]
+
+还可以通过渲染 `disambiguate` 条件测试为 `true` 的引用来尝试消除歧义（见 [选择语句](#选择语句choose)）。
+
+##### `disambiguate-add-year-suffix` [方法 4]
+
+如果设置为 `true`（默认为 `false`），以字母表为序列的年份后缀会被添加到混淆的引用（例如「Doe 2007, Doe 2007」变成「Doe 2007a, Doe 2007b」）及其对应的参考文献表条目中。这个最终消歧方法总能成功。年份后缀的添加顺序遵从参考文献表中的题注顺序，一旦用到了「z」，则将继续添加额外的字母（「z」、「aa」、「ab」、...、「az」、「ba」、...）。默认情况下，年份后缀追加到引用或题注中由 `cs:date` 渲染的第一个年份后，但它的位置还可以通过使用 `cs:text` 明确渲染「year-suffix」变量来进行控制。如果「year-suffix」是通过 `cs:citation` 范围内的 `cs:text` 渲染得到的，则它在 `cs:bibliography` 中被抑制，除非它也被 `cs:bibliography` 范围内的 `cs:text` 所渲染，反之亦然。
+
+::: info 译者注
+
+`cs:citations` 中使用 `cs:text` 渲染的「year-suffix」处于自定义位置，CSL 引擎无法判断这个位置对应 `cs:bibliography` 题注的哪一部分，因此需要我们手动指定。
+
+:::
 
 ##### 引用分组
 
 通过引用分组，可以将相同名称的文本引用放在一起，比如：(Doe 1999; Smith 2002; Doe 2006; Doe et al. 2007) 将会变为 (Doe 1999; Doe 2006; Smith 2002; Doe et al. 2007)。引用分组在引用排序和消除歧义后执行。分组后的引用保持其相对顺序，并移到第一个改组中引用出现的第一个位置。
 
-引用分组可以在 `cs:citation` 元素中通过设置 `cite-group-delimiter` 属性或者 `collapse` 属性（见 [cite collapsing](#cite-collapsing引用折叠)）激活。
+引用分组可以在 `cs:citation` 元素中通过设置 `cite-group-delimiter` 属性或者 `collapse` 属性（见 [cite collapsing](#引用折叠)）激活。
 
 `cite-group-delimiter`
 
 激活引用分组并为引用组中的引用指定分隔符，默认为 `, `。例如，当 `cs:citation` 元素中的 `cs:layout` 中的 `delimiter` 设置为 `;` 时，`collapse` 设置为 `year`，`cite-group-delimiter` 设置为 `, `，将生成类似 "(Doe 1999,2001; Jones 2000)" 的引用。
 
-##### cite collapsing/引用折叠
+##### 引用折叠
 
 author 或者 author-date 类型的引用格式中的引用分组和数字格式中的引用范围可以通过 `collapse` 属性来折叠。折叠引用组中分隔符可以是使用 `year-suffix-delimiter` 和 `after-collapse-delimiter` 属性来设置：
 
@@ -1268,7 +1339,7 @@ author 或者 author-date 类型的引用格式中的引用分组和数字格式
 
 ​ 设置折叠后的引用组要使用的分隔符。默认在 `cs:citation` 元素的 `cs:layout` 中设置。例如：当 `collapse` 设置为 `year`，`cs:citation` 中的 `cs:layout` 的 `delimiter` 元素设置为 `, `，并且 `after-collapse-delimiter` 设置为 `;` 时，渲染结果将类似于 "(Doe 1999, 2001; Jones 2000, Brown 2001)"。
 
-##### 标注距离
+##### 注释距离
 
 `near-note-distance`
 
@@ -1382,7 +1453,7 @@ Doe, Williams et al. 2005.
 
 #### 全局选项
 
-##### 人名中的连字符
+##### 缩写名中的连字符
 
 `initialize-with-hyphen`
 
@@ -1394,7 +1465,7 @@ Doe, Williams et al. 2005.
 
 ​ 用来设置页码范围的格式，是不是使用简写来压缩。其可选的值有：`chicago` ("321–28")， `expanded` ( "321–328")， `minimal` ("321–8")，或者 `minimal-two` ("321–28")。每一组值前面表示可选的属性值，后面是渲染结果的例子。也可见 [附录 V 页码范围格式](#附录-v-页码范围格式)。使用 `page-range-delimiter` 属性可以用来设置页面范围分割的符号，该属性在 CSL 1.0.1 中引入，默认是一个破折号。如果改属性没有设置，就默认使用破折号。
 
-##### Name Particles
+##### 姓名小品词
 
 ​ 西方人的名字中经常包括一个或者多个小部分，例如，`de` 在荷兰人的名字中 `W. de Koning`。在仅显示姓氏时，这些小部分可以分为必须保留和可删除（或译为不可省略和可省略）两种类型：这两种类型分别称为 `non-dropping` 部分和 `dropping` 部分。一个单个的名字可以同时包括这两种类型（不能删除的类型始终位于可删除类型的后面）。例如，`W. de Koning` 和法国名字 `Jean de la Fontaine` 可以被解构为：
 
@@ -1477,7 +1548,7 @@ Doe, Williams et al. 2005.
 
 ​ `cs:citation` 和 `cs:bibliography` 元素可以在 `cs:layout` 元素之前携带一个 `cs:sort` 子元素，来实现对引文或者参考文献条目的排序。在缺失 `cs:sort` 元素时，引文和文献条目将会使用他们在文章中出现的顺序来排序。
 
-​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录-iv-变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`ascending`，默认）或者降序（`descending`）。属性 `names-min`, `names-use-first`, `names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字。
+​ `cs:sort` 元素必须包含一个或者多个 `cs:key` 子元素，可以在该元素中设置变量（[附录 IV 变量](#附录 IV 变量)）或者宏名来实现排序。对于每个 `cs:key` 元素，排序的顺序可以通过设置 `sort` 属性来设置为升序（`ascending`，默认）或者降序（`descending`）。属性 `names-min`、`names-use-first`、`names-use-last` 可以用来覆盖 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 属性的值，并且可以通过 `cs:key` 影响所有的名字。
 
 ​ 排序的键值是按顺序求值的，也就是说：首先，使用第一个排序键值对所有的项目进行排序。然后使用第二个键值对第一个键值排序后的结果进行排序，直到所有的键值都完成排序为止。如果键值为空，就放到最后。
 
@@ -1513,7 +1584,7 @@ Doe, Williams et al. 2005.
 
 ​ 对于名字排序，使用相同的宏而不是直接使用名称变量来渲染和排序有 4 个好处。第一，可以使用替换，例如：可以使用 `editor` 变量代替空的 `author` 变量。第二，可以使用 et-al 缩写，在宏里使用 `et-al-min`/`et-al-subsequent-min`, `et-al-use-first`/`et-al-subsequent-use-first` 和 `et-al-use-last` 可选属性，或者覆盖 `cs:key` 元素中的 `names-min`, `names-use-first` 和 `names-use-last` 。当 et-al 缩写出现的时候，`et-al` 和 `and others` 术语不会包括在排序键值中。第三，名字可以只使用姓来排序，即使用宏，其中的 `cs:name` 扽 `form` 属性设置为 `short`。最后，通过调用宏，将 `cs:name` 中的 `form` 属性设置为 `count`，可以按姓名列表中姓名的数目进行排序。至于使用 `variable` 属性对姓名进行排序，将 `cs:name` 中的 `name-as-sort-order` 属性设置为 `all`，返回值为排序后的名称列表。
 
-​ 在宏中带有 `cs:number` 的 [数字变量](#数字变量) 的和日期变量的渲染方法和通过变量的调用相同。唯一的区别是：如果通过 `variable` 属性调用日期变量，将返回完整的日期。相反地，宏调用则只返回原本要渲染的日期成分。例如：
+在宏中带有 `cs:number` 的 [数字变量](#数字变量) 的和日期变量的渲染方法和通过变量的调用相同。唯一的区别是：如果通过 `variable` 属性调用日期变量，将返回完整的日期。相反地，宏调用则只返回原本要渲染的日期成分。例如：
 
 ### 范围分隔符
 
@@ -1653,7 +1724,7 @@ C. 带有注释的条目，注释显示在参下方的缩进块中。
 
 ### 文本大小写（text-case）
 
-​ `text-case` 属性可以在 `cs:date`, `cs:date-part`, `cs:label`, `cs:name-part`, `cs:number` 和 `cs:text` 中设置，可设置的值为：
+​ `text-case` 属性可以在 `cs:date`、`cs:date-part`、`cs:label`、`cs:name-part`、`cs:number` 和 `cs:text` 中设置，可设置的值为：
 
 - "lowercase": 使用小写字母渲染文本
 - "uppercase": 使用大写字母渲染文本
@@ -1729,7 +1800,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 
 术语在本地化文件中使用
 
-### Locators 用来定位的术语
+### 定位词（Locators）
 
 - book 书
 - chapter 章
@@ -1840,7 +1911,7 @@ CSL 处理器不能识别专有名词。因此，可以将句子大小写的字�
 - scale
 - version
 
-## 附录 III 文献类型
+## 附录 III 条目类型
 
 ::: info WIP
 此小节正在施工中
