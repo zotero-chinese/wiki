@@ -1,8 +1,7 @@
 ---
 title: CSL 介绍
-order: 1
+outline: deep
 date: 2022-08-01 16:23:04
-updated: 2023-07-22 20:42:39
 ---
 
 # CSL 介绍
@@ -39,9 +38,9 @@ updated: 2023-07-22 20:42:39
 
 `author-date` 风格的引用会显示作者名字和发表的日期，例如：`(Van der Klei et al. 1991; Zwart et al. 1983)`。而 `author` 风格的引用只显示作者名字，例如：`(Gidijala et al.)`。参考文献条目一般使用字母表顺序对作者进行排序。
 
-::: tip 著者-出版年制
+::: tip 著者 - 出版年制
 
-国标中的「著者-出版年制」就属于 `author-date` 风格。
+国标中的「著者 - 出版年制」就属于 `author-date` 风格。
 
 :::
 

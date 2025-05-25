@@ -1,8 +1,7 @@
 ---
 title: CSL 1.0.2 规范
-order: 2
+outline: deep
 date: 2022-08-01 16:55:26
-updated: 2023-07-22 20:49:04
 ---
 
 # CSL 1.0.2 规范
