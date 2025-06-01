@@ -15,18 +15,18 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.18.0",
-    "@mdit/plugin-mark": "^0.18.0",
-    "@types/node": "22.15.3",
+    "@mdit/plugin-footnote": "0.21.0",
+    "@mdit/plugin-mark": "^0.21.0",
+    "@types/node": "22.15.29",
     "@zotero-chinese/markdownlint-config": "^1.0.5",
     "@zotero-chinese/prettier-config": "^1.0.5",
     "autocorrect-node": "^2.14.0",
     "husky": "9.1.7",
     "lint-staged": "16.1.0",
-    "markdownlint-cli2": "0.17.2",
+    "markdownlint-cli2": "0.18.1",
     "prettier": "^3.5.3",
     "sharp": "^0.34.2",
-    "tinyglobby": "^0.2.13",
+    "tinyglobby": "^0.2.14",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitepress": "1.6.3"
