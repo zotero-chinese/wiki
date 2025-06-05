@@ -1,9 +1,7 @@
 ---
 title: 安装
-# order: 2
 icon: download
 date: 2023-04-19 22:27:07
-updated: 2023-07-20 16:51:54
 ---
 
 # 安装
