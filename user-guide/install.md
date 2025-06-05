@@ -143,12 +143,13 @@ Zotero 官方目前已开发有 iOS 客户端，在 App store 搜索下载 Zoter
 
 ### Android
 
-Zotero 官方现已发布 [Zotero for Android 测试版](https://forums.zotero.org/discussion/110371/available-for-beta-testing-zotero-for-android#latest)，然而，测试期间存在人数限制，且下载链接在 Google Play，国内下载不便，支持功能也有限，有条件的同学可以自行尝试。
+Zotero 官方现已正式发布发布 [Zotero for Android](https://forums.zotero.org/discussion/124672/now-available-zotero-for-android)，请自行尝试以下可用的下载链接。
 
-- [Google Play](https://play.google.com/store/apps/details?id=org.zotero.android)
-- [LingXingZhong 镜像，APK 来源于下面源码编译仓库](https://ftp.linxingzhong.top/Zotero_for_Android/)
+- [Google Play](https://play.google.com/store/apps/details?id=org.zotero.android)，你可能需要科学上网才能访问此链接
+- [APK Combo](https://apkcombo.com/zh/zotero/org.zotero.android/)
+- [Up to down](https://zotero.en.uptodown.com/android/download)
 
-我们也创建了一个仓库提供从源码编译的 Zotero Android 版本，见 [`northword/zotero-android-nightly-build`](https://github.com/northword/zotero-android-nightly-build) 仓库，但需注意，这个仓库发布的极不稳定，仅供测试使用！
+我们也创建了一个仓库提供从源码编译的 Zotero Android 版本，见 [`northword/zotero-android-nightly-build`](https://github.com/northword/zotero-android-nightly-build) 仓库，但需注意，这个仓库发布的不是正式版本，仅供测试使用！
 
 在官方版本正式发布前，Android 用户可使用以下第三方客户端：
 

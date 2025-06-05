@@ -65,19 +65,7 @@
 
 ## Android
 
-::: tip
-
-Zotero 官方已经在测试 Android 版本客户端，预计 2025 年发布。
-
-:::
-
-目前使用较多的 Android 客户端是 Zoo，开源免费，主要功能有：
-
-- 查看不同文件目录分类，包括子文件目录。不能编辑
-- 支持群组条目查看，不能编辑
-- 支持创建，编辑和删除笔记。这里是笔记，不是 PDF 里的注释笔记
-- 支持搜索功能，包括条目和笔记
-- 支持 WebDAV 附件下载与上传
+Zotero 官方已于 2025 年 6 月 5 日[正式发布 Android 版本客户端](https://www.zotero.org/blog/zotero-for-android/)。
 
 ### 安装
 
@@ -90,6 +78,12 @@ Zotero 官方已经在测试 Android 版本客户端，预计 2025 年发布。
 Zotero 官方安卓客户端的配置方法与 iOS 端相同。详见 [iOS](#ios)。
 
 #### Zoo 开源客户端
+
+::: warning
+
+Zotero 已经正式发布 Android 版，我们建议更换为 Zotero Android 而不是继续使用 Zoo for Zotero。
+
+:::
 
 1. Zoo 安装成功后，需要使用 Zotero 授权的 API key 才能访问 Zotero 数据库。如果你已有一个 API key，可直接在下图中直接填入。一般刚使用 Zoo 的同学，都需要重新申请一下，输入 Zotero 账号和密码，点击 Got it，在授权页面注意需要选择 7 Save Key。如果不成功，可以多试几次。授权成功后，应用会开始下载文献库信息，文献越多，下载时间越长。如果等了 10-20 分钟还在 Loading，建议重启 APP 试试。详细说明参考下图
 
