@@ -150,10 +150,3 @@ Zotero 官方现已正式发布发布 [Zotero for Android](https://forums.zotero
 - [Up to down](https://zotero.en.uptodown.com/android/download)
 
 我们也创建了一个仓库提供从源码编译的 Zotero Android 版本，见 [`northword/zotero-android-nightly-build`](https://github.com/northword/zotero-android-nightly-build) 仓库，但需注意，这个仓库发布的不是正式版本，仅供测试使用！
-
-在官方版本正式发布前，Android 用户可使用以下第三方客户端：
-
-- Zoo for Zotero：
-
-  - [Google Play](https://play.google.com/store/apps/details?id=com.mickstarify.zooforzotero)
-  - [Android Apps APK 镜像](https://androidappsapk.co/detail-zoo-for-zotero/)
