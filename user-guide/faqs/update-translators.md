@@ -154,7 +154,6 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
    请根据您使用的浏览器点开下面相应的说明，并按照说明中的步骤操作。（360（极速）浏览器、搜狗浏览器、QQ 浏览器等基于 Chromium 等国内厂商推出的浏览器请参照 Google Chrome 的步骤操作）
 
    ::: details Google Chrome、Microsoft Edge 和 Mozilla Firefox
-
    1. 右键点击 Zotero Connector 按钮，然后点击「选项/Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-chrome-1.jpg)
@@ -168,7 +167,6 @@ ScienceDirect 增强了反爬虫机制，这限制了 Zotero 的抓取功能，Z
    ::: details Apple Safari
 
    虽然 Zotero 目前已经支持在 Safari 中使用，但实际使用中在 Safari 中抓取失败的案例比较多。 \*\*建议使用 Microsoft Edge、Google Chrome 或 Mozilla Firefox 浏览器进行抓取。
-
    1. 在网页空白处点鼠标右键，然后点击「Zotero Preference」
 
       ![打开 Zotero Connector 的选项](../../assets/images/update-translator-safari-1.jpg)
