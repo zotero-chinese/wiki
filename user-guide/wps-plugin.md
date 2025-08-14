@@ -43,7 +43,6 @@ WPS 插件的按钮与 Word 插件类似，具体的操作过程，请参考 [�
 1.  **关闭 WPS Office 的所有程序**（如文字、表格、演示）。
 
 2.  **找到 Zotero.dotm 文件并复制它：**
-
     - **对于 Zotero 7 及更新版本：**
       - 路径通常为： `[Zotero安装盘符]:\Program Files\Zotero\integration\word-for-windows\`
       - 例如，如果您 Zotero 安装在 D 盘，路径则为 `D:\Program Files\Zotero\integration\word-for-windows\Zotero.dotm`
@@ -58,7 +57,6 @@ WPS 插件的按钮与 Word 插件类似，具体的操作过程，请参考 [�
       ![image](../assets/images/WPS_Problems.png)
 
 3.  **将 Zotero.dotm 文件粘贴到 WPS 的启动 (startup) 文件夹：**
-
     - 打开文件资源管理器，在地址栏输入以下路径并按回车键：
       `%APPDATA%\kingsoft\wps\startup`
       或者，您也可以手动导航到这个路径，它通常是：

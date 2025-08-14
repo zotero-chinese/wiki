@@ -135,7 +135,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 1. **确定代理链接的结构特点**
 
    WebVPN 代理通常有两种主要类型：
-
    - **类型 1**: 代理后链接中不保留原始 Host
      - 例如：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/periodical/hjkxyj202501001`
      - 这种代理后的链接中未包含原始 Host（`d.wanfangdata.com.cn`）。
@@ -144,12 +143,10 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
      - 对于这一种代理，原始链接的 Host 被编码后嵌入到代理链接的域名中。（`d.wanfangdata.com.cn` 被编码为 `d-wanfangdata-com-cn`添加到了代理后的链接中）。
 
 2. **创建代理规则**
-
    - 在 Zotero Connector 浏览器扩展中，进入「Proxies」→「Configured Proxies」
    - 点击 `+` 按钮添加新规则
 
 3. **填写代理规则参数**
-
    - **Login URL Schema**: 填写登录 WebVPN 的登录入口链接。非必填项。
    - **Proxied URL Schema**: 填写代理链接的结构。比较 WebVPN 代理链接和原始链接的结构，将代理链接中与原始链接相同的部分使用以下替换符来表示：
      - `%h`: 用于替换原始链接的 Host 部分（Host 中的 `.` 会被替换为 `-`）
@@ -158,7 +155,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
    - **Hostnames**: 点击 `+` 按钮，然后在「Hostname」中输入此规则适用的网站域名（如 `d.wanfangdata.com.cn`）
 
 4. **适配更多网站**
-
    - 如果不同网站的 Proxied URL Schema 相同，则该代理规则可用于多个网站，可直接在「Hostnames」中添加更多域名；
    - 如果不同网站代理链接中未被替换的部分存在不同，需配置的 Proxied URL Schema 也就不同，则需在「Configured Proxies」创建多条规则。
 
@@ -188,7 +184,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 | Path     | `periodical/hjkxyj202501001` |
 
 2. 比较原始链接和代理后链接的结构，确定需要替换的部分
-
    - 原始链接中的 Host 部分未在代理后链接中出现，因此 `%h` 不需要使用；
    - 原始链接中的 Path 部分 `periodical/hjkxyj202501001` 在代理后链接中保持不变，这部分内容可以用 `%p` 表示；
    - 代理后链接中没有用到完整的原始 URL，因此 `%u` 不需要使用。
@@ -196,7 +191,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 3. 应用替换符构建 Proxied URL Schema
 
    将代理链接中可替换的部分替换为对应的替换符，其余部分直接保留原有内容，拼接 Proxied URL Schema。
-
    - 拆分代理后链接中可替换的部分：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/` + `periodical/hjkxyj202501001`
    - 使用替换符号替换可替换的部分：`https://portal.sclib.cn/interlibSSO/goto/91/+c9v-me-mfc-s-9bnl9bm/` + `%p`
 
@@ -234,7 +228,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 | Path     | `periodical/hjkxyj202501001` |
 
 2. 比较原始链接和代理后链接的结构，确定需要替换的部分
-
    - 原始链接中的 Host 部分 `d.wanfangdata.com.cn` 在被编码后变为 `d-wanfangdata-com-cn`（Zotero Connector 会自动将 `.` 替换为 `-`），代理后链接中的相应内容可以用 `%h` 表示；
    - 原始链接中的 Path 部分 `periodical/hjkxyj202501001` 在代理后链接中保持不变，这部分内容可以用 `%p` 表示；
    - 代理后链接中没有用到完整的原始 URL，因此 `%u` 不需要使用。
@@ -244,7 +237,6 @@ Apple Safari 浏览器的 Zotero Connector 目前不支持配置代理规则。m
 3. 应用替换符构建 Proxied URL Schema
 
    将代理链接中可替换的部分替换为对应的替换符，其余部分直接保留原有内容，拼接 Proxied URL Schema。
-
    - 拆分代理后链接中可替换的部分：`http://` + `d-wanfangdata-com-cn` + `-s` + `.ivpn.hit.edu.cn:1080/` + `periodical/hjkxyj202501001`
    - 使用替换符号替换可替换的部分：`http://` + `%h` + `-s` + `.ivpn.hit.edu.cn:1080/` + `%p`
 
