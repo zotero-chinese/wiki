@@ -72,7 +72,6 @@ Zotero Attanger 中较为简单的基础功能有：
 1. 打开 Zotero 设置中「常规」选项卡 →「文件重命名」中点击「自定义文件名格式...」按钮，打开 Zotero 的文件名格式设置窗口。
    ![Zotero 文件重命名规则设置](../../assets/images/zotero-file-renaming-setup.png)
 2. 在文件名格式设置窗口中，您可以根据需要自定义文件名模板。您可以访问以下链接，了解更多关于文件名模板的编写方法：
-
    - [Zotero 文件重命名规则生成器](https://www.wieke.cn/tools/rename-rule-generator.html)
    - [Zotero 官方文档：File Renaming](https://www.zotero.org/support/file_renaming)
 
@@ -85,7 +84,6 @@ Zotero Attanger 中较为简单的基础功能有：
    ```
 
    使用效果：
-
    - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
    - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰_期刊文章.pdf`
    - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi_期刊文章.pdf`
@@ -100,7 +98,6 @@ Zotero Attanger 中较为简单的基础功能有：
    ```
 
    使用效果：
-
    - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
    - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
    - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`
@@ -115,7 +112,6 @@ Zotero Attanger 中较为简单的基础功能有：
    ```
 
    使用效果：
-
    - `2023_供需适配视角下消费帮扶的长效机制研究_王瑞_学位论文.pdf`
    - `2023_计及用户意愿的电动汽车聚合商主从博弈优化调度策略_房宇轩 胡俊杰.pdf`
    - `2009_Zotero A Product Review_J. Trinoskey and F. Brahmi.pdf`

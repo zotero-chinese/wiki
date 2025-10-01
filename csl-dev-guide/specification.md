@@ -941,7 +941,6 @@ Feldmann, … S. G. Oliver
 ---
 
 1. 条件：`form` 属性设置为 `long`
-
    - 顺序：1. 名 2. 可省略小品词 3. 不可省略小品词 4. 姓 5. 后缀
    - 示例：[Vincent] [] [van] [Gogh] [III]
    - 示例：[Alexander] [von] [] [Humboldt] [Jr.]
@@ -949,21 +948,18 @@ Feldmann, … S. G. Oliver
 ---
 
 2. 条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `never` 或者 `sort-only`
-
    - 顺序：1. 不可省略小品词 2. 姓 3. 名 4. 可省略小品词 5. 后缀
    - 示例：[van] [Gogh], [Vincent] [], [III]
 
 ---
 
 3. 条件：`form` 属性设置为 `long`，`name-as-sort-order` 属性激活，`demote-non-dropping-particle` 属性设置为 `display-and-sort`
-
    - 顺序：1. 姓 2. 名 3. 可省略小品词 4. 不可省略小品词 5. 后缀
    - 示例：[Gogh], [Vincent] [] [van], [III]
 
 ---
 
 4. 条件：`form` 属性设置为 `short`
-
    - 顺序：1. 不可省略小品词 2. 姓
    - 示例：[van] [Gogh]
 
@@ -974,14 +970,12 @@ Feldmann, … S. G. Oliver
 ---
 
 1. 条件：`demote-non-dropping-particle` 属性设置为 `never`
-
    - 顺序：1. 不可省略小品词 + 姓 2. 可省略小品词 3. 名 4. 后缀
    - 示例：[van Gogh] [] [Vincent] [III]
 
 ---
 
 2. 条件：`demote-non-dropping-particle` 属性设置为 `sort-only` 或者 `display-and-sort`
-
    - 顺序：1. 姓 2. 可省略小品词 + 不可省略小品词 3. 名 4. 后缀
    - 示例：[Gogh] [van] [Vincent] [III]
 
@@ -992,7 +986,6 @@ Feldmann, … S. G. Oliver
 ---
 
 1. 条件：`form` 属性设置为 `long`
-
    - 顺序：1. 姓 2. 名
    - 示例：张三
 
@@ -1165,12 +1158,10 @@ Et-al 缩写通过 `et-al-…` 属性来控制（见[名称](#名称name)），�
 
 - `first`: 第一次引用某个条目的引注所在位置
 - `ibid`/`ibid-with-locator`/`subsequent`: 引注在引用了先前引用过的条目时具有 `subsequen` 位置。当处于以下情况时，这样的引注还可能具有 `ibid` 或者 `ibid-with-locator` 位置：
-
   1.  在同一个引注中，当前引用紧跟在另一个指向相同条目的引用之后
   2.  当前的引用是引注中的第一个引用，而且上一个引注包含一个指向相同条目的单独引用
 
   如果满足上面任何一种情况，定位词的出现决定了这个引注会被指定为哪种位置：
-
   - **前一个引用没有定位词**：如果当前引用有定位词，则当前引用的位置是 `ibid-with-locator`，否则是 `ibid` 。
   - **前一个引用有定位词**: 如果当前引用具有相同的定位词，则当前引用的位置是 `ibid`。如果二者的定位词不同，则当前引用的位置是 `ibid-with-locator`。如果当前引用缺少定位词，则当前引用的位置是 `subsequent`。
 
