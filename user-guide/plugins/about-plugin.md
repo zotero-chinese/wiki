@@ -22,7 +22,6 @@ updated: 2023-11-28 15:29:00
 - 插件的 GitHub 主页
 
   ::: details 点击此处了解 如何在 GitHub 上下载 Zotero 插件
-
   1. 访问插件的 GitHub 页面
 
      搜索你要的 Zotero 插件。例如你可以直接搜索「Zotero Style」。
