@@ -36,7 +36,7 @@ jobs:
         run: tar -cvf dist.tar .vitepress/dist
 
       - name: 上传构建结果
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: build-result
           path: |
@@ -49,7 +49,7 @@ jobs:
 
       - name: 上传 PR 编号
         if: always() && github.repository == 'zotero-chinese/wiki' && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: pr-num
           path: ./pr_num
