@@ -17,7 +17,7 @@
   "devDependencies": {
     "@mdit/plugin-footnote": "0.21.0",
     "@mdit/plugin-mark": "^0.21.0",
-    "@types/node": "22.15.29",
+    "@types/node": "24.9.2",
     "@zotero-chinese/markdownlint-config": "^1.0.5",
     "@zotero-chinese/prettier-config": "^1.0.5",
     "autocorrect-node": "^2.14.0",

@@ -21,7 +21,7 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 22.20.0
+          node-version: 24.11.0
           cache: pnpm
 
       - name: 安装依赖
