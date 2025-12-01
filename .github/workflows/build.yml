@@ -11,20 +11,8 @@ jobs:
     name: 构建文档
     runs-on: ubuntu-latest
     steps:
-      - name: 签出仓库
-        uses: actions/checkout@v6
-
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: 设置 Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.11.0
-          cache: pnpm
-
-      - name: 安装依赖
-        run: pnpm install
+      - name: Setup JS
+        uses: zotero-plugin-dev/workflows/setup-js@main
 
       - name: 构建文档
         env:
