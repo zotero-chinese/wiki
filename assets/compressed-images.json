@@ -245,8 +245,8 @@
   "word-刷新.png": "6af9fddae9c92a6c65bcd009af0d4059a03a4b53",
   "word-确认保存修改.png": "2edaeeafdfd747a83c1d6894703b43d0a84bad67",
   "update-translators-文献详情页2.png": "6f23175db2fac60cecbba6fe7085f97ab2519864",
-  "word-引文对话框2.png": "24c75dbc4e0455763b6cfc03de3b0cd9084252c2",
-  "word-引文对话框.png": "b569cc07379215a075e70533f802b45d2214ef83",
+  "word-引文对话框2.png": "0150e3d0c891dde5bd90bfab2a9f0e4925db9d65",
+  "word-引文对话框.png": "7e6eaa3d2c9e3a47ffea69c1271a9344a0bb7d15",
   "word-引文对话框-经典-添加多来源.png": "e427d46c5d5cfb3083ac2d053560474e18224ca0",
   "word-引文对话框-经典.png": "3a02b2f070b5df5b93bb752562da330550faaa57",
   "word-document-preferences.png": "9bd31da8b910a1b30a3eb7b90505db35e2a5f4ed",
@@ -526,5 +526,11 @@
   "zotero官方-插入引文.png": "339a6a143e4185fbf970475fdd3831a82ad1ffea",
   "zotero官方-渲染图-管理条目.png": "fab4286acc5881c54bde5d3433396df40a7031b8",
   "zotero-webdav网址设置.png": "00d9436472f8be53beb64f224842311be773d673",
-  "zotero官方-渲染图-connector.png": "5f23a8041885752342d3f7cf4f49bcfe8d57a182"
+  "zotero官方-渲染图-connector.png": "5f23a8041885752342d3f7cf4f49bcfe8d57a182",
+  "word-引文对话框-禁用自动排序.png": "a854073632519512c98403217cfce6144b95b1a8",
+  "word-引文对话框-编辑引注.png": "35e520ab1906bd32cd9b573fc13b79ed64eddaa0",
+  "word-引文对话框-增删引注.png": "82b3b63a9ea3a20ebe2a078a1798d551786d8e05",
+  "word-编辑引注.png": "526ffb092f17bf3f3c8fe3c421405eba7dddd409",
+  "word-引文对话框3.png": "655d8f84448426810d2657a0db07c171df7d39a1",
+  "word-引文对话框-文库模式.png": "c352c6fb1634a5e48ceec5e9a53b6c61e0a53be9"
 }
