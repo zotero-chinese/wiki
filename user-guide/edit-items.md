@@ -28,7 +28,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 ::: tip 插件推荐
 
-插件 [Linter for Zotero](./plugins/linter.md) 和 [Zopliacte](https://github.com/ChenglongMa/zoplicate) 提供了对新增条目提醒重复的功能。
+插件 [Linter for Zotero](./plugins/linter.md) 和 [Zoplicate](https://github.com/ChenglongMa/zoplicate) 提供了对新增条目提醒重复的功能。
 
 :::
 
