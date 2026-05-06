@@ -161,26 +161,14 @@ if __name__ == '__main__':
         # 为顺序引用格式添加超链接
         add_citation_cross_ref_hook(word, is_numbered=True)
 
-        # 为 (作者，年份) 引用格式添加超链接，默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
-        # 由于 Word 中的超链接默认为蓝色，而 noterools 仅会将超链接添加到 年份 上，所以 作者名称 和 年份 的颜色会不一致
-        # add_citation_cross_ref_hook(word, is_numbered=False)
-
-        # 通过设置 color 的值，可以设置整个引用的颜色 (不包含括号)
-        # 0: 黑色
-        # 16711680: 蓝色
-        # 更多颜色请参考 Word 中的颜色枚举类型：https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
-        # add_citation_cross_ref_hook(word, is_numbered=False, color=0)
-
-        # set_container_title_italic 用于控制是否修正参考文献表中没有正确设置为斜体的名称
-        # 你可以通过将其设置为 False 来关闭这项功能
-        # add_citation_cross_ref_hook(word, is_numbered=False, set_container_title_italic=False)
-
-        # 执行操作
-        word.perform()
+        # 为 (作者，年份) 引用格式添加超链接，设置引用为蓝色。
+        # 默认会将参考文献表中没有被正确设置为斜体的刊物名称或出版商设置为斜体
+        # 默认情况下，只有年份部分会添加超链接，设置 full_citation_hyperlink=True 可以让整个引用 (作者 + 年份) 都添加超链接
+        # add_citation_cross_ref_hook(word, is_numbered=False, full_citation_hyperlink=True)
 ```
 
 ### 缺陷和注意事项
 
-- 手动更新引注时会出现引注已被修改的弹窗。
-- 无法实现从参考文献表跳转到引注。
-- 当你选择 Unlink Citations 时，添加的所有超链接会失效。
+- 手动更新引注时会出现引注已被修改的弹窗，更新引注后你需要重新运行脚本来添加超链接。
+- 暂时无法实现从参考文献表跳转到引注。
+- 当你选择 Unlink Citations 时，添加的所有超链接会失效，这是由于 Word 的机制导致的。
