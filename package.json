@@ -15,7 +15,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.21.0",
+    "@mdit/plugin-footnote": "1.0.0",
     "@mdit/plugin-mark": "^0.21.0",
     "@types/node": "24.9.2",
     "@zotero-chinese/markdownlint-config": "^1.0.5",
