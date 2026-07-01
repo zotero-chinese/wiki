@@ -47,7 +47,7 @@ jobs:
 
       - name: 推送到 Netlify
         id: netlify
-        uses: nwtgck/actions-netlify@v3.0
+        uses: nwtgck/actions-netlify@v4.0
         with:
           publish-dir: ".vitepress/dist"
           deploy-message: "Deploy from GitHub Actions"
