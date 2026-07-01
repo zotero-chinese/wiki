@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mdit/plugin-footnote':
-        specifier: 0.21.0
-        version: 0.21.0(markdown-it@14.1.0)
+        specifier: 1.0.0
+        version: 1.0.0(markdown-it@14.1.0)
       '@mdit/plugin-mark':
         specifier: ^0.21.0
         version: 0.21.0(markdown-it@14.1.0)
@@ -584,11 +584,11 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@mdit/plugin-footnote@0.21.0':
-    resolution: {integrity: sha512-sZz9GttELyxPC6zNMjtLqMHU/6cBR5eKUu3pNo9aybxh8BIc5+AG90Kx8GxisB/L2nAixhHlAIptI5Ow3f8oww==}
-    engines: {node: '>= 18'}
+  '@mdit/plugin-footnote@1.0.0':
+    resolution: {integrity: sha512-3aPNfi62yHh6V7ywtR5WLJQTSdBzPuj84/nvlZbMMiEwJIeCMETif8I1406XnEupGZo9jJCjGQ66gpkNro8z7w==}
+    engines: {node: '>=22'}
     peerDependencies:
-      markdown-it: ^14.1.0
+      markdown-it: ^14.2.0
 
   '@mdit/plugin-mark@0.21.0':
     resolution: {integrity: sha512-YcHmtkKLVmqitT66PPkA5YGAYVJsdcq/nyFEekmHQf9vwFKpP8d+FLFyOdKklMj4/xUJy8megx6kR3fIyhUvsQ==}
@@ -780,6 +780,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@vitejs/plugin-vue@5.2.3':
     resolution: {integrity: sha512-IYSLEQj4LgZZuoVpdSUCw3dIynTWQgPlaRP6iAvMle4My0HdYwr5g5wQAfwOeHQBmYwEkqF70nRpSilr6PoUDg==}
@@ -1985,7 +1986,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@mdit/plugin-footnote@0.21.0(markdown-it@14.1.0)':
+  '@mdit/plugin-footnote@1.0.0(markdown-it@14.1.0)':
     dependencies:
       '@types/markdown-it': 14.1.2
       markdown-it: 14.1.0
