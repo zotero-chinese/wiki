@@ -12,8 +12,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0(markdown-it@14.1.0)
       '@mdit/plugin-mark':
-        specifier: ^0.21.0
-        version: 0.21.0(markdown-it@14.1.0)
+        specifier: ^1.0.1
+        version: 1.0.1(markdown-it@14.1.0)
       '@types/node':
         specifier: 24.9.2
         version: 24.9.2
@@ -584,17 +584,35 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
+  '@mdit/helper@1.0.1':
+    resolution: {integrity: sha512-zAzShsRZmkqjuoOFg6/zTCYVpvghj9a30Cl/eOGkE0xzRJJJG8T18eqb2lgceQhjVLWHK02HNVkzyfNHc429lQ==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      markdown-it: ^14.2.0
+    peerDependenciesMeta:
+      markdown-it:
+        optional: true
+
   '@mdit/plugin-footnote@1.0.0':
     resolution: {integrity: sha512-3aPNfi62yHh6V7ywtR5WLJQTSdBzPuj84/nvlZbMMiEwJIeCMETif8I1406XnEupGZo9jJCjGQ66gpkNro8z7w==}
     engines: {node: '>=22'}
     peerDependencies:
       markdown-it: ^14.2.0
 
-  '@mdit/plugin-mark@0.21.0':
-    resolution: {integrity: sha512-YcHmtkKLVmqitT66PPkA5YGAYVJsdcq/nyFEekmHQf9vwFKpP8d+FLFyOdKklMj4/xUJy8megx6kR3fIyhUvsQ==}
-    engines: {node: '>= 18'}
+  '@mdit/plugin-inline-rule@1.0.1':
+    resolution: {integrity: sha512-SdCbSS+f43j9tB0LzYCmgoXusDEiyWQKs3lrWa0dI5aJRZDqqa7w95ZyzeazcbGviFUP5NHZUHI2AsC5mSBGgQ==}
+    engines: {node: '>=22'}
     peerDependencies:
-      markdown-it: ^14.1.0
+      markdown-it: ^14.2.0
+    peerDependenciesMeta:
+      markdown-it:
+        optional: true
+
+  '@mdit/plugin-mark@1.0.1':
+    resolution: {integrity: sha512-7a3UFjTM7ov5awj302crbj0IGpzPB0ofueaouMCsFJLmOfbrq07XR2USDruks3EmGWWhYoiOo+6ZFVHjmleGTw==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      markdown-it: ^14.2.0
     peerDependenciesMeta:
       markdown-it:
         optional: true
@@ -1986,13 +2004,27 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
+  '@mdit/helper@1.0.1(markdown-it@14.1.0)':
+    dependencies:
+      '@types/markdown-it': 14.1.2
+    optionalDependencies:
+      markdown-it: 14.1.0
+
   '@mdit/plugin-footnote@1.0.0(markdown-it@14.1.0)':
     dependencies:
       '@types/markdown-it': 14.1.2
       markdown-it: 14.1.0
 
-  '@mdit/plugin-mark@0.21.0(markdown-it@14.1.0)':
+  '@mdit/plugin-inline-rule@1.0.1(markdown-it@14.1.0)':
     dependencies:
+      '@mdit/helper': 1.0.1(markdown-it@14.1.0)
+      '@types/markdown-it': 14.1.2
+    optionalDependencies:
+      markdown-it: 14.1.0
+
+  '@mdit/plugin-mark@1.0.1(markdown-it@14.1.0)':
+    dependencies:
+      '@mdit/plugin-inline-rule': 1.0.1(markdown-it@14.1.0)
       '@types/markdown-it': 14.1.2
     optionalDependencies:
       markdown-it: 14.1.0
