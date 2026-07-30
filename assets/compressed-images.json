@@ -499,9 +499,7 @@
   "zotero-plugin-translate/microsoft-7.png": "aa1dabb099cd01ad016c4e643df0431ff3e661e8",
   "zotero-plugin-translate/microsoft-8.png": "063bae99cb051850c9bb620dd9df7098521222c1",
   "zotero-plugin-translate/microsoft-5.png": "a2c694a9cec2e237fb0cea728a538e5c80c37476",
-  "zotero-plugin-translate/niutrans-3.png": "e4ff67ab343f8627c3aa33fd8227983ac68e3499",
   "zotero-plugin-translate/microsoft-9.png": "3f84a93c184d80828db64ef1a9893ab76bd9208a",
-  "zotero-plugin-translate/niutrans-2.png": "f451415ec47b41e0d3e590d7b44a6d02528d1d6f",
   "zotero-plugin-translate/tencent-10.png": "c872fb4bcdf7c0ed3e55c4d66f1523e97680a88c",
   "zotero-plugin-translate/tencent-11.png": "8baf7ceceaa3df2d0d11a6044af80f2afb932d92",
   "zotero-plugin-translate/tencent-12.png": "d31314cfb5aee920781d5bb5146124dfc5dbf2e3",
@@ -532,5 +530,11 @@
   "word-引文对话框-增删引注.png": "82b3b63a9ea3a20ebe2a078a1798d551786d8e05",
   "word-编辑引注.png": "526ffb092f17bf3f3c8fe3c421405eba7dddd409",
   "word-引文对话框3.png": "655d8f84448426810d2657a0db07c171df7d39a1",
-  "word-引文对话框-文库模式.png": "c352c6fb1634a5e48ceec5e9a53b6c61e0a53be9"
+  "word-引文对话框-文库模式.png": "c352c6fb1634a5e48ceec5e9a53b6c61e0a53be9",
+  "zotero-plugin-translate/niutrans-settings.png": "161e3d33e3976cbc6243213feeb48497753e5e54",
+  "zotero-plugin-translate/niutrans-register.png": "1130e46c0dabebd209f5c803c69bca402c1a9cb4",
+  "zotero-plugin-translate/niutrans-recharge.png": "1716f41754e5e172afc853320ad2570c59ded6df",
+  "zotero-plugin-translate/niutrans-profile.png": "278c768c1a2b35b8e0798dc8db638c4b0ac8736c",
+  "zotero-plugin-translate/niutrans-statistics.png": "582ab94fff1542bdc7604f94f6c40b8e33b3f7e5",
+  "zotero-plugin-translate/zotero-niutrans-service.png": "8c8b13c2cbc9b34e9c0de38ea67c4c8708434ac5"
 }
