@@ -1,6 +1,7 @@
 ---
 plugin: northword/zotero-format-metadata
 ---
+
 # Linter for Zotero
 
 <!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->

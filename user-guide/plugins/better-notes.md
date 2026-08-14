@@ -1,6 +1,7 @@
 ---
 plugin: windingwind/zotero-better-notes
 ---
+
 # Better Notes
 
 <!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
