@@ -1,4 +1,5 @@
 ---
+plugin: MuiseDestiny/ZoteroStyle
 authors:
   - Chikit
 date: 2024-03-13 21:39:17

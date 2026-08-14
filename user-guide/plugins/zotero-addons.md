@@ -1,4 +1,5 @@
 ---
+plugin: syt2/zotero-addons
 authors:
   - Chikit
 date: 2024-12-20 20:31:17

@@ -1,3 +1,6 @@
+---
+plugin: northword/zotero-format-metadata
+---
 # Linter for Zotero
 
 ::: info 关于插件

@@ -1,3 +1,6 @@
+---
+plugin: l0o0/jasminum
+---
 # 茉莉花
 
 ::: info 关于插件

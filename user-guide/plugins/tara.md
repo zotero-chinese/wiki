@@ -1,3 +1,6 @@
+---
+plugin: l0o0/tara
+---
 # 蒲公英
 
 ::: tip Tara

@@ -1,4 +1,5 @@
 ---
+plugin: MuiseDestiny/zotero-attanger
 title: Zotero Attanger 插件使用指南
 date: 2025-03-29
 ---

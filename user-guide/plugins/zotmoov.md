@@ -1,4 +1,5 @@
 ---
+plugin: wileyyugioh/zotmoov
 authors:
   - Morimiue
 date: 2024-11-25 23:00:00

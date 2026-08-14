@@ -1,4 +1,5 @@
 ---
+plugin: ethanwillis/zotero-scihub
 redirectFrom: /user-guide/plugins/Zotero-scihub.html
 ---
 

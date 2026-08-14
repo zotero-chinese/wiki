@@ -1,3 +1,6 @@
+---
+plugin: windingwind/zotero-better-notes
+---
 # Better Notes
 
 ::: tip
