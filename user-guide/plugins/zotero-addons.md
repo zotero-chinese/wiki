@@ -7,16 +7,9 @@ date: 2024-12-20 20:31:17
 
 # Zotero 插件市场插件
 
-::: info 关于插件
+<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
 
 这是一个用于在 Zotero 内浏览和安装插件的插件，简化插件管理和安装过程。用户可以通过该插件可以方便地查找、安装和更新 Zotero 插件。
-
-- 项目主页：[GitHub](https://github.com/syt2/zotero-addons/tree/main)
-- 插件下载地址
-  - [国内镜像](https://zotero-chinese.com/plugins/#search=Add-on+Market+for+Zotero)
-  - [GitHub Release](https://github.com/syt2/zotero-addons/releases)
-
-:::
 
 ## 使用方法
 

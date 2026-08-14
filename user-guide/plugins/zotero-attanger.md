@@ -6,6 +6,8 @@ date: 2025-03-29
 
 # Zotero Attanger 插件使用指南
 
+<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
+
 Zotero Attanger 是一款专为 Zotero 7 设计的附件管理插件，旨在替代不再支持 Zotero 7 的 ZotFile 插件。它提供了更强大的附件管理功能，支持多设备同步和自定义规则，适合需要定制化管理文献附件的用户。
 
 [[TOC]]

@@ -7,6 +7,8 @@ date: 2024-11-25 23:00:00
 
 # ZotMoov
 
+<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
+
 ::: tip 简介
 
 用于管理 Zotero 7 的文献附件，它支持以下功能：
@@ -17,15 +19,6 @@ date: 2024-11-25 23:00:00
 
 :::
 
-::: info 关于
-
-- 作者：[Wiley Yu](https://github.com/wileyyugioh)
-- 项目主页：<https://github.com/wileyyugioh/zotmoov>
-- 下载地址：
-  - [GitHub Release](https://github.com/wileyyugioh/zotmoov/releases/latest)
-  - [国内镜像](https://zotero-chinese.com/plugins/#search=zotmoov)
-
-:::
 
 ## 为什么要用 ZotMoov
 

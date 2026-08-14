@@ -5,6 +5,8 @@ redirectFrom: /user-guide/plugins/Zotero-scihub.html
 
 # SciHub
 
+<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
+
 ## 插件介绍
 
 这是 Zotero 的一个插件，会自动从 Sci-Hub 上为带有 DOI 的条目自动下载 PDF 格式的论文文件。
