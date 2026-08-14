@@ -1,6 +1,7 @@
 ---
 plugin: windingwind/zotero-pdf-translate
 ---
+
 # 小牛翻译接口申请及配置
 
 ## 1. 注册小牛翻译账号

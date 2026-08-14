@@ -1,6 +1,7 @@
 ---
 plugin: windingwind/zotero-pdf-translate
 ---
+
 # Translate for Zotero
 
 Zotero PDF Translate 是由 @windingwind 开发的，用于文献管理软件 Zotero 的翻译插件。它完全开源、免费，主要功能有：
