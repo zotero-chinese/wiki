@@ -1,3 +1,6 @@
+---
+plugin: windingwind/zotero-pdf-translate
+---
 # DeepLx 项目
 
 由于各种原因，在国内注册 DeepL 的免费计划都十分困难。于是出现了 [DeepLX](https://github.com/OwO-Network/DeepLX/?tab=readme-ov-file) 项目，该项目可让用户在不注册账号的前提下，使用 DeepL 作为翻译服务。

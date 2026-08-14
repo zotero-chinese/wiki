@@ -1,4 +1,5 @@
 ---
+plugin: windingwind/zotero-pdf-translate
 title: 火山翻译接口申请及配置
 ---
 

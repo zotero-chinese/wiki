@@ -1,4 +1,5 @@
 ---
+plugin: windingwind/zotero-pdf-translate
 title: 腾讯翻译接口申请和配置
 ---
 

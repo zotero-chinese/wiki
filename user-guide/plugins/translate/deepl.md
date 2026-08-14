@@ -1,3 +1,6 @@
+---
+plugin: windingwind/zotero-pdf-translate
+---
 # DeepL 接口申请及配置
 
 DeepL api 免费版包括：
