@@ -1,3 +1,7 @@
+---
+plugin: windingwind/zotero-pdf-translate
+---
+
 # 常见问题
 
 ::: tip 施工中

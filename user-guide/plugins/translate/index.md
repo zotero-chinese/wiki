@@ -1,15 +1,8 @@
+---
+plugin: windingwind/zotero-pdf-translate
+---
+
 # Translate for Zotero
-
-::: tip
-
-深度适配 Zotero 阅读器的翻译插件。
-
-:::
-
-- 项目主页：[https://github.com/windingwind/zotero-pdf-translate](https://github.com/windingwind/zotero-pdf-translate)
-- 下载地址：
-  - [GitHub Release](https://github.com/windingwind/zotero-pdf-translate/releases)
-  - [Zotero 中文社区插件商店](https://zotero-chinese.com/plugins/#search=translate)
 
 Zotero PDF Translate 是由 @windingwind 开发的，用于文献管理软件 Zotero 的翻译插件。它完全开源、免费，主要功能有：
 

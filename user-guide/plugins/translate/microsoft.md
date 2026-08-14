@@ -1,3 +1,7 @@
+---
+plugin: windingwind/zotero-pdf-translate
+---
+
 # 微软翻译接口申请及配置
 
 ## 1. 接口申请

@@ -1,4 +1,5 @@
 ---
+plugin: wileyyugioh/zotmoov
 authors:
   - Morimiue
 date: 2024-11-25 23:00:00
@@ -13,16 +14,6 @@ date: 2024-11-25 23:00:00
 - 自动/手动将附件移动/复制到指定目录
 - 在 Zotero 中删除附件时，自动将其从计算机中删除
 - 轻松将指定目录中最后修改的文件添加进 Zotero 条目
-
-:::
-
-::: info 关于
-
-- 作者：[Wiley Yu](https://github.com/wileyyugioh)
-- 项目主页：<https://github.com/wileyyugioh/zotmoov>
-- 下载地址：
-  - [GitHub Release](https://github.com/wileyyugioh/zotmoov/releases/latest)
-  - [国内镜像](https://zotero-chinese.com/plugins/#search=zotmoov)
 
 :::
 

@@ -1,3 +1,7 @@
+---
+plugin: l0o0/tara
+---
+
 # 蒲公英
 
 ::: tip Tara
@@ -9,11 +13,6 @@ Tara 是一个用于备份和恢复 Zotero 配置的插件，支持备份：
 ✅ 备份转换器 (translators)  
 ✅ 备份 Locate 文件夹  
 ✅ 备份 Zotero 配置及插件配置
-
-下载地址：
-
-- [GitHub](https://github.com/l0o0/tara)
-- [中文社区插件合集页](https://zotero-chinese.com/plugins/#search=蒲公英)
 
 :::
 
