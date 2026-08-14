@@ -7,8 +7,6 @@ date: 2024-11-25 23:00:00
 
 # ZotMoov
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 ::: tip 简介
 
 用于管理 Zotero 7 的文献附件，它支持以下功能：

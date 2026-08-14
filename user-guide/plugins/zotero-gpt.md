@@ -7,8 +7,6 @@ date: 2024-04-15 20:31:17
 
 # Awesome GPT for Zotero
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 Awesome GPT for Zotero 是一个由 MuiseDestiny 创建的开源 Zotero 插件。这个插件使得用户能够通过命令标签使用 Meet API，进一步增强 Zotero 与 GPT 模型（包括 gpt-3.5-turbo 和 gpt-4）的集成。
 
 视频教程：[Zotero GPT - 使用教程，配置免费密钥！！！](https://www.bilibili.com/video/BV17N4y1o7vx/)

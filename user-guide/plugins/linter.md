@@ -4,8 +4,6 @@ plugin: northword/zotero-format-metadata
 
 # Linter for Zotero
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 这个插件用来规范条目的字段数据，以在引用参考文献的时候可以生成正确的、规范的参考文献表。
 
 ## 重复条目检查

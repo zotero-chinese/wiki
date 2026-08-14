@@ -4,8 +4,6 @@ plugin: l0o0/tara
 
 # 蒲公英
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 ::: tip Tara
 
 Tara 是一个用于备份和恢复 Zotero 配置的插件，支持备份：

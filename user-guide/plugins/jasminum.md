@@ -4,8 +4,6 @@ plugin: l0o0/jasminum
 
 # 茉莉花
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 与国内的文献管理软件相比，原生的 Zotero 对中文网站的抓取能力较为有限。但是得益于开源社区的维护，我们可以通过第三方中文转换器库 [GitHub.com/l0o0/translators_CN](https://github.com/l0o0/translators_CN) 极大的提高其中文文献抓取能力。
 该库的主要维护者还开发了插件 [Jasminum - 茉莉花](https://github.com/l0o0/jasminum) 来继续增强 Zotero 的中文支持，茉莉花插件提供了如下功能：
 

@@ -55,9 +55,41 @@ export default defineConfig({
             ":::",
           ].join("\n");
 
+          // 插件文档（frontmatter 含 `plugin` 字段）：在一级标题后注入提示块，
+          // 说明该位置为插件信息区，正式网站（zotero-chinese.com）将在此显示
+          // 插件的下载地址、中文镜像与反馈入口。
+          // 注：此提示仅供预览站展示，正式网站的构建（website 仓库的
+          // markdownTransform）会另行注入完整的插件信息组件，二者互不依赖。
+          const pluginRepo = extractPluginRepo(code);
+          if (pluginRepo) {
+            const lines = code.split("\n");
+            const headingIndex = lines.findIndex((line) => /^#\s+/.test(line));
+            if (headingIndex !== -1) {
+              lines.splice(
+                headingIndex + 1,
+                0,
+                "",
+                "::: tip 插件信息区",
+                "",
+                "此处为插件信息区，正式网站（[Zotero 中文社区](https://zotero-chinese.com/plugins/)）将在此显示该插件的下载地址、中文镜像与反馈入口。",
+                ":::",
+              );
+            }
+            code = lines.join("\n");
+          }
+
           return code;
         },
       },
     ],
   },
 });
+
+/** 从 md 的 frontmatter 中提取 `plugin` 字段（插件仓库） */
+function extractPluginRepo(code: string): string | undefined {
+  const fm = code.match(/^---\n([\s\S]*?)\n---/);
+  if (!fm) return undefined;
+  const line = fm[1].match(/^plugin:\s*(.+)$/m);
+  if (!line) return undefined;
+  return line[1].trim().replace(/^["']|["']$/g, "");
+}

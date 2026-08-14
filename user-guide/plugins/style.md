@@ -7,8 +7,6 @@ date: 2024-03-13 21:39:17
 
 # Ethereal Style for Zotero
 
-<!-- PLACEHOLDER FOR WEBSITE - PLUGIN INFO -->
-
 这是一个多彩的插件，用于增强 Zotero 的界面功能，让您享受阅读文献的乐趣！
 
 首先需要明确的是，本插件`适用人群`：想美化自己的 Zotero，有一定学习插件的时间。
