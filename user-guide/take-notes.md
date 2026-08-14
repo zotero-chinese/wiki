@@ -120,7 +120,7 @@ Zotero 会自动记忆打开的文献与当前阅读位置。在下一次打开 
 
 Zotero 提供了一项笔记导出为 markdown 的功能，但图片及许多格式不会被处理。
 
-建议使用 Better Notes 提供的导出功能，可导出单条或多条笔记为 markdown 文件，或通过剪贴板复制到富文本编辑器（如 OneNote，Word），或导出为 PDF，并且支持自动同步更改（Zotero->外部导出目录）。关于导出，详见 [4.8 笔记导出/Export](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/nxlngg)；关于同步，详见 [4.9 笔记同步/Sycn](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/aid2c3)。
+建议使用 Better Notes 提供的导出功能，可导出单条或多条笔记为 markdown 文件，或通过剪贴板复制到富文本编辑器（如 OneNote，Word），或导出为 PDF，并且支持自动同步更改（Zotero->外部导出目录）。关于导出，详见 [4.8 笔记导出/Export](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/nxlngg)；关于同步，详见 [4.9 笔记同步/Sync](https://zotero.yuque.com/books/share/f3fe159f-956c-4f10-ade3-c87559cacb60/aid2c3)。
 
 ![image](../assets/images/zotero-plugin-better-notes/betternotes-导出笔记对话框.png)
 

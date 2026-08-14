@@ -42,6 +42,8 @@ Zotero 文档建议将标题存储为「句子式大写」的格式，这将有�
 
 [^sentenceCase]: <https://www.zotero.org/support/kb/sentence_casing>
 
+注意本插件只修改 Zotero 库中的大小写，而后续输出的大小写还取决于 CSL、[Better BibTeX](./better-bibtex.md#title-case) 等。
+
 ## 期刊及其期刊缩写
 
 对于期刊标题，插件将使相同的期刊统一。

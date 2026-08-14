@@ -28,7 +28,7 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 
 ::: tip 插件推荐
 
-插件 [Linter for Zotero](./plugins/linter.md) 和 [Zopliacte](https://github.com/ChenglongMa/zoplicate) 提供了对新增条目提醒重复的功能。
+插件 [Linter for Zotero](./plugins/linter.md) 和 [Zoplicate](https://github.com/ChenglongMa/zoplicate) 提供了对新增条目提醒重复的功能。
 
 :::
 
@@ -93,6 +93,8 @@ Zotero 并不能保证自动抓取的数据 100% 正确，有时 Zotero 收到�
 - 标题大小写：Mechanism of Ce-Modified Birnessite-MnO<sub>2</sub> in Promoting SO<sub>2</sub> Poisoning Resistance for Low-Temperature NH<sub>3</sub>-SCR
 - 句子大小写：Mechanism of Ce-Modified Birnessite-MnO<sub>2</sub> in promoting SO<sub>2</sub> poisoning resistance for low-temperature NH<sub>3</sub>-SCR
 ```
+
+注意 Zotero 库中的大小写未必完全决定后续输出的大小写，后者还取决于 CSL、[Better BibTeX](./plugins/better-bibtex.md#title-case) 等。
 
 ### 其他 extra
 

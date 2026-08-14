@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Zotero 中文手册",
   "type": "module",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@11.10.0",
   "scripts": {
     "docs:dev": "vitepress dev --open",
     "docs:build": "vitepress build",
@@ -15,20 +15,20 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "0.21.0",
-    "@mdit/plugin-mark": "^0.21.0",
+    "@mdit/plugin-footnote": "1.0.0",
+    "@mdit/plugin-mark": "^2.0.1",
     "@types/node": "24.9.2",
     "@zotero-chinese/markdownlint-config": "^1.0.5",
     "@zotero-chinese/prettier-config": "^1.0.5",
     "autocorrect-node": "^2.14.0",
     "husky": "9.1.7",
-    "lint-staged": "16.1.0",
+    "lint-staged": "17.0.8",
     "markdownlint-cli2": "0.18.1",
     "prettier": "^3.5.3",
     "sharp": "^0.34.2",
     "tinyglobby": "^0.2.14",
     "tsx": "^4.19.4",
-    "typescript": "^5.8.3",
+    "typescript": "^6.0.2",
     "vitepress": "1.6.3"
   },
   "prettier": "@zotero-chinese/prettier-config",
