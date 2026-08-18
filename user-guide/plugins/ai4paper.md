@@ -7,9 +7,6 @@ title: AI4Paper 使用指南
 
 AI4Paper 是一款面向文献阅读与整理的 Zotero 插件，把 PDF 全文翻译、文库问答、文献检索和期刊分区显示等功能集成在 Zotero 内部，不需要在多个软件之间来回切换。
 
-- 项目主页：[GitHub](https://github.com/wdcpclover/ai4paper)
-- 官方网站与使用文档：[AI4Paper](https://ai4paper.pro)
-
 ::: warning 关于收费
 
 AI4Paper 是一款商业插件，采用「基础功能免费 + AI 功能按量计费」的模式：
@@ -52,23 +49,15 @@ AI4Paper 支持 Zotero 7 及以上版本，不支持 Zotero 6 及更早版本。
 
 :::
 
-1. 从 [插件商店](https://zotero-chinese.com/plugins/) 或 [GitHub Releases](https://github.com/wdcpclover/ai4paper/releases) 下载 `.xpi` 文件；
-2. 在 Zotero 中依次点击「工具」->「插件」；
-3. 点击右上角的齿轮图标，选择「Install Plugin From File...」；
-4. 选择刚刚下载的 `.xpi` 文件并确认；
-5. 重启 Zotero。
+下载 `.xpi` 文件后，在 Zotero 中依次点击「工具」->「插件」，点击右上角的齿轮图标选择「Install Plugin From File...」，选中该文件并确认，然后重启 Zotero。
 
-::: tip
-
-`.xpi` 是 Zotero 使用的插件格式，直接双击文件通常不会触发安装，请按上述步骤在 Zotero 内安装。
-
-:::
+获取插件与安装的通用说明参见 [关于 Zotero 插件](./about-plugin.md)。
 
 ## 登录账号
 
 插件的 AI 功能需要登录后使用：
 
-1. 在 [官网](https://ai4paper.pro) 注册账号，注册时请设置邮箱和密码；
+1. 在官网注册账号，注册时请设置邮箱和密码；
 2. 在 Zotero 中依次点击「编辑」->「首选项」（macOS 为「Zotero」->「设置」）；
 3. 在左侧列表中选择「AI4Paper」，然后打开「账户与会员」；
 4. 使用注册时的邮箱和密码登录。
@@ -96,7 +85,3 @@ AI4Paper 支持 Zotero 7 及以上版本，不支持 Zotero 6 及更早版本。
 ### 全文翻译后找不到译文
 
 译文会作为附件保存在原条目下，展开条目即可看到；如果条目下附件较多，可以按添加时间排序查找。
-
-## 反馈
-
-使用中遇到问题或有功能建议，可以在 [GitHub Issues](https://github.com/wdcpclover/ai4paper/issues) 中反馈。
