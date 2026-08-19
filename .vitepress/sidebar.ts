@@ -81,6 +81,7 @@ export const sidebar = {
       collapsed: true,
       items: [
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
+        { text: "AI4Paper", link: "/user-guide/plugins/ai4paper" },
         { text: "Better BibTeX", link: "/user-guide/plugins/better-bibtex" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
         { text: "Easier Citation", link: "/user-guide/plugins/easier-citation" },
