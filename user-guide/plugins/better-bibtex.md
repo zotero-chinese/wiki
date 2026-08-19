@@ -1,3 +1,7 @@
+---
+plugin: retorquere/zotero-better-bibtex
+---
+
 # Better BibTeX
 
 ::: info 关于插件

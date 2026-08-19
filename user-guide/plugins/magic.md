@@ -1,3 +1,7 @@
+---
+plugin: l0o0/MagicZotero
+---
+
 # Magic for Zotero
 
 Magic for Zotero 是一款付费的全文翻译插件，不过你可以免费七天[全功能试用](https://magiczotero.feishu.cn/wiki/T45PwelQai7e1wkvGMNcXMIZnFe?fromScene=spaceOverview)。
