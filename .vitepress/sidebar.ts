@@ -82,10 +82,17 @@ export const sidebar = {
       items: [
         // 关于插件始终位于第一位，其余插件按名称拼音/字母顺序排序
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
-        // 无链接的纯文本项作为提示行渲染，告知用户排序规则（非推荐顺序）
-        { text: "===下按插件名拼音排序===" },
-        { text: "AI4Paper", link: "/user-guide/plugins/ai4paper" },
-        { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
+
+        // 依据付费与否分组，标准为费用是否流向插件作者。
+        // 分组 1: free - 插件作者不向用户收取任何费用
+        //         1. 完全免费插件
+        //         2. 功能全免费，但需用户自己接第三方 API（费用付给 API 厂商）
+        // 分组 2: 提供增值服务 - 插件作者提供了付费选项，并向用户收费
+        //         1. 必须付费才能使用
+        //         2. 基础免费 + 高级功能付费（Freemium）
+        //         3. 作者提供官方 AI 套餐，同时支持用户自备 API
+
+        // 无链接的纯文本项作为提示行渲染，告知用户排序规则
         { text: "Better BibTeX", link: "/user-guide/plugins/better-bibtex" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
         { text: "插件市场", link: "/user-guide/plugins/zotero-addons" },
@@ -107,13 +114,17 @@ export const sidebar = {
           ],
         },
         { text: "Linter", link: "/user-guide/plugins/linter" },
-        { text: "Magic 全文翻译", link: "/user-guide/plugins/magic" },
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "蒲公英", link: "/user-guide/plugins/tara" },
         { text: "Sci-Hub", link: "/user-guide/plugins/zotero-scihub" },
-        { text: "Style", link: "/user-guide/plugins/style" },
         { text: "Zotero Attanger", link: "/user-guide/plugins/zotero-attanger" },
         { text: "ZotMoov", link: "/user-guide/plugins/zotmoov" },
+
+        { text: "===以下插件包含增值服务===" },
+        { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
+        { text: "AI4Paper", link: "/user-guide/plugins/ai4paper" },
+        { text: "Magic 全文翻译", link: "/user-guide/plugins/magic" },
+        { text: "Style", link: "/user-guide/plugins/style" },
       ],
     },
     {
