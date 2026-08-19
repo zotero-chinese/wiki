@@ -84,7 +84,6 @@ export const sidebar = {
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
 
         // 无链接的纯文本项作为提示行渲染，告知用户排序规则
-        { text: "===以下为免费插件===" },
         { text: "Better BibTeX", link: "/user-guide/plugins/better-bibtex" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
         { text: "插件市场", link: "/user-guide/plugins/zotero-addons" },
