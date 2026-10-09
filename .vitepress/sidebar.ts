@@ -84,7 +84,6 @@ export const sidebar = {
         { text: "关于插件", link: "/user-guide/plugins/about-plugin" },
         // 无链接的纯文本项作为提示行渲染，告知用户排序规则（非推荐顺序）
         { text: "===下按插件名拼音排序===" },
-        { text: "AI4Paper", link: "/user-guide/plugins/ai4paper" },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
         { text: "Better BibTeX", link: "/user-guide/plugins/better-bibtex" },
         { text: "Better Notes", link: "/user-guide/plugins/better-notes" },
