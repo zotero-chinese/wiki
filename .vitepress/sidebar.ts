@@ -123,7 +123,6 @@ export const sidebar = {
 
         { text: "===以下插件包含增值服务===" },
         { text: "Awesome GPT", link: "/user-guide/plugins/zotero-gpt" },
-        { text: "AI4Paper", link: "/user-guide/plugins/ai4paper" },
         { text: "Magic 全文翻译", link: "/user-guide/plugins/magic" },
         { text: "Style", link: "/user-guide/plugins/style" },
       ],

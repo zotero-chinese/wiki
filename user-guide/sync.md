@@ -115,11 +115,11 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 
 :::
 
-目前常用的支持 WebDAV 同步的网盘包括[坚果云网盘（有免费额度）](https://www.jianguoyun.com/)、[123 云盘（需购买会员）](https://www.123pan.com/)、[阿里云盘（需购买三方权益包）](https://www.alipan.com/)、[InfiniCLOUD（有免费额度）](https://infini-cloud.net/en/index.html)。常见的如百度网盘、iCloud、OneDrive 等均不支持 WebDAV 同步。
+目前常用的支持 WebDAV 同步的网盘包括[坚果云网盘（有免费额度）](https://www.jianguoyun.com/)、[123 云盘（需购买会员）](https://www.123pan.com/)、[阿里云盘（需购买三方权益包）](https://www.alipan.com/)、[InfiniCLOUD（有免费额度）](https://infini-cloud.net/en/index.html)、[Koofr（有免费额度）](https://koofr.eu/)。常见的如百度网盘、iCloud、OneDrive 等均不支持 WebDAV 同步。
 
 :::: tip 提示
 
-我们只推荐使用**坚果云网盘**，后续教程也将以坚果云网盘为例。
+下面的 PC 端教程以**坚果云网盘**为例。使用 Koofr 的用户可以直接阅读 [Koofr 配置教程](#koofr-配置)。
 
 如果您没有坚果云网盘的账户，请先 [注册坚果云](https://www.jianguoyun.com/d/signup)。
 
@@ -209,6 +209,51 @@ WebDAV 是一组基于超文本传输协议的技术集合，有利于用户间�
 此时，你的 Zotero 的同步文件将会放在 `根目录/work/Zotero` 中。
 
 :::
+
+#### Koofr 配置
+
+[Koofr](https://koofr.eu/) 支持通过 WebDAV 同步 Zotero 附件。免费账户提供 **10 GB 存储空间**，具体额度以 [官方套餐页面](https://koofr.eu/pricing/) 为准。注册和应用密码配置可以在网页端完成，无须安装 Koofr 客户端。
+
+**1. 注册 Koofr 账户**
+
+打开 [Koofr 官网](https://koofr.eu/)，点击「Create free account」，按提示填写邮箱、设置密码并完成邮箱验证。登录网页版，确认可以进入文件页面。注册邮箱也是后续配置 WebDAV 时使用的用户名。
+
+**2. 创建 WebDAV 应用密码**
+
+点击网页右上角的头像，打开「首选项」，也可以直接进入 [首选项页面](https://app.koofr.net/app/admin/preferences)。
+
+![打开 Koofr 首选项](../assets/images/koofr-preferences.png)
+
+点击左侧的「密码」，找到下方的「应用密码」。填写一个便于辨认的应用名称，例如 `Zotero`，然后点击「生成」。
+
+![生成 Koofr 应用密码](../assets/images/koofr-app-password.png)
+
+生成的密码只显示一次，请及时保存。填写到 Zotero 时，去掉密码中间的空格。这里使用的是应用密码，不是 Koofr 网页登录密码；如果忘记了应用密码，可以重新生成，并更新各设备上的 Zotero 配置。
+
+**3. 在 Zotero 中配置 WebDAV**
+
+打开 Zotero「设置」→「账户」（部分版本为「同步」），在「文件同步」中，将「我的文库」附件同步方式改为 `WebDAV`，按下表填写：
+
+| 设置项 | 填写内容                       |
+| ------ | ------------------------------ |
+| 协议   | `https`                        |
+| 网址   | `app.koofr.net/dav/Koofr`      |
+| 用户名 | 注册 Koofr 的邮箱              |
+| 密码   | 上一步生成的应用密码，去掉空格 |
+
+![Zotero 中的 Koofr WebDAV 配置](../assets/images/koofr-zotero-webdav.png)
+
+网址输入框只填写 `app.koofr.net/dav/Koofr`。左侧的 `https://` 和右侧的 `/zotero/` 已由界面提供，不要重复填写。
+
+点击「验证服务器」。如果提示创建文件夹，点击确认，让 Zotero 创建用于同步的 `zotero` 文件夹。验证成功后，回到 Zotero 主界面，点击右上角的同步按钮。
+
+**4. 配置其他设备**
+
+在其他电脑上重复上述配置。手机和平板的操作入口请参阅 [iOS/iPadOS 配置教程](./mobile.md#ios) 和 [Android 配置教程](./mobile.md#android)，使用同一个 Zotero 账户，并填写对应的 Koofr WebDAV 信息。
+
+如果您正在从其他服务迁移，请先阅读 [迁移到 WebDAV 同步方案](./faqs/sync#教程-迁移到-webdav-同步方案)。
+
+以上连接信息也可对照 [Koofr 官方 Zotero 配置教程](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav)。
 
 #### iOS
 
