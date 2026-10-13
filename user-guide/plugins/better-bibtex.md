@@ -31,4 +31,4 @@ https://github.com/zotero-chinese/wiki/issues/443#issuecomment-4183799649
 
 国家推荐性标准 [GB/T 7714《信息与文献 参考文献著录规则》](https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D8055ED3A7E05397BE0A0AB82A)的示例常用句子大小写，但正文仅要求「著录西文文献时，大写字母的使用应符合信息资源本身文种的习惯用法」（2015 版国标 §6.6、2025 版国标 §5.6）。考虑到国标的示例仅为辅助理解而列出，并非需要遵守的条款（[GB/T 1.1](https://std.samr.gov.cn/gb/search/gbDetailed?id=A24AF19F41445C2EE05397BE0A0A5E0D)），我们通常不必过分关注大小写，而只要保留默认设置，让 Bib(La)TeX 自动处理，再确认全篇一致即可。
 
-如果实在有特殊需要，可前往「Zotero 设置 → Better BibTeX → 杂项」，取消勾选[「对标题应用标题大小写格式」](https://retorque.re/zotero-better-bibtex/preferences/export/index.html#apply-title-casing-to-titles)。
+如果实在有特殊需要，可前往「Zotero 设置 → Better BibTeX → 导出 → 杂项」，取消勾选[「对标题应用标题大小写格式」](https://retorque.re/zotero-better-bibtex/preferences/export/index.html#apply-title-casing-to-titles)。
