@@ -117,6 +117,7 @@ export const sidebar = {
         { text: "茉莉花", link: "/user-guide/plugins/jasminum" },
         { text: "蒲公英", link: "/user-guide/plugins/tara" },
         { text: "Refolio", link: "/user-guide/plugins/refolio" },
+        { text: "Scholar Sketch", link: "/user-guide/plugins/scholar-sketch" },
         { text: "Sci-Hub", link: "/user-guide/plugins/zotero-scihub" },
         { text: "Zotero Attanger", link: "/user-guide/plugins/zotero-attanger" },
         { text: "ZotMoov", link: "/user-guide/plugins/zotmoov" },
