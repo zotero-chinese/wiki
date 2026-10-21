@@ -21,6 +21,12 @@ Scholar Sketch 是 Zotero 的 Markdown 笔记与可视化白板插件。你可�
 
 安装后，Zotero 文库上方的工具栏会出现 Scholar Sketch 按钮。把鼠标停在按钮上，可以看到「Scholar Sketch：新建 Markdown 笔记或白板」提示。
 
+以下操作截图来自 macOS 上的 Zotero 深色界面；其他系统或版本的图标和菜单文字可能略有不同。
+
+![Zotero 文库工具栏，最右侧高亮按钮为 Scholar Sketch 入口](../../assets/images/scholar-sketch/zotero-toolbar.webp)
+
+图中最右侧高亮的 Scholar Sketch 按钮用于新建 Markdown 笔记、创建白板和导入 Markdown。
+
 ## 先试用一篇笔记和一块白板
 
 ### 创建 Markdown 笔记
@@ -97,6 +103,10 @@ Markdown 笔记以 `.md` 文件保存，与 Zotero 自带的富文本笔记是�
 ## 选择适合当前任务的编辑模式
 
 编辑器提供三种模式，可以通过工具栏或「更多 → 模式」切换。
+
+点击编辑器工具栏右端的三点按钮，可打开「更多」菜单，找到模式、导出、本地历史与设置等入口。
+
+![Markdown 编辑器的更多菜单：模式、导出、本地历史和设置入口](../../assets/images/scholar-sketch/editor-more-menu.webp)
 
 | 模式           | 适合的操作                                             |
 | -------------- | ------------------------------------------------------ |
@@ -354,9 +364,13 @@ Markdown 编辑器中选择「更多 → 本地历史…」，或者在 Zotero �
 
 设置中可以调整 Markdown 的字体、字号、背景颜色，选择跟随系统、浅色或深色外观；还可以设置新建笔记的 YAML frontmatter、白板配色方案以及快捷键。关于页面可以查看插件版本和构建信息。
 
+![Markdown 设置：附件打开方式、YAML frontmatter、字号、字体与背景颜色](../../assets/images/scholar-sketch/settings-markdown.webp)
+
 ## 查阅帮助和了解新功能
 
 在 Zotero 设置中选择「Scholar Sketch」，可以点击「使用指南」查阅本文，或点击「本次更新」查看当前版本的功能介绍。Markdown 编辑器设置的「常规」页面也提供「使用指南」入口。
+
+![设置的常规页面：外观选择与打开使用指南按钮](../../assets/images/scholar-sketch/settings-general.webp)
 
 更新到新版本后，首次成功打开并显示 Markdown 笔记或白板时，会自动展示一次新功能提示。提示不会抢走编辑焦点，也不会阻止继续操作；关闭后，该版本不会在每次打开文档时反复提示。以后仍可从 Zotero 设置中的「本次更新」重新查看。
 
