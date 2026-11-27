@@ -81,4 +81,10 @@ export const wikiContributors: WikiContributor[] = [
     name: "zepinglee",
     username: "zepinglee",
   },
+  {
+    name: "redleafnew",
+    username: "redleafnew",
+    mapByNameAliases: ["韩小土"],
+    mapByEmailAliases: ["redleafnew@163.com"],
+  },
 ];
