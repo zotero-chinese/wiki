@@ -8,77 +8,89 @@ export interface WikiContributor {
    *
    * 如果没有配置 links 和 avatar，网站将根据这个属性生成链接和头像
    */
-  username: string;
+  github: string;
   /**
    * 名称别名
    *
    * 主要针对多个账号属于同一个人的情况
    */
-  mapByNameAliases?: string[];
+  alias?: string[];
   /**
    * 邮箱别名
    *
    * 主要针对多个账号属于同一个人的情况
    */
-  mapByEmailAliases?: string[];
+  emailAlias?: string[];
   /**
    * 主页
    *
    * 可以连接到个人主页，如果不填，默认使用 GitHub 主页
    */
   links?: string[];
+  /**
+   * 头像
+   *
+   * 如果不填，网站将根据 `github` 生成头像
+   */
+  avatar?: string;
 }
 
 export const wikiContributors: WikiContributor[] = [
   {
     name: "Northword",
-    username: "northword",
-    mapByNameAliases: ["northword"],
-    mapByEmailAliases: ["44738481+northword@users.noreply.github.com"],
+    github: "northword",
+    alias: ["northword"],
+    emailAlias: ["44738481+northword@users.noreply.github.com"],
   },
   {
     name: "Chikit-L",
-    username: "Chikit-L",
-    mapByNameAliases: ["Chikit_L", "Chikit"],
+    github: "Chikit-L",
+    alias: ["Chikit_L", "Chikit"],
   },
   {
     name: "l0o0",
-    username: "l0o0",
+    github: "l0o0",
   },
   {
     name: "阿狸",
-    username: "Comte0825",
-    mapByNameAliases: ["Comte0825", "Ali"],
+    github: "Comte0825",
+    alias: ["Comte0825", "Ali"],
   },
   {
     name: "Maple-YZ",
-    username: "Maple-YZ",
+    github: "Maple-YZ",
   },
   {
     name: "jiaojiaodubai",
-    username: "jiaojiaodubai",
+    github: "jiaojiaodubai",
   },
   {
     name: "可口可乐",
-    username: "wakewon",
-    mapByNameAliases: ["Victor", "wakewon"],
+    github: "wakewon",
+    alias: ["Victor", "wakewon"],
   },
   {
     name: "syt2",
-    username: "syt2",
+    github: "syt2",
   },
   {
     name: "windingwind",
-    username: "windingwind",
-    mapByNameAliases: ["winding"],
+    github: "windingwind",
+    alias: ["winding"],
   },
   {
     name: "X木林森 Z2.3",
-    username: "MoYuXianR",
-    mapByNameAliases: ["MoYuXianR"],
+    github: "MoYuXianR",
+    alias: ["MoYuXianR"],
   },
   {
     name: "zepinglee",
-    username: "zepinglee",
+    github: "zepinglee",
+  },
+  {
+    name: "redleafnew",
+    github: "redleafnew",
+    alias: ["韩小土"],
+    emailAlias: ["redleafnew@163.com"],
   },
 ];
